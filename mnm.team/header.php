@@ -56,20 +56,20 @@ if (isset($_GET['title'])) {
 	<meta name="copyright" content="Mateus [byUwUr]" />
 	<meta name="theme-color" content="#006" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
     <!-- CSS -->
-    <link rel="stylesheet" href="plugin/animate/animate.mnm.min.css" />
-    <link rel="stylesheet" href="plugin/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.mnm.min.css" />
-    <link rel="stylesheet" href="plugin/flexslider/css/flexslider.min.css" />
+    <link rel="stylesheet" href="../plugin/animate/animate.mnm.min.css" />
+    <link rel="stylesheet" href="../plugin/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.mnm.min.css" />
+    <link rel="stylesheet" href="../plugin/flexslider/css/flexslider.min.css" />
     <?php
     if (isset($_GET['theme'])) {
         if ($_GET['theme'] == 'light' || $_GET['theme'] == 'dark') {
             setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
             echo '<meta name="theme-color" content="#111" />';
-            echo '<link id="pagestyle" rel="stylesheet" href="./css/mnm.' . $_GET['theme'] . '.css" />';
+            echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.' . $_GET['theme'] . '.css" />';
             $theme = $_GET['theme'];
         } else {
             setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
@@ -78,7 +78,7 @@ if (isset($_GET['title'])) {
     } else if (isset($_COOKIE['theme'])) {
         if ($_COOKIE['theme'] == 'light' || $_COOKIE['theme'] == 'dark') {
             echo '<meta name="theme-color" content="#111" />';
-            echo '<link id="pagestyle" rel="stylesheet" href="./css/mnm.' . $_COOKIE['theme'] . '.css" />';
+            echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.' . $_COOKIE['theme'] . '.css" />';
             $theme = $_COOKIE['theme'];
         } else {
             setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
@@ -86,18 +86,18 @@ if (isset($_GET['title'])) {
         }
     } else {
         setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-		echo '<link id="pagestyle" rel="stylesheet" href="./css/mnm.dark.css" />';
+		echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.dark.css" />';
         //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
     }
     ?>
     <!-- Modernizr JS -->
-    <script type="text/javascript" src="plugin/modernizr/modernizr.min.js"></script>
+    <script type="text/javascript" src="../plugin/modernizr/modernizr.min.js"></script>
     <!-- FOR IE9 below -->
-    <!--[if lt IE 9]><script type="text/javascript" src="js/respond.min.js"></script><![endif]-->
+    <!--[if lt IE 9]><script type="text/javascript" src="../js/respond.min.js"></script><![endif]-->
     <!-- Swap theme -->
     <script type="text/javascript">
         function swapStyleSheet(sheet) {
-            document.getElementById('pagestyle').setAttribute('href', './css/mnm.' + sheet + '.css');
+            document.getElementById('pagestyle').setAttribute('href', '../css/mnm.' + sheet + '.css');
             document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
         }
     </script>
@@ -128,8 +128,8 @@ if (isset($_GET['title'])) {
         <a href="javascript:;" class="js-mnm-nav-toggle mnm-nav-toggle"><span>menu</span></a>
         <aside id="mnm-aside" role="complementary" class="border js-fullheight">
             <h1 id="mnm-logo">
-                <img src="img/logo.jpg" width="175px" height="175px" style="border: 5px solid #222; border-radius: 10px;" alt="MNM logo" /><br>
-                <small><small style="margin-right:5px;"><?= $_language; ?></small><a href="es" title="Español"><img src="img/co.png" width="16px" height="12px" style="margin-bottom:3px;" alt="" /> ES</a>|<a href="en" title="English"><img src="img/uk.png" width="16px" height="12px" style="margin-bottom:3px;" alt="" /> EN</a><br><!-- <a href="soon.html" class="a-logo"><?= $_new; ?></a> --></small>
+                <img src="../img/logo.jpg" width="175px" height="175px" style="border: 5px solid #222; border-radius: 10px;" alt="MNM logo" /><br>
+                <small><small style="margin-right:5px;"><?= $_language; ?></small><a href="es" title="Español"><img src="../img/co.png" width="16px" height="12px" style="margin-bottom:3px;" alt="" /> ES</a>|<a href="en" title="English"><img src="../img/uk.png" width="16px" height="12px" style="margin-bottom:3px;" alt="" /> EN</a><br><!-- <a href="soon.html" class="a-logo"><?= $_new; ?></a> --></small>
             </h1>
             <nav id="mnm-main-menu" role="navigation">
                 <ul>
@@ -143,7 +143,7 @@ if (isset($_GET['title'])) {
             <div class="mnm-footer">
                 <small><?php $_theme; ?> <a href="javascript:;" onclick="swapStyleSheet('light')"><?= $_light; ?></a> | <a href="javascript:;" onclick="swapStyleSheet('dark')"><?= $_dark; ?></a></small>
                 <a class='hidden' href='<?= $_light; ?>'>Light / Claro</a><a class='hidden' href='<?= $_dark; ?>'>Dark / Oscuro</a><br>
-                <p>&copy;<?= date("Y"); ?>, MNM <br><small><small><a href="mateus" target="_blank">byUwUr</a> | <a href="https://colorlib.com" target="_blank">colorlib</a>
+                <p>&copy;<?= date("Y"); ?>, MNM <br><small><small><a href="../" target="_blank">byUwUr</a> | <a href="https://colorlib.com" target="_blank">colorlib</a>
                             <br><a href="sitemap" target="_blank"><?= $_sitemap; ?></a> | <a href="cookie-policy" target="_blank">cookies</a></small></small></p>
                 <ul>
                     <li><a href="https://fb.me/mnmdotteam" target="_blank"><i class="fab fa-facebook"></i></a></li>

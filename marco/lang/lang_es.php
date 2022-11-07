@@ -11,7 +11,7 @@ $_awards="Proyectos & Certificados";
 $_interest="Intereses";
 $_experience="Experiencia";
 $_contact="Contacto";
-$_goto="<a class='a-mnm' href='../' target='_blank'>Ver más en <img src='../img/mnm.png' style='margin-bottom: 4px;' height='16px' width='48px' /><small>.team();</small></a><br>";
+$_goto="<a class='a-mnm' href='../mnm.team/' target='_blank'>Ver más en <img src='../img/mnm.png' style='margin-bottom: 4px;' height='16px' width='48px' /><small>.team();</small></a><br>";
 $_name_topbar="Marco <small>[Cortés]</small>";
 $_name_top="Marco <font size='5'><span class='text-primary'>[Cortés]</span></font>";
 $_nombre="Marco José Cortés Guzman";
@@ -46,9 +46,9 @@ $_educationcarr2="Ingeniería de Sistemas";
 $_educationyear2="En proceso";
 
 #awards
-$_awards0="<a target='_blank' href='../redi'><strong>Mención meritoria</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
-$_awards1="<a target='_blank' href='../renn'><strong>Mención meritoria</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
-$_awards2="<a target='_blank' href='../limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
+$_awards0="<a target='_blank' href='../mnm.team/redi'><strong>Mención meritoria</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
+$_awards1="<a target='_blank' href='../mnm.team/renn'><strong>Mención meritoria</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
+$_awards2="<a target='_blank' href='../mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_awards3="<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
 
 #interests

@@ -16,17 +16,17 @@
     </div>
 </div>
 <!-- JS plugins -->
-<script type="text/javascript" src="plugin/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="plugin/easing/easing.min.js"></script>
-<script type="text/javascript" src="plugin/bootstrap/js/bootstrap.mnm.min.js"></script>
+<script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../plugin/easing/easing.min.js"></script>
+<script type="text/javascript" src="../plugin/bootstrap/js/bootstrap.mnm.min.js"></script>
 <!--script type="text/javascript" src="../plugin/particles/particles.min.js"></script-->
-<script type="text/javascript" src="plugin/waypoints/waypoints.min.js"></script>
-<script type="text/javascript" src="plugin/flexslider/js/flexslider.min.js"></script>
-<script type="text/javascript" src="plugin/sticky-kit/sticky-kit.min.js"></script>
+<script type="text/javascript" src="../plugin/waypoints/waypoints.min.js"></script>
+<script type="text/javascript" src="../plugin/flexslider/js/flexslider.min.js"></script>
+<script type="text/javascript" src="../plugin/sticky-kit/sticky-kit.min.js"></script>
 <!-- MAIN JS -->
-<script type="text/javascript" src="js/mnm.js"></script>
+<script type="text/javascript" src="../js/mnm.js"></script>
 <!-- Cookie consent -->
-<script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="../js/cookies.js"></script>
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
         cookieconsent.run({

@@ -76,7 +76,7 @@ $_info_mail="contact@mnm.team";
 $_mateus_mail="https://www.linkedin.com/in/atrujillomateus/";
 $_nestux_mail="https://www.linkedin.com/in/nestux091/";
 $_marco_mail="https://www.linkedin.com/in/marco-jos%C3%A9-cort%C3%A9s-guzman-1b0453222/";
-$_location="<small>Ubicación: </small><img src='img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
+$_location="<small>Ubicación: </small><img src='../img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
 $_s_thanks="Gracias por escribirnos. Responderemos en cuanto podamos.";
 $_s_wrong="Algo salió mal. Intente más tarde.";
 $_s_wants=" quiere hablar con ustedes";

@@ -25,7 +25,7 @@ require("./header.php");
             </div>
             <div class="row">
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(img/work-3/0.jpg);">
+                    <div class="project" style="background-image: url(../img/work-3/0.jpg);">
                         <a href="reservelapp">
                             <div class="desc">
                                 <div class="con">
@@ -44,7 +44,7 @@ require("./header.php");
                     </div>
                 </div>
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(img/work-2/0.jpg);">
+                    <div class="project" style="background-image: url(../img/work-2/0.jpg);">
                         <a href="limontech">
                             <div class="desc">
                                 <div class="con">
@@ -65,7 +65,7 @@ require("./header.php");
                     </div>
                 </div>
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(img/work-1/0.jpg);">
+                    <div class="project" style="background-image: url(../img/work-1/0.jpg);">
                         <a href="renn">
                             <div class="desc">
                                 <div class="con">
@@ -86,7 +86,7 @@ require("./header.php");
                     </div>
                 </div>
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(img/work-0/0.jpg);">
+                    <div class="project" style="background-image: url(../img/work-0/0.jpg);">
                         <a href="redi">
                             <div class="desc">
                                 <div class="con">
