@@ -35,7 +35,7 @@ if (isset($_GET['lang'])) {
   <meta property="og:title" content="Mateus [byUwUr]" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://somosmnm.000webhostapp.com/img/icon.png" />
-  <meta property="og:url" content="https://somosmnm.000webhostapp.com/mateus/" />
+  <meta property="og:url" content="https://byuwur.github.io/" />
   <meta property="og:site_name" content="Mateus [byUwUr]" />
   <meta property="og:description" content="Mateus' portfolio" />
   <!-- Meta tags -->

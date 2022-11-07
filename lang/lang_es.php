@@ -89,11 +89,11 @@ $_testpos2="Investigadora Junior de <a href='https://www.colciencias.gov.co/' ta
 $_testtel2="<a href='tel:+573102187600'>+57 (310) 218 7600</a>";
 $_testsay3="";
 $_testname3="Marco José Cortés";
-$_testpos3="Co-founder de <a href='https://mnm.team/' target='_blank'>MNM.team();</a>";
+$_testpos3="Co-founder de <a href='https://somosmnm.000webhostapp.com/' target='_blank'>MNM.team();</a>";
 $_testtel3="<a href='tel:+573015346518'>+57 (301) 534 6518</a>";
 $_testsay4="";
 $_testname4="Néstor Alfonso Portela";
-$_testpos4="Co-founder de <a href='https://mnm.team/' target='_blank'>MNM.team();</a>";
+$_testpos4="Co-founder de <a href='https://somosmnm.000webhostapp.com/' target='_blank'>MNM.team();</a>";
 $_testtel4="<a href='tel:+573166684208'>+57 (316) 668 4208</a>";
 
 #education

@@ -13,7 +13,7 @@
   <meta property="og:site_name" content="UI kit byUwUr">
   <meta property="og:description" content="UI kit byUwUr">
   <meta property="og:image" content="./img/logo.png">
-  <meta property="og:url" content="https://somosmnm.000webhostapp.com/mateus/ui-kit">
+  <meta property="og:url" content="https://byuwur.github.io/ui-kit">
   <link rel="icon" href="./img/logo.png">
   <link rel="stylesheet" href="./css/fontawesome-6.2.0.min.css" />
   <link rel="stylesheet" href="./css/animate.min.css" />

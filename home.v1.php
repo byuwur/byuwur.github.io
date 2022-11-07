@@ -34,8 +34,8 @@ if (isset($_GET['lang'])) {
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="Mateus [byUwUr]" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://mnm.team/mateus/img/icon.png" />
-    <meta property="og:url" content="https://mnm.team/mateus/" />
+    <meta property="og:image" content="https://somosmnm.000webhostapp.com/img/icon.png" />
+    <meta property="og:url" content="https://byuwur.github.io/" />
     <meta property="og:site_name" content="Mateus [byUwUr]" />
     <meta property="og:description" content="Mateus' portfolio" />
     <!-- Meta tags -->
@@ -83,7 +83,7 @@ if (isset($_GET['lang'])) {
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">≡</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
