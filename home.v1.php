@@ -75,7 +75,7 @@ if (isset($_GET['lang'])) {
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#about">
             <span class="d-block d-lg-none" style="color: #FFF;">
-                <img src="img/icon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
+                <img src="./img/icon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
                 <?= $_name_topbar; ?>
             </span>
             <span class="d-none d-lg-block">
