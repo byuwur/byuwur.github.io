@@ -15,13 +15,13 @@ $_resume="Resume";
 $_interest="A bit about me";
 $_experience="Experience";
 $_contact="Contact";
-$_goto="<a class='a-mnm' href='../' target='_blank'>See more at MNM<small>.team();</small></a>";
+$_goto="<a class='a-mnm' href='./mnm.team/' target='_blank'>See more at MNM<small>.team();</small></a>";
 $_name_topbar="Mateus <small>[byUwUr]</small>";
 $_name_top="Mateus <font size='5'><span class='text-primary'>[byUwUr]</span></font>";
 $_nombre="Andrés Trujillo Mateus";
 $_new="load not so basic HTML";
 $_load="<font size='4'><strong>Loading standard view...</strong></font><br>Still loading? | <a href='v1'>Load basic HTML</a>";
-$_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus</small><br><a href='v1'>load basic HTML</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>light</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>dark</a> <a class='hidden' href='light'>light</a><a class='hidden' href='dark'>dark</a><br><small><a href='../sitemap' target='_blank'>sitemap</a> | <a href='../cookie-policy' target='_blank'>cookie policy</a></small>";
+$_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus</small><br><a href='v1'>load basic HTML</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>light</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>dark</a> <a class='hidden' href='light'>light</a><a class='hidden' href='dark'>dark</a><br><small><a href='./mnm.team/sitemap' target='_blank'>sitemap</a> | <a href='./mnm.team/cookie-policy' target='_blank'>cookie policy</a></small>";
 $_cv="Download Resume";
 $_hire="Hire me";
 
@@ -111,12 +111,12 @@ $_educationcarr2="Editing with Premiere Pro; Editing with Davinci Resolve; Dubbi
 $_educationyear2="July 2021";
 
 #awards
-$_portfolio0="<a target='_blank' href='../redi'><strong>Meritorious mention</strong> (ITFIP) | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
-$_portfolio1="<a target='_blank' href='../renn'><strong>Meritorious mention</strong> (ITFIP) | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
-$_portfolio2="<a target='_blank' href='../limontech'><strong>Winner</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
+$_portfolio0="<a target='_blank' href='./mnm.team/redi'><strong>Meritorious mention</strong> (ITFIP) | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
+$_portfolio1="<a target='_blank' href='./mnm.team/renn'><strong>Meritorious mention</strong> (ITFIP) | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
+$_portfolio2="<a target='_blank' href='./mnm.team/limontech'><strong>Winner</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_portfolio3="<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Lemon detector, 2017</strong></small></a>";
 $_portfolio4="<a target='_blank' href='https://redcolsi.org/web/'><strong>Workshop</strong> | REDCOLSI - <small><strong>Free software in the research, 2018</strong></small></a>";
-$_portfolio5="<a target='_blank' href='../reservelapp'><strong>Meritorious mention</strong> (ITFIP) | Resérvelapp - <small><strong>Reservations for soccer fields, 2018</strong></small></a>";
+$_portfolio5="<a target='_blank' href='./mnm.team/reservelapp'><strong>Meritorious mention</strong> (ITFIP) | Resérvelapp - <small><strong>Reservations for soccer fields, 2018</strong></small></a>";
 $_portfolio6="<a target='_blank' href='https://semillasdealegriaespinal.com'><strong>Project</strong> | Liceo Moderno Semillas de Alegría - <small><strong>Grading platform, 2019</strong></small></a>";
 
 #interests
@@ -147,7 +147,7 @@ $_subject="Subject";
 $_msg="Message";
 $_send="LET'S TALK";
 $_mail="atrujillomateus@gmail.com";
-$_location="<small>Location: </small><img src='../img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
+$_location="<small>Location: </small><img src='./img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
 $_s_thanks="Thanks for writing me. I'll respond as soon as I can.";
 $_s_wrong="Something went wrong. Please try again.";
 $_s_wants=" wants to talk with you";

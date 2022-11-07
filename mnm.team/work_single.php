@@ -47,10 +47,10 @@ require("./header.php");
                     </div>
                 </div>
                 <div class="col-md-6 image-content">
-                    <img class="img-responsive" src="img/work-<?= $_GET['work']; ?>/1.jpg" alt="Image 1" />
-                    <img class="img-responsive" src="img/work-<?= $_GET['work']; ?>/2.jpg" alt="Image 2" />
-                    <img class="img-responsive" src="img/work-<?= $_GET['work']; ?>/3.jpg" alt="Image 3" />
-                    <img class="img-responsive" src="img/work-<?= $_GET['work']; ?>/4.jpg" alt="Image 4" />
+                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/1.jpg" alt="Image 1" />
+                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/2.jpg" alt="Image 2" />
+                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/3.jpg" alt="Image 3" />
+                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/4.jpg" alt="Image 4" />
                 </div>
             </div>
         </div>

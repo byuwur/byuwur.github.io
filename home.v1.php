@@ -51,11 +51,11 @@ if (isset($_GET['lang'])) {
     <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="apple-touch-icon" href="./favicon.png" />
     <!-- STYLES -->
-    <link href="../plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
+    <link href="./plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-    <link href="../plugin/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="../css/resume.css" rel="stylesheet" />
+    <link href="./plugin/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="./css/resume.css" rel="stylesheet" />
     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
@@ -79,7 +79,7 @@ if (isset($_GET['lang'])) {
                 <?= $_name_topbar; ?>
             </span>
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../img/profile.jpg" alt="Mateus" />
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/profile.jpg" alt="Mateus" />
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,8 +87,8 @@ if (isset($_GET['lang'])) {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <small style="margin: 15px 0px;"><a href="es.v1" class="a-logo" title="Español"><img src="../img/co.png" alt="" /> ESP</a>
-                    <a href="en.v1" class="a-logo" title="English"><img src="../img/uk.png" alt="" /> ENG</a></small>
+                <small style="margin: 15px 0px;"><a href="es.v1" class="a-logo" title="Español"><img src="./img/co.png" alt="" /> ESP</a>
+                    <a href="en.v1" class="a-logo" title="English"><img src="./img/uk.png" alt="" /> ENG</a></small>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><?= $_helloworld; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><?= $_skills; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><?= $_portfolio; ?></a></li>
@@ -335,12 +335,12 @@ if (isset($_GET['lang'])) {
         <!-- portfolio end -->
     </div>
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="../plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../plugin/easing/easing.min.js"></script>
-    <script type="text/javascript" src="../js/resume.js"></script>
+    <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./plugin/easing/easing.min.js"></script>
+    <script type="text/javascript" src="./js/resume.js"></script>
     <!-- Cookie consent -->
-    <script type="text/javascript" src="../js/cookies.js"></script>
+    <script type="text/javascript" src="./js/cookies.js"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             cookieconsent.run({
