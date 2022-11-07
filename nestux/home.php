@@ -34,8 +34,8 @@ if (isset($_GET['lang'])) {
   <!-- Facebook and Twitter integration -->
   <meta property="og:title" content="Nestux Portela" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://mnm.team/nestux/img/icon.png" />
-  <meta property="og:url" content="https://mnm.team/nestux/" />
+  <meta property="og:image" content="https://somosmnm.000webhostapp.com/nestux/img/icon.png" />
+  <meta property="og:url" content="https://somosmnm.000webhostapp.com/nestux/" />
   <meta property="og:site_name" content="Nestux Portela" />
   <meta property="og:description" content="Soy Nestux y este es mi portfolio." />
   <!-- Meta tags -->

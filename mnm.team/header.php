@@ -42,8 +42,8 @@ if (isset($_GET['title'])) {
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="mnm.team" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://mnm.team/img/logo.jpg" />
-    <meta property="og:url" content="https://mnm.team/" />
+    <meta property="og:image" content="https://somosmnm.000webhostapp.com/img/logo.jpg" />
+    <meta property="og:url" content="https://somosmnm.000webhostapp.com/" />
     <meta property="og:site_name" content="mnm.team" />
     <meta property="og:description" content="¿Tienes un proyecto en mente? Un placer. Somos MNM, desarrolladores de software." />
     <!-- Meta tags -->

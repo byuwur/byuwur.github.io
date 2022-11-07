@@ -37,12 +37,12 @@ if (isset($_GET['lang'])) {
     <meta property="og:image" content="https://mnm.team/mateus/img/icon.png" />
     <meta property="og:url" content="https://mnm.team/mateus/" />
     <meta property="og:site_name" content="Mateus [byUwUr]" />
-    <meta property="og:description" content="Soy Mateus y este es mi portfolio. Welcome." />
+    <meta property="og:description" content="Mateus' portfolio" />
     <!-- Meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Language" content="en,es" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Soy Mateus y este es mi portfolio. Welcome." />
+    <meta name="description" content="Mateus' portfolio" />
     <meta name="author" content="Andrés Trujillo Mateus" />
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="Mateus [byUwUr]" />
