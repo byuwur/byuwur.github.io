@@ -11,7 +11,7 @@
     <meta name="author" content="MNM" />
     <meta property="og:title" content="MNM TEAM" />
     <meta property="og:image" content="./img/logo.jpg" />
-    <meta property="og:url" content="https://mnm.team/" />
+    <meta property="og:url" content="https://somosmnm.000webhostapp.com/" />
     <meta property="og:site_name" content="MNM.TEAM" />
     <meta property="og:description" content="Un placer. Somos MNM." />
     <link rel="icon" type="image/png" href="./img/favicon.png" />
