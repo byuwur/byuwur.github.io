@@ -15,13 +15,13 @@ $_resume="Resume";
 $_interest="Un poco sobre mí";
 $_experience="Experiencia";
 $_contact="Contacto";
-$_goto="<a class='a-mnm' href='./mnm.team/' target='_blank'>Ver más en MNM<small>.team();</small></a>";
+$_goto="<a class='a-mnm' href='./mnm.team/' target='_self'>Ver más en MNM<small>.team();</small></a>";
 $_name_topbar="Mateus <small>[byUwUr]</small>";
 $_name_top="Mateus <font size='5'><span class='text-primary'>[byUwUr]</span></font>";
 $_nombre="Andrés Trujillo Mateus";
 $_new="cargar HTML no tan básico";
 $_load="<font size='4'><strong>Cargando vista estándar...</strong></font><br>¿Sigue cargando? | <a href='v1'>Carga el HTML básico</a>";
-$_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus<br><a href='v1'>cargar HTML básico</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>claro</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>oscuro</a> <a class='hidden' href='claro'>claro</a><a class='hidden' href='oscuro'>oscuro</a><br><a href='./mnm.team/sitemap' target='_blank'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' target='_blank'>cookie policy</a></small>";
+$_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus<br><a href='v1'>cargar HTML básico</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>claro</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>oscuro</a> <a class='hidden' href='claro'>claro</a><a class='hidden' href='oscuro'>oscuro</a><br><a href='./mnm.team/sitemap' target='_self'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' target='_self'>cookie policy</a></small>";
 $_cv="Descargar Resume";
 $_hire="Contrátame";
 
@@ -89,11 +89,11 @@ $_testpos2="Investigadora Junior de <a href='https://www.colciencias.gov.co/' ta
 $_testtel2="<a href='tel:+573102187600'>+57 (310) 218 7600</a>";
 $_testsay3="";
 $_testname3="Marco José Cortés";
-$_testpos3="Co-founder de <a href='https://somosmnm.000webhostapp.com/' target='_blank'>MNM.team();</a>";
+$_testpos3="Co-founder de <a href='https://somosmnm.000webhostapp.com/' target='_self'>MNM.team();</a>";
 $_testtel3="<a href='tel:+573015346518'>+57 (301) 534 6518</a>";
 $_testsay4="";
 $_testname4="Néstor Alfonso Portela";
-$_testpos4="Co-founder de <a href='https://somosmnm.000webhostapp.com/' target='_blank'>MNM.team();</a>";
+$_testpos4="Co-founder de <a href='https://somosmnm.000webhostapp.com/' target='_self'>MNM.team();</a>";
 $_testtel4="<a href='tel:+573166684208'>+57 (316) 668 4208</a>";
 
 #education
@@ -111,12 +111,12 @@ $_educationcarr2="Edición con Premiere Pro; Edición con Davinci Resolve; Talle
 $_educationyear2="Julio 2021";
 
 #awards
-$_portfolio0="<a target='_blank' href='./mnm.team/redi'><strong>Mención meritoria</strong> (ITFIP) | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
-$_portfolio1="<a target='_blank' href='./mnm.team/renn'><strong>Mención meritoria</strong> (ITFIP) | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
-$_portfolio2="<a target='_blank' href='./mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
+$_portfolio0="<a target='_self' href='./mnm.team/redi'><strong>Mención meritoria</strong> (ITFIP) | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
+$_portfolio1="<a target='_self' href='./mnm.team/renn'><strong>Mención meritoria</strong> (ITFIP) | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
+$_portfolio2="<a target='_self' href='./mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_portfolio3="<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
 $_portfolio4="<a target='_blank' href='https://redcolsi.org/web/'><strong>Tallerista</strong> | REDCOLSI - <small><strong>Software libre en la investigación, 2018</strong></small></a>";
-$_portfolio5="<a target='_blank' href='./mnm.team/reservelapp'><strong>Mención meritoria</strong> (ITFIP) | Resérvelapp - <small><strong>Reservas para canchas, 2018</strong></small></a>";
+$_portfolio5="<a target='_self' href='./mnm.team/reservelapp'><strong>Mención meritoria</strong> (ITFIP) | Resérvelapp - <small><strong>Reservas para canchas, 2018</strong></small></a>";
 $_portfolio6="<a target='_blank' href='https://semillasdealegriaespinal.com'><strong>Proyecto</strong> | Liceo Moderno Semillas de Alegría - <small><strong>Plataforma de notas, 2019</strong></small></a>";
 
 #interests

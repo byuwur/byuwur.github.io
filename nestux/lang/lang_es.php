@@ -11,7 +11,7 @@ $_awards="Proyectos & Certificados";
 $_interest="Intereses";
 $_experience="Experiencia";
 $_contact="Contacto";
-$_goto="<a class='a-mnm' href='../mnm.team/' target='_blank'>Ver más en <img src='../img/mnm.png' style='margin-bottom: 4px;' height='16px' width='48px' /><small>.team();</small></a><br>";
+$_goto="<a class='a-mnm' href='../mnm.team/' target='_self'>Ver más en <img src='../img/mnm.png' style='margin-bottom: 4px;' height='16px' width='48px' /><small>.team();</small></a><br>";
 $_name_topbar="Nestux <small>[Portela]</small>";
 $_name_top="Nestux <font size='5'><span class='text-primary'>[Portela]</span></font>";
 $_nombre="Néstor Alfonso Portela Rincón";
@@ -36,24 +36,24 @@ $_thingies2="Diseño y modelado de bases de datos SQL";
 $_thingies3="Asesorías, consultorías, soporte técnico y ayuda";
 
 #education
-$_educationinst0="<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>";
+$_educationinst0="<a href='https://itfip.edu.co/' target='_self'>ITFIP</a>";
 $_educationprog0="Ingeniería de Sistemas";
 $_educationcarr0="Técnico Profesional en Soluciones Web";
 $_educationyear0="Graduado | Febrero 2018";
-$_educationinst1="<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>";
+$_educationinst1="<a href='https://itfip.edu.co/' target='_self'>ITFIP</a>";
 $_educationprog1="Ingeniería de Sistemas";
 $_educationcarr1="Tecnólogo en Gestión Informática";
 $_educationyear1="Graduado | Julio 2019";
-$_educationinst2="<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>";
+$_educationinst2="<a href='https://itfip.edu.co/' target='_self'>ITFIP</a>";
 $_educationprog2="Ingeniería de Sistemas";
 $_educationcarr2="Ingeniero en Sistemas";
 $_educationyear2="En proceso";
 
 #awards
-$_awards0="<a target='_blank' href='../mnm.team/redi'><strong>Mención meritoria</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
-$_awards1="<a target='_blank' href='../mnm.team/renn'><strong>Mención meritoria</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
-$_awards2="<a target='_blank' href='../mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
-$_awards3="<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
+$_awards0="<a target='_self' href='../mnm.team/redi'><strong>Mención meritoria</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
+$_awards1="<a target='_self' href='../mnm.team/renn'><strong>Mención meritoria</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
+$_awards2="<a target='_self' href='../mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
+$_awards3="<a target='_self' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
 
 #interests
 $_interest0="";
