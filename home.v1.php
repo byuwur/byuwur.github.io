@@ -105,8 +105,7 @@ if (isset($_GET['lang'])) {
         <!-- about section -->
         <section class="resume-section p-2 d-flex d-column" id="about">
             <div class="my-auto">
-                <h1 class="mb-0"><?= $_name_top; ?></h1>
-                <font style="text-transform: uppercase;"><?= $_nombre; ?></font>
+                <h1 class="mb-0 align-bottom"><?= $_name_top; ?></h1><font class="align-bottom" style="text-transform: uppercase;"><?= $_nombre; ?></font>
                 <hr>
                 <p class="lead"><?= $_about; ?></p>
                 <div class="subheading">
@@ -121,8 +120,17 @@ if (isset($_GET['lang'])) {
                     <a href="<?= $_instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-                <br>
-                <a href="#contact" class="a-logo nav-link js-scroll-trigger" style="font-size: 1.375em;"><?= $_start; ?></a>
+                <div class="row">
+                    <div class="col-12 col-sm-5 col-md-4">
+                        <br><h6>Digital Business Card v2</h6>
+                        <iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
+                    </div> <!-- col -->
+                    <div class="col-12 col-sm-7 col-md-4">
+                        <br><h6>Digital Business Card v1</h6>
+                        <iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
+                    </div> <!-- col -->
+                </div>
+                <br><a href="#contact" class="a-logo nav-link js-scroll-trigger" style="font-size: 1.375em;"><?= $_start; ?></a>
             </div>
         </section>
         <hr>
@@ -228,6 +236,18 @@ if (isset($_GET['lang'])) {
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_education; ?></h2>
                 <div class="resume-item d-flex flex-column flex-md-row mb-3">
+                    <div class="resume-item d-flex flex-column flex-md-row mb-3">
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0"><?= $_educationinst0; ?></h3>
+                            <div class="subheading"><?= $_educationcarr0; ?></div>
+                            <?= $_educationprog0; ?>
+                            <p>GPA: 4.1<font size="2">/5.0</font>
+                            </p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"><?= $_educationyear0; ?></span>
+                        </div>
+                    </div>
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0"><?= $_educationinst2; ?></h3>
                         <div class="subheading"><?= $_educationcarr2; ?></div>
@@ -237,31 +257,18 @@ if (isset($_GET['lang'])) {
                     <div class="resume-date text-md-right">
                         <span class="text-primary"><?= $_educationyear2; ?></span>
                     </div>
-                </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-3">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"><?= $_educationinst1; ?></h3>
-                        <div class="subheading"><?= $_educationcarr1; ?></div>
-                        <div><?= $_educationprog1; ?></div>
-                        <p><a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a></p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary"><?= $_educationyear1; ?></span>
-                    </div>
-                </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-3">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"><?= $_educationinst0; ?></h3>
-                        <div class="subheading"><?= $_educationcarr0; ?></div>
-                        <?= $_educationprog0; ?>
-                        <p>GPA: 4.1<font size="2">/5.0</font>
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary"><?= $_educationyear0; ?></span>
+                    <div class="resume-item d-flex flex-column flex-md-row mb-3">
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0"><?= $_educationinst1; ?></h3>
+                            <div class="subheading"><?= $_educationcarr1; ?></div>
+                            <div><?= $_educationprog1; ?></div>
+                            <p><a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a></p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"><?= $_educationyear1; ?></span>
+                        </div>
                     </div>
                 </div>
-
             </div>
             <?= $_goto; ?>
         </section>
