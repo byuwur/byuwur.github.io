@@ -156,8 +156,8 @@ if (isset($_GET['lang'])) {
                       <a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                     <div class="btn-bar">
-                      <a href="resume.<?= $lang; ?>" target="_blank" class="btn btn-theme"><?= $_cv; ?></a>
-                      <br><br><a href="ui-kit" target="_blank">UI kit preview</a>
+                      <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
+                      <br><br><a href="ui-kit">UI kit preview</a>
                       <br><br><?= $_goto; ?>
                     </div>
                   </div>
@@ -269,7 +269,7 @@ if (isset($_GET['lang'])) {
                           <a href="<?= $_github; ?>" target="_blank"><h6>Projects</h6></a>
                         </div>
                       </div>
-                      <br><a href="ui-kit" target="_blank">&& UI kit preview</a>
+                      <br><a href="ui-kit">&& UI kit preview</a>
                     </div> <!-- col -->
                     <div class="col-12 col-md-4 md-m-15px-tb">
                       <h6>Digital Business Card v2</h6>
@@ -614,12 +614,12 @@ if (isset($_GET['lang'])) {
                       <li class="portfolio-item windows av">
                         <div class="portfolio-col portfolio-hover-01">
                           <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-4.jpg);"></div>
+                            <div class="portfolio-image" style="background-image:url(../img/work-4.jpg);"></div>
                             <div class="hover">
                               <div class="action-btn">
                                 <a href="https://youtu.be/RNQTSueIa-8" target="_blank"><i class="fa fa-play"></i></a>
                                 <a href="./limontech" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-4-lg.jpg" title="<?= $_lt; ?>"><i class="fas fa-expand"></i></a>
+                                <a class="lightbox-gallery theme-color" href="../img/work-4-lg.jpg" title="<?= $_lt; ?>"><i class="fas fa-expand"></i></a>
                               </div> <!-- Video Btn -->
                             </div> <!-- Hover -->
                           </div>
@@ -632,13 +632,13 @@ if (isset($_GET['lang'])) {
                       <li class="portfolio-item web android mention">
                         <div class="portfolio-col portfolio-hover-01">
                           <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-5.jpg);"></div>
+                            <div class="portfolio-image" style="background-image:url(../img/work-5.jpg);"></div>
                             <div class="hover">
                               <div class="action-btn">
                                 <a href="https://play.google.com/store/apps/details?id=com.byuwur.reserv" target="_blank"><i class="fab fa-google-play"></i></a>
                                 <a href="https://www.sistemas-i-computacion-tic.com/reserv/" target="_blank" class="theme-color"><i class="fa fa-link"></i></a>
                                 <a href="./reservelapp" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-5-lg.jpg" title="<?= $_reserv; ?>"><i class="fas fa-expand"></i></a>
+                                <a class="lightbox-gallery theme-color" href="../img/work-5-lg.jpg" title="<?= $_reserv; ?>"><i class="fas fa-expand"></i></a>
                               </div> <!-- Video Btn -->
                             </div> <!-- Hover -->
                           </div>
@@ -651,11 +651,11 @@ if (isset($_GET['lang'])) {
                       <li class="portfolio-item web mention">
                         <div class="portfolio-col portfolio-hover-01">
                           <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-2.jpg);"></div>
+                            <div class="portfolio-image" style="background-image:url(../img/work-2.jpg);"></div>
                             <div class="hover">
                               <div class="action-btn">
                                 <a href="./redi" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-2-lg.jpg" title="<?= $_redi; ?>"><i class="fas fa-expand"></i></a>
+                                <a class="lightbox-gallery theme-color" href="../img/work-2-lg.jpg" title="<?= $_redi; ?>"><i class="fas fa-expand"></i></a>
                               </div> <!-- Video Btn -->
                             </div> <!-- Hover -->
                           </div>
@@ -668,11 +668,11 @@ if (isset($_GET['lang'])) {
                       <li class="portfolio-item web mention">
                         <div class="portfolio-col portfolio-hover-01">
                           <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-3.jpg);"></div>
+                            <div class="portfolio-image" style="background-image:url(../img/work-3.jpg);"></div>
                             <div class="hover">
                               <div class="action-btn">
                                 <a href="./renn" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-3-lg.jpg" title="<?= $_renn; ?>"><i class="fas fa-expand"></i></a>
+                                <a class="lightbox-gallery theme-color" href="../img/work-3-lg.jpg" title="<?= $_renn; ?>"><i class="fas fa-expand"></i></a>
                               </div> <!-- Video Btn -->
                             </div> <!-- Hover -->
                           </div>
@@ -685,7 +685,7 @@ if (isset($_GET['lang'])) {
                       <li class="portfolio-item mention expo">
                         <div class="portfolio-col portfolio-hover-01">
                           <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-6.jpg);"></div>
+                            <div class="portfolio-image" style="background-image:url(../img/work-6.jpg);"></div>
                           </div>
                           <div class="portfolio-info">
                             <h5><?= $_bootcamp; ?></h5>
@@ -704,7 +704,7 @@ if (isset($_GET['lang'])) {
                   <div id="client-slider-single" class="owl-carousel">
                     <div class="testimonial-col">
                       <div class="user">
-                        <div class="img" style="background-image:url(./img/dayessi.jpg);"></div>
+                        <div class="img" style="background-image:url(../img/dayessi.jpg);"></div>
                         <div class="name">
                           <span><?= $_testname1; ?></span>
                           <label><?= $_testpos1; ?></label>
@@ -714,7 +714,7 @@ if (isset($_GET['lang'])) {
                     </div> <!-- col -->
                     <div class="testimonial-col">
                       <div class="user">
-                        <div class="img" style="background-image:url(./img/nestux.jpg);"></div>
+                        <div class="img" style="background-image:url(../img/nestux.jpg);"></div>
                         <div class="name">
                           <span><?= $_testname4; ?></span>
                           <label><?= $_testpos4; ?></label>
@@ -724,7 +724,7 @@ if (isset($_GET['lang'])) {
                     </div> <!-- col -->
                     <div class="testimonial-col">
                       <div class="user">
-                        <div class="img" style="background-image:url(./img/marco.jpg);"></div>
+                        <div class="img" style="background-image:url(../img/marco.jpg);"></div>
                         <div class="name">
                           <span><?= $_testname3; ?></span>
                           <label><?= $_testpos3; ?></label>
@@ -734,7 +734,7 @@ if (isset($_GET['lang'])) {
                     </div> <!-- col -->
                     <div class="testimonial-col">
                       <div class="user">
-                        <div class="img" style="background-image:url(./img/jose.jpg);"></div>
+                        <div class="img" style="background-image:url(../img/jose.jpg);"></div>
                         <div class="name">
                           <span><?= $_testname0; ?></span>
                           <label><?= $_testpos0; ?></label>
@@ -849,25 +849,25 @@ if (isset($_GET['lang'])) {
   </div> <!-- stack -->
   <!-- === Header === -->
   <header class="header theme-bg">
-    <div class="logo"><a href="v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
-    <div style="margin-top:3px;"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ESP</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> ENG</a></div>
+    <div class="logo"><a href="v1" title="Version 1.0"><img src="../img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
+    <div style="margin-top:3px;"><a href="es" class="a-lang" title="Español"><img src="../img/co.png" alt="" /> ESP</a><br><a href="en" class="a-lang" title="English"><img src="../img/uk.png" alt="" /> ENG</a></div>
     <div class="menu-toggle" style="background-color:#000;"><button class="menu-button"><span>menu</span></button></div>
   </header> <!-- header -->
   <!-- Plugins JS -->
-  <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="./plugin/popper/popper.min.js"></script>
-  <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.mateus.min.js"></script>
-  <script type="text/javascript" src="./plugin/owl-carousel/js/owl-carousel.min.js"></script>
-  <script type="text/javascript" src="./plugin/typeit/typeit.min.js"></script>
-  <script type="text/javascript" src="./plugin/isotope/isotope.min.js"></script>
-  <script type="text/javascript" src="./plugin/particles/particles.min.js"></script>
-  <script type="text/javascript" src="./plugin/magnific/js/magnific-popup.min.js"></script>
-  <script type="text/javascript" src="./plugin/nav/js/classie.js"></script>
-  <script type="text/javascript" src="./plugin/nav/js/nav.js"></script>
+  <script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../plugin/popper/popper.min.js"></script>
+  <script type="text/javascript" src="../plugin/bootstrap/js/bootstrap.mateus.min.js"></script>
+  <script type="text/javascript" src="../plugin/owl-carousel/js/owl-carousel.min.js"></script>
+  <script type="text/javascript" src="../plugin/typeit/typeit.min.js"></script>
+  <script type="text/javascript" src="../plugin/isotope/isotope.min.js"></script>
+  <script type="text/javascript" src="../plugin/particles/particles.min.js"></script>
+  <script type="text/javascript" src="../plugin/magnific/js/magnific-popup.min.js"></script>
+  <script type="text/javascript" src="../plugin/nav/js/classie.js"></script>
+  <script type="text/javascript" src="../plugin/nav/js/nav.js"></script>
   <!-- Scripts -->
-  <script type="text/javascript" src="./js/mateus.js"></script>
+  <script type="text/javascript" src="../js/mateus.js"></script>
   <!-- Cookie consent -->
-  <script type="text/javascript" src="./js/cookies.js"></script>
+  <script type="text/javascript" src="../js/cookies.js"></script>
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
       cookieconsent.run({

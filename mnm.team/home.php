@@ -42,7 +42,7 @@ require("./header.php");
                                     <div class="desc">
                                         <h1><?= $_mateus; ?></h1>
                                         <h2><?= $_mateus_desc; ?></h2>
-                                        <p><a class="btn btn-primary btn-learn" target="_blank" href="mateus"><?= $_mateus_p; ?><i class="icon-arrow-right3"></i></a></p>
+                                        <p><a class="btn btn-primary btn-learn" href="../"><?= $_mateus_p; ?><i class="icon-arrow-right3"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ require("./header.php");
                                     <div class="desc">
                                         <h1><?= $_nestux; ?></h1>
                                         <h2><?= $_nestux_desc; ?></h2>
-                                        <p><a class="btn btn-primary btn-learn" target="_blank" href="nestux"><?= $_nestux_p; ?><i class="icon-arrow-right3"></i></a></p>
+                                        <p><a class="btn btn-primary btn-learn" href="../nestux"><?= $_nestux_p; ?><i class="icon-arrow-right3"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ require("./header.php");
                                     <div class="desc">
                                         <h1><?= $_marco; ?></h1>
                                         <h2><?= $_marco_desc; ?></h2>
-                                        <p><a class="btn btn-primary btn-learn" target="_blank" href="marco"><?= $_marco_p; ?><i class="icon-arrow-right3"></i></a></p>
+                                        <p><a class="btn btn-primary btn-learn" href="../marco"><?= $_marco_p; ?><i class="icon-arrow-right3"></i></a></p>
                                     </div>
                                 </div>
                             </div>
