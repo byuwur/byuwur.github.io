@@ -143,8 +143,8 @@ if (isset($_GET['title'])) {
             <div class="mnm-footer">
                 <small><?php $_theme; ?> <a href="javascript:;" onclick="swapStyleSheet('light')"><?= $_light; ?></a> | <a href="javascript:;" onclick="swapStyleSheet('dark')"><?= $_dark; ?></a></small>
                 <a class='hidden' href='<?= $_light; ?>'>Light / Claro</a><a class='hidden' href='<?= $_dark; ?>'>Dark / Oscuro</a><br>
-                <p>&copy;<?= date("Y"); ?>, MNM <br><small><small><a href="../" target="_blank">byUwUr</a> | <a href="https://colorlib.com" target="_blank">colorlib</a>
-                            <br><a href="sitemap" target="_blank"><?= $_sitemap; ?></a> | <a href="cookie-policy" target="_blank">cookies</a></small></small></p>
+                <p>&copy;<?= date("Y"); ?>, MNM <br><small><small><a href="../">byUwUr</a> | <a href="https://colorlib.com" target="_blank">colorlib</a>
+                            <br><a href="sitemap"><?= $_sitemap; ?></a> | <a href="cookie-policy">cookies</a></small></small></p>
                 <ul>
                     <li><a href="https://fb.me/mnmdotteam" target="_blank"><i class="fab fa-facebook"></i></a></li>
                 </ul>

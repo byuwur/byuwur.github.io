@@ -8,6 +8,8 @@ if (isset($_GET['work'])) {
         }
     } else if (isset($_COOKIE['lang'])) {
         require("./lang/" . $_COOKIE['lang'] . "_work-" . $_GET['work'] . ".php");
+    } else {
+        require("./lang/es_work-" . $_GET['work'] . ".php");
     }
 } else {
     echo '<script type="text/javascript"> window.location.replace("/"); </script>';
