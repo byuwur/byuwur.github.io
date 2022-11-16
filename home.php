@@ -67,7 +67,6 @@ if (isset($_GET['lang'])) {
       $theme = $_GET['theme'];
     } else {
       setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-      //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
     }
   } else if (isset($_COOKIE['theme'])) {
     if ($_COOKIE['theme'] == 'light' || $_COOKIE['theme'] == 'dark') {
@@ -76,31 +75,21 @@ if (isset($_GET['lang'])) {
       $theme = $_COOKIE['theme'];
     } else {
       setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-      //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
     }
   } else {
     setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
     echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.dark.css" />';
     $theme = "dark";
-    //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
   }
   ?>
   <script type="text/javascript" src="./plugin/modernizr/modernizr.min.js"></script>
   <!-- Swap theme -->
-  <script type="text/javascript">
-    function swapStyleSheet(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', './css/mateus.' + sheet + '.css');
-      document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
-    }
-  </script>
+  <script type="text/javascript">function swapStyleSheet(sheet) {document.getElementById('pagestyle').setAttribute('href', './css/mateus.' + sheet + '.css');document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';}</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-148227598-1');
   </script>
@@ -110,11 +99,7 @@ if (isset($_GET['lang'])) {
 
 <body class="dark-body">
   <!-- === Loading === -->
-  <div id="loading">
-    <div class="load-circle-back"></div>
-    <div class="load-circle-fore"></div>
-    <div class="load-text"><?= $_load; ?></div>
-  </div>
+  <div id="loading"><div class="load-circle-back"></div><div class="load-circle-fore"></div><div class="load-text"><?= $_load; ?></div></div>
   <!-- === Particles === -->
   <div id="particles"></div>
   <!-- === Side video === -->
@@ -173,88 +158,29 @@ if (isset($_GET['lang'])) {
     <div class="page about-section" id="about">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title">
-            <div class="v-center-box d-flex align-items-end">
-              <h2><?= $_aboutmateus; ?> Mateus</h2>
-            </div>
-            <p class="footer"><?= $_footer; ?></p>
-          </div>
+          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_aboutmateus; ?> Mateus</h2></div><p class="footer"><?= $_footer; ?></p></div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_whoiam; ?></h6>
-                  <div class="st-title">
-                    <h2 class="theme-after text-color"><?= $_aboutiam; ?></h2>
-                  </div>
+                  <div class="st-title"><h2 class="theme-after text-color"><?= $_aboutiam; ?></h2></div>
                 </div>
                 <!-- = About = -->
                 <div class="row">
                   <div class="col-sm-3 user-photo">
                     <div class="row">
-                      <div class="col-6 col-sm-12 user-image" style="background-image:url(./img/profile.jpg);">
-                        <img src="./img/sample.jpg" title="" alt="">
-                      </div>
-                      <div class="col-6 col-sm-12 btn-bar">
-                        <br><a href="resume.<?= $lang; ?>" target="_blank" class="btn btn-theme"><?= $_hire; ?></a>
-                      </div>
+                      <div class="col-6 col-sm-12 user-image" style="background-image:url(./img/profile.jpg);"><img src="./img/sample.jpg" title="" alt=""></div>
+                      <div class="col-6 col-sm-12 btn-bar"><br><a href="resume.<?= $lang; ?>" target="_blank" class="btn btn-theme"><?= $_hire; ?></a></div>
                     </div>
                   </div>
                   <div class="col-sm-9 sm-m-30px-t">
-                    <div class="about-text">
-                      <h3 class="text-color"><?= $_iam; ?> Andrés Trujillo Mateus</h3>
-                      <p class="m-0px"><?= $_about; ?></p>
-                    </div> <!-- about-text -->
+                    <div class="about-text"><h3 class="text-color"><?= $_iam; ?> Andrés Trujillo Mateus</h3><p class="m-0px"><?= $_about; ?></p></div> <!-- about-text -->
                     <div class="row m-30px-t">
-                      <div class="col-sm-6 m-30px-b">
-                        <div class="feature-box">
-                          <i class="icon text-color theme-after ti-split-v-alt"></i>
-                          <div class="feature-content">
-                            <h5 class="text-color"><?= $_thingies6; ?></h5>
-                          </div>
-                        </div>
-                      </div> <!-- col -->
-                      <div class="col-sm-6 m-30px-b">
-                        <div class="feature-box">
-                          <i class="icon text-color theme-after ti-server"></i>
-                          <div class="feature-content">
-                            <h5 class="text-color"><?= $_thingies2; ?></h5>
-                          </div>
-                        </div>
-                      </div> <!-- col -->
-                      <div class="col-sm-6 m-30px-b">
-                        <div class="feature-box">
-                          <i class="icon text-color theme-after ti-help-alt"></i>
-                          <div class="feature-content">
-                            <h5 class="text-color"><?= $_thingies3; ?></h5>
-                          </div>
-                        </div>
-                      </div> <!-- col -->
-                      <div class="col-sm-6 m-30px-b">
-                        <div class="feature-box">
-                          <i class="icon text-color theme-after ti-mobile"></i>
-                          <div class="feature-content">
-                            <h5 class="text-color"><?= $_thingies1; ?></h5>
-                          </div>
-                        </div>
-                      </div> <!-- col -->
-                      <div class="col-sm-6 m-30px-b">
-                        <div class="feature-box">
-                          <i class="icon text-color theme-after ti-video-clapper"></i>
-                          <div class="feature-content">
-                            <h5 class="text-color"><?= $_thingies4; ?></h5>
-                          </div>
-                        </div>
-                      </div> <!-- col -->
-                      <div class="col-sm-6 m-30px-b">
-                        <div class="feature-box">
-                          <i class="icon text-color theme-after ti-github"></i>
-                          <div class="feature-content">
-                            <h5 class="text-color"><?= $_thingies0; ?></h5>
-                          </div>
-                        </div>
-                      </div> <!-- col -->
+                      <?php for ($i=0; $i < count($_thingies); $i++) { ?>
+                        <div class="col-sm-6 m-30px-b"><div class="feature-box"><i class="icon text-color theme-after <?= $_thingiesicon[$i]; ?>"></i><div class="feature-content"><h5 class="text-color"><?= $_thingies[$i]; ?></h5></div></div></div> <!-- col -->
+                      <?php } ?>
                     </div> <!-- row -->
                   </div>
                 </div> <!-- row -->
@@ -262,23 +188,11 @@ if (isset($_GET['lang'])) {
                 <div class="counter-row m-50px-t p-40px-t lg-m-35px-t lg-p-25px-t sm-p-15px-t">
                   <div class="row">
                     <div class="col-12 col-md-3 md-m-15px-tb">
-                      <div class="counter-col counter-box">
-                        <div class="counter-data" data-count="375">
-                          <i class="theme-color ti-ruler-pencil"></i>
-                          <div class="count text-color">5</div>
-                          <a href="<?= $_github; ?>" target="_blank"><h6>Projects</h6></a>
-                        </div>
-                      </div>
+                      <div class="counter-col counter-box"><div class="counter-data" data-count="375"><i class="theme-color ti-ruler-pencil"></i><div class="count text-color">5</div><a href="<?= $_github; ?>" target="_blank"><h6>Projects</h6></a></div></div>
                       <br><a href="ui-kit">&& UI kit preview</a>
                     </div> <!-- col -->
-                    <div class="col-12 col-md-4 md-m-15px-tb">
-                      <h6>Digital Business Card v2</h6>
-                      <iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
-                    </div> <!-- col -->
-                    <div class="col-12 col-md-5 md-m-15px-tb">
-                      <h6>Digital Business Card v1</h6>
-                      <iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
-                    </div> <!-- col -->
+                    <div class="col-12 col-md-4 md-m-15px-tb"><h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe></div> <!-- col -->
+                    <div class="col-12 col-md-5 md-m-15px-tb"><h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe></div> <!-- col -->
                   </div> <!-- row -->
                 </div>
               </div> <!-- page-content -->
@@ -292,21 +206,14 @@ if (isset($_GET['lang'])) {
     <div class="page resume-section" id="resume">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title">
-            <div class="v-center-box d-flex align-items-end">
-              <h2><?= $_resume; ?></h2>
-            </div>
-            <p class="footer"><?= $_footer; ?></p>
-          </div>
+          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_resume; ?></h2></div><p class="footer"><?= $_footer; ?></p></div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_expertise; ?></h6>
-                  <div class="st-title">
-                    <h2 class="theme-after text-color"><?= $_resume; ?></h2>
-                  </div>
+                  <div class="st-title"><h2 class="theme-after text-color"><?= $_resume; ?></h2></div>
                 </div>
                 <!-- = Resume = -->
                 <div class="row">
@@ -320,74 +227,9 @@ if (isset($_GET['lang'])) {
                           <h3 class="text-color"><?= $_codeskills; ?> <i class="fas fa-code"></i></h3>
                           <div class="skills">
                             <div class="row">
-                              <div class="col-sm-6">
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-php"></i> PHP</h6>
-                                  <span class="theme-bg">Advanced</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 88%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-github"></i> Git</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 55%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fas fa-database"></i> SQL</h6>
-                                  <span class="theme-bg">Advanced</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 75%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-java"></i> <i class="fab fa-android"></i> JAVA</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 66%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-python"></i> PYTHON</h6>
-                                  <span class="theme-bg">Basic</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 33%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                              </div>
-                              <div class="col-sm-6 sm-m-15px-t">
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-html5"></i> HTML5</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 66%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-css3"></i> CSS3</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 66%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-js"></i> Javascript</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 66%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                              </div>
+                              <?php for ($i=0; $i < count($_codeskilltext); $i++) { ?>
+                                <div class="col-sm-6 mt-3"><div class="progress-lt"><h6><i class="<?= $_codeskillicon[$i]; ?>"></i> <?= $_codeskilltext[$i]; ?></h6><span class="theme-bg"><?= $_codeskilllevel[$i]; ?></span><div class="progress"><div class="progress-bar" style="width: <?= $_codeskillprogress[$i]; ?>"></div><!-- /progress-bar --></div><!-- /progress --></div><!-- /progress-lt --></div>
+                              <?php } ?>
                             </div>
                           </div>
                         </div>
@@ -395,82 +237,9 @@ if (isset($_GET['lang'])) {
                           <h3 class="text-color"><?= $_otherskills; ?> <i class="fas fa-file-export"></i></h3>
                           <div class="skills">
                             <div class="row">
-                              <div class="col-sm-6">
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-youtube"></i> Vegas Pro</h6>
-                                  <span class="theme-bg">Advanced</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 99%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-youtube"></i> Davinci Resolve</h6>
-                                  <span class="theme-bg">Advanced</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 75%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-adobe"></i> Premiere Pro</h6>
-                                  <span class="theme-bg">Advanced</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 75%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-adobe"></i> Photoshop</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 66%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-adobe"></i> Lightroom</h6>
-                                  <span class="theme-bg">Intermediate</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 50%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                              </div>
-                              <div class="col-sm-6 sm-m-15px-t">
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-adobe"></i> After FX</h6>
-                                  <span class="theme-bg">Basic</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 33%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fab fa-adobe"></i> Illustrator</h6>
-                                  <span class="theme-bg">Basic</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 33%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fas fa-cube"></i> Blender</h6>
-                                  <span class="theme-bg">Basic</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 33%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                                <div class="progress-lt">
-                                  <h6><i class="fas fa-cubes"></i> Unity</h6>
-                                  <span class="theme-bg">Basic</span>
-                                  <div class="progress">
-                                    <div class="progress-bar" style="width: 33%;">
-                                    </div><!-- /progress-bar -->
-                                  </div><!-- /progress -->
-                                </div><!-- /progress-lt -->
-                              </div>
+                              <?php for ($i=0; $i < count($_otherskilltext); $i++) { ?>
+                                <div class="col-sm-6 mt-3"><div class="progress-lt"><h6><i class="<?= $_otherskillicon[$i]; ?>"></i> <?= $_otherskilltext[$i]; ?></h6><span class="theme-bg"><?= $_otherskilllevel[$i]; ?></span><div class="progress"><div class="progress-bar" style="width: <?= $_otherskillprogress[$i]; ?>"></div><!-- /progress-bar --></div><!-- /progress --></div><!-- /progress-lt --></div>
+                              <?php } ?>
                             </div>
                           </div>
                         </div>
@@ -481,36 +250,16 @@ if (isset($_GET['lang'])) {
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_experience; ?></h2>
                       <ul>
+                      <?php for ($i=0; $i < count($_experiencepos); $i++) { ?>
                         <li>
                           <div class="r-name">
                             <i class="theme-bg ti-briefcase"></i>
-                            <span class="text-color"><?= $_experiencepos2; ?> | <small><?= $_experienceent2; ?></small></span>
-                            <label><?= $_experiencetime2; ?></label>
+                            <span class="text-color"><?= $_experiencepos[$i]; ?><br><small><?= $_experienceent[$i]; ?></small></span>
+                            <label><?= $_experiencetime[$i]; ?></label>
                           </div>
-                          <div class="r-info">
-                            <p><?= $_experiencedesc2; ?></p>
-                          </div>
+                          <div class="r-info"><p><?= $_experiencedesc[$i]; ?></p></div>
                         </li>
-                        <li>
-                          <div class="r-name">
-                            <i class="theme-bg ti-briefcase"></i>
-                            <span class="text-color"><?= $_experiencepos1; ?> | <small><?= $_experienceent1; ?></small></span>
-                            <label><?= $_experiencetime1; ?></label>
-                          </div>
-                          <div class="r-info">
-                            <p><?= $_experiencedesc1; ?></p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="r-name">
-                            <i class="theme-bg ti-briefcase"></i>
-                            <span class="text-color"><?= $_experiencepos0; ?> | <small><?= $_experienceent0; ?></small></span>
-                            <label><?= $_experiencetime0; ?></label>
-                          </div>
-                          <div class="r-info">
-                            <p><?= $_experiencedesc0; ?></p>
-                          </div>
-                        </li>
+                        <?php } ?>
                       </ul>
                     </div>
                   </div> <!-- col -->
@@ -518,36 +267,12 @@ if (isset($_GET['lang'])) {
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_education; ?></h2>
                       <ul>
+                      <?php for ($i=0; $i < count($_educationprog); $i++) { ?>
                         <li>
-                          <div class="r-name">
-                            <i class="theme-bg fas fa-graduation-cap"></i>
-                            <span class="text-color"><?= $_educationcarr0; ?><br><?= $_educationinst0; ?></span>
-                          </div>
-                          <div class="r-info">
-                            <?= $_educationyear0; ?> - <small><?= $_educationprog0; ?></small>
-                            <p>GPA: 4.0<small>/5.0</small></p>
-                          </div>
+                          <div class="r-name"><i class="theme-bg fas fa-graduation-cap"></i><span class="text-color"><?= $_educationprog[$i]; ?><br><?= $_educationinst[$i]; ?></span></div>
+                          <div class="r-info"><?= $_educationyear[$i]; ?> - <?= $_educationprof[$i]; ?></div>
                         </li>
-                        <li>
-                          <div class="r-name">
-                            <i class="theme-bg fas fa-graduation-cap"></i>
-                            <span class="text-color"><?= $_educationcarr2; ?><br><?= $_educationinst2; ?></span>
-                          </div>
-                          <div class="r-info">
-                            <?= $_educationyear2; ?> - <small><?= $_educationprog2; ?></small>
-                            <p><a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a></p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="r-name">
-                            <i class="theme-bg fas fa-graduation-cap"></i>
-                            <span class="text-color"><?= $_educationcarr1; ?><br><?= $_educationinst1; ?></span>
-                          </div>
-                          <div class="r-info">
-                            <?= $_educationyear1; ?> - <small><?= $_educationprog1; ?></small>
-                            <p><a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a></p>
-                          </div>
-                        </li>
+                        <?php } ?>
                       </ul>
                     </div>
                   </div> <!-- col -->
@@ -563,21 +288,14 @@ if (isset($_GET['lang'])) {
     <div class="page" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title">
-            <div class="v-center-box d-flex align-items-end">
-              <h2><?= $_portfolio; ?></h2>
-            </div>
-            <p class="footer"><?= $_footer; ?></p>
-          </div>
+          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_portfolio; ?></h2></div><p class="footer"><?= $_footer; ?></p></div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_mywork; ?></h6>
-                  <div class="st-title">
-                    <h2 class="theme-after text-color"><?= $_myproj; ?></h2>
-                  </div>
+                  <div class="st-title"><h2 class="theme-after text-color"><?= $_myproj; ?></h2></div>
                 </div>
                 <!-- = Portfolio = -->
                 <div class="portfolio-section">
@@ -587,112 +305,20 @@ if (isset($_GET['lang'])) {
                       <li class="theme-after" data-filter=".android">Android</li>
                       <li class="theme-after" data-filter=".web">Web</li>
                       <li class="theme-after" data-filter=".windows">Windows</li>
-                      <!--li class="theme-after" data-filter=".av">AV</li-->
                       <li class="theme-after" data-filter=".expo">Expo</li>
                       <li class="theme-after" data-filter=".mention">Mention</li>
                     </ul>
                   </div> <!-- Portfolio Filter -->
                   <div class="portfolio-content">
                     <ul class="portfolio-cols portfolio-cols-3">
-                      <li class="portfolio-item web android">
+                      <?php for ($i=0; $i < count($_portfoliotitle); $i++) { ?>
+                      <li class="portfolio-item web <?= $_portfolioclass[$i]; ?>">
                         <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-1.png);"></div>
-                            <div class="hover">
-                              <div class="action-btn">
-                                <a href="https://play.google.com/store/apps/details?id=com.mateus.sda" target="_blank"><i class="fab fa-google-play"></i></a>
-                                <a href="https://semillasdealegriaespinal.com/" target="_blank" class="theme-color"><i class="fa fa-link"></i></a>
-                              </div> <!-- Video Btn -->
-                            </div> <!-- Hover -->
-                          </div>
-                          <div class="portfolio-info">
-                            <h5><?= $_sda; ?></h5>
-                            <p><?= $_sda_desc; ?></p>
-                          </div>
+                          <div class="portfolio-img"><div class="portfolio-image" style="<?= $_portfoliobg[$i]; ?>"></div><div class="hover"><div class="action-btn"><?= $_portfoliolink[$i]; ?></div> <!-- Video Btn --></div> <!-- Hover --></div>
+                          <div class="portfolio-info"><h5><?= $_portfoliotitle[$i]; ?></h5><p><?= $_portfoliodesc[$i]; ?></p></div>
                         </div> <!-- Portfolio -->
                       </li> <!-- col -->
-                      <li class="portfolio-item windows av">
-                        <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-4.jpg);"></div>
-                            <div class="hover">
-                              <div class="action-btn">
-                                <a href="https://youtu.be/RNQTSueIa-8" target="_blank"><i class="fa fa-play"></i></a>
-                                <a href="./limontech" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-4-lg.jpg" title="<?= $_lt; ?>"><i class="fas fa-expand"></i></a>
-                              </div> <!-- Video Btn -->
-                            </div> <!-- Hover -->
-                          </div>
-                          <div class="portfolio-info">
-                            <h5><?= $_lt; ?></h5>
-                            <p><?= $_lt_desc; ?></p>
-                          </div>
-                        </div> <!-- Portfolio -->
-                      </li> <!-- col -->
-                      <li class="portfolio-item web android mention">
-                        <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-5.jpg);"></div>
-                            <div class="hover">
-                              <div class="action-btn">
-                                <a href="https://play.google.com/store/apps/details?id=com.byuwur.reserv" target="_blank"><i class="fab fa-google-play"></i></a>
-                                <a href="https://www.sistemas-i-computacion-tic.com/reserv/" target="_blank" class="theme-color"><i class="fa fa-link"></i></a>
-                                <a href="./reservelapp" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-5-lg.jpg" title="<?= $_reserv; ?>"><i class="fas fa-expand"></i></a>
-                              </div> <!-- Video Btn -->
-                            </div> <!-- Hover -->
-                          </div>
-                          <div class="portfolio-info">
-                            <h5><?= $_reserv; ?></h5>
-                            <p><?= $_reserv_desc; ?></p>
-                          </div>
-                        </div> <!-- Portfolio -->
-                      </li> <!-- col -->
-                      <li class="portfolio-item web mention">
-                        <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-2.jpg);"></div>
-                            <div class="hover">
-                              <div class="action-btn">
-                                <a href="./redi" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-2-lg.jpg" title="<?= $_redi; ?>"><i class="fas fa-expand"></i></a>
-                              </div> <!-- Video Btn -->
-                            </div> <!-- Hover -->
-                          </div>
-                          <div class="portfolio-info">
-                            <h5><?= $_redi; ?></h5>
-                            <p><?= $_redi_desc; ?></p>
-                          </div>
-                        </div> <!-- Portfolio -->
-                      </li> <!-- col -->
-                      <li class="portfolio-item web mention">
-                        <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-3.jpg);"></div>
-                            <div class="hover">
-                              <div class="action-btn">
-                                <a href="./renn" target="_blank" class="theme-color"><i class="fa fa-external-link-alt"></i></a>
-                                <a class="lightbox-gallery theme-color" href="./img/work-3-lg.jpg" title="<?= $_renn; ?>"><i class="fas fa-expand"></i></a>
-                              </div> <!-- Video Btn -->
-                            </div> <!-- Hover -->
-                          </div>
-                          <div class="portfolio-info">
-                            <h5><?= $_renn; ?></h5>
-                            <p><?= $_renn_desc; ?></p>
-                          </div>
-                        </div> <!-- Portfolio -->
-                      </li> <!-- col -->
-                      <li class="portfolio-item mention expo">
-                        <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img">
-                            <div class="portfolio-image" style="background-image:url(./img/work-6.jpg);"></div>
-                          </div>
-                          <div class="portfolio-info">
-                            <h5><?= $_bootcamp; ?></h5>
-                            <p><?= $_bootcamp_desc; ?></p>
-                          </div>
-                        </div> <!-- Portfolio -->
-                      </li> <!-- col -->
+                      <?php } ?>
                     </ul> <!-- row -->
                   </div>
                 </div> <!-- portfolio content -->
@@ -702,46 +328,14 @@ if (isset($_GET['lang'])) {
                     <h2 class="text-color theme-after"><?= $_personalref; ?></h2>
                   </div>
                   <div id="client-slider-single" class="owl-carousel">
-                    <div class="testimonial-col">
-                      <div class="user">
-                        <div class="img" style="background-image:url(./img/dayessi.jpg);"></div>
-                        <div class="name">
-                          <span><?= $_testname1; ?></span>
-                          <label><?= $_testpos1; ?></label>
-                          <label><?= $_testtel1; ?></label>
+                    <?php for ($i=0; $i < count($_testname); $i++) { ?>
+                      <div class="testimonial-col">
+                        <div class="user">
+                          <div class="img" style="<?= $_testpic[$i]; ?>"></div>
+                          <div class="name"><span><?= $_testname[$i]; ?></span><label><?= $_testpos[$i]; ?></label><label><?= $_testtel[$i]; ?></label></div>
                         </div>
-                      </div>
-                    </div> <!-- col -->
-                    <div class="testimonial-col">
-                      <div class="user">
-                        <div class="img" style="background-image:url(./img/nestux.jpg);"></div>
-                        <div class="name">
-                          <span><?= $_testname4; ?></span>
-                          <label><?= $_testpos4; ?></label>
-                          <label><?= $_testtel4; ?></label>
-                        </div>
-                      </div>
-                    </div> <!-- col -->
-                    <div class="testimonial-col">
-                      <div class="user">
-                        <div class="img" style="background-image:url(./img/marco.jpg);"></div>
-                        <div class="name">
-                          <span><?= $_testname3; ?></span>
-                          <label><?= $_testpos3; ?></label>
-                          <label><?= $_testtel3; ?></label>
-                        </div>
-                      </div>
-                    </div> <!-- col -->
-                    <div class="testimonial-col">
-                      <div class="user">
-                        <div class="img" style="background-image:url(./img/jose.jpg);"></div>
-                        <div class="name">
-                          <span><?= $_testname0; ?></span>
-                          <label><?= $_testpos0; ?></label>
-                          <label><?= $_testtel0; ?></label>
-                        </div>
-                      </div>
-                    </div> <!-- col -->
+                      </div> <!-- col -->
+                    <?php } ?>
                   </div> <!-- owl -->
                 </div> <!-- testimonials-->
               </div> <!-- page-content -->
@@ -755,85 +349,34 @@ if (isset($_GET['lang'])) {
     <div class="page" id="contact">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title">
-            <div class="v-center-box d-flex align-items-end">
-              <h2><?= $_contact; ?></h2>
-            </div>
-            <p class="footer"><?= $_footer; ?></p>
-          </div>
+          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_contact; ?></h2></div><p class="footer"><?= $_footer; ?></p></div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_getintouch; ?></h6>
-                  <div class="st-title">
-                    <h2 class="theme-after text-color"><?= $_chead; ?></h2>
-                  </div>
+                  <div class="st-title"><h2 class="theme-after text-color"><?= $_chead; ?></h2></div>
                 </div>
                 <!-- = Info = -->
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="contact-info">
-                      <i class="theme-color fab fa-linkedin"></i>
-                      <a href="<?= $_linkedin; ?>">atrujillomateus</a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="contact-info">
-                      <i class="theme-color ti-email"></i>
-                      <a href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a>
-                    </div>
-                  </div>
+                  <div class="col-sm-6"><div class="contact-info"><i class="theme-color fab fa-linkedin"></i><a href="<?= $_linkedin; ?>">atrujillomateus</a></div></div>
+                  <div class="col-sm-6"><div class="contact-info"><i class="theme-color ti-email"></i><a href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a></div></div>
                 </div>
                 <!-- = Contact = -->
                 <div class="row">
                   <div class="col-12 m-30px-b sm-m-15px-b">
                     <div class="contact-form">
                       <h4 class="text-color font-alt m-20px-b"><?= $_say; ?></h4>
-                      <form class="contactform" method="post">
+                      <form class="contactform" method="POST">
                         <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" name="s_name" class="validate form-control" placeholder="<?= $_name; ?>" required>
-                              <span class="input-focus-effect theme-bg"></span>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required>
-                              <span class="input-focus-effect theme-bg"></span>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>">
-                              <span class="input-focus-effect theme-bg"></span>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required>
-                              <span class="input-focus-effect theme-bg"></span>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea>
-                              <span class="input-focus-effect theme-bg"></span>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="send">
-                              <input type="submit" name="s_enviar" class="btn btn-theme" value="<?= $_send; ?>">
-                            </div>
-                            <span class="output_message"></span>
-                          </div>
+                          <div class="col-md-6"><div class="form-group"><input type="text" name="s_name" class="validate form-control" placeholder="<?= $_name; ?>" required><span class="input-focus-effect theme-bg"></span></div></div>
+                          <div class="col-md-6"><div class="form-group"><input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required><span class="input-focus-effect theme-bg"></span></div></div>
+                          <div class="col-md-6"><div class="form-group"><input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>"><span class="input-focus-effect theme-bg"></span></div></div>
+                          <div class="col-md-6"><div class="form-group"><input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required><span class="input-focus-effect theme-bg"></span></div></div>
+                          <div class="col-md-12"><div class="form-group"><textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea><span class="input-focus-effect theme-bg"></span></div></div>
+                          <div class="col-md-6"><div class="form-group"><div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div></div></div>
+                          <div class="col-md-6"><div class="send"><input type="submit" name="s_enviar" class="btn btn-theme" value="<?= $_send; ?>"></div><span class="output_message"></span></div>
                         </div>
                       </form>
                     </div>
@@ -849,9 +392,9 @@ if (isset($_GET['lang'])) {
   </div> <!-- stack -->
   <!-- === Header === -->
   <header class="header theme-bg">
-    <div class="logo"><a href="v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
-    <div style="margin-top:3px;"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ESP</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> ENG</a></div>
-    <div class="menu-toggle" style="background-color:#000;"><button class="menu-button"><span>menu</span></button></div>
+    <div class="logo"><a href="./v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
+    <div style="margin-top:4px;"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
+    <div class="menu-toggle"><button class="menu-button"><span>menu</span></button></div>
   </header> <!-- header -->
   <!-- Plugins JS -->
   <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
@@ -926,5 +469,4 @@ if (isset($_POST['s_enviar'])) {
   }
 }
 ?>
-
 </html>

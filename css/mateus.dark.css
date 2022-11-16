@@ -39,11 +39,11 @@ Table of contents
 	width: auto;
 	height: 100vh;
 	z-index: -9;
-	-webkit-transition: ease all 0.66s;
-	-o-transition: ease all 0.66s;
-	-ms-transition: ease all 0.66s;
-	-moz-transition: ease all 0.66s;
-	transition: ease all 0.66s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 .side-video--open {
 	-webkit-transform: translateX(-50vw);
@@ -115,11 +115,11 @@ Table of contents
 a:hover,
 a:focus,
 a:active {
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 .home-banner .social-icons a:hover,
 .btn-theme,
@@ -132,11 +132,11 @@ a:active {
   01. Common
 -----------------------------------*/
 html {
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 body {
 	font-family: "Work Sans", sans-serif;
@@ -144,11 +144,11 @@ body {
 	font-size: 16px;
 	line-height: 1.75;
 	color: #fff;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 img {
 	max-width: 100%;
@@ -168,11 +168,11 @@ body.dark-body {
 	right: 0;
 	background: #111;
 	z-index: 101;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 .load-text {
 	position: absolute;
@@ -553,7 +553,9 @@ body.dark-body {
 	bottom: 0;
 	margin: auto;
 }
-
+.menu-toggle {
+	background-color:#000;
+}
 .pages-nav .link {
 	color: #fff;
 	font-size: 22px;
@@ -574,11 +576,11 @@ body.dark-body {
 	left: auto;
 	background: #fff;
 	right: 0;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 	width: 0px;
 }
 
@@ -1028,11 +1030,11 @@ body.dark-body {
 }
 .portfolio-filter li:not(.active):after {
 	background: #000;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 
 .portfolio-content {
@@ -1101,11 +1103,11 @@ body.dark-body {
 	text-align: center;
 	padding: 0;
 	width: 100%;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 }
 
 .portfolio-hover-01 .action-btn a {
@@ -1119,11 +1121,11 @@ body.dark-body {
 	margin: 8px 0;
 	color: #fff;
 	font-size: 16px;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 	-webkit-transform: translateX(-20px);
 	transform: translateX(-20px);
 }
@@ -1328,11 +1330,11 @@ body.dark-body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	-webkit-transition: ease all 0.33s;
-	-o-transition: ease all 0.33s;
-	-ms-transition: ease all 0.33s;
-	-moz-transition: ease all 0.33s;
-	transition: ease all 0.33s;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
 	height: 2px;
 }
 
