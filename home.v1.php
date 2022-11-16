@@ -61,10 +61,7 @@ if (isset($_GET['lang'])) {
     <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() {dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-148227598-1');
     </script>
@@ -87,8 +84,7 @@ if (isset($_GET['lang'])) {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <small style="margin: 15px 0px;"><a href="es.v1" class="a-logo" title="Español"><img src="./img/co.png" alt="" /> ESP</a>
-                    <a href="en.v1" class="a-logo" title="English"><img src="./img/uk.png" alt="" /> ENG</a></small>
+                <small style="margin: 15px 0px;"><a href="es.v1" class="a-logo" title="Español"><img src="./img/co.png" alt="" /> ES</a><a href="en.v1" class="a-logo" title="English"><img src="./img/uk.png" alt="" /> EN</a></small>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><?= $_helloworld; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><?= $_skills; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><?= $_portfolio; ?></a></li>
@@ -109,7 +105,7 @@ if (isset($_GET['lang'])) {
                 <hr>
                 <p class="lead"><?= $_about; ?></p>
                 <div class="subheading">
-                    | <a href="tel:<?= $_linkedin; ?>"><?= str_replace("https://","",$_linkedin); ?></a> | <small><a class="a-logo" href="resume.es" target="_blank">Resume en español</a> | <a class="a-logo" href="resume.en" target="_blank">Resume in english</a></small> |
+                    | <a href="<?= $_linkedin; ?>"><?= $_linkedin; ?></a> | <small><a class="a-logo" href="resume.es" target="_blank">Resume en español</a> | <a class="a-logo" href="resume.en" target="_blank">Resume in english</a></small> |
                 </div>
                 <br>
                 <div class="social-icons">
@@ -140,37 +136,21 @@ if (isset($_GET['lang'])) {
                 <h2 class="mb-5"><?= $_skills; ?></h2>
                 <div class="subheading mb-3"><?= $_languages; ?></div>
                 <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-android"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                    <li class="list-inline-item"><i class="fas fa-database"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                    <!--li class="list-inline-item"><i class="fab fa-adobe"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-youtube"></i></li-->
+                <?php for ($i=0; $i < count($_codeskillicon); $i++) { ?>
+                    <li class="list-inline-item"><i class="<?= $_codeskillicon[$i]; ?>"></i></li>
+                <?php } ?>
                 </ul>
                 <div class="subheading mb-2">SOFTWARE:</div>
                 <ul class="row fa-ul mb-3">
-                    <li class="col-12 col-sm-6"><i class="fa-li fab fa-youtube"></i>Vegas PRO</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fab fa-youtube"></i>Davinci Resolve</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fab fa-adobe"></i>Premiere Pro</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fab fa-adobe"></i>Photoshop - Lightroom</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fab fa-adobe"></i>After Effects</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fab fa-adobe"></i>Illustrator</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fas fa-cube"></i>Blender</li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fas fa-cubes"></i>Unity</li>
+                <?php for ($i=0; $i < count($_otherskilltext); $i++) { ?>
+                    <li class="col-12 col-sm-6"><i class="fa-li <?= $_otherskillicon[$i]; ?>"></i><?= $_otherskilltext[$i]." - ".$_otherskilllevel[$i]; ?></li>
+                <?php } ?>
                 </ul>
-                <div class="subheading mb-2"><?= $_thingies; ?></div>
+                <div class="subheading mb-2"><?= $_things; ?></div>
                 <ul class="row fa-ul mb-0">
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies0; ?></li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies1; ?></li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies2; ?></li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies3; ?></li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies4; ?></li>
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies5; ?></li>
+                <?php for ($i=0; $i < count($_thingies); $i++) { ?>
+                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies[$i]; ?></li>
+                <?php } ?>
                 </ul>
             </div>
             <?= $_goto; ?>
@@ -181,13 +161,9 @@ if (isset($_GET['lang'])) {
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_portfolio; ?></h2>
                 <ul class="fa-ul mb-0">
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio6; ?></li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio5; ?></li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio4; ?></li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio3; ?></li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio2; ?></li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio1; ?></li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portfolio0; ?></li>
+                <?php for ($i=0; $i < count($_portafolio); $i++) { ?>
+                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portafolio[$i]; ?></li>
+                <?php } ?>
                 </ul>
             </div>
             <?= $_goto; ?>
@@ -197,36 +173,12 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_experience; ?></h2>
+                <?php for ($i=0; $i < count($_experiencepos); $i++) { ?>
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"><?= $_experiencepos2; ?></h3>
-                        <div class="subheading"><?= $_experienceent2; ?></div>
-                        <div><?= $_experiencedesc2; ?></div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary"><?= $_experiencetime2; ?></span>
-                    </div>
+                    <div class="resume-content mr-auto"><h3 class="mb-0"><?= $_experiencepos[$i]; ?></h3><div class="subheading"><?= $_experienceent[$i]; ?></div><div><?= $_experiencedesc[$i]; ?></div></div>
+                    <div class="resume-date text-md-right"><span class="text-primary"><?= $_experiencetime[$i]; ?></span></div>
                 </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"><?= $_experiencepos1; ?></h3>
-                        <div class="subheading"><?= $_experienceent1; ?></div>
-                        <div><?= $_experiencedesc1; ?></div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary"><?= $_experiencetime1; ?></span>
-                    </div>
-                </div>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"><?= $_experiencepos0; ?></h3>
-                        <div class="subheading"><?= $_experienceent0; ?></div>
-                        <div><?= $_experiencedesc0; ?></div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary"><?= $_experiencetime0; ?></span>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             <?= $_goto; ?>
         </section>
@@ -235,40 +187,12 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="education">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_education; ?></h2>
-                <div class="resume-item d-flex flex-column flex-md-row mb-3">
+                <?php for ($i=0; $i < count($_educationprog); $i++) { ?>
                     <div class="resume-item d-flex flex-column flex-md-row mb-3">
-                        <div class="resume-content mr-auto">
-                            <h3 class="mb-0"><?= $_educationinst0; ?></h3>
-                            <div class="subheading"><?= $_educationcarr0; ?></div>
-                            <?= $_educationprog0; ?>
-                            <p>GPA: 4.1<font size="2">/5.0</font>
-                            </p>
-                        </div>
-                        <div class="resume-date text-md-right">
-                            <span class="text-primary"><?= $_educationyear0; ?></span>
-                        </div>
+                        <div class="resume-content mr-auto"><h3 class="mb-0"><?= $_educationprog[$i]; ?></h3><div class="subheading"><?= $_educationinst[$i]; ?></div><p><?= $_educationprof[$i]; ?></p></div>
+                        <div class="resume-date text-md-right"><span class="text-primary"><?= $_educationyear[$i]; ?></span></div>
                     </div>
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"><?= $_educationinst2; ?></h3>
-                        <div class="subheading"><?= $_educationcarr2; ?></div>
-                        <div><?= $_educationprog2; ?></div>
-                        <p><a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a></p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary"><?= $_educationyear2; ?></span>
-                    </div>
-                    <div class="resume-item d-flex flex-column flex-md-row mb-3">
-                        <div class="resume-content mr-auto">
-                            <h3 class="mb-0"><?= $_educationinst1; ?></h3>
-                            <div class="subheading"><?= $_educationcarr1; ?></div>
-                            <div><?= $_educationprog1; ?></div>
-                            <p><a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a></p>
-                        </div>
-                        <div class="resume-date text-md-right">
-                            <span class="text-primary"><?= $_educationyear1; ?></span>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             <?= $_goto; ?>
         </section>
@@ -277,10 +201,7 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="contact">
             <div class="my-auto">
                 <div class="container-fluid">
-                    <div class="row">
-                        <h2 class="colorlib-heading"><?= $_chead; ?></h2>
-                    </div>
-                    <br>
+                    <div class="row"><h2 class="colorlib-heading"><?= $_chead; ?></h2></div><br>
                     <div class="row">
                         <div class="col-md-5 col-md-pull-6 my-auto" style="margin-bottom: 2em;">
                             <hr>
@@ -303,26 +224,14 @@ if (isset($_GET['lang'])) {
                         </div>
                         <div class="col-md-7 col-md-push-6 my-auto">
                             <div class="col-md-12">
-                                <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-                                    <div class="form-group col-md-pull-12">
-                                        <input type="text" name="s_name" class="form-control" placeholder="<?= $_name; ?>" required>
-                                    </div>
-                                    <div class="form-group col-md-pull-12">
-                                        <input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required>
-                                    </div>
-                                    <div class="form-group col-md-pull-12">
-                                        <input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>">
-                                    </div>
-                                    <div class="form-group col-md-pull-12">
-                                        <input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required>
-                                    </div>
-                                    <div class="form-group col-md-pull-12">
-                                        <textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea>
-                                    </div>
+                                <form method="POST">
+                                    <div class="form-group col-md-pull-12"><input type="text" name="s_name" class="form-control" placeholder="<?= $_name; ?>" required></div>
+                                    <div class="form-group col-md-pull-12"><input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required></div>
+                                    <div class="form-group col-md-pull-12"><input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>"></div>
+                                    <div class="form-group col-md-pull-12"><input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required></div>
+                                    <div class="form-group col-md-pull-12"><textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea></div>
                                     <div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div><br>
-                                    <div class="form-group col-md-pull-12">
-                                        <input type="submit" name="s_enviar" class="a-logo" value="<?= $_send; ?>">
-                                    </div>
+                                    <div class="form-group col-md-pull-12"><input type="submit" name="s_enviar" class="a-logo" value="<?= $_send; ?>"></div>
                                 </form>
                             </div>
                         </div>
@@ -335,7 +244,7 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="interests">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_interest; ?></h2>
-                <p><?= $_interest0; ?></p>
+                <p><?= $_interesting; ?></p>
             </div>
             <?= $_goto; ?>
         </section>
@@ -406,5 +315,4 @@ if (isset($_POST['s_enviar'])) {
     }
 }
 ?>
-
 </html>
