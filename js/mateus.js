@@ -6,9 +6,9 @@
 	var loading = document.getElementById("loading");
 	by.WebLoad = function() {
 		if (loading.style.visibility == "hidden" || loading.style.display == "none") {
-			loading.style.visibility = "visible"; loading.style.opacity = "1"; //loading.style.display = "block";
+			loading.style.visibility = "visible"; loading.style.opacity = "1"; setTimeout(function(){loading.style.display = "block";}, 1000);
 		} else {
-			loading.style.visibility = "hidden"; loading.style.opacity = "0"; //loading.style.display = "none";
+			loading.style.visibility = "hidden"; loading.style.opacity = "0"; setTimeout(function(){loading.style.display = "none";}, 1000);
 		}
 	};
 
@@ -147,19 +147,10 @@
 	//Document on ready
 	$(document).ready(function() {
 		by.ClientSlider(),
-			by.BlogSlider(),
-			by.MasoNry(),
-			by.PopupVideo(),
-			by.LightboxGallery(),
-			by.mTypeIt();
+		by.BlogSlider(),
+		by.MasoNry(),
+		by.PopupVideo(),
+		by.LightboxGallery(),
+		by.mTypeIt();
 	});
-	//Video
-	var banner = document.querySelector(".side-video");
-	var bannerVideo = document.querySelector(".side-video");
-	if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-		banner.style.backgroundImage = 'url("' + bannerVideo.poster + '")';
-		banner.style.backgroundSize = "cover";
-		banner.style.backgroundPosition = "center";
-		bannerVideo.style.display = "none";
-	}
 })(jQuery);
