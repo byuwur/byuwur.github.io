@@ -24,6 +24,8 @@ $_load="<font size='4'><strong>Cargando vista estándar...</strong></font><br>¿
 $_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus<br><a href='v1'>cargar HTML básico</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>claro</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>oscuro</a> <a class='hidden' href='claro'>claro</a><a class='hidden' href='oscuro'>oscuro</a><br><a href='./mnm.team/sitemap' target='_self'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' target='_self'>cookie policy</a></small>";
 $_cv="Descargar Resume";
 $_hire="Contrátame";
+$_go="Ver";
+$_gostart="Inicio";
 
 #about
 $_whoiam="Quien soy";

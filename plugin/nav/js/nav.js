@@ -147,7 +147,8 @@
 		// reveal the menu
 		classie.add(nav, "pages-nav--open");
 		// hide the video 
-		classie.add(sidevideo, "side-video--open");
+		sidevideo.style.removeProperty("animation");
+		setTimeout(function(){classie.add(sidevideo, "side-video--open")},250);
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();
@@ -193,6 +194,7 @@
 		classie.remove(menuCtrl, "menu-button--open");
 		classie.remove(nav, "pages-nav--open");
 		classie.remove(sidevideo, "side-video--open");
+		setTimeout(function(){sidevideo.style.setProperty("animation", "float 5s infinite")},500);
 		onEndTransition(futurePage, function() {
 			classie.remove(stack, "pages-stack--open");
 			// reorganize stack

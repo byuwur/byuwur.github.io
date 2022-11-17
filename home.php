@@ -103,14 +103,15 @@ if (isset($_GET['lang'])) {
   <!-- === Particles === -->
   <div id="particles"></div>
   <!-- === Side video === -->
-  <video class="side-video" autoplay muted loop><source src="./img/side.mp4" type="video/mp4" /></video>
+  <div class="side-video" style="animation: float 5s infinite;"></div>
+  <!--video class="side-video" muted loop><source src="./img/side.mp4" type="video/mp4" /></video-->
   <!-- === Navigation === -->
   <nav class="pages-nav">
-    <div class="pages-nav__item"><a class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#resume"><?= $_resume; ?></a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#portfolio"><?= $_portfolio; ?></a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
-    <div class="pages-nav__item"><a class="link link--page" href="#contact"><?= $_contact; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-home"class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-resume" class="link link--page" href="#resume"><?= $_resume; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-portfolio" class="link link--page" href="#portfolio"><?= $_portfolio; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-about" class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-contact" class="link link--page" href="#contact"><?= $_contact; ?></a></div>
   </nav>
   <!-- === Stack === -->
   <div class="pages-stack">
@@ -131,7 +132,7 @@ if (isset($_GET['lang'])) {
                   <div class="home-text">
                     <h6 class="text-color theme-after"><?= $_helloworld; ?></h6>
                     <h1 class="text-color blue-after"><?= $_im; ?> Mateus Andrés</h1>
-                    <p><?= $_andim; ?> <span id="type-it"></span></p>
+                    <p><?= $_andim; ?> <span id="type-it"></span></p><br>
                     <div class="social-icons">
                       <a href="<?= $_linkedin; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
                       <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -143,7 +144,14 @@ if (isset($_GET['lang'])) {
                     <div class="btn-bar">
                       <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
                       <br><br><a href="ui-kit">UI kit preview</a>
-                      <br><br><?= $_goto; ?>
+                      <br><br><div class="row">
+                        <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                        <a href="javascript:resume();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                        <a href="javascript:portfolio();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                        <a href="javascript:about();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                        <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                      </div>
+                      <br><?= $_goto; ?>
                     </div>
                   </div>
                 </div>
@@ -394,7 +402,7 @@ if (isset($_GET['lang'])) {
   <header class="header theme-bg">
     <div class="logo"><a href="./v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
     <div style="margin-top:4px;"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
-    <div class="menu-toggle"><button class="menu-button"><span>menu</span></button></div>
+    <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
   </header> <!-- header -->
   <!-- Plugins JS -->
   <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
@@ -412,6 +420,12 @@ if (isset($_GET['lang'])) {
   <!-- Cookie consent -->
   <script type="text/javascript" src="./js/cookies.js"></script>
   <script type="text/javascript">
+    function home(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-home").click();},1000);}
+    function resume(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-resume").click();},1000);}
+    function portfolio(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-portfolio").click();},1000);}
+    function about(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-about").click();},1000);}
+    function contact(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-contact").click();},1000);}
+
     document.addEventListener('DOMContentLoaded', function() {
       cookieconsent.run({
         "notice_banner_type": "simple",
