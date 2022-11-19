@@ -148,7 +148,7 @@
 		classie.add(nav, "pages-nav--open");
 		// hide the video 
 		sidevideo.style.removeProperty("animation");
-		setTimeout(function(){classie.add(sidevideo, "side-video--open")},250);
+		setTimeout(function(){classie.add(sidevideo, "side-video--open")},50);
 
 		// now set the page transforms
 		var stackPagesIdxs = getStackPagesIdxs();

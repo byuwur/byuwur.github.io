@@ -754,6 +754,7 @@ body.dark-body {
 		display: none;
 	}
 	.side-video {
+		filter: blur(6px);
 		width: 200vw;
 		left: -100vw;
 	}

@@ -108,9 +108,9 @@ if (isset($_GET['lang'])) {
   <!-- === Navigation === -->
   <nav class="pages-nav">
     <div class="pages-nav__item"><a id="btn-home"class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-about" class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
     <div class="pages-nav__item"><a id="btn-resume" class="link link--page" href="#resume"><?= $_resume; ?></a></div>
     <div class="pages-nav__item"><a id="btn-portfolio" class="link link--page" href="#portfolio"><?= $_portfolio; ?></a></div>
-    <div class="pages-nav__item"><a id="btn-about" class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
     <div class="pages-nav__item"><a id="btn-contact" class="link link--page" href="#contact"><?= $_contact; ?></a></div>
   </nav>
   <!-- === Stack === -->
@@ -132,26 +132,26 @@ if (isset($_GET['lang'])) {
                   <div class="home-text">
                     <h6 class="text-color theme-after"><?= $_helloworld; ?></h6>
                     <h1 class="text-color blue-after"><?= $_im; ?> Mateus Andrés</h1>
-                    <p><?= $_andim; ?> <span id="type-it"></span></p><br>
+                    <p><?= $_andim; ?> <span id="type-it"></span></p>
                     <div class="social-icons">
                       <a href="<?= $_linkedin; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
-                      <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
                       <a href="<?= $_github; ?>" target="_blank"><i class="fab fa-github"></i></a>
+                      <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
                       <a href="<?= $_facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
                       <a href="<?= $_instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
-                      <a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <!--a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a-->
                     </div>
                     <div class="btn-bar">
                       <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
-                      <br><br><a href="ui-kit">UI kit preview</a>
-                      <br><br><div class="row">
-                        <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                        <a href="javascript:resume();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                        <a href="javascript:portfolio();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                        <a href="javascript:about();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                        <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                      <hr class="my-1" /><a href="ui-kit">UI kit preview</a><hr class="my-1" />
+                      <!-- = Nav shortcut = -->
+                      <div class="row p-2">
+                        <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                        <a href="javascript:resume();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                        <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                        <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                       </div>
-                      <br><?= $_goto; ?>
+                      <?= $_goto; ?>
                     </div>
                   </div>
                 </div>
@@ -199,10 +199,17 @@ if (isset($_GET['lang'])) {
                       <div class="counter-col counter-box"><div class="counter-data" data-count="375"><i class="theme-color ti-ruler-pencil"></i><div class="count text-color">5</div><a href="<?= $_github; ?>" target="_blank"><h6>Projects</h6></a></div></div>
                       <br><a href="ui-kit">&& UI kit preview</a>
                     </div> <!-- col -->
-                    <div class="col-12 col-md-4 md-m-15px-tb"><h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe></div> <!-- col -->
-                    <div class="col-12 col-md-5 md-m-15px-tb"><h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe></div> <!-- col -->
+                    <div class="col-12 col-md-4 md-m-15px-tb"><h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe></div> <!-- col -->
+                    <div class="col-12 col-md-5 md-m-15px-tb"><h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe></div> <!-- col -->
                   </div> <!-- row -->
                 </div>
+                <!-- = Nav shortcut = -->
+                  <div class="row p-2">
+                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                    <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                    <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                  </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -285,6 +292,13 @@ if (isset($_GET['lang'])) {
                     </div>
                   </div> <!-- col -->
                 </div> <!-- row -->
+                <!-- = Nav shortcut = -->
+                  <div class="row p-2">
+                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                    <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                    <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                  </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -346,6 +360,13 @@ if (isset($_GET['lang'])) {
                     <?php } ?>
                   </div> <!-- owl -->
                 </div> <!-- testimonials-->
+                <!-- = Nav shortcut = -->
+                  <div class="row p-2">
+                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                    <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                    <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                  </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -390,6 +411,13 @@ if (isset($_GET['lang'])) {
                     </div>
                   </div> <!-- col -->
                 </div>
+                <!-- = Nav shortcut = -->
+                  <div class="row p-2">
+                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                    <a href="javascript:about();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                    <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                  </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -420,11 +448,11 @@ if (isset($_GET['lang'])) {
   <!-- Cookie consent -->
   <script type="text/javascript" src="./js/cookies.js"></script>
   <script type="text/javascript">
-    function home(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-home").click();},1000);}
-    function resume(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-resume").click();},1000);}
-    function portfolio(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-portfolio").click();},1000);}
-    function about(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-about").click();},1000);}
-    function contact(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-contact").click();},1000);}
+    function home(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-home").click();},500);}
+    function resume(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-resume").click();},500);}
+    function portfolio(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-portfolio").click();},500);}
+    function about(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-about").click();},500);}
+    function contact(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-contact").click();},500);}
 
     document.addEventListener('DOMContentLoaded', function() {
       cookieconsent.run({
