@@ -4,7 +4,7 @@
 
 <p>Last updated: November 10, 2019</p>
 
-<p>mnm.team ("us", "we", or "our") uses cookies on the https://somosmnm.000webhostapp.com website (the "Service"). By using the Service, you consent to the use of cookies.</p>
+<p>mnm.team ("us", "we", or "our") uses cookies on the https://byuwur.net website (the "Service"). By using the Service, you consent to the use of cookies.</p>
 
 <p>Our Cookies Policy explains what cookies are, how we use cookies, how third-parties we may partner with may use cookies on the Service, your choices regarding cookies and further information about cookies. Our Cookies Policy  for mnm.team is managed by <a href="https://www.privacypolicies.com/">Privacy Policies</a>.</p>
 

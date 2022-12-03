@@ -34,7 +34,7 @@ if (isset($_GET['lang'])) {
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="Mateus [byUwUr]" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://somosmnm.000webhostapp.com/img/icon.png" />
+    <meta property="og:image" content="https://byuwur.net/img/icon.png" />
     <meta property="og:url" content="https://byuwur.github.io/" />
     <meta property="og:site_name" content="Mateus [byUwUr]" />
     <meta property="og:description" content="Mateus' portfolio" />
@@ -117,11 +117,11 @@ if (isset($_GET['lang'])) {
                     <a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-5 col-md-4">
+                    <div class="col-12 col-sm-5">
                         <br><h6>Digital Business Card v2</h6>
                         <iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
                     </div> <!-- col -->
-                    <div class="col-12 col-sm-7 col-md-4">
+                    <div class="col-12 col-sm-7">
                         <br><h6>Digital Business Card v1</h6>
                         <iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
                     </div> <!-- col -->

@@ -62,7 +62,7 @@ require("./header.php");
                     <div class="about-desc animate-box" data-animate-effect="fadeInLeft" style="text-align:center;"><?= $_we; ?></div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
                         <div class="project" style="height:99%; background-image: url(../img/port_mateus.jpg);">
-                            <a href="mateus">
+                            <a href="../">
                                 <div class="desc" style="padding:1em;">
                                     <h3>MATEUS' <small>PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(mateus);</small></span>
@@ -72,7 +72,7 @@ require("./header.php");
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
                         <div class="project" style="height:99%; background-image: url(../img/port_nestux.jpg);">
-                            <a href="nestux">
+                            <a href="../nestux">
                                 <div class="desc" style="padding:1em;">
                                     <h3>NESTUX' <small>PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(nestux);</small></span>
@@ -82,7 +82,7 @@ require("./header.php");
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
                         <div class="project" style="height:99%; background-image: url(../img/port_marco.jpg);">
-                            <a href="marco">
+                            <a href="../marco">
                                 <div class="desc" style="padding:1em;">
                                     <h3>MARCO'<small>s PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(marco);</small></span>

@@ -34,8 +34,8 @@ if (isset($_GET['lang'])) {
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="Marco Cortés" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://somosmnm.000webhostapp.com/marco/img/icon.png" />
-    <meta property="og:url" content="https://somosmnm.000webhostapp.com/marco/" />
+    <meta property="og:image" content="https://byuwur.net/marco/img/icon.png" />
+    <meta property="og:url" content="https://byuwur.net/marco/" />
     <meta property="og:site_name" content="Marco Cortés" />
     <meta property="og:description" content="Soy Marco y este es mi portfolio." />
     <!-- Meta tags -->
