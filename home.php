@@ -107,7 +107,7 @@ if (isset($_GET['lang'])) {
   <!--video class="side-video" muted loop><source src="./img/side.mp4" type="video/mp4" /></video-->
   <!-- === Navigation === -->
   <nav class="pages-nav">
-    <div class="pages-nav__item"><a id="btn-home"class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
+    <div class="pages-nav__item"><a id="btn-home" class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
     <div class="pages-nav__item"><a id="btn-about" class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
     <div class="pages-nav__item"><a id="btn-resume" class="link link--page" href="#resume"><?= $_resume; ?></a></div>
     <div class="pages-nav__item"><a id="btn-portfolio" class="link link--page" href="#portfolio"><?= $_portfolio; ?></a></div>
@@ -143,7 +143,7 @@ if (isset($_GET['lang'])) {
                     </div>
                     <div class="btn-bar">
                       <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
-                      <hr class="my-1" /><a href="ui-kit">UI kit preview</a><hr class="my-1" />
+                      <hr class="my-1" /><a href="ui-kit">UI kit preview</a><hr class="my-1" /><!-- = Nav shortcut = -->
                       <!-- = Nav shortcut = -->
                       <div class="row p-2">
                         <a href="javascript:about();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
@@ -293,10 +293,10 @@ if (isset($_GET['lang'])) {
                   </div> <!-- col -->
                 </div> <!-- row -->
                 <!-- = Nav shortcut = -->
-                  <div class="row p-2">
+                <div class="row p-2">
                     <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                     <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                    <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                     <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                   </div>
               </div> <!-- page-content -->
@@ -361,7 +361,7 @@ if (isset($_GET['lang'])) {
                   </div> <!-- owl -->
                 </div> <!-- testimonials-->
                 <!-- = Nav shortcut = -->
-                  <div class="row p-2">
+                <div class="row p-2">
                     <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                     <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                     <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
