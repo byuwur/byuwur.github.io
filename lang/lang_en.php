@@ -119,16 +119,8 @@ $_otherskillicon[]="fab fa-adobe";
 $_otherskilltext[]="After FX";
 $_otherskilllevel[]="Basic";
 $_otherskillprogress[]="33%";
-$_otherskillicon[]="fab fa-adobe";
-$_otherskilltext[]="Illustrator";
-$_otherskilllevel[]="Basic";
-$_otherskillprogress[]="25%";
 $_otherskillicon[]="fas fa-cubes";
-$_otherskilltext[]="Unity";
-$_otherskilllevel[]="Basic";
-$_otherskillprogress[]="25%";
-$_otherskillicon[]="fas fa-cube";
-$_otherskilltext[]="Blender";
+$_otherskilltext[]="Unity/Blender";
 $_otherskilllevel[]="Basic";
 $_otherskillprogress[]="25%";
 
@@ -231,6 +223,14 @@ $_portafolio[]="<a target='_blank' href='https://redcolsi.org/web/'><strong>Work
 $_interesting="In addition to programming and development, I also like to perform design, multimedia editing, teaching, perfecting my work and video games. Also highlight my domain of English as a second language and Spanish.<br>Always willing to help improve my team and the community, improve myself and learn what the industry throws.<br>I really enjoy teamwork, lead and interact with people.<br>I have also worked with the IDE of Android Studio (IntelliJ IDEA) and Eclipse for Java, also other software such as Vegas PRO, Premiere Pro, Davinci Resolve, Photoshop, Lightroom, After Effects, Unity, Blender and version control with Git, a little bit of everything.";
 
 #experience
+$_experiencepos[]="SOFTWARE DEVELOPMENT ANALYST";
+$_experienceent[]="<a href='https://nxs.com.co/' target='_blank'>Nexos Software</a>";
+$_experiencedesc[]="Performed as an implementer and support developer using tools tailored to the client.";
+$_experiencetime[]="Since August 2022";
+$_experiencepos[]="BACKEND WEB DEVELOPMENT";
+$_experienceent[]="<a href='https://rivka.mx/' target='_blank'>Rivka.mx</a>";
+$_experiencedesc[]="Performed as an implementation and support developer using mainly PHP, along with MySQL, HTML5, CSS and JS.";
+$_experiencetime[]="August 2022 - June 2023";
 $_experiencepos[]="WEB DEVELOPMENT: GRADING PLATFORM";
 $_experienceent[]="<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>";
 $_experiencedesc[]="Grading platform.";

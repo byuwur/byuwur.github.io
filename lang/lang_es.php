@@ -119,16 +119,8 @@ $_otherskillicon[]="fab fa-adobe";
 $_otherskilltext[]="After FX";
 $_otherskilllevel[]="Basic";
 $_otherskillprogress[]="33%";
-$_otherskillicon[]="fab fa-adobe";
-$_otherskilltext[]="Illustrator";
-$_otherskilllevel[]="Basic";
-$_otherskillprogress[]="25%";
 $_otherskillicon[]="fas fa-cubes";
-$_otherskilltext[]="Unity";
-$_otherskilllevel[]="Basic";
-$_otherskillprogress[]="25%";
-$_otherskillicon[]="fas fa-cube";
-$_otherskilltext[]="Blender";
+$_otherskilltext[]="Unity/Blender";
 $_otherskilllevel[]="Basic";
 $_otherskillprogress[]="25%";
 
@@ -231,6 +223,14 @@ $_portafolio[]="<a target='_blank' href='https://redcolsi.org/web/'><strong>Tall
 $_interesting="Además de la programación y el desarrollo de soluciones, también me gusta realizar labores de diseño, edición multimedia, enseñar, perfeccionar mi trabajo y los videojuegos. Destaco mi dominio de Inglés como segunda lengua y Español.<br>Siempre dispuesto a ayudar a mejorar a mi equipo y la comunidad, superarme y aprender lo que la industria me arroje.<br>Disfruto mucho el trabajo en equipo, liderar e la interacción con las personas.<br>He trabajado con los IDE de Android Studio (IntelliJ IDEA) y Eclipse para Java, además de software como Vegas PRO, Premiere Pro, Davinci Resolve, Photoshop, Lightroom, After Effects, Unity, Blender y control de versiones con Git, un poco de todo.";
 
 #experience
+$_experiencepos[]="ANALISTA DE DESARROLLO DE SOFTWARE";
+$_experienceent[]="<a href='https://nxs.com.co/' target='_blank'>Nexos Software</a>";
+$_experiencedesc[]="Desempeño como desarrollador implementador y de soporte usando herramientas a la medida del cliente.";
+$_experiencetime[]="Desde Agosto 2022";
+$_experiencepos[]="DESARROLLO WEB BACKEND";
+$_experienceent[]="<a href='https://rivka.mx/' target='_blank'>Rivka.mx</a>";
+$_experiencedesc[]="Desempeño como desarrollador implementador y de soporte usando principalmente PHP, junto a MySQL, HTML5, CSS y JS.";
+$_experiencetime[]="Agosto 2022 - Junio 2023";
 $_experiencepos[]="DESARROLLO WEB: PLATAFORMA DE NOTAS";
 $_experienceent[]="<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>";
 $_experiencedesc[]="Plataforma de calificaciones.";
