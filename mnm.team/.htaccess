@@ -15,9 +15,6 @@ ErrorDocument 504 /error.php?e=504
 #Alternate Index
 #DirectoryIndex home.php
 DirectoryIndex home.php
-#'Subdomains'
-RewriteCond %{HTTP_HOST} (.*)\.mnm\.team$
-RewriteRule ^/(.*) /%1/$1 [R]
 #Misc
 RewriteRule ^es/?$ ?lang=es [NE,QSA]
 RewriteRule ^en/?$ ?lang=en [NE,QSA]

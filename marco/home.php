@@ -46,8 +46,8 @@ if (isset($_GET['lang'])) {
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="Mateus [byUwUr]" />
     <meta name="theme-color" content="#222" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <!-- Bootstrap core CSS -->
     <link href="../plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
     <!-- Custom fonts for this template -->

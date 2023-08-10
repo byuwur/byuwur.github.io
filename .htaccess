@@ -3,14 +3,14 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 #Error Handler
-ErrorDocument 404 /mateus/error.php?e=404
-ErrorDocument 403 /mateus/error.php?e=403
-ErrorDocument 401 /mateus/error.php?e=401
-ErrorDocument 400 /mateus/error.php?e=400
-ErrorDocument 500 /mateus/error.php?e=500
-ErrorDocument 502 /mateus/error.php?e=502
-ErrorDocument 503 /mateus/error.php?e=503
-ErrorDocument 504 /mateus/error.php?e=504
+ErrorDocument 404 /error.php?e=404
+ErrorDocument 403 /error.php?e=403
+ErrorDocument 401 /error.php?e=401
+ErrorDocument 400 /error.php?e=400
+ErrorDocument 500 /error.php?e=500
+ErrorDocument 502 /error.php?e=502
+ErrorDocument 503 /error.php?e=503
+ErrorDocument 504 /error.php?e=504
 #Alternate Index
 DirectoryIndex home.php
 #Language
@@ -28,8 +28,8 @@ RewriteRule ^resume.en/?$ resume.en.pdf [NE,QSA]
 #Old
 RewriteRule ^old/?$ home.v1.php [NE,QSA]
 RewriteRule ^v1/?$ home.v1.php [NE,QSA]
-RewriteRule ^es.v1/?$ home.v1.php?lang=es [NE,QSA]
-RewriteRule ^en.v1/?$ home.v1.php?lang=en [NE,QSA]
+RewriteRule ^v1.es/?$ home.v1.php?lang=es [NE,QSA]
+RewriteRule ^v1.e/?$ home.v1.php?lang=en [NE,QSA]
 #ANTISPAM
 #Block proxies almost of all kind. - tested HMA High +KA and did not passed.
 RewriteCond %{HTTP:HTTP_VIA}      !^$ [OR]
