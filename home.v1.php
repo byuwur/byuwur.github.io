@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <?php
-if (isset($_GET['lang'])) {
-    if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-        require("lang/lang_" . $_GET['lang'] . ".php");
-        setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-        echo "<html lang='" . $_GET['lang'] . "'>";
-        $lang = $_GET['lang'];
-    } else {
-        setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-        //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+if (isset($_GET['lang']))
+    switch ($_GET['lang']) {
+        case 'es':
+        case 'en':
+            require_once "lang/lang_" . $_GET['lang'] . ".php";
+            setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
+            echo "<html lang='" . $_GET['lang'] . "'>";
+            $lang = $_GET['lang'];
+            break;
     }
-} else if (isset($_COOKIE['lang'])) {
-    if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-        require("lang/lang_" . $_COOKIE['lang'] . ".php");
-        echo "<html lang='" . $_COOKIE['lang'] . "'>";
-        $lang = $_COOKIE['lang'];
-    } else {
-        setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-        //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+else if (isset($_COOKIE['lang']))
+    switch ($_COOKIE['lang']) {
+        case 'es':
+        case 'en':
+            require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
+            echo "<html lang='" . $_COOKIE['lang'] . "'>";
+            $lang = $_COOKIE['lang'];
+            break;
     }
-} else {
-    require("lang/lang_es.php");
-    echo "<html lang='es'>";
-    $lang = "es";
+else {
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+    header("Location: ./");
 }
 ?>
 
@@ -35,14 +32,14 @@ if (isset($_GET['lang'])) {
     <meta property="og:title" content="Mateus [byUwUr]" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/img/icon.png" />
-    <meta property="og:url" content="https://byuwur.github.io/" />
+    <meta property="og:url" content="https://byuwur.net" />
     <meta property="og:site_name" content="Mateus [byUwUr]" />
-    <meta property="og:description" content="Mateus' portfolio" />
+    <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
     <!-- Meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Language" content="en,es" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Mateus' portfolio" />
+    <meta name="description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
     <meta name="author" content="Andrés Trujillo Mateus" />
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="Mateus [byUwUr]" />
@@ -61,7 +58,10 @@ if (isset($_GET['lang'])) {
     <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
-        function gtag() {dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-148227598-1');
     </script>
@@ -101,7 +101,8 @@ if (isset($_GET['lang'])) {
         <!-- about section -->
         <section class="resume-section p-2 d-flex d-column" id="about">
             <div class="my-auto">
-                <h1 class="mb-0 align-bottom"><?= $_name_top; ?></h1><font class="align-bottom" style="text-transform: uppercase;"><?= $_nombre; ?></font>
+                <h1 class="mb-0 align-bottom"><?= $_name_top; ?></h1>
+                <font class="align-bottom" style="text-transform: uppercase;"><?= $_nombre; ?></font>
                 <hr>
                 <p class="lead"><?= $_about; ?></p>
                 <div class="subheading">
@@ -118,11 +119,13 @@ if (isset($_GET['lang'])) {
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-5">
-                        <br><h6>Digital Business Card v2</h6>
+                        <br>
+                        <h6>Digital Business Card v2</h6>
                         <iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
                     </div> <!-- col -->
                     <div class="col-12 col-sm-7">
-                        <br><h6>Digital Business Card v1</h6>
+                        <br>
+                        <h6>Digital Business Card v1</h6>
                         <iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
                     </div> <!-- col -->
                 </div>
@@ -136,21 +139,21 @@ if (isset($_GET['lang'])) {
                 <h2 class="mb-5"><?= $_skills; ?></h2>
                 <div class="subheading mb-3"><?= $_languages; ?></div>
                 <ul class="list-inline dev-icons">
-                <?php for ($i=0; $i < count($_codeskillicon); $i++) { ?>
-                    <li class="list-inline-item"><i class="<?= $_codeskillicon[$i]; ?>"></i></li>
-                <?php } ?>
+                    <?php for ($i = 0; $i < count($_codeskillicon); $i++) { ?>
+                        <li class="list-inline-item"><i class="<?= $_codeskillicon[$i]; ?>"></i></li>
+                    <?php } ?>
                 </ul>
                 <div class="subheading mb-2">SOFTWARE:</div>
                 <ul class="row fa-ul mb-3">
-                <?php for ($i=0; $i < count($_otherskilltext); $i++) { ?>
-                    <li class="col-12 col-sm-6"><i class="fa-li <?= $_otherskillicon[$i]; ?>"></i><?= $_otherskilltext[$i]." - ".$_otherskilllevel[$i]; ?></li>
-                <?php } ?>
+                    <?php for ($i = 0; $i < count($_otherskilltext); $i++) { ?>
+                        <li class="col-12 col-sm-6"><i class="fa-li <?= $_otherskillicon[$i]; ?>"></i><?= $_otherskilltext[$i] . " - " . $_otherskilllevel[$i]; ?></li>
+                    <?php } ?>
                 </ul>
                 <div class="subheading mb-2"><?= $_things; ?></div>
                 <ul class="row fa-ul mb-0">
-                <?php for ($i=0; $i < count($_thingies); $i++) { ?>
-                    <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies[$i]; ?></li>
-                <?php } ?>
+                    <?php for ($i = 0; $i < count($_thingies); $i++) { ?>
+                        <li class="col-12 col-sm-6"><i class="fa-li fa fa-check"></i><?= $_thingies[$i]; ?></li>
+                    <?php } ?>
                 </ul>
             </div>
             <?= $_goto; ?>
@@ -161,9 +164,9 @@ if (isset($_GET['lang'])) {
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_portfolio; ?></h2>
                 <ul class="fa-ul mb-0">
-                <?php for ($i=0; $i < count($_portafolio); $i++) { ?>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portafolio[$i]; ?></li>
-                <?php } ?>
+                    <?php for ($i = 0; $i < count($_portafolio); $i++) { ?>
+                        <li><i class="fa-li fa fa-trophy text-warning"></i><?= $_portafolio[$i]; ?></li>
+                    <?php } ?>
                 </ul>
             </div>
             <?= $_goto; ?>
@@ -173,11 +176,15 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_experience; ?></h2>
-                <?php for ($i=0; $i < count($_experiencepos); $i++) { ?>
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto"><h3 class="mb-0"><?= $_experiencepos[$i]; ?></h3><div class="subheading"><?= $_experienceent[$i]; ?></div><div><?= $_experiencedesc[$i]; ?></div></div>
-                    <div class="resume-date text-md-right"><span class="text-primary"><?= $_experiencetime[$i]; ?></span></div>
-                </div>
+                <?php for ($i = 0; $i < count($_experiencepos); $i++) { ?>
+                    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0"><?= $_experiencepos[$i]; ?></h3>
+                            <div class="subheading"><?= $_experienceent[$i]; ?></div>
+                            <div><?= $_experiencedesc[$i]; ?></div>
+                        </div>
+                        <div class="resume-date text-md-right"><span class="text-primary"><?= $_experiencetime[$i]; ?></span></div>
+                    </div>
                 <?php } ?>
             </div>
             <?= $_goto; ?>
@@ -187,9 +194,13 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="education">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_education; ?></h2>
-                <?php for ($i=0; $i < count($_educationprog); $i++) { ?>
+                <?php for ($i = 0; $i < count($_educationprog); $i++) { ?>
                     <div class="resume-item d-flex flex-column flex-md-row mb-3">
-                        <div class="resume-content mr-auto"><h3 class="mb-0"><?= $_educationprog[$i]; ?></h3><div class="subheading"><?= $_educationinst[$i]; ?></div><p><?= $_educationprof[$i]; ?></p></div>
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0"><?= $_educationprog[$i]; ?></h3>
+                            <div class="subheading"><?= $_educationinst[$i]; ?></div>
+                            <p><?= $_educationprof[$i]; ?></p>
+                        </div>
                         <div class="resume-date text-md-right"><span class="text-primary"><?= $_educationyear[$i]; ?></span></div>
                     </div>
                 <?php } ?>
@@ -201,7 +212,9 @@ if (isset($_GET['lang'])) {
         <section class="resume-section p-2 d-flex flex-column" id="contact">
             <div class="my-auto">
                 <div class="container-fluid">
-                    <div class="row"><h2 class="colorlib-heading"><?= $_chead; ?></h2></div><br>
+                    <div class="row">
+                        <h2 class="colorlib-heading"><?= $_chead; ?></h2>
+                    </div><br>
                     <div class="row">
                         <div class="col-md-5 col-md-pull-6 my-auto" style="margin-bottom: 2em;">
                             <hr>
@@ -315,4 +328,5 @@ if (isset($_POST['s_enviar'])) {
     }
 }
 ?>
+
 </html>
