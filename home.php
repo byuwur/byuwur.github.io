@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <?php
-if (isset($_GET['lang'])) {
-  if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-    require("lang/lang_" . $_GET['lang'] . ".php");
-    setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-    echo "<html lang='" . $_GET['lang'] . "'>";
-    $lang = $_GET['lang'];
-  } else {
-    setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+if (isset($_GET['lang']))
+  switch ($_GET['lang']) {
+    case 'es':
+    case 'en':
+      require_once "lang/lang_" . $_GET['lang'] . ".php";
+      setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
+      echo "<html lang='" . $_GET['lang'] . "'>";
+      $lang = $_GET['lang'];
+      break;
   }
-} else if (isset($_COOKIE['lang'])) {
-  if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-    require("lang/lang_" . $_COOKIE['lang'] . ".php");
-    echo "<html lang='" . $_COOKIE['lang'] . "'>";
-    $lang = $_COOKIE['lang'];
-  } else {
-    setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+else if (isset($_COOKIE['lang']))
+  switch ($_COOKIE['lang']) {
+    case 'es':
+    case 'en':
+      require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
+      echo "<html lang='" . $_COOKIE['lang'] . "'>";
+      $lang = $_COOKIE['lang'];
+      break;
   }
-} else {
-  require("lang/lang_es.php");
-  echo "<html lang='es'>";
-  $lang = "es";
+else {
   setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-  //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+  header("Location: ./");
 }
 ?>
 
@@ -35,18 +32,18 @@ if (isset($_GET['lang'])) {
   <meta property="og:title" content="Mateus [byUwUr]" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://byuwur.net/img/icon.png" />
-  <meta property="og:url" content="https://byuwur.github.io/" />
+  <meta property="og:url" content="https://byuwur.net" />
   <meta property="og:site_name" content="Mateus [byUwUr]" />
-  <meta property="og:description" content="Mateus' portfolio" />
+  <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
   <!-- Meta tags -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Content-Language" content="en,es" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Mateus' portfolio" />
+  <meta name="description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
   <meta name="author" content="Andrés Trujillo Mateus" />
   <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
   <meta name="copyright" content="Mateus [byUwUr]" />
-  <meta name="theme-color" content="#222" />
+  <meta name="theme-color" content="#111" />
   <link rel="shortcut icon" type="image/png" href="./favicon.png" />
   <link rel="icon" type="image/png" href="./favicon.png" />
   <link rel="apple-touch-icon" href="./favicon.png" />
@@ -59,24 +56,24 @@ if (isset($_GET['lang'])) {
   <link href="./plugin/themify/themify-icons.min.css" rel="stylesheet">
   <!-- Styles -->
   <?php
-  if (isset($_GET['theme'])) {
-    if ($_GET['theme'] == 'light' || $_GET['theme'] == 'dark') {
-      setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
-      echo '<meta name="theme-color" content="#111" />';
-      echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.' . $_GET['theme'] . '.css" />';
-      $theme = $_GET['theme'];
-    } else {
-      setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
+  if (isset($_GET['theme']))
+    switch ($_GET['theme']) {
+      case 'dark':
+      case 'light':
+        setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
+        echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.' . $_GET['theme'] . '.css" />';
+        $theme = $_GET['theme'];
+        break;
     }
-  } else if (isset($_COOKIE['theme'])) {
-    if ($_COOKIE['theme'] == 'light' || $_COOKIE['theme'] == 'dark') {
-      echo '<meta name="theme-color" content="#111" />';
-      echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.' . $_COOKIE['theme'] . '.css" />';
-      $theme = $_COOKIE['theme'];
-    } else {
-      setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
+  else if (isset($_COOKIE['theme']))
+    switch ($_COOKIE['theme']) {
+      case 'dark':
+      case 'light':
+        echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.' . $_COOKIE['theme'] . '.css" />';
+        $theme = $_COOKIE['theme'];
+        break;
     }
-  } else {
+  else {
     setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
     echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.dark.css" />';
     $theme = "dark";
@@ -84,12 +81,20 @@ if (isset($_GET['lang'])) {
   ?>
   <script type="text/javascript" src="./plugin/modernizr/modernizr.min.js"></script>
   <!-- Swap theme -->
-  <script type="text/javascript">function swapStyleSheet(sheet) {document.getElementById('pagestyle').setAttribute('href', './css/mateus.' + sheet + '.css');document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';}</script>
+  <script type="text/javascript">
+    function swapStyleSheet(sheet) {
+      document.getElementById('pagestyle').setAttribute('href', './css/mateus.' + sheet + '.css');
+      document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
+    }
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
   <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-148227598-1');
   </script>
@@ -99,7 +104,11 @@ if (isset($_GET['lang'])) {
 
 <body class="dark-body">
   <!-- === Loading === -->
-  <div id="loading"><div class="load-circle-back"></div><div class="load-circle-fore"></div><div class="load-text"><?= $_load; ?></div></div>
+  <div id="loading">
+    <div class="load-circle-back"></div>
+    <div class="load-circle-fore"></div>
+    <div class="load-text"><?= $_load; ?></div>
+  </div>
   <!-- === Particles === -->
   <div id="particles"></div>
   <!-- === Side video === -->
@@ -143,7 +152,8 @@ if (isset($_GET['lang'])) {
                     </div>
                     <div class="btn-bar">
                       <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
-                      <hr class="my-1" /><a href="ui-kit">UI kit preview</a><hr class="my-1" /><!-- = Nav shortcut = -->
+                      <hr class="my-1" /><a href="ui-kit">UI kit preview</a>
+                      <hr class="my-1" /><!-- = Nav shortcut = -->
                       <!-- = Nav shortcut = -->
                       <div class="row p-2">
                         <a href="javascript:about();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
@@ -166,14 +176,21 @@ if (isset($_GET['lang'])) {
     <div class="page about-section" id="about">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_aboutmateus; ?> Mateus</h2></div><p class="footer"><?= $_footer; ?></p></div>
+          <div class="col-lg-3 page-title">
+            <div class="v-center-box d-flex align-items-end">
+              <h2><?= $_aboutmateus; ?> Mateus</h2>
+            </div>
+            <p class="footer"><?= $_footer; ?></p>
+          </div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_whoiam; ?></h6>
-                  <div class="st-title"><h2 class="theme-after text-color"><?= $_aboutiam; ?></h2></div>
+                  <div class="st-title">
+                    <h2 class="theme-after text-color"><?= $_aboutiam; ?></h2>
+                  </div>
                 </div>
                 <!-- = About = -->
                 <div class="row">
@@ -184,10 +201,19 @@ if (isset($_GET['lang'])) {
                     </div>
                   </div>
                   <div class="col-sm-9 sm-m-30px-t">
-                    <div class="about-text"><h3 class="text-color"><?= $_iam; ?> Andrés Trujillo Mateus</h3><p class="m-0px"><?= $_about; ?></p></div> <!-- about-text -->
+                    <div class="about-text">
+                      <h3 class="text-color"><?= $_iam; ?> Andrés Trujillo Mateus</h3>
+                      <p class="m-0px"><?= $_about; ?></p>
+                    </div> <!-- about-text -->
                     <div class="row m-30px-t">
-                      <?php for ($i=0; $i < count($_thingies); $i++) { ?>
-                        <div class="col-sm-6 m-30px-b"><div class="feature-box"><i class="icon text-color theme-after <?= $_thingiesicon[$i]; ?>"></i><div class="feature-content"><h5 class="text-color"><?= $_thingies[$i]; ?></h5></div></div></div> <!-- col -->
+                      <?php for ($i = 0; $i < count($_thingies); $i++) { ?>
+                        <div class="col-sm-6 m-30px-b">
+                          <div class="feature-box"><i class="icon text-color theme-after <?= $_thingiesicon[$i]; ?>"></i>
+                            <div class="feature-content">
+                              <h5 class="text-color"><?= $_thingies[$i]; ?></h5>
+                            </div>
+                          </div>
+                        </div> <!-- col -->
                       <?php } ?>
                     </div> <!-- row -->
                   </div>
@@ -196,20 +222,30 @@ if (isset($_GET['lang'])) {
                 <div class="counter-row m-50px-t p-40px-t lg-m-35px-t lg-p-25px-t sm-p-15px-t">
                   <div class="row">
                     <div class="col-12 col-md-3 md-m-15px-tb">
-                      <div class="counter-col counter-box"><div class="counter-data" data-count="375"><i class="theme-color ti-ruler-pencil"></i><div class="count text-color">5</div><a href="<?= $_github; ?>" target="_blank"><h6>Projects</h6></a></div></div>
+                      <div class="counter-col counter-box">
+                        <div class="counter-data" data-count="375"><i class="theme-color ti-ruler-pencil"></i>
+                          <div class="count text-color">5</div><a href="<?= $_github; ?>" target="_blank">
+                            <h6>Projects</h6>
+                          </a>
+                        </div>
+                      </div>
                       <br><a href="ui-kit">&& UI kit preview</a>
                     </div> <!-- col -->
-                    <div class="col-12 col-md-4 md-m-15px-tb"><h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe></div> <!-- col -->
-                    <div class="col-12 col-md-5 md-m-15px-tb"><h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe></div> <!-- col -->
+                    <div class="col-12 col-md-4 md-m-15px-tb">
+                      <h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe>
+                    </div> <!-- col -->
+                    <div class="col-12 col-md-5 md-m-15px-tb">
+                      <h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe>
+                    </div> <!-- col -->
                   </div> <!-- row -->
                 </div>
                 <!-- = Nav shortcut = -->
-                  <div class="row p-2">
-                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                    <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                    <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
-                  </div>
+                <div class="row p-2">
+                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                  <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                  <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -221,14 +257,21 @@ if (isset($_GET['lang'])) {
     <div class="page resume-section" id="resume">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_resume; ?></h2></div><p class="footer"><?= $_footer; ?></p></div>
+          <div class="col-lg-3 page-title">
+            <div class="v-center-box d-flex align-items-end">
+              <h2><?= $_resume; ?></h2>
+            </div>
+            <p class="footer"><?= $_footer; ?></p>
+          </div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_expertise; ?></h6>
-                  <div class="st-title"><h2 class="theme-after text-color"><?= $_resume; ?></h2></div>
+                  <div class="st-title">
+                    <h2 class="theme-after text-color"><?= $_resume; ?></h2>
+                  </div>
                 </div>
                 <!-- = Resume = -->
                 <div class="row">
@@ -242,8 +285,15 @@ if (isset($_GET['lang'])) {
                           <h3 class="text-color"><?= $_codeskills; ?> <i class="fas fa-code"></i></h3>
                           <div class="skills">
                             <div class="row">
-                              <?php for ($i=0; $i < count($_codeskilltext); $i++) { ?>
-                                <div class="col-sm-6 mt-3"><div class="progress-lt"><h6><i class="<?= $_codeskillicon[$i]; ?>"></i> <?= $_codeskilltext[$i]; ?></h6><span class="theme-bg"><?= $_codeskilllevel[$i]; ?></span><div class="progress"><div class="progress-bar" style="width: <?= $_codeskillprogress[$i]; ?>"></div><!-- /progress-bar --></div><!-- /progress --></div><!-- /progress-lt --></div>
+                              <?php for ($i = 0; $i < count($_codeskilltext); $i++) { ?>
+                                <div class="col-sm-6 mt-3">
+                                  <div class="progress-lt">
+                                    <h6><i class="<?= $_codeskillicon[$i]; ?>"></i> <?= $_codeskilltext[$i]; ?></h6><span class="theme-bg"><?= $_codeskilllevel[$i]; ?></span>
+                                    <div class="progress">
+                                      <div class="progress-bar" style="width: <?= $_codeskillprogress[$i]; ?>"></div><!-- /progress-bar -->
+                                    </div><!-- /progress -->
+                                  </div><!-- /progress-lt -->
+                                </div>
                               <?php } ?>
                             </div>
                           </div>
@@ -252,8 +302,15 @@ if (isset($_GET['lang'])) {
                           <h3 class="text-color"><?= $_otherskills; ?> <i class="fas fa-file-export"></i></h3>
                           <div class="skills">
                             <div class="row">
-                              <?php for ($i=0; $i < count($_otherskilltext); $i++) { ?>
-                                <div class="col-sm-6 mt-3"><div class="progress-lt"><h6><i class="<?= $_otherskillicon[$i]; ?>"></i> <?= $_otherskilltext[$i]; ?></h6><span class="theme-bg"><?= $_otherskilllevel[$i]; ?></span><div class="progress"><div class="progress-bar" style="width: <?= $_otherskillprogress[$i]; ?>"></div><!-- /progress-bar --></div><!-- /progress --></div><!-- /progress-lt --></div>
+                              <?php for ($i = 0; $i < count($_otherskilltext); $i++) { ?>
+                                <div class="col-sm-6 mt-3">
+                                  <div class="progress-lt">
+                                    <h6><i class="<?= $_otherskillicon[$i]; ?>"></i> <?= $_otherskilltext[$i]; ?></h6><span class="theme-bg"><?= $_otherskilllevel[$i]; ?></span>
+                                    <div class="progress">
+                                      <div class="progress-bar" style="width: <?= $_otherskillprogress[$i]; ?>"></div><!-- /progress-bar -->
+                                    </div><!-- /progress -->
+                                  </div><!-- /progress-lt -->
+                                </div>
                               <?php } ?>
                             </div>
                           </div>
@@ -265,15 +322,17 @@ if (isset($_GET['lang'])) {
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_experience; ?></h2>
                       <ul>
-                      <?php for ($i=0; $i < count($_experiencepos); $i++) { ?>
-                        <li>
-                          <div class="r-name">
-                            <i class="theme-bg ti-briefcase"></i>
-                            <span class="text-color"><?= $_experiencepos[$i]; ?><br><small><?= $_experienceent[$i]; ?></small></span>
-                            <label><?= $_experiencetime[$i]; ?></label>
-                          </div>
-                          <div class="r-info"><p><?= $_experiencedesc[$i]; ?></p></div>
-                        </li>
+                        <?php for ($i = 0; $i < count($_experiencepos); $i++) { ?>
+                          <li>
+                            <div class="r-name">
+                              <i class="theme-bg ti-briefcase"></i>
+                              <span class="text-color"><?= $_experiencepos[$i]; ?><br><small><?= $_experienceent[$i]; ?></small></span>
+                              <label><?= $_experiencetime[$i]; ?></label>
+                            </div>
+                            <div class="r-info">
+                              <p><?= $_experiencedesc[$i]; ?></p>
+                            </div>
+                          </li>
                         <?php } ?>
                       </ul>
                     </div>
@@ -282,11 +341,11 @@ if (isset($_GET['lang'])) {
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_education; ?></h2>
                       <ul>
-                      <?php for ($i=0; $i < count($_educationprog); $i++) { ?>
-                        <li>
-                          <div class="r-name"><i class="theme-bg fas fa-graduation-cap"></i><span class="text-color"><?= $_educationprog[$i]; ?><br><?= $_educationinst[$i]; ?></span></div>
-                          <div class="r-info"><?= $_educationyear[$i]; ?> - <?= $_educationprof[$i]; ?></div>
-                        </li>
+                        <?php for ($i = 0; $i < count($_educationprog); $i++) { ?>
+                          <li>
+                            <div class="r-name"><i class="theme-bg fas fa-graduation-cap"></i><span class="text-color"><?= $_educationprog[$i]; ?><br><?= $_educationinst[$i]; ?></span></div>
+                            <div class="r-info"><?= $_educationyear[$i]; ?> - <?= $_educationprof[$i]; ?></div>
+                          </li>
                         <?php } ?>
                       </ul>
                     </div>
@@ -294,11 +353,11 @@ if (isset($_GET['lang'])) {
                 </div> <!-- row -->
                 <!-- = Nav shortcut = -->
                 <div class="row p-2">
-                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                    <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                    <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                    <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
-                  </div>
+                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                  <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                  <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -310,14 +369,21 @@ if (isset($_GET['lang'])) {
     <div class="page" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_portfolio; ?></h2></div><p class="footer"><?= $_footer; ?></p></div>
+          <div class="col-lg-3 page-title">
+            <div class="v-center-box d-flex align-items-end">
+              <h2><?= $_portfolio; ?></h2>
+            </div>
+            <p class="footer"><?= $_footer; ?></p>
+          </div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_mywork; ?></h6>
-                  <div class="st-title"><h2 class="theme-after text-color"><?= $_myproj; ?></h2></div>
+                  <div class="st-title">
+                    <h2 class="theme-after text-color"><?= $_myproj; ?></h2>
+                  </div>
                 </div>
                 <!-- = Portfolio = -->
                 <div class="portfolio-section">
@@ -333,13 +399,21 @@ if (isset($_GET['lang'])) {
                   </div> <!-- Portfolio Filter -->
                   <div class="portfolio-content">
                     <ul class="portfolio-cols portfolio-cols-3">
-                      <?php for ($i=0; $i < count($_portfoliotitle); $i++) { ?>
-                      <li class="portfolio-item web <?= $_portfolioclass[$i]; ?>">
-                        <div class="portfolio-col portfolio-hover-01">
-                          <div class="portfolio-img"><div class="portfolio-image" style="<?= $_portfoliobg[$i]; ?>"></div><div class="hover"><div class="action-btn"><?= $_portfoliolink[$i]; ?></div> <!-- Video Btn --></div> <!-- Hover --></div>
-                          <div class="portfolio-info"><h5><?= $_portfoliotitle[$i]; ?></h5><p><?= $_portfoliodesc[$i]; ?></p></div>
-                        </div> <!-- Portfolio -->
-                      </li> <!-- col -->
+                      <?php for ($i = 0; $i < count($_portfoliotitle); $i++) { ?>
+                        <li class="portfolio-item web <?= $_portfolioclass[$i]; ?>">
+                          <div class="portfolio-col portfolio-hover-01">
+                            <div class="portfolio-img">
+                              <div class="portfolio-image" style="<?= $_portfoliobg[$i]; ?>"></div>
+                              <div class="hover">
+                                <div class="action-btn"><?= $_portfoliolink[$i]; ?></div> <!-- Video Btn -->
+                              </div> <!-- Hover -->
+                            </div>
+                            <div class="portfolio-info">
+                              <h5><?= $_portfoliotitle[$i]; ?></h5>
+                              <p><?= $_portfoliodesc[$i]; ?></p>
+                            </div>
+                          </div> <!-- Portfolio -->
+                        </li> <!-- col -->
                       <?php } ?>
                     </ul> <!-- row -->
                   </div>
@@ -350,7 +424,7 @@ if (isset($_GET['lang'])) {
                     <h2 class="text-color theme-after"><?= $_personalref; ?></h2>
                   </div>
                   <div id="client-slider-single" class="owl-carousel">
-                    <?php for ($i=0; $i < count($_testname); $i++) { ?>
+                    <?php for ($i = 0; $i < count($_testname); $i++) { ?>
                       <div class="testimonial-col">
                         <div class="user">
                           <div class="img" style="<?= $_testpic[$i]; ?>"></div>
@@ -362,11 +436,11 @@ if (isset($_GET['lang'])) {
                 </div> <!-- testimonials-->
                 <!-- = Nav shortcut = -->
                 <div class="row p-2">
-                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                    <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                    <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
-                  </div>
+                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                  <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                  <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -378,19 +452,30 @@ if (isset($_GET['lang'])) {
     <div class="page" id="contact">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-          <div class="col-lg-3 page-title"><div class="v-center-box d-flex align-items-end"><h2><?= $_contact; ?></h2></div><p class="footer"><?= $_footer; ?></p></div>
+          <div class="col-lg-3 page-title">
+            <div class="v-center-box d-flex align-items-end">
+              <h2><?= $_contact; ?></h2>
+            </div>
+            <p class="footer"><?= $_footer; ?></p>
+          </div>
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
                 <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_getintouch; ?></h6>
-                  <div class="st-title"><h2 class="theme-after text-color"><?= $_chead; ?></h2></div>
+                  <div class="st-title">
+                    <h2 class="theme-after text-color"><?= $_chead; ?></h2>
+                  </div>
                 </div>
                 <!-- = Info = -->
                 <div class="row">
-                  <div class="col-sm-6"><div class="contact-info"><i class="theme-color fab fa-linkedin"></i><a href="<?= $_linkedin; ?>">atrujillomateus</a></div></div>
-                  <div class="col-sm-6"><div class="contact-info"><i class="theme-color ti-email"></i><a href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a></div></div>
+                  <div class="col-sm-6">
+                    <div class="contact-info"><i class="theme-color fab fa-linkedin"></i><a href="<?= $_linkedin; ?>">atrujillomateus</a></div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="contact-info"><i class="theme-color ti-email"></i><a href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a></div>
+                  </div>
                 </div>
                 <!-- = Contact = -->
                 <div class="row">
@@ -399,25 +484,41 @@ if (isset($_GET['lang'])) {
                       <h4 class="text-color font-alt m-20px-b"><?= $_say; ?></h4>
                       <form class="contactform" method="POST">
                         <div class="row">
-                          <div class="col-md-6"><div class="form-group"><input type="text" name="s_name" class="validate form-control" placeholder="<?= $_name; ?>" required><span class="input-focus-effect theme-bg"></span></div></div>
-                          <div class="col-md-6"><div class="form-group"><input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required><span class="input-focus-effect theme-bg"></span></div></div>
-                          <div class="col-md-6"><div class="form-group"><input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>"><span class="input-focus-effect theme-bg"></span></div></div>
-                          <div class="col-md-6"><div class="form-group"><input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required><span class="input-focus-effect theme-bg"></span></div></div>
-                          <div class="col-md-12"><div class="form-group"><textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea><span class="input-focus-effect theme-bg"></span></div></div>
-                          <div class="col-md-6"><div class="form-group"><div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div></div></div>
-                          <div class="col-md-6"><div class="send"><input type="submit" name="s_enviar" class="btn btn-theme" value="<?= $_send; ?>"></div><span class="output_message"></span></div>
+                          <div class="col-md-6">
+                            <div class="form-group"><input type="text" name="s_name" class="validate form-control" placeholder="<?= $_name; ?>" required><span class="input-focus-effect theme-bg"></span></div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group"><input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required><span class="input-focus-effect theme-bg"></span></div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group"><input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>"><span class="input-focus-effect theme-bg"></span></div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group"><input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required><span class="input-focus-effect theme-bg"></span></div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group"><textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea><span class="input-focus-effect theme-bg"></span></div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="send"><input type="submit" name="s_enviar" class="btn btn-theme" value="<?= $_send; ?>"></div><span class="output_message"></span>
+                          </div>
                         </div>
                       </form>
                     </div>
                   </div> <!-- col -->
                 </div>
                 <!-- = Nav shortcut = -->
-                  <div class="row p-2">
-                    <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                    <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                    <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                    <a href="javascript:portfolio();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                  </div>
+                <div class="row p-2">
+                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                  <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                  <a href="javascript:portfolio();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
             </div> <!-- page-scroll  -->
@@ -448,11 +549,40 @@ if (isset($_GET['lang'])) {
   <!-- Cookie consent -->
   <script type="text/javascript" src="./js/cookies.js"></script>
   <script type="text/javascript">
-    function home(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-home").click();},500);}
-    function resume(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-resume").click();},500);}
-    function portfolio(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-portfolio").click();},500);}
-    function about(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-about").click();},500);}
-    function contact(){document.getElementById("btn-menu").click();setTimeout(function(){document.getElementById("btn-contact").click();},500);}
+    function home() {
+      document.getElementById("btn-menu").click();
+      setTimeout(function() {
+        document.getElementById("btn-home").click();
+      }, 500);
+    }
+
+    function resume() {
+      document.getElementById("btn-menu").click();
+      setTimeout(function() {
+        document.getElementById("btn-resume").click();
+      }, 500);
+    }
+
+    function portfolio() {
+      document.getElementById("btn-menu").click();
+      setTimeout(function() {
+        document.getElementById("btn-portfolio").click();
+      }, 500);
+    }
+
+    function about() {
+      document.getElementById("btn-menu").click();
+      setTimeout(function() {
+        document.getElementById("btn-about").click();
+      }, 500);
+    }
+
+    function contact() {
+      document.getElementById("btn-menu").click();
+      setTimeout(function() {
+        document.getElementById("btn-contact").click();
+      }, 500);
+    }
 
     document.addEventListener('DOMContentLoaded', function() {
       cookieconsent.run({
@@ -511,4 +641,5 @@ if (isset($_POST['s_enviar'])) {
   }
 }
 ?>
+
 </html>
