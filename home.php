@@ -556,6 +556,7 @@ if (isset($_GET['lang'])) {
   <script src="<?= $to_home; ?>_functions.js"></script>
   <script>
     $("#mail_form").submit(function(event) {
+      $("#mail_submit").removeAttr("disabled");
       event.preventDefault();
       let formData = $("#mail_form").serializeArray();
       formData.push({
@@ -570,9 +571,11 @@ if (isset($_GET['lang'])) {
         success: function(response) {
           if (response.status == 200 || response.status == 201 || response.status == 202) showModal("success", "INFO.", "<?= $_mail_thanks; ?>", "javascript:$('#modal_front').modal('hide');", true);
           else showModal("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", "javascript:$('#modal_front').modal('hide');", true);
+          $("#mail_submit").removeAttr("disabled");
         },
         error: function(xhr, status, error) {
           showModal("danger", "ERROR", "<?= $_mail_wrong; ?>", "javascript:$('#modal_front').modal('hide');", true);
+          $("#mail_submit").removeAttr("disabled");
           console.error(xhr.responseText);
         }
       });
