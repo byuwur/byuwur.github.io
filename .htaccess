@@ -3,14 +3,14 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 #Error Handler
-ErrorDocument 404 /error.php?e=404
-ErrorDocument 403 /error.php?e=403
-ErrorDocument 401 /error.php?e=401
-ErrorDocument 400 /error.php?e=400
-ErrorDocument 500 /error.php?e=500
-ErrorDocument 502 /error.php?e=502
-ErrorDocument 503 /error.php?e=503
-ErrorDocument 504 /error.php?e=504
+ErrorDocument 404 /_error.php?e=404
+ErrorDocument 403 /_error.php?e=403
+ErrorDocument 401 /_error.php?e=401
+ErrorDocument 400 /_error.php?e=400
+ErrorDocument 500 /_error.php?e=500
+ErrorDocument 502 /_error.php?e=502
+ErrorDocument 503 /_error.php?e=503
+ErrorDocument 504 /_error.php?e=504
 #Alternate Index
 DirectoryIndex home.php
 #Language
@@ -48,6 +48,10 @@ RewriteCond %{HTTP:CLIENT_IP}      !^$ [OR]
 RewriteCond %{HTTP:FORWARDED_FOR_IP}      !^$ [OR]
 RewriteCond %{HTTP:HTTP_PROXY_CONNECTION}      !^$
 RewriteRule ^(.*)$ - [F]
-# 5G:[REQUEST METHOD]
 RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
 RewriteRule .* - [F]
+# Protect
+<FilesMatch "^(.*\.)?(env|md|json|lock|htaccess|ini|log|pem)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>

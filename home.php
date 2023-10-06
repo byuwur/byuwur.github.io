@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <?php
-if (isset($_GET['lang']))
+require_once "./_var.php";
+
+if (isset($_GET['lang'])) {
   switch ($_GET['lang']) {
     case 'es':
     case 'en':
-      require_once "lang/lang_" . $_GET['lang'] . ".php";
       setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
+      require_once $to_home . "lang/lang_" . $_GET['lang'] . ".php";
       echo "<html lang='" . $_GET['lang'] . "'>";
       $lang = $_GET['lang'];
       break;
   }
-else if (isset($_COOKIE['lang']))
+} else if (isset($_COOKIE['lang'])) {
   switch ($_COOKIE['lang']) {
     case 'es':
     case 'en':
-      require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
+      require_once $to_home . "lang/lang_" . $_COOKIE['lang'] . ".php";
       echo "<html lang='" . $_COOKIE['lang'] . "'>";
       $lang = $_COOKIE['lang'];
       break;
   }
-else {
+} else {
   setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-  header("Location: ./");
+  require_once $to_home . "lang/lang_es.php";
+  echo "<html lang='es'>";
+  $lang = 'es';
 }
 ?>
 
@@ -79,14 +83,6 @@ else {
     $theme = "dark";
   }
   ?>
-  <script type="text/javascript" src="./plugin/modernizr/modernizr.min.js"></script>
-  <!-- Swap theme -->
-  <script type="text/javascript">
-    function swapStyleSheet(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', './css/mateus.' + sheet + '.css');
-      document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
-    }
-  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
   <script type="text/javascript">
@@ -152,14 +148,14 @@ else {
                     </div>
                     <div class="btn-bar">
                       <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
-                      <hr class="my-1" /><a href="ui-kit">UI kit preview</a>
+                      <hr class="my-1" /><a href="ui-kit" target="_blank">UI kit preview</a>
                       <hr class="my-1" /><!-- = Nav shortcut = -->
                       <!-- = Nav shortcut = -->
-                      <div class="row p-2">
-                        <a href="javascript:about();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                        <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                        <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                        <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                      <div class="d-flex flex-row flex-wrap py-2">
+                        <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                        <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                        <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                        <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                       </div>
                       <?= $_goto; ?>
                     </div>
@@ -240,11 +236,11 @@ else {
                   </div> <!-- row -->
                 </div>
                 <!-- = Nav shortcut = -->
-                <div class="row p-2">
-                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                  <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                  <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                  <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                <div class="d-flex flex-row flex-wrap py-2">
+                  <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                  <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                  <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
@@ -352,11 +348,11 @@ else {
                   </div> <!-- col -->
                 </div> <!-- row -->
                 <!-- = Nav shortcut = -->
-                <div class="row p-2">
-                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                  <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                  <a href="javascript:portfolio();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
-                  <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                <div class="d-flex flex-row flex-wrap py-2">
+                  <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                  <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                  <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
@@ -435,11 +431,11 @@ else {
                   </div> <!-- owl -->
                 </div> <!-- testimonials-->
                 <!-- = Nav shortcut = -->
-                <div class="row p-2">
-                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                  <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                  <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                  <a href="javascript:contact();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
+                <div class="d-flex flex-row flex-wrap py-2">
+                  <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                  <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                  <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
@@ -482,42 +478,38 @@ else {
                   <div class="col-12 m-30px-b sm-m-15px-b">
                     <div class="contact-form">
                       <h4 class="text-color font-alt m-20px-b"><?= $_say; ?></h4>
-                      <form class="contactform" method="POST">
+                      <form id="mail_form" name="mail_form" class="contactform">
                         <div class="row">
                           <div class="col-md-6">
-                            <div class="form-group"><input type="text" name="s_name" class="validate form-control" placeholder="<?= $_name; ?>" required><span class="input-focus-effect theme-bg"></span></div>
+                            <div class="form-group"><input type="text" id="mail_name" name="mail_name" class="validate form-control" placeholder="<?= $_name; ?>" required><span class="input-focus-effect theme-bg"></span></div>
                           </div>
                           <div class="col-md-6">
-                            <div class="form-group"><input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required><span class="input-focus-effect theme-bg"></span></div>
+                            <div class="form-group"><input type="email" id="mail_email" name="mail_email" class="form-control" placeholder="<?= $_email; ?>" required><span class="input-focus-effect theme-bg"></span></div>
                           </div>
                           <div class="col-md-6">
-                            <div class="form-group"><input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>"><span class="input-focus-effect theme-bg"></span></div>
+                            <div class="form-group"><input type="tel" id="mail_phone" name="mail_phone" class="form-control" placeholder="<?= $_tphone; ?>"><span class="input-focus-effect theme-bg"></span></div>
                           </div>
                           <div class="col-md-6">
-                            <div class="form-group"><input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required><span class="input-focus-effect theme-bg"></span></div>
+                            <div class="form-group"><input type="text" id="mail_subject" name="mail_subject" class="form-control" placeholder="<?= $_subject; ?>" required><span class="input-focus-effect theme-bg"></span></div>
                           </div>
-                          <div class="col-md-12">
-                            <div class="form-group"><textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea><span class="input-focus-effect theme-bg"></span></div>
+                          <div class="col-12">
+                            <div class="form-group"><textarea id="mail_message" name="mail_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea><span class="input-focus-effect theme-bg"></span></div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div>
-                            </div>
+                          <div class="col-md-6 form-group">
+                            <div class="g-recaptcha" id="mail_recaptcha" name="mail_recaptcha" data-sitekey="6LdBMSIaAAAAANG0gtgkpXUE0K5QS2nu0tJWC1Fm"></div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="send"><input type="submit" name="s_enviar" class="btn btn-theme" value="<?= $_send; ?>"></div><span class="output_message"></span>
-                          </div>
+                          <div class="col-md-6 send"><input type="submit" id="mail_submit" name="mail_submit" class="btn btn-theme" value="<?= $_send; ?>"></div><span class="output_message"></span>
                         </div>
                       </form>
                     </div>
                   </div> <!-- col -->
                 </div>
                 <!-- = Nav shortcut = -->
-                <div class="row p-2">
-                  <a href="javascript:home();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
-                  <a href="javascript:about();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
-                  <a href="javascript:resume();" class="col-6 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
-                  <a href="javascript:portfolio();" class="col-5 col-sm-3 col-md-2 text-uppercase text-center text-nowrap mx-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
+                <div class="d-flex flex-row flex-wrap py-2">
+                  <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
+                  <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
+                  <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
+                  <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                 </div>
               </div> <!-- page-content -->
               <p class="footer-resp"><?= $_footer; ?></p>
@@ -530,13 +522,27 @@ else {
   <!-- === Header === -->
   <header class="header theme-bg">
     <div class="logo"><a href="./v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
-    <div style="margin-top:4px;"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
+    <div class="mt-1 mr-5 pr-4 text-right"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
   </header> <!-- header -->
-  <!-- Plugins JS -->
+  <!-- modal -->
+  <div id="modal_front" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+    <div id="modal_front_container" class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div id="modal_front_title" class="modal-header m-0 fs-5 alert alert-success">Info.</div>
+        <div id="modal_front_body" class="modal-body text-dark"></div>
+        <div class="modal-footer">
+          <a id="modal_front_back" href="javascript:$('#modal_front').modal('hide');" onclick="$('#modal_front').modal('hide')" class="btn btn-dark"><?= $_close; ?></a>
+          <a id="modal_front_ok" href="javascript:;" class="btn btn-success"><?= $_ok; ?></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+  <!-- SCRIPTS -->
   <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="./plugin/popper/popper.min.js"></script>
-  <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.mateus.min.js"></script>
+  <script type="text/javascript" src="./plugin/modernizr/modernizr.min.js"></script>
   <script type="text/javascript" src="./plugin/owl-carousel/js/owl-carousel.min.js"></script>
   <script type="text/javascript" src="./plugin/typeit/typeit.min.js"></script>
   <script type="text/javascript" src="./plugin/isotope/isotope.min.js"></script>
@@ -544,102 +550,55 @@ else {
   <script type="text/javascript" src="./plugin/magnific/js/magnific-popup.min.js"></script>
   <script type="text/javascript" src="./plugin/nav/js/classie.js"></script>
   <script type="text/javascript" src="./plugin/nav/js/nav.js"></script>
-  <!-- Scripts -->
-  <script type="text/javascript" src="./js/mateus.js"></script>
-  <!-- Cookie consent -->
+  <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.mateus.min.js"></script>
   <script type="text/javascript" src="./js/cookies.js"></script>
-  <script type="text/javascript">
-    function home() {
-      document.getElementById("btn-menu").click();
-      setTimeout(function() {
-        document.getElementById("btn-home").click();
-      }, 500);
+  <script type="text/javascript" src="./js/mateus.js"></script>
+  <script src="<?= $to_home; ?>_functions.js"></script>
+  <script>
+    $("#mail_form").submit(function(event) {
+      event.preventDefault();
+      let formData = $("#mail_form").serializeArray();
+      formData.push({
+        name: "mail_submit",
+        value: "1"
+      });
+      $.ajax({
+        type: "POST",
+        url: "<?= $to_home; ?>contact.php",
+        data: formData,
+        dataType: "json",
+        success: function(response) {
+          if (response.status == 200 || response.status == 201 || response.status == 202) showModal("success", "INFO.", "<?= $_mail_thanks; ?>", "javascript:$('#modal_front').modal('hide');", true);
+          else showModal("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", "javascript:$('#modal_front').modal('hide');", true);
+        },
+        error: function(xhr, status, error) {
+          showModal("danger", "ERROR", "<?= $_mail_wrong; ?>", "javascript:$('#modal_front').modal('hide');", true);
+          console.error(xhr.responseText);
+        }
+      });
+    });
+
+    function swapStyleSheet(sheet) {
+      document.getElementById('pagestyle').setAttribute('href', '<?= $to_home; ?>css/mateus.' + sheet + '.css');
+      document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
     }
 
-    function resume() {
-      document.getElementById("btn-menu").click();
-      setTimeout(function() {
-        document.getElementById("btn-resume").click();
-      }, 500);
-    }
-
-    function portfolio() {
-      document.getElementById("btn-menu").click();
-      setTimeout(function() {
-        document.getElementById("btn-portfolio").click();
-      }, 500);
-    }
-
-    function about() {
-      document.getElementById("btn-menu").click();
-      setTimeout(function() {
-        document.getElementById("btn-about").click();
-      }, 500);
-    }
-
-    function contact() {
-      document.getElementById("btn-menu").click();
-      setTimeout(function() {
-        document.getElementById("btn-contact").click();
-      }, 500);
+    function swapPage(page) {
+      document.querySelector(`#btn-menu`).click();
+      setTimeout(() => document.querySelector(`#btn-${page}`).click(), 500);
     }
 
     document.addEventListener('DOMContentLoaded', function() {
       cookieconsent.run({
         "notice_banner_type": "simple",
         "consent_type": "express",
-        "palette": <?= '"' . $theme . '"'; ?>,
-        "language": <?= '"' . $lang . '"'; ?>,
-        "website_name": "mnm.team",
+        "palette": "<?= $theme; ?>",
+        "language": "<?= $lang; ?>",
+        "website_name": "byuwur.net",
         "change_preferences_selector": "#cookiePrefs"
       });
     });
   </script>
-  <!-- End cookie consent -->
 </body>
-<?php
-if (isset($_POST['s_enviar'])) {
-  $captcha = $_POST['g-recaptcha-response'];
-
-  if (!$captcha) {
-    echo '<script type="text/javascript">alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
-  } else {
-    $secret = "6LcgdbwUAAAAAGCql62It59UFlNifLK0I7SElrVJ";
-    $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
-    $arrcaptcha = json_decode($rescaptcha, true);
-
-    if ($arrcaptcha['success']) {
-      $s_name = $_POST['s_name'];
-      $s_email = $_POST['s_email'];
-      $s_phone = $_POST['s_phone'];
-      $s_subject = $_POST['s_subject'];
-      $s_message = $_POST['s_message'];
-
-      $mail = $_mail;
-      $mail_asunto = $s_subject . " | Mateus, " . $s_name . $_s_wants;
-      $mail_header = "From: info@mnm.team\r\n"
-        . "MIME-Version: 1.0\r\n"
-        . "Content-type: text/html; charset=iso-8859-1\r\n";
-      $mail_msg = ' <html> <head> <title> Contactar a Mateus </title> </head> <body>
-		<p>Hola, Mateus:<br><br>Soy <strong>' . $s_name . '</strong>.</p>
-		<p>Pueden contactarme en: <strong>' . $s_email . '</strong> o llamarme al: <strong>' . $s_phone . '</strong>.</p>
-		Necesito decirles:<br>
-		' . $s_message . '
-		<br><br><br>Gracias.<br><br>Atentamente, ' . $s_name . '.
-	    </body> </html> ';
-
-      $sendmail = @mail($mail, $mail_asunto, $mail_msg, $mail_header);
-
-      if ($sendmail) {
-        echo '<script type="text/javascript">alert("' . $_s_thanks . '");</script>';
-      } else {
-        echo '<script type="text/javascript">alert("' . $_s_wrong . '");</script>';
-      }
-    } else {
-      echo '<script type="text/javascript">alert("reCaptcha inválido. Lamentamos las molestias. / Invalid reCaptcha. Sorry for the bother.");</script>';
-    }
-  }
-}
-?>
 
 </html>

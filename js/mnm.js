@@ -1,9 +1,9 @@
-(function() {
+(function () {
 	"use strict";
-	var by = {};
+	let by = {};
 	/** Pre Load */
-	var loading = document.getElementById("loading");
-	by.WebLoad = function() {
+	let loading = document.getElementById("loading");
+	by.WebLoad = function () {
 		if (loading.style.visibility == "hidden" || loading.style.display == "none") {
 			loading.style.visibility = "visible"; loading.style.opacity = "1"; //loading.style.display = "block";
 		} else {
@@ -11,23 +11,23 @@
 		}
 	};
 
-	var isMobile = {
-		Android: function() {
+	let isMobile = {
+		Android: function () {
 			return navigator.userAgent.match(/Android/i);
 		},
-		BlackBerry: function() {
+		BlackBerry: function () {
 			return navigator.userAgent.match(/BlackBerry/i);
 		},
-		iOS: function() {
+		iOS: function () {
 			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 		},
-		Opera: function() {
+		Opera: function () {
 			return navigator.userAgent.match(/Opera Mini/i);
 		},
-		Windows: function() {
+		Windows: function () {
 			return navigator.userAgent.match(/IEMobile/i);
 		},
-		any: function() {
+		any: function () {
 			return (
 				isMobile.Android() ||
 				isMobile.BlackBerry() ||
@@ -38,32 +38,32 @@
 		}
 	};
 
-	var fullHeight = function() {
+	let fullHeight = function () {
 		if (!isMobile.any()) {
 			$(".js-fullheight").css("height", $(window).height());
-			$(window).resize(function() {
+			$(window).resize(function () {
 				$(".js-fullheight").css("height", $(window).height());
 			});
 		}
 	};
 
 	// Animations
-	var contentWayPoint = function() {
-		var i = 0;
+	let contentWayPoint = function () {
+		let i = 0;
 		$(".animate-box").waypoint(
-			function(direction) {
+			function (direction) {
 				if (
 					direction === "down" &&
 					!$(this.element).hasClass("animated")
 				) {
 					i++;
 					$(this.element).addClass("item-animate");
-					setTimeout(function() {
-						$("body .animate-box.item-animate").each(function(k) {
-							var el = $(this);
+					setTimeout(function () {
+						$("body .animate-box.item-animate").each(function (k) {
+							let el = $(this);
 							setTimeout(
-								function() {
-									var effect = el.data("animate-effect");
+								function () {
+									let effect = el.data("animate-effect");
 									if (effect === "fadeIn") {
 										el.addClass("fadeIn animated");
 									} else if (effect === "fadeInLeft") {
@@ -88,10 +88,10 @@
 		);
 	};
 
-	var burgerMenu = function() {
-		$(".js-mnm-nav-toggle").on("click", function(event) {
+	let burgerMenu = function () {
+		$(".js-mnm-nav-toggle").on("click", function (event) {
 			event.preventDefault();
-			var $this = $(this);
+			let $this = $(this);
 			if ($("body").hasClass("offcanvas")) {
 				$this.removeClass("active");
 				$("body").removeClass("offcanvas");
@@ -103,9 +103,9 @@
 	};
 
 	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
-		$(document).click(function(e) {
-			var container = $("#mnm-aside, .js-mnm-nav-toggle");
+	let mobileMenuOutsideClick = function () {
+		$(document).click(function (e) {
+			let container = $("#mnm-aside, .js-mnm-nav-toggle");
 			if (
 				!container.is(e.target) &&
 				container.has(e.target).length === 0
@@ -116,7 +116,7 @@
 				}
 			}
 		});
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 			if ($("body").hasClass("offcanvas")) {
 				$("body").removeClass("offcanvas");
 				$(".js-mnm-nav-toggle").removeClass("active");
@@ -124,21 +124,21 @@
 		});
 	};
 
-	var sliderMain = function() {
+	let sliderMain = function () {
 		$("#mnm-hero .flexslider").flexslider({
 			animation: "fade",
 			slideshowSpeed: 9999,
 			directionNav: true,
-			start: function() {
-				setTimeout(function() {
+			start: function () {
+				setTimeout(function () {
 					$(".slider-text").removeClass("animated fadeInUp");
 					$(".flex-active-slide")
 						.find(".slider-text")
 						.addClass("animated fadeInUp");
 				}, 111);
 			},
-			before: function() {
-				setTimeout(function() {
+			before: function () {
+				setTimeout(function () {
 					$(".slider-text").removeClass("animated fadeInUp");
 					$(".flex-active-slide")
 						.find(".slider-text")
@@ -148,8 +148,8 @@
 		});
 	};
 
-	var stickyFunction = function() {
-		var h = $(".image-content").outerHeight();
+	let stickyFunction = function () {
+		let h = $(".image-content").outerHeight();
 		if ($(window).width() <= 801) {
 			$("#sticky_item").trigger("sticky_kit:detach");
 		} else {
@@ -157,7 +157,7 @@
 			$("#sticky_item").trigger("sticky_kit:detach");
 			$("#sticky_item").trigger("sticky_kit:unstick");
 			if ($("body").hasClass("offcanvas")) {
-				setTimeout(function() {
+				setTimeout(function () {
 					$("body").removeClass("offcanvas");
 					$(".js-mnm-nav-toggle").removeClass("active");
 				}, 1);
@@ -170,8 +170,8 @@
 			$("#sticky_item").trigger("sticky_kit:detach");
 			$("#sticky_item").trigger("sticky_kit:unstick");
 		}
-		$(window).resize(function() {
-			var h = $(".image-content").outerHeight();
+		$(window).resize(function () {
+			let h = $(".image-content").outerHeight();
 			$(".sticky-parent").css("height", h);
 			if ($(window).width() <= 801) {
 				$("#sticky_item").trigger("sticky_kit:detach");
@@ -181,7 +181,7 @@
 				$("#sticky_item").trigger("sticky_kit:unstick");
 				$("#sticky_item").stick_in_parent();
 				if ($("body").hasClass("offcanvas")) {
-					setTimeout(function() {
+					setTimeout(function () {
 						$("body").removeClass("offcanvas");
 						$(".js-mnm-nav-toggle").removeClass("active");
 					}, 1);
@@ -200,7 +200,7 @@
 		$("#sticky_item").stick_in_parent();
 	};
 	// Document on load.
-	$(function() {
+	$(function () {
 		fullHeight();
 		contentWayPoint();
 		burgerMenu();
@@ -210,21 +210,21 @@
 	});
 
 	// Window on Load
-	$(window).on("load", function() {
+	$(window).on("load", function () {
 		by.WebLoad();
 	});
 
 })();
 
 function active_home() {
-	var li_sidebar = document.getElementsByClassName("mnm-active");
+	let li_sidebar = document.getElementsByClassName("mnm-active");
 	// Removes active class from other elements
-	for (var i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
+	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
 	// Adds active class to clicked li
 	document.getElementById("li_home").className = "mnm-active";
 	// Closes responsive menu when a scroll trigger link is clicked half a second after
 	if ($("body").hasClass("offcanvas")) {
-		setTimeout(function() {
+		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
 		}, 0);
@@ -232,11 +232,11 @@ function active_home() {
 }
 
 function active_work() {
-	var li_sidebar = document.getElementsByClassName("mnm-active");
-	for (var i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
+	let li_sidebar = document.getElementsByClassName("mnm-active");
+	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
 	document.getElementById("li_work").className = "mnm-active";
 	if ($("body").hasClass("offcanvas")) {
-		setTimeout(function() {
+		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
 		}, 0);
@@ -244,11 +244,11 @@ function active_work() {
 }
 
 function active_services() {
-	var li_sidebar = document.getElementsByClassName("mnm-active");
-	for (var i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
+	let li_sidebar = document.getElementsByClassName("mnm-active");
+	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
 	document.getElementById("li_services").className = "mnm-active";
 	if ($("body").hasClass("offcanvas")) {
-		setTimeout(function() {
+		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
 		}, 0);
@@ -256,11 +256,11 @@ function active_services() {
 }
 
 function active_about() {
-	var li_sidebar = document.getElementsByClassName("mnm-active");
-	for (var i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
+	let li_sidebar = document.getElementsByClassName("mnm-active");
+	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
 	document.getElementById("li_about").className = "mnm-active";
 	if ($("body").hasClass("offcanvas")) {
-		setTimeout(function() {
+		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
 		}, 0);
@@ -268,11 +268,11 @@ function active_about() {
 }
 
 function active_contact() {
-	var li_sidebar = document.getElementsByClassName("mnm-active");
-	for (var i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
+	let li_sidebar = document.getElementsByClassName("mnm-active");
+	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
 	document.getElementById("li_contact").className = "mnm-active";
 	if ($("body").hasClass("offcanvas")) {
-		setTimeout(function() {
+		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
 		}, 0);

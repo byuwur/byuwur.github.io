@@ -21,11 +21,14 @@ $_name_top="Mateus <font size='5'><span class='text-primary'>[byUwUr]</span></fo
 $_nombre="Andrés Trujillo Mateus";
 $_new="load not so basic HTML";
 $_load="<font size='4'><strong>Loading standard view...</strong></font><br>Still loading? | <a href='v1'>Load basic HTML</a>";
-$_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus</small><br><a href='v1'>load basic HTML</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>light</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>dark</a> <a class='hidden' href='light'>light</a><a class='hidden' href='dark'>dark</a><br><small><a href='./mnm.team/sitemap' target='_self'>sitemap</a> | <a href='./mnm.team/cookie-policy' target='_self'>cookie policy</a></small>";
+$_footer="&copy;".date("Y")."<small> Andrés Trujillo [Mateus] byUwUr</small><br><a href='v1'>load basic HTML</a> | <a href=\"javascript:swapStyleSheet('light');\">light</a> | <a href=\"javascript:swapStyleSheet('dark');\">dark</a> <a class='hidden' href='light'>light</a><a class='hidden' href='dark'>dark</a><br><small><a href='./mnm.team/sitemap' target='_self'>sitemap</a> | <a href='./mnm.team/cookie-policy' target='_self'>cookie policy</a></small>";
 $_cv="Download Resume";
 $_hire="Hire me";
 $_go="See";
 $_gostart="Start";
+$_back = "Go back";
+$_ok = "Understood";
+$_close = "Close";
 
 #about
 $_whoiam="Who I am";
@@ -280,8 +283,7 @@ $_msg="Message";
 $_send="LET'S TALK";
 $_mail="atrujillomateus@gmail.com";
 $_location="<small>Location: </small><img src='./img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
-$_s_thanks="Thanks for writing me. I'll respond as soon as I can.";
-$_s_wrong="Something went wrong. Please try again.";
-$_s_wants=" wants to talk with you";
+$_mail_thanks = "Your message has been successfully sent.<br>We will contact you soon!";
+$_mail_wrong = "There was an error sending the message.<br>Sorry for the inconvenience, please try again.";
 
 ?>

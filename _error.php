@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<?php
-/* [Mateus] byUwUr
---- easy http apache/PHP error page ---
-2023 v1 */
+<?php // [Mateus] byUwUr --- easy http apache/PHP error page --- 2023 v1
 $mateus_link = "https://byuwur.net";
 // --- ERROR TEXTS ---
 if (isset($_GET['lang']))
@@ -328,6 +325,7 @@ if (isset($_GET['e']))
 			<a onclick="history.back(-1)"><?= $_back; ?></a>
 			<a href="./"><?= $_out; ?></a>
 		</div>
+		<span><?= isset($_POST['custom_error_message']) ? "System error:<br>" . $_POST['custom_error_message'] : ""; ?></span>
 	</div>
 </body>
 </html>
