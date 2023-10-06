@@ -290,7 +290,7 @@ if (isset($_GET['lang'])) {
     <script src="<?= $to_home; ?>_functions.js"></script>
     <script>
         $("#mail_form").submit(function(event) {
-            $("#mail_submit").removeAttr("disabled");
+            $("#mail_submit").attr("disabled", true);
             event.preventDefault();
             let formData = $("#mail_form").serializeArray();
             formData.push({
