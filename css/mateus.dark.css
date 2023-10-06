@@ -342,6 +342,7 @@ body.dark-body {
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .btn-theme {
+	border: 1px solid transparent;
 	color: #eee;
 }
 .btn-theme:focus,

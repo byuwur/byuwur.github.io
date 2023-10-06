@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <?php
-if (isset($_GET['lang']))
+require_once "./_var.php";
+
+if (isset($_GET['lang'])) {
     switch ($_GET['lang']) {
         case 'es':
         case 'en':
-            require_once "lang/lang_" . $_GET['lang'] . ".php";
             setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
+            require_once $to_home . "lang/lang_" . $_GET['lang'] . ".php";
             echo "<html lang='" . $_GET['lang'] . "'>";
             $lang = $_GET['lang'];
             break;
     }
-else if (isset($_COOKIE['lang']))
+} else if (isset($_COOKIE['lang'])) {
     switch ($_COOKIE['lang']) {
         case 'es':
         case 'en':
-            require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
+            require_once $to_home . "lang/lang_" . $_COOKIE['lang'] . ".php";
             echo "<html lang='" . $_COOKIE['lang'] . "'>";
             $lang = $_COOKIE['lang'];
             break;
     }
-else {
+} else {
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    header("Location: ./");
+    require_once $to_home . "lang/lang_es.php";
+    echo "<html lang='es'>";
+    $lang = 'es';
 }
 ?>
 
@@ -92,7 +96,7 @@ else {
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><?= $_education; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $_contact; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><?= $_interest; ?></a></li>
-                <a href="./" class="a-logo"><?= $_new; ?></a>
+                <li class="nav-item"><a href="./" class="a-logo h6"><?= $_new; ?></a></li>
             </ul>
         </div>
     </nav>
@@ -237,14 +241,14 @@ else {
                         </div>
                         <div class="col-md-7 col-md-push-6 my-auto">
                             <div class="col-md-12">
-                                <form method="POST">
-                                    <div class="form-group col-md-pull-12"><input type="text" name="s_name" class="form-control" placeholder="<?= $_name; ?>" required></div>
-                                    <div class="form-group col-md-pull-12"><input type="email" name="s_email" class="form-control" placeholder="<?= $_email; ?>" required></div>
-                                    <div class="form-group col-md-pull-12"><input type="tel" name="s_phone" class="form-control" placeholder="<?= $_tphone; ?>"></div>
-                                    <div class="form-group col-md-pull-12"><input type="text" name="s_subject" class="form-control" placeholder="<?= $_subject; ?>" required></div>
-                                    <div class="form-group col-md-pull-12"><textarea name="s_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea></div>
-                                    <div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div><br>
-                                    <div class="form-group col-md-pull-12"><input type="submit" name="s_enviar" class="a-logo" value="<?= $_send; ?>"></div>
+                                <form id="mail_form" name="mail_form">
+                                    <div class="form-group col-md-pull-12"><input type="text" id="mail_name" name="mail_name" class="form-control" placeholder="<?= $_name; ?>" required></div>
+                                    <div class="form-group col-md-pull-12"><input type="email" id="mail_email" name="mail_email" class="form-control" placeholder="<?= $_email; ?>" required></div>
+                                    <div class="form-group col-md-pull-12"><input type="tel" id="mail_phone" name="mail_phone" class="form-control" placeholder="<?= $_tphone; ?>"></div>
+                                    <div class="form-group col-md-pull-12"><input type="text" id="mail_subject" name="mail_subject" class="form-control" placeholder="<?= $_subject; ?>" required></div>
+                                    <div class="form-group col-md-pull-12"><textarea id="mail_message" name="mail_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea></div>
+                                    <div class="g-recaptcha" id="mail_recaptcha" name="mail_recaptcha" data-sitekey="6LdBMSIaAAAAANG0gtgkpXUE0K5QS2nu0tJWC1Fm"></div><br>
+                                    <div class="form-group col-md-pull-12"><input type="submit" id="mail_submit" name="mail_submit" class="a-logo" value="<?= $_send; ?>"></div>
                                 </form>
                             </div>
                         </div>
@@ -263,14 +267,51 @@ else {
         </section>
         <!-- portfolio end -->
     </div>
+    <!-- modal -->
+    <div id="modal_front" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+        <div id="modal_front_container" class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div id="modal_front_title" class="modal-header m-0 fs-5 alert alert-success">Info.</div>
+                <div id="modal_front_body" class="modal-body"></div>
+                <div class="modal-footer">
+                    <a id="modal_front_back" href="javascript:$('#modal_front').modal('hide');" onclick="$('#modal_front').modal('hide')" class="btn btn-dark"><?= $_close; ?></a>
+                    <a id="modal_front_ok" href="javascript:;" class="btn btn-success"><?= $_ok; ?></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
     <!-- SCRIPTS -->
     <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./plugin/easing/easing.min.js"></script>
-    <script type="text/javascript" src="./js/resume.js"></script>
-    <!-- Cookie consent -->
     <script type="text/javascript" src="./js/cookies.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="./js/resume.js"></script>
+    <script src="<?= $to_home; ?>_functions.js"></script>
+    <script>
+        $("#mail_form").submit(function(event) {
+            event.preventDefault();
+            let formData = $("#mail_form").serializeArray();
+            formData.push({
+                name: "mail_submit",
+                value: "1"
+            });
+            $.ajax({
+                type: "POST",
+                url: "<?= $to_home; ?>contact.php",
+                data: formData,
+                dataType: "json",
+                success: function(response) {
+                    if (response.status == 200 || response.status == 201 || response.status == 202) showModal("success", "INFO.", "<?= $_mail_thanks; ?>", "javascript:$('#modal_front').modal('hide');", true);
+                    else showModal("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", "javascript:$('#modal_front').modal('hide');", true);
+                },
+                error: function(xhr, status, error) {
+                    showModal("danger", "ERROR", "<?= $_mail_wrong; ?>", "javascript:$('#modal_front').modal('hide');", true);
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             cookieconsent.run({
                 "notice_banner_type": "simple",
@@ -284,49 +325,5 @@ else {
     </script>
     <!-- End cookie consent -->
 </body>
-<?php
-if (isset($_POST['s_enviar'])) {
-    $captcha = $_POST['g-recaptcha-response'];
-
-    if (!$captcha) {
-        echo '<script type="text/javascript" type="text/javascript">alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
-    } else {
-        $secret = "6LcgdbwUAAAAAGCql62It59UFlNifLK0I7SElrVJ";
-        $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
-        $arrcaptcha = json_decode($rescaptcha, true);
-
-        if ($arrcaptcha['success']) {
-            $s_name = $_POST['s_name'];
-            $s_email = $_POST['s_email'];
-            $s_phone = $_POST['s_phone'];
-            $s_subject = $_POST['s_subject'];
-            $s_message = $_POST['s_message'];
-
-            $mail = $_mail;
-            $mail_asunto = $s_subject . " | Mateus, " . $s_name . $_s_wants;
-            $mail_header = "From: info@mnm.team\r\n"
-                . "MIME-Version: 1.0\r\n"
-                . "Content-type: text/html; charset=iso-8859-1\r\n";
-            $mail_msg = ' <html> <head> <title> Contactar a Mateus </title> </head> <body>
-		<p>Hola, Mateus:<br><br>Soy <strong>' . $s_name . '</strong>.</p>
-		<p>Pueden contactarme en: <strong>' . $s_email . '</strong> o llamarme al: <strong>' . $s_phone . '</strong>.</p>
-		Necesito decirles:<br>
-		' . $s_message . '
-		<br><br><br>Gracias.<br><br>Atentamente, ' . $s_name . '.
-	    </body> </html> ';
-
-            $sendmail = @mail($mail, $mail_asunto, $mail_msg, $mail_header);
-
-            if ($sendmail) {
-                echo '<script type="text/javascript" type="text/javascript">alert("' . $_s_thanks . '");</script>';
-            } else {
-                echo '<script type="text/javascript" type="text/javascript">alert("' . $_s_wrong . '");</script>';
-            }
-        } else {
-            echo '<script type="text/javascript" type="text/javascript">alert("reCaptcha inválido. Lamentamos las molestias. / Invalid reCaptcha. Sorry for the bother.");</script>';
-        }
-    }
-}
-?>
 
 </html>

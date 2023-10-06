@@ -1,20 +1,20 @@
-(function($) {
+(function ($) {
 	"use strict";
-	var by = {};
+	let by = {};
 
 	/** Pre Load */
-	var loading = document.getElementById("loading");
-	by.WebLoad = function() {
+	let loading = document.getElementById("loading");
+	by.WebLoad = function () {
 		if (loading.style.visibility == "hidden" || loading.style.display == "none") {
-			loading.style.visibility = "visible"; loading.style.opacity = "1"; setTimeout(function(){loading.style.display = "block";}, 1000);
+			loading.style.visibility = "visible"; loading.style.opacity = "1"; setTimeout(function () { loading.style.display = "block"; }, 1000);
 		} else {
-			loading.style.visibility = "hidden"; loading.style.opacity = "0"; setTimeout(function(){loading.style.display = "none";}, 1000);
+			loading.style.visibility = "hidden"; loading.style.opacity = "0"; setTimeout(function () { loading.style.display = "none"; }, 1000);
 		}
 	};
 
 	/** Owl Slider */
-	by.ClientSlider = function() {
-		var testimonials_slider = $("#client-slider-single");
+	by.ClientSlider = function () {
+		let testimonials_slider = $("#client-slider-single");
 		testimonials_slider.owlCarousel({
 			loop: true,
 			margin: 30,
@@ -40,8 +40,8 @@
 	};
 
 	/** Owl Slider */
-	by.BlogSlider = function() {
-		var testimonials_slider = $("#portfolio-slider-single");
+	by.BlogSlider = function () {
+		let testimonials_slider = $("#portfolio-slider-single");
 		testimonials_slider.owlCarousel({
 			loop: true,
 			margin: 30,
@@ -64,8 +64,8 @@
 	};
 
 	/** Isotope */
-	by.MasoNry = function() {
-		var portfolioWork = $(".portfolio-content");
+	by.MasoNry = function () {
+		let portfolioWork = $(".portfolio-content");
 		$(portfolioWork).isotope({
 			resizable: false,
 			itemSelector: ".portfolio-item",
@@ -73,14 +73,14 @@
 			filter: "*"
 		});
 		//Filtering items on portfolio.html
-		var portfolioFilter = $(".filter li");
+		let portfolioFilter = $(".filter li");
 		// filter items on button click
-		$(portfolioFilter).on("click", function() {
-			var filterValue = $(this).attr("data-filter");
+		$(portfolioFilter).on("click", function () {
+			let filterValue = $(this).attr("data-filter");
 			portfolioWork.isotope({ filter: filterValue });
 		});
 		//Add/remove class on filter list
-		$(portfolioFilter).on("click", function() {
+		$(portfolioFilter).on("click", function () {
 			$(this)
 				.addClass("active")
 				.siblings()
@@ -88,7 +88,7 @@
 		});
 	};
 
-	by.PopupVideo = function() {
+	by.PopupVideo = function () {
 		$(".popup-video").magnificPopup({
 			disableOn: 700,
 			type: "iframe",
@@ -99,7 +99,7 @@
 		});
 	};
 
-	by.LightboxGallery = function() {
+	by.LightboxGallery = function () {
 		$(".portfolio-col").magnificPopup({
 			delegate: ".lightbox-gallery",
 			type: "image",
@@ -115,7 +115,7 @@
 		});
 	};
 
-	by.mTypeIt = function() {
+	by.mTypeIt = function () {
 		new TypeIt("#type-it", {
 			speed: 100,
 			loop: true,
@@ -141,16 +141,16 @@
 	};
 
 	// Window on Load
-	$(window).on("load", function() {
+	$(window).on("load", function () {
 		by.MasoNry(), by.WebLoad();
 	});
 	//Document on ready
-	$(document).ready(function() {
+	$(document).ready(function () {
 		by.ClientSlider(),
-		by.BlogSlider(),
-		by.MasoNry(),
-		by.PopupVideo(),
-		by.LightboxGallery(),
-		by.mTypeIt();
+			by.BlogSlider(),
+			by.MasoNry(),
+			by.PopupVideo(),
+			by.LightboxGallery(),
+			by.mTypeIt();
 	});
 })(jQuery);

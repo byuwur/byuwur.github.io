@@ -21,11 +21,14 @@ $_name_top="Mateus <font size='5'><span class='text-primary'>[byUwUr]</span></fo
 $_nombre="Andrés Trujillo Mateus";
 $_new="cargar HTML no tan básico";
 $_load="<font size='4'><strong>Cargando vista estándar...</strong></font><br>¿Sigue cargando? | <a href='v1'>Carga el HTML básico</a>";
-$_footer="&copy;".date("Y")."<small> byUwUr, Andrés Trujillo Mateus<br><a href='v1'>cargar HTML básico</a> | <a href='javascript:;' onclick=swapStyleSheet('light')>claro</a> | <a href='javascript:;' onclick=swapStyleSheet('dark')>oscuro</a> <a class='hidden' href='claro'>claro</a><a class='hidden' href='oscuro'>oscuro</a><br><a href='./mnm.team/sitemap' target='_self'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' target='_self'>cookie policy</a></small>";
+$_footer="&copy;".date("Y")."<small> Andrés Trujillo [Mateus] byUwUr<br><a href='v1'>cargar HTML básico</a> | <a href=\"javascript:swapStyleSheet('light');\">claro</a> | <a href=\"javascript:swapStyleSheet('dark');\">oscuro</a> <a class='hidden' href='claro'>claro</a><a class='hidden' href='oscuro'>oscuro</a><br><a href='./mnm.team/sitemap' target='_self'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' target='_self'>cookie policy</a></small>";
 $_cv="Descargar Resume";
 $_hire="Contrátame";
 $_go="Ver";
 $_gostart="Inicio";
+$_back = "Volver";
+$_ok = "Entendido";
+$_close = "Cerrar";
 
 #about
 $_whoiam="Quien soy";
@@ -271,7 +274,7 @@ $_experiencetime[]="Desde 2014";
 #contact
 $_chead="CONTÁCTAME";
 $_getintouch="Ponte en contacto";
-$_say="Di algo";
+$_say="Dime algo";
 $_name="Nombre";
 $_email="Correo electrónico";
 $_tphone="[+cód. país] Número teléfonico (Opcional)";
@@ -280,8 +283,7 @@ $_msg="Mensaje";
 $_send="VAMOS A PLATICAR";
 $_mail="atrujillomateus@gmail.com";
 $_location="<small>Ubicación: </small><img src='./img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
-$_s_thanks="Gracias por escribirme. Responderé en cuanto pueda.";
-$_s_wrong="Algo salió mal. Intente más tarde.";
-$_s_wants=" quiere hablar con usted";
+$_mail_thanks = "Tu mensaje se ha enviado exitosamente.<br>¡Te contactaremos pronto!";
+$_mail_wrong = "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.";
 
 ?>
