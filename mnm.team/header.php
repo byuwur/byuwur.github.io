@@ -1,11 +1,11 @@
 <?php
-require("./connect.php");
+require_once "./connect.php";
 ?>
 <!DOCTYPE HTML>
 <?php
 if (isset($_GET['lang'])) {
     if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-        require("./lang/lang_" . $_GET['lang'] . ".php");
+        require_once "./lang/lang_" . $_GET['lang'] . ".php";
         setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
         echo "<html lang='" . $_GET['lang'] . "'>";
         $lang = $_GET['lang'];
@@ -15,7 +15,7 @@ if (isset($_GET['lang'])) {
     }
 } else if (isset($_COOKIE['lang'])) {
     if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-        require("./lang/lang_" . $_COOKIE['lang'] . ".php");
+        require_once "./lang/lang_" . $_COOKIE['lang'] . ".php";
         echo "<html lang='" . $_COOKIE['lang'] . "'>";
         $lang = $_COOKIE['lang'];
     } else {
@@ -24,7 +24,7 @@ if (isset($_GET['lang'])) {
     }
 } else {
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-	require("./lang/lang_es.php");
+	require_once "./lang/lang_es.php";
     echo "<html lang='es'>";
     $lang = "es";
     //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
@@ -52,8 +52,8 @@ if (isset($_GET['title'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="¿Tienes un proyecto en mente? Un placer. Somos MNM, desarrolladores de software." />
     <meta name="keywords" content="MNM.team, mnm.team, desarrolladora, software, paginas web, webpage, development, devs, apps, plataformas, MNM, Team" />
-    <meta name="author" content="Mateus [byUwUr]" />
-	<meta name="copyright" content="Mateus [byUwUr]" />
+    <meta name="author" content="[Mateus] byUwUr" />
+	<meta name="copyright" content="[Mateus] byUwUr" />
 	<meta name="theme-color" content="#006" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />

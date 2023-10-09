@@ -1,5 +1,5 @@
 <?php
-require("./header.php");
+require_once "./header.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-blog">
@@ -40,5 +40,5 @@ require("./header.php");
         </div>
     </div>
 <?php
-require("./footer.php");
+require_once "./footer.php";
 ?>

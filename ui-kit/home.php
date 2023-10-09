@@ -7,7 +7,7 @@
   <title>byUwUr Demo UI toolkit</title>
   <meta name="description" content="UI kit byUwUr" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Mateus [byUwUr]">
+  <meta name="author" content="[Mateus] byUwUr">
   <meta name="keywords" content="Mateus, byUwUr, byuwur" />
   <meta property="og:title" content="UI kit byUwUr">
   <meta property="og:site_name" content="UI kit byUwUr">

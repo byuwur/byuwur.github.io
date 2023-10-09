@@ -2,20 +2,20 @@
 if (isset($_GET['work'])) {
     if (isset($_GET['lang'])) {
         if ($_GET['lang'] == 'es') {
-            require("./lang/es_work-" . $_GET['work'] . ".php");
+            require_once "./lang/es_work-" . $_GET['work'] . ".php";
         } else if ($_GET['lang'] == 'en') {
-            require("./lang/en_work-" . $_GET['work'] . ".php");
+            require_once "./lang/en_work-" . $_GET['work'] . ".php";
         }
     } else if (isset($_COOKIE['lang'])) {
-        require("./lang/" . $_COOKIE['lang'] . "_work-" . $_GET['work'] . ".php");
+        require_once "./lang/" . $_COOKIE['lang'] . "_work-" . $_GET['work'] . ".php";
     } else {
-        require("./lang/es_work-" . $_GET['work'] . ".php");
+        require_once "./lang/es_work-" . $_GET['work'] . ".php";
     }
 } else {
     echo '<script type="text/javascript"> window.location.replace("/"); </script>';
 }
 $_GET['title'] = $_wtitle;
-require("./header.php");
+require_once "./header.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-work">
@@ -58,6 +58,6 @@ require("./header.php");
         </div>
     </div>
 <?php
-require("./footer.php");
+require_once "./footer.php";
 echo '<script type="text/javascript"> active_work(); </script>';
 ?>
