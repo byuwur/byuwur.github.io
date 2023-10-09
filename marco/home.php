@@ -2,7 +2,7 @@
 <?php
 if (isset($_GET['lang'])) {
     if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-      require("lang/lang_" . $_GET['lang'] . ".php");
+      require_once "lang/lang_" . $_GET['lang'] . ".php";
       setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
       echo "<html lang='" . $_GET['lang'] . "'>";
       $lang = $_GET['lang'];
@@ -12,7 +12,7 @@ if (isset($_GET['lang'])) {
     }
   } else if (isset($_COOKIE['lang'])) {
     if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-      require("lang/lang_" . $_COOKIE['lang'] . ".php");
+      require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
       echo "<html lang='" . $_COOKIE['lang'] . "'>";
       $lang = $_COOKIE['lang'];
     } else {
@@ -20,7 +20,7 @@ if (isset($_GET['lang'])) {
       //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
     }
   } else {
-    require("lang/lang_es.php");
+    require_once "lang/lang_es.php";
     echo "<html lang='es'>";
     $lang = "es";
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
@@ -44,7 +44,7 @@ if (isset($_GET['lang'])) {
     <meta name="description" content="Mateus' portfolio" />
     <meta name="author" content="Andrés Trujillo Mateus" />
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
-    <meta name="copyright" content="Mateus [byUwUr]" />
+    <meta name="copyright" content="[Mateus] byUwUr" />
     <meta name="theme-color" content="#222" />
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
     <link rel="icon" type="image/png" href="img/icon.png" />

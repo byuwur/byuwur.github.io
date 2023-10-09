@@ -1,5 +1,5 @@
 <?php
-require("./header.php");
+require_once "./header.php";
 ?>
 <div id="mnm-main">
     <div id="mnm-hero" class="js-fullheight">
@@ -83,6 +83,6 @@ require("./header.php");
         </div>
     </div>
 <?php
-require("./footer.php");
+require_once "./footer.php";
 echo '<script type="text/javascript"> active_home(); </script>';
 ?>

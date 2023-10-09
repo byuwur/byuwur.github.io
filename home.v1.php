@@ -33,11 +33,11 @@ if (isset($_GET['lang'])) {
     <meta charset="utf-8" />
     <title><?= $_title; ?> v1</title>
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="Mateus [byUwUr]" />
+    <meta property="og:title" content="[Mateus] byUwUr" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/img/icon.png" />
     <meta property="og:url" content="https://byuwur.net" />
-    <meta property="og:site_name" content="Mateus [byUwUr]" />
+    <meta property="og:site_name" content="[Mateus] byUwUr" />
     <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
     <!-- Meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,7 +46,7 @@ if (isset($_GET['lang'])) {
     <meta name="description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
     <meta name="author" content="Andrés Trujillo Mateus" />
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
-    <meta name="copyright" content="Mateus [byUwUr]" />
+    <meta name="copyright" content="[Mateus] byUwUr" />
     <meta name="theme-color" content="#222" />
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <link rel="icon" type="image/png" href="./favicon.png" />
@@ -299,7 +299,7 @@ if (isset($_GET['lang'])) {
             });
             $.ajax({
                 type: "POST",
-                url: "<?= $to_home; ?>contact.php",
+                url: "<?= $to_home; ?>_contact.php",
                 data: formData,
                 dataType: "json",
                 success: function(response) {

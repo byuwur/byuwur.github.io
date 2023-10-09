@@ -1,17 +1,17 @@
 <?php
 if (isset($_GET['lang'])) {
     if ($_GET['lang'] == 'es') {
-        require("./lang/lang_es.php");
+        require_once "./lang/lang_es.php";
     } else if ($_GET['lang'] == 'en') {
-        require("./lang/lang_en.php");
+        require_once "./lang/lang_en.php";
     }
 } else if (isset($_COOKIE['lang'])) {
-    require("./lang/lang_" . $_COOKIE['lang'] . ".php");
+    require_once "./lang/lang_" . $_COOKIE['lang'] . ".php";
 } else {
-    require("./lang/lang_es.php");
+    require_once "./lang/lang_es.php";
 }
 $_GET['title'] = $_titleservice;
-require("./header.php");
+require_once "./header.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-services">
@@ -105,6 +105,6 @@ require("./header.php");
         </div>
     </div>
     <?php
-    require("./footer.php");
+    require_once "./footer.php";
     echo '<script type="text/javascript"> active_services(); </script>';
     ?>

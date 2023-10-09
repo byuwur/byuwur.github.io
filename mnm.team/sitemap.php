@@ -165,18 +165,18 @@
 
 					<li class="lhead">./mateus/ <span class="lcount">12 pages (páginas)</span></li>
 
-					<li class="lpage"><a href="./mateus/" title="Mateus [byUwUr]">Mateus [byUwUr]</a></li>
-					<li class="lpage"><a href="./mateus/v1" title="Mateus [byUwUr] - v1.0">Mateus [byUwUr] - v1.0</a></li>
-					<li class="lpage"><a href="./mateus/resume.es" title="Mateus [byUwUr]">Mateus [byUwUr] [resume en español]</a></li>
-					<li class="lpage"><a href="./mateus/resume.en" title="Mateus [byUwUr]">Mateus [byUwUr] [resume in english]</a></li>
-					<li class="lpage"><a href="./mateus/es" title="Mateus [byUwUr]">Mateus [byUwUr] [español]</a></li>
-					<li class="lpage"><a href="./mateus/en" title="Mateus [byUwUr]">Mateus [byUwUr] [english]</a></li>
-					<li class="lpage"><a href="./mateus/es.v1" title="Mateus [byUwUr] - v1.0">Mateus [byUwUr] - v1.0 [español]</a></li>
-					<li class="lpage"><a href="./mateus/en.v1" title="Mateus [byUwUr] - v1.0">Mateus [byUwUr] - v1.0 [english]</a></li>
-					<li class="lpage"><a href="./mateus/claro" title="Mateus [byUwUr]">Mateus [byUwUr] [tema claro]</a></li>
-					<li class="lpage"><a href="./mateus/oscuro" title="Mateus [byUwUr]">Mateus [byUwUr] [tema oscuro]</a></li>
-					<li class="lpage"><a href="./mateus/light" title="Mateus [byUwUr]">Mateus [byUwUr] [light theme]</a></li>
-					<li class="lpage"><a href="./mateus/dark" title="Mateus [byUwUr]">Mateus [byUwUr] [dark theme]</a></li>
+					<li class="lpage"><a href="./mateus/" title="[Mateus] byUwUr">[Mateus] byUwUr</a></li>
+					<li class="lpage"><a href="./mateus/v1" title="[Mateus] byUwUr - v1.0">[Mateus] byUwUr - v1.0</a></li>
+					<li class="lpage"><a href="./mateus/resume.es" title="[Mateus] byUwUr">[Mateus] byUwUr [resume en español]</a></li>
+					<li class="lpage"><a href="./mateus/resume.en" title="[Mateus] byUwUr">[Mateus] byUwUr [resume in english]</a></li>
+					<li class="lpage"><a href="./mateus/es" title="[Mateus] byUwUr">[Mateus] byUwUr [español]</a></li>
+					<li class="lpage"><a href="./mateus/en" title="[Mateus] byUwUr">[Mateus] byUwUr [english]</a></li>
+					<li class="lpage"><a href="./mateus/es.v1" title="[Mateus] byUwUr - v1.0">[Mateus] byUwUr - v1.0 [español]</a></li>
+					<li class="lpage"><a href="./mateus/en.v1" title="[Mateus] byUwUr - v1.0">[Mateus] byUwUr - v1.0 [english]</a></li>
+					<li class="lpage"><a href="./mateus/claro" title="[Mateus] byUwUr">[Mateus] byUwUr [tema claro]</a></li>
+					<li class="lpage"><a href="./mateus/oscuro" title="[Mateus] byUwUr">[Mateus] byUwUr [tema oscuro]</a></li>
+					<li class="lpage"><a href="./mateus/light" title="[Mateus] byUwUr">[Mateus] byUwUr [light theme]</a></li>
+					<li class="lpage"><a href="./mateus/dark" title="[Mateus] byUwUr">[Mateus] byUwUr [dark theme]</a></li>
 				</ul>
 				<ul class="level-1">
 

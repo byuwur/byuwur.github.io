@@ -3,7 +3,7 @@
 //Use etiquetas HTML para estructurar
 
 #page-top
-$_title="Mateus [byUwUr]";
+$_title="[Mateus] byUwUr";
 $_helloworld="Hola, mundo";
 $_im="Soy";
 $_andim="y sé de";
@@ -267,7 +267,7 @@ $_experienceent[]="<a href='javascript:;'>Producciones C&N</a>";
 $_experiencedesc[]="Máster de transmisión, máster de producción y edición de vídeo en proyectos varios.";
 $_experiencetime[]="Julio 2020 - Diciembre 2020";
 $_experiencepos[]="VIDEOGRAFÍA - Creación de contenido digital";
-$_experienceent[]="<a href='https://youtube.com/byuwur' target='_blank'>Mateus [byUwUr]</a>";
+$_experienceent[]="<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>";
 $_experiencedesc[]="Creación de contenido digital.";
 $_experiencetime[]="Desde 2014";
 
