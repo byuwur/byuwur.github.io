@@ -57,18 +57,15 @@ if (isset($_GET['lang'])) {
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
     <link href="./plugin/fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="./css/resume.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
-    <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-148227598-1');
-    </script>
+    <!-- SCRIPTS -->
+    <script src="./plugin/jquery/jquery.min.js" defer></script>
+    <script src="./plugin/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="./plugin/easing/easing.min.js" defer></script>
+    <script src="./js/cookies.js" defer></script>
+    <script src="./js/resume.js" defer></script>
+    <script src="<?= $to_home; ?>_functions.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
 
 <body id="page-top">
@@ -241,7 +238,7 @@ if (isset($_GET['lang'])) {
                         </div>
                         <div class="col-md-7 col-md-push-6 my-auto">
                             <div class="col-md-12">
-                                <form id="mail_form" name="mail_form">
+                                <form id="mail_form" name="mail_form" action="javascript:;">
                                     <div class="form-group col-md-pull-12"><input type="text" id="mail_name" name="mail_name" class="form-control" placeholder="<?= $_name; ?>" required></div>
                                     <div class="form-group col-md-pull-12"><input type="email" id="mail_email" name="mail_email" class="form-control" placeholder="<?= $_email; ?>" required></div>
                                     <div class="form-group col-md-pull-12"><input type="tel" id="mail_phone" name="mail_phone" class="form-control" placeholder="<?= $_tphone; ?>"></div>
@@ -267,55 +264,35 @@ if (isset($_GET['lang'])) {
         </section>
         <!-- portfolio end -->
     </div>
-    <!-- modal -->
-    <div id="modal_front" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
-        <div id="modal_front_container" class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div id="modal_front_title" class="modal-header m-0 fs-5 alert alert-success">Info.</div>
-                <div id="modal_front_body" class="modal-body"></div>
-                <div class="modal-footer">
-                    <a id="modal_front_back" href="javascript:$('#modal_front').modal('hide');" onclick="$('#modal_front').modal('hide')" class="btn btn-dark"><?= $_close; ?></a>
-                    <a id="modal_front_ok" href="javascript:;" class="btn btn-success"><?= $_ok; ?></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end modal -->
-    <!-- SCRIPTS -->
-    <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./plugin/easing/easing.min.js"></script>
-    <script type="text/javascript" src="./js/cookies.js"></script>
-    <script type="text/javascript" src="./js/resume.js"></script>
-    <script src="<?= $to_home; ?>_functions.js"></script>
     <script>
-        $("#mail_form").submit(function(event) {
-            $("#mail_submit").attr("disabled", true);
-            event.preventDefault();
-            let formData = $("#mail_form").serializeArray();
-            formData.push({
-                name: "mail_submit",
-                value: "1"
-            });
-            $.ajax({
-                type: "POST",
-                url: "<?= $to_home; ?>_contact.php",
-                data: formData,
-                dataType: "json",
-                success: function(response) {
-                    if (response.status == 200 || response.status == 201 || response.status == 202) showModal("success", "INFO.", "<?= $_mail_thanks; ?>", "javascript:$('#modal_front').modal('hide');", true);
-                    else showModal("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", "javascript:$('#modal_front').modal('hide');", true);
-                    $("#mail_submit").removeAttr("disabled");
-                },
-                error: function(xhr, status, error) {
-                    showModal("danger", "ERROR", "<?= $_mail_wrong; ?>", "javascript:$('#modal_front').modal('hide');", true);
-                    $("#mail_submit").removeAttr("disabled");
-                    console.error(xhr.responseText);
-                }
-            });
-        });
-
+        "use strict";
         document.addEventListener('DOMContentLoaded', function() {
+            $("#mail_form").submit(function(event) {
+                $("#mail_submit").attr("disabled", true);
+                event.preventDefault();
+                let formData = $("#mail_form").serializeArray();
+                formData.push({
+                    name: "mail_submit",
+                    value: "1"
+                });
+                $.ajax({
+                    type: "POST",
+                    url: "<?= $to_home; ?>_contact.php",
+                    data: formData,
+                    dataType: "json",
+                    success: function(response) {
+                        if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
+                        else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
+                        $("#mail_submit").removeAttr("disabled");
+                    },
+                    error: function(xhr, status, error) {
+                        show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
+                        $("#mail_submit").removeAttr("disabled");
+                        console.error(xhr.responseText);
+                    }
+                });
+            });
+
             cookieconsent.run({
                 "notice_banner_type": "simple",
                 "consent_type": "express",
@@ -325,6 +302,13 @@ if (isset($_GET['lang'])) {
                 "change_preferences_selector": "#cookiePrefs"
             });
         });
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-148227598-1');
     </script>
     <!-- End cookie consent -->
 </body>

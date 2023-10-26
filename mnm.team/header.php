@@ -1,6 +1,3 @@
-<?php
-require_once "./connect.php";
-?>
 <!DOCTYPE HTML>
 <?php
 if (isset($_GET['lang'])) {
@@ -11,7 +8,7 @@ if (isset($_GET['lang'])) {
         $lang = $_GET['lang'];
     } else {
         setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-        //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+        //echo '<script> window.location = window.location.pathname; </script>';
     }
 } else if (isset($_COOKIE['lang'])) {
     if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
@@ -20,14 +17,14 @@ if (isset($_GET['lang'])) {
         $lang = $_COOKIE['lang'];
     } else {
         setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-        //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+        //echo '<script> window.location = window.location.pathname; </script>';
     }
 } else {
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-	require_once "./lang/lang_es.php";
+    require_once "./lang/lang_es.php";
     echo "<html lang='es'>";
     $lang = "es";
-    //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+    //echo '<script> window.location = window.location.pathname; </script>';
 }
 if (isset($_GET['title'])) {
     $title = $_GET['title'] . " - MNM.team();";
@@ -53,8 +50,8 @@ if (isset($_GET['title'])) {
     <meta name="description" content="¿Tienes un proyecto en mente? Un placer. Somos MNM, desarrolladores de software." />
     <meta name="keywords" content="MNM.team, mnm.team, desarrolladora, software, paginas web, webpage, development, devs, apps, plataformas, MNM, Team" />
     <meta name="author" content="[Mateus] byUwUr" />
-	<meta name="copyright" content="[Mateus] byUwUr" />
-	<meta name="theme-color" content="#006" />
+    <meta name="copyright" content="[Mateus] byUwUr" />
+    <meta name="theme-color" content="#006" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
@@ -73,7 +70,7 @@ if (isset($_GET['title'])) {
             $theme = $_GET['theme'];
         } else {
             setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-            //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+            //echo '<script> window.location = window.location.pathname; </script>';
         }
     } else if (isset($_COOKIE['theme'])) {
         if ($_COOKIE['theme'] == 'light' || $_COOKIE['theme'] == 'dark') {
@@ -82,29 +79,30 @@ if (isset($_GET['title'])) {
             $theme = $_COOKIE['theme'];
         } else {
             setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-            //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+            //echo '<script> window.location = window.location.pathname; </script>';
         }
     } else {
         setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-		echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.dark.css" />';
-        //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+        echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.dark.css" />';
+        //echo '<script> window.location = window.location.pathname; </script>';
     }
     ?>
     <!-- Modernizr JS -->
-    <script type="text/javascript" src="../plugin/modernizr/modernizr.min.js"></script>
+    <script src="../plugin/modernizr/modernizr.min.js" defer></script>
     <!-- FOR IE9 below -->
-    <!--[if lt IE 9]><script type="text/javascript" src="../js/respond.min.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="../js/respond.min.js" defer></script><![endif]-->
     <!-- Swap theme -->
-    <script type="text/javascript">
+    <script>
         function swapStyleSheet(sheet) {
             document.getElementById('pagestyle').setAttribute('href', '../css/mnm.' + sheet + '.css');
             document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
         }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
-    <script type="text/javascript">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -112,7 +110,19 @@ if (isset($_GET['title'])) {
         gtag('config', 'UA-148227598-1');
     </script>
     <!-- reCaptcha -->
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- JS plugins -->
+    <script src="../plugin/jquery/jquery.min.js" defer></script>
+    <script src="../plugin/easing/easing.min.js" defer></script>
+    <script src="../plugin/bootstrap/js/bootstrap.mnm.min.js" defer></script>
+    <!--script type="text/javascript" src="../plugin/particles/particles.min.js"></script-->
+    <script src="../plugin/waypoints/waypoints.min.js" defer></script>
+    <script src="../plugin/flexslider/js/flexslider.min.js" defer></script>
+    <script src="../plugin/sticky-kit/sticky-kit.min.js" defer></script>
+    <!-- MAIN JS -->
+    <script src="../js/mnm.js" defer></script>
+    <!-- Cookie consent -->
+    <script src="../js/cookies.js" defer></script>
 </head>
 
 <body>

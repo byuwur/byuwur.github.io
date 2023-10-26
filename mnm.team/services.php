@@ -104,7 +104,11 @@ require_once "./header.php";
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            active_services();
+        });
+    </script>
     <?php
     require_once "./footer.php";
-    echo '<script type="text/javascript"> active_services(); </script>';
     ?>

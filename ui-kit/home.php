@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/styles_byuwur.min.css" />
   <link rel="stylesheet" href="./css/custom.css" />
-  <script src="./js/jquery-3.6.1.min.js"></script>
-  <script src="./js/popper-1.16.1.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/scripts_byuwur.min.js"></script>
-  <script src="./js/custom.js"></script>
+  <script src="./js/jquery-3.6.1.min.js" defer></script>
+  <script src="./js/popper-1.16.1.min.js" defer></script>
+  <script src="./js/bootstrap.min.js" defer></script>
+  <script src="./js/scripts_byuwur.min.js" defer></script>
+  <script src="./js/custom.js" defer></script>
 </head>
 
 <body>

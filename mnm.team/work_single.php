@@ -12,7 +12,7 @@ if (isset($_GET['work'])) {
         require_once "./lang/es_work-" . $_GET['work'] . ".php";
     }
 } else {
-    echo '<script type="text/javascript"> window.location.replace("/"); </script>';
+    echo '<script> window.location.replace("/"); </script>';
 }
 $_GET['title'] = $_wtitle;
 require_once "./header.php";
@@ -57,7 +57,11 @@ require_once "./header.php";
             </div>
         </div>
     </div>
-<?php
-require_once "./footer.php";
-echo '<script type="text/javascript"> active_work(); </script>';
-?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            active_work();
+        });
+    </script>
+    <?php
+    require_once "./footer.php";
+    ?>

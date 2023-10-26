@@ -52,12 +52,12 @@ if (isset($_GET['lang'])) {
   <link rel="icon" type="image/png" href="./favicon.png" />
   <link rel="apple-touch-icon" href="./favicon.png" />
   <!-- Plugin CSS -->
-  <link href="./plugin/bootstrap/css/bootstrap.mateus.min.css" rel="stylesheet">
-  <link href="./plugin/owl-carousel/css/owl-carousel.min.css" rel="stylesheet">
-  <link href="./plugin/magnific/css/magnific-popup.css" rel="stylesheet">
-  <link href="./plugin/nav/css/nav.css" rel="stylesheet" />
-  <link href="./plugin/fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="./plugin/themify/themify-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.mateus.min.css" />
+  <link rel="stylesheet" href="./plugin/owl-carousel/css/owl-carousel.min.css" />
+  <link rel="stylesheet" href="./plugin/magnific/css/magnific-popup.css" />
+  <link rel="stylesheet" href="./plugin/nav/css/nav.css" />
+  <link rel="stylesheet" href="./plugin/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="./plugin/themify/themify-icons.min.css" />
   <!-- Styles -->
   <?php
   if (isset($_GET['theme']))
@@ -83,19 +83,23 @@ if (isset($_GET['lang'])) {
     $theme = "dark";
   }
   ?>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
-  <script type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-148227598-1');
-  </script>
-  <!-- ReCAPTCHA -->
-  <script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- SCRIPTS -->
+  <script src="./plugin/jquery/jquery.min.js" defer></script>
+  <script src="./plugin/popper/popper.min.js" defer></script>
+  <script src="./plugin/modernizr/modernizr.min.js" defer></script>
+  <script src="./plugin/owl-carousel/js/owl-carousel.min.js" defer></script>
+  <script src="./plugin/typeit/typeit.min.js" defer></script>
+  <script src="./plugin/isotope/isotope.min.js" defer></script>
+  <script src="./plugin/particles/particles.min.js" defer></script>
+  <script src="./plugin/magnific/js/magnific-popup.min.js" defer></script>
+  <script src="./plugin/nav/js/classie.js" defer></script>
+  <script src="./plugin/nav/js/nav.js" defer></script>
+  <script src="./plugin/bootstrap/js/bootstrap.mateus.min.js" defer></script>
+  <script src="./js/cookies.js" defer></script>
+  <script src="./js/mateus.js" defer></script>
+  <script src="<?= $to_home; ?>_functions.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
 
 <body class="dark-body">
@@ -478,7 +482,7 @@ if (isset($_GET['lang'])) {
                   <div class="col-12 m-30px-b sm-m-15px-b">
                     <div class="contact-form">
                       <h4 class="text-color font-alt m-20px-b"><?= $_say; ?></h4>
-                      <form id="mail_form" name="mail_form" class="contactform">
+                      <form id="mail_form" name="mail_form" class="contactform" action="javascript:;">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group"><input type="text" id="mail_name" name="mail_name" class="validate form-control" placeholder="<?= $_name; ?>" required><span class="input-focus-effect theme-bg"></span></div>
@@ -525,61 +529,8 @@ if (isset($_GET['lang'])) {
     <div class="mt-1 mr-5 pr-4 text-right"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
   </header> <!-- header -->
-  <!-- modal -->
-  <div id="modal_front" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
-    <div id="modal_front_container" class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div id="modal_front_title" class="modal-header m-0 fs-5 alert alert-success">Info.</div>
-        <div id="modal_front_body" class="modal-body text-dark"></div>
-        <div class="modal-footer">
-          <a id="modal_front_back" href="javascript:$('#modal_front').modal('hide');" onclick="$('#modal_front').modal('hide')" class="btn btn-dark"><?= $_close; ?></a>
-          <a id="modal_front_ok" href="javascript:;" class="btn btn-success"><?= $_ok; ?></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end modal -->
-  <!-- SCRIPTS -->
-  <script type="text/javascript" src="./plugin/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="./plugin/popper/popper.min.js"></script>
-  <script type="text/javascript" src="./plugin/modernizr/modernizr.min.js"></script>
-  <script type="text/javascript" src="./plugin/owl-carousel/js/owl-carousel.min.js"></script>
-  <script type="text/javascript" src="./plugin/typeit/typeit.min.js"></script>
-  <script type="text/javascript" src="./plugin/isotope/isotope.min.js"></script>
-  <script type="text/javascript" src="./plugin/particles/particles.min.js"></script>
-  <script type="text/javascript" src="./plugin/magnific/js/magnific-popup.min.js"></script>
-  <script type="text/javascript" src="./plugin/nav/js/classie.js"></script>
-  <script type="text/javascript" src="./plugin/nav/js/nav.js"></script>
-  <script type="text/javascript" src="./plugin/bootstrap/js/bootstrap.mateus.min.js"></script>
-  <script type="text/javascript" src="./js/cookies.js"></script>
-  <script type="text/javascript" src="./js/mateus.js"></script>
-  <script src="<?= $to_home; ?>_functions.js"></script>
   <script>
-    $("#mail_form").submit(function(event) {
-      $("#mail_submit").attr("disabled", true);
-      event.preventDefault();
-      let formData = $("#mail_form").serializeArray();
-      formData.push({
-        name: "mail_submit",
-        value: "1"
-      });
-      $.ajax({
-        type: "POST",
-        url: "<?= $to_home; ?>_contact.php",
-        data: formData,
-        dataType: "json",
-        success: function(response) {
-          if (response.status == 200 || response.status == 201 || response.status == 202) showModal("success", "INFO.", "<?= $_mail_thanks; ?>", "javascript:$('#modal_front').modal('hide');", true);
-          else showModal("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", "javascript:$('#modal_front').modal('hide');", true);
-          $("#mail_submit").removeAttr("disabled");
-        },
-        error: function(xhr, status, error) {
-          showModal("danger", "ERROR", "<?= $_mail_wrong; ?>", "javascript:$('#modal_front').modal('hide');", true);
-          $("#mail_submit").removeAttr("disabled");
-          console.error(xhr.responseText);
-        }
-      });
-    });
+    "use strict";
 
     function swapStyleSheet(sheet) {
       document.getElementById('pagestyle').setAttribute('href', '<?= $to_home; ?>css/mateus.' + sheet + '.css');
@@ -590,8 +541,32 @@ if (isset($_GET['lang'])) {
       document.querySelector(`#btn-menu`).click();
       setTimeout(() => document.querySelector(`#btn-${page}`).click(), 500);
     }
-
     document.addEventListener('DOMContentLoaded', function() {
+      $("#mail_form").submit(function(event) {
+        $("#mail_submit").attr("disabled", true);
+        event.preventDefault();
+        let formData = $("#mail_form").serializeArray();
+        formData.push({
+          name: "mail_submit",
+          value: "1"
+        });
+        $.ajax({
+          type: "POST",
+          url: "<?= $to_home; ?>_contact.php",
+          data: formData,
+          dataType: "json",
+          success: function(response) {
+            if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
+            else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
+            $("#mail_submit").removeAttr("disabled");
+          },
+          error: function(xhr, status, error) {
+            show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
+            $("#mail_submit").removeAttr("disabled");
+            console.error(xhr.responseText);
+          }
+        });
+      });
       cookieconsent.run({
         "notice_banner_type": "simple",
         "consent_type": "express",
@@ -601,6 +576,13 @@ if (isset($_GET['lang'])) {
         "change_preferences_selector": "#cookiePrefs"
       });
     });
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-148227598-1');
   </script>
 </body>
 

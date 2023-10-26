@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
-	<style type="text/css">
+	<style>
 		body {
 			background-color: #eee;
 			font-family: "Roboto", "Helvetica", "Arial", sans-serif;

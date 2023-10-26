@@ -2,30 +2,30 @@
 <?php
 if (isset($_GET['lang'])) {
     if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-      require_once "lang/lang_" . $_GET['lang'] . ".php";
-      setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-      echo "<html lang='" . $_GET['lang'] . "'>";
-      $lang = $_GET['lang'];
+        require_once "lang/lang_" . $_GET['lang'] . ".php";
+        setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
+        echo "<html lang='" . $_GET['lang'] . "'>";
+        $lang = $_GET['lang'];
     } else {
-      setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-      //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+        setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
+        //echo '<script> window.location = window.location.pathname; </script>';
     }
-  } else if (isset($_COOKIE['lang'])) {
+} else if (isset($_COOKIE['lang'])) {
     if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-      require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
-      echo "<html lang='" . $_COOKIE['lang'] . "'>";
-      $lang = $_COOKIE['lang'];
+        require_once "lang/lang_" . $_COOKIE['lang'] . ".php";
+        echo "<html lang='" . $_COOKIE['lang'] . "'>";
+        $lang = $_COOKIE['lang'];
     } else {
-      setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-      //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
+        setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
+        //echo '<script> window.location = window.location.pathname; </script>';
     }
-  } else {
+} else {
     require_once "lang/lang_es.php";
     echo "<html lang='es'>";
     $lang = "es";
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    //echo '<script type="text/javascript"> window.location = window.location.pathname; </script>';
-  }
+    //echo '<script> window.location = window.location.pathname; </script>';
+}
 ?>
 
 <head>
@@ -56,18 +56,18 @@ if (isset($_GET['lang'])) {
     <link href="../plugin/fontawesome/css/all.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="../css/resume.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1"></script>
-    <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-148227598-1');
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../plugin/jquery/jquery.min.js" defer></script>
+    <script src="../plugin/bootstrap/js/bootstrap.min.js" defer></script>
+    <!-- Plugin JavaScript -->
+    <script src="../plugin/easing/easing.min.js" defer></script>
+    <!-- Custom scripts for this template -->
+    <script src="../js/resume.js" defer></script>
+    <!-- Cookie consent -->
+    <script src="../js/cookies.js" defer></script>
 </head>
 
 <body id="page-top">
@@ -283,16 +283,7 @@ if (isset($_GET['lang'])) {
         </section>
         <!-- portfolio end -->
     </div>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../plugin/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="../plugin/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script type="text/javascript" src="../plugin/easing/easing.min.js"></script>
-    <!-- Custom scripts for this template -->
-    <script type="text/javascript" src="../js/resume.js"></script>
-    <!-- Cookie consent -->
-    <script type="text/javascript" src="../js/cookies.js"></script>
-    <script type="text/javascript">
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             cookieconsent.run({
                 "notice_banner_type": "simple",
@@ -303,33 +294,41 @@ if (isset($_GET['lang'])) {
                 "change_preferences_selector": "#cookiePrefs"
             });
         });
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-148227598-1');
     </script>
     <!-- End cookie consent -->
-</body>
-<?php
-if (isset($_POST['s_enviar'])) {
-    $captcha = $_POST['g-recaptcha-response'];
 
-    if (!$captcha) {
-        echo '<script type="text/javascript">alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
-    } else {
-        $secret = "6LcgdbwUAAAAAGCql62It59UFlNifLK0I7SElrVJ";
-        $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
-        $arrcaptcha = json_decode($rescaptcha, true);
+    <?php
+    if (isset($_POST['s_enviar'])) {
+        $captcha = $_POST['g-recaptcha-response'];
 
-        if ($arrcaptcha['success']) {
-            $s_name = $_POST['s_name'];
-            $s_email = $_POST['s_email'];
-            $s_phone = $_POST['s_phone'];
-            $s_subject = $_POST['s_subject'];
-            $s_message = $_POST['s_message'];
+        if (!$captcha) {
+            echo '<script>alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
+        } else {
+            $secret = "";
+            $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
+            $arrcaptcha = json_decode($rescaptcha, true);
 
-            $mail = $_mail;
-            $mail_asunto = $s_subject . " | Marco, " . $s_name . $_s_wants;
-            $mail_header = "From: info@mnm.team\r\n"
-                . "MIME-Version: 1.0\r\n"
-                . "Content-type: text/html; charset=iso-8859-1\r\n";
-            $mail_msg = ' <html> <head> <title> Contactar a Marco </title> </head> <body>
+            if ($arrcaptcha['success']) {
+                $s_name = $_POST['s_name'];
+                $s_email = $_POST['s_email'];
+                $s_phone = $_POST['s_phone'];
+                $s_subject = $_POST['s_subject'];
+                $s_message = $_POST['s_message'];
+
+                $mail = $_mail;
+                $mail_asunto = $s_subject . " | Marco, " . $s_name . $_s_wants;
+                $mail_header = "From: info@mnm.team\r\n"
+                    . "MIME-Version: 1.0\r\n"
+                    . "Content-type: text/html; charset=iso-8859-1\r\n";
+                $mail_msg = ' <html> <head> <title> Contactar a Marco </title> </head> <body>
 		<p>Hola, Marco:<br><br>Soy <strong>' . $s_name . '</strong>.</p>
 		<p>Pueden contactarme en: <strong>' . $s_email . '</strong> o llamarme al: <strong>' . $s_phone . '</strong>.</p>
 		Necesito decirles:<br>
@@ -337,18 +336,19 @@ if (isset($_POST['s_enviar'])) {
 		<br><br><br>Gracias.<br><br>Atentamente, ' . $s_name . '.
 	    </body> </html> ';
 
-            $sendmail = @mail($mail, $mail_asunto, $mail_msg, $mail_header);
+                $sendmail = @mail($mail, $mail_asunto, $mail_msg, $mail_header);
 
-            if ($sendmail) {
-                echo '<script type="text/javascript">alert("' . $_s_thanks . '");</script>';
+                if ($sendmail) {
+                    echo '<script>alert("' . $_s_thanks . '");</script>';
+                } else {
+                    echo '<script>alert("' . $_s_wrong . '");</script>';
+                }
             } else {
-                echo '<script type="text/javascript">alert("' . $_s_wrong . '");</script>';
+                echo '<script>alert("reCaptcha inválido. Lamentamos las molestias. / Invalid reCaptcha. Sorry for the bother.");</script>';
             }
-        } else {
-            echo '<script type="text/javascript">alert("reCaptcha inválido. Lamentamos las molestias. / Invalid reCaptcha. Sorry for the bother.");</script>';
         }
     }
-}
-?>
+    ?>
+</body>
 
 </html>
