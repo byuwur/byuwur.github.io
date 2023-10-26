@@ -94,7 +94,11 @@ require_once "./header.php";
             </div>
         </div>
     </div>
-<?php
-require_once "./footer.php";
-echo '<script type="text/javascript"> active_about(); </script>';
-?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            active_about();
+        });
+    </script>
+    <?php
+    require_once "./footer.php";
+    ?>

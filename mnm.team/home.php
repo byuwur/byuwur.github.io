@@ -9,12 +9,16 @@ require_once "./header.php";
                     <div class="container-fluid js-fullheight slider-text">
                         <div class="row" style="max-height:44vh;margin:1.5em;"><a href="<?= $_project; ?>">
                                 <div class="about-desc">
-                                    <h3 class="desc" style="padding:1em 1em 0 1em;"><?= $_kproject; ?><video class="video-home" style="max-height:33vh;" autoplay muted loop><source src="../img/mnmp.mp4" type="video/mp4" /></video></h3>
+                                    <h3 class="desc" style="padding:1em 1em 0 1em;"><?= $_kproject; ?><video class="video-home" style="max-height:33vh;" autoplay muted loop>
+                                            <source src="../img/mnmp.mp4" type="video/mp4" />
+                                        </video></h3>
                                 </div>
                             </a></div>
                         <div class="row" style="max-height:44vh;margin:1.5em;"><a href="<?= $_service; ?>">
                                 <div class="about-desc">
-                                    <h3 class="desc" style="padding:1em 1em 0 1em;"><?= $_kservice; ?><video class="video-home" style="max-height:33vh;" autoplay muted loop><source src="../img/mnms.mp4" type="video/mp4" /></video></h3>
+                                    <h3 class="desc" style="padding:1em 1em 0 1em;"><?= $_kservice; ?><video class="video-home" style="max-height:33vh;" autoplay muted loop>
+                                            <source src="../img/mnms.mp4" type="video/mp4" />
+                                        </video></h3>
                                 </div>
                             </a></div>
                     </div>
@@ -82,7 +86,11 @@ require_once "./header.php";
             </ul>
         </div>
     </div>
-<?php
-require_once "./footer.php";
-echo '<script type="text/javascript"> active_home(); </script>';
-?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            active_home();
+        });
+    </script>
+    <?php
+    require_once "./footer.php";
+    ?>

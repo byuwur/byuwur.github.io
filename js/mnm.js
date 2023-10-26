@@ -227,7 +227,7 @@ function active_home() {
 		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
-		}, 0);
+		}, 99);
 	}
 }
 
@@ -239,7 +239,7 @@ function active_work() {
 		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
-		}, 0);
+		}, 99);
 	}
 }
 
@@ -251,7 +251,7 @@ function active_services() {
 		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
-		}, 0);
+		}, 99);
 	}
 }
 
@@ -263,7 +263,7 @@ function active_about() {
 		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
-		}, 0);
+		}, 99);
 	}
 }
 
@@ -275,6 +275,6 @@ function active_contact() {
 		setTimeout(function () {
 			$("body").removeClass("offcanvas");
 			$(".js-mnm-nav-toggle").removeClass("active");
-		}, 0);
+		}, 99);
 	}
 }
