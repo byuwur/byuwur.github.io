@@ -1,8 +1,8 @@
 <?php
-// This file is always required by ./_config.php
+// This file is always required by ./_config.php but can be required by its own
 
 // --- API functions ---
-function api_respond($status, $error, $message, $data = null)
+function api_respond(int $status, bool $error, string $message, array $data = [])
 {
     header('Content-Type: application/json');
     $response = new stdClass();
@@ -10,8 +10,20 @@ function api_respond($status, $error, $message, $data = null)
     $response->error = $error;
     $response->message = $message;
     $response->data = $data;
-    echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-    exit;
+    die(json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+}
+
+function make_http_request(string $url, array $get = [], array $post = [])
+{
+    $req = curl_init();
+    curl_setopt($req, CURLOPT_URL, $url . '?' . http_build_query($get));
+    curl_setopt($req, CURLOPT_POST, 1);
+    curl_setopt($req, CURLOPT_POSTFIELDS, $post);
+    curl_setopt($req, CURLOPT_RETURNTRANSFER, true);
+    $requested = curl_exec($req);
+    if (curl_errno($req)) echo "<script>console.error('CURL ERROR: " . curl_error($req) . "');</script>";
+    curl_close($req);
+    return $requested;
 }
 
 // --- functions ---
@@ -21,10 +33,21 @@ function suppressErrors()
     ini_set('display_errors', 0);
 }
 
-function escape2html($input)
+function escape2HTML($input)
 {
     $output = htmlspecialchars($input, ENT_QUOTES, 'UTF-8', false);
     return nl2br($output);
+}
+
+function die2JSON($json)
+{
+    header('Content-Type: application/json');
+    die(json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+}
+
+function print2JSON($json)
+{
+    echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 }
 
 function randomString($length)

@@ -37,5 +37,5 @@ try {
     $response = $sendgrid->send($sg_email);
     api_respond($response->statusCode(), false, isset(json_decode($response->body())->errors) ? json_decode($response->body())->errors[0]->message : "", $response->headers());
 } catch (Exception $e) {
-    api_respond(500, true, "Caught exception: " . $e->getMessage());
+    api_respond(500, true, "Caught exception" . ($_ENV["APP_ENV"] == "DEV" ? ": " . $e->getCode() . " = " . $e->getMessage() : ""));
 }
