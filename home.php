@@ -541,7 +541,23 @@ if (isset($_GET['lang'])) {
       document.querySelector(`#btn-menu`).click();
       setTimeout(() => document.querySelector(`#btn-${page}`).click(), 500);
     }
+
+    function onHashChangeEvent() {
+      switch (window.location.hash.replace("#!", "")) {
+        case "home":
+        case "about":
+        case "resume":
+        case "portfolio":
+        case "contact":
+          swapPage(window.location.hash.replace("#!", ""));
+          break;
+      }
+    }
+
+    window.addEventListener("hashchange", onHashChangeEvent);
+
     document.addEventListener('DOMContentLoaded', function() {
+      onHashChangeEvent();
       $("#mail_form").submit(function(event) {
         $("#mail_submit").attr("disabled", true);
         event.preventDefault();
