@@ -10,7 +10,8 @@ function api_respond(int $status, bool $error, string $message, array $data = []
     $response->error = $error;
     $response->message = $message;
     $response->data = $data;
-    die(json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+    echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    exit;
 }
 
 function make_http_request(string $url, array $get = [], array $post = [])
@@ -27,30 +28,31 @@ function make_http_request(string $url, array $get = [], array $post = [])
 }
 
 // --- functions ---
-function suppressErrors()
+function suppress_errors()
 {
     error_reporting(0);
     ini_set('display_errors', 0);
 }
 
-function escape2HTML($input)
+function escape_html($input)
 {
     $output = htmlspecialchars($input, ENT_QUOTES, 'UTF-8', false);
     return nl2br($output);
 }
 
-function die2JSON($json)
+function exit_json($json)
 {
     header('Content-Type: application/json');
-    die(json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+    echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    exit;
 }
 
-function print2JSON($json)
+function print_json($json)
 {
     echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 }
 
-function randomString($length)
+function random_string($length)
 {
     $string = "";
     $char = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz";

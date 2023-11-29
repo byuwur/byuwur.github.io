@@ -1,7 +1,7 @@
 <?php
 require_once "./_var.php";
 require_once $to_home . "_config.php";
-suppressErrors();
+suppress_errors();
 if (!isset($_POST["mail_submit"])) api_respond(400, true, "Invalid form.");
 if (!isset($_POST["g-recaptcha-response"])) api_respond(400, true, "Invalid captcha.");
 if (!json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $_ENV["RECAPTCHA_KEY"] . "&response=" . $_POST["g-recaptcha-response"]))->success) api_respond(403, true, "Invalid captcha.");
@@ -13,7 +13,7 @@ if (!isset($_POST["mail_message"]) || empty($_POST["mail_message"])) api_respond
 $easter_name = isset($_POST["easter_name"]) && !empty($_POST["easter_name"]) ? $_POST["easter_name"] : "Mateus";
 $message = "Soy <strong>" . $_POST["mail_name"] . "</strong>.<br>Pueden contactarme en: <strong>" . $_POST["mail_email"] . "</strong>";
 $message .= isset($_POST["mail_phone"]) && !empty($_POST["mail_phone"]) ? ", o llamarme al: <strong>" . $_POST["mail_phone"] . "</strong>" : ".";
-$message .= "<br><br>Asunto: <strong>" . $_POST["mail_subject"] . "</strong><br><br>Necesito decirles:<br>" . escape2html($_POST["mail_message"]);
+$message .= "<br><br>Asunto: <strong>" . $_POST["mail_subject"] . "</strong><br><br>Necesito decirles:<br>" . escape_html($_POST["mail_message"]);
 
 $html = 'Hola, ' . $easter_name . '.<br>'. $message;
 //echo $html;
