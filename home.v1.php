@@ -7,7 +7,7 @@ if (isset($_GET['lang'])) {
         case 'es':
         case 'en':
             setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-            require_once $to_home . "lang/lang_" . $_GET['lang'] . ".php";
+            require_once $TO_HOME . "lang/lang_" . $_GET['lang'] . ".php";
             echo "<html lang='" . $_GET['lang'] . "'>";
             $lang = $_GET['lang'];
             break;
@@ -16,14 +16,14 @@ if (isset($_GET['lang'])) {
     switch ($_COOKIE['lang']) {
         case 'es':
         case 'en':
-            require_once $to_home . "lang/lang_" . $_COOKIE['lang'] . ".php";
+            require_once $TO_HOME . "lang/lang_" . $_COOKIE['lang'] . ".php";
             echo "<html lang='" . $_COOKIE['lang'] . "'>";
             $lang = $_COOKIE['lang'];
             break;
     }
 } else {
     setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    require_once $to_home . "lang/lang_es.php";
+    require_once $TO_HOME . "lang/lang_es.php";
     echo "<html lang='es'>";
     $lang = 'es';
 }
@@ -63,7 +63,7 @@ if (isset($_GET['lang'])) {
     <script src="./plugin/easing/easing.min.js" defer></script>
     <script src="./js/cookies.js" defer></script>
     <script src="./js/resume.js" defer></script>
-    <script src="<?= $to_home; ?>_functions.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>_functions.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
@@ -277,7 +277,7 @@ if (isset($_GET['lang'])) {
                 });
                 $.ajax({
                     type: "POST",
-                    url: "<?= $to_home; ?>_contact.php",
+                    url: "<?= $HOME_PATH; ?>_contact.php",
                     data: formData,
                     dataType: "json",
                     success: function(response) {
