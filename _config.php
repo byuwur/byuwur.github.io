@@ -1,8 +1,8 @@
 <?php
 // You must require_once './_var.php' before this file to get the relative/absolute paths
-require_once $to_home . "_functions.php";
-require_once $to_home . "vendor/autoload.php";
-$dotenv = Dotenv\Dotenv::createImmutable($to_home);
+require_once $TO_HOME . "_functions.php";
+require_once $TO_HOME . "vendor/autoload.php";
+$dotenv = Dotenv\Dotenv::createImmutable($TO_HOME);
 $dotenv->load();
 
 /*try {
@@ -11,4 +11,4 @@ $dotenv->load();
     api_respond(500, true, "Connection failed" . ($_ENV["APP_ENV"] == "DEV" ? ": " . $e->getCode() . " = " . $e->getMessage() : ""));
 }*/
 
-require_once $to_home . "_auth.php";
+require_once $TO_HOME . "_auth.php";

@@ -10,4 +10,4 @@
     Sorry, you shouldn't be here.
 </body>
 </html>
-<?php header("Location:" . $to_home); ?>
+<?php header("Location:" . $TO_HOME); ?>

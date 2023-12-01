@@ -1,6 +1,6 @@
 <?php
 require_once "./_var.php";
-require_once $to_home . "_config.php";
+require_once $TO_HOME . "_config.php";
 suppress_errors();
 if (!isset($_POST["mail_submit"])) api_respond(400, true, "Invalid form.");
 if (!isset($_POST["g-recaptcha-response"])) api_respond(400, true, "Invalid captcha.");
@@ -30,7 +30,7 @@ $sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);
 $sendgrid->client->setCurlOptions([
     CURLOPT_SSL_VERIFYHOST => 2,
     CURLOPT_SSL_VERIFYPEER => true,
-    CURLOPT_CAINFO => $system_root . "cacert.pem",
+    CURLOPT_CAINFO => $SYSTEM_ROOT . "cacert.pem",
 ]);
 
 try {
