@@ -2,17 +2,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     let URI = localStorage.getItem("URI"),
         _GET = JSON.parse(localStorage.getItem("_GET")),
-        _POST = JSON.parse(localStorage.getItem("_POST"));
+        _POST = JSON.parse(localStorage.getItem("_POST")),
+        HISTORY_INDEX = -1,
+        HISTORY_PATH = [];
     const ROUTES = JSON.parse(localStorage.getItem("ROUTES")),
-        PROTOCOL = localStorage.getItem("PROTOCOL"),
-        PATH_DIFF = localStorage.getItem("HOME_PATH"),
         TO_HOME = localStorage.getItem("TO_HOME"),
-        THIS_PATH = localStorage.getItem("THIS_PATH"),
         HOME_PATH = localStorage.getItem("HOME_PATH");
     const getLocalStorageItems = function () {
-        URI = localStorage.getItem("URI"),
-            _GET = JSON.parse(localStorage.getItem("_GET")),
-            _POST = JSON.parse(localStorage.getItem("_POST"));
+        URI = localStorage.getItem("URI");
+        _GET = JSON.parse(localStorage.getItem("_GET"));
+        _POST = JSON.parse(localStorage.getItem("_POST"));
+    };
+    const historyPushState = function (url) {
+        HISTORY_INDEX++;
+        HISTORY_PATH[HISTORY_INDEX] = url;
+        history.pushState({ index: HISTORY_INDEX }, "", url);
     };
     const errorPage = function (status, custom_error_message = "") {
         $.ajax({
@@ -69,19 +73,19 @@ document.addEventListener('DOMContentLoaded', function () {
         else _GET["uri"] = URI;
         return { path, uri, file: ROUTES[path].FILE, get: _GET, post: _POST };
     };
-    const loadSPA = function (url) {
+    const loadSPA = function (url, push = true) {
         $(".load-circle-back, .load-circle-fore, .load-text, .loading").fadeIn(1);
         $("#spa-page-content-container").html("");
         const { path, uri, file, get, post } = routeURL(`${url}`);
         /* console.log(`loadSPA("${url}");`);
         console.log("routeURL(); PATH=", path, "; URI=", uri, "; FILE=", file, "; _GET=", get, "; _POST=", post); */
+        if (push) historyPushState(url);
         if (!file) $.ajax({
             type: "POST",
             url: `${HOME_PATH}${uri}?${new URLSearchParams(get).toString()}`,
             data: { ...post },
             success: function (data) {
                 $("#spa-page-content-container").html(data);
-                history.pushState({}, "", url);
                 if (uri != ROUTES[path].URI) loadHeaderFooter();
             }, error: function (xhr, status, error) {
                 console.log("Error loading content:", error);
@@ -92,6 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         else window.location = path;
     };
+    window.addEventListener("popstate", function (e) {
+        HISTORY_INDEX = e.state.index;
+        loadSPA(HISTORY_PATH[HISTORY_INDEX], false);
+    });
     $(document).on("click", "a:not([target='_blank'])", function (e) {
         e.preventDefault();
         loadSPA($(this).attr("href"));
