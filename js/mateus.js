@@ -1,7 +1,6 @@
 (function ($) {
 	"use strict";
 	let by = {};
-
 	/** Pre Load */
 	let loading = document.getElementById("loading");
 	by.WebLoad = function () {
@@ -11,7 +10,6 @@
 			loading.style.visibility = "hidden"; loading.style.opacity = "0"; setTimeout(function () { loading.style.display = "none"; }, 1000);
 		}
 	};
-
 	/** Owl Slider */
 	by.ClientSlider = function () {
 		let testimonials_slider = $("#client-slider-single");
@@ -38,7 +36,6 @@
 			}
 		});
 	};
-
 	/** Owl Slider */
 	by.BlogSlider = function () {
 		let testimonials_slider = $("#portfolio-slider-single");
@@ -62,7 +59,6 @@
 			}
 		});
 	};
-
 	/** Isotope */
 	by.MasoNry = function () {
 		let portfolioWork = $(".portfolio-content");
@@ -87,7 +83,6 @@
 				.removeClass("active");
 		});
 	};
-
 	by.PopupVideo = function () {
 		$(".popup-video").magnificPopup({
 			disableOn: 700,
@@ -98,7 +93,6 @@
 			fixedContentPos: false
 		});
 	};
-
 	by.LightboxGallery = function () {
 		$(".portfolio-col").magnificPopup({
 			delegate: ".lightbox-gallery",
@@ -114,7 +108,6 @@
 			}
 		});
 	};
-
 	by.mTypeIt = function () {
 		new TypeIt("#type-it", {
 			speed: 100,
@@ -139,7 +132,6 @@
 			breakLines: false
 		});
 	};
-
 	// Window on Load
 	$(window).on("load", function () {
 		by.MasoNry(), by.WebLoad();

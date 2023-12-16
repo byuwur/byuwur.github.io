@@ -1,7 +1,6 @@
 <?php
 //TEXTS IN ENGLISH
 //Use HTML tag for structuring
-
 //work-single.php
 $_wtitle="Resérvelapp";
 $_wsubtitle="Reservation system for synthetic soccer fields";

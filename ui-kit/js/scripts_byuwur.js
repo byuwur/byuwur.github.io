@@ -704,7 +704,6 @@
             for (
               this.o.calendarWeeks && (e += '<th class="cw">&#160;</th>');
               t < this.o.weekStart + 7;
-
             )
               (e += '<th class="dow'),
                 -1 !== _.inArray(t, this.o.daysOfWeekDisabled) &&

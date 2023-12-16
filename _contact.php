@@ -9,15 +9,12 @@ if (!isset($_POST["mail_name"]) || empty($_POST["mail_name"])) api_respond(400, 
 if (!isset($_POST["mail_email"]) || empty($_POST["mail_email"]) || !filter_var($_POST["mail_email"], FILTER_VALIDATE_EMAIL)) api_respond(400, true, "Invalid form: email required.");
 if (!isset($_POST["mail_subject"]) || empty($_POST["mail_subject"])) api_respond(400, true, "Invalid form: subject required.");
 if (!isset($_POST["mail_message"]) || empty($_POST["mail_message"])) api_respond(400, true, "Invalid form: message required.");
-
 $easter_name = isset($_POST["easter_name"]) && !empty($_POST["easter_name"]) ? $_POST["easter_name"] : "Mateus";
 $message = "Soy <strong>" . $_POST["mail_name"] . "</strong>.<br>Pueden contactarme en: <strong>" . $_POST["mail_email"] . "</strong>";
 $message .= isset($_POST["mail_phone"]) && !empty($_POST["mail_phone"]) ? ", o llamarme al: <strong>" . $_POST["mail_phone"] . "</strong>" : ".";
 $message .= "<br><br>Asunto: <strong>" . $_POST["mail_subject"] . "</strong><br><br>Necesito decirles:<br>" . escape_html($_POST["mail_message"]);
-
 $html = 'Hola, ' . $easter_name . '.<br>'. $message;
 //echo $html;
-
 $sg_email = new \SendGrid\Mail\Mail();
 $sg_email->setFrom("mateus@byuwur.net", "[Mateus] byUwUr");
 $sg_email->addTos([
@@ -25,14 +22,12 @@ $sg_email->addTos([
 ]);
 $sg_email->setSubject($_POST["mail_subject"]);
 $sg_email->addContent("text/html", $html);
-
 $sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);
 $sendgrid->client->setCurlOptions([
     CURLOPT_SSL_VERIFYHOST => 2,
     CURLOPT_SSL_VERIFYPEER => true,
     CURLOPT_CAINFO => $SYSTEM_ROOT . "cacert.pem",
 ]);
-
 try {
     $response = $sendgrid->send($sg_email);
     api_respond($response->statusCode(), false, isset(json_decode($response->body())->errors) ? json_decode($response->body())->errors[0]->message : "", $response->headers());

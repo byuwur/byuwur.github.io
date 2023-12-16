@@ -4,7 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
 <url>
   <loc>https://somosmnm.co/</loc>
   <lastmod>2019-11-04T20:18:53+00:00</lastmod>
@@ -205,5 +204,4 @@
   <lastmod>2019-11-04T20:18:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
-
 </urlset>

@@ -1,7 +1,6 @@
 <?php
 //TEXTS IN ENGLISH
 //Use HTML tag for structuring
-
 //URIs
 $_project="projects";
 $_service="services";
@@ -13,7 +12,6 @@ $_titleservice="Services";
 $_titleabout="About us";
 $_titlecontact="Contact us";
 $_load="<font size='4'><strong>Loading standard view...</strong></font>";
-
 //index.php
 $_language="Lang.:";
 $_helloworld="Hello, world";
@@ -31,12 +29,10 @@ $_back="Go back";
 //error.php
 $_sorry = "Sorry for the inconvenience. What would you like to do?";
 $_out = "Get me out of here";
-
 //footer_contact.php
 $_contact_title="Let us get in touch";
 $_contact_desc="Get closer, tell us your needs and we'll supply them.";
 $_contact_us="CONTACT US";
-
 //home.php
 $_mnm="<font size='10'><strong>MNM <small>Team</small></strong></font>";
 $_mnm_desc="<font size='5'>Development done right within reach of your hands.</font>";
@@ -52,7 +48,6 @@ $_nestux_p="KNOW MORE ABOUT ME ";
 $_marco="MARCO <small>Cortés</small>";
 $_marco_desc="Programmer and Implementor";
 $_marco_p="KNOW MORE ABOUT ME ";
-
 //about.php
 $_welcome="WELCOME &amp; INTRODUCE";
 $_we="OUR TEAM";
@@ -62,7 +57,6 @@ $_whyus="Why choose us?";
 $_whyus_desc="<li><font size='4'><b>OUR TEAM</b></font> is made up of qualified and enthusiastic professionals who perform their tasks with talent, efficiency, seriousness and dedication.</li><li><font size='4'><b>QUALITY-PRICE RELATION</b></font> that adjusts to the services we offer: stable, fast and safe; broad features and benefits; and a wide etcetera.</li><li><font size='4'><b>OUR SERVICES</b></font> reach the satisfaction of our clients and the optimization and improvement of the processes they carry out.</li><br>Always willing to assist and listen to you, to understand and resolve your concerns, needs and/or inconveniences.";
 $_whatwedo="What do we do and what do we specialize in?";
 $_whatwedo_desc="<ul><li>Mobile development (Android)</li><li>Web development (LAMP)</li><li>Cloud solutions (AWS)</li><li>ICT consultancies</li></ul>Among <a href='$_service'>other services.</a>";
-
 //contact.php
 $_read="CONTACT";
 $_chead="TALK TO US";
@@ -80,7 +74,6 @@ $_location="<small>Location: </small><img src='../img/co.png' width='15px' heigh
 $_s_thanks="Thanks for writing us. We'll respond as soon as we can.";
 $_s_wrong="Something went wrong. Please try again.";
 $_s_wants=" wants to talk with you";
-
 //services.php
 $_expertise="Our expertise";
 $_products="=» CLICK HERE TO SEE OUR PRODUCTS «=";
@@ -100,7 +93,6 @@ $_platweb="Web platforms";
 $_platweb_desc="We develop web platforms according to the system of your company.";
 $_help="Help &amp; Technical support";
 $_help_desc="Maintenance, repairs and even consultations. Tell us what you need.";
-
 //work.php
 $_portfolio="MNM Portfolio";
 $_mywork="Our work and entries";
@@ -116,5 +108,4 @@ $_lt="LiMONTeCH <small><strong>Lemon detection</strong></small>";
 $_lt_desc_short="Lemon recognizer software that classifies the maturity of lemons according to their chromatic intensity using artificial vision and Arduino.";
 $_reserv="Resérvelapp <small><strong>Reserves for fields</strong></small>";
 $_reserv_desc_short="Web platform administrator of reserves for synthetic soccer fields in Colombia.";
-
 ?>

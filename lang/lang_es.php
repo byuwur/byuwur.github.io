@@ -1,7 +1,6 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
-
 #page-top
 $_title="[Mateus] byUwUr";
 $_helloworld="Hola, mundo";
@@ -29,7 +28,6 @@ $_gostart="Inicio";
 $_back = "Volver";
 $_ok = "Entendido";
 $_close = "Cerrar";
-
 #about
 $_whoiam="Quien soy";
 $_aboutmateus="Sobre";
@@ -43,7 +41,6 @@ $_instagram="https://instagram.com/byuwur";
 $_github="https://github.com/byuwur";
 $_linkedin="https://linkedin.com/in/atrujillomateus";
 $_start="¿EMPEZAMOS?";
-
 #skills
 $_languages="DISTINTOS LENGUAJES:";
 $_things="Y OTRAS COSITAS:";
@@ -59,12 +56,10 @@ $_thingiesicon[]="ti-video-clapper";
 $_thingies[]="Edición de vídeo y fotografía";
 $_thingiesicon[]="ti-github";
 $_thingies[]="Control de versiones con Git";
-
 #resume
 $_expertise="Experiencia";
 $_codeskills="Código";
 $_otherskills="Y algo más";
-
 #skillset
 $_codeskillicon[]="fab fa-php";
 $_codeskilltext[]="PHP";
@@ -126,7 +121,6 @@ $_otherskillicon[]="fas fa-cubes";
 $_otherskilltext[]="Unity/Blender";
 $_otherskilllevel[]="Basic";
 $_otherskillprogress[]="25%";
-
 #portfolio
 $_mywork="Historial";
 $_myproj="Proyectos y participaciones";
@@ -166,7 +160,6 @@ $_portfoliobg[]="background-image:url(./img/work-6.jpg);";
 $_portfoliolink[]="";
 $_portfoliotitle[]="Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small>";
 $_portfoliodesc[]="Ganador del evento.";
-
 #testimonials
 $_personalref="Referencias personales";
 $_testname[]="Néstor Alfonso Portela";
@@ -189,7 +182,6 @@ $_testname[]="Jose Luis Rodríguez";
 $_testpic[]="background-image:url(./img/jose.jpg);";
 $_testpos[]="Desarrollador de <a href='https://weapp.com.co/' target='_blank'>WeApp</a>";
 $_testtel[]="<a href='tel:+573144092507'>+57 (314) 409 2507</a>";
-
 #education
 $_educationinst[]="<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>";
 $_educationprof[]="GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM";
@@ -211,7 +203,6 @@ $_educationinst[]="<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>";
 $_educationprof[]="<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>";
 $_educationprog[]="Formación de aptitudes profesionales en SENA";
 $_educationyear[]="desde 2017";
-
 #awards
 $_portafolio[]="<a target='_blank' href='https://semillasdealegriaespinal.com'><strong>Proyecto</strong> | Liceo Moderno Semillas de Alegría - <small><strong>Plataforma de notas, desde 2019</strong></small></a>";
 $_portafolio[]="<a target='_blank' href='https://onlinecongress.com.co'><strong>Mención meritoria</strong> (ITFIP) | Online Congress - <small><strong>Software para congresos, 2020</strong></small></a>";
@@ -221,10 +212,8 @@ $_portafolio[]="<a target='_self' href='./mnm.team/renn'><strong>Mención merito
 $_portafolio[]="<a target='_self' href='./mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_portafolio[]="<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
 $_portafolio[]="<a target='_blank' href='https://redcolsi.org/web/'><strong>Tallerista</strong> | REDCOLSI - <small><strong>Software libre en la investigación, 2018</strong></small></a>";
-
 #interests
 $_interesting="Además de la programación y el desarrollo de soluciones, también me gusta realizar labores de diseño, edición multimedia, enseñar, perfeccionar mi trabajo y los videojuegos. Destaco mi dominio de Inglés como segunda lengua y Español.<br>Siempre dispuesto a ayudar a mejorar a mi equipo y la comunidad, superarme y aprender lo que la industria me arroje.<br>Disfruto mucho el trabajo en equipo, liderar e la interacción con las personas.<br>He trabajado con los IDE de Android Studio (IntelliJ IDEA) y Eclipse para Java, además de software como Vegas PRO, Premiere Pro, Davinci Resolve, Photoshop, Lightroom, After Effects, Unity, Blender y control de versiones con Git, un poco de todo.";
-
 #experience
 $_experiencepos[]="ANALISTA DE DESARROLLO DE SOFTWARE";
 $_experienceent[]="<a href='https://nxs.com.co/' target='_blank'>Nexos Software</a>";
@@ -270,7 +259,6 @@ $_experiencepos[]="VIDEOGRAFÍA - Creación de contenido digital";
 $_experienceent[]="<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>";
 $_experiencedesc[]="Creación de contenido digital.";
 $_experiencetime[]="Desde 2014";
-
 #contact
 $_chead="CONTÁCTAME";
 $_getintouch="Ponte en contacto";
@@ -285,5 +273,4 @@ $_mail="atrujillomateus@gmail.com";
 $_location="<small>Ubicación: </small><img src='./img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
 $_mail_thanks = "Tu mensaje se ha enviado exitosamente.<br>¡Te contactaremos pronto!";
 $_mail_wrong = "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.";
-
 ?>

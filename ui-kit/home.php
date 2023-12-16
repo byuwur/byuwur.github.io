@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -26,42 +25,29 @@
   <script src="./js/scripts_byuwur.min.js" defer></script>
   <script src="./js/custom.js" defer></script>
 </head>
-
 <body>
   <div class="loader">
     <div class="page-loader"></div>
   </div>
-
-  <!-- Floating Logo -->
   <img src="./img/logo.png" alt="Shard" class="shard">
-
-  <!-- Welcome Section -->
   <div class="welcome d-flex justify-content-center flex-column">
     <div class="inner-wrapper mt-auto mb-auto">
       <h1 class="slide-in">byUwUr</h1>
       <p class="slide-in">Testing UI kit for anything I might need.</p>
     </div>
   </div>
-
-  <!-- Page Content -->
   <div class="page-content">
-    <!-- Content -->
     <div class="content clearfix">
-
       <div id="introduction" class="container mb-5">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <p class="lead">This is an UI kit showcase for any project adding value and versatibility.</p>
         </div>
       </div>
-
-      <!-- Colors -->
       <div id="colors" class="container mb-5">
-
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Colors</h3>
           <p>Keeping it cool: stylish overall.</p>
         </div>
-
         <div class="example col-md-10 ml-auto mr-auto">
           <div class="row">
             <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
@@ -164,17 +150,13 @@
             </div>
           </div>
         </div>
-
       </div>
-
-      <!-- Typography -->
       <div id="typography" class="container mb-5">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Typography</h3>
           <p>Using Poppins as its primary typeface for headings and the system’s UI font with a Roboto-first fallback
             (only on non-Apple devices) for the remaining content.</p>
         </div>
-
         <div class="example col-md-10 ml-auto mr-auto">
           <table class="table table-striped table-responsive-md">
             <thead>
@@ -227,18 +209,12 @@
           </table>
         </div>
       </div>
-
-      <!-- Form Controls -->
       <div id="forms" class="container my-5">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Form Controls</h3>
         </div>
-
-        <!-- Form Controls - Simple Forms: Default / Using Icons (Seamless) -->
         <div class="example col-lg-8 col-md-10 ml-auto mr-auto">
           <h5>Simple Forms</h5>
-
-          <!-- Form Controls: Simple Forms -->
           <div class="row mb-5">
             <div class="col-md-12">
               <form>
@@ -252,7 +228,6 @@
                     <input type="email" class="form-control" id="form1-email" autocomplete="username" placeholder="Email">
                   </div>
                 </div>
-
                 <div class="row">
                   <div class="col-md-6 mb-4">
                     <label for="form1-password">Password</label>
@@ -269,7 +244,6 @@
                       <option value="5">Virginia</option>
                     </select>
                   </div>
-
                   <div class="col-md-3 mb-4">
                     <label for="form1-zip">Zip</label>
                     <input type="text" class="form-control" id="form1-zip" placeholder="Zip" required>
@@ -278,11 +252,7 @@
               </form>
             </div>
           </div>
-
-          <!-- Form Controls: Using Icons -->
           <h5 class="mb-4">Using Icons</h5>
-
-          <!-- Form Controls: Using Icons - Seamless -->
           <div class="row mb-2">
             <div class="col-12">
               <h6 class="text-muted">Seamless</h6>
@@ -312,8 +282,6 @@
               </form>
             </div>
           </div>
-
-          <!-- Form Controls: Using Icons - Default -->
           <div class="row mb-2">
             <div class="col-12">
               <h6 class="text-muted">Default</h6>
@@ -344,14 +312,11 @@
             </div>
           </div>
         </div>
-
-        <!-- Form Controls: Custom Controls -->
         <div class="example col-lg-8 col-md-10 ml-auto mr-auto">
           <div class="container">
             <div class="row">
               <h5 class="mb-4 w-100">Custom Controls</h5>
             </div>
-
             <div class="row mb-5">
               <div class="custom-controls-example col-md-3 col-sm-3 col-xs-12 pl-0">
                 <h6 class="text-muted mb-2">Checkboxes</h6>
@@ -361,21 +326,18 @@
                     <label class="custom-control-label" for="customCheck1">Pizza</label>
                   </div>
                 </fieldset>
-
                 <fieldset>
                   <div class="custom-control custom-checkbox d-block my-2">
                     <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
                     <label class="custom-control-label" for="customCheck2">Pasta</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-checkbox d-block my-2">
                     <input type="checkbox" class="custom-control-input" id="customCheck3">
                     <label class="custom-control-label" for="customCheck3">Burgers</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-checkbox d-block my-2">
                     <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
@@ -391,21 +353,18 @@
                     <label class="custom-control-label" for="customRadio1">Cookies</label>
                   </div>
                 </fieldset>
-
                 <fieldset>
                   <div class="custom-control custom-radio d-block my-2">
                     <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
                     <label class="custom-control-label" for="customRadio2">Pancakes</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-radio d-block my-2">
                     <input type="radio" id="customRadio3" name="customRadioDisabled" class="custom-control-input">
                     <label class="custom-control-label" for="customRadio3">Chocolate</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-radio d-block my-2">
                     <input type="radio" id="customRadio4" name="customRadioDisabled" class="custom-control-input" checked>
@@ -421,21 +380,18 @@
                     <label class="custom-control-label" for="customToggle1">Rockets</label>
                   </div>
                 </fieldset>
-
                 <fieldset>
                   <div class="custom-control custom-toggle d-block my-2">
                     <input type="checkbox" id="customToggle2" name="customToggle2" class="custom-control-input" checked>
                     <label class="custom-control-label" for="customToggle2">Lasers</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-toggle d-block my-2">
                     <input type="checkbox" id="customToggle3" name="customToggle3" class="custom-control-input">
                     <label class="custom-control-label" for="customToggle3">HAL 9K</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-toggle d-block my-2">
                     <input type="checkbox" id="customToggle4" name="customToggle4" class="custom-control-input" checked>
@@ -445,28 +401,24 @@
               </div>
               <div class="custom-controls-example col-md-2 col-sm-2 col-xs-12 pl-3">
                 <h6 class="text-muted mb-1">Sizes</h6>
-
                 <fieldset>
                   <div class="custom-control custom-toggle custom-toggle-sm d-block my-2">
                     <input type="checkbox" id="customToggle1sm" name="customToggle1sm" class="custom-control-input">
                     <label class="custom-control-label" for="customToggle1sm">Rockets</label>
                   </div>
                 </fieldset>
-
                 <fieldset>
                   <div class="custom-control custom-toggle custom-toggle-sm d-block my-2">
                     <input type="checkbox" id="customToggle2sm" name="customToggle2sm" class="custom-control-input" checked>
                     <label class="custom-control-label" for="customToggle2sm">Lasers</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-toggle custom-toggle-sm d-block my-2">
                     <input type="checkbox" id="customToggle3sm" name="customToggle3sm" class="custom-control-input">
                     <label class="custom-control-label" for="customToggle3sm">HAL</label>
                   </div>
                 </fieldset>
-
                 <fieldset disabled>
                   <div class="custom-control custom-toggle custom-toggle-sm d-block my-2">
                     <input type="checkbox" id="customToggle4sm" name="customToggle4sm" class="custom-control-input" checked>
@@ -487,7 +439,6 @@
                   </select>
                 </fieldset>
               </div>
-
               <div class="col-md-6 pl-0">
                 <h6 class="text-muted mb-3">Custom File Input</h6>
                 <fieldset>
@@ -499,7 +450,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-12">
               <h5 class="mb-4">Form Validation</h5>
@@ -514,7 +464,6 @@
                     <input type="text" class="form-control is-valid" id="form-2-last-name" placeholder="Last name" value="Vasile" required>
                   </div>
                 </div>
-
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="form-2-city">City</label>
@@ -538,7 +487,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="row mb-2">
                   <div class="col-md-6 mb-3">
                     <label for="form-file-4">Photo ID Scan</label>
@@ -557,7 +505,6 @@
                     </select>
                   </div>
                 </div>
-
                 <div class="row">
                   <div class="col-md-6">
                     <div class="custom-control custom-checkbox mb-3">
@@ -565,7 +512,6 @@
                       <label class="custom-control-label" for="form-3-terms">Do you agree to our terms & conditions?</label>
                     </div>
                   </div>
-
                   <div class="col-md-6">
                     <div class="custom-controls-stacked d-block">
                       <div class="custom-control custom-radio mb-1">
@@ -584,14 +530,11 @@
           </div>
         </div>
       </div>
-
-      <!-- Sliders -->
       <div id="sliders" class="container mb-5" style="padding-bottom: 1px">
         <div class="my-5">
           <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
             <h3 class="mb-4">Sliders</h3>
           </div>
-
           <div class="example col-lg-8 col-md-10 ml-auto mr-auto mb-0">
             <div class="row">
               <div class="col-md-6 col-sm-12">
@@ -618,13 +561,10 @@
           </div>
         </div>
       </div>
-
-      <!-- Datepickers -->
       <div id="datepickers" class="container">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Datepickers</h3>
         </div>
-
         <div class="example col-lg-8 col-md-10 ml-auto mr-auto">
           <div class="row">
             <div class="col-lg-4 col-md-12">
@@ -663,13 +603,10 @@
           </div>
         </div>
       </div>
-
-      <!-- Cards -->
       <div id="cards" class="container mb-2" style="padding-bottom: 1px">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Cards</h3>
         </div>
-
         <div class="example col-md-12 ml-auto mr-auto">
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -683,23 +620,17 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
-      <!-- Buttons -->
       <div id="buttons" class="container">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Buttons</h3>
         </div>
-
         <div class="example example-buttons">
           <div class="col-md-9 ml-auto mr-auto">
             <h5 class="text-muted mb-4">Normal</h5>
           </div>
-
-          <!-- Normal Buttons -->
           <div class="row mb-4">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-primary">Primary</button>
@@ -712,8 +643,6 @@
               <button type="button" class="btn btn-dark">Dark</button>
             </div>
           </div>
-
-          <!-- Outlined Buttons -->
           <div class="mb-5 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -726,12 +655,9 @@
               <button type="button" class="btn btn-outline-dark">Dark</button>
             </div>
           </div>
-
           <div class="col-md-9 ml-auto mr-auto">
             <h5 class="text-muted mb-4">Squared</h5>
           </div>
-
-          <!-- Squared Buttons -->
           <div class="mb-4 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-primary btn-squared">Primary</button>
@@ -744,8 +670,6 @@
               <button type="button" class="btn btn-dark btn-squared">Dark</button>
             </div>
           </div>
-
-          <!-- Squared and Outlined Buttons -->
           <div class="mb-5 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-outline-primary btn-squared">Primary</button>
@@ -758,12 +682,9 @@
               <button type="button" class="btn btn-outline-dark btn-squared">Dark</button>
             </div>
           </div>
-
           <div class="col-md-9 ml-auto mr-auto">
             <h5 class="text-muted mb-4">Pill-shaped</h5>
           </div>
-
-          <!-- Pill Shaped Buttons -->
           <div class="mb-4 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-primary btn-pill">Primary</button>
@@ -776,8 +697,6 @@
               <button type="button" class="btn btn-dark btn-pill">Dark</button>
             </div>
           </div>
-
-          <!-- Pill-shaped and Outlined Buttons -->
           <div class="mb-5 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-outline-primary btn-pill">Primary</button>
@@ -790,12 +709,9 @@
               <button type="button" class="btn btn-outline-dark btn-pill">Dark</button>
             </div>
           </div>
-
           <div class="col-md-9 ml-auto mr-auto">
             <h5 class="text-muted mb-4">Using Icons</h5>
           </div>
-
-          <!-- Buttons with Icons : Material Icons -->
           <div class="mb-4 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-pill btn-primary">
@@ -812,8 +728,6 @@
                 <i class="fa fa-star mr-1"></i>Favourite</button>
             </div>
           </div>
-
-          <!-- Buttons with Icons : FontAwesome -->
           <div class="mb-5 row">
             <div class="col-md-9 ml-auto mr-auto d-flex justify-content-around buttons-wrapper">
               <button type="button" class="btn btn-pill btn-outline-primary">
@@ -832,13 +746,10 @@
           </div>
         </div>
       </div>
-
-      <!-- Progress Bars -->
       <div id="progress-bars" class="container">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Progress Bars</h3>
         </div>
-
         <div class="example col-lg-9 col-md-12 ml-auto mr-auto px-0">
           <div class="row">
             <div class="col-md-6 pb-widths">
@@ -853,17 +764,14 @@
                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-
             <div class="col-md-6">
               <h6 class="text-muted">Labels</h6>
               <div class="progress mb-4">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
               </div>
-
               <div class="progress mb-4">
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
               </div>
-
               <div class="progress progress-lg">
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
               </div>
@@ -871,20 +779,14 @@
           </div>
         </div>
       </div>
-
-      <!-- Modals -->
       <div id="modals" class="container">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Modals</h3>
         </div>
-
         <div class="mb-5">
-          <!-- Trigger -->
           <button type="button" class="btn btn-primary btn-pill btn-lg d-table ml-auto mr-auto" data-toggle="modal" data-target="#exampleModal">
             ✋ Click it!
           </button>
-
-          <!-- Modal Body -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -907,13 +809,10 @@
           </div>
         </div>
       </div>
-
-      <!-- Badges -->
       <div id="badges" class="container">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Badges</h3>
         </div>
-
         <div class="example col-md-10 ml-auto mr-auto mb-5 pb-4">
           <div class="row mb-3">
             <div class="d-table ml-auto mr-auto">
@@ -927,58 +826,37 @@
           </div>
         </div>
       </div>
-
-      <!-- Popups / Popovers -->
       <div id="popups-popovers" class="container">
         <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
           <h3 class="mb-4">Tooltips & Popovers</h3>
         </div>
-
         <div class="row">
           <div class="col-lg-10 col-md-10 ml-auto mr-auto mb-5 pb-4">
             <div class="row ml-auto mr-auto">
-
-              <!-- Tooltips -->
               <div class="col-lg-6 col-md-12 mb-3">
                 <h5 class="text-muted mb-4 d-block">Tooltips</h5>
-
-                <!-- Tooltip: Top -->
                 <button type="button" class="btn btn-primary mr-1" data-toggle="tooltip" data-placement="top" title="I'm on top! 👆">Top</button>
-
-                <!-- Tooltip: Bottom -->
                 <button type="button" class="btn btn-primary mr-1" data-toggle="tooltip" data-placement="bottom" title="I'm at the bottom! 👇">
                   Bottom
                 </button>
-                <!-- Tooltip: Left -->
                 <button type="button" class="btn btn-primary mr-1" data-toggle="tooltip" data-placement="Left" title="I'm on the left! 👈">
                   Left
                 </button>
-
-                <!-- Tooltip: Right -->
                 <button type="button" class="btn btn-primary mr-1" data-toggle="tooltip" data-placement="right" title="I'm on the right! 👉">
                   Right
                 </button>
               </div>
-
-              <!-- Popovers -->
               <div class="col-lg-6 col-md-12">
                 <h5 class="text-muted mb-4">Popovers</h5>
-                <!-- Popovers: Top -->
                 <button type="button" class="btn btn-secondary mr-1" data-container="body" data-toggle="popover" data-placement="top" data-content="On top of things!">
                   Top
                 </button>
-
-                <!-- Popovers: Bottom -->
                 <button type="button" class="btn btn-secondary mr-1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="🙃 I'm down here!">
                   Bottom
                 </button>
-
-                <!-- Popovers: Left -->
                 <button type="button" class="btn btn-secondary mr-1" data-container="body" data-toggle="popover" data-placement="left" data-content="Oh! What's left then? 🤔">
                   Left
                 </button>
-
-                <!-- Popovers: Right -->
                 <button type="button" class="btn btn-secondary mr-1" data-container="body" data-toggle="popover" data-placement="right" data-content="I'm always right! 😎">
                   Right
                 </button>
@@ -987,17 +865,13 @@
           </div>
         </div>
       </div>
-
-      <!-- Alerts -->
       <div id="alerts">
         <div class="container">
           <div class="section-title col-lg-8 col-md-10 ml-auto mr-auto">
             <h3 class="mb-4">Alerts</h3>
           </div>
         </div>
-
         <div class="mb-5">
-          <!-- Info Dismissible Alert -->
           <div class="alert alert-info alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -1005,8 +879,6 @@
             <i class="fa fa-info"></i>
             <strong>Hey!</strong> I think you should know this.
           </div>
-
-          <!-- Success Dismissible Alert -->
           <div class="alert alert-success alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -1014,8 +886,6 @@
             <i class="fa fa-check"></i>
             <strong>Yay!</strong> Everything is fine!
           </div>
-
-          <!-- Warning Dismissible Alert -->
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -1023,8 +893,6 @@
             <i class="fa fa-warning"></i>
             <strong>Oops!</strong> Something might be wrong
           </div>
-
-          <!-- Danger Dismissible Alert -->
           <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -1035,15 +903,12 @@
         </div>
       </div>
     </div>
-
-    <!-- Navbars -->
     <div id="navbars" class="my-5">
       <div class="section-title container ml-auto mr-auto">
         <div class="col-lg-8 col-md-10 ml-auto mr-auto mb-5">
           <h3 class="mb-4">Navbars</h3>
         </div>
       </div>
-
       <div class="example">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
           <img src="./img/logo.png" alt="Example Navbar 1" class="mr-2" height="30">
@@ -1075,26 +940,22 @@
                 </div>
               </li>
             </ul>
-
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1133,26 +994,22 @@
                 </div>
               </li>
             </ul>
-
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1191,26 +1048,22 @@
                 </div>
               </li>
             </ul>
-
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1255,19 +1108,16 @@
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1312,19 +1162,16 @@
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1363,26 +1210,22 @@
                 </div>
               </li>
             </ul>
-
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1427,19 +1270,16 @@
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                   <i class="fab fa-github"></i>
@@ -1450,8 +1290,6 @@
         </nav>
       </div>
     </div>
-
-    <!-- Documentation -->
     <div id="documentation" class="bg-white">
       <div class="section-title container ml-auto mr-auto py-5">
         <div class="col-lg-8 col-md-10 ml-auto mr-auto py-5">
@@ -1465,7 +1303,6 @@
         </div>
       </div>
     </div>
-
     <footer class="main-footer py-5">
       <p class="text-muted text-center small p-0 mb-4">&copy; <script>document.write(new Date().getFullYear());</script> byUwUr — Made with ❤️ by Mateus</p>
       <div class="social d-table mx-auto">
@@ -1487,7 +1324,5 @@
       </div>
     </footer>
   </div>
-
 </body>
-
 </html>

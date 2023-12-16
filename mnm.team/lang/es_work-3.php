@@ -1,7 +1,6 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
-
 //work-single.php
 $_wtitle="Resérvelapp";
 $_wsubtitle="Sistema de reservas para canchas sintéticas";

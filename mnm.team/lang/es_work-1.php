@@ -1,7 +1,6 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
-
 //work-single.php
 $_wtitle="RENN";
 $_wsubtitle="Repositorio Digital de la Escuela Normal de Naucalpán";

@@ -1,6 +1,5 @@
 <?php
 // This file is always required by ./_config.php but can be required by its own
-
 // --- API functions ---
 function api_respond(int $status, bool $error, string $message, array $data = [])
 {
@@ -13,7 +12,6 @@ function api_respond(int $status, bool $error, string $message, array $data = []
     echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
-
 function make_http_request(string $url, array $get = [], array $post = [])
 {
     $req = curl_init();
@@ -26,32 +24,27 @@ function make_http_request(string $url, array $get = [], array $post = [])
     curl_close($req);
     return $requested;
 }
-
 // --- functions ---
 function suppress_errors()
 {
     error_reporting(0);
     ini_set("display_errors", 0);
 }
-
 function escape_html($input)
 {
     $output = htmlspecialchars($input, ENT_QUOTES, "UTF-8", false);
     return nl2br($output);
 }
-
 function exit_json($json)
 {
     header("Content-Type: application/json");
     echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
-
 function print_json($json)
 {
     echo json_encode($json, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 }
-
 function random_string($length)
 {
     $string = "";
@@ -59,7 +52,6 @@ function random_string($length)
     for ($i = 0; $i < $length; $i++) $string .= substr($char, rand(0, strlen($char)), 1);
     return $string;
 }
-
 function show_modal_back($state = "success", $title = "INFO.", $message = "Message.", $hideCancelBtn = false, $redirect = "javascript:destroy_modal_back();")
 {
     echo '<div id="modal_back" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
@@ -87,7 +79,6 @@ function show_modal_back($state = "success", $title = "INFO.", $message = "Messa
     });
     </script>';
 }
-
 function get_mime_type($filename) {
     $mime = [
         'aac' => 'audio/aac',

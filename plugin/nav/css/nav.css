@@ -3,9 +3,7 @@ html.js,
 	overflow: hidden;
 	height: 100vh;
 }
-
 /* Pages nav */
-
 .pages-nav {
 	display: -webkit-flex;
 	display: flex;
@@ -19,7 +17,6 @@ html.js,
 	text-align: center;
 	background: #0e0f0f;
 }
-
 .js .pages-nav {
 	position: absolute;
 	top: 0;
@@ -37,14 +34,12 @@ html.js,
 	-webkit-transform: translate3d(0, 150px, 0);
 	transform: translate3d(0, 150px, 0);
 }
-
 .js .pages-nav--open {
 	pointer-events: auto;
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-
 /* Pages stack */
 .js .pages-stack {
 	z-index: 100;
@@ -54,7 +49,6 @@ html.js,
 	-webkit-perspective-origin: 50% -50%;
 	perspective-origin: 50% -50%;
 }
-
 .js .page {
 	position: relative;
     z-index: 5;
@@ -63,7 +57,6 @@ html.js,
     pointer-events: auto;
     box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
-
 .js .pages-stack--open .page {
 	cursor: pointer;
 	-webkit-transition: -webkit-transform 0.4s;
@@ -71,15 +64,12 @@ html.js,
 	-webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
 	transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
 }
-
 .js .page--inactive {
 	position: absolute;
 	z-index: 0;
 	top: 0;
 	opacity: 0;
 }
-
-
 /* Menu button */
 .menu-button {
 	width: 100%;
@@ -90,11 +80,9 @@ html.js,
 	outline: none;
 	background: transparent;
 }
-
 .no-js .menu-button {
 	display: none;
 }
-
 .menu-button::before,
 .menu-button::after {
 	content: '';
@@ -112,7 +100,6 @@ html.js,
 	-webkit-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
 }
-
 .menu-button span {
 	position: relative;
 	margin: auto;
@@ -123,35 +110,27 @@ html.js,
 	-webkit-transition: opacity 0.25s;
 	transition: opacity 0.25s;
 }
-
 .menu-button::before {
 	-webkit-transform: translate3d(0, -10px, 0) scale3d(0.8, 1, 1);
 	transform: translate3d(0, -10px, 0) scale3d(0.8, 1, 1);
 }
-
 .menu-button::after {
 	-webkit-transform: translate3d(0, 10px, 0) scale3d(0.8, 1, 1);
 	transform: translate3d(0, 10px, 0) scale3d(0.8, 1, 1);
 }
-
 .menu-button--open span {
 	opacity: 0;
 }
-
 .menu-button--open::before {
 	-webkit-transform: rotate3d(0, 0, 1, 45deg);
 	transform: rotate3d(0, 0, 1, 45deg);
 	height: 2px;
 }
-
 .menu-button--open::after {
 	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 	transform: rotate3d(0, 0, 1, -45deg);
 	height: 2px;
 }
-
-
-
 @media screen and (max-width: 801px) {
 	.js .pages-nav {
 		display: block;
