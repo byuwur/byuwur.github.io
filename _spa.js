@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     const loadHeaderFooter = function () {
         $.ajax({
+            async: false,
             url: `${HOME_PATH}header.php`,
             success: function (data) {
                 $("#header").html(data);
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
         $.ajax({
+            async: false,
             url: `${HOME_PATH}footer.php`,
             success: function (data) {
                 $("#footer").html(data);
@@ -85,8 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${HOME_PATH}${uri}?${new URLSearchParams(get).toString()}`,
             data: { ...post },
             success: function (data) {
-                $("#spa-page-content-container").html(data);
                 if (uri != ROUTES[path].URI) loadHeaderFooter();
+                $("#spa-page-content-container").html(data);
             }, error: function (xhr, status, error) {
                 console.log("Error loading content:", error);
                 errorPage(404, `Route "${url}" does not exist.`);
