@@ -1,45 +1,17 @@
 <!DOCTYPE html>
 <?php
 require_once "./_var.php";
-
-if (isset($_GET['lang'])) {
-    switch ($_GET['lang']) {
-        case 'es':
-        case 'en':
-            setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-            require_once $TO_HOME . "lang/lang_" . $_GET['lang'] . ".php";
-            echo "<html lang='" . $_GET['lang'] . "'>";
-            $lang = $_GET['lang'];
-            break;
-    }
-} else if (isset($_COOKIE['lang'])) {
-    switch ($_COOKIE['lang']) {
-        case 'es':
-        case 'en':
-            require_once $TO_HOME . "lang/lang_" . $_COOKIE['lang'] . ".php";
-            echo "<html lang='" . $_COOKIE['lang'] . "'>";
-            $lang = $_COOKIE['lang'];
-            break;
-    }
-} else {
-    setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    require_once $TO_HOME . "lang/lang_es.php";
-    echo "<html lang='es'>";
-    $lang = 'es';
-}
+require_once $TO_HOME . "common.php";
 ?>
-
 <head>
     <meta charset="utf-8" />
     <title><?= $_title; ?> v1</title>
-    <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="[Mateus] byUwUr" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/img/icon.png" />
     <meta property="og:url" content="https://byuwur.net" />
     <meta property="og:site_name" content="[Mateus] byUwUr" />
     <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
-    <!-- Meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Language" content="en,es" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -51,13 +23,11 @@ if (isset($_GET['lang'])) {
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
     <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="apple-touch-icon" href="./favicon.png" />
-    <!-- STYLES -->
     <link href="./plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
     <link href="./plugin/fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="./css/resume.css" rel="stylesheet" />
-    <!-- SCRIPTS -->
     <script src="./plugin/jquery/jquery.min.js" defer></script>
     <script src="./plugin/bootstrap/js/bootstrap.min.js" defer></script>
     <script src="./plugin/easing/easing.min.js" defer></script>
@@ -67,9 +37,7 @@ if (isset($_GET['lang'])) {
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
-
 <body id="page-top">
-    <!-- navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#about">
             <span class="d-block d-lg-none" style="color: #FFF;">
@@ -97,9 +65,7 @@ if (isset($_GET['lang'])) {
             </ul>
         </div>
     </nav>
-    <!-- portfolio start -->
     <div class="container-fluid">
-        <!-- about section -->
         <section class="resume-section p-2 d-flex d-column" id="about">
             <div class="my-auto">
                 <h1 class="mb-0 align-bottom"><?= $_name_top; ?></h1>
@@ -123,18 +89,17 @@ if (isset($_GET['lang'])) {
                         <br>
                         <h6>Digital Business Card v2</h6>
                         <iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
-                    </div> <!-- col -->
+                    </div> 
                     <div class="col-12 col-sm-7">
                         <br>
                         <h6>Digital Business Card v1</h6>
                         <iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
-                    </div> <!-- col -->
+                    </div> 
                 </div>
                 <br><a href="#contact" class="a-logo nav-link js-scroll-trigger" style="font-size: 1.375em;"><?= $_start; ?></a>
             </div>
         </section>
         <hr>
-        <!-- skills section -->
         <section class="resume-section p-2 d-flex flex-column" id="skills">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_skills; ?></h2>
@@ -160,7 +125,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- awards section -->
         <section class="resume-section p-2 d-flex flex-column" id="awards">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_portfolio; ?></h2>
@@ -173,7 +137,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- experience section -->
         <section class="resume-section p-2 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_experience; ?></h2>
@@ -191,7 +154,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- education section -->
         <section class="resume-section p-2 d-flex flex-column" id="education">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_education; ?></h2>
@@ -209,7 +171,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- contact section -->
         <section class="resume-section p-2 d-flex flex-column" id="contact">
             <div class="my-auto">
                 <div class="container-fluid">
@@ -254,7 +215,6 @@ if (isset($_GET['lang'])) {
             </div>
         </section>
         <hr>
-        <!-- interests section -->
         <section class="resume-section p-2 d-flex flex-column" id="interests">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_interest; ?></h2>
@@ -262,7 +222,6 @@ if (isset($_GET['lang'])) {
             </div>
             <?= $_goto; ?>
         </section>
-        <!-- portfolio end -->
     </div>
     <script>
         "use strict";
@@ -292,7 +251,6 @@ if (isset($_GET['lang'])) {
                     }
                 });
             });
-
             cookieconsent.run({
                 "notice_banner_type": "simple",
                 "consent_type": "express",
@@ -303,14 +261,11 @@ if (isset($_GET['lang'])) {
             });
         });
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
         gtag('config', 'UA-148227598-1');
     </script>
-    <!-- End cookie consent -->
 </body>
-
 </html>

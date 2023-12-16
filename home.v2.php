@@ -1,45 +1,17 @@
 <!DOCTYPE html>
 <?php
 require_once "./_var.php";
-
-if (isset($_GET['lang'])) {
-  switch ($_GET['lang']) {
-    case 'es':
-    case 'en':
-      setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-      require_once $TO_HOME . "lang/lang_" . $_GET['lang'] . ".php";
-      echo "<html lang='" . $_GET['lang'] . "'>";
-      $lang = $_GET['lang'];
-      break;
-  }
-} else if (isset($_COOKIE['lang'])) {
-  switch ($_COOKIE['lang']) {
-    case 'es':
-    case 'en':
-      require_once $TO_HOME . "lang/lang_" . $_COOKIE['lang'] . ".php";
-      echo "<html lang='" . $_COOKIE['lang'] . "'>";
-      $lang = $_COOKIE['lang'];
-      break;
-  }
-} else {
-  setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-  require_once $TO_HOME . "lang/lang_es.php";
-  echo "<html lang='es'>";
-  $lang = 'es';
-}
+require_once $TO_HOME . "common.php";
 ?>
-
 <head>
   <meta charset="utf-8" />
   <title><?= $_title; ?></title>
-  <!-- Facebook and Twitter integration -->
   <meta property="og:title" content="[Mateus] byUwUr" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://byuwur.net/img/icon.png" />
   <meta property="og:url" content="https://byuwur.net" />
   <meta property="og:site_name" content="[Mateus] byUwUr" />
   <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
-  <!-- Meta tags -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Content-Language" content="en,es" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -51,14 +23,12 @@ if (isset($_GET['lang'])) {
   <link rel="shortcut icon" type="image/png" href="./favicon.png" />
   <link rel="icon" type="image/png" href="./favicon.png" />
   <link rel="apple-touch-icon" href="./favicon.png" />
-  <!-- Plugin CSS -->
   <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.mateus.min.css" />
   <link rel="stylesheet" href="./plugin/owl-carousel/css/owl-carousel.min.css" />
   <link rel="stylesheet" href="./plugin/magnific/css/magnific-popup.css" />
   <link rel="stylesheet" href="./plugin/nav/css/nav.css" />
   <link rel="stylesheet" href="./plugin/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="./plugin/themify/themify-icons.min.css" />
-  <!-- Styles -->
   <?php
   if (isset($_GET['theme']))
     switch ($_GET['theme']) {
@@ -83,7 +53,6 @@ if (isset($_GET['lang'])) {
     $theme = "dark";
   }
   ?>
-  <!-- SCRIPTS -->
   <script src="./plugin/jquery/jquery.min.js" defer></script>
   <script src="./plugin/popper/popper.min.js" defer></script>
   <script src="./plugin/modernizr/modernizr.min.js" defer></script>
@@ -101,20 +70,14 @@ if (isset($_GET['lang'])) {
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
-
 <body class="dark-body">
-  <!-- === Loading === -->
   <div id="loading">
     <div class="load-circle-back"></div>
     <div class="load-circle-fore"></div>
     <div class="load-text"><?= $_load; ?></div>
   </div>
-  <!-- === Particles === -->
   <div id="particles"></div>
-  <!-- === Side video === -->
   <div class="side-video" style="animation: float 5s infinite;"></div>
-  <!--video class="side-video" muted loop><source src="./img/side.mp4" type="video/mp4" /></video-->
-  <!-- === Navigation === -->
   <nav class="pages-nav">
     <div class="pages-nav__item"><a id="btn-home" class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
     <div class="pages-nav__item"><a id="btn-about" class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
@@ -122,9 +85,7 @@ if (isset($_GET['lang'])) {
     <div class="pages-nav__item"><a id="btn-portfolio" class="link link--page" href="#portfolio"><?= $_portfolio; ?></a></div>
     <div class="pages-nav__item"><a id="btn-contact" class="link link--page" href="#contact"><?= $_contact; ?></a></div>
   </nav>
-  <!-- === Stack === -->
   <div class="pages-stack">
-    <!-- === Home Banner === -->
     <div class="page home-banner" id="home">
       <div class="container-fluid p-0">
         <div class="row no-gutters full-screen">
@@ -148,13 +109,11 @@ if (isset($_GET['lang'])) {
                       <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
                       <a href="<?= $_facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
                       <a href="<?= $_instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
-                      <!--a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a-->
                     </div>
                     <div class="btn-bar">
                       <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
                       <hr class="my-1" /><a href="ui-kit" target="_blank">UI kit preview</a>
-                      <hr class="my-1" /><!-- = Nav shortcut = -->
-                      <!-- = Nav shortcut = -->
+                      <hr class="my-1" />
                       <div class="d-flex flex-row flex-wrap py-2">
                         <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                         <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
@@ -171,8 +130,7 @@ if (isset($_GET['lang'])) {
           </div>
         </div>
       </div>
-    </div> <!-- home -->
-    <!-- === About === -->
+    </div> 
     <div class="page about-section" id="about">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -185,14 +143,12 @@ if (isset($_GET['lang'])) {
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
-                <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_whoiam; ?></h6>
                   <div class="st-title">
                     <h2 class="theme-after text-color"><?= $_aboutiam; ?></h2>
                   </div>
                 </div>
-                <!-- = About = -->
                 <div class="row">
                   <div class="col-sm-3 user-photo">
                     <div class="row">
@@ -204,7 +160,7 @@ if (isset($_GET['lang'])) {
                     <div class="about-text">
                       <h3 class="text-color"><?= $_iam; ?> Andrés Trujillo Mateus</h3>
                       <p class="m-0px"><?= $_about; ?></p>
-                    </div> <!-- about-text -->
+                    </div> 
                     <div class="row m-30px-t">
                       <?php for ($i = 0; $i < count($_thingies); $i++) { ?>
                         <div class="col-sm-6 m-30px-b">
@@ -213,12 +169,11 @@ if (isset($_GET['lang'])) {
                               <h5 class="text-color"><?= $_thingies[$i]; ?></h5>
                             </div>
                           </div>
-                        </div> <!-- col -->
+                        </div> 
                       <?php } ?>
-                    </div> <!-- row -->
+                    </div> 
                   </div>
-                </div> <!-- row -->
-                <!-- = Counters = -->
+                </div> 
                 <div class="counter-row m-50px-t p-40px-t lg-m-35px-t lg-p-25px-t sm-p-15px-t">
                   <div class="row">
                     <div class="col-12 col-md-3 md-m-15px-tb">
@@ -230,30 +185,28 @@ if (isset($_GET['lang'])) {
                         </div>
                       </div>
                       <br><a href="ui-kit">&& UI kit preview</a>
-                    </div> <!-- col -->
+                    </div> 
                     <div class="col-12 col-md-4 md-m-15px-tb">
                       <h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe>
-                    </div> <!-- col -->
+                    </div> 
                     <div class="col-12 col-md-5 md-m-15px-tb">
                       <h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe>
-                    </div> <!-- col -->
-                  </div> <!-- row -->
+                    </div> 
+                  </div> 
                 </div>
-                <!-- = Nav shortcut = -->
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                   <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
                   <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                   <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
-              </div> <!-- page-content -->
+              </div> 
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> <!-- page-scroll  -->
+            </div> 
           </div>
-        </div> <!-- row -->
+        </div> 
       </div>
-    </div> <!-- about -->
-    <!-- === Resume === -->
+    </div> 
     <div class="page resume-section" id="resume">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -266,14 +219,12 @@ if (isset($_GET['lang'])) {
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
-                <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_expertise; ?></h6>
                   <div class="st-title">
                     <h2 class="theme-after text-color"><?= $_resume; ?></h2>
                   </div>
                 </div>
-                <!-- = Resume = -->
                 <div class="row">
                   <div class="col-md-12">
                     <div class="skill-row">
@@ -290,9 +241,9 @@ if (isset($_GET['lang'])) {
                                   <div class="progress-lt">
                                     <h6><i class="<?= $_codeskillicon[$i]; ?>"></i> <?= $_codeskilltext[$i]; ?></h6><span class="theme-bg"><?= $_codeskilllevel[$i]; ?></span>
                                     <div class="progress">
-                                      <div class="progress-bar" style="width: <?= $_codeskillprogress[$i]; ?>"></div><!-- /progress-bar -->
-                                    </div><!-- /progress -->
-                                  </div><!-- /progress-lt -->
+                                      <div class="progress-bar" style="width: <?= $_codeskillprogress[$i]; ?>"></div>
+                                    </div>
+                                  </div>
                                 </div>
                               <?php } ?>
                             </div>
@@ -307,9 +258,9 @@ if (isset($_GET['lang'])) {
                                   <div class="progress-lt">
                                     <h6><i class="<?= $_otherskillicon[$i]; ?>"></i> <?= $_otherskilltext[$i]; ?></h6><span class="theme-bg"><?= $_otherskilllevel[$i]; ?></span>
                                     <div class="progress">
-                                      <div class="progress-bar" style="width: <?= $_otherskillprogress[$i]; ?>"></div><!-- /progress-bar -->
-                                    </div><!-- /progress -->
-                                  </div><!-- /progress-lt -->
+                                      <div class="progress-bar" style="width: <?= $_otherskillprogress[$i]; ?>"></div>
+                                    </div>
+                                  </div>
                                 </div>
                               <?php } ?>
                             </div>
@@ -317,7 +268,7 @@ if (isset($_GET['lang'])) {
                         </div>
                       </div>
                     </div>
-                  </div> <!-- col -->
+                  </div> 
                   <div class="col-md-6">
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_experience; ?></h2>
@@ -336,7 +287,7 @@ if (isset($_GET['lang'])) {
                         <?php } ?>
                       </ul>
                     </div>
-                  </div> <!-- col -->
+                  </div> 
                   <div class="col-md-6">
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_education; ?></h2>
@@ -349,23 +300,21 @@ if (isset($_GET['lang'])) {
                         <?php } ?>
                       </ul>
                     </div>
-                  </div> <!-- col -->
-                </div> <!-- row -->
-                <!-- = Nav shortcut = -->
+                  </div> 
+                </div> 
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                   <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                   <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                   <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
-              </div> <!-- page-content -->
+              </div> 
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> <!-- page-scroll  -->
+            </div> 
           </div>
-        </div> <!-- row -->
+        </div> 
       </div>
-    </div> <!-- resume -->
-    <!-- === Portfolio === -->
+    </div> 
     <div class="page" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -378,14 +327,12 @@ if (isset($_GET['lang'])) {
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
-                <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_mywork; ?></h6>
                   <div class="st-title">
                     <h2 class="theme-after text-color"><?= $_myproj; ?></h2>
                   </div>
                 </div>
-                <!-- = Portfolio = -->
                 <div class="portfolio-section">
                   <div class="portfolio-filter m-10px-b">
                     <ul class="filter text-left text-md-center">
@@ -396,7 +343,7 @@ if (isset($_GET['lang'])) {
                       <li class="theme-after" data-filter=".expo">Expo</li>
                       <li class="theme-after" data-filter=".mention">Mention</li>
                     </ul>
-                  </div> <!-- Portfolio Filter -->
+                  </div> 
                   <div class="portfolio-content">
                     <ul class="portfolio-cols portfolio-cols-3">
                       <?php for ($i = 0; $i < count($_portfoliotitle); $i++) { ?>
@@ -405,20 +352,19 @@ if (isset($_GET['lang'])) {
                             <div class="portfolio-img">
                               <div class="portfolio-image" style="<?= $_portfoliobg[$i]; ?>"></div>
                               <div class="hover">
-                                <div class="action-btn"><?= $_portfoliolink[$i]; ?></div> <!-- Video Btn -->
-                              </div> <!-- Hover -->
+                                <div class="action-btn"><?= $_portfoliolink[$i]; ?></div> 
+                              </div> 
                             </div>
                             <div class="portfolio-info">
                               <h5><?= $_portfoliotitle[$i]; ?></h5>
                               <p><?= $_portfoliodesc[$i]; ?></p>
                             </div>
-                          </div> <!-- Portfolio -->
-                        </li> <!-- col -->
+                          </div> 
+                        </li> 
                       <?php } ?>
-                    </ul> <!-- row -->
+                    </ul> 
                   </div>
-                </div> <!-- portfolio content -->
-                <!-- = Testimonials = -->
+                </div> 
                 <div class="testimonial-section m-30px-t sm-m-20px-t">
                   <div class="sub-title m-30px-b">
                     <h2 class="text-color theme-after"><?= $_personalref; ?></h2>
@@ -430,25 +376,23 @@ if (isset($_GET['lang'])) {
                           <div class="img" style="<?= $_testpic[$i]; ?>"></div>
                           <div class="name"><span><?= $_testname[$i]; ?></span><label><?= $_testpos[$i]; ?></label><label><?= $_testtel[$i]; ?></label></div>
                         </div>
-                      </div> <!-- col -->
+                      </div> 
                     <?php } ?>
-                  </div> <!-- owl -->
-                </div> <!-- testimonials-->
-                <!-- = Nav shortcut = -->
+                  </div> 
+                </div> 
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                   <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                   <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
                   <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
-              </div> <!-- page-content -->
+              </div> 
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> <!-- page-scroll  -->
+            </div> 
           </div>
-        </div> <!-- row -->
+        </div> 
       </div>
-    </div> <!-- portfolio -->
-    <!-- === Contact === -->
+    </div> 
     <div class="page" id="contact">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -461,14 +405,12 @@ if (isset($_GET['lang'])) {
           <div class="col-lg-9">
             <div class="page-scroll">
               <div class="page-content">
-                <!-- = Page Title = -->
                 <div class="section-title">
                   <h6 class="theme-after text-color"><?= $_getintouch; ?></h6>
                   <div class="st-title">
                     <h2 class="theme-after text-color"><?= $_chead; ?></h2>
                   </div>
                 </div>
-                <!-- = Info = -->
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="contact-info"><i class="theme-color fab fa-linkedin"></i><a href="<?= $_linkedin; ?>">atrujillomateus</a></div>
@@ -477,7 +419,6 @@ if (isset($_GET['lang'])) {
                     <div class="contact-info"><i class="theme-color ti-email"></i><a href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a></div>
                   </div>
                 </div>
-                <!-- = Contact = -->
                 <div class="row">
                   <div class="col-12 m-30px-b sm-m-15px-b">
                     <div class="contact-form">
@@ -506,42 +447,37 @@ if (isset($_GET['lang'])) {
                         </div>
                       </form>
                     </div>
-                  </div> <!-- col -->
+                  </div> 
                 </div>
-                <!-- = Nav shortcut = -->
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                   <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                   <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
                   <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                 </div>
-              </div> <!-- page-content -->
+              </div> 
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> <!-- page-scroll  -->
+            </div> 
           </div>
-        </div> <!-- row -->
+        </div> 
       </div>
-    </div> <!-- contact -->
-  </div> <!-- stack -->
-  <!-- === Header === -->
+    </div> 
+  </div> 
   <header class="header theme-bg">
     <div class="logo"><a href="./v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
     <div class="mt-1 mr-5 pr-4 text-right"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
-  </header> <!-- header -->
+  </header> 
   <script>
     "use strict";
-
     function swapStyleSheet(sheet) {
       document.getElementById('pagestyle').setAttribute('href', '<?= $HOME_PATH; ?>css/mateus.' + sheet + '.css');
       document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
     }
-
     function swapPage(page) {
       document.querySelector(`#btn-menu`).click();
       setTimeout(() => document.querySelector(`#btn-${page}`).click(), 500);
     }
-
     function onHashChangeEvent() {
       switch (window.location.hash.replace("#!", "")) {
         case "home":
@@ -553,9 +489,7 @@ if (isset($_GET['lang'])) {
           break;
       }
     }
-
     window.addEventListener("hashchange", onHashChangeEvent);
-
     document.addEventListener('DOMContentLoaded', function() {
       onHashChangeEvent();
       $("#mail_form").submit(function(event) {
@@ -593,7 +527,6 @@ if (isset($_GET['lang'])) {
       });
     });
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -601,5 +534,4 @@ if (isset($_GET['lang'])) {
     gtag('config', 'UA-148227598-1');
   </script>
 </body>
-
 </html>
