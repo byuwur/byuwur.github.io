@@ -1,7 +1,6 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
-
 //URIs
 $_project="proyectos";
 $_service="servicios";
@@ -13,7 +12,6 @@ $_titleservice="Servicios";
 $_titleabout="Sobre MNM";
 $_titlecontact="Contáctenos";
 $_load="<font size='4'><strong>Cargando vista estándar...</strong></font>";
-
 //index.php
 $_language="Idioma:";
 $_helloworld="Hola, mundo";
@@ -31,12 +29,10 @@ $_back="Volver";
 //error.php
 $_sorry = "Lamentamos las molestias. ¿Qué desea hacer?";
 $_out = "Sácame de aquí";
-
 //footer_contact.php
 $_contact_title="Pongámonos en contacto";
 $_contact_desc="Acérquese y cuéntenos sus necesidades. Nosotros se las supliremos.";
 $_contact_us="CONTÁCTENOS";
-
 //home.php
 $_mnm="<font size='10'><strong>MNM <small>Team</small></strong></font>";
 $_mnm_desc="<font size='5'>Desarrollo bien hecho al alcance de sus manos.</font>";
@@ -52,7 +48,6 @@ $_nestux_p="CONOCE MÁS SOBRE MÍ ";
 $_marco="MARCO <small>Cortés</small>";
 $_marco_desc="Programador e Implementador";
 $_marco_p="CONOCE MÁS DE MÍ ";
-
 //about.php
 $_welcome="BIENVENIDA &amp; PRESENTACIÓN";
 $_we="NUESTRO EQUIPO";
@@ -62,7 +57,6 @@ $_whyus="¿Por qué elegirnos?";
 $_whyus_desc="<li><font size='4'><b>NUESTRO EQUIPO</b></font> está integrado por profesionales idóneos y entusiastas que desempeñan sus tareas con talento, eficiencia, seriedad y esmero.</li><li><font size='4'><b>RELACIÓN CALIDAD-PRECIO</b></font> que se ajusta a los servicios que ofrecemos: estables, veloces y seguros; amplias características y beneficios; y un amplio etcétera.</li><li><font size='4'><b>NUESTROS SERVICIOS</b></font> alcanzan la satisfacción de nuestros clientes y la optimización y perfeccionamiento de los procesos que realizan.</li><br>Dispuestos siempre a atenderle y escucharle para lograr comprender y resolver sus inquietudes, necesidades y/o inconvenientes.";
 $_whatwedo="¿Qué hacemos y en qué nos especializamos?";
 $_whatwedo_desc="<ul><li>Desarrollo móvil (Android)</li><li>Desarrollo web (LAMP)</li><li>Soluciones Cloud (AWS)</li><li>Consultorías y asesorías TIC</li></ul>Entre <a href='$_service'>otros servicios.</a>";
-
 //contact.php
 $_read="CONTACTO";
 $_chead="HÁBLENOS";
@@ -80,7 +74,6 @@ $_location="<small>Ubicación: </small><img src='../img/co.png' width='15px' hei
 $_s_thanks="Gracias por escribirnos. Responderemos en cuanto podamos.";
 $_s_wrong="Algo salió mal. Intente más tarde.";
 $_s_wants=" quiere hablar con ustedes";
-
 //services.php
 $_expertise="Nuestras habilidades";
 $_products="=» PULSE AQUÍ PARA VER NUESTROS PRODUCTOS «=";
@@ -100,7 +93,6 @@ $_platweb="Plataformas web";
 $_platweb_desc="Desarrollamos plataformas web según el sistema de su empresa.";
 $_help="Ayuda &amp; Soporte técnico";
 $_help_desc="Mantenimiento, reparaciones e incluso consultas. Díganos lo que haga falta.";
-
 //work.php
 $_portfolio="Portafolio de MNM";
 $_mywork="Nuestros trabajos y participaciones";
@@ -116,5 +108,4 @@ $_lt="LiMONTeCH <small><strong>Detector de limones</strong></small>";
 $_lt_desc_short="Software reconocedor de limones, clasifica la madurez según su intensidad cromática usando visión artificial y Arduino.";
 $_reserv="Resérvelapp <small><strong>Reservas para canchas</strong></small>";
 $_reserv_desc_short="Plataforma web administradora de reservas para canchas sintéticas en Colombia.";
-
 ?>

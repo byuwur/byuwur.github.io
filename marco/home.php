@@ -27,18 +27,15 @@ if (isset($_GET['lang'])) {
     //echo '<script> window.location = window.location.pathname; </script>';
 }
 ?>
-
 <head>
     <meta charset="utf-8" />
     <title><?= $_title; ?></title>
-    <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="Marco Cortés" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/marco/img/icon.png" />
     <meta property="og:url" content="https://byuwur.net/marco/" />
     <meta property="og:site_name" content="Marco Cortés" />
     <meta property="og:description" content="Soy Marco y este es mi portfolio." />
-    <!-- Meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Mateus' portfolio" />
@@ -48,30 +45,20 @@ if (isset($_GET['lang'])) {
     <meta name="theme-color" content="#222" />
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
     <link rel="icon" type="image/png" href="img/icon.png" />
-    <!-- Bootstrap core CSS -->
     <link href="../plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
-    <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
     <link href="../plugin/fontawesome/css/all.min.css" rel="stylesheet" />
-    <!-- Custom styles for this template -->
     <link href="../css/resume.css" rel="stylesheet" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
-    <!-- Bootstrap core JavaScript -->
     <script src="../plugin/jquery/jquery.min.js" defer></script>
     <script src="../plugin/bootstrap/js/bootstrap.min.js" defer></script>
-    <!-- Plugin JavaScript -->
     <script src="../plugin/easing/easing.min.js" defer></script>
-    <!-- Custom scripts for this template -->
     <script src="../js/resume.js" defer></script>
-    <!-- Cookie consent -->
     <script src="../js/cookies.js" defer></script>
 </head>
-
 <body id="page-top">
-    <!-- navigation menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#about">
             <span class="d-block d-lg-none" style="color: #FFF;">
@@ -93,15 +80,12 @@ if (isset($_GET['lang'])) {
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><?= $_skills; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><?= $_education; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><?= $_awards; ?></a></li>
-                <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><?= $_interest; ?></a></li -->
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><?= $_experience; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $_contact; ?></a></li>
             </ul>
         </div>
     </nav>
-    <!-- portfolio start -->
     <div class="container-fluid">
-        <!-- about section -->
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div class="my-auto">
                 <h1 class="mb-0"><?= $_name_top; ?></h1>
@@ -120,7 +104,6 @@ if (isset($_GET['lang'])) {
             </div>
         </section>
         <hr>
-        <!-- skills section -->
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_skills; ?></h2>
@@ -147,7 +130,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- education section -->
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_education; ?></h2>
@@ -156,7 +138,6 @@ if (isset($_GET['lang'])) {
                         <h3 class="mb-0"><?= $_educationinst2; ?></h3>
                         <div class="subheading"><?= $_educationcarr2; ?></div>
                         <div><?= $_educationprog2; ?></div>
-                        <!-- p>GPA: N/A<font size="2">/5.0</font></p -->
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary"><?= $_educationyear2; ?></span>
@@ -167,7 +148,6 @@ if (isset($_GET['lang'])) {
                         <h3 class="mb-0"><?= $_educationinst1; ?></h3>
                         <div class="subheading"><?= $_educationcarr1; ?></div>
                         <div><?= $_educationprog1; ?></div>
-                        <!-- p>GPA: 4.2<font size="2">/5.0</font></p -->
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary"><?= $_educationyear1; ?></span>
@@ -178,18 +158,15 @@ if (isset($_GET['lang'])) {
                         <h3 class="mb-0"><?= $_educationinst0; ?></h3>
                         <div class="subheading"><?= $_educationcarr0; ?></div>
                         <?= $_educationprog0; ?>
-                        <!-- p>GPA: 4.0<font size="2">/5.0</font></p -->
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary"><?= $_educationyear0; ?></span>
                     </div>
                 </div>
-
             </div>
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- awards section -->
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_awards; ?></h2>
@@ -212,7 +189,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr -->
-        <!-- experience section -->
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
             <div class="my-auto">
                 <h2 class="mb-5"><?= $_experience; ?></h2>
@@ -230,7 +206,6 @@ if (isset($_GET['lang'])) {
             <?= $_goto; ?>
         </section>
         <hr>
-        <!-- contact section -->
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
             <div class="my-auto">
                 <div class="container-fluid">
@@ -281,7 +256,6 @@ if (isset($_GET['lang'])) {
                 </div>
             </div>
         </section>
-        <!-- portfolio end -->
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -294,35 +268,28 @@ if (isset($_GET['lang'])) {
                 "change_preferences_selector": "#cookiePrefs"
             });
         });
-
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
         gtag('config', 'UA-148227598-1');
     </script>
-    <!-- End cookie consent -->
-
     <?php
     if (isset($_POST['s_enviar'])) {
         $captcha = $_POST['g-recaptcha-response'];
-
         if (!$captcha) {
             echo '<script>alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
         } else {
             $secret = "";
             $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
             $arrcaptcha = json_decode($rescaptcha, true);
-
             if ($arrcaptcha['success']) {
                 $s_name = $_POST['s_name'];
                 $s_email = $_POST['s_email'];
                 $s_phone = $_POST['s_phone'];
                 $s_subject = $_POST['s_subject'];
                 $s_message = $_POST['s_message'];
-
                 $mail = $_mail;
                 $mail_asunto = $s_subject . " | Marco, " . $s_name . $_s_wants;
                 $mail_header = "From: info@mnm.team\r\n"
@@ -335,9 +302,7 @@ if (isset($_GET['lang'])) {
 		' . $s_message . '
 		<br><br><br>Gracias.<br><br>Atentamente, ' . $s_name . '.
 	    </body> </html> ';
-
                 $sendmail = @mail($mail, $mail_asunto, $mail_msg, $mail_header);
-
                 if ($sendmail) {
                     echo '<script>alert("' . $_s_thanks . '");</script>';
                 } else {
@@ -350,5 +315,4 @@ if (isset($_GET['lang'])) {
     }
     ?>
 </body>
-
 </html>

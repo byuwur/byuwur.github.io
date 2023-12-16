@@ -48,7 +48,6 @@ require_once "./header.php";
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
@@ -72,7 +71,6 @@ require_once "./header.php";
                             <p><?= $_location; ?><br><br></p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -86,29 +84,24 @@ require_once "./header.php";
     require_once "./footer.php";
     if (isset($_POST['s_enviar'])) {
         $captcha = $_POST['g-recaptcha-response'];
-
         if (!$captcha) {
             echo '<script>alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
         } else {
             $secret = "";
             $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
             $arrcaptcha = json_decode($rescaptcha, true);
-
             if ($arrcaptcha['success']) {
                 $s_name = $_POST['s_name'];
                 $s_email = $_POST['s_email'];
                 $s_phone = $_POST['s_phone'];
                 $s_subject = $_POST['s_subject'];
                 $s_message = $_POST['s_message'];
-
                 $arr_mnm = [$_mateus_mail, $_nestux_mail, $_marco_mail];
                 $mail_mnm = implode(",", $arr_mnm);
                 $mail_asunto = $_subject . " | MNM, " . $s_name . $_s_wants;
-
                 $mail_header = "From: info@mnm.team\r\n"
                     . "MIME-Version: 1.0\r\n"
                     . "Content-type: text/html; charset=iso-8859-1\r\n";
-
                 $mail_msg = ' <html> <head> <title> Contactar a MNM </title> </head> <body>
                 <p>Hola, equipo de MNM:<br><br>Soy <strong>' . $s_name . '</strong>.</p>
                 <p>Pueden contactarme en: <strong>' . $s_email . '</strong> o llamarme al: <strong>' . $s_phone . '</strong>.</p>
@@ -116,9 +109,7 @@ require_once "./header.php";
                 ' . $s_message . '
                 <br><br><br>Gracias.<br><br>Atentamente, ' . $s_name . '.
             </body> </html> ';
-
                 $sendmail = @mail($mail_mnm, $mail_asunto, $mail_msg, $mail_header);
-
                 if ($sendmail) {
                     echo '<script>alert("' . $_s_thanks . '");</script>';
                 } else {

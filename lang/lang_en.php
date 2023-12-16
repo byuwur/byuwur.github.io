@@ -1,7 +1,6 @@
 <?php
 //TEXTS IN ENGLISH
 //Use HTML tags for structuring
-
 #page-top
 $_title="[Mateus] byUwUr";
 $_helloworld="Hello, World";
@@ -29,7 +28,6 @@ $_gostart="Start";
 $_back = "Go back";
 $_ok = "Understood";
 $_close = "Close";
-
 #about
 $_whoiam="Who I am";
 $_aboutmateus="About";
@@ -43,7 +41,6 @@ $_instagram="https://instagram.com/byuwur";
 $_github="https://github.com/byuwur";
 $_linkedin="https://linkedin.com/in/atrujillomateus";
 $_start="WE START?";
-
 #skills
 $_languages="MANY LANGUAGES:";
 $_things="AND OTHER THINGIES:";
@@ -59,12 +56,10 @@ $_thingiesicon[]="ti-video-clapper";
 $_thingies[]="Photo and video editing";
 $_thingiesicon[]="ti-github";
 $_thingies[]="Git version control";
-
 #resume
 $_expertise="Expertise";
 $_codeskills="Code";
 $_otherskills="And more";
-
 #skillset
 $_codeskillicon[]="fab fa-php";
 $_codeskilltext[]="PHP";
@@ -126,7 +121,6 @@ $_otherskillicon[]="fas fa-cubes";
 $_otherskilltext[]="Unity/Blender";
 $_otherskilllevel[]="Basic";
 $_otherskillprogress[]="25%";
-
 #portfolio
 $_mywork="Historical";
 $_myproj="Projects and entries";
@@ -166,7 +160,6 @@ $_portfoliobg[]="background-image:url(./img/work-6.jpg);";
 $_portfoliolink[]="";
 $_portfoliotitle[]="Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small>";
 $_portfoliodesc[]="Event winner.";
-
 #testimonials
 $_personalref="Personal references";
 $_testname[]="Néstor Alfonso Portela";
@@ -189,7 +182,6 @@ $_testname[]="Jose Luis Rodríguez";
 $_testpic[]="background-image:url(./img/jose.jpg);";
 $_testpos[]="Developer at <a href='https://weapp.com.co/' target='_blank'>WeApp</a>";
 $_testtel[]="<a href='tel:+573144092507'>+57 (314) 409 2507</a>";
-
 #education
 $_educationinst[]="<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>";
 $_educationprof[]="GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM";
@@ -211,7 +203,6 @@ $_educationinst[]="<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>";
 $_educationprof[]="<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>";
 $_educationprog[]="Professional skills training at SENA";
 $_educationyear[]="since 2017";
-
 #awards
 $_portafolio[]="<a target='_blank' href='https://semillasdealegriaespinal.com'><strong>Project</strong> | Liceo Moderno Semillas de Alegría - <small><strong>Grading platform, since 2019</strong></small></a>";
 $_portafolio[]="<a target='_blank' href='https://onlinecongress.com.co'><strong>Meritorious mention</strong> (ITFIP) | Online Congress - <small><strong>Congresses software, 2020</strong></small></a>";
@@ -221,10 +212,8 @@ $_portafolio[]="<a target='_self' href='./mnm.team/renn'><strong>Meritorious men
 $_portafolio[]="<a target='_self' href='./mnm.team/limontech'><strong>Winner</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_portafolio[]="<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Lemon detector, 2017</strong></small></a>";
 $_portafolio[]="<a target='_blank' href='https://redcolsi.org/web/'><strong>Workshop</strong> | REDCOLSI - <small><strong>Free software in the research, 2018</strong></small></a>";
-
 #interests
 $_interesting="In addition to programming and development, I also like to perform design, multimedia editing, teaching, perfecting my work and video games. Also highlight my domain of English as a second language and Spanish.<br>Always willing to help improve my team and the community, improve myself and learn what the industry throws.<br>I really enjoy teamwork, lead and interact with people.<br>I have also worked with the IDE of Android Studio (IntelliJ IDEA) and Eclipse for Java, also other software such as Vegas PRO, Premiere Pro, Davinci Resolve, Photoshop, Lightroom, After Effects, Unity, Blender and version control with Git, a little bit of everything.";
-
 #experience
 $_experiencepos[]="SOFTWARE DEVELOPMENT ANALYST";
 $_experienceent[]="<a href='https://nxs.com.co/' target='_blank'>Nexos Software</a>";
@@ -270,7 +259,6 @@ $_experiencepos[]="VIDEOGRAPHY - Digital content creation";
 $_experienceent[]="<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>";
 $_experiencedesc[]="Digital content creation.";
 $_experiencetime[]="Since 2014";
-
 #contact
 $_chead="CONTACT ME";
 $_getintouch="Get in touch";
@@ -285,5 +273,4 @@ $_mail="atrujillomateus@gmail.com";
 $_location="<small>Location: </small><img src='./img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
 $_mail_thanks = "Your message has been successfully sent.<br>We will contact you soon!";
 $_mail_wrong = "There was an error sending the message.<br>Sorry for the inconvenience, please try again.";
-
 ?>

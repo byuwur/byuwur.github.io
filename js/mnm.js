@@ -10,7 +10,6 @@
 			loading.style.visibility = "hidden"; loading.style.opacity = "0"; //loading.style.display = "none";
 		}
 	};
-
 	let isMobile = {
 		Android: function () {
 			return navigator.userAgent.match(/Android/i);
@@ -37,7 +36,6 @@
 			);
 		}
 	};
-
 	let fullHeight = function () {
 		if (!isMobile.any()) {
 			$(".js-fullheight").css("height", $(window).height());
@@ -46,7 +44,6 @@
 			});
 		}
 	};
-
 	// Animations
 	let contentWayPoint = function () {
 		let i = 0;
@@ -87,7 +84,6 @@
 			}
 		);
 	};
-
 	let burgerMenu = function () {
 		$(".js-mnm-nav-toggle").on("click", function (event) {
 			event.preventDefault();
@@ -101,7 +97,6 @@
 			}
 		});
 	};
-
 	// Click outside of offcanvass
 	let mobileMenuOutsideClick = function () {
 		$(document).click(function (e) {
@@ -123,7 +118,6 @@
 			}
 		});
 	};
-
 	let sliderMain = function () {
 		$("#mnm-hero .flexslider").flexslider({
 			animation: "fade",
@@ -147,7 +141,6 @@
 			}
 		});
 	};
-
 	let stickyFunction = function () {
 		let h = $(".image-content").outerHeight();
 		if ($(window).width() <= 801) {
@@ -208,14 +201,11 @@
 		sliderMain();
 		stickyFunction();
 	});
-
 	// Window on Load
 	$(window).on("load", function () {
 		by.WebLoad();
 	});
-
 })();
-
 function active_home() {
 	let li_sidebar = document.getElementsByClassName("mnm-active");
 	// Removes active class from other elements
@@ -230,7 +220,6 @@ function active_home() {
 		}, 99);
 	}
 }
-
 function active_work() {
 	let li_sidebar = document.getElementsByClassName("mnm-active");
 	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
@@ -242,7 +231,6 @@ function active_work() {
 		}, 99);
 	}
 }
-
 function active_services() {
 	let li_sidebar = document.getElementsByClassName("mnm-active");
 	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
@@ -254,7 +242,6 @@ function active_services() {
 		}, 99);
 	}
 }
-
 function active_about() {
 	let li_sidebar = document.getElementsByClassName("mnm-active");
 	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";
@@ -266,7 +253,6 @@ function active_about() {
 		}, 99);
 	}
 }
-
 function active_contact() {
 	let li_sidebar = document.getElementsByClassName("mnm-active");
 	for (let i = 0; i < li_sidebar.length; i++) li_sidebar[i].className = "";

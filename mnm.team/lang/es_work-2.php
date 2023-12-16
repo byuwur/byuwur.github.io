@@ -1,7 +1,6 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
-
 //work-single.php
 $_wtitle="LiMONTeCH";
 $_wsubtitle="Software detector de limones";

@@ -1,10 +1,8 @@
 "use strict";
-
 function destroy_modal_front() {
     $("#modal_front").modal("hide");
     setTimeout(() => $("#modal_front").remove(), 999);
 }
-
 function show_modal_front($state = "success", $title = "INFO.", $message = "Message.", $hideCancelBtn = false, $redirect = "javascript:destroy_modal_front();") {
     if ($("#modal_front").length) {
         $("#modal_front").modal("hide");
