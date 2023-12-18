@@ -9,4 +9,3 @@ $dotenv->load();
 } catch (Exception $e) {
     api_respond(500, true, "Connection failed" . ($_ENV["APP_ENV"] == "DEV" ? ": " . $e->getCode() . " = " . $e->getMessage() : ""));
 }*/
-require_once $TO_HOME . "_auth.php";
