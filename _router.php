@@ -1,4 +1,6 @@
 <?php
+require_once "./_var.php";
+require_once $TO_HOME . "_functions.php";
 $url = $_GET["uri"] ?? "/";
 while (strlen($url) > 0 && substr($url, 0, 1) != "/") $url = substr($url, 1);
 while (strlen($url) > 1 && substr($url, -1) == "/") $url = substr($url, 0, -1);
