@@ -1,14 +1,14 @@
 <?php
 if (isset($_GET['lang'])) {
     if ($_GET['lang'] == 'es') {
-        require_once "./lang/lang_es.php";
+        require_once "./lang/es.php";
     } else if ($_GET['lang'] == 'en') {
-        require_once "./lang/lang_en.php";
+        require_once "./lang/en.php";
     }
 } else if (isset($_COOKIE['lang'])) {
-    require_once "./lang/lang_" . $_COOKIE['lang'] . ".php";
+    require_once "./lang/" . $_COOKIE['lang'] . ".php";
 } else {
-    require_once "./lang/lang_es.php";
+    require_once "./lang/es.php";
 }
 $_GET['title'] = $_titlecontact;
 require_once "./header.php";

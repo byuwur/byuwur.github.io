@@ -1,5 +1,6 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "_functions.php";
 require_once $TO_HOME . "_config.php";
 suppress_errors();
 if (!isset($_POST["mail_submit"])) api_respond(400, true, "Invalid form.");

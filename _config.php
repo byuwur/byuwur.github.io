@@ -1,6 +1,5 @@
 <?php
-// You must require_once './_var.php' before this file to get the relative/absolute paths
-require_once $TO_HOME . "_functions.php";
+// You MUST require_once './_var.php' to get paths, plus require_once $TO_HOME . "_functions.php";
 require_once $TO_HOME . "vendor/autoload.php";
 $dotenv = Dotenv\Dotenv::createImmutable($TO_HOME);
 $dotenv->load();

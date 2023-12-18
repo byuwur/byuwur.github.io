@@ -1,6 +1,5 @@
 <?php
 require_once "./_var.php";
-require_once $TO_HOME . "_functions.php";
 $routes = [
     "/" => ["URI" => "home.v2.php", "GET" => [], "POST" => []],
     "/es" => ["URI" => "home.v2.php", "GET" => ["lang" => "es"], "POST" => []],
@@ -17,4 +16,5 @@ $routes = [
     "/resume.es" => ["FILE" => "resume.es.pdf"],
     "/resume.en" => ["FILE" => "resume.en.pdf"]
 ];
+require_once $TO_HOME . "_functions.php";
 require_once $TO_HOME . "_router.php";
