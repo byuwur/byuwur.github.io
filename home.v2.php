@@ -1,83 +1,8 @@
-<!DOCTYPE html>
 <?php
 require_once "./_var.php";
 require_once $TO_HOME . "common.php";
 ?>
-<head>
-  <meta charset="utf-8" />
-  <title><?= $_title; ?></title>
-  <meta property="og:title" content="[Mateus] byUwUr" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://byuwur.net/img/icon.png" />
-  <meta property="og:url" content="https://byuwur.net" />
-  <meta property="og:site_name" content="[Mateus] byUwUr" />
-  <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Language" content="en,es" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
-  <meta name="author" content="Andrés Trujillo Mateus" />
-  <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
-  <meta name="copyright" content="[Mateus] byUwUr" />
-  <meta name="theme-color" content="#111" />
-  <link rel="shortcut icon" type="image/png" href="./favicon.png" />
-  <link rel="icon" type="image/png" href="./favicon.png" />
-  <link rel="apple-touch-icon" href="./favicon.png" />
-  <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.mateus.min.css" />
-  <link rel="stylesheet" href="./plugin/owl-carousel/css/owl-carousel.min.css" />
-  <link rel="stylesheet" href="./plugin/magnific/css/magnific-popup.css" />
-  <link rel="stylesheet" href="./plugin/nav/css/nav.css" />
-  <link rel="stylesheet" href="./plugin/fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="./plugin/themify/themify-icons.min.css" />
-  <?php
-  if (isset($_GET['theme']))
-    switch ($_GET['theme']) {
-      case 'dark':
-      case 'light':
-        setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
-        echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.' . $_GET['theme'] . '.css" />';
-        $theme = $_GET['theme'];
-        break;
-    }
-  else if (isset($_COOKIE['theme']))
-    switch ($_COOKIE['theme']) {
-      case 'dark':
-      case 'light':
-        echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.' . $_COOKIE['theme'] . '.css" />';
-        $theme = $_COOKIE['theme'];
-        break;
-    }
-  else {
-    setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-    echo '<link id="pagestyle" rel="stylesheet" href="./css/mateus.dark.css" />';
-    $theme = "dark";
-  }
-  ?>
-  <script src="./plugin/jquery/jquery.min.js" defer></script>
-  <script src="./plugin/popper/popper.min.js" defer></script>
-  <script src="./plugin/modernizr/modernizr.min.js" defer></script>
-  <script src="./plugin/owl-carousel/js/owl-carousel.min.js" defer></script>
-  <script src="./plugin/typeit/typeit.min.js" defer></script>
-  <script src="./plugin/isotope/isotope.min.js" defer></script>
-  <script src="./plugin/particles/particles.min.js" defer></script>
-  <script src="./plugin/magnific/js/magnific-popup.min.js" defer></script>
-  <script src="./plugin/nav/js/classie.js" defer></script>
-  <script src="./plugin/nav/js/nav.js" defer></script>
-  <script src="./plugin/bootstrap/js/bootstrap.mateus.min.js" defer></script>
-  <script src="./js/cookies.js" defer></script>
-  <script src="./js/mateus.js" defer></script>
-  <script src="<?= $HOME_PATH; ?>_functions.js" defer></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
-</head>
-<body class="dark-body">
-  <div id="loading">
-    <div class="load-circle-back"></div>
-    <div class="load-circle-fore"></div>
-    <div class="load-text"><?= $_load; ?></div>
-  </div>
-  <div id="particles"></div>
-  <div class="side-video" style="animation: float 5s infinite;"></div>
+<div class="dark-body">
   <nav class="pages-nav">
     <div class="pages-nav__item"><a id="btn-home" class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
     <div class="pages-nav__item"><a id="btn-about" class="link link--page" href="#about"><?= $_aboutme; ?></a></div>
@@ -111,8 +36,8 @@ require_once $TO_HOME . "common.php";
                       <a href="<?= $_instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="btn-bar">
-                      <a href="resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
-                      <hr class="my-1" /><a href="ui-kit" target="_blank">UI kit preview</a>
+                      <a href="<?= $TO_HOME; ?>resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
+                      <hr class="my-1" /><a href="<?= $TO_HOME; ?>ui-kit" target="_blank">UI kit preview</a>
                       <hr class="my-1" />
                       <div class="d-flex flex-row flex-wrap py-2">
                         <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
@@ -152,8 +77,8 @@ require_once $TO_HOME . "common.php";
                 <div class="row">
                   <div class="col-sm-3 user-photo">
                     <div class="row">
-                      <div class="col-6 col-sm-12 user-image" style="background-image:url(./img/profile.jpg);"><img src="./img/sample.jpg" title="" alt=""></div>
-                      <div class="col-6 col-sm-12 btn-bar"><br><a href="resume.<?= $lang; ?>" target="_blank" class="btn btn-theme"><?= $_hire; ?></a></div>
+                      <div class="col-6 col-sm-12 user-image" style="background-image:url(<?= $HOME_PATH; ?>img/profile.jpg);"><img src="<?= $HOME_PATH; ?>img/sample.jpg" title="" alt=""></div>
+                      <div class="col-6 col-sm-12 btn-bar"><br><a href="<?= $TO_HOME; ?>resume.<?= $lang; ?>" target="_blank" class="btn btn-theme"><?= $_hire; ?></a></div>
                     </div>
                   </div>
                   <div class="col-sm-9 sm-m-30px-t">
@@ -184,13 +109,13 @@ require_once $TO_HOME . "common.php";
                           </a>
                         </div>
                       </div>
-                      <br><a href="ui-kit">&& UI kit preview</a>
+                      <br><a href="<?= $TO_HOME; ?>ui-kit" target="_blank">&& UI kit preview</a>
                     </div> 
                     <div class="col-12 col-md-4 md-m-15px-tb">
-                      <h6>Digital Business Card v2</h6><iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe>
+                      <h6>Digital Business Card v2</h6><iframe src="<?= $HOME_PATH; ?>card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe>
                     </div> 
                     <div class="col-12 col-md-5 md-m-15px-tb">
-                      <h6>Digital Business Card v1</h6><iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe>
+                      <h6>Digital Business Card v1</h6><iframe src="<?= $HOME_PATH; ?>card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe>
                     </div> 
                   </div> 
                 </div>
@@ -413,10 +338,10 @@ require_once $TO_HOME . "common.php";
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
-                    <div class="contact-info"><i class="theme-color fab fa-linkedin"></i><a href="<?= $_linkedin; ?>">atrujillomateus</a></div>
+                    <div class="contact-info"><i class="theme-color fab fa-linkedin"></i><a href="<?= $_linkedin; ?>" target="_blank">atrujillomateus</a></div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="contact-info"><i class="theme-color ti-email"></i><a href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a></div>
+                    <div class="contact-info"><i class="theme-color ti-email"></i><a href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a></div>
                   </div>
                 </div>
                 <div class="row">
@@ -464,8 +389,8 @@ require_once $TO_HOME . "common.php";
     </div> 
   </div> 
   <header class="header theme-bg">
-    <div class="logo"><a href="./v1" title="Version 1.0"><img src="./img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
-    <div class="mt-1 mr-5 pr-4 text-right"><a href="es" class="a-lang" title="Español"><img src="./img/co.png" alt="" /> ES</a><br><a href="en" class="a-lang" title="English"><img src="./img/uk.png" alt="" /> EN</a></div>
+    <div class="logo"><a href="<?= $TO_HOME; ?>v1" title="Version 1.0"><img src="<?= $HOME_PATH; ?>img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
+    <div class="mt-1 mr-5 pr-4 text-right"><a href="<?= $TO_HOME; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>img/co.png" alt="" /> ES</a><br><a href="<?= $TO_HOME; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
   </header> 
   <script>
@@ -520,7 +445,7 @@ require_once $TO_HOME . "common.php";
       cookieconsent.run({
         "notice_banner_type": "simple",
         "consent_type": "express",
-        "palette": "<?= $theme; ?>",
+        "palette": "<?= $_theme; ?>",
         "language": "<?= $lang; ?>",
         "website_name": "byuwur.net",
         "change_preferences_selector": "#cookiePrefs"
@@ -533,5 +458,4 @@ require_once $TO_HOME . "common.php";
     gtag('js', new Date());
     gtag('config', 'UA-148227598-1');
   </script>
-</body>
-</html>
+</div>

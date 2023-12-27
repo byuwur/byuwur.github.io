@@ -24,7 +24,6 @@ if (array_key_exists($url, $routes) && isset($routes[$url]["FILE"])) {
 }
 $_GET = [...$_GET, ...$routes[$url]["GET"] ?? []];
 $_POST = [...$_POST, ...$routes[$url]["POST"] ?? []];
-require_once $routes[$url]["URI"];
 ?>
 <script>
     localStorage.setItem("URI", "<?= $url; ?>");
