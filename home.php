@@ -17,8 +17,7 @@ $routes = [
     "/v1.en" => ["URI" => "home.v1.php", "GET" => ["lang" => "en"], "POST" => [], "COMPONENT" => ["head" => "v1.head.php"]],
     "/resume" => ["FILE" => "resume.es.pdf"],
     "/resume.es" => ["FILE" => "resume.es.pdf"],
-    "/resume.en" => ["FILE" => "resume.en.pdf"],
-    "/mnm.team/"
+    "/resume.en" => ["FILE" => "resume.en.pdf"]
 ];
 require_once $TO_HOME . "_functions.php";
 require_once $TO_HOME . "_router.php";
