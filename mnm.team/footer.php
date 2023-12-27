@@ -20,7 +20,7 @@
         cookieconsent.run({
             "notice_banner_type": "simple",
             "consent_type": "express",
-            "palette": <?= '"' . $theme . '"'; ?>,
+            "palette": <?= '"' . $_theme . '"'; ?>,
             "language": <?= '"' . $lang . '"'; ?>,
             "website_name": "mnm.team",
             "change_preferences_selector": "#cookiePrefs"

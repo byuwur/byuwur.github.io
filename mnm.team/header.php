@@ -62,7 +62,7 @@ if (isset($_GET['title'])) {
             setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
             echo '<meta name="theme-color" content="#111" />';
             echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.' . $_GET['theme'] . '.css" />';
-            $theme = $_GET['theme'];
+            $_theme = $_GET['theme'];
         } else {
             setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
             //echo '<script> window.location = window.location.pathname; </script>';
@@ -71,7 +71,7 @@ if (isset($_GET['title'])) {
         if ($_COOKIE['theme'] == 'light' || $_COOKIE['theme'] == 'dark') {
             echo '<meta name="theme-color" content="#111" />';
             echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.' . $_COOKIE['theme'] . '.css" />';
-            $theme = $_COOKIE['theme'];
+            $_theme = $_COOKIE['theme'];
         } else {
             setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
             //echo '<script> window.location = window.location.pathname; </script>';

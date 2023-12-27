@@ -2,13 +2,8 @@
 	"use strict";
 	let by = {};
 	/** Pre Load */
-	let loading = document.getElementById("loading");
 	by.WebLoad = function () {
-		if (loading.style.visibility == "hidden" || loading.style.display == "none") {
-			loading.style.visibility = "visible"; loading.style.opacity = "1"; setTimeout(function () { loading.style.display = "block"; }, 1000);
-		} else {
-			loading.style.visibility = "hidden"; loading.style.opacity = "0"; setTimeout(function () { loading.style.display = "none"; }, 1000);
-		}
+		//$(".load-circle-back, .load-circle-fore, .load-text, .loading").fadeOut(500);
 	};
 	/** Owl Slider */
 	by.ClientSlider = function () {
