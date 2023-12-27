@@ -25,7 +25,24 @@ if (isset($_GET['lang'])) {
     echo "<html lang='es'>";
     $lang = 'es';
 }
+if (isset($_GET['theme']))
+    switch ($_GET['theme']) {
+        case 'dark':
+        case 'light':
+            setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
+            $_theme = $_GET['theme'];
+            break;
+    }
+else if (isset($_COOKIE['theme']))
+    switch ($_COOKIE['theme']) {
+        case 'dark':
+        case 'light':
+            $_theme = $_COOKIE['theme'];
+            break;
+    }
+else {
+    setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
+    $_theme = "dark";
+}
 $title_index = $_GET["title"] ?? 0;
-$titles = [
-];
-?>
+$titles = [];

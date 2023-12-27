@@ -1,51 +1,16 @@
-<!DOCTYPE html>
 <?php
 require_once "./_var.php";
 require_once $TO_HOME . "common.php";
 ?>
-<head>
-    <meta charset="utf-8" />
-    <title><?= $_title; ?> v1</title>
-    <meta property="og:title" content="[Mateus] byUwUr" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://byuwur.net/img/icon.png" />
-    <meta property="og:url" content="https://byuwur.net" />
-    <meta property="og:site_name" content="[Mateus] byUwUr" />
-    <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Language" content="en,es" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
-    <meta name="author" content="Andrés Trujillo Mateus" />
-    <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
-    <meta name="copyright" content="[Mateus] byUwUr" />
-    <meta name="theme-color" content="#222" />
-    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
-    <link rel="icon" type="image/png" href="./favicon.png" />
-    <link rel="apple-touch-icon" href="./favicon.png" />
-    <link href="./plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-    <link href="./plugin/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="./css/resume.css" rel="stylesheet" />
-    <script src="./plugin/jquery/jquery.min.js" defer></script>
-    <script src="./plugin/bootstrap/js/bootstrap.min.js" defer></script>
-    <script src="./plugin/easing/easing.min.js" defer></script>
-    <script src="./js/cookies.js" defer></script>
-    <script src="./js/resume.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>_functions.js" defer></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
-</head>
-<body id="page-top">
+<div id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#about">
             <span class="d-block d-lg-none" style="color: #FFF;">
-                <img src="./img/icon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
+                <img src="<?= $HOME_PATH; ?>img/icon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
                 <?= $_name_topbar; ?>
             </span>
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/profile.jpg" alt="Mateus" />
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?= $HOME_PATH; ?>img/profile.jpg" alt="Mateus" />
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +18,7 @@ require_once $TO_HOME . "common.php";
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <small style="margin: 15px 0px;"><a href="es.v1" class="a-logo" title="Español"><img src="./img/co.png" alt="" /> ES</a><a href="en.v1" class="a-logo" title="English"><img src="./img/uk.png" alt="" /> EN</a></small>
+                <small style="margin: 15px 0px;"><a href="<?= $TO_HOME; ?>v1.es" class="a-logo" title="Español"><img src="<?= $HOME_PATH; ?>img/co.png" alt="" /> ES</a><a href="<?= $TO_HOME; ?>v1.en" class="a-logo" title="English"><img src="<?= $HOME_PATH; ?>img/uk.png" alt="" /> EN</a></small>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><?= $_helloworld; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><?= $_skills; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><?= $_portfolio; ?></a></li>
@@ -61,7 +26,7 @@ require_once $TO_HOME . "common.php";
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><?= $_education; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $_contact; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><?= $_interest; ?></a></li>
-                <li class="nav-item"><a href="./" class="a-logo h6"><?= $_new; ?></a></li>
+                <li class="nav-item"><a href="<?= $TO_HOME; ?>v2" class="a-logo h6"><?= $_new; ?></a></li>
             </ul>
         </div>
     </nav>
@@ -73,7 +38,7 @@ require_once $TO_HOME . "common.php";
                 <hr>
                 <p class="lead"><?= $_about; ?></p>
                 <div class="subheading">
-                    | <a href="<?= $_linkedin; ?>"><?= $_linkedin; ?></a> | <small><a class="a-logo" href="resume.es" target="_blank">Resume en español</a> | <a class="a-logo" href="resume.en" target="_blank">Resume in english</a></small> |
+                    | <a href="<?= $_linkedin; ?>" target="_blank"><?= $_linkedin; ?></a> | <small><a class="a-logo" href="<?= $TO_HOME; ?>resume.es" target="_blank">Resume en español</a> | <a class="a-logo" href="<?= $TO_HOME; ?>resume.en" target="_blank">Resume in english</a></small> |
                 </div>
                 <br>
                 <div class="social-icons">
@@ -88,13 +53,13 @@ require_once $TO_HOME . "common.php";
                     <div class="col-12 col-sm-5">
                         <br>
                         <h6>Digital Business Card v2</h6>
-                        <iframe src="./card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
-                    </div> 
+                        <iframe src="<?= $HOME_PATH; ?>card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
+                    </div>
                     <div class="col-12 col-sm-7">
                         <br>
                         <h6>Digital Business Card v1</h6>
-                        <iframe src="./card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
-                    </div> 
+                        <iframe src="<?= $HOME_PATH; ?>card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
+                    </div>
                 </div>
                 <br><a href="#contact" class="a-logo nav-link js-scroll-trigger" style="font-size: 1.375em;"><?= $_start; ?></a>
             </div>
@@ -182,10 +147,10 @@ require_once $TO_HOME . "common.php";
                             <hr>
                             <div>
                                 <i class="fab fa-linkedin" style="font-size: 1.5em; margin-right: 15px;"></i>
-                                <a style="font-size: 1.125em;" href="<?= $_linkedin; ?>">atrujillomateus</a>
+                                <a style="font-size: 1.125em;" href="<?= $_linkedin; ?>" target="_blank">atrujillomateus</a>
                                 <br><br>
                                 <i class="fas fa-envelope" style="font-size: 1.5em; margin-right: 15px;"></i>
-                                <a style="font-size: 1.125em;" href="mailto:<?= $_mail; ?>"><?= $_mail; ?></a>
+                                <a style="font-size: 1.125em;" href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a>
                             </div>
                             <hr>
                             <div><?= $_goto; ?></div>
@@ -261,11 +226,11 @@ require_once $TO_HOME . "common.php";
             });
         });
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
         gtag('config', 'UA-148227598-1');
     </script>
-</body>
-</html>
+</div>
