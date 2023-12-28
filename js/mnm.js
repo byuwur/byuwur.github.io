@@ -2,7 +2,7 @@
 	"use strict";
 	let by = {};
 	/** Pre Load */
-	let loading = document.getElementById("loading");
+	let loading = document.querySelector(".loading");
 	by.WebLoad = function () {
 		if (loading.style.visibility == "hidden" || loading.style.display == "none") {
 			loading.style.visibility = "visible"; loading.style.opacity = "1"; //loading.style.display = "block";
