@@ -109,7 +109,7 @@ if (isset($_GET['title'])) {
     <script src="../js/cookies.js" defer></script>
 </head>
 <body>
-    <div id="loading">
+    <div class="loading">
         <div class="load-circle-back"></div>
         <div class="load-circle-fore"></div>
         <div class="load-text"><?= $_load; ?></div>

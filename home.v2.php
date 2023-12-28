@@ -389,7 +389,7 @@ require_once $TO_HOME . "common.php";
     </div> 
   </div> 
   <header class="header theme-bg">
-    <div class="logo"><a href="<?= $TO_HOME; ?>v1" title="Version 1.0"><img src="<?= $HOME_PATH; ?>img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
+    <div class="logo"><a href="<?= $TO_HOME; ?>v1" custom-folder="true" title="Version 1"><img src="<?= $HOME_PATH; ?>img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
     <div class="mt-1 mr-5 pr-4 text-right"><a href="<?= $TO_HOME; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>img/co.png" alt="" /> ES</a><br><a href="<?= $TO_HOME; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
   </header> 
