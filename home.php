@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+$setLocalStorage = true;
 require_once "./_var.php";
 $routes = [
     "/" => ["URI" => "home.v2.php", "GET" => [], "POST" => []],
