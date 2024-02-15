@@ -4,6 +4,7 @@ require_once $TO_HOME . "common.php";
 if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mateus.' . $_theme . '.css" />';
 else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mateus.dark.css" />';
 ?>
+<link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/nav/css/nav.css" />
 <!-- BODY -->
 <div class="dark-body">
   <nav class="pages-nav">
@@ -392,7 +393,7 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mat
     </div>
   </div>
   <header class="header theme-bg">
-    <div class="logo"><a href="<?= $TO_HOME; ?>v1" custom-folder="true" title="Version 1"><img src="<?= $HOME_PATH; ?>img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
+    <div class="logo"><a href="<?= $TO_HOME; ?>v1" title="Version 1"><img src="<?= $HOME_PATH; ?>img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
     <div class="mt-1 mr-5 pr-4 text-right"><a href="<?= $TO_HOME; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>img/co.png" alt="" /> ES</a><br><a href="<?= $TO_HOME; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
   </header>
@@ -469,3 +470,5 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mat
   gtag('config', 'UA-148227598-1');
 </script>
 <script src="<?= $HOME_PATH; ?>js/mateus.js" defer></script>
+<script src="<?= $HOME_PATH; ?>plugin/nav/js/classie.js" defer></script>
+<script src="<?= $HOME_PATH; ?>plugin/nav/js/nav.js" defer></script>
