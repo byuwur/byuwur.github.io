@@ -56,8 +56,8 @@ require_once $TO_HOME . "common.php";
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>css/common.css" />
     <?php
-    if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/common.' . $_theme . '.css" />';
-    else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/common.dark.css" />';
+    if (isset($_theme)) echo '<link rel="stylesheet" href="' . $HOME_PATH . 'css/common.' . $_theme . '.css" />';
+    else echo '<link rel="stylesheet" href="' . $HOME_PATH . 'css/common.dark.css" />';
     ?>
     <script src="<?= $HOME_PATH; ?>plugin/jquery/jquery.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/bootstrap/js/bootstrap.min.js" defer></script> <!-- Keep the version from the first snippet if it's compatible -->
