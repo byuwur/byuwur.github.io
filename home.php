@@ -28,7 +28,7 @@ require_once $TO_HOME . "common.php";
 
 <head>
     <meta charset="utf-8" />
-    <title><?= $_title; ?></title> <!-- Assuming you want to keep the version indicator in the title -->
+    <title><?= $_title; ?></title>
     <meta property="og:title" content="[Mateus] byUwUr" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/img/icon.png" />

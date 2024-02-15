@@ -20,7 +20,7 @@ $_name_top="Mateus <font size='5'><span class='text-primary'>[byUwUr]</span></fo
 $_nombre="Andrés Trujillo Mateus";
 $_new="cargar HTML no tan básico";
 $_load="<font size='4'><strong>Cargando vista estándar...</strong></font><br>¿Sigue cargando? | <a href='./v1'>Carga el HTML básico</a>";
-$_footer="&copy;".date("Y")."<small> Andrés Trujillo [Mateus] byUwUr<br><a href='./v1'>cargar HTML básico</a> | <a href=\"javascript:swapStyleSheet('light');\">claro</a> | <a href=\"javascript:swapStyleSheet('dark');\">oscuro</a><br><a href='./mnm.team/sitemap' custom-folder='true'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' custom-folder='true'>cookie policy</a></small>";
+$_footer="&copy;".date("Y")."<small> Andrés Trujillo [Mateus] byUwUr<br><a href='./v1' custom-folder='true'>cargar HTML básico</a> | <a href=\"javascript:swapStyleSheet('light');\">claro</a> | <a href=\"javascript:swapStyleSheet('dark');\">oscuro</a><br><a href='./mnm.team/sitemap' custom-folder='true'>mapa de sitio</a> | <a href='./mnm.team/cookie-policy' custom-folder='true'>cookie policy</a></small>";
 $_cv="Descargar Resume";
 $_hire="Contrátame";
 $_go="Ver";
