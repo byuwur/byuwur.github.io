@@ -2,6 +2,8 @@
 require_once "./_var.php";
 require_once $TO_HOME . "common.php";
 ?>
+<link rel="stylesheet" href="<?= $HOME_PATH; ?>css/resume.css" />
+<!-- BODY -->
 <div id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#about">
@@ -188,49 +190,51 @@ require_once $TO_HOME . "common.php";
             <?= $_goto; ?>
         </section>
     </div>
-    <script>
-        "use strict";
-        document.addEventListener('DOMContentLoaded', function() {
-            $("#mail_form").submit(function(event) {
-                $("#mail_submit").attr("disabled", true);
-                event.preventDefault();
-                let formData = $("#mail_form").serializeArray();
-                formData.push({
-                    name: "mail_submit",
-                    value: "1"
-                });
-                $.ajax({
-                    type: "POST",
-                    url: "<?= $HOME_PATH; ?>_contact.php",
-                    data: formData,
-                    dataType: "json",
-                    success: function(response) {
-                        if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
-                        else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
-                        $("#mail_submit").removeAttr("disabled");
-                    },
-                    error: function(xhr, status, error) {
-                        show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
-                        $("#mail_submit").removeAttr("disabled");
-                        console.error(xhr.responseText);
-                    }
-                });
+</div>
+<!-- BODY -->
+<script>
+    "use strict";
+    $(document).ready(function() {
+        $("#mail_form").submit(function(event) {
+            $("#mail_submit").attr("disabled", true);
+            event.preventDefault();
+            let formData = $("#mail_form").serializeArray();
+            formData.push({
+                name: "mail_submit",
+                value: "1"
             });
-            cookieconsent.run({
-                "notice_banner_type": "simple",
-                "consent_type": "express",
-                "palette": "dark",
-                "language": <?= '"' . $lang . '"'; ?>,
-                "website_name": "mnm.team",
-                "change_preferences_selector": "#cookiePrefs"
+            $.ajax({
+                type: "POST",
+                url: "<?= $HOME_PATH; ?>_contact.php",
+                data: formData,
+                dataType: "json",
+                success: function(response) {
+                    if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
+                    else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
+                    $("#mail_submit").removeAttr("disabled");
+                },
+                error: function(xhr, status, error) {
+                    show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
+                    $("#mail_submit").removeAttr("disabled");
+                    console.error(xhr.responseText);
+                }
             });
         });
-        window.dataLayer = window.dataLayer || [];
+        cookieconsent.run({
+            "notice_banner_type": "simple",
+            "consent_type": "express",
+            "palette": "dark",
+            "language": <?= '"' . $lang . '"'; ?>,
+            "website_name": "mnm.team",
+            "change_preferences_selector": "#cookiePrefs"
+        });
+    });
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-148227598-1');
-    </script>
-</div>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-148227598-1');
+</script>
+<script src="<?= $HOME_PATH; ?>js/resume.js" defer></script>

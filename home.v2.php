@@ -1,7 +1,10 @@
 <?php
 require_once "./_var.php";
 require_once $TO_HOME . "common.php";
+if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mateus.' . $_theme . '.css" />';
+else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mateus.dark.css" />';
 ?>
+<!-- BODY -->
 <div class="dark-body">
   <nav class="pages-nav">
     <div class="pages-nav__item"><a id="btn-home" class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
@@ -55,7 +58,7 @@ require_once $TO_HOME . "common.php";
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="page about-section" id="about">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -85,7 +88,7 @@ require_once $TO_HOME . "common.php";
                     <div class="about-text">
                       <h3 class="text-color"><?= $_iam; ?> Andrés Trujillo Mateus</h3>
                       <p class="m-0px"><?= $_about; ?></p>
-                    </div> 
+                    </div>
                     <div class="row m-30px-t">
                       <?php for ($i = 0; $i < count($_thingies); $i++) { ?>
                         <div class="col-sm-6 m-30px-b">
@@ -94,11 +97,11 @@ require_once $TO_HOME . "common.php";
                               <h5 class="text-color"><?= $_thingies[$i]; ?></h5>
                             </div>
                           </div>
-                        </div> 
+                        </div>
                       <?php } ?>
-                    </div> 
+                    </div>
                   </div>
-                </div> 
+                </div>
                 <div class="counter-row m-50px-t p-40px-t lg-m-35px-t lg-p-25px-t sm-p-15px-t">
                   <div class="row">
                     <div class="col-12 col-md-3 md-m-15px-tb">
@@ -110,14 +113,14 @@ require_once $TO_HOME . "common.php";
                         </div>
                       </div>
                       <br><a href="<?= $TO_HOME; ?>ui-kit" target="_blank">&& UI kit preview</a>
-                    </div> 
+                    </div>
                     <div class="col-12 col-md-4 md-m-15px-tb">
                       <h6>Digital Business Card v2</h6><iframe src="<?= $HOME_PATH; ?>card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe>
-                    </div> 
+                    </div>
                     <div class="col-12 col-md-5 md-m-15px-tb">
                       <h6>Digital Business Card v1</h6><iframe src="<?= $HOME_PATH; ?>card.v1.html" title="Digital Business Card v1" width="100%" height="140px" frameborder="0"></iframe>
-                    </div> 
-                  </div> 
+                    </div>
+                  </div>
                 </div>
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
@@ -125,13 +128,13 @@ require_once $TO_HOME . "common.php";
                   <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                   <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
-              </div> 
+              </div>
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> 
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
-    </div> 
+    </div>
     <div class="page resume-section" id="resume">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -193,7 +196,7 @@ require_once $TO_HOME . "common.php";
                         </div>
                       </div>
                     </div>
-                  </div> 
+                  </div>
                   <div class="col-md-6">
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_experience; ?></h2>
@@ -212,7 +215,7 @@ require_once $TO_HOME . "common.php";
                         <?php } ?>
                       </ul>
                     </div>
-                  </div> 
+                  </div>
                   <div class="col-md-6">
                     <div class="resume-row">
                       <h2 class="theme-after text-color"><?= $_education; ?></h2>
@@ -225,21 +228,21 @@ require_once $TO_HOME . "common.php";
                         <?php } ?>
                       </ul>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                   <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                   <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                   <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
-              </div> 
+              </div>
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> 
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
-    </div> 
+    </div>
     <div class="page" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -268,7 +271,7 @@ require_once $TO_HOME . "common.php";
                       <li class="theme-after" data-filter=".expo">Expo</li>
                       <li class="theme-after" data-filter=".mention">Mention</li>
                     </ul>
-                  </div> 
+                  </div>
                   <div class="portfolio-content">
                     <ul class="portfolio-cols portfolio-cols-3">
                       <?php for ($i = 0; $i < count($_portfoliotitle); $i++) { ?>
@@ -277,19 +280,19 @@ require_once $TO_HOME . "common.php";
                             <div class="portfolio-img">
                               <div class="portfolio-image" style="<?= $_portfoliobg[$i]; ?>"></div>
                               <div class="hover">
-                                <div class="action-btn"><?= $_portfoliolink[$i]; ?></div> 
-                              </div> 
+                                <div class="action-btn"><?= $_portfoliolink[$i]; ?></div>
+                              </div>
                             </div>
                             <div class="portfolio-info">
                               <h5><?= $_portfoliotitle[$i]; ?></h5>
                               <p><?= $_portfoliodesc[$i]; ?></p>
                             </div>
-                          </div> 
-                        </li> 
+                          </div>
+                        </li>
                       <?php } ?>
-                    </ul> 
+                    </ul>
                   </div>
-                </div> 
+                </div>
                 <div class="testimonial-section m-30px-t sm-m-20px-t">
                   <div class="sub-title m-30px-b">
                     <h2 class="text-color theme-after"><?= $_personalref; ?></h2>
@@ -301,23 +304,23 @@ require_once $TO_HOME . "common.php";
                           <div class="img" style="<?= $_testpic[$i]; ?>"></div>
                           <div class="name"><span><?= $_testname[$i]; ?></span><label><?= $_testpos[$i]; ?></label><label><?= $_testtel[$i]; ?></label></div>
                         </div>
-                      </div> 
+                      </div>
                     <?php } ?>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
                   <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
                   <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
                   <a href="javascript:swapPage('contact');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_contact; ?></a>
                 </div>
-              </div> 
+              </div>
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> 
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
-    </div> 
+    </div>
     <div class="page" id="contact">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -372,7 +375,7 @@ require_once $TO_HOME . "common.php";
                         </div>
                       </form>
                     </div>
-                  </div> 
+                  </div>
                 </div>
                 <div class="d-flex flex-row flex-wrap py-2">
                   <a href="javascript:swapPage('home');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_gostart; ?></a>
@@ -380,82 +383,89 @@ require_once $TO_HOME . "common.php";
                   <a href="javascript:swapPage('resume');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_resume; ?></a>
                   <a href="javascript:swapPage('portfolio');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_portfolio; ?></a>
                 </div>
-              </div> 
+              </div>
               <p class="footer-resp"><?= $_footer; ?></p>
-            </div> 
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
-    </div> 
-  </div> 
+    </div>
+  </div>
   <header class="header theme-bg">
     <div class="logo"><a href="<?= $TO_HOME; ?>v1" custom-folder="true" title="Version 1"><img src="<?= $HOME_PATH; ?>img/icon.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
     <div class="mt-1 mr-5 pr-4 text-right"><a href="<?= $TO_HOME; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>img/co.png" alt="" /> ES</a><br><a href="<?= $TO_HOME; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>img/uk.png" alt="" /> EN</a></div>
     <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
-  </header> 
-  <script>
-    "use strict";
-    function swapStyleSheet(sheet) {
-      document.getElementById('pagestyle').setAttribute('href', '<?= $HOME_PATH; ?>css/mateus.' + sheet + '.css');
-      document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
+  </header>
+</div>
+<!-- BODY -->
+<script>
+  "use strict";
+
+  function swapStyleSheet(sheet) {
+    document.getElementById('pagestyle').setAttribute('href', '<?= $HOME_PATH; ?>css/mateus.' + sheet + '.css');
+    document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
+  }
+
+  function swapPage(page) {
+    document.querySelector(`#btn-menu`).click();
+    setTimeout(() => document.querySelector(`#btn-${page}`).click(), 500);
+  }
+
+  function onHashChangeEvent() {
+    switch (window.location.hash.replace("#!", "")) {
+      case "home":
+      case "about":
+      case "resume":
+      case "portfolio":
+      case "contact":
+        swapPage(window.location.hash.replace("#!", ""));
+        break;
     }
-    function swapPage(page) {
-      document.querySelector(`#btn-menu`).click();
-      setTimeout(() => document.querySelector(`#btn-${page}`).click(), 500);
-    }
-    function onHashChangeEvent() {
-      switch (window.location.hash.replace("#!", "")) {
-        case "home":
-        case "about":
-        case "resume":
-        case "portfolio":
-        case "contact":
-          swapPage(window.location.hash.replace("#!", ""));
-          break;
-      }
-    }
-    window.addEventListener("hashchange", onHashChangeEvent);
-    document.addEventListener('DOMContentLoaded', function() {
-      onHashChangeEvent();
-      $("#mail_form").submit(function(event) {
-        $("#mail_submit").attr("disabled", true);
-        event.preventDefault();
-        let formData = $("#mail_form").serializeArray();
-        formData.push({
-          name: "mail_submit",
-          value: "1"
-        });
-        $.ajax({
-          type: "POST",
-          url: "<?= $HOME_PATH; ?>_contact.php",
-          data: formData,
-          dataType: "json",
-          success: function(response) {
-            if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
-            else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
-            $("#mail_submit").removeAttr("disabled");
-          },
-          error: function(xhr, status, error) {
-            show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
-            $("#mail_submit").removeAttr("disabled");
-            console.error(xhr.responseText);
-          }
-        });
+  }
+  window.addEventListener("hashchange", onHashChangeEvent);
+
+  $(document).ready(function() {
+    onHashChangeEvent();
+    $("#mail_form").submit(function(event) {
+      $("#mail_submit").attr("disabled", true);
+      event.preventDefault();
+      let formData = $("#mail_form").serializeArray();
+      formData.push({
+        name: "mail_submit",
+        value: "1"
       });
-      cookieconsent.run({
-        "notice_banner_type": "simple",
-        "consent_type": "express",
-        "palette": "<?= $_theme; ?>",
-        "language": "<?= $lang; ?>",
-        "website_name": "byuwur.net",
-        "change_preferences_selector": "#cookiePrefs"
+      $.ajax({
+        type: "POST",
+        url: "<?= $HOME_PATH; ?>_contact.php",
+        data: formData,
+        dataType: "json",
+        success: function(response) {
+          if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
+          else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
+          $("#mail_submit").removeAttr("disabled");
+        },
+        error: function(xhr, status, error) {
+          show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
+          $("#mail_submit").removeAttr("disabled");
+          console.error(xhr.responseText);
+        }
       });
     });
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-148227598-1');
-  </script>
-</div>
+    cookieconsent.run({
+      "notice_banner_type": "simple",
+      "consent_type": "express",
+      "palette": "<?= $_theme; ?>",
+      "language": "<?= $lang; ?>",
+      "website_name": "byuwur.net",
+      "change_preferences_selector": "#cookiePrefs"
+    });
+  });
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-148227598-1');
+</script>
+<script src="<?= $HOME_PATH; ?>js/mateus.js" defer></script>

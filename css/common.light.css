@@ -1,0 +1,9 @@
+/*--- Loading screen ---*/
+.loading {
+	background: #eee !important;
+	color: #111 !important;
+}
+.load-text {
+	background: #eee !important;
+	color: #111 !important;
+}
