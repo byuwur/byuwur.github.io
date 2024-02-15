@@ -49,7 +49,6 @@ require_once $TO_HOME . "common.php";
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/bootstrap/css/bootstrap.mateus.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/owl-carousel/css/owl-carousel.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/magnific/css/magnific-popup.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/nav/css/nav.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/themify/themify-icons.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" />
@@ -70,8 +69,6 @@ require_once $TO_HOME . "common.php";
     <script src="<?= $HOME_PATH; ?>plugin/particles/particles.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/magnific/js/magnific-popup.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/bootstrap/js/bootstrap.mateus.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>plugin/nav/js/classie.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>plugin/nav/js/nav.js" defer></script>
     <script src="<?= $HOME_PATH; ?>js/cookies.js" defer></script>
     <script src="<?= $HOME_PATH; ?>_functions.js" defer></script>
     <script src="<?= $HOME_PATH; ?>_spa.js" defer></script>
