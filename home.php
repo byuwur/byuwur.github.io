@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <?php
-$setLocalStorage = true;
-require_once "./_var.php";
 $routes = [
     "/" => ["URI" => "home.v2.php", "GET" => [], "POST" => []],
     "/new" => ["URI" => "home.v2.php", "GET" => [], "POST" => []],
@@ -20,6 +18,8 @@ $routes = [
     "/resume.es" => ["FILE" => "resume.es.pdf"],
     "/resume.en" => ["FILE" => "resume.en.pdf"]
 ];
+$setLocalStorage = true;
+require_once "./_var.php";
 require_once $TO_HOME . "_functions.php";
 require_once $TO_HOME . "_router.php";
 require_once $TO_HOME . "common.php";
@@ -27,7 +27,7 @@ require_once $TO_HOME . "common.php";
 
 <head>
     <meta charset="utf-8" />
-    <title><?= $_title; ?> v1</title> <!-- Assuming you want to keep the version indicator in the title -->
+    <title><?= $_title; ?></title> <!-- Assuming you want to keep the version indicator in the title -->
     <meta property="og:title" content="[Mateus] byUwUr" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/img/icon.png" />
@@ -45,27 +45,23 @@ require_once $TO_HOME . "common.php";
     <link rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>favicon.png" />
     <link rel="icon" type="image/png" href="<?= $HOME_PATH; ?>favicon.png" />
     <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>favicon.png" />
-    <link href="<?= $HOME_PATH; ?>plugin/bootstrap/css/bootstrap.resume.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/bootstrap/css/bootstrap.resume.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/bootstrap/css/bootstrap.mateus.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/owl-carousel/css/owl-carousel.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/magnific/css/magnific-popup.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/nav/css/nav.css" />
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-    <link href="<?= $HOME_PATH; ?>plugin/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>plugin/themify/themify-icons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>css/common.css" />
     <?php
-    if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mateus.' . $_theme . '.css" />';
-    else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/mateus.dark.css" />';
+    if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/common.' . $_theme . '.css" />';
+    else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . 'css/common.dark.css" />';
     ?>
-    <link href="<?= $HOME_PATH; ?>css/resume.css" rel="stylesheet" />
     <script src="<?= $HOME_PATH; ?>plugin/jquery/jquery.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>_spa.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/bootstrap/js/bootstrap.min.js" defer></script> <!-- Keep the version from the first snippet if it's compatible -->
     <script src="<?= $HOME_PATH; ?>plugin/easing/easing.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>js/cookies.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>js/resume.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>_functions.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/popper/popper.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/modernizr/modernizr.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/owl-carousel/js/owl-carousel.min.js" defer></script>
@@ -76,7 +72,9 @@ require_once $TO_HOME . "common.php";
     <script src="<?= $HOME_PATH; ?>plugin/bootstrap/js/bootstrap.mateus.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/nav/js/classie.js" defer></script>
     <script src="<?= $HOME_PATH; ?>plugin/nav/js/nav.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>js/mateus.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>js/cookies.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>_functions.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>_spa.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
