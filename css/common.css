@@ -1,3 +1,17 @@
+html {
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
+}
+body {
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	transition: ease all 0.5s;
+}
 /*--- Loading screen ---*/
 .loading {
 	position: fixed;

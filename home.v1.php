@@ -28,7 +28,7 @@ require_once $TO_HOME . "common.php";
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><?= $_education; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $_contact; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><?= $_interest; ?></a></li>
-                <li class="nav-item"><a href="<?= $TO_HOME; ?>v2" custom-folder="true" class="a-logo h6"><?= $_new; ?></a></li>
+                <li class="nav-item"><a href="<?= $TO_HOME; ?>v2" class="a-logo h6"><?= $_new; ?></a></li>
             </ul>
         </div>
     </nav>
