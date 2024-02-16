@@ -1,10 +1,6 @@
 (function ($) {
 	"use strict";
 	let by = {};
-	/** Pre Load */
-	by.WebLoad = function () {
-		//$(".load-circle-back, .load-circle-fore, .load-text, .loading").fadeOut(500);
-	};
 	/** Owl Slider */
 	by.ClientSlider = function () {
 		let testimonials_slider = $("#client-slider-single");
@@ -129,7 +125,7 @@
 	};
 	// Window on Load
 	$(window).on("load", function () {
-		by.MasoNry(), by.WebLoad();
+		by.MasoNry();
 	});
 	//Document on ready
 	$(document).ready(function () {
