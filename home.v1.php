@@ -2,17 +2,17 @@
 require_once "./_var.php";
 require_once $TO_HOME . "common.php";
 ?>
-<link rel="stylesheet" href="<?= $HOME_PATH; ?>css/resume.css" />
+<link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/resume.css" />
 <!-- BODY -->
 <div id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#about">
             <span class="d-block d-lg-none" style="color: #FFF;">
-                <img src="<?= $HOME_PATH; ?>img/icon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
+                <img src="<?= $HOME_PATH; ?>/img/icon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
                 <?= $_name_topbar; ?>
             </span>
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?= $HOME_PATH; ?>img/profile.jpg" alt="Mateus" />
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?= $HOME_PATH; ?>/img/profile.jpg" alt="Mateus" />
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ require_once $TO_HOME . "common.php";
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <small style="margin: 15px 0px;"><a href="<?= $TO_HOME; ?>v1.es" class="a-logo" title="Español"><img src="<?= $HOME_PATH; ?>img/co.png" alt="" /> ES</a><a href="<?= $TO_HOME; ?>v1.en" class="a-logo" title="English"><img src="<?= $HOME_PATH; ?>img/uk.png" alt="" /> EN</a></small>
+                <small style="margin: 15px 0px;"><a href="<?= $ROOT_ROUTE; ?>v1.es" class="a-logo" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" alt="" /> ES</a><a href="<?= $ROOT_ROUTE; ?>v1.en" class="a-logo" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" alt="" /> EN</a></small>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><?= $_helloworld; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><?= $_skills; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><?= $_portfolio; ?></a></li>
@@ -28,7 +28,7 @@ require_once $TO_HOME . "common.php";
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><?= $_education; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"><?= $_contact; ?></a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><?= $_interest; ?></a></li>
-                <li class="nav-item"><a href="<?= $TO_HOME; ?>v2" class="a-logo h6"><?= $_new; ?></a></li>
+                <li class="nav-item"><a href="<?= $ROOT_ROUTE; ?>v2" class="a-logo h6"><?= $_new; ?></a></li>
             </ul>
         </div>
     </nav>
@@ -40,7 +40,7 @@ require_once $TO_HOME . "common.php";
                 <hr>
                 <p class="lead"><?= $_about; ?></p>
                 <div class="subheading">
-                    | <a href="<?= $_linkedin; ?>" target="_blank"><?= $_linkedin; ?></a> | <small><a class="a-logo" href="<?= $TO_HOME; ?>resume.es" target="_blank">Resume en español</a> | <a class="a-logo" href="<?= $TO_HOME; ?>resume.en" target="_blank">Resume in english</a></small> |
+                    | <a href="<?= $_linkedin; ?>" target="_blank"><?= $_linkedin; ?></a> | <small><a class="a-logo" href="<?= $ROOT_ROUTE; ?>resume.es" target="_blank">Resume en español</a> | <a class="a-logo" href="<?= $ROOT_ROUTE; ?>resume.en" target="_blank">Resume in english</a></small> |
                 </div>
                 <br>
                 <div class="social-icons">
@@ -55,12 +55,12 @@ require_once $TO_HOME . "common.php";
                     <div class="col-12 col-sm-5">
                         <br>
                         <h6>Digital Business Card v2</h6>
-                        <iframe src="<?= $HOME_PATH; ?>card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
+                        <iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
                     </div>
                     <div class="col-12 col-sm-7">
                         <br>
                         <h6>Digital Business Card v1</h6>
-                        <iframe src="<?= $HOME_PATH; ?>card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
+                        <iframe src="<?= $HOME_PATH; ?>/card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
                     </div>
                 </div>
                 <br><a href="#contact" class="a-logo nav-link js-scroll-trigger" style="font-size: 1.375em;"><?= $_start; ?></a>
@@ -205,7 +205,7 @@ require_once $TO_HOME . "common.php";
             });
             $.ajax({
                 type: "POST",
-                url: "<?= $HOME_PATH; ?>_contact.php",
+                url: "<?= $HOME_PATH; ?>/_contact.php",
                 data: formData,
                 dataType: "json",
                 success: function(response) {
@@ -237,4 +237,4 @@ require_once $TO_HOME . "common.php";
     gtag('js', new Date());
     gtag('config', 'UA-148227598-1');
 </script>
-<script src="<?= $HOME_PATH; ?>js/resume.js" defer></script>
+<script src="<?= $HOME_PATH; ?>/js/resume.js" defer></script>

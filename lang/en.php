@@ -20,7 +20,7 @@ $_name_top="Mateus <font size='5'><span class='text-primary'>[byUwUr]</span></fo
 $_nombre="Andrés Trujillo Mateus";
 $_new="load not so basic HTML";
 $_load="<font size='4'><strong>Loading standard view...</strong></font><br>Still loading? | <a href='./v1'>Load basic HTML</a>";
-$_footer="&copy;".date("Y")."<small> Andrés Trujillo [Mateus] byUwUr</small><br><a href='./v1'>load basic HTML</a> | <a href=\"javascript:swapStyleSheet('light');\">light</a> | <a href=\"javascript:swapStyleSheet('dark');\">dark</a><br><small><a href='mnm.team/sitemap' custom-folder='true'>sitemap</a> | <a href='mnm.team/cookie-policy' custom-folder='true'>cookie policy</a></small>";
+$_footer="&copy;".date("Y")."<small> Andrés Trujillo [Mateus] byUwUr</small><br><a href='/v1'>load basic HTML</a> | <a href=\"javascript:swapStyleSheet('light');\">light</a> | <a href=\"javascript:swapStyleSheet('dark');\">dark</a><br><small><a href='mnm.team/sitemap' custom-folder='true'>sitemap</a> | <a href='mnm.team/cookie-policy' custom-folder='true'>cookie policy</a></small>";
 $_cv="Download Resume";
 $_hire="Hire me";
 $_go="See";
