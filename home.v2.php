@@ -438,7 +438,7 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
       });
       $.ajax({
         type: "POST",
-        url: "<?= $HOME_PATH; ?>/_contact.php",
+        url: "<?= $HOME_PATH . $ROOT_ROUTE; ?>_contact.php",
         data: formData,
         dataType: "json",
       }).done(function(response) {
