@@ -173,7 +173,8 @@ require_once $TO_HOME . "common.php";
                                     <div class="form-group col-md-pull-12"><input type="text" id="mail_subject" name="mail_subject" class="form-control" placeholder="<?= $_subject; ?>" required></div>
                                     <div class="form-group col-md-pull-12"><textarea id="mail_message" name="mail_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea></div>
                                     <div class="g-recaptcha" id="mail_recaptcha" name="mail_recaptcha" data-sitekey="6LdBMSIaAAAAANG0gtgkpXUE0K5QS2nu0tJWC1Fm"></div><br>
-                                    <div class="form-group col-md-pull-12"><input type="submit" id="mail_submit" name="mail_submit" class="a-logo" value="<?= $_send; ?>"></div>
+                                    <div class="form-group col-11"><button id="mail_submit" type="submit" class="a-logo"><?= $_send; ?></button></div>
+                                    <div id="mail_spinner" class="col-1 m-2 spinner-border text-primary" role="status" style="display:none;"><span class="sr-only">Loading...</span></div>
                                 </form>
                             </div>
                         </div>
@@ -197,6 +198,7 @@ require_once $TO_HOME . "common.php";
     $(document).ready(function() {
         $("#mail_form").submit(function(event) {
             $("#mail_submit").attr("disabled", true);
+            $("#mail_spinner").fadeIn(1);
             event.preventDefault();
             let formData = $("#mail_form").serializeArray();
             formData.push({
@@ -208,16 +210,15 @@ require_once $TO_HOME . "common.php";
                 url: "<?= $HOME_PATH; ?>/_contact.php",
                 data: formData,
                 dataType: "json",
-                success: function(response) {
-                    if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "INFO.", "<?= $_mail_thanks; ?>", true);
-                    else show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?><br><code>(" + response.message + ")</code>", true);
-                    $("#mail_submit").removeAttr("disabled");
-                },
-                error: function(xhr, status, error) {
-                    show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
-                    $("#mail_submit").removeAttr("disabled");
-                    console.error(xhr.responseText);
-                }
+            }).done(function(response) {
+                if (response.status == 200 || response.status == 201 || response.status == 202) show_modal_front("success", "ATENCIÓN", "Tu mensaje se ha enviado exitosamente.<br>¡Te contactaremos pronto!", true);
+                else show_modal_front("danger", "ERROR", "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.<br><code>(" + response.message + ")</code>", true);
+            }).fail(function(xhr, status, error) {
+                show_modal_front("danger", "ERROR", "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.", true);
+                console.error(xhr.responseText);
+            }).always(function() {
+                $("#mail_submit").removeAttr("disabled");
+                $("#mail_spinner").fadeOut(1);
             });
         });
         cookieconsent.run({
