@@ -446,7 +446,7 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
         else show_modal_front("danger", "ERROR", "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.<br><code>(" + response.message + ")</code>", true);
       }).fail(function(xhr, status, error) {
         show_modal_front("danger", "ERROR", "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.", true);
-        console.error(xhr.responseText);
+        console.error(error);
       }).always(function() {
         $("#mail_submit").removeAttr("disabled");
         $("#mail_spinner").fadeOut(1);
