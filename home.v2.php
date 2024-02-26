@@ -1,5 +1,6 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "_routes.php";
 require_once $TO_HOME . "common.php";
 if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/mateus.' . $_theme . '.css" />';
 else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/mateus.dark.css" />';
