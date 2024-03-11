@@ -271,6 +271,6 @@ $_msg="Mensaje";
 $_send="VAMOS A PLATICAR";
 $_mail="atrujillomateus@gmail.com";
 $_location="<small>Ubicación: </small><img src='./img/co.png' width='15px' height='12px' style='margin-left:8px;margin-bottom:4px;' /> COLOMBIA<br>Ibagué, Espinal, Flandes (Tolima)<br>Girardot (Cundinamarca)";
-$_mail_thanks = "Tu mensaje se ha enviado exitosamente.<br>¡Te contactaremos pronto!";
-$_mail_wrong = "Hubo un error al enviar el mensaje.<br>Disculpa las molestias, intenta nuevamente.";
+$_mail_thanks = "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!";
+$_mail_wrong = "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.";
 ?>
