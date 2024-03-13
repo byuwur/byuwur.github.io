@@ -1,5 +1,5 @@
 <?php
-// You MUST require_once './_var.php' to get paths, plus require_once $TO_HOME . "_functions.php";
+// MUST require_once '/_var.php';
 if (isset($_GET['lang'])) {
     switch ($_GET['lang']) {
         case 'es':
@@ -46,6 +46,20 @@ else {
 }
 $title_index = $_GET["title"] ?? 0;
 $titles = [];
+// --- declarations ---
+$MATEUS_LINK = "https://byuwur.net";
+$DNI_TYPES = [
+    1 => "Número único de identificación personal (NUIP)",
+    2 => "Registro civil (RC)",
+    3 => "Tarjeta de identidad (TI)",
+    4 => "Cédula de ciudadanía (CC)",
+    5 => "Cédula de extranjería (CE)",
+    6 => "Pasaporte (PS)",
+    9 => "Otro..."
+];
+$BLOOD_TYPES = ["O+", "O-", "A+", "A-", "B+", "B-", "AB+", "AB-"];
+$DAYS_OF_WEEK = ["--- Seleccionar día de la semana ---", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+$MONTHS = ["--- Mes ---", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 ?>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" async defer></script>

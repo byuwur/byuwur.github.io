@@ -1,7 +1,12 @@
 <?php
 require_once "./_var.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_config.php";
 require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
 require_once $TO_HOME . "common.php";
+// --- PHP ---
 if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/mateus.' . $_theme . '.css" />';
 else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/mateus.dark.css" />';
 ?>
@@ -471,3 +476,8 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
   gtag('config', 'UA-148227598-1');
 </script>
 <script src="<?= $HOME_PATH; ?>/js/mateus.js" defer></script>
+<?php
+//login([], true);
+// Always output due to "/_var.php" invoking ob_start();
+ob_end_flush();
+?>
