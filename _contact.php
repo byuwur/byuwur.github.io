@@ -2,7 +2,11 @@
 require_once "./_var.php";
 require_once $TO_HOME . "_functions.php";
 require_once $TO_HOME . "_config.php";
-//suppress_errors();
+//require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
+//require_once $TO_HOME . "common.php";
+// --- PHP ---
 if (!validate_value($_POST["mail_submit"] ?? null)) api_respond(400, true, "Invalid form.");
 if (!validate_value($_POST["g-recaptcha-response"] ?? null)) api_respond(400, true, "Invalid captcha.");
 if (!json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $_ENV["RECAPTCHA_KEY"] . "&response=" . $_POST["g-recaptcha-response"]))->success) api_respond(403, true, "Invalid captcha.");
