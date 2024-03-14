@@ -406,12 +406,15 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
   </header>
 </div>
 <!-- BODY -->
+<script src="<?= $HOME_PATH; ?>/plugin/nav/js/nav.js" defer></script>
+<script src="<?= $HOME_PATH; ?>/plugin/nav/js/classie.js" defer></script>
+<script src="<?= $HOME_PATH; ?>/js/mateus.js" defer></script>
 <script>
   "use strict";
 
   function swapStyleSheet(sheet) {
-    document.getElementById('pagestyle').setAttribute('href', '<?= $HOME_PATH; ?>/css/mateus.' + sheet + '.css');
-    document.cookie = 'theme=' + sheet + ';max-age=31536000;path=/;samesite;';
+    document.querySelector("#pagestyle").setAttribute("href", `${localStorage.getItem("HOME_PATH")}/css/mateus.${sheet}.css`);
+    document.cookie = "theme=" + sheet + ";max-age=31536000;path=/;samesite;";
   }
 
   function swapPage(page) {
@@ -475,7 +478,6 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
   gtag('js', new Date());
   gtag('config', 'UA-148227598-1');
 </script>
-<script src="<?= $HOME_PATH; ?>/js/mateus.js" defer></script>
 <?php
 //login([], true);
 // Always output due to "/_var.php" invoking ob_start();

@@ -12,15 +12,6 @@
 				0: {
 					items: 1
 				},
-				600: {
-					items: 1
-				},
-				768: {
-					items: 1
-				},
-				991: {
-					items: 1
-				},
 				1140: {
 					items: 2
 				}
@@ -36,9 +27,6 @@
 			nav: false,
 			responsive: {
 				0: {
-					items: 1
-				},
-				768: {
 					items: 1
 				},
 				991: {
@@ -68,10 +56,7 @@
 		});
 		//Add/remove class on filter list
 		$(portfolioFilter).on("click", function () {
-			$(this)
-				.addClass("active")
-				.siblings()
-				.removeClass("active");
+			$(this).addClass("active").siblings().removeClass("active");
 		});
 	};
 	by.PopupVideo = function () {
@@ -129,11 +114,6 @@
 	});
 	//Document on ready
 	$(document).ready(function () {
-		by.ClientSlider(),
-			by.BlogSlider(),
-			by.MasoNry(),
-			by.PopupVideo(),
-			by.LightboxGallery(),
-			by.mTypeIt();
+		by.ClientSlider(), by.BlogSlider(), by.MasoNry(), by.PopupVideo(), by.LightboxGallery(), by.mTypeIt();
 	});
 })(jQuery);

@@ -199,6 +199,7 @@ require_once $TO_HOME . "common.php";
     </div>
 </div>
 <!-- BODY -->
+<script src="<?= $HOME_PATH; ?>/js/resume.js" defer></script>
 <script>
     "use strict";
     $(document).ready(function() {
@@ -244,7 +245,6 @@ require_once $TO_HOME . "common.php";
     gtag('js', new Date());
     gtag('config', 'UA-148227598-1');
 </script>
-<script src="<?= $HOME_PATH; ?>/js/resume.js" defer></script>
 <?php
 //login([], true);
 // Always output due to "/_var.php" invoking ob_start();
