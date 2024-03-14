@@ -83,6 +83,5 @@ RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
 RewriteRule .* - [F]
 # Protect
 <FilesMatch "^(.*\.)?(env|md|json|lock|htaccess|ini|log|pem|html)$">
-    Order deny,allow
-    Deny from all
+    Require all denied
 </FilesMatch>
