@@ -1,6 +1,18 @@
 "use strict";
-document.addEventListener('DOMContentLoaded', function () {
-	let support, transEndEventNames, transEndEventName, onEndTransition, sidevideo, stack, pages, pagesTotal, current, menuCtrl, nav, navItems, isMenuOpen;
+$(document).ready(function () {
+	let support,
+		transEndEventNames,
+		transEndEventName,
+		onEndTransition,
+		sidevideo,
+		stack,
+		pages,
+		pagesTotal,
+		current,
+		menuCtrl,
+		nav,
+		navItems,
+		isMenuOpen;
 	function init() {
 		support = { transitions: Modernizr.csstransitions };
 		// transition end event name
@@ -11,16 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			msTransition: "MSTransitionEnd",
 			transition: "transitionend"
 		};
-		transEndEventName =
-			transEndEventNames[Modernizr.prefixed("transition")];
+		transEndEventName = transEndEventNames[Modernizr.prefixed("transition")];
 		onEndTransition = function (el, callback) {
 			let onEndCallbackFn = function (ev) {
 				if (support.transitions) {
 					if (ev.target != this) return;
-					this.removeEventListener(
-						transEndEventName,
-						onEndCallbackFn
-					);
+					this.removeEventListener(transEndEventName, onEndCallbackFn);
 				}
 				if (callback && typeof callback === "function") {
 					callback.call(this);
@@ -73,10 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			} else {
 				classie.remove(page, "page--inactive");
 			}
-			page.style.zIndex =
-				i < current
-					? parseInt(current - i)
-					: parseInt(pagesTotal + current - i);
+			page.style.zIndex = i < current ? parseInt(current - i) : parseInt(pagesTotal + current - i);
 			if (posIdx !== -1) {
 				page.style.opacity = parseFloat(1 - 0.1 * posIdx);
 			} else {
@@ -133,17 +138,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		classie.add(stack, "pages-stack--open");
 		// reveal the menu
 		classie.add(nav, "pages-nav--open");
-		// hide the video 
+		// hide the video
 		sidevideo.style.removeProperty("animation");
-		setTimeout(function () { classie.add(sidevideo, "side-video--open") }, 50);
+		setTimeout(function () {
+			classie.add(sidevideo, "side-video--open");
+		}, 50);
 		// now set the page transforms
 		let stackPagesIdxs = getStackPagesIdxs();
 		for (let i = 0, len = stackPagesIdxs.length; i < len; ++i) {
 			let page = pages[stackPagesIdxs[i]];
-			page.style.WebkitTransform =
-				"translate3d(0, 75%, " + parseInt(-1 * 200 - 50 * i) + "px)"; // -200px, -230px, -260px
-			page.style.transform =
-				"translate3d(0, 75%, " + parseInt(-1 * 200 - 50 * i) + "px)";
+			page.style.WebkitTransform = "translate3d(0, 75%, " + parseInt(-1 * 200 - 50 * i) + "px)"; // -200px, -230px, -260px
+			page.style.transform = "translate3d(0, 75%, " + parseInt(-1 * 200 - 50 * i) + "px)";
 		}
 	}
 	// closes the menu
@@ -174,7 +179,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		classie.remove(menuCtrl, "menu-button--open");
 		classie.remove(nav, "pages-nav--open");
 		classie.remove(sidevideo, "side-video--open");
-		setTimeout(function () { sidevideo.style.setProperty("animation", "float 5s infinite") }, 500);
+		setTimeout(function () {
+			sidevideo.style.setProperty("animation", "float 5s infinite");
+		}, 500);
 		onEndTransition(futurePage, function () {
 			classie.remove(stack, "pages-stack--open");
 			// reorganize stack
@@ -209,8 +216,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	function onMutation(mutations) {
 		for (let mutation of mutations)
-			if (mutation.type === 'childList')
-				if (document.querySelector('.pages-stack') && document.querySelector('.pages-stack').children.length > 0) {
+			if (mutation.type === "childList")
+				if (
+					document.querySelector(".pages-stack") &&
+					document.querySelector(".pages-stack").children.length > 0
+				) {
 					init();
 					observer.disconnect();
 					break;
