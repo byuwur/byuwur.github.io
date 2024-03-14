@@ -31,7 +31,7 @@ $sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);
 $sendgrid->client->setCurlOptions([
     CURLOPT_SSL_VERIFYHOST => 2,
     CURLOPT_SSL_VERIFYPEER => true,
-    CURLOPT_CAINFO => "${SYSTEM_ROOT}/cacert.pem",
+    CURLOPT_CAINFO => $SYSTEM_ROOT . "/cacert.pem",
 ]);
 try {
     $response = $sendgrid->send($sg_email);
