@@ -47,7 +47,6 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
                     </div>
                     <div class="btn-bar">
                       <a href="<?= $ROOT_ROUTE; ?>resume.<?= $lang; ?>" class="btn btn-theme"><?= $_cv; ?></a>
-                      <hr class="my-1" /><a href="<?= $ROOT_ROUTE; ?>ui-kit" target="_blank">UI kit preview</a>
                       <hr class="my-1" />
                       <div class="d-flex flex-row flex-wrap py-2">
                         <a href="javascript:swapPage('about');" class="mr-2 py-1 px-3 text-uppercase text-center text-nowrap mr-1 mb-3 btn-sm btn-theme"><?= $_go; ?> <?= $_aboutme; ?></a>
@@ -114,12 +113,11 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
                     <div class="col-12 col-md-3 md-m-15px-tb">
                       <div class="counter-col counter-box">
                         <div class="counter-data" data-count="375"><i class="theme-color ti-ruler-pencil"></i>
-                          <div class="count text-color">5</div><a href="<?= $_github; ?>" target="_blank">
+                          <div class="count text-color">16</div><a href="<?= $_github; ?>" target="_blank">
                             <h6>Projects</h6>
                           </a>
                         </div>
                       </div>
-                      <br><a href="<?= $ROOT_ROUTE; ?>ui-kit" target="_blank">&& UI kit preview</a>
                     </div>
                     <div class="col-12 col-md-4 md-m-15px-tb">
                       <h6>Digital Business Card v2</h6><iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="140px" frameborder="0"></iframe>
