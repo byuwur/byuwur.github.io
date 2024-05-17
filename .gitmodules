@@ -1,0 +1,3 @@
+[submodule "stream.html"]
+	path = stream.html
+	url = https://github.com/byuwur/stream.html.git
