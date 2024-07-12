@@ -113,7 +113,7 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
                     <div class="col-12 col-md-3 md-m-15px-tb">
                       <div class="counter-col counter-box">
                         <div class="counter-data" data-count="375"><i class="theme-color ti-ruler-pencil"></i>
-                          <div class="count text-color">16</div><a href="<?= $_github; ?>" target="_blank">
+                          <div class="count text-color">18</div><a href="<?= $_github; ?>" target="_blank">
                             <h6>Projects</h6>
                           </a>
                         </div>

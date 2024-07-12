@@ -33,7 +33,7 @@ $_whoiam="Who I am";
 $_aboutmateus="About";
 $_aboutiam="About me";
 $_iam="I am";
-$_about="Programmer by profession, Editor by passion, Voice actor in training.<br>Full-stack web developer in LAMP, native and hybrid Java programmer for Android, and SQL database designer, plus a bit of Python.<br>Video and photo editor, Content creator since 2014.<br>Fluent English as my second language and Spanish as my native language.<br>Always willing to learn. I am for what you need.";
+$_about="Developer by profession, Editor by passion.<br>Full-stack web developer in XAMP (Apache, MySQL, PHP), React & React Native, native and hybrid Java programmer for Android, and SQL database designer, plus a bit of AWS & Python. Professionally at work since 2018. Video and photo editor, Content creator since 2014.<br>Fluent English as my second language and Spanish as my native language.<br>Always willing to learn. I am for anything you need.";
 $_facebook="https://facebook.com/byuwur";
 $_twitter="https://twitter.com/byuwur";
 $_youtube="https://youtube.com/byuwur";
@@ -45,7 +45,7 @@ $_start="WE START?";
 $_languages="MANY LANGUAGES:";
 $_things="AND OTHER THINGIES:";
 $_thingiesicon[]="ti-split-v-alt";
-$_thingies[]="Development of web and mobile applications";
+$_thingies[]="Development & Design of web and mobile applications";
 $_thingiesicon[]="ti-server";
 $_thingies[]="Design and modeling of SQL databases";
 $_thingiesicon[]="ti-help-alt";
@@ -223,13 +223,17 @@ $_portafolio[]="<a target='_blank' href='https://redcolsi.org/web/'><strong>Work
 #interests
 $_interesting="In addition to programming and development, I also like to perform design, multimedia editing, teaching, perfecting my work and video games. Also highlight my domain of English as a second language and Spanish.<br>Always willing to help improve my team and the community, improve myself and learn what the industry throws.<br>I really enjoy teamwork, lead and interact with people.<br>I have also worked with the IDE of Android Studio (IntelliJ IDEA) and Eclipse for Java, also other software such as Vegas PRO, Premiere Pro, Davinci Resolve, Photoshop, Lightroom, After Effects, Unity, Blender and version control with Git, a little bit of everything.";
 #experience
+$_experiencepos[]="SOFTWARE DEVELOPMER";
+$_experienceent[]="<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>";
+$_experiencedesc[]="Performed as an implementer and support developer using mainly React, React Native, AWS & PHP.";
+$_experiencetime[]="October 2023";
 $_experiencepos[]="SOFTWARE DEVELOPMENT ANALYST";
-$_experienceent[]="<a href='https://nxs.com.co/' target='_blank'>Nexos Software</a>";
+$_experienceent[]="<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>";
 $_experiencedesc[]="Performed as an implementer and support developer using tools tailored to the client.";
 $_experiencetime[]="August 2022 - February 2024";
 $_experiencepos[]="BACKEND WEB DEVELOPMENT";
-$_experienceent[]="<a href='https://rivka.mx/' target='_blank'>Rivka.mx</a>";
-$_experiencedesc[]="Performed as an implementation and support developer using mainly PHP, along with MySQL, HTML5, CSS and JS.";
+$_experienceent[]="<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>";
+$_experiencedesc[]="Performed as an implementation and support developer using mainly PHP, along with MySQL, HTML5, CSS & JS.";
 $_experiencetime[]="August 2022 - June 2023";
 $_experiencepos[]="WEB DEVELOPMENT: GRADING PLATFORM";
 $_experienceent[]="<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>";
