@@ -10,7 +10,7 @@ require_once $TO_HOME . "_config.php";
 // --- PHP ---
 if (validate_value($_POST["mail_submit"]  ?? null) === null) api_respond(400, true, "Invalid form.");
 if (validate_value($_POST["g-recaptcha-response"]  ?? null) === null) api_respond(400, true, "Invalid captcha.");
-if (!json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $_ENV["RECAPTCHA_KEY"] . "&response=" . $_POST["g-recaptcha-response"]))->success) api_respond(403, true, "Invalid captcha.");
+if ($_ENV["APP_ENV"] != "DEV") if (!json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $_ENV["RECAPTCHA_KEY"] . "&response=" . $_POST["g-recaptcha-response"]))->success) api_respond(403, true, "Invalid captcha.");
 if (validate_value($_POST["mail_name"]  ?? null) === null) api_respond(400, true, "Invalid form: name required.");
 if (!validate_value($_POST["mail_email"] ?? null, "email")) api_respond(400, true, "Invalid form: email required.");
 if (validate_value($_POST["mail_subject"]  ?? null) === null) api_respond(400, true, "Invalid form: subject required.");
