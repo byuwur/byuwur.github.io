@@ -75,7 +75,7 @@ $mail_html = '
     <title>' . $mail_res . '</title>
 </head>
 <body style="width: 100%; height: 100%; padding: 0; margin: 0">
-    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0px; background-color: #ffffff; width: 600px; margin 0; padding: 15px 40px">
+    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0px; background-color: #ffffff; width: 600px; padding: 15px 40px">
         <td valign="top" align="left" style="padding: 0; margin: 0; width: 100px">
             <a target="_blank" href="' . $mail_resources["head_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px">
                 <img   

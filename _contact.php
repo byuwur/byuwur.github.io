@@ -17,9 +17,9 @@ if (validate_value($_POST["mail_subject"]  ?? null) === null) api_respond(400, t
 if (validate_value($_POST["mail_message"]  ?? null) === null) api_respond(400, true, "Invalid form: message required.");
 $_POST["resource"] = "byuwur";
 $_POST["topic_txt"] = "CORREO DE CONTACTO";
-$_POST["msg_top"] = "Hola, " . validate_value($_POST["easter_name"] ?? null) !== null ? sanitize_value($_POST["easter_name"]) : "Mateus";
+$_POST["msg_top"] = "Hola, " . (validate_value($_POST["easter_name"] ?? null) !== null ? sanitize_value($_POST["easter_name"]) : "Mateus");
 $_POST["msg_bot"] = "Soy <strong>" . sanitize_value($_POST["mail_name"]) . "</strong>.<br>Pueden contactarme en: <strong>" . sanitize_value($_POST["mail_email"], "email") . "</strong>"
-    . validate_value($_POST["mail_phone"] ?? null) !== null ? ", o llamarme al: <strong>" . sanitize_value($_POST["mail_phone"]) . "</strong>" : "."
+    . (validate_value($_POST["mail_phone"] ?? null) !== null ? ", o llamarme al: <strong>" . sanitize_value($_POST["mail_phone"]) . "</strong>" : ".")
     . "<br><br>Asunto: <strong>" . sanitize_value($_POST["mail_subject"]) . "</strong><br><br>Necesito decirles:<br>" . escape_html(sanitize_value($_POST["mail_message"]));
 $_POST["cta_url"] = false;
 $_POST["cta_txt"] = "";
