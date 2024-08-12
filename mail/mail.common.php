@@ -46,11 +46,10 @@ $MAIL_RES = [
     ],
 ];
 // Check if context is specified
-$mail_res = validate_value($_POST["resource"] ?? null) ? sanitize_value($_POST["resource"]) : "byuwur";
+$mail_res = validate_value($_POST["resource"] ?? null) !== null ? sanitize_value($_POST["resource"]) : "byuwur";
 // Handle the context
 switch ($mail_res) {
     case "byuwur":
-    case "academyapp":
         $mail_resources = $MAIL_RES[$mail_res];
         break;
     default:
@@ -58,11 +57,11 @@ switch ($mail_res) {
         break;
 }
 // Check if values need to be changed
-if (validate_value($_POST["topic_txt"] ?? null)) $mail_resources["topic_txt"] = sanitize_value($_POST["topic_txt"]);
-if (validate_value($_POST["msg_top"] ?? null)) $mail_resources["msg_top"] = sanitize_value($_POST["msg_top"]);
-if (validate_value($_POST["msg_bot"] ?? null)) $mail_resources["msg_bot"] = sanitize_value($_POST["msg_bot"]);
-if (validate_value($_POST["cta_url"] ?? null)) $mail_resources["cta_url"] = sanitize_value($_POST["cta_url"]);
-if (validate_value($_POST["cta_txt"] ?? null)) $mail_resources["cta_txt"] = sanitize_value($_POST["cta_txt"]);
+if (validate_value($_POST["topic_txt"] ?? null) !== null) $mail_resources["topic_txt"] = sanitize_value($_POST["topic_txt"]);
+if (validate_value($_POST["msg_top"] ?? null) !== null) $mail_resources["msg_top"] = sanitize_value($_POST["msg_top"]);
+if (validate_value($_POST["msg_bot"] ?? null) !== null) $mail_resources["msg_bot"] = $_POST["msg_bot"];
+if (validate_value($_POST["cta_url"] ?? null) !== null) $mail_resources["cta_url"] = sanitize_value($_POST["cta_url"]);
+if (validate_value($_POST["cta_txt"] ?? null) !== null) $mail_resources["cta_txt"] = sanitize_value($_POST["cta_txt"]);
 // Create the email based on the template
 $mail_html = '
 <!DOCTYPE html>

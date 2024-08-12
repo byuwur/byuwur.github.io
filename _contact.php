@@ -8,26 +8,29 @@ require_once $TO_HOME . "_config.php";
 //require_once $TO_HOME . "_auth.php";
 //require_once $TO_HOME . "common.php";
 // --- PHP ---
-if (!validate_value($_POST["mail_submit"] ?? null)) api_respond(400, true, "Invalid form.");
-if (!validate_value($_POST["g-recaptcha-response"] ?? null)) api_respond(400, true, "Invalid captcha.");
+if (validate_value($_POST["mail_submit"]  ?? null) === null) api_respond(400, true, "Invalid form.");
+if (validate_value($_POST["g-recaptcha-response"]  ?? null) === null) api_respond(400, true, "Invalid captcha.");
 if (!json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $_ENV["RECAPTCHA_KEY"] . "&response=" . $_POST["g-recaptcha-response"]))->success) api_respond(403, true, "Invalid captcha.");
-if (!validate_value($_POST["mail_name"] ?? null)) api_respond(400, true, "Invalid form: name required.");
+if (validate_value($_POST["mail_name"]  ?? null) === null) api_respond(400, true, "Invalid form: name required.");
 if (!validate_value($_POST["mail_email"] ?? null, "email")) api_respond(400, true, "Invalid form: email required.");
-if (!validate_value($_POST["mail_subject"] ?? null)) api_respond(400, true, "Invalid form: subject required.");
-if (!validate_value($_POST["mail_message"] ?? null)) api_respond(400, true, "Invalid form: message required.");
-$easter_name = validate_value($_POST["easter_name"] ?? null) ? sanitize_value($_POST["easter_name"]) : "Mateus";
+if (validate_value($_POST["mail_subject"]  ?? null) === null) api_respond(400, true, "Invalid form: subject required.");
+if (validate_value($_POST["mail_message"]  ?? null) === null) api_respond(400, true, "Invalid form: message required.");
+$easter_name = validate_value($_POST["easter_name"] ?? null) !== null ? sanitize_value($_POST["easter_name"]) : "Mateus";
 $message = "Soy <strong>" . sanitize_value($_POST["mail_name"]) . "</strong>.<br>Pueden contactarme en: <strong>" . sanitize_value($_POST["mail_email"], "email") . "</strong>";
-$message .= validate_value($_POST["mail_phone"] ?? null) ? ", o llamarme al: <strong>" . sanitize_value($_POST["mail_phone"]) . "</strong>" : ".";
+$message .= validate_value($_POST["mail_phone"] ?? null) !== null ? ", o llamarme al: <strong>" . sanitize_value($_POST["mail_phone"]) . "</strong>" : ".";
 $message .= "<br><br>Asunto: <strong>" . sanitize_value($_POST["mail_subject"]) . "</strong><br><br>Necesito decirles:<br>" . escape_html(sanitize_value($_POST["mail_message"]));
-$html = 'Hola, ' . $easter_name . '.<br>'. $message;
-//echo $html;
+$_POST["topic_txt"] = "CORREO DE CONTACTO";
+$_POST["msg_top"] = "Hola, " . $easter_name;
+$_POST["msg_bot"] = $message;
+$_POST["cta_url"] = false;
+require_once "./mail/mail.common.php";
 $sg_email = new \SendGrid\Mail\Mail();
 $sg_email->setFrom("mateus@byuwur.net", "[Mateus] byUwUr");
 $sg_email->addTos([
     "atrujillomateus@gmail.com" => "Mateus"
 ]);
 $sg_email->setSubject(sanitize_value($_POST["mail_subject"]));
-$sg_email->addContent("text/html", $html);
+$sg_email->addContent("text/html", $mail_html);
 $sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);
 $sendgrid->client->setCurlOptions([
     CURLOPT_SSL_VERIFYHOST => 2,
