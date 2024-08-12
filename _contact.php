@@ -15,15 +15,15 @@ if (validate_value($_POST["mail_name"]  ?? null) === null) api_respond(400, true
 if (!validate_value($_POST["mail_email"] ?? null, "email")) api_respond(400, true, "Invalid form: email required.");
 if (validate_value($_POST["mail_subject"]  ?? null) === null) api_respond(400, true, "Invalid form: subject required.");
 if (validate_value($_POST["mail_message"]  ?? null) === null) api_respond(400, true, "Invalid form: message required.");
-$easter_name = validate_value($_POST["easter_name"] ?? null) !== null ? sanitize_value($_POST["easter_name"]) : "Mateus";
-$message = "Soy <strong>" . sanitize_value($_POST["mail_name"]) . "</strong>.<br>Pueden contactarme en: <strong>" . sanitize_value($_POST["mail_email"], "email") . "</strong>";
-$message .= validate_value($_POST["mail_phone"] ?? null) !== null ? ", o llamarme al: <strong>" . sanitize_value($_POST["mail_phone"]) . "</strong>" : ".";
-$message .= "<br><br>Asunto: <strong>" . sanitize_value($_POST["mail_subject"]) . "</strong><br><br>Necesito decirles:<br>" . escape_html(sanitize_value($_POST["mail_message"]));
+$_POST["resource"] = "byuwur";
 $_POST["topic_txt"] = "CORREO DE CONTACTO";
-$_POST["msg_top"] = "Hola, " . $easter_name;
-$_POST["msg_bot"] = $message;
+$_POST["msg_top"] = "Hola, " . validate_value($_POST["easter_name"] ?? null) !== null ? sanitize_value($_POST["easter_name"]) : "Mateus";
+$_POST["msg_bot"] = "Soy <strong>" . sanitize_value($_POST["mail_name"]) . "</strong>.<br>Pueden contactarme en: <strong>" . sanitize_value($_POST["mail_email"], "email") . "</strong>"
+    . validate_value($_POST["mail_phone"] ?? null) !== null ? ", o llamarme al: <strong>" . sanitize_value($_POST["mail_phone"]) . "</strong>" : "."
+    . "<br><br>Asunto: <strong>" . sanitize_value($_POST["mail_subject"]) . "</strong><br><br>Necesito decirles:<br>" . escape_html(sanitize_value($_POST["mail_message"]));
 $_POST["cta_url"] = false;
-require_once "./mail/mail.common.php";
+$_POST["cta_txt"] = "";
+require_once $TO_HOME . "mail/mail.common.php";
 $sg_email = new \SendGrid\Mail\Mail();
 $sg_email->setFrom("mateus@byuwur.net", "[Mateus] byUwUr");
 $sg_email->addTos([
