@@ -134,7 +134,7 @@ html.js,
 @media screen and (max-width: 801px) {
 	.js .pages-nav {
 		display: block;
-		padding: 10px 20px 0 20px;
+		padding: 72px 24px 24px 24px;
 		text-align: left;
 	}
 	.js .pages-nav__item {

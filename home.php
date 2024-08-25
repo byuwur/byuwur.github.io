@@ -62,7 +62,7 @@ require_once $TO_HOME . "common.php";
 </head>
 
 <body>
-    <div id="spa-loader" class="loading">
+    <div id="spa-loader">
         <div class="load-circle-back"></div>
         <div class="load-circle-fore"></div>
         <div class="load-text"><?= $_load; ?></div>

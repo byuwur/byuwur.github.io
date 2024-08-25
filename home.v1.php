@@ -203,7 +203,7 @@ require_once $TO_HOME . "common.php";
 <script src="<?= $HOME_PATH; ?>/js/resume.js" defer></script>
 <script>
     "use strict";
-    $(document).ready(function() {
+    $(() => {
         $("#mail_form").submit(function(event) {
             $("#mail_submit").attr("disabled", true);
             $("#mail_spinner").fadeIn(1);

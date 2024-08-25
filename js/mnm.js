@@ -5,9 +5,11 @@
 	let loading = document.querySelector(".loading");
 	by.WebLoad = function () {
 		if (loading.style.visibility == "hidden" || loading.style.display == "none") {
-			loading.style.visibility = "visible"; loading.style.opacity = "1"; //loading.style.display = "block";
+			loading.style.visibility = "visible";
+			loading.style.opacity = "1";
 		} else {
-			loading.style.visibility = "hidden"; loading.style.opacity = "0"; //loading.style.display = "none";
+			loading.style.visibility = "hidden";
+			loading.style.opacity = "0";
 		}
 	};
 	let isMobile = {
@@ -27,13 +29,7 @@
 			return navigator.userAgent.match(/IEMobile/i);
 		},
 		any: function () {
-			return (
-				isMobile.Android() ||
-				isMobile.BlackBerry() ||
-				isMobile.iOS() ||
-				isMobile.Opera() ||
-				isMobile.Windows()
-			);
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
 		}
 	};
 	let fullHeight = function () {
@@ -49,10 +45,7 @@
 		let i = 0;
 		$(".animate-box").waypoint(
 			function (direction) {
-				if (
-					direction === "down" &&
-					!$(this.element).hasClass("animated")
-				) {
+				if (direction === "down" && !$(this.element).hasClass("animated")) {
 					i++;
 					$(this.element).addClass("item-animate");
 					setTimeout(function () {
@@ -101,10 +94,7 @@
 	let mobileMenuOutsideClick = function () {
 		$(document).click(function (e) {
 			let container = $("#mnm-aside, .js-mnm-nav-toggle");
-			if (
-				!container.is(e.target) &&
-				container.has(e.target).length === 0
-			) {
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
 				if ($("body").hasClass("offcanvas")) {
 					$("body").removeClass("offcanvas");
 					$(".js-mnm-nav-toggle").removeClass("active");
@@ -126,17 +116,13 @@
 			start: function () {
 				setTimeout(function () {
 					$(".slider-text").removeClass("animated fadeInUp");
-					$(".flex-active-slide")
-						.find(".slider-text")
-						.addClass("animated fadeInUp");
+					$(".flex-active-slide").find(".slider-text").addClass("animated fadeInUp");
 				}, 111);
 			},
 			before: function () {
 				setTimeout(function () {
 					$(".slider-text").removeClass("animated fadeInUp");
-					$(".flex-active-slide")
-						.find(".slider-text")
-						.addClass("animated fadeInUp");
+					$(".flex-active-slide").find(".slider-text").addClass("animated fadeInUp");
 				}, 111);
 			}
 		});
@@ -193,16 +179,13 @@
 		$("#sticky_item").stick_in_parent();
 	};
 	// Document on load.
-	$(function () {
+	$(() => {
 		fullHeight();
 		contentWayPoint();
 		burgerMenu();
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
-	});
-	// Window on Load
-	$(window).on("load", function () {
 		by.WebLoad();
 	});
 })();

@@ -1,45 +1,59 @@
-html {
-	-webkit-transition: ease all 0.5s;
-	-o-transition: ease all 0.5s;
-	-ms-transition: ease all 0.5s;
-	-moz-transition: ease all 0.5s;
-	transition: ease all 0.5s;
+* {
+	min-width: 0;
+	/* scroll */
+	scrollbar-width: 12px;
+	scrollbar-color: #04c #fff;
+	/* anim */
+	-webkit-transition: all 0.333s ease !important;
+	-o-transition: all 0.333s ease !important;
+	-ms-transition: all 0.333s ease !important;
+	-moz-transition: all 0.333s ease !important;
+	transition: all 0.333s ease !important;
 }
+html,
 body {
-	-webkit-transition: ease all 0.5s;
-	-o-transition: ease all 0.5s;
-	-ms-transition: ease all 0.5s;
-	-moz-transition: ease all 0.5s;
-	transition: ease all 0.5s;
+	position: relative;
+	/* font-family: "Bahnschrift"; */
+	background: #fff;
+	font-size: 16px;
+	letter-spacing: -0.1px;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #222;
+	text-overflow: ellipsis !important;
+	white-space: wrap !important;
 }
-/*--- Loading screen ---*/
-.loading {
+/* Preloader */
+#spa-loader {
 	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	top: 0;
-	left: 0;
 	bottom: 0;
+	left: 0;
 	right: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	background: #111;
 	color: #eee;
 	z-index: 9999;
-	-webkit-transition: ease all 0.5s;
-	-o-transition: ease all 0.5s;
-	-ms-transition: ease all 0.5s;
-	-moz-transition: ease all 0.5s;
-	transition: ease all 0.5s;
 }
-.load-text {
+#spa-loader .load-text {
 	position: absolute;
-	background: #111;
-	color: #eee;
+	background: #0000;
+	color: #fff;
 	bottom: 10%;
 	left: 0;
 	right: 0;
 	text-align: center;
 	margin: 0 auto;
 }
-.load-circle-back,
-.load-circle-fore {
+#spa-loader .load-circle-back,
+#spa-loader .load-circle-fore {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -47,29 +61,29 @@ body {
 	right: 0;
 	margin: auto;
 }
-.load-circle-back:after,
-.load-circle-fore:after {
+#spa-loader .load-circle-back:after,
+#spa-loader .load-circle-fore:after {
 	content: "";
 	display: block;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.load-circle-back {
+#spa-loader .load-circle-back {
 	height: 192px;
 	width: 192px;
 }
-.load-circle-fore {
+#spa-loader .load-circle-fore {
 	height: 120px;
 	width: 120px;
 }
-.load-circle-back:after {
+#spa-loader .load-circle-back:after {
 	height: 192px;
 	width: 192px;
 	animation: rotate 1.5s infinite;
 	background-image: url("../img/icon-back.png");
 }
-.load-circle-fore:after {
+#spa-loader .load-circle-fore:after {
 	height: 120px;
 	width: 120px;
 	animation: rotate-reverse 1.5s infinite;
@@ -109,7 +123,6 @@ body {
 		transform: rotate(-720deg);
 	}
 }
-
 /*---------------------------------
   Particles
 -----------------------------------*/
@@ -135,11 +148,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	-webkit-transition: ease all 0.5s;
-	-o-transition: ease all 0.5s;
-	-ms-transition: ease all 0.5s;
-	-moz-transition: ease all 0.5s;
-	transition: ease all 0.5s;
 }
 .side-video--open {
 	-webkit-transform: translateX(-50vw) !important;

@@ -433,7 +433,7 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
     }
   }
   window.addEventListener("hashchange", onHashChangeEvent);
-  $(document).ready(function() {
+  $(() => {
     onHashChangeEvent();
     $("#mail_form").submit(function(event) {
       $("#mail_submit").attr("disabled", true);

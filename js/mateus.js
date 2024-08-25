@@ -88,32 +88,13 @@
 		new TypeIt("#type-it", {
 			speed: 100,
 			loop: true,
-			strings: [
-				"Vegas Pro",
-				"Premiere Pro",
-				"Davinci Resolve",
-				"Photoshop",
-				"Lightroom",
-				"LAMP full-stack",
-				"Java for Android",
-				"Git version control",
-				"SQL databases",
-				"Java",
-				"Unity",
-				"Blender",
-				"After Effects",
-				"Web development",
-				"Mobile development"
-			],
+			strings: ["Vegas Pro", "Premiere Pro", "Davinci Resolve", "Photoshop", "Lightroom", "LAMP full-stack", "Java for Android", "Git version control", "SQL databases", "Java", "Unity", "Blender", "After Effects", "Web development", "Mobile development"],
 			breakLines: false
 		});
 	};
-	// Window on Load
-	$(window).on("load", function () {
+	// Document on Ready
+	$(() => {
 		by.MasoNry();
-	});
-	//Document on ready
-	$(document).ready(function () {
 		by.ClientSlider(), by.BlogSlider(), by.MasoNry(), by.PopupVideo(), by.LightboxGallery(), by.mTypeIt();
 	});
 })(jQuery);
