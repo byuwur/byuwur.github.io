@@ -20,8 +20,8 @@
         cookieconsent.run({
             "notice_banner_type": "simple",
             "consent_type": "express",
-            "palette": <?= '"' . $_theme . '"'; ?>,
-            "language": <?= '"' . $lang . '"'; ?>,
+            "palette": <?= '"' . $app_theme . '"'; ?>,
+            "language": <?= '"' . $app_lang . '"'; ?>,
             "website_name": "mnm.team",
             "change_preferences_selector": "#cookiePrefs"
         });

@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <?php
+/*
+ * File: home.php
+ * Desc: Entry point for the Single Page Application (SPA). This file initializes configurations, handles routing, and loads the main structure of the SPA, including the header, content container, and footer. The page also includes necessary CSS and JS resources.
+ * Deps: _var.php, _common.php, _functions.php, _plugin.php, _routes.php, _router.php
+ * Copyright (c) 2023 Andrés Trujillo [Mateus] byUwUr
+ */
+
+// Sets a flag to enable the inclusion of local storage variables in the HTML output
 $setLocalStorage = true;
+// Include the main variable configuration file
 require_once "./_var.php";
+// Include common functions and initializations
+require_once $TO_HOME . "_common.php";
+// Include utility functions
 require_once $TO_HOME . "_functions.php";
-require_once $TO_HOME . "_plugin.php";
+// Include composer libraries
+require_once $TO_HOME . "_plugins.php";
+// Include database connections
 //require_once $TO_HOME . "_config.php";
+// Load the routes configuration
 require_once $TO_HOME . "_routes.php";
+// Route the request based on the URI
 require_once $TO_HOME . "_router.php";
+// Include auth management
 //require_once $TO_HOME . "_auth.php";
-require_once $TO_HOME . "common.php";
+// Include utility HTML
+//require_once $TO_HOME . "common.php";
+
 // --- PHP ---
 ?>
 
@@ -40,11 +59,8 @@ require_once $TO_HOME . "common.php";
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/themify/themify-icons.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/common.css" />
-    <?php
-    if (isset($_theme)) echo '<link rel="stylesheet" href="' . $HOME_PATH . '/css/common.' . $_theme . '.css" />';
-    else echo '<link rel="stylesheet" href="' . $HOME_PATH . '/css/common.dark.css" />';
-    ?>
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/common.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/common.<?= $app_theme; ?>.css" />
     <script src="<?= $HOME_PATH; ?>/plugin/jquery/jquery.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/plugin/bootstrap/js/bootstrap.min.js" defer></script> <!-- Keep the version from the first snippet if it's compatible -->
     <script src="<?= $HOME_PATH; ?>/plugin/easing/easing.min.js" defer></script>
@@ -62,6 +78,7 @@ require_once $TO_HOME . "common.php";
 </head>
 
 <body>
+    <!-- byuwur/easy-spa-php | Copyright (c) 2023 Andrés Trujillo [Mateus] byUwUr -->
     <div id="spa-loader">
         <div class="load-circle-back"></div>
         <div class="load-circle-fore"></div>
@@ -74,7 +91,6 @@ require_once $TO_HOME . "common.php";
 
 </html>
 <?php
-//login([], true);
-// Always output due to "/_var.php" invoking ob_start();
+// Always call due to /_var.php invoking ob_start();
 ob_end_flush();
 ?>

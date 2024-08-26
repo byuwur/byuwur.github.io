@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <?php
-if (isset($_GET['lang'])) {
-  if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-    require_once "lang/" . $_GET['lang'] . ".php";
-    setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-    echo "<html lang='" . $_GET['lang'] . "'>";
-    $lang = $_GET['lang'];
-  } else {
-    setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    //echo '<script> window.location = window.location.pathname; </script>';
-  }
-} else if (isset($_COOKIE['lang'])) {
-  if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-    require_once "lang/" . $_COOKIE['lang'] . ".php";
-    echo "<html lang='" . $_COOKIE['lang'] . "'>";
-    $lang = $_COOKIE['lang'];
-  } else {
-    setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    //echo '<script> window.location = window.location.pathname; </script>';
-  }
-} else {
-  require_once "lang/es.php";
-  echo "<html lang='es'>";
-  $lang = "es";
-  setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-  //echo '<script> window.location = window.location.pathname; </script>';
+// --- LANGUAGE ---
+$lang = isset($_GET["lang"]) ? $_GET["lang"] : (isset($_COOKIE["lang"]) ? $_COOKIE["lang"] : "es");
+switch ($lang) {
+  case "es":
+  case "en":
+    $app_lang = $lang;
+    break;
+  default:
+    $app_lang = "es";
+    break;
 }
+echo "<html lang='" . $app_lang . "' dir='ltr'>";
+setcookie("lang", $app_lang, time() + 31536000, "/", "", false, false);
+require_once "lang/" . $app_lang . ".php";
 ?>
+
 <head>
   <meta charset="utf-8" />
   <title>Nestux Portela</title>
@@ -58,6 +47,7 @@ if (isset($_GET['lang'])) {
   <script src="../js/resume.js" defer></script>
   <script src="../js/cookies.js" defer></script>
 </head>
+
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#about">
@@ -274,12 +264,13 @@ if (isset($_GET['lang'])) {
         "notice_banner_type": "simple",
         "consent_type": "express",
         "palette": "dark",
-        "language": <?= '"' . $lang . '"'; ?>,
+        "language": "<?= $lang; ?>",
         "website_name": "mnm.team",
         "change_preferences_selector": "#cookiePrefs"
       });
     });
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -326,4 +317,5 @@ if (isset($_GET['lang'])) {
   }
   ?>
 </body>
+
 </html>

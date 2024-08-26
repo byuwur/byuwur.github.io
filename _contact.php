@@ -1,7 +1,8 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "_common.php";
 require_once $TO_HOME . "_functions.php";
-require_once $TO_HOME . "_plugin.php";
+require_once $TO_HOME . "_plugins.php";
 require_once $TO_HOME . "_config.php";
 //require_once $TO_HOME . "_routes.php";
 //require_once $TO_HOME . "_router.php";
@@ -41,5 +42,5 @@ try {
     $response = $sendgrid->send($sg_email);
     api_respond($response->statusCode(), false, isset(json_decode($response->body())->errors) ? json_decode($response->body())->errors[0]->message : "", $response->headers());
 } catch (Exception $e) {
-    api_respond(500, true, "Caught exception" . ($_ENV["APP_ENV"] == "DEV" ? ": " . $e->getCode() . " = " . $e->getMessage() : ""));
+    api_respond(500, true, "Caught exception" . ($_ENV["APP_ENV"] === "DEV" ? ": " . $e->getCode() . " = " . $e->getMessage() : ""));
 }

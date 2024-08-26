@@ -10,6 +10,19 @@
 	-moz-transition: all 0.333s ease !important;
 	transition: all 0.333s ease !important;
 }
+/* @media (prefers-reduced-motion: reduce) {
+	* {
+		-webkit-transition: all 0s ease !important;
+		-o-transition: all 0s ease !important;
+		-ms-transition: all 0s ease !important;
+		-moz-transition: all 0s ease !important;
+		transition: all 0s ease !important;
+	}
+} */
+@font-face {
+	font-family: "Bahnschrift";
+	src: url("./css/webfonts/bahnschrift.ttf") format("truetype");
+}
 html,
 body {
 	position: relative;
@@ -81,13 +94,13 @@ body {
 	height: 192px;
 	width: 192px;
 	animation: rotate 1.5s infinite;
-	background-image: url("../img/icon-back.png");
+	background-image: url("./img/icon-back.png");
 }
 #spa-loader .load-circle-fore:after {
 	height: 120px;
 	width: 120px;
 	animation: rotate-reverse 1.5s infinite;
-	background-image: url("../img/byuwur_favicon.png");
+	background-image: url("./img/byuwur_favicon.png");
 }
 @keyframes rotate {
 	0% {
@@ -144,7 +157,7 @@ body {
 	z-index: 0;
 	left: -50vw;
 	filter: blur(12px);
-	background-image: url(../img/icon.png);
+	background-image: url("./img/icon.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;

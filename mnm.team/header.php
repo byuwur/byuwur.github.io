@@ -1,37 +1,38 @@
 <!DOCTYPE HTML>
 <?php
-if (isset($_GET['lang'])) {
-    if ($_GET['lang'] == 'es' || $_GET['lang'] == 'en') {
-        require_once "./lang/" . $_GET['lang'] . ".php";
-        setcookie('lang', $_GET['lang'], time() + 31536000, '/', '', false, false);
-        echo "<html lang='" . $_GET['lang'] . "'>";
-        $lang = $_GET['lang'];
-    } else {
-        setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-        //echo '<script> window.location = window.location.pathname; </script>';
-    }
-} else if (isset($_COOKIE['lang'])) {
-    if ($_COOKIE['lang'] == 'es' || $_COOKIE['lang'] == 'en') {
-        require_once "./lang/" . $_COOKIE['lang'] . ".php";
-        echo "<html lang='" . $_COOKIE['lang'] . "'>";
-        $lang = $_COOKIE['lang'];
-    } else {
-        setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-        //echo '<script> window.location = window.location.pathname; </script>';
-    }
-} else {
-    setcookie('lang', 'es', time() + 31536000, '/', '', false, false);
-    require_once "./lang/es.php";
-    echo "<html lang='es'>";
-    $lang = "es";
-    //echo '<script> window.location = window.location.pathname; </script>';
+// --- LANGUAGE ---
+$lang = isset($_GET["lang"]) ? $_GET["lang"] : (isset($_COOKIE["lang"]) ? $_COOKIE["lang"] : "es");
+switch ($lang) {
+    case "es":
+    case "en":
+        $app_lang = $lang;
+        break;
+    default:
+        $app_lang = "es";
+        break;
 }
-if (isset($_GET['title'])) {
-    $title = $_GET['title'] . " - MNM.team();";
-} else {
-    $title = "MNM.team();";
+echo "<html lang='" . $app_lang . "' dir='ltr'>";
+setcookie("lang", $app_lang, time() + 31536000, "/", "", false, false);
+require_once $TO_HOME . "lang/" . $app_lang . ".php";
+
+// --- THEME ---
+$theme = isset($_GET["theme"]) ? $_GET["theme"] : (isset($_COOKIE["theme"]) ? $_COOKIE["theme"] : "dark");
+switch ($theme) {
+    case "dark":
+    case "light":
+        $app_theme = $theme;
+        break;
+    default:
+        $app_theme = "dark";
+        break;
 }
+setcookie("theme", $app_theme, time() + 31536000, "/", "", false, false);
+
+// --- TITLE ---
+if (isset($_GET['title'])) $title = $_GET['title'] . " - MNM.team();";
+else $title = "MNM.team();";
 ?>
+
 <head>
     <meta charset="utf-8" />
     <title><?= $title; ?></title>
@@ -48,7 +49,7 @@ if (isset($_GET['title'])) {
     <meta name="keywords" content="MNM.team, mnm.team, desarrolladora, software, paginas web, webpage, development, devs, apps, plataformas, MNM, Team" />
     <meta name="author" content="[Mateus] byUwUr" />
     <meta name="copyright" content="[Mateus] byUwUr" />
-    <meta name="theme-color" content="#006" />
+    <meta name="theme-color" content="#111" />
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
@@ -56,32 +57,7 @@ if (isset($_GET['title'])) {
     <link rel="stylesheet" href="../plugin/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.mnm.min.css" />
     <link rel="stylesheet" href="../plugin/flexslider/css/flexslider.min.css" />
-    <?php
-    if (isset($_GET['theme'])) {
-        if ($_GET['theme'] == 'light' || $_GET['theme'] == 'dark') {
-            setcookie('theme', $_GET['theme'], time() + 31536000, '/', '', false, false);
-            echo '<meta name="theme-color" content="#111" />';
-            echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.' . $_GET['theme'] . '.css" />';
-            $_theme = $_GET['theme'];
-        } else {
-            setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-            //echo '<script> window.location = window.location.pathname; </script>';
-        }
-    } else if (isset($_COOKIE['theme'])) {
-        if ($_COOKIE['theme'] == 'light' || $_COOKIE['theme'] == 'dark') {
-            echo '<meta name="theme-color" content="#111" />';
-            echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.' . $_COOKIE['theme'] . '.css" />';
-            $_theme = $_COOKIE['theme'];
-        } else {
-            setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-            //echo '<script> window.location = window.location.pathname; </script>';
-        }
-    } else {
-        setcookie('theme', 'dark', time() + 31536000, '/', '', false, false);
-        echo '<link id="pagestyle" rel="stylesheet" href="../css/mnm.dark.css" />';
-        //echo '<script> window.location = window.location.pathname; </script>';
-    }
-    ?>
+    <link id="pagestyle" rel="stylesheet" href="<?= $HOME_PATH; ?>/css/mnm.<?= $app_theme; ?>.css" />
     <script src="../plugin/modernizr/modernizr.min.js" defer></script>
     <script>
         function swapStyleSheet(sheet) {
@@ -92,6 +68,7 @@ if (isset($_GET['title'])) {
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -108,6 +85,7 @@ if (isset($_GET['title'])) {
     <script src="../js/mnm.js" defer></script>
     <script src="../js/cookies.js" defer></script>
 </head>
+
 <body>
     <div class="loading">
         <div class="load-circle-back"></div>
@@ -132,7 +110,7 @@ if (isset($_GET['title'])) {
                 </ul>
             </nav>
             <div class="mnm-footer">
-                <small><?php $_theme; ?> <a href="javascript:;" onclick="swapStyleSheet('light')"><?= $_light; ?></a> | <a href="javascript:;" onclick="swapStyleSheet('dark')"><?= $_dark; ?></a></small>
+                <small><?php $app_theme; ?> <a href="javascript:;" onclick="swapStyleSheet('light')"><?= $_light; ?></a> | <a href="javascript:;" onclick="swapStyleSheet('dark')"><?= $_dark; ?></a></small>
                 <a class='hidden' href='<?= $_light; ?>'>Light / Claro</a><a class='hidden' href='<?= $_dark; ?>'>Dark / Oscuro</a><br>
                 <p>&copy;<?= date("Y"); ?>, MNM <br><small><small><a href="../">byUwUr</a> | <a href="https://colorlib.com" target="_blank">colorlib</a>
                             <br><a href="sitemap"><?= $_sitemap; ?></a> | <a href="cookie-policy">cookies</a></small></small></p>

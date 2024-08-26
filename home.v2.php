@@ -1,16 +1,16 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
-//require_once $TO_HOME . "_plugin.php";
+//require_once $TO_HOME . "_plugins.php";
 //require_once $TO_HOME . "_config.php";
 require_once $TO_HOME . "_routes.php";
 //require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
 require_once $TO_HOME . "common.php";
 // --- PHP ---
-if (isset($_theme)) echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/mateus.' . $_theme . '.css" />';
-else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/mateus.dark.css" />';
 ?>
+<link id="pagestyle" rel="stylesheet" href="<?= $HOME_PATH; ?>/css/mateus.<?= $app_theme; ?>.css" />
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/nav/css/nav.css" />
 <!-- BODY -->
 <div class="dark-body">
@@ -463,7 +463,7 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
     cookieconsent.run({
       "notice_banner_type": "simple",
       "consent_type": "express",
-      "palette": "<?= $_theme; ?>",
+      "palette": "<?= $app_theme; ?>",
       "language": "<?= $lang; ?>",
       "website_name": "byuwur.net",
       "change_preferences_selector": "#cookiePrefs"
@@ -478,7 +478,6 @@ else echo '<link id="pagestyle" rel="stylesheet" href="' . $HOME_PATH . '/css/ma
   gtag('config', 'UA-148227598-1');
 </script>
 <?php
-//login([], true);
-// Always output due to "/_var.php" invoking ob_start();
+// Always call due to /_var.php invoking ob_start();
 ob_end_flush();
 ?>
