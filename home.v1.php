@@ -10,6 +10,7 @@ require_once $TO_HOME . "_routes.php";
 // --- PHP ---
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v1.css" />
+<script src="<?= $HOME_PATH; ?>/js/v1.js" defer></script>
 <!-- BODY -->
 <div class="app-container">
     <div class="container">
@@ -149,12 +150,13 @@ require_once $TO_HOME . "_routes.php";
     </div>
 </div>
 <!-- BODY -->
-<script src="<?= $HOME_PATH; ?>/js/v1.js" defer></script>
 <script>
     "use strict";
     $(() => {
         document.title = "[Mateus] byUwUr v1";
         initCommon();
+        if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
+        if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         element_make_http_request({
             $elementId: "#mail_form",
             $url: "<?= $HOME_PATH . $ROOT_ROUTE; ?>_contact.php",

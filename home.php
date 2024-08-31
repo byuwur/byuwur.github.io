@@ -46,8 +46,8 @@ require_once $TO_HOME . "_router.php";
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="[Mateus] byUwUr" />
     <meta name="theme-color" content="#222" /> <!-- Kept from the first snippet; adjust if needed -->
-    <link rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
-    <link rel="icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
+    <link id="shortcut-icon" rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
+    <link id="page-icon" rel="icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
     <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>/img/favicon.png" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/fontawesome.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/bootstrap.min.css" />
