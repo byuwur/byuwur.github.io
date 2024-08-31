@@ -25,18 +25,16 @@ require_once $TO_HOME . "_routes.php";
 require_once $TO_HOME . "_router.php";
 // Include auth management
 //require_once $TO_HOME . "_auth.php";
-// Include utility HTML
-//require_once $TO_HOME . "common.php";
 
 // --- PHP ---
 ?>
 
 <head>
     <meta charset="utf-8" />
-    <title><?= $_title; ?></title>
+    <title>[Mateus] byUwUr</title>
     <meta property="og:title" content="[Mateus] byUwUr" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://byuwur.net/img/icon.png" />
+    <meta property="og:image" content="https://byuwur.net/img/logo.png" />
     <meta property="og:url" content="https://byuwur.net" />
     <meta property="og:site_name" content="[Mateus] byUwUr" />
     <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
@@ -48,33 +46,27 @@ require_once $TO_HOME . "_router.php";
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="[Mateus] byUwUr" />
     <meta name="theme-color" content="#222" /> <!-- Kept from the first snippet; adjust if needed -->
-    <link rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>/favicon.png" />
-    <link rel="icon" type="image/png" href="<?= $HOME_PATH; ?>/favicon.png" />
-    <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>/favicon.png" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/bootstrap/css/bootstrap.resume.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/bootstrap/css/bootstrap.mateus.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/owl-carousel/css/owl-carousel.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/magnific/css/magnific-popup.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/plugin/themify/themify-icons.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/common.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/common.<?= $app_theme; ?>.css" />
-    <script src="<?= $HOME_PATH; ?>/plugin/jquery/jquery.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/bootstrap/js/bootstrap.min.js" defer></script> <!-- Keep the version from the first snippet if it's compatible -->
-    <script src="<?= $HOME_PATH; ?>/plugin/easing/easing.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/popper/popper.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/modernizr/modernizr.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/owl-carousel/js/owl-carousel.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/typeit/typeit.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/isotope/isotope.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/particles/particles.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/magnific/js/magnific-popup.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/plugin/bootstrap/js/bootstrap.mateus.min.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
+    <link rel="icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
+    <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>/img/favicon.png" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/tiny-slider.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/animate.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/_common.css" />
+    <script src="<?= $HOME_PATH; ?>/js/jquery.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/js/jquery-ui.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/js/bootstrap.min.js" defer></script> <!-- Keep the version from the first snippet if it's compatible -->
+    <script src="<?= $HOME_PATH; ?>/js/popper.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/js/tiny-slider.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/js/typeit.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/js/particles.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/cookies.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/_functions.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/_common.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/_spa.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" defer></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
 
 <body>
@@ -86,7 +78,7 @@ require_once $TO_HOME . "_router.php";
     </div>
     <div id="particles"></div>
     <div class="side-video" style="animation: float 5s infinite;"></div>
-    <div id="spa-page-content-container"></div>
+    <main id="spa-content"></main>
 </body>
 
 </html>

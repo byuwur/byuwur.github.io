@@ -568,7 +568,7 @@ var cookieconsent = (function(e) {
 							!0
 						);
 					}),
-					(e.setCookie = function(e, n, o) {
+					(e.set_cookie = function(e, n, o) {
 						void 0 === o && (o = 62);
 						var t = new Date();
 						t.setTime(t.getTime() + 24 * o * 60 * 60 * 1e3);
@@ -579,7 +579,7 @@ var cookieconsent = (function(e) {
 							!0
 						);
 					}),
-					(e.getCookie = function(e) {
+					(e.get_cookie = function(e) {
 						for (
 							var n = e + "=",
 								o = document.cookie.split(";"),
@@ -841,19 +841,19 @@ var cookieconsent = (function(e) {
 				return (
 					(e.prototype.checkIfUserAccepted = function() {
 						"true" ===
-							t.getCookie(this.consentAcceptedCookieName) &&
+							t.get_cookie(this.consentAcceptedCookieName) &&
 							(this.userAccepted = !0);
 					}),
 					(e.prototype.markUserAccepted = function() {
 						(this.userAccepted = !0),
 							!1 === this.cookieConsent.isDemo &&
-								t.setCookie(
+								t.set_cookie(
 									this.consentAcceptedCookieName,
 									"true"
 								);
 					}),
 					(e.prototype.getUserLevels = function() {
-						var e = t.getCookie(this.consentLevelCookieName),
+						var e = t.get_cookie(this.consentLevelCookieName),
 							n = {};
 						try {
 							n = JSON.parse(decodeURIComponent(e));
@@ -949,7 +949,7 @@ var cookieconsent = (function(e) {
 							JSON.stringify(this.acceptedLevels)
 						);
 						return (
-							t.setCookie(this.consentLevelCookieName, e),
+							t.set_cookie(this.consentLevelCookieName, e),
 							this.cookieConsent.log(
 								"Saved cookies containing the user consent level",
 								"info"
