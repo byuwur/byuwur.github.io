@@ -19,7 +19,7 @@ $_name_top = "[Mateus] <span class='text-primary'>byUwUr</span>";
 $_nombre = "Andrés Trujillo Mateus";
 $_new = "cargar HTML no tan básico";
 $_load = "<font size='4'><strong>Cargando vista estándar...</strong></font><br>¿Sigue cargando? | <a href='./v1' style='color: #0ad;'>Carga el HTML básico</a>";
-$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href=\"javascript:swapStyleSheet('light');\">claro</a> | <a href=\"javascript:swapStyleSheet('dark');\">oscuro</a> | <a href='mnm.team/sitemap' custom-folder='true'>mapa de sitio</a> | <a href='mnm.team/cookie-policy' custom-folder='true'>cookie policy</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.net' target='_blank'>[Mateus] byUwUr</a>";
+$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='js/cookies.php' custom-folder='true'>cookie policy</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.net' target='_blank'>[Mateus] byUwUr</a>";
 $_cv = "Descargar Resume";
 $_hire = "Contrátame";
 $_go = "Ver";

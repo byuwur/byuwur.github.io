@@ -13,19 +13,20 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        cookieconsent.run({
-            "notice_banner_type": "simple",
-            "consent_type": "express",
-            "palette": <?= '"' . $app_theme . '"'; ?>,
-            "language": <?= '"' . $app_lang . '"'; ?>,
-            "website_name": "mnm.team",
-            "change_preferences_selector": "#cookiePrefs"
-        });
-    });
-</script>
-</body>
-</html>
+        </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                cookieconsent.run({
+                    "notice_banner_type": "simple",
+                    "consent_type": "express",
+                    "palette": <?= '"' . $app_theme . '"'; ?>,
+                    "language": <?= '"' . $app_lang . '"'; ?>,
+                    "website_name": "mnm.team",
+                    "change_preferences_selector": "#cookiePrefs"
+                });
+            });
+        </script>
+        </body>
+
+        </html>
