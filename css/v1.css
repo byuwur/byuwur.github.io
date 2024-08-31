@@ -24,8 +24,13 @@ section {
 		padding: 9rem 3rem;
 	}
 }
+@media screen and (min-width: 1200px) {
+	section {
+		padding: 9rem 6rem;
+	}
+}
 a:hover {
-	color: #069 !important;
+	color: #0ae !important;
 }
 .social-icons a {
 	display: inline-block;

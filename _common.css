@@ -188,7 +188,7 @@ th {
 	background: #600 !important;
 }
 .bg-secondary {
-	background: #006 !important;
+	background: #333 !important;
 }
 .bg-black {
 	background: #000 !important;
@@ -255,11 +255,11 @@ th {
 .btn.btn-tertiary,
 .btn.btn-quarternary:hover {
 	border: 1px solid #fff !important;
-	background: #006 !important;
+	background: #333 !important;
 }
 .btn.btn-quarternary,
 .btn.btn-tertiary:hover {
-	border: 1px solid #006 !important;
+	border: 1px solid #333 !important;
 	background: #fff !important;
 }
 .btn.btn-primary,
@@ -282,7 +282,7 @@ th {
 .btn.btn-tertiary:hover,
 .btn.btn-quarternary *,
 .btn.btn-tertiary:hover * {
-	color: #006 !important;
+	color: #333 !important;
 }
 /* === INPUTS === */
 :disabled,
@@ -399,11 +399,11 @@ th {
 	opacity: 0.5;
 }
 .overlay {
-	background: -moz-linear-gradient(90deg, #006 0%, #600 100%);
-	background: -webkit-linear-gradient(90deg, #006 0%, #600 100%);
-	background: -o-linear-gradient(90deg, #006 0%, #600 100%);
-	background: -ms-linear-gradient(90deg, #006 0%, #600 100%);
-	background: linear-gradient(90deg, #006 0%, #600 100%);
+	background: -moz-linear-gradient(90deg, #333 0%, #600 100%);
+	background: -webkit-linear-gradient(90deg, #333 0%, #600 100%);
+	background: -o-linear-gradient(90deg, #333 0%, #600 100%);
+	background: -ms-linear-gradient(90deg, #333 0%, #600 100%);
+	background: linear-gradient(90deg, #333 0%, #600 100%);
 }
 .overlay-single {
 	background: #600;
