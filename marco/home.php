@@ -18,7 +18,7 @@ require_once "lang/" . $app_lang . ".php";
 
 <head>
     <meta charset="utf-8" />
-    <title><?= $_title; ?></title>
+    <title>Marco Cortés</title>
     <meta property="og:title" content="Marco Cortés" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.net/marco/img/icon.png" />

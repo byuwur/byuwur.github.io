@@ -7,7 +7,6 @@ require_once $TO_HOME . "_config.php";
 //require_once $TO_HOME . "_routes.php";
 //require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
-//require_once $TO_HOME . "common.php";
 // --- PHP ---
 if (validate_value($_POST["mail_submit"]  ?? null) === null) api_respond(400, true, "Invalid form.");
 if (validate_value($_POST["g-recaptcha-response"]  ?? null) === null) api_respond(400, true, "Invalid captcha.");
