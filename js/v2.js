@@ -65,22 +65,11 @@ $(() => {
 		pages.forEach(function (page) {
 			let pageid = page.getAttribute("id");
 			page.addEventListener("click", function (ev) {
-				if (isMenuOpen) {
-					ev.preventDefault();
-					openPage(pageid);
-				}
+				ev.preventDefault();
+				openPage(pageid);
 			});
 		});
-		// keyboard navigation events
-		document.addEventListener("keydown", function (ev) {
-			if (!isMenuOpen) return;
-			let keyCode = ev.keyCode || ev.which;
-			if (keyCode === 27) {
-				closeMenu();
-			}
-		});
 	}
-
 	function toggleMenu() {
 		// If it's already open, show the current page
 		if (nav.hasClass("pages-nav--open") || menuCtrl.hasClass("menu-button--open") || stack.hasClass("pages-stack--open")) return openPage();
@@ -121,7 +110,6 @@ $(() => {
 		futurePage.addEventListener("transitionend", function () {
 			stack.removeClass("pages-stack--open");
 			buildStack();
-			isMenuOpen = false;
 		});
 	}
 	// gets the current stack pages indexes. If any of them is the excludePage then this one is not part of the returned array
@@ -134,7 +122,7 @@ $(() => {
 		if (excludePageIdx != nextStackPageIdx_2) idxs.push(nextStackPageIdx_2);
 		return idxs;
 	}
-	function init() {
+	function initStack() {
 		// side video
 		sidevideo = $(".side-video");
 		// the pages wrapper
@@ -153,6 +141,11 @@ $(() => {
 		navItems = nav.find(".link--page").toArray();
 		buildStack();
 		initEvents();
+		$("a[href*='#']:not([href='#'])")
+			.off("click")
+			.on("click", function () {
+				console.log("Cancel!");
+			});
 	}
-	init();
+	initStack();
 });

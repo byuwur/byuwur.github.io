@@ -10,6 +10,7 @@ require_once $TO_HOME . "_routes.php";
 // --- PHP ---
 ?>
 <link id="pagestyle" rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.css" />
+<script src="<?= $HOME_PATH; ?>/js/v2.js" defer></script>
 <!-- BODY -->
 <nav class="pages-nav">
   <div class="pages-nav__item"><a id="btn-home" class="link link--page" href="#home"><?= $_helloworld; ?></a></div>
@@ -399,12 +400,10 @@ require_once $TO_HOME . "_routes.php";
 </div>
 <header class="header theme-bg">
   <div class="logo"><a href="<?= $ROOT_ROUTE; ?>v1" title="Version 1"><img src="<?= $HOME_PATH; ?>/img/logo.png" height="40px" width="40px" style="margin-right:8px;" alt="Logo versión 1" /></a>MATEUS</div>
-  <div class="mt-1 mr-5 pr-4 text-right"><a href="<?= $ROOT_ROUTE; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" alt="" /> ES</a><br><a href="<?= $ROOT_ROUTE; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" alt="" /> EN</a></div>
+  <div><a href="<?= $ROOT_ROUTE; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ES</a><br><a href="<?= $ROOT_ROUTE; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> EN</a></div>
   <div class="menu-toggle"><button id="btn-menu" class="menu-button"><span>menu</span></button></div>
 </header>
-
 <!-- BODY -->
-<script src="<?= $HOME_PATH; ?>/js/v2.js" defer></script>
 <script>
   "use strict";
 
@@ -434,6 +433,7 @@ require_once $TO_HOME . "_routes.php";
     $(window).on("hashchange", onHashChange);
     document.title = "[Mateus] byUwUr v2";
     initCommon();
+    initStack();
     element_make_http_request({
       $elementId: "#mail_form",
       $url: "<?= $HOME_PATH . $ROOT_ROUTE; ?>_contact.php",
