@@ -18,7 +18,7 @@ $routes = [
     // Format: "/uri" => ["URI" => "/file.php", "GET" => [...], "POST" => [...], "COMPONENT" => [...]]
 
     // "/"
-    $ROOT_ROUTE => ["URI" => "/home.v1.php"],
+    $ROOT_ROUTE => ["URI" => "/home.v1.php", ...$V1_COMPONENTS],
     $ROOT_ROUTE . "es" => ["URI" => "", "GET" => ["lang" => "es"]],
     $ROOT_ROUTE . "en" => ["URI" => "", "GET" => ["lang" => "en"]],
     //$ROOT_ROUTE . "v2" => ["URI" => "/home.v2.php", ...$V2_COMPONENTS],
