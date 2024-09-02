@@ -140,6 +140,7 @@ require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
                 <a href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a>
             </li>
         </ul>
+        <?= $_goto; ?>
         <!--form id="mail_form" name="mail_form" class="row w-100" action="javascript:;">
             <div class="col-12 col-md-6 p-2">
                 <input type="text" id="mail_name" name="mail_name" class="form-control" placeholder="<?= $_name; ?>" required>
@@ -171,7 +172,7 @@ require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
     "use strict";
     $(() => {
         document.title = "Marco Cortés";
-        initCommon();
+        byCommon.init();
         if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/v1.marco/img/favicon.png");
         if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/v1.marco/img/favicon.png");
     });

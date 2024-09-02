@@ -146,6 +146,7 @@ require_once $TO_HOME . "_routes.php";
             <h2 class="mb-5 pb-5"><?= $_interest; ?></h2>
             <div class="has-background-contain w-100 mb-4" style="background-image:url(<?= $HOME_PATH; ?>/img/profile.jpg);height:192px"></div>
             <p><?= $_interesting; ?></p>
+            <?= $_goto; ?>
         </section>
     </div>
 </div>
@@ -154,7 +155,7 @@ require_once $TO_HOME . "_routes.php";
     "use strict";
     $(() => {
         document.title = "[Mateus] byUwUr v1";
-        initCommon();
+        byCommon.init();
         if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         element_make_http_request({

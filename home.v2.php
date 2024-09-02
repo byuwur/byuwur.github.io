@@ -432,7 +432,7 @@ require_once $TO_HOME . "_routes.php";
   $(() => {
     $(window).on("hashchange", onHashChange);
     document.title = "[Mateus] byUwUr v2";
-    initCommon();
+    byCommon.init();
     initStack();
     element_make_http_request({
       $elementId: "#mail_form",
