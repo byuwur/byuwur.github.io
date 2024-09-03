@@ -41,10 +41,10 @@ require_once $TO_HOME . "_routes.php";
     <div class="sidebar-content accordion-item flex-grow-0">
         <div class="d-flex flex-row">
             <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>resume.es">
-                <i class="fas fa-file-invoice"></i><img src="img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>CV (ES)</span><i class="fas fa-download ms-auto"></i>
+                <i class="fas fa-file-invoice"></i><img src="img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>HDV</span><i class="fas fa-download ms-auto"></i>
             </a>
             <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>resume.en">
-                <i class="fas fa-file-invoice"></i><img src="img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>CV (EN)</span><i class="fas fa-download ms-auto"></i>
+                <i class="fas fa-file-invoice"></i><img src="img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>CV</span><i class="fas fa-download ms-auto"></i>
             </a>
         </div>
         <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#lang-drop" aria-expanded="false" aria-controls="lang-drop">
@@ -57,9 +57,9 @@ require_once $TO_HOME . "_routes.php";
             </div>
             <!--a class="sidebar-option" href="javascript:;"><i class="fas fa-home"></i>Home<i class="fas fa-angle-right ms-auto"></i></a-->
         </div>
-        <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>v2">
+        <!--a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>v2">
             <i class="fas fa-wand-magic-sparkles"></i><span><?= $_new; ?> (v2)</span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
+        </!--a-->
         <p class="m-0 p-2 border-top" style="font-size: 0.75rem;"><?= $_footer; ?></p>
     </div>
     <a id="sidebar-toggle" class="sidebar-toggle" href="javascript:;" title="Alternar menu lateral"><i class="fas fa-bars"></i><span>menu</span></a>

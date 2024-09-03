@@ -63,23 +63,23 @@
 				jqSidebarToggle.addClass("sidebar-expanded");
 				jqSidebar.addClass("sidebar-expanded");
 				jqAppContainer.addClass("sidebar-expanded");
-				jqSidebarHidden.css("display", "none");
 				set_cookie("SidebarExpand", "on");
 			} else {
 				jqSidebarToggle.removeClass("sidebar-expanded");
 				jqSidebar.removeClass("sidebar-expanded");
 				jqAppContainer.removeClass("sidebar-expanded");
-				jqSidebarHidden.css("display", "flex");
 				jqSidebar.scrollTop(0);
 				set_cookie("SidebarExpand", "off");
 			}
 		});
 		// Expand sidebar when the hidden sidebar area is hovered
 		jqSidebarHidden.off("mouseenter").on("mouseenter", function () {
+			$("#sidebar .overlay").css("height", "");
 			if (!jqSidebarToggle.hasClass("sidebar-expanded")) jqSidebar.addClass("sidebar-expanded");
 		});
 		// Collapse sidebar when the mouse leaves the hidden sidebar area
 		jqSidebarHidden.off("mouseleave").on("mouseleave", function () {
+			$("#sidebar .overlay").css("height", "");
 			if (!jqSidebarToggle.hasClass("sidebar-expanded") && !jqSidebar.is(":hover")) jqSidebar.removeClass("sidebar-expanded");
 		});
 		// Expand the sidebar automatically on larger screens (min-width: 768px)
@@ -100,7 +100,7 @@
 			.on("click", function (event) {
 				event.preventDefault();
 				// Scroll to the target element if it exists on the same page
-				if ($(this.hash).length) $(`html, body, ${byCommon.APP_CONTAINER_SELECTOR}`).animate({ scrollTop: $(this.hash).offset().top - 120 }, 999, "easeInOutExpo");
+				if ($(this.hash).length) $(`html, body, ${byCommon.APP_CONTAINER_SELECTOR}`).animate({ scrollTop: $(this.hash).offset().top - 1 }, 999, "easeInOutExpo");
 				// Collapse the navbar after clicking the link
 				setTimeout(() => {
 					$(".navbar-collapse").collapse("hide");
