@@ -9,8 +9,8 @@ require_once $TO_HOME . "_routes.php";
 //require_once $TO_HOME . "_auth.php";
 // --- PHP ---
 ?>
-<link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v1.css" />
-<script src="<?= $HOME_PATH; ?>/js/v1.js" defer></script>
+<link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.css" />
+<script src="<?= $HOME_PATH; ?>/js/v2.js" defer></script>
 <script>
     localStorage.setItem("APP_LANG", "<?= $app_lang; ?>");
     localStorage.setItem("APP_THEME", "<?= $app_theme; ?>");
@@ -19,10 +19,11 @@ require_once $TO_HOME . "_routes.php";
 <div class="app-container">
     <div class="container">
         <section id="about">
-            <h1 class="text-uppercase text-center"><?= $_name_top; ?></h1>
-            <span class="text-uppercase mb-5"><?= $_nombre; ?></span>
+            <h1 class="text-uppercase text-center">Soy <?= $_name_top; ?></h1>
+            <span class="text-uppercase"><?= $_nombre; ?></span>
+            <span class="text-uppercase mb-5">Con <span id="typed"></span></span>
             <p class="mt-4 pt-4"><?= $_about; ?></p>
-            <div class="social-icons mt-4">
+            <div class="social-icons">
                 <a href="<?= $_linkedin; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="<?= $_github; ?>" target="_blank"><i class="fab fa-github"></i></a>
@@ -158,7 +159,7 @@ require_once $TO_HOME . "_routes.php";
 <script>
     "use strict";
     $(() => {
-        document.title = "[Mateus] byUwUr v1";
+        document.title = "[Mateus] byUwUr";
         byCommon.init();
         if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
