@@ -14,7 +14,7 @@ require_once $TO_HOME . "_routes.php";
     <div class="sidebar-content accordion-item flex-grow-1">
         <div class="sidebar-option p-2o5">
             <div class="navbar-brand has-background-contain" style="height:48px;width:48px;background-image:url('<?= $HOME_PATH; ?>/img/logo.png');"></div>
-            <span class="ms-2 me-5 pe-5">[Mateus] byUwUr</span>
+            <span class="ms-2 me-5 pe-5">[Mateus] byUwUr v1</span>
         </div>
         <a class="sidebar-option" href="#about">
             <i class="fas fa-house"></i><span><?= $_helloworld; ?></span><i class="fas fa-angle-right ms-auto"></i>

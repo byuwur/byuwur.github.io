@@ -18,7 +18,7 @@ $_name_topbar = "[Mateus] <small>byUwUr</small>";
 $_name_top = "[Mateus] <span class='text-primary'>byUwUr</span>";
 $_nombre = "Andrés Trujillo Mateus";
 $_new = "load not so basic HTML";
-$_load = "<b>Loading standard view...</b>";
+$_load = "<b>Loading standard view...</b><br>Still loading? <a href='/v1' style='color:#0ae;'>Go to the basic view</a>";
 $_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='js/cookies.php' custom-folder='true'>cookie policy</a><br>Made with<i class='fas fa-heart'></i>by <a href='https://byuwur.net' target='_blank'>[Mateus] byUwUr</a>";
 $_cv = "Download Resume";
 $_hire = "Hire me";
