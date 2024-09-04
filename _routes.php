@@ -22,21 +22,27 @@ $routes = [
 
     // "/"
     $ROOT_ROUTE => ["URI" => "/main.php", ...$V2_COMPONENTS],
+    $ROOT_ROUTE . "es" => ["URI" => "", "GET" => ["lang" => "es"], ...$V2_COMPONENTS],
+    $ROOT_ROUTE . "en" => ["URI" => "", "GET" => ["lang" => "en"], ...$V2_COMPONENTS],
     $ROOT_ROUTE . "v1" => ["URI" => "/main.old.php", ...$V1_COMPONENTS],
-    $ROOT_ROUTE . "es" => ["URI" => "", "GET" => ["lang" => "es"]],
-    $ROOT_ROUTE . "en" => ["URI" => "", "GET" => ["lang" => "en"]],
-    //$ROOT_ROUTE . "v2" => ["URI" => "/home.v2.php", ...$V2_COMPONENTS],
-    //$ROOT_ROUTE . "v1" => ["URI" => "/home.v1.php", ...$V1_COMPONENTS],
+    $ROOT_ROUTE . "v1/es" => ["URI" => "/main.old.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS],
+    $ROOT_ROUTE . "v1/en" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],
+    // files
     $ROOT_ROUTE . "resume" => ["FILE" => "resume.es.pdf"],
     $ROOT_ROUTE . "resume.es" => ["FILE" => "resume.es.pdf"],
     $ROOT_ROUTE . "resume.en" => ["FILE" => "resume.en.pdf"],
     // "v1"
     $ROOT_ROUTE . "nestux" => ["URI" => "/v1.nestux/home.php", ...$V1_COMPONENTS_EMPTY],
+    $ROOT_ROUTE . "nestux/es" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS_EMPTY],
+    $ROOT_ROUTE . "nestux/en" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS_EMPTY],
     $ROOT_ROUTE . "marco" => ["URI" => "/v1.marco/home.php", ...$V1_COMPONENTS_EMPTY],
+    $ROOT_ROUTE . "marco/es" => ["URI" => "/v1.marco/home.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS_EMPTY],
+    $ROOT_ROUTE . "marco/en" => ["URI" => "/v1.marco/home.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS_EMPTY],
     // "mnm.team/"
-    $ROOT_ROUTE . "mnm.team" => ["URI" => "/v0.mnm/main.php", ...$V0_COMPONENTS],
+    $ROOT_ROUTE . "mnm.team" => ["URI" => "/v0.mnm/about.php", ...$V0_COMPONENTS],
+    $ROOT_ROUTE . $MNM_ROUTE . "es" => ["URI" => "/v0.mnm/about.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
+    $ROOT_ROUTE . $MNM_ROUTE . "en" => ["URI" => "/v0.mnm/about.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
     $ROOT_ROUTE . $MNM_ROUTE . "work" => ["URI" => "/v0.mnm/work.php", ...$V0_COMPONENTS],
-    $ROOT_ROUTE . $MNM_ROUTE . "about" => ["URI" => "/v0.mnm/about.php", ...$V0_COMPONENTS],
     $ROOT_ROUTE . $MNM_ROUTE . "services" => ["URI" => "/v0.mnm/services.php", ...$V0_COMPONENTS],
     $ROOT_ROUTE . $MNM_ROUTE . "contact" => ["URI" => "/v0.mnm/contact.php", ...$V0_COMPONENTS],
     $ROOT_ROUTE . $MNM_ROUTE . "reservelapp" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "3"], ...$V0_COMPONENTS],

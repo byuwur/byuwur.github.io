@@ -2,6 +2,9 @@ body {
 	background: #000;
 	color: #fff;
 }
+a {
+	color: #0ae;
+}
 .fullscreen {
 	height: 75vh;
 }
@@ -42,7 +45,7 @@ body {
 #mnm-aside #mnm-logo {
 	text-align: right;
 	font-weight: 425;
-	font-size: 1.375em;
+	font-size: 1em;
 	text-transform: uppercase;
 	margin-bottom: 2em;
 	display: block;

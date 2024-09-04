@@ -10,6 +10,7 @@ require_once $TO_HOME . "_routes.php";
 // --- PHP ---
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.css" />
+<link id="themesheet" rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.<?= $app_theme; ?>.css" />
 <script src="<?= $HOME_PATH; ?>/js/v2.js" defer></script>
 <script>
     localStorage.setItem("APP_LANG", "<?= $app_lang; ?>");
@@ -19,17 +20,17 @@ require_once $TO_HOME . "_routes.php";
 <div class="app-container">
     <div class="container">
         <section id="about">
-            <h1 class="text-uppercase text-center">Soy <?= $_name_top; ?></h1>
-            <span class="text-uppercase"><?= $_nombre; ?></span>
+            <span>
+                <span class="text-uppercase text-center fs-2 fw-semibold">Soy <?= $_name_top; ?></span>
+                <span class="text-uppercase"><?= $_nombre; ?></span>
+            </span>
+            <span class="text-uppercase">Y hago cosas útiles</span>
             <span class="text-uppercase mb-5">Con <span id="typed"></span></span>
             <p class="mt-4 pt-4"><?= $_about; ?></p>
             <div class="social-icons">
                 <a href="<?= $_linkedin; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="<?= $_github; ?>" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="<?= $_facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="<?= $_instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="mt-4 d-flex flex-column flex-sm-row">
                 <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" target="_blank">
@@ -149,9 +150,8 @@ require_once $TO_HOME . "_routes.php";
         </section>
         <section id="interest">
             <h2 class="mb-5 pb-5"><?= $_interest; ?></h2>
-            <div class="has-background-contain w-100 mb-4" style="background-image:url(<?= $HOME_PATH; ?>/img/profile.jpg);height:192px"></div>
+            <div class="has-background-contain rounded-circle mb-4" style="background-image:url(<?= $HOME_PATH; ?>/img/profile.jpg);height:192px;width:192px;"></div>
             <p><?= $_interesting; ?></p>
-            <?= $_goto; ?>
         </section>
     </div>
 </div>
@@ -173,6 +173,9 @@ require_once $TO_HOME . "_routes.php";
             doneFn: () => {
                 show_modal_front("success", "ATENCIÓN", "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!", true);
             },
+            failFn: () => {
+                show_modal_front("danger", "ATENCIÓN", "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!", true);
+            }
         });
     });
 </script>

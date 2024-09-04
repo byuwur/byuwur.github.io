@@ -1,37 +1,9 @@
 "use strict";
 $(() => {
-	let isMobile = {
-		Android: function () {
-			return navigator.userAgent.match(/Android/i);
-		},
-		BlackBerry: function () {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-		iOS: function () {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-		Opera: function () {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-		Windows: function () {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-		any: function () {
-			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
-		}
-	};
-	let fullHeight = function () {
-		if (!isMobile.any()) {
-			$(".js-fullheight").css("height", $(window).height());
-			$(window).resize(function () {
-				$(".js-fullheight").css("height", $(window).height());
-			});
-		}
-	};
-	let burgerMenu = function () {
+	const burgerMenu = function () {
 		$(".js-mnm-nav-toggle").on("click", function (event) {
 			event.preventDefault();
-			let $this = $(this);
+			const $this = $(this);
 			if ($("body").hasClass("offcanvas")) {
 				$this.removeClass("active");
 				$("body").removeClass("offcanvas");
@@ -42,9 +14,9 @@ $(() => {
 		});
 	};
 	// Click outside of offcanvass
-	let mobileMenuOutsideClick = function () {
+	const mobileMenuOutsideClick = function () {
 		$(document).click(function (e) {
-			let container = $("#mnm-aside, .js-mnm-nav-toggle");
+			const container = $("#mnm-aside, .js-mnm-nav-toggle");
 			if (!container.is(e.target) && container.has(e.target).length === 0) {
 				if ($("body").hasClass("offcanvas")) {
 					$("body").removeClass("offcanvas");
@@ -59,7 +31,7 @@ $(() => {
 			}
 		});
 	};
-	let sliderMain = function () {
+	const sliderMain = function () {
 		if ($(".mnm-slider").length)
 			tns({
 				container: ".mnm-slider",
@@ -75,7 +47,6 @@ $(() => {
 			});
 	};
 	// Document on load.
-	fullHeight();
 	burgerMenu();
 	mobileMenuOutsideClick();
 	sliderMain();

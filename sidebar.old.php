@@ -57,9 +57,9 @@ require_once $TO_HOME . "_routes.php";
             </div>
             <!--a class="sidebar-option" href="javascript:;"><i class="fas fa-home"></i>Home<i class="fas fa-angle-right ms-auto"></i></a-->
         </div>
-        <!--a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>v2">
+        <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>">
             <i class="fas fa-wand-magic-sparkles"></i><span><?= $_new; ?> (v2)</span><i class="fas fa-angle-right ms-auto"></i>
-        </!--a-->
+        </a>
         <p class="m-0 p-2 border-top" style="font-size: 0.75rem;"><?= $_footer; ?></p>
     </div>
     <a id="sidebar-toggle" class="sidebar-toggle" href="javascript:;" title="Alternar menu lateral"><i class="fas fa-bars"></i><span>menu</span></a>

@@ -9,7 +9,7 @@ $_awards = "Proyectos & Certificados";
 $_interest = "Intereses";
 $_experience = "Experiencia";
 $_contact = "Contacto";
-$_goto = "<a class='a-lang' href='../mnm.team/' target='_self'>Ver más en <img src='../img/mnm.png' style='margin-bottom: 4px;' height='16px' width='48px' /><small>.team();</small></a><br>";
+$_goto = "<a class='a-lang' href='../mnm.team/' target='_self'>Ver más en <img src='img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
 $_name_topbar = "Marco <small>[Cortés]</small>";
 $_name_top = "Marco <font size='5'><span class='text-primary'>[Cortés]</span></font>";
 $_nombre = "Marco José Cortés Guzman";

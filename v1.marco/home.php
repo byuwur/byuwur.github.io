@@ -29,8 +29,8 @@ require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
     <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav">
             <small style="margin: 12px 0;">
-                <a href="<?= $ROOT_ROUTE; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ESP</a>
-                <a href="<?= $ROOT_ROUTE; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> ENG</a>
+                <a href="<?= $ROOT_ROUTE; ?>marco/es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ESP</a>
+                <a href="<?= $ROOT_ROUTE; ?>marco/en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> ENG</a>
             </small>
             <li class="nav-item text-uppercase"><a class="nav-link" href="#about"><?= $_helloworld; ?></a></li>
             <li class="nav-item text-uppercase"><a class="nav-link" href="#skills"><?= $_skills; ?></a></li>
@@ -141,30 +141,6 @@ require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
             </li>
         </ul>
         <?= $_goto; ?>
-        <!--form id="mail_form" name="mail_form" class="row w-100" action="javascript:;">
-            <div class="col-12 col-md-6 p-2">
-                <input type="text" id="mail_name" name="mail_name" class="form-control" placeholder="<?= $_name; ?>" required>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <input type="email" id="mail_email" name="mail_email" class="form-control" placeholder="<?= $_email; ?>" required>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <input type="tel" id="mail_phone" name="mail_phone" class="form-control" placeholder="<?= $_tphone; ?>">
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <input type="text" id="mail_subject" name="mail_subject" class="form-control" placeholder="<?= $_subject; ?>" required>
-            </div>
-            <div class="col-12 p-2">
-                <textarea id="mail_message" name="mail_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea>
-            </div>
-            <div class="g-recaptcha col-12 col-md-6 p-2" id="mail_recaptcha" name="mail_recaptcha" data-sitekey="6LdBMSIaAAAAANG0gtgkpXUE0K5QS2nu0tJWC1Fm"></div>
-            <div class="col-12 col-md-6 p-2">
-                <button type="submit" class="btn btn-primary p-2o5 pr-5">
-                    <i class="fas fa-paper-plane mr-2"></i><?= $_send; ?>
-                    <div class="spinner-border" role="status" style="display:none;"></div>
-                </button>
-            </div>
-        </!--form-->
     </section>
 </div>
 <!-- BODY -->

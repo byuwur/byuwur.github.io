@@ -48,18 +48,23 @@ require_once $TO_HOME . "_routes.php";
             </a>
         </div>
         <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#lang-drop" aria-expanded="false" aria-controls="lang-drop">
-            <i class="fas fa-earth-americas"></i><span><?= $_langs; ?></span>
+            <i class="fas fa-earth-americas"></i><span><?= $_langs; ?>:</span>
         </button>
         <div id="lang-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#sidebar">
             <div class="d-flex flex-row">
-                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
-                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> Español<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> English<i class="fas fa-angle-right ms-auto"></i></a>
             </div>
-            <!--a class="sidebar-option" href="javascript:;"><i class="fas fa-home"></i>Home<i class="fas fa-angle-right ms-auto"></i></a-->
         </div>
-        <!--a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>v2">
-            <i class="fas fa-wand-magic-sparkles"></i><span><?= $_new; ?> (v2)</span><i class="fas fa-angle-right ms-auto"></i>
-        </!--a-->
+        <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#theme-drop" aria-expanded="false" aria-controls="theme-drop">
+            <i class="fas fa-palette"></i><span><?= $_themes; ?>:</span>
+        </button>
+        <div id="theme-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#sidebar">
+            <div class="d-flex flex-row">
+                <a class="sidebar-option" href="javascript:document.getElementById('themesheet').setAttribute('href','css/v2.light.css');set_cookie('theme','light');"><i class="fas fa-sun"></i><?= $_light; ?><i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="javascript:document.getElementById('themesheet').setAttribute('href','css/v2.dark.css');set_cookie('theme','dark');"><i class="fas fa-moon"></i><?= $_dark; ?><i class="fas fa-angle-right ms-auto"></i></a>
+            </div>
+        </div>
         <p class="m-0 p-2 border-top" style="font-size: 0.75rem;"><?= $_footer; ?></p>
     </div>
     <a id="sidebar-toggle" class="sidebar-toggle" href="javascript:;" title="Alternar menu lateral"><i class="fas fa-bars"></i><span>menu</span></a>

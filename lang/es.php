@@ -28,6 +28,9 @@ $_back = "Volver";
 $_ok = "Entendido";
 $_close = "Cerrar";
 $_langs = "Idiomas";
+$_themes = "Temas";
+$_light = "Claro";
+$_dark = "Oscuro";
 #about
 $_whoiam = "Quien soy";
 $_aboutmateus = "Sobre";

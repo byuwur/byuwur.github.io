@@ -1,0 +1,7 @@
+:root {
+	--primary-color: #600;
+}
+body {
+	background: var(--light-color);
+	color: var(--dark-color);
+}
