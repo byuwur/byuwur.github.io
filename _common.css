@@ -1,7 +1,7 @@
 :root {
 	--sidebar-width: 5rem;
 	--sidebar-height: 4.5rem;
-	--sidebar-expanded-width: 23rem;
+	--sidebar-expanded-width: 21rem;
 	--primary-color: #600;
 	--secondary-color: #222;
 	--gray-color: #666;
@@ -13,15 +13,15 @@
 }
 /* === SELECTION === */
 ::selection {
-	background-color: var(--secondary-color);
+	background-color: #018;
 	color: #fff;
 }
 ::-webkit-selection {
-	background-color: var(--secondary-color);
+	background-color: #018;
 	color: #fff;
 }
 ::-moz-selection {
-	background-color: var(--secondary-color);
+	background-color: #018;
 	color: #fff;
 }
 /* === PLACEHOLDER === */
@@ -573,23 +573,21 @@ th {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-#spa-loader .load-circle-back {
-	height: 192px;
-	width: 192px;
+#spa-loader .load-circle-back,
+#spa-loader .load-circle-back:after {
+	height: 96px;
+	width: 96px;
 }
-#spa-loader .load-circle-fore {
-	height: 120px;
-	width: 120px;
+#spa-loader .load-circle-fore,
+#spa-loader .load-circle-fore:after {
+	height: 56px;
+	width: 56px;
 }
 #spa-loader .load-circle-back:after {
-	height: 192px;
-	width: 192px;
 	animation: rotate 1.5s infinite;
 	background-image: url("./img/icon-back.png");
 }
 #spa-loader .load-circle-fore:after {
-	height: 120px;
-	width: 120px;
 	animation: rotate-reverse 1.5s infinite;
 	background-image: url("./img/favicon.png");
 }
