@@ -1,5 +1,6 @@
 "use strict";
 $(() => {
+	// Typing text
 	if ($("#typed").length)
 		new TypeIt("#typed", {
 			speed: 100,
@@ -7,6 +8,7 @@ $(() => {
 			strings: ["Vegas Pro", "Premiere Pro", "Davinci Resolve", "Photoshop", "Lightroom", "LAMP full-stack", "Java for Android", "Git version control", "SQL databases", "Java", "Unity", "Blender", "After Effects", "Web development", "Mobile development"],
 			breakLines: false
 		});
+	// Section scroll on non-scrollable body
 	$("section").each(function () {
 		$(this).on("mousewheel", function (e) {
 			const delta = e.originalEvent.deltaY;
