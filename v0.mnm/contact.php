@@ -1,17 +1,15 @@
 <?php
-if (isset($_GET['lang'])) {
-    if ($_GET['lang'] == 'es') {
-        require_once "./lang/es.php";
-    } else if ($_GET['lang'] == 'en') {
-        require_once "./lang/en.php";
-    }
-} else if (isset($_COOKIE['lang'])) {
-    require_once "./lang/" . $_COOKIE['lang'] . ".php";
-} else {
-    require_once "./lang/es.php";
-}
-$_GET['title'] = $_titlecontact;
-require_once "./header.php";
+require_once "../_var.php";
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
+// --- PHP ---
+require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
+require_once $TO_HOME . "v0.mnm/common.head.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-contact">
@@ -23,33 +21,6 @@ require_once "./header.php";
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7 col-md-push-5">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-                            <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-                                <div class="form-group">
-                                    <input type="text" name="s_name" class="form-control" placeholder="* <?= $_name; ?>" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="s_email" class="form-control" placeholder="* <?= $_email; ?>" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="s_phone" class="form-control" placeholder="<?= $_phone; ?>">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="s_subject" class="form-control" placeholder="* <?= $_subject; ?>" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="s_message" id="message" cols="30" rows="7" class="form-control" placeholder="* <?= $_msg; ?>" required></textarea>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="6LcgdbwUAAAAAMjsRwvIR08sluNH9GBfzEHQ5JTe"></div><br>
-                                <div class="form-group">
-                                    <input type="submit" name="s_enviar" class="btn btn-primary btn-send-message" style="margin-bottom: 5em;" value="<?= $_send; ?>">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-5 col-md-pull-7">
                     <div class="mnm-feature mnm-feature-sm animate-box" data-animate-effect="fadeInLeft">
                         <div class="mnm-icon">
@@ -75,49 +46,13 @@ require_once "./header.php";
             </div>
         </div>
     </div>
+    <?php
+    require_once $TO_HOME . "v0.mnm/common.foot.php";
+    ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            active_contact();
+        $(() => {
+            document.title = "<?= $_chead; ?> | MNM.team();";
+            $("#li_contact").addClass("mnm-active");
         });
     </script>
-    <?php
-    require_once "./footer.php";
-    if (isset($_POST['s_enviar'])) {
-        $captcha = $_POST['g-recaptcha-response'];
-        if (!$captcha) {
-            echo '<script>alert("reCaptcha inválido. / Invalid reCaptcha.");</script>';
-        } else {
-            $secret = "";
-            $rescaptcha = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha");
-            $arrcaptcha = json_decode($rescaptcha, true);
-            if ($arrcaptcha['success']) {
-                $s_name = $_POST['s_name'];
-                $s_email = $_POST['s_email'];
-                $s_phone = $_POST['s_phone'];
-                $s_subject = $_POST['s_subject'];
-                $s_message = $_POST['s_message'];
-                $arr_mnm = [$_mateus_mail, $_nestux_mail, $_marco_mail];
-                $mail_mnm = implode(",", $arr_mnm);
-                $mail_asunto = $_subject . " | MNM, " . $s_name . $_s_wants;
-                $mail_header = "From: info@mnm.team\r\n"
-                    . "MIME-Version: 1.0\r\n"
-                    . "Content-type: text/html; charset=iso-8859-1\r\n";
-                $mail_msg = ' <html> <head> <title> Contactar a MNM </title> </head> <body>
-                <p>Hola, equipo de MNM:<br><br>Soy <strong>' . $s_name . '</strong>.</p>
-                <p>Pueden contactarme en: <strong>' . $s_email . '</strong> o llamarme al: <strong>' . $s_phone . '</strong>.</p>
-                Necesito decirles:<br>
-                ' . $s_message . '
-                <br><br><br>Gracias.<br><br>Atentamente, ' . $s_name . '.
-            </body> </html> ';
-                $sendmail = @mail($mail_mnm, $mail_asunto, $mail_msg, $mail_header);
-                if ($sendmail) {
-                    echo '<script>alert("' . $_s_thanks . '");</script>';
-                } else {
-                    echo '<script>alert("' . $_s_wrong . '");</script>';
-                }
-            } else {
-                echo '<script>alert("reCaptcha inválido. Lamentamos las molestias. / Invalid reCaptcha. Sorry for the bother.");</script>';
-            }
-        }
-    }
-    ?>
+</div>

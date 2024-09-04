@@ -1,17 +1,15 @@
 <?php
-if (isset($_GET['lang'])) {
-    if ($_GET['lang'] == 'es') {
-        require_once "./lang/es.php";
-    } else if ($_GET['lang'] == 'en') {
-        require_once "./lang/en.php";
-    }
-} else if (isset($_COOKIE['lang'])) {
-    require_once "./lang/" . $_COOKIE['lang'] . ".php";
-} else {
-    require_once "./lang/es.php";
-}
-$_GET['title'] = $_titleabout;
-require_once "./header.php";
+require_once "../_var.php";
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
+// --- PHP ---
+require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
+require_once $TO_HOME . "v0.mnm/common.head.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-about">
@@ -61,8 +59,8 @@ require_once "./header.php";
                 <div class="col-md-6">
                     <div class="about-desc animate-box" data-animate-effect="fadeInLeft" style="text-align:center;"><?= $_we; ?></div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
-                        <div class="project" style="height:99%; background-image: url(../img/port_mateus.jpg);">
-                            <a href="../">
+                        <div class="project" style="height:99%; background-image: url(<?= $HOME_PATH; ?>/img/v0/port_mateus.jpg);">
+                            <a href="<?= $ROOT_ROUTE; ?>">
                                 <div class="desc" style="padding:1em;">
                                     <h3>MATEUS' <small>PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(mateus);</small></span>
@@ -71,8 +69,8 @@ require_once "./header.php";
                         </div>
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
-                        <div class="project" style="height:99%; background-image: url(../img/port_nestux.jpg);">
-                            <a href="../nestux">
+                        <div class="project" style="height:99%; background-image: url(<?= $HOME_PATH; ?>/img/v0/port_nestux.jpg);">
+                            <a href="<?= $ROOT_ROUTE; ?>nestux">
                                 <div class="desc" style="padding:1em;">
                                     <h3>NESTUX' <small>PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(nestux);</small></span>
@@ -81,8 +79,8 @@ require_once "./header.php";
                         </div>
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
-                        <div class="project" style="height:99%; background-image: url(../img/port_marco.jpg);">
-                            <a href="../marco">
+                        <div class="project" style="height:99%; background-image: url(<?= $HOME_PATH; ?>/img/v0/port_marco.jpg);">
+                            <a href="<?= $ROOT_ROUTE; ?>marco">
                                 <div class="desc" style="padding:1em;">
                                     <h3>MARCO'<small>s PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(marco);</small></span>
@@ -94,11 +92,13 @@ require_once "./header.php";
             </div>
         </div>
     </div>
+    <?php
+    require_once $TO_HOME . "v0.mnm/common.foot.php";
+    ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            active_about();
+        $(() => {
+            document.title = "<?= $_hola; ?> | MNM.team();";
+            $("#li_about").addClass("mnm-active");
         });
     </script>
-    <?php
-    require_once "./footer.php";
-    ?>
+</div>

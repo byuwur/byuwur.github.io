@@ -1,17 +1,15 @@
 <?php
-if (isset($_GET['lang'])) {
-    if ($_GET['lang'] == 'es') {
-        require_once "./lang/es.php";
-    } else if ($_GET['lang'] == 'en') {
-        require_once "./lang/en.php";
-    }
-} else if (isset($_COOKIE['lang'])) {
-    require_once "./lang/" . $_COOKIE['lang'] . ".php";
-} else {
-    require_once "./lang/es.php";
-}
-$_GET['title'] = $_titleservice;
-require_once "./header.php";
+require_once "../_var.php";
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
+// --- PHP ---
+require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
+require_once $TO_HOME . "v0.mnm/common.head.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-services">
@@ -104,11 +102,13 @@ require_once "./header.php";
             </div>
         </div>
     </div>
+    <?php
+    require_once $TO_HOME . "v0.mnm/common.foot.php";
+    ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            active_services();
+        $(() => {
+            document.title = "<?= $_expertise; ?> | MNM.team();";
+            $("#li_services").addClass("mnm-active");
         });
     </script>
-    <?php
-    require_once "./footer.php";
-    ?>
+</div>

@@ -13,7 +13,7 @@ require_once $TO_HOME . "_routes.php";
     <div class="overlay"></div>
     <div class="sidebar-content accordion-item flex-grow-1">
         <div class="sidebar-option p-2o5">
-            <div class="navbar-brand has-background-contain" style="height:48px;width:48px;background-image:url('<?= $HOME_PATH; ?>/img/logo.png');"></div>
+            <div class="navbar-brand has-background-contain" style="height:48px;width:48px;background-image:url('<?= $HOME_PATH; ?>/img/v0/logo.png');"></div>
             <span class="ms-2 me-5 pe-5">[Mateus] byUwUr (v1)</span>
         </div>
         <a class="sidebar-option" href="#about">
@@ -52,8 +52,8 @@ require_once $TO_HOME . "_routes.php";
         </button>
         <div id="lang-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#sidebar">
             <div class="d-flex flex-row">
-                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>es" title="Español"><img src="img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
-                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>en" title="English"><img src="img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
             </div>
             <!--a class="sidebar-option" href="javascript:;"><i class="fas fa-home"></i>Home<i class="fas fa-angle-right ms-auto"></i></a-->
         </div>
@@ -64,7 +64,7 @@ require_once $TO_HOME . "_routes.php";
     </div>
     <a id="sidebar-toggle" class="sidebar-toggle" href="javascript:;" title="Alternar menu lateral"><i class="fas fa-bars"></i><span>menu</span></a>
     <div id="sidebar-hidden" class="sidebar-hidden">
-        <div class="navbar-brand has-background-contain mt-auto" style="height:48px;width:48px;background-image:url('<?= $HOME_PATH; ?>/img/logo.png');"></div>
+        <div class="navbar-brand has-background-contain mt-auto" style="height:48px;width:48px;background-image:url('<?= $HOME_PATH; ?>/img/v0/logo.png');"></div>
     </div>
 </nav>
 <?php

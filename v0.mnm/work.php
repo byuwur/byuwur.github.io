@@ -1,17 +1,15 @@
 <?php
-if (isset($_GET['lang'])) {
-    if ($_GET['lang'] == 'es') {
-        require_once "./lang/es.php";
-    } else if ($_GET['lang'] == 'en') {
-        require_once "./lang/en.php";
-    }
-} else if (isset($_COOKIE['lang'])) {
-    require_once "./lang/" . $_COOKIE['lang'] . ".php";
-} else {
-    require_once "./lang/es.php";
-}
-$_GET['title'] = $_titleproject;
-require_once "./header.php";
+require_once "../_var.php";
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
+// --- PHP ---
+require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
+require_once $TO_HOME . "v0.mnm/common.head.php";
 ?>
 <div id="mnm-main">
     <div class="mnm-work">
@@ -25,8 +23,8 @@ require_once "./header.php";
             </div>
             <div class="row">
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(../img/work-3/0.jpg);">
-                        <a href="reservelapp">
+                    <div class="project" style="background-image: url(<?= $HOME_PATH; ?>/img/v0/work-3/0.jpg);">
+                        <a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>reservelapp">
                             <div class="desc">
                                 <div class="con">
                                     <h3><?= $_reserv; ?></h3>
@@ -44,8 +42,8 @@ require_once "./header.php";
                     </div>
                 </div>
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(../img/work-2/0.jpg);">
-                        <a href="limontech">
+                    <div class="project" style="background-image: url(<?= $HOME_PATH; ?>/img/v0/work-2/0.jpg);">
+                        <a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>limontech">
                             <div class="desc">
                                 <div class="con">
                                     <h3><?= $_lt; ?></h3>
@@ -65,8 +63,8 @@ require_once "./header.php";
                     </div>
                 </div>
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(../img/work-1/0.jpg);">
-                        <a href="renn">
+                    <div class="project" style="background-image: url(<?= $HOME_PATH; ?>/img/v0/work-1/0.jpg);">
+                        <a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>renn">
                             <div class="desc">
                                 <div class="con">
                                     <h3><?= $_renn; ?></h3>
@@ -86,8 +84,8 @@ require_once "./header.php";
                     </div>
                 </div>
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url(../img/work-0/0.jpg);">
-                        <a href="redi">
+                    <div class="project" style="background-image: url(<?= $HOME_PATH; ?>/img/v0/work-0/0.jpg);">
+                        <a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>redi">
                             <div class="desc">
                                 <div class="con">
                                     <h3><?= $_redi; ?></h3>
@@ -107,27 +105,15 @@ require_once "./header.php";
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="row">
-                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#">&laquo;</a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
-            </div>
-                    -->
         </div>
     </div>
+    <?php
+    require_once $TO_HOME . "v0.mnm/common.foot.php";
+    ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            active_work();
+        $(() => {
+            document.title = "<?= $_mywork; ?> | MNM.team();";
+            $("#li_work").addClass("mnm-active");
         });
     </script>
-    <?php
-    require_once "./footer.php";
-    ?>
+</div>

@@ -1,21 +1,17 @@
 <?php
-if (isset($_GET['work'])) {
-    if (isset($_GET['lang'])) {
-        if ($_GET['lang'] == 'es') {
-            require_once "./lang/es_work-" . $_GET['work'] . ".php";
-        } else if ($_GET['lang'] == 'en') {
-            require_once "./lang/en_work-" . $_GET['work'] . ".php";
-        }
-    } else if (isset($_COOKIE['lang'])) {
-        require_once "./lang/" . $_COOKIE['lang'] . "_work-" . $_GET['work'] . ".php";
-    } else {
-        require_once "./lang/es_work-" . $_GET['work'] . ".php";
-    }
-} else {
-    echo '<script> window.location.replace("/"); </script>';
-}
-$_GET['title'] = $_wtitle;
-require_once "./header.php";
+require_once "../_var.php";
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "_auth.php";
+// --- PHP ---
+require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
+require_once $TO_HOME . "v0.mnm/common.head.php";
+$work_id = isset($_GET["work"]) ? $_GET["work"] : "0";
+require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . "_work-" . $work_id . ".php";
 ?>
 <div id="mnm-main">
     <div class="mnm-work">
@@ -49,19 +45,21 @@ require_once "./header.php";
                     </div>
                 </div>
                 <div class="col-md-6 image-content">
-                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/1.jpg" alt="Image 1" />
-                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/2.jpg" alt="Image 2" />
-                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/3.jpg" alt="Image 3" />
-                    <img class="img-responsive" src="../img/work-<?= $_GET['work']; ?>/4.jpg" alt="Image 4" />
+                    <img class="img-responsive" src="<?= $HOME_PATH; ?>/img/v0/work-<?= $_GET['work']; ?>/1.jpg" alt="Image 1" />
+                    <img class="img-responsive" src="<?= $HOME_PATH; ?>/img/v0/work-<?= $_GET['work']; ?>/2.jpg" alt="Image 2" />
+                    <img class="img-responsive" src="<?= $HOME_PATH; ?>/img/v0/work-<?= $_GET['work']; ?>/3.jpg" alt="Image 3" />
+                    <img class="img-responsive" src="<?= $HOME_PATH; ?>/img/v0/work-<?= $_GET['work']; ?>/4.jpg" alt="Image 4" />
                 </div>
             </div>
         </div>
     </div>
+    <?php
+    require_once $TO_HOME . "v0.mnm/common.foot.php";
+    ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            active_work();
+        $(() => {
+            document.title = "<?= $_wtitle; ?> | MNM.team();";
+            $("#li_work").addClass("mnm-active");
         });
     </script>
-    <?php
-    require_once "./footer.php";
-    ?>
+</div>

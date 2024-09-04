@@ -113,6 +113,14 @@
 					}
 				}, 333);
 			});
+		cookieconsent.run({
+			notice_banner_type: "simple",
+			consent_type: "express",
+			palette: localStorage.getItem("APP_THEME") ?? "dark",
+			language: localStorage.getItem("APP_LANG") ?? "es",
+			website_name: "mnm.team",
+			change_preferences_selector: "#cookiePrefs"
+		});
 		console.log("Init misc");
 	};
 
