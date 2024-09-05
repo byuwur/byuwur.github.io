@@ -32,11 +32,11 @@ require_once $TO_HOME . "_routes.php";
         <span class="fs-3 mb-5">en <span id="typed"></span></span>
         <div class="row project-slider w-100">
             <?php foreach ($_portfolios as $portfolio) { ?>
-                <div class="col-md-6 project has-background-cover p-4 mb-4 text-dark-shadow <?= $portfolio["class"] ?>" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
-                    <h3 class="project-title"><?= $portfolio["title"]; ?></h3>
+                <div class="col-md-6 col-xl-4 project has-background-cover p-4 text-dark-shadow text-white <?= $portfolio["class"] ?>" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
+                    <h3><?= $portfolio["title"]; ?></h3>
                     <div class="project-description p-4">
                         <div class="flex-grow-1 d-flex flex-column">
-                            <h3>&nbsp;</h3>
+                            <h3><?= $portfolio["title"]; ?></h3>
                             <span class="fw-light"><?= $portfolio["ent"]; ?> (<?= $portfolio["year"]; ?>)</span>
                             <span><?= $portfolio["desc"]; ?></span>
                         </div>
@@ -68,6 +68,12 @@ require_once $TO_HOME . "_routes.php";
             </a>
             <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" title="Resume in English">
                 <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Resume (EN)</span><i class="fas fa-download ms-auto"></i>
+            </a>
+            <a class="a-lang" href="#resume">
+                <i class="fas fa-file-contract"></i><span><?= $_resume; ?></span><i class="fas fa-angle-right ms-auto"></i>
+            </a>
+            <a class="a-lang" href="#contact">
+                <i class="fas fa-paper-plane"></i><span><?= $_contact; ?></span><i class="fas fa-angle-right ms-auto"></i>
             </a>
         </div>
     </section>
