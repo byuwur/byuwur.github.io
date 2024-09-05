@@ -31,24 +31,30 @@ require_once $TO_HOME . "_routes.php";
         <span class="fs-3">Y hago cosas útiles</span>
         <span class="fs-3 mb-5">en <span id="typed"></span></span>
         <div class="row project-slider w-100">
-            <!--div class="col-md-6 project p-4 mb-4 text-dark-shadow" style="background-image: url(<?= $HOME_PATH; ?>/img/v0/work-1/0.jpg);">
-                <h3 class="project-title">Title</h3>
-                <div class="project-description p-4">
-                    <div class="flex-grow-1">
-                        <h3>&nbsp;</h3>
-                        <span class="project-text">Description</span>
-                    </div>
-                    <div class="flex-grow-0">
-                        <div class="mt-3">
-                            <span class="badge rounded-pill text-bg-dark"><i class="fab fa-php ps-0"></i>PHP</span>
+            <?php foreach ($_portfolios as $portfolio) { ?>
+                <div class="col-md-6 project has-background-cover p-4 mb-4 text-dark-shadow <?= $portfolio["class"] ?>" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
+                    <h3 class="project-title"><?= $portfolio["title"]; ?></h3>
+                    <div class="project-description p-4">
+                        <div class="flex-grow-1 d-flex flex-column">
+                            <h3>&nbsp;</h3>
+                            <span class="fw-light"><?= $portfolio["ent"]; ?> (<?= $portfolio["year"]; ?>)</span>
+                            <span><?= $portfolio["desc"]; ?></span>
                         </div>
-                        <div class="mt-3">
-                            <a href="https://byuwur.net" target="_blank"><i class="fab fa-github"></i><span>GitHub</span><i class="fas fa-code"></i></a>
-                            <a href="https://byuwur.net" target="_blank"><i class="fas fa-play-circle"></i><span>Demo</span></a>
+                        <div class="flex-grow-0">
+                            <div class="mt-3">
+                                <?php foreach ($portfolio["tech"] as $tech) { ?>
+                                    <span class="badge rounded-pill text-bg-dark"><i class="<?= $tech["icon"]; ?> ps-0"></i><?= $tech["text"]; ?></span>
+                                <?php } ?>
+                            </div>
+                            <div class="mt-3">
+                                <?php foreach ($portfolio["link"] as $link) { ?>
+                                    <a href="<?= $link["link"]; ?>" target="_blank"><i class="<?= $link["icon"]; ?>"></i><span><?= $link["text"]; ?></span></a>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </!--div-->
+            <?php } ?>
         </div>
         <div class="row mt-4 pt-4">
             <div class="col-sm-auto d-flex justify-content-center">
@@ -70,14 +76,14 @@ require_once $TO_HOME . "_routes.php";
         <div class="row">
             <div class="skill-row row col-12">
                 <div class="col-6">
-                    <h4 class="text-uppercase"><i class="fas fa-code"></i><?= $_codeskills; ?></h4>
+                    <h4 class="text-uppercase"><i class="fas fa-code"></i><?= $_codes; ?></h4>
                     <div class="row">
-                        <?php for ($i = 0; $i < count($_codeskilltext); $i++) { ?>
+                        <?php foreach ($_codeskills  as $codeskill) { ?>
                             <div class="skill col-sm-6 mt-3">
-                                <h4 class="m-0"><i class="<?= $_codeskillicon[$i]; ?>"></i><?= $_codeskilltext[$i]; ?></h4>
-                                <span class="badge rounded-pill text-primary text-md-end"><?= $_codeskilllevel[$i]; ?></span>
+                                <h4 class="m-0"><i class="<?= $codeskill["icon"]; ?>"></i><?= $codeskill["text"]; ?></h4>
+                                <span class="badge rounded-pill text-primary text-md-end"><?= $codeskill["level"]; ?></span>
                                 <div class="progress rounded-pill">
-                                    <div class="progress-bar rounded-pill " style="width: <?= $_codeskillprogress[$i]; ?>"></div>
+                                    <div class="progress-bar rounded-pill " style="width: <?= $codeskill["progress"]; ?>"></div>
                                 </div>
                             </div>
                         <?php } ?>
@@ -86,12 +92,12 @@ require_once $TO_HOME . "_routes.php";
                 <div class="col-6">
                     <h4 class="text-uppercase"><i class="fas fa-file-export"></i><?= $_things; ?></h4>
                     <div class="row">
-                        <?php for ($i = 0; $i < count($_otherskilltext); $i++) { ?>
+                        <?php foreach ($_otherskills  as $otherskill) { ?>
                             <div class="skill col-sm-6 mt-3">
-                                <h4 class="m-0"><i class="<?= $_otherskillicon[$i]; ?>"></i><?= $_otherskilltext[$i]; ?></h4>
-                                <span class="badge rounded-pill text-primary text-md-end"><?= $_otherskilllevel[$i]; ?></span>
+                                <h4 class="m-0"><i class="<?= $otherskill["icon"]; ?>"></i><?= $otherskill["text"]; ?></h4>
+                                <span class="badge rounded-pill text-primary text-md-end"><?= $otherskill["level"]; ?></span>
                                 <div class="progress rounded-pill">
-                                    <div class="progress-bar rounded-pill " style="width: <?= $_otherskillprogress[$i]; ?>"></div>
+                                    <div class="progress-bar rounded-pill " style="width: <?= $otherskill["progress"]; ?>"></div>
                                 </div>
                             </div>
                         <?php } ?>
@@ -101,15 +107,15 @@ require_once $TO_HOME . "_routes.php";
             <div class="resume-row col-md-6">
                 <h4 class="text-uppercase"><i class="fas fa-briefcase"></i><?= $_experience; ?></h4>
                 <ul>
-                    <?php for ($i = 0; $i < count($_experiencepos); $i++) { ?>
+                    <?php foreach ($_experiences as $experience) { ?>
                         <li>
                             <div class="resume-title p-2">
-                                <h4 class="m-0"><i class="fas fa-check"></i><?= $_experiencepos[$i]; ?></h4>
-                                <span class="mt-1"><i class="fas fa-building"></i><?= $_experienceent[$i]; ?></span>
-                                <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $_experiencetime[$i]; ?></span>
+                                <h4 class="m-0"><i class="fas fa-check"></i><?= $experience["pos"]; ?></h4>
+                                <span class="mt-1"><i class="fas fa-building"></i><?= $experience["ent"]; ?></span>
+                                <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $experience["time"]; ?></span>
                             </div>
                             <div class="p-2">
-                                <span class="m-0"><i class="fas fa-list-check"></i><?= $_experiencedesc[$i]; ?></span>
+                                <span class="m-0"><i class="fas fa-list-check"></i><?= $experience["desc"]; ?></span>
                             </div>
                         </li>
                     <?php } ?>
@@ -118,32 +124,25 @@ require_once $TO_HOME . "_routes.php";
             <div class="resume-row col-md-6">
                 <h4 class="text-uppercase"><i class="fas fa-graduation-cap"></i><?= $_education; ?></h4>
                 <ul>
-                    <?php for ($i = 0; $i < count($_educationprog); $i++) { ?>
+                    <?php foreach ($_educations as $education) { ?>
                         <li>
                             <div class="resume-title p-2">
-                                <h4 class="m-0"><i class="fas fa-graduation-cap"></i><?= $_educationprog[$i]; ?></h4>
-                                <span class="mt-1"><i class="fas fa-building"></i><?= $_educationinst[$i]; ?></span>
-                                <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $_educationyear[$i]; ?></span>
+                                <h4 class="m-0"><i class="fas fa-graduation-cap"></i><?= $education["prog"]; ?></h4>
+                                <span class="mt-1"><i class="fas fa-building"></i><?= $education["inst"]; ?></span>
+                                <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"]; ?></span>
                             </div>
                             <div class="p-2">
-                                <span class="m-0"><i class="fas fa-list-check"></i><?= $_educationprof[$i]; ?></span>
+                                <span class="m-0"><i class="fas fa-list-check"></i><?= $education["prof"]; ?></span>
                             </div>
                         </li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <div class="col-12 mt-5 pt-5">
-                <ul class="w-100">
-                    <?php for ($i = 0; $i < count($_portafolio); $i++) { ?>
-                        <li><i class="fas fa-trophy"></i><?= $_portafolio[$i]; ?></li>
                     <?php } ?>
                 </ul>
             </div>
         </div>
     </section>
     <section id="contact">
-        <h2 class="mb-5"><?= $_chead; ?></h2>
-        <span class="mb-5 pb-5"><?= "Y construyamos algo increíble juntos."; ?></span>
+        <h2 class="text-uppercase mb-5"><?= $_contact; ?></h2>
+        <span class="mb-5 pb-5"><?= $_contactsub; ?></span>
         <ul class="row w-100 fs-5 mb-4">
             <li class="col-12 col-md-6 text-end">
                 <a href="<?= $_linkedin; ?>" target="_blank">atrujillomateus</a>
@@ -205,10 +204,10 @@ require_once $TO_HOME . "_routes.php";
                 value: "1"
             }],
             doneFn: () => {
-                show_modal_front("success", "ATENCIÓN", "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!", true);
+                show_modal_front("success", "ATENCIÓN", "<?= $_mail_thanks; ?>", true);
             },
             failFn: () => {
-                show_modal_front("danger", "ATENCIÓN", "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!", true);
+                show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
             }
         });
     });

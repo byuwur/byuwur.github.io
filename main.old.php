@@ -21,14 +21,16 @@ require_once $TO_HOME . "_routes.php";
         <section id="about">
             <h1 class="text-uppercase text-center"><?= $_name_top; ?></h1>
             <span class="text-uppercase mb-5"><?= $_nombre; ?></span>
-            <p class="mt-4 pt-4"><?= $_about; ?></p>
+            <div class="row mt-4 pt-4">
+                <div class="col-sm-auto d-flex justify-content-center">
+                    <div class="has-background-contain rounded-circle mb-4" style="background-image:url(<?= $HOME_PATH; ?>/img/profile.jpg);height:128px;width:128px;"></div>
+                </div>
+                <p class="col"><?= $_about; ?></p>
+            </div>
             <div class="social-icons mt-4">
                 <a href="<?= $_linkedin; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="<?= $_github; ?>" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="<?= $_facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="<?= $_instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="<?= $_twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="mt-4 d-flex flex-column flex-sm-row">
                 <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" target="_blank">
@@ -42,54 +44,46 @@ require_once $TO_HOME . "_routes.php";
             <div class="row mt-4">
                 <div class="col-12 col-md-5">
                     <h6>Digital Business Card v2</h6>
-                    <iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="135px" frameborder="0"></iframe>
+                    <iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="128px" frameborder="0"></iframe>
                 </div>
                 <div class="col-12 col-md-7">
                     <h6>Digital Business Card v1</h6>
-                    <iframe src="<?= $HOME_PATH; ?>/card.v1.html" title="Digital Business Card v1" width="100%" height="110px" frameborder="0"></iframe>
+                    <iframe src="<?= $HOME_PATH; ?>/card.v1.html" title="Digital Business Card v1" width="100%" height="128px" frameborder="0"></iframe>
                 </div>
             </div>
         </section>
         <section id="skills">
             <h2 class="text-uppercase mb-5 pb-3"><?= $_skills; ?></h2>
-            <div class="my-4"><?= $_languages; ?></div>
+            <div class="my-4"><?= $_codes; ?></div>
             <ul class="d-flex flex-row flex-wrap gap-2 fs-1 mb-4">
-                <?php for ($i = 0; $i < count($_codeskillicon); $i++) { ?>
-                    <li><i class="<?= $_codeskillicon[$i]; ?>"></i></li>
+                <?php foreach ($_codeskills as $codeskill) { ?>
+                    <li><i class="<?= $codeskill["icon"]; ?>" data-bs-toggle="tooltip" data-bs-title="<?= $codeskill["text"]; ?>"></i></li>
                 <?php } ?>
             </ul>
-            <div class="my-2">SOFTWARE:</div>
+            <div class="my-2">Software:</div>
             <ul class="row mb-4 w-100">
-                <?php for ($i = 0; $i < count($_otherskilltext); $i++) { ?>
-                    <li class="col-12 col-md-6"><i class="<?= $_otherskillicon[$i]; ?>"></i><?= $_otherskilltext[$i] . " = " . $_otherskilllevel[$i]; ?></li>
+                <?php foreach ($_otherskills as $otherskill) { ?>
+                    <li class="col-12 col-md-6"><i class="<?= $otherskill["icon"]; ?>"></i><?= $otherskill["text"] . " = " . $otherskill["level"]; ?></li>
                 <?php } ?>
             </ul>
             <div class="my-2"><?= $_things; ?></div>
             <ul class="row mb-4 w-100">
-                <?php for ($i = 0; $i < count($_thingies); $i++) { ?>
-                    <li class="col-12 col-md-6"><i class="fas fa-check"></i><?= $_thingies[$i]; ?></li>
-                <?php } ?>
-            </ul>
-        </section>
-        <section id="awards">
-            <h2 class="text-uppercase mb-5 pb-5"><?= $_portfolio; ?></h2>
-            <ul class="w-100">
-                <?php for ($i = 0; $i < count($_portafolio); $i++) { ?>
-                    <li><i class="fas fa-trophy"></i><?= $_portafolio[$i]; ?></li>
+                <?php foreach ($_thingies as $thingy) { ?>
+                    <li class="col-12 col-md-6"><i class="fas fa-check"></i><?= $thingy; ?></li>
                 <?php } ?>
             </ul>
         </section>
         <section id="experience">
             <h2 class="text-uppercase mb-5 pb-5"><?= $_experience; ?></h2>
             <ul class="w-100">
-                <?php for ($i = 0; $i < count($_experiencepos); $i++) { ?>
+                <?php foreach ($_experiences as $experience) { ?>
                     <li class="d-flex flex-column flex-md-row mb-5">
                         <div class="flex-grow-1">
-                            <h4><i class="fas fa-check"></i><?= $_experiencepos[$i]; ?></h4>
-                            <span><i class="fas fa-building"></i><?= $_experienceent[$i]; ?></span>
-                            <p class="mb-0"><i class="fas fa-list-check"></i><?= $_experiencedesc[$i]; ?></p>
+                            <h4><i class="fas fa-check"></i><?= $experience["pos"]; ?></h4>
+                            <span><i class="fas fa-building"></i><?= $experience["ent"]; ?></span>
+                            <p class="mb-0"><i class="fas fa-list-check"></i><?= $experience["desc"]; ?></p>
                         </div>
-                        <span class="ms-4 text-primary text-md-end"><i class="fas fa-clock"></i><?= $_experiencetime[$i]; ?></span>
+                        <span class="ms-4 text-primary text-md-end"><i class="fas fa-clock"></i><?= $experience["time"]; ?></span>
                     </li>
                 <?php } ?>
             </ul>
@@ -97,20 +91,28 @@ require_once $TO_HOME . "_routes.php";
         <section id="education">
             <h2 class="text-uppercase mb-5 pb-5"><?= $_education; ?></h2>
             <ul class="w-100">
-                <?php for ($i = 0; $i < count($_educationprog); $i++) { ?>
+                <?php foreach ($_educations as $education) { ?>
                     <li class="d-flex flex-column flex-md-row mb-5">
                         <div class="flex-grow-1">
-                            <h4><i class="fas fa-graduation-cap"></i><?= $_educationprog[$i]; ?></h4>
-                            <span><i class="fas fa-building"></i><?= $_educationinst[$i]; ?></span>
-                            <p class="mb-0"><i class="fas fa-list-check"></i><?= $_educationprof[$i]; ?></p>
+                            <h4><i class="fas fa-graduation-cap"></i><?= $education["prog"]; ?></h4>
+                            <span><i class="fas fa-building"></i><?= $education["inst"]; ?></span>
+                            <p class="mb-0"><i class="fas fa-list-check"></i><?= $education["prof"]; ?></p>
                         </div>
-                        <span class="ms-4 text-primary text-md-end"><i class="fas fa-clock"></i><?= $_educationyear[$i]; ?></span>
+                        <span class="ms-4 text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"]; ?></span>
                     </li>
                 <?php } ?>
             </ul>
         </section>
+        <section id="awards">
+            <h2 class="text-uppercase mb-5 pb-5"><?= $_portfolio; ?></h2>
+            <ul class="w-100">
+                <?php foreach ($_portfolios as $portfolio) { ?>
+                    <li><a href="javascript:;"><i class="fas fa-trophy"></i><?= $portfolio["title"]  . ", " . $portfolio["year"] . ". " . $portfolio["ent"]; ?></a></li>
+                <?php } ?>
+            </ul>
+        </section>
         <section id="contact">
-            <h2 class="mb-5 pb-5"><?= $_chead; ?></h2>
+            <h2 class="text-uppercase mb-5 pb-5"><?= $_contact; ?></h2>
             <ul class="row w-100 fs-5 mb-3">
                 <li class="col-12 col-md-6 text-end">
                     <a href="<?= $_linkedin; ?>" target="_blank">atrujillomateus</a>
@@ -121,11 +123,6 @@ require_once $TO_HOME . "_routes.php";
                     <a href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a>
                 </li>
             </ul>
-        </section>
-        <section id="interest">
-            <h2 class="mb-5 pb-5"><?= $_interest; ?></h2>
-            <div class="has-background-contain w-100 mb-4" style="background-image:url(<?= $HOME_PATH; ?>/img/profile.jpg);height:192px"></div>
-            <p><?= $_interesting; ?></p>
             <?= $_goto; ?>
         </section>
     </div>
