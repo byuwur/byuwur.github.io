@@ -22,20 +22,17 @@ require_once $TO_HOME . "_routes.php";
         <a class="sidebar-option" href="#skills">
             <i class="fas fa-screwdriver-wrench"></i><span><?= $_skills; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
-        <a class="sidebar-option" href="#awards">
-            <i class="fas fa-folder-tree"></i><span><?= $_portfolio; ?></span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
         <a class="sidebar-option" href="#experience">
             <i class="fas fa-briefcase"></i><span><?= $_experience; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
         <a class="sidebar-option" href="#education">
             <i class="fas fa-graduation-cap"></i><span><?= $_education; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
+        <a class="sidebar-option" href="#awards">
+            <i class="fas fa-folder-tree"></i><span><?= $_portfolio; ?></span><i class="fas fa-angle-right ms-auto"></i>
+        </a>
         <a class="sidebar-option" href="#contact">
             <i class="fas fa-envelope"></i><span><?= $_contact; ?></span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
-        <a class="sidebar-option" href="#interest">
-            <i class="fas fa-user"></i><span><?= $_interest; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
     </div>
     <div class="sidebar-content accordion-item flex-grow-0">
