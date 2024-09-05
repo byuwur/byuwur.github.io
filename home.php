@@ -52,11 +52,11 @@ require_once $TO_HOME . "_router.php";
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/fontawesome.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/tiny-slider.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/animate.min.css" />
+    <!--link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/animate.min.css" /-->
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/_common.css" />
     <script src="<?= $HOME_PATH; ?>/js/jquery.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/jquery-ui.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/bootstrap.min.js" defer></script> <!-- Keep the version from the first snippet if it's compatible -->
+    <script src="<?= $HOME_PATH; ?>/js/bootstrap.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/popper.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/tiny-slider.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/typeit.min.js" defer></script>
