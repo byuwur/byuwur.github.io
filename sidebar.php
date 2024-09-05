@@ -19,34 +19,14 @@ require_once $TO_HOME . "_routes.php";
         <a class="sidebar-option" href="#about">
             <i class="fas fa-house"></i><span><?= $_helloworld; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
-        <a class="sidebar-option" href="#skills">
-            <i class="fas fa-screwdriver-wrench"></i><span><?= $_skills; ?></span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
-        <a class="sidebar-option" href="#awards">
-            <i class="fas fa-folder-tree"></i><span><?= $_portfolio; ?></span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
-        <a class="sidebar-option" href="#experience">
-            <i class="fas fa-briefcase"></i><span><?= $_experience; ?></span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
-        <a class="sidebar-option" href="#education">
-            <i class="fas fa-graduation-cap"></i><span><?= $_education; ?></span><i class="fas fa-angle-right ms-auto"></i>
+        <a class="sidebar-option" href="#resume">
+            <i class="fas fa-file-contract"></i><span><?= $_resume; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
         <a class="sidebar-option" href="#contact">
-            <i class="fas fa-envelope"></i><span><?= $_contact; ?></span><i class="fas fa-angle-right ms-auto"></i>
-        </a>
-        <a class="sidebar-option" href="#interest">
-            <i class="fas fa-user"></i><span><?= $_interest; ?></span><i class="fas fa-angle-right ms-auto"></i>
+            <i class="fas fa-paper-plane"></i><span><?= $_contact; ?></span><i class="fas fa-angle-right ms-auto"></i>
         </a>
     </div>
     <div class="sidebar-content accordion-item flex-grow-0">
-        <div class="d-flex flex-row">
-            <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>resume.es">
-                <i class="fas fa-file-invoice"></i><img src="img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>HDV</span><i class="fas fa-download ms-auto"></i>
-            </a>
-            <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>resume.en">
-                <i class="fas fa-file-invoice"></i><img src="img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>CV</span><i class="fas fa-download ms-auto"></i>
-            </a>
-        </div>
         <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#lang-drop" aria-expanded="false" aria-controls="lang-drop">
             <i class="fas fa-earth-americas"></i><span><?= $_langs; ?>:</span>
         </button>

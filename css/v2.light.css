@@ -5,3 +5,14 @@ body {
 	background: var(--light-color);
 	color: var(--dark-color);
 }
+.form-control {
+	background: #0001;
+	color: #000 !important;
+}
+.form-control:focus {
+	background: #eee7;
+	border-color: #000;
+}
+.skill-row .badge {
+	background: #0001;
+}
