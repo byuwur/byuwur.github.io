@@ -121,30 +121,6 @@ require_once $TO_HOME . "_routes.php";
                     <a href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a>
                 </li>
             </ul>
-            <form id="mail_form" name="mail_form" class="row w-100" action="javascript:;">
-                <div class="col-12 col-md-6 p-2">
-                    <input type="text" id="mail_name" name="mail_name" class="form-control" placeholder="<?= $_name; ?>" required>
-                </div>
-                <div class="col-12 col-md-6 p-2">
-                    <input type="email" id="mail_email" name="mail_email" class="form-control" placeholder="<?= $_email; ?>" required>
-                </div>
-                <div class="col-12 col-md-6 p-2">
-                    <input type="tel" id="mail_phone" name="mail_phone" class="form-control" placeholder="<?= $_tphone; ?>">
-                </div>
-                <div class="col-12 col-md-6 p-2">
-                    <input type="text" id="mail_subject" name="mail_subject" class="form-control" placeholder="<?= $_subject; ?>" required>
-                </div>
-                <div class="col-12 p-2">
-                    <textarea id="mail_message" name="mail_message" rows="3" class="form-control" placeholder="<?= $_msg; ?>" required></textarea>
-                </div>
-                <div class="g-recaptcha col-12 col-md-6 p-2" id="mail_recaptcha" name="mail_recaptcha" data-sitekey="6LdBMSIaAAAAANG0gtgkpXUE0K5QS2nu0tJWC1Fm"></div>
-                <div class="col-12 col-md-6 p-2">
-                    <button type="submit" class="btn btn-primary p-2o5 pr-5">
-                        <i class="fas fa-paper-plane mr-2"></i><?= $_send; ?>
-                        <div class="spinner-border" role="status" style="display:none;"></div>
-                    </button>
-                </div>
-            </form>
         </section>
         <section id="interest">
             <h2 class="mb-5 pb-5"><?= $_interest; ?></h2>
@@ -162,17 +138,6 @@ require_once $TO_HOME . "_routes.php";
         byCommon.init();
         if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
-        element_make_http_request({
-            $elementId: "#mail_form",
-            $url: "<?= $HOME_PATH . $ROOT_ROUTE; ?>_contact.php",
-            $_post: [{
-                name: "mail_submit",
-                value: "1"
-            }],
-            doneFn: () => {
-                show_modal_front("success", "ATENCIÓN", "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!", true);
-            },
-        });
     });
 </script>
 <?php
