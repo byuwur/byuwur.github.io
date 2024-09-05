@@ -57,7 +57,7 @@ require_once $TO_HOME . "_routes.php";
             <div class="my-4"><?= $_codes; ?></div>
             <ul class="d-flex flex-row flex-wrap gap-2 fs-1 mb-4">
                 <?php foreach ($_codeskills as $codeskill) { ?>
-                    <li><i class="<?= $codeskill["icon"]; ?>" data-bs-toggle="tooltip" data-bs-title="<?= $codeskill["text"]; ?>"></i></li>
+                    <li><i class="<?= $codeskill["icon"]; ?>" data-bs-toggle="tooltip" data-bs-title="<?= $codeskill["text"] . " = " . $codeskill["level"]; ?>"></i></li>
                 <?php } ?>
             </ul>
             <div class="my-2">Software:</div>
