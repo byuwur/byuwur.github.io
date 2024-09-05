@@ -256,7 +256,7 @@ $_portfolios[] = [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/nginx-configurations"],
     ],
     "tech" => [
-        ["icon" => "fab fa-terminal", "text" => "Shell"]
+        ["icon" => "fas fa-terminal", "text" => "Shell"]
     ]
 ];
 
@@ -383,12 +383,6 @@ $_experiences[] = [
     "time" => "Octubre 2023"
 ];
 $_experiences[] = [
-    "pos" => "DESARROLLADOR DE SOFTWARE",
-    "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
-    "desc" => "Desempeño como desarrollador implementador y de soporte usando React, React Native, AWS & PHP.",
-    "time" => "Octubre 2023"
-];
-$_experiences[] = [
     "pos" => "ANALISTA DE DESARROLLO DE SOFTWARE",
     "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
     "desc" => "Desempeño como desarrollador implementador y de soporte usando herramientas a la medida del cliente.",
@@ -419,7 +413,7 @@ $_experiences[] = [
     "time" => "Noviembre 2019 - Diciembre 2020"
 ];
 $_experiences[] = [
-    "pos" => "DESARROLLO WEB & APLICACIÓN ANDROID: RESÉRVELAPP - APP DE RESERVAS",
+    "pos" => "DESARROLLO WEB & APLICACIÓN ANDROID: RESÉRVELAPP",
     "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
     "desc" => "Software para reservas.",
     "time" => "Julio 2018 - Diciembre 2019"

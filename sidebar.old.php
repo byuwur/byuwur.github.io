@@ -49,8 +49,8 @@ require_once $TO_HOME . "_routes.php";
         </button>
         <div id="lang-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#sidebar">
             <div class="d-flex flex-row">
-                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
-                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>v1/es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="sidebar-option" href="<?= $ROOT_ROUTE; ?>v1/en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
             </div>
             <!--a class="sidebar-option" href="javascript:;"><i class="fas fa-home"></i>Home<i class="fas fa-angle-right ms-auto"></i></a-->
         </div>

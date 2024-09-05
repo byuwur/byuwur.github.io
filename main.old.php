@@ -107,7 +107,7 @@ require_once $TO_HOME . "_routes.php";
             <h2 class="text-uppercase mb-5 pb-5"><?= $_portfolio; ?></h2>
             <ul class="w-100">
                 <?php foreach ($_portfolios as $portfolio) { ?>
-                    <li><a href="javascript:;"><i class="fas fa-trophy"></i><?= $portfolio["title"]  . ", " . $portfolio["year"] . ". " . $portfolio["ent"]; ?></a></li>
+                    <li><a href="<?= $ROOT_ROUTE; ?>"><i class="fas fa-trophy"></i><?= $portfolio["title"]  . ", " . $portfolio["year"] . ". " . $portfolio["ent"]; ?></a></li>
                 <?php } ?>
             </ul>
         </section>

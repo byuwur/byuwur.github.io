@@ -28,7 +28,7 @@ require_once $TO_HOME . "_routes.php";
             <span class="text-uppercase text-center fs-1 fw-bold">Soy <?= $_name_top; ?></span>
             <span class="text-uppercase"><?= $_nombre; ?></span>
         </div>
-        <span class="fs-3">Y hago cosas útiles</span>
+        <span class="fs-3"><?= $_andim; ?></span>
         <span class="fs-3 mb-5"><?= $_in; ?><span id="typed"></span></span>
         <div class="row project-slider w-100">
             <?php foreach ($_portfolios as $portfolio) { ?>
@@ -78,7 +78,7 @@ require_once $TO_HOME . "_routes.php";
         </div>
     </section>
     <section id="resume">
-        <h2 class="text-uppercase mb-5 pb-5"><?= "RESUME"; ?></h2>
+        <h2 class="text-uppercase mb-5 pb-5"><?= $_resume; ?></h2>
         <div class="row">
             <div class="skill-row row col-12">
                 <div class="col-6">
