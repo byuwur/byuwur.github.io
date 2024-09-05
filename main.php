@@ -29,7 +29,7 @@ require_once $TO_HOME . "_routes.php";
             <span class="text-uppercase"><?= $_nombre; ?></span>
         </div>
         <span class="fs-3">Y hago cosas útiles</span>
-        <span class="fs-3 mb-5">en <span id="typed"></span></span>
+        <span class="fs-3 mb-5"><?= $_in; ?><span id="typed"></span></span>
         <div class="row project-slider w-100">
             <?php foreach ($_portfolios as $portfolio) { ?>
                 <div class="col-md-6 col-xl-4 project has-background-cover p-4 text-dark-shadow text-white <?= $portfolio["class"] ?>" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
@@ -63,11 +63,11 @@ require_once $TO_HOME . "_routes.php";
             <p class="col"><?= $_about; ?></p>
         </div>
         <div class="d-flex flex-column flex-sm-row justify-content-center">
-            <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" title="Resume en Español">
-                <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Resume (ES)</span><i class="fas fa-download ms-auto"></i>
+            <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" title="Résumé en Español">
+                <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Résumé (ES)</span><i class="fas fa-download ms-auto"></i>
             </a>
-            <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" title="Resume in English">
-                <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Resume (EN)</span><i class="fas fa-download ms-auto"></i>
+            <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" title="Résumé in English">
+                <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Résumé (EN)</span><i class="fas fa-download ms-auto"></i>
             </a>
             <a class="a-lang" href="#resume">
                 <i class="fas fa-file-contract"></i><span><?= $_resume; ?></span><i class="fas fa-angle-right ms-auto"></i>

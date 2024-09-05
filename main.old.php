@@ -34,10 +34,10 @@ require_once $TO_HOME . "_routes.php";
             </div>
             <div class="mt-4 d-flex flex-column flex-sm-row">
                 <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" target="_blank">
-                    <i class="fas fa-file-invoice"></i><span>Resume en Español</span><i class="fas fa-download ms-auto"></i>
+                    <i class="fas fa-file-invoice"></i><span>Résumé en Español</span><i class="fas fa-download ms-auto"></i>
                 </a>
                 <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" target="_blank">
-                    <i class="fas fa-file-invoice"></i><span>Resume in English</span><i class="fas fa-download ms-auto"></i>
+                    <i class="fas fa-file-invoice"></i><span>Résumé in English</span><i class="fas fa-download ms-auto"></i>
                 </a>
 
             </div>

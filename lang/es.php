@@ -5,8 +5,9 @@
 # Page Top
 $_im = "Soy";
 $_andim = "Y hago cosas útiles";
+$_in = "en ";
 $_helloworld = "Hola, mundo";
-$_resume = "Resume";
+$_resume = "Résumé";
 $_contact = "Contáctame";
 $_skills = "Habilidades";
 $_portfolio = "Portafolio";
