@@ -67,7 +67,7 @@ a:hover {
 /* --- PROJECTS --- */
 .project {
 	height: 23rem;
-	box-shadow: inset 0 4rem 4rem #0007;
+	box-shadow: inset 0 4rem 2rem #000b;
 }
 .project .project-description {
 	display: flex;

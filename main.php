@@ -32,24 +32,26 @@ require_once $TO_HOME . "_routes.php";
         <span class="fs-3 mb-5"><?= $_in; ?><span id="typed"></span></span>
         <div class="row project-slider w-100">
             <?php foreach ($_portfolios as $portfolio) { ?>
-                <div class="col-md-6 col-xl-4 project has-background-cover p-4 text-dark-shadow text-white <?= $portfolio["class"] ?>" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
-                    <h3><?= $portfolio["title"]; ?></h3>
-                    <div class="project-description p-4">
-                        <div class="flex-grow-1 d-flex flex-column">
-                            <h3><?= $portfolio["title"]; ?></h3>
-                            <span class="fw-light"><?= $portfolio["ent"]; ?> (<?= $portfolio["year"]; ?>)</span>
-                            <span><?= $portfolio["desc"]; ?></span>
-                        </div>
-                        <div class="flex-grow-0">
-                            <div class="mt-3">
-                                <?php foreach ($portfolio["tech"] as $tech) { ?>
-                                    <span class="badge rounded-pill text-bg-dark"><i class="<?= $tech["icon"]; ?> ps-0"></i><?= $tech["text"]; ?></span>
-                                <?php } ?>
+                <div class="col-md-6 col-xl-4 p-1 text-dark-shadow text-white  <?= $portfolio["class"] ?>">
+                    <div class="project has-background-cover p-4" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
+                        <h3 class="project-title"><?= $portfolio["title"]; ?></h3>
+                        <div class="project-description p-4">
+                            <div class="flex-grow-1 d-flex flex-column">
+                                <h3><?= $portfolio["title"]; ?></h3>
+                                <span class="fw-light"><?= $portfolio["ent"]; ?> (<?= $portfolio["year"]; ?>)</span>
+                                <span><?= $portfolio["desc"]; ?></span>
                             </div>
-                            <div class="mt-3">
-                                <?php foreach ($portfolio["link"] as $link) { ?>
-                                    <a href="<?= $link["link"]; ?>" target="_blank"><i class="<?= $link["icon"]; ?>"></i><span><?= $link["text"]; ?></span></a>
-                                <?php } ?>
+                            <div class="flex-grow-0">
+                                <div class="mt-3">
+                                    <?php foreach ($portfolio["tech"] as $tech) { ?>
+                                        <span class="badge rounded-pill text-bg-dark"><i class="<?= $tech["icon"]; ?> ps-0"></i><?= $tech["text"]; ?></span>
+                                    <?php } ?>
+                                </div>
+                                <div class="mt-3">
+                                    <?php foreach ($portfolio["link"] as $link) { ?>
+                                        <a href="<?= $link["link"]; ?>" target="_blank"><i class="<?= $link["icon"]; ?>"></i><span><?= $link["text"]; ?></span></a>
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
                     </div>
