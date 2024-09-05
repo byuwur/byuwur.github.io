@@ -8,7 +8,7 @@ require_once $TO_HOME . "_routes.php";
 //require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
 // --- PHP ---
-require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
+require_once $TO_HOME . "v1.marco/lang." . $app_lang . ".php";
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v1.css" />
 <script src="<?= $HOME_PATH; ?>/js/v1.js" defer></script>
@@ -16,11 +16,11 @@ require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
 <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top p-3" id="sideNav">
     <a class="navbar-brand" href="#about">
         <span class="d-block d-md-none" style="color: #FFF;">
-            <img src="<?= $HOME_PATH; ?>/v1.marco/img/favicon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
+            <img src="<?= $HOME_PATH; ?>/img/v1/marco-favicon.png" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
             <?= $_name_topbar; ?>
         </span>
         <span class="d-none d-md-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?= $HOME_PATH; ?>/v1.marco/img/profile.jpg" alt="Marco" />
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?= $HOME_PATH; ?>/img/v1/marco.jpg" alt="Marco" />
         </span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -149,8 +149,8 @@ require_once $TO_HOME . "v1.marco/lang/" . $app_lang . ".php";
     $(() => {
         document.title = "Marco Cortés";
         byCommon.init();
-        if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/v1.marco/img/favicon.png");
-        if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/v1.marco/img/favicon.png");
+        if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/v1/marco-favicon.png");
+        if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/v1/marco-favicon.png");
     });
 </script>
 <?php
