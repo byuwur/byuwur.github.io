@@ -3,9 +3,9 @@ $(() => {
 	// Typing text
 	if ($("#typed").length)
 		new TypeIt("#typed", {
-			speed: 100,
+			speed: 99,
 			loop: true,
-			strings: ["Vegas Pro", "Premiere Pro", "Davinci Resolve", "Photoshop", "Lightroom", "LAMP full-stack", "Java for Android", "Git version control", "SQL databases", "Java", "Unity", "Blender", "After Effects", "Web development", "Mobile development"],
+			strings: ["PHP", "Javascript & Typescript", "Bootstrap & Tailwind", "React & React Native", "MySQL", "Git", "Java for Android", "Vegas Pro", "Adobe Premiere Pro", "Davinci Resolve", "Adobe Photoshop", "Adobe Lightroom"],
 			breakLines: false
 		});
 	// Section scroll on non-scrollable body
@@ -13,7 +13,6 @@ $(() => {
 		$(this)
 			.off("wheel")
 			.on("wheel", function (e) {
-				console.log("scroll");
 				const delta = e.originalEvent.deltaY;
 				const scrollSum = $(this).scrollTop() + $(this).innerHeight();
 				if (delta > 0) {
