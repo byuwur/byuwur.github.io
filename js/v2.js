@@ -9,6 +9,7 @@ $(() => {
 			breakLines: false
 		});
 	// Section scroll on non-scrollable body
+	/* 
 	$("section").each(function () {
 		$(this)
 			.off("wheel")
@@ -31,5 +32,6 @@ $(() => {
 						.animate({ scrollTop: prevSection.offset().top - 1 }, 999, "easeInOutExpo");
 				}
 			});
-	});
+	}); 
+	*/
 });

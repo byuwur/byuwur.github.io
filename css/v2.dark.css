@@ -1,8 +1,8 @@
 :root {
-	--primary-color: #f22;
+	--primary-color: #f34;
 }
 body {
-	background: #000;
+	background: var(--dark-color);
 	color: var(--light-color);
 }
 .form-control {

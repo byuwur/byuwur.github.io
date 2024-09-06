@@ -24,13 +24,12 @@ require_once $TO_HOME . "_routes.php";
         <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
     <section id="about">
-        <div class="mb-3">
-            <span class="text-uppercase text-center fs-1 fw-bold">Soy <?= $_name_top; ?></span>
+        <div class="mb-3 text-center">
+            <span class="text-uppercase text-center fs-1 fw-bold"><?= $_im . " " . $_name_top; ?></span>
             <span class="text-uppercase"><?= $_nombre; ?></span>
         </div>
-        <span class="fs-3"><?= $_andim; ?></span>
-        <span class="fs-3 mb-5"><?= $_in; ?><span id="typed"></span></span>
-        <div class="row project-slider w-100">
+        <span class="mb-5 text-center fs-5"><?= $_andim . " " . $_in; ?><br>✨<span id="typed"></span>✨</span>
+        <div class="row w-100">
             <?php foreach ($_portfolios as $portfolio) { ?>
                 <div class="col-md-6 col-xl-4 p-1 text-dark-shadow text-white  <?= $portfolio["class"] ?>">
                     <div class="project has-background-cover p-4" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
@@ -38,11 +37,11 @@ require_once $TO_HOME . "_routes.php";
                         <div class="project-description p-4">
                             <div class="flex-grow-1 d-flex flex-column">
                                 <h3><?= $portfolio["title"]; ?></h3>
-                                <span class="fw-light"><?= $portfolio["ent"]; ?> (<?= $portfolio["year"]; ?>)</span>
-                                <span><?= $portfolio["desc"]; ?></span>
+                                <small><?= $portfolio["ent"]; ?> (<?= $portfolio["year"]; ?>)</small>
+                                <small class="fw-light"><?= $portfolio["desc"]; ?></small>
                             </div>
                             <div class="flex-grow-0">
-                                <div class="mt-3">
+                                <div class="mt-2">
                                     <?php foreach ($portfolio["tech"] as $tech) { ?>
                                         <span class="badge rounded-pill text-bg-dark"><i class="<?= $tech["icon"]; ?> ps-0"></i><?= $tech["text"]; ?></span>
                                     <?php } ?>
@@ -64,24 +63,18 @@ require_once $TO_HOME . "_routes.php";
             </div>
             <p class="col"><?= $_about; ?></p>
         </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-center">
+        <div class="d-flex flex-column flex-md-row justify-content-center">
             <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" title="Résumé en Español">
                 <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Résumé (ES)</span><i class="fas fa-download ms-auto"></i>
             </a>
             <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" title="Résumé in English">
                 <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Résumé (EN)</span><i class="fas fa-download ms-auto"></i>
             </a>
-            <a class="a-lang" href="#resume">
-                <i class="fas fa-file-contract"></i><span><?= $_resume; ?></span><i class="fas fa-angle-right ms-auto"></i>
-            </a>
-            <a class="a-lang" href="#contact">
-                <i class="fas fa-paper-plane"></i><span><?= $_contact; ?></span><i class="fas fa-angle-right ms-auto"></i>
-            </a>
         </div>
     </section>
     <section id="resume">
         <h2 class="text-uppercase mb-5 pb-5"><?= $_resume; ?></h2>
-        <div class="row">
+        <div class="row w-100">
             <div class="skill-row row col-12">
                 <div class="col-6">
                     <h4 class="text-uppercase"><i class="fas fa-code"></i><?= $_codes; ?></h4>
@@ -149,7 +142,7 @@ require_once $TO_HOME . "_routes.php";
         </div>
     </section>
     <section id="contact">
-        <h2 class="text-uppercase mb-5"><?= $_contact; ?></h2>
+        <h2 class="text-uppercase"><?= $_contact; ?></h2>
         <span class="mb-5 pb-5"><?= $_contactsub; ?></span>
         <ul class="row w-100 fs-5 mb-4">
             <li class="col-12 col-md-6 text-end">
@@ -186,7 +179,7 @@ require_once $TO_HOME . "_routes.php";
             </div>
         </form>
         <div class="row w-100">
-            <h5 class="mt-5 pt-5">Digital Business Cards. :]</h5>
+            <h5 class="mt-4 pt-4">Digital Business Cards. :]</h5>
             <div class="col-md-5 col-lg-6">
                 <iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="128px" frameborder="0"></iframe>
             </div>

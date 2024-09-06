@@ -55,7 +55,7 @@ $_portfolios[] = [
 $_portfolios[] = [
     "title" => "STREAM.HTML",
     "ent" => "byUwUr",
-    "desc" => "HTML resources for your stream overlays.",
+    "desc" => "HTML resources for your streaming overlays.",
     "year" => "2024",
     "image" => "/img/work-stream.jpg",
     "class" => "web",
@@ -171,7 +171,6 @@ $_portfolios[] = [
     ],
     "tech" => [
         ["icon" => "fab fa-python", "text" => "Python"],
-        ["icon" => "fab fa-windows", "text" => "Windows"],
         ["icon" => "fas fa-eye", "text" => "OpenCV"],
         ["icon" => "fas fa-robot", "text" => "Arduino"],
     ]
