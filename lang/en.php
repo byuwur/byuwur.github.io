@@ -284,6 +284,18 @@ $_codeskills[] = [
     "progress" => "77%"
 ];
 $_codeskills[] = [
+    "icon" => "fab fa-js",
+    "text" => "JavaScript & TypeScript",
+    "level" => "Advanced",
+    "progress" => "77%"
+];
+$_codeskills[] = [
+    "icon" => "fab fa-github",
+    "text" => "Git",
+    "level" => "Intermediate",
+    "progress" => "66%"
+];
+$_codeskills[] = [
     "icon" => "fab fa-react",
     "text" => "React",
     "level" => "Intermediate",
@@ -296,12 +308,6 @@ $_codeskills[] = [
     "progress" => "66%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-github",
-    "text" => "Git",
-    "level" => "Intermediate",
-    "progress" => "66%"
-];
-$_codeskills[] = [
     "icon" => "fab fa-html5",
     "text" => "HTML",
     "level" => "Advanced",
@@ -310,12 +316,6 @@ $_codeskills[] = [
 $_codeskills[] = [
     "icon" => "fab fa-css3-alt",
     "text" => "CSS",
-    "level" => "Advanced",
-    "progress" => "77%"
-];
-$_codeskills[] = [
-    "icon" => "fab fa-js",
-    "text" => "JavaScript & TypeScript",
     "level" => "Advanced",
     "progress" => "77%"
 ];

@@ -10,7 +10,7 @@ require_once $TO_HOME . "_routes.php";
 // --- PHP ---
 ?>
 <nav id="sidebar" class="sidebar accordion bywr-accordion bg-dark-transparent bg-blurred text-white">
-    <div class="overlay"></div>
+    <div class="overlay" style="opacity:0.2;"></div>
     <div class="sidebar-content accordion-item flex-grow-1">
         <div class="sidebar-option p-2o5">
             <div class="navbar-brand has-background-contain" style="height:48px;width:48px;background-image:url('<?= $HOME_PATH; ?>/img/logo.png');"></div>
