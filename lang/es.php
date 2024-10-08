@@ -130,7 +130,7 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-dropzone-php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_dropzone.php"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_dropzone.php/index.php"]
     ],
     "tech" => [
         ["icon" => "fab fa-php", "text" => "PHP"],
