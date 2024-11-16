@@ -1,7 +1,7 @@
-[submodule "stream.html"]
+[submodule "_stream.html"]
 	path = _stream.html
 	url = https://github.com/byuwur/stream.html.git
-[submodule "easy-spa-php"]
+[submodule "_spa.php"]
 	path = _spa.php
 	url = https://github.com/byuwur/easy-spa-php.git
 [submodule "_dropzone.php"]

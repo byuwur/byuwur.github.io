@@ -61,7 +61,8 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_stream.html/main.html"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_stream.html/main.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Popup Demo", "link" => "https://byuwur.net/_stream.html/popup.html"]
     ],
     "tech" => [
         ["icon" => "fab fa-js", "text" => "JS"],
@@ -130,7 +131,7 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-dropzone-php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_dropzone.php/index.php"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_dropzone.php/index.php?id=1"]
     ],
     "tech" => [
         ["icon" => "fab fa-php", "text" => "PHP"],
