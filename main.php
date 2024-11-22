@@ -154,7 +154,7 @@ require_once $TO_HOME . "_routes.php";
                 <a href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a>
             </li>
         </ul>
-        <form id="mail_form" name="mail_form" class="row w-100" action="javascript:;">
+        <!--form id="mail_form" name="mail_form" class="row w-100" action="javascript:;">
             <div class="col-12 col-md-6 position-relative"><i class="fas fa-user input-icon"></i>
                 <input type="text" id="mail_name" name="mail_name" class="form-control input-has-icon" placeholder="<?= $_name; ?>" required>
             </div>
@@ -177,7 +177,7 @@ require_once $TO_HOME . "_routes.php";
                     <div class="spinner-border" role="status" style="display:none;"></div>
                 </button>
             </div>
-        </form>
+        </!--form-->
         <div class="row w-100">
             <h5 class="mt-4 pt-4">Digital Business Cards. :]</h5>
             <div class="col-md-5 col-lg-6">
@@ -197,6 +197,7 @@ require_once $TO_HOME . "_routes.php";
         byCommon.init();
         if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
+        /*
         element_make_http_request({
             $elementId: "#mail_form",
             $url: "<?= $HOME_PATH . $ROOT_ROUTE; ?>_contact.php",
@@ -211,6 +212,7 @@ require_once $TO_HOME . "_routes.php";
                 show_modal_front("danger", "ERROR", "<?= $_mail_wrong; ?>", true);
             }
         });
+        */
     });
 </script>
 <?php

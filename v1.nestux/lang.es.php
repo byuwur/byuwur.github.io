@@ -10,7 +10,7 @@ $_awards = "Proyectos & Certificados";
 $_interest = "Intereses";
 $_experience = "Experiencia";
 $_contact = "Contacto";
-$_goto = "<a class='a-lang' href='../mnm.team/' target='_self'>Ver más en <img src='img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
+$_goto = "<a class='a-lang' href='/mnm.team'>Ver más en <img src='img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
 $_name_topbar = "Nestux <small>[Portela]</small>";
 $_name_top = "Nestux <font size='5'><span class='text-primary'>[Portela]</span></font>";
 $_nombre = "Néstor Alfonso Portela Rincón";
