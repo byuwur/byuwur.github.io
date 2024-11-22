@@ -18,7 +18,7 @@ $_name_top = "[Mateus] <span class='text-primary'>byUwUr</span>";
 $_nombre = "Andrés Trujillo Mateus";
 $_new = "cargar HTML no tan básico";
 $_load = "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/v1' style='color:#0ae;'>Ir a la vista básica</a>";
-$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/js/cookies.php' custom-folder='true'>cookie policy</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.net' target='_blank'>[Mateus] byUwUr</a>";
+$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/v1'>cargar HTML básico</a> | <a href='/js/cookies.php' target='_blank'>cookie policy</a> | <a href='/mnm.team'>MNM.team</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.net' target='_blank'>[Mateus] byUwUr</a>";
 $_back = "Volver";
 $_ok = "Entendido";
 $_close = "Cerrar";

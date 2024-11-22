@@ -43,11 +43,11 @@ require_once $TO_HOME . "_routes.php";
             </div>
             <div class="row mt-4">
                 <div class="col-12 col-md-5">
-                    <h6>Digital Business Card v2</h6>
+                    <h6>Digital Business Card v2 :]</h6>
                     <iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="128px" frameborder="0"></iframe>
                 </div>
                 <div class="col-12 col-md-7">
-                    <h6>Digital Business Card v1</h6>
+                    <h6>Digital Business Card v1 :)</h6>
                     <iframe src="<?= $HOME_PATH; ?>/card.v1.html" title="Digital Business Card v1" width="100%" height="128px" frameborder="0"></iframe>
                 </div>
             </div>

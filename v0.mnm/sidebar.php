@@ -16,14 +16,14 @@ require_once $TO_HOME . "v0.mnm/common.head.php";
     <aside id="mnm-aside" role="complementary">
         <h1 id="mnm-logo">
             <img src="<?= $HOME_PATH; ?>/img/v0/logo.jpg" width="175px" height="175px" style="border: 5px solid #222; border-radius: 10px;" alt="MNM logo" /><br>
-            <small><?= $_language; ?></small><a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ES</a>|<a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> EN</a><br></small>
+            <small><a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>es" class="a-lang p-1" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ES</a>|<a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>en" class="a-lang p-1" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> EN</a><br></small>
         </h1>
         <nav id="mnm-main-menu" role="navigation">
             <ul>
                 <li id="li_about"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>"> <?= $_aboutus; ?> </a></li>
-                <li id="li_work"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>work"> <?= $_projects; ?> </a></li>
-                <li id="li_services"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>services"> <?= $_services; ?> </a></li>
-                <li id="li_contact"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE; ?>contact"> <?= $_contactus; ?> </a></li>
+                <li id="li_work"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE . $_project; ?>"> <?= $_projects; ?> </a></li>
+                <li id="li_services"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE . $_service; ?>"> <?= $_services; ?> </a></li>
+                <li id="li_contact"><a href="<?= $ROOT_ROUTE . $MNM_ROUTE . $_contact; ?>"> <?= $_contactus; ?> </a></li>
             </ul>
         </nav>
         <div class="mnm-footer">
