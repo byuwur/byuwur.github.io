@@ -60,9 +60,10 @@ $_portfolios[] = [
     "image" => "/img/work-stream.jpg",
     "class" => "web",
     "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_stream.html/main.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Popup Demo", "link" => "https://byuwur.net/_stream.html/popup.html"]
+        ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.net/_stream.html/popup.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Controller", "link" => "https://byuwur.net/_stream.html/controller.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Main Scene", "link" => "https://byuwur.net/_stream.html/main.html"],
+        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"]
     ],
     "tech" => [
         ["icon" => "fab fa-js", "text" => "JS"],
