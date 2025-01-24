@@ -193,7 +193,7 @@ require_once $TO_HOME . "_routes.php";
 <script>
     "use strict";
     $(() => {
-        document.title = "[Mateus] byUwUr";
+        document.title = "[Mateus] byUwUr — <?= $_andim; ?>";
         byCommon.init();
         if ($("#page-icon").length) $("#page-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");
         if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= $HOME_PATH; ?>/img/favicon.png");

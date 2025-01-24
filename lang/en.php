@@ -4,7 +4,7 @@
 
 # Page Top
 $_im = "I'm";
-$_andim = "I do useful things";
+$_andim = "I create useful things";
 $_in = "in ";
 $_helloworld = "Hello, world";
 $_resume = "Résumé";
