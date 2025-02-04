@@ -6,4 +6,4 @@
 	url = https://github.com/byuwur/easy-spa-php.git
 [submodule "_dropzone.php"]
 	path = _dropzone.php
-	url = https://github.com/byuwur/easy-dropzone-php
+	url = https://github.com/byuwur/easy-dropzone-php.git
