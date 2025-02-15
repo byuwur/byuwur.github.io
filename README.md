@@ -13,7 +13,7 @@ Where the magic happens.
 
 ## Where is it?
 
-[byuwur.github.io](https://byuwur.github.io) or [byuwur.net](https://byuwur.net).
+[byuwur.github.io](https://byuwur.github.io) or [byuwur.co](https://byuwur.co).
 
 ## License
 

@@ -41,7 +41,7 @@ $_POST["cta_txt"] = "";
 require_once $TO_HOME . "mail/mail.common.php";
 
 $sg_email = new \SendGrid\Mail\Mail();
-$sg_email->setFrom("mateus@byuwur.net", "[Mateus] byUwUr");
+$sg_email->setFrom("mateus@byuwur.co", "Andrés Trujillo [Mateus] byUwUr");
 $sg_email->addTos([
     "atrujillomateus@gmail.com" => "Mateus"
 ]);

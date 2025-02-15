@@ -18,7 +18,7 @@ $_name_top = "[Mateus] <span class='text-primary'>byUwUr</span>";
 $_nombre = "Andrés Trujillo Mateus";
 $_new = "cargar HTML no tan básico";
 $_load = "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/v1' style='color:#0ae;'>Ir a la vista básica</a>";
-$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/v1'>cargar HTML básico</a> | <a href='/js/cookies.php' target='_blank'>cookie policy</a> | <a href='/mnm.team'>MNM.team</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.net' target='_blank'>[Mateus] byUwUr</a>";
+$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/v1'>cargar HTML básico</a> | <a href='/js/cookies.php' target='_blank'>cookie policy</a> | <a href='/mnm.team'>MNM.team</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>";
 $_back = "Volver";
 $_ok = "Entendido";
 $_close = "Cerrar";
@@ -43,7 +43,7 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-spa-php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_spa.php/"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/_spa.php/"]
     ],
     "tech" => [
         ["icon" => "fab fa-php", "text" => "PHP"],
@@ -60,9 +60,9 @@ $_portfolios[] = [
     "image" => "/img/work-stream.jpg",
     "class" => "web",
     "link" => [
-        ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.net/_stream.html/popup.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Controller", "link" => "https://byuwur.net/_stream.html/controller.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Main Scene", "link" => "https://byuwur.net/_stream.html/main.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.co/_stream.html/popup.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Controller", "link" => "https://byuwur.co/_stream.html/controller.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Main Scene", "link" => "https://byuwur.co/_stream.html/main.html"],
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"]
     ],
     "tech" => [
@@ -80,7 +80,7 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-server-http-error-page"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/error"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/error"]
     ],
     "tech" => [
         ["icon" => "fab fa-php", "text" => "PHP"],
@@ -132,7 +132,7 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-dropzone-php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.net/_dropzone.php/index.php?id=1"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/_dropzone.php/index.php?id=1"]
     ],
     "tech" => [
         ["icon" => "fab fa-php", "text" => "PHP"],
@@ -427,7 +427,7 @@ $_experiences[] = [
 ];
 $_experiences[] = [
     "pos" => "DESARROLLO WEB: MNM.TEAM - LANDING PAGE PORTFOLIO",
-    "ent" => "<a href='https://byuwur.net/mnm.team' target='_blank'>MNM.team</a>",
+    "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
     "desc" => "Portafolio en página web.",
     "time" => "Julio 2018 - Diciembre 2018"
 ];

@@ -39,7 +39,7 @@ $title_index = $_GET["title"] ?? 0;
 
 $titles = [];
 
-$MATEUS_LINK = "https://byuwur.net";
+$MATEUS_LINK = "https://byuwur.co";
 
 $DNI_TYPES = [
     1 => "Número único de identificación personal (NUIP)",

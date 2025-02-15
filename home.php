@@ -34,8 +34,8 @@ require_once $TO_HOME . "_router.php";
     <title>[Mateus] byUwUr — <?= $_andim; ?></title>
     <meta property="og:title" content="[Mateus] byUwUr — <?= $_andim; ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://byuwur.net/img/logo.png" />
-    <meta property="og:url" content="https://byuwur.net" />
+    <meta property="og:image" content="https://byuwur.co/img/logo.png" />
+    <meta property="og:url" content="https://byuwur.co" />
     <meta property="og:site_name" content="[Mateus] byUwUr — <?= $_andim; ?>" />
     <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
