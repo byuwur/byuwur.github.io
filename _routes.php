@@ -28,9 +28,9 @@ $routes = [
     $ROOT_ROUTE . "v1/es" => ["URI" => "/main.old.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS],
     $ROOT_ROUTE . "v1/en" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],
     // files
-    $ROOT_ROUTE . "resume" => ["FILE" => "resume.es.pdf"],
-    $ROOT_ROUTE . "resume.es" => ["FILE" => "resume.es.pdf"],
-    $ROOT_ROUTE . "resume.en" => ["FILE" => "resume.en.pdf"],
+    $ROOT_ROUTE . "resume" => ["FILE" => "Mateus.es.pdf"],
+    $ROOT_ROUTE . "resume.es" => ["FILE" => "Mateus.es.pdf"],
+    $ROOT_ROUTE . "resume.en" => ["FILE" => "Mateus.en.pdf"],
     // "v1"
     $ROOT_ROUTE . "nestux" => ["URI" => "/v1.nestux/home.php", ...$V1_COMPONENTS_EMPTY],
     $ROOT_ROUTE . "nestux/es" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS_EMPTY],
