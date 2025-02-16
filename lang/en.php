@@ -28,7 +28,7 @@ $_light = "Light";
 $_dark = "Dark";
 
 # About
-$_about = "Developer by profession, Editor by passion.<br>Full-stack web developer in XAMP (Apache, MySQL, PHP), React & React Native, native and hybrid Java programmer for Android, and SQL database designer, plus a bit of AWS & Python. Professionally at work since 2018. Video and photo editor, Content creator since 2014.<br>Fluent English as my second language and Spanish as my native language.<br>Always willing to learn. I am for anything you need.";
+$_about = "Full-stack web developer in XAMP (Apache, MySQL, PHP), React & React Native, native and hybrid Java programmer for Android, and SQL database designer, plus a bit of AWS & Python.<br>Fluent in English and Spanish. Professionally at work since 2018. Video and photo editor since 2014.<br>Always willing to learn. I am here for anything you need.";
 $_linkedin = "https://linkedin.com/in/atrujillomateus";
 $_github = "https://github.com/byuwur";
 $_youtube = "https://youtube.com/byuwur";
@@ -72,18 +72,17 @@ $_portfolios[] = [
     ]
 ];
 $_portfolios[] = [
-    "title" => "Easy HTTP error page",
+    "title" => "Easy Sidebar Bootstrap",
     "ent" => "byUwUr",
-    "desc" => "HTTP error code page for your Apache or nginx server.",
-    "year" => "2021",
-    "image" => "/img/work-error.jpg",
+    "desc" => "Easily integrable Sidebar component.",
+    "year" => "2024",
+    "image" => "/img/work-sidebar.jpg",
     "class" => "web",
     "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-server-http-error-page"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/error"]
+        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-sidebar-bootstrap"],
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://codepen.io/byuwur/pen/VwJdWYL"]
     ],
     "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
         ["icon" => "fab fa-js", "text" => "JS"],
         ["icon" => "fab fa-css3", "text" => "CSS"],
         ["icon" => "fab fa-html5", "text" => "HTML"]
@@ -107,17 +106,18 @@ $_portfolios[] = [
     ]
 ];
 $_portfolios[] = [
-    "title" => "Easy Sidebar Bootstrap",
+    "title" => "Easy HTTP error page",
     "ent" => "byUwUr",
-    "desc" => "Easily integrable Sidebar component.",
-    "year" => "2024",
-    "image" => "/img/work-sidebar.jpg",
+    "desc" => "HTTP error code page for your Apache or nginx server.",
+    "year" => "2021",
+    "image" => "/img/work-error.jpg",
     "class" => "web",
     "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-sidebar-bootstrap"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://codepen.io/byuwur/pen/VwJdWYL"]
+        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-server-http-error-page"],
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/error"]
     ],
     "tech" => [
+        ["icon" => "fab fa-php", "text" => "PHP"],
         ["icon" => "fab fa-js", "text" => "JS"],
         ["icon" => "fab fa-css3", "text" => "CSS"],
         ["icon" => "fab fa-html5", "text" => "HTML"]
