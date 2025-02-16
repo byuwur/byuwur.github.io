@@ -37,11 +37,11 @@ require_once $TO_HOME . "_router.php";
     <meta property="og:image" content="https://byuwur.co/img/logo.png" />
     <meta property="og:url" content="https://byuwur.co" />
     <meta property="og:site_name" content="[Mateus] byUwUr — <?= $_andim; ?>" />
-    <meta property="og:description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
+    <meta property="og:description" content="Desarrollador de software | Editor de Vídeo" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Language" content="en,es" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Programador | Desarrollador de software | Editor de Vídeo | Creador de Contenido Digital" />
+    <meta name="description" content="Desarrollador de software | Editor de Vídeo" />
     <meta name="author" content="Andrés Trujillo Mateus" />
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="[Mateus] byUwUr" />

@@ -144,16 +144,22 @@ require_once $TO_HOME . "_routes.php";
     <section id="contact">
         <h2 class="text-uppercase"><?= $_contact; ?></h2>
         <span class="mb-5 pb-5"><?= $_contactsub; ?></span>
-        <ul class="row w-100 fs-5 mb-4">
-            <li class="col-12 col-md-6 text-end">
+        <div class="row w-100">
+            <div class="col-12 col-md-4 mb-3 ">
+                <h5 class="col-12">Business Card! :]</h5>
+                <iframe class="col-12" src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="128px" frameborder="0"></iframe>
+            </div>
+            <div class="col-12 col-md-4 mb-3 text-md-end">
+                <i class="fab fa-linkedin d-md-none"></i>
                 <a href="<?= $_linkedin; ?>" target="_blank">atrujillomateus</a>
-                <i class="fab fa-linkedin"></i>
-            </li>
-            <li class="col-12 col-md-6 text-start">
+                <i class="fab fa-linkedin d-none d-md-inline-block"></i>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
                 <i class="fas fa-envelope"></i>
                 <a href="mailto:<?= $_mail; ?>" target="_blank"><?= $_mail; ?></a>
-            </li>
-        </ul>
+            </div>
+            <div id="twitch" class="col-12"></div>
+        </div>
         <!--form id="mail_form" name="mail_form" class="row w-100" action="javascript:;">
             <div class="col-12 col-md-6 position-relative"><i class="fas fa-user input-icon"></i>
                 <input type="text" id="mail_name" name="mail_name" class="form-control input-has-icon" placeholder="<?= $_name; ?>" required>
@@ -178,15 +184,6 @@ require_once $TO_HOME . "_routes.php";
                 </button>
             </div>
         </!--form-->
-        <div class="row w-100">
-            <h5 class="mt-4 pt-4">Digital Business Cards. :]</h5>
-            <div class="col-md-5 col-lg-6">
-                <iframe src="<?= $HOME_PATH; ?>/card.v2.html" title="Digital Business Card v2" width="100%" height="128px" frameborder="0"></iframe>
-            </div>
-            <div class="col-md-7 col-lg-6">
-                <iframe src="<?= $HOME_PATH; ?>/card.v1.html" title="Digital Business Card v1" width="100%" height="128px" frameborder="0"></iframe>
-            </div>
-        </div>
     </section>
 </div>
 <!-- BODY -->
@@ -213,6 +210,22 @@ require_once $TO_HOME . "_routes.php";
             }
         });
         */
+        const twitchEmbedScript = document.createElement("script"),
+            twitchEmbedOnLoad = () => {
+                new Twitch.Embed("twitch", {
+                    width: "100%",
+                    height: 480,
+                    channel: "byuwur",
+                    allowfullscreen: false,
+                    autoplay: true,
+                    muted: true,
+                    theme: "dark",
+                    parent: ["byuwur.co"]
+                });
+            };
+        twitchEmbedScript.src = "https://embed.twitch.tv/embed/v1.js";
+        twitchEmbedScript.onload = twitchEmbedOnLoad;
+        document.head.appendChild(twitchEmbedScript);
     });
 </script>
 <?php
