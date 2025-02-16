@@ -5,7 +5,7 @@ $(() => {
 		new TypeIt("#typed", {
 			speed: 99,
 			loop: true,
-			strings: ["PHP", "Javascript & Typescript", "Bootstrap & Tailwind", "React & React Native", "MySQL", "Git", "Java for Android", "Vegas Pro", "Adobe Premiere Pro", "Davinci Resolve", "Adobe Photoshop", "Adobe Lightroom"],
+			strings: ["PHP", "Javascript & Typescript", "Bootstrap & Tailwind", "React & React Native", "MySQL", "Git", "CI/CD", "Java", "Vegas Pro", "Adobe Premiere Pro", "Adobe Photoshop & Lightroom", "Davinci Resolve"],
 			breakLines: false
 		});
 	// Section scroll on non-scrollable body

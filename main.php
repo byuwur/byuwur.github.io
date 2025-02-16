@@ -31,7 +31,7 @@ require_once $TO_HOME . "_routes.php";
         <span class="mb-5 text-center fs-5"><?= $_andim . " " . $_in; ?><br>✨<span id="typed"></span>✨</span>
         <div class="row w-100">
             <?php foreach ($_portfolios as $portfolio) { ?>
-                <div class="col-md-6 col-xl-4 p-1 text-dark-shadow text-white  <?= $portfolio["class"] ?>">
+                <div class="col-md-6 col-xl-4 p-0 text-dark-shadow text-white  <?= $portfolio["class"] ?>">
                     <div class="project has-background-cover p-4" style="background-image: url(<?= $HOME_PATH . $portfolio["image"]; ?>);">
                         <h3 class="project-title"><?= $portfolio["title"]; ?></h3>
                         <div class="project-description p-4">
