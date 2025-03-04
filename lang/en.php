@@ -42,7 +42,7 @@ $_portfolios[] = [
     "image" => "/img/work-spa.jpg",
     "class" => "web",
     "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-spa-php"],
+        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/spa.php"],
         ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/_spa.php/"]
     ],
     "tech" => [

@@ -70,7 +70,7 @@ require_once $TO_HOME . "_router.php";
 </head>
 
 <body>
-    <!-- byuwur/easy-spa-php | Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr -->
+    <!-- byuwur/spa.php | Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr -->
     <div id="spa-loader">
         <div class="load-circle-back"></div>
         <div class="load-circle-fore"></div>
