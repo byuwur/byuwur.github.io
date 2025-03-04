@@ -59,7 +59,7 @@ require_once $TO_HOME . "_router.php";
     <script src="<?= $HOME_PATH; ?>/js/popper.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/tiny-slider.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/bootstrap.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/typeit.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/js/typed.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/particles.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/js/cookies.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/_functions.js" defer></script>
