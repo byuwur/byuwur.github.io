@@ -14,15 +14,15 @@ require_once "./_var.php";
 // Include common functions and initializations
 require_once $TO_HOME . "_common.php";
 // Include utility functions
-require_once $TO_HOME . "_functions.php";
+require_once $TO_HOME . "spa.php/_functions.php";
 // Include composer libraries
-require_once $TO_HOME . "_plugins.php";
+require_once $TO_HOME . "spa.php/_plugins.php";
 // Include database connections
 //require_once $TO_HOME . "_config.php";
 // Load the routes configuration
 require_once $TO_HOME . "_routes.php";
 // Route the request based on the URI
-require_once $TO_HOME . "_router.php";
+require_once $TO_HOME . "spa.php/_router.php";
 // Include auth management
 //require_once $TO_HOME . "_auth.php";
 
@@ -45,28 +45,26 @@ require_once $TO_HOME . "_router.php";
     <meta name="author" content="Andrés Trujillo Mateus" />
     <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
     <meta name="copyright" content="[Mateus] byUwUr" />
-    <meta name="theme-color" content="#222" /> <!-- Kept from the first snippet; adjust if needed -->
+    <meta name="theme-color" content="#222" />
     <link id="shortcut-icon" rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
     <link id="page-icon" rel="icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
     <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>/img/favicon.png" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/tiny-slider.min.css" />
-    <!--link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/animate.min.css" /-->
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/animate.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/_common.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/_common.css" />
-    <script src="<?= $HOME_PATH; ?>/js/jquery.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/jquery-ui.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/popper.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/tiny-slider.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/bootstrap.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/typed.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/particles.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/js/cookies.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/_functions.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/_common.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/_spa.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/jquery.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/jquery-ui.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/popper.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/bootstrap.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/typed.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/particles.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/cookies.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/_functions.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/_common.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/_spa.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" defer></script>
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-148227598-1" defer></script>
 </head>
 
 <body>
@@ -123,7 +121,7 @@ require_once $TO_HOME . "_router.php";
         </div>
     </div>
     <div id="particles"></div>
-    <div class="side-video" style="animation: float 5s infinite;"></div>
+    <div class="side-video"></div>
     <main id="spa-content"></main>
 </body>
 

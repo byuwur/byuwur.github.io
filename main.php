@@ -10,12 +10,8 @@ require_once $TO_HOME . "_routes.php";
 // --- PHP ---
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.css" />
-<link id="themesheet" rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.<?= $app_theme; ?>.css" />
 <script src="<?= $HOME_PATH; ?>/js/v2.js" defer></script>
-<script>
-    localStorage.setItem("APP_LANG", "<?= $app_lang; ?>");
-    localStorage.setItem("APP_THEME", "<?= $app_theme; ?>");
-</script>
+<link id="themesheet" rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.<?= $app_theme; ?>.css" />
 <!-- BODY -->
 <div class="app-container">
     <div class="social-icons">

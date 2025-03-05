@@ -52,4 +52,5 @@ $routes = [
     $ROOT_ROUTE . $MNM_ROUTE . "limontech" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "2"], ...$V0_COMPONENTS],
     $ROOT_ROUTE . $MNM_ROUTE . "renn" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "1"], ...$V0_COMPONENTS],
     $ROOT_ROUTE . $MNM_ROUTE . "redi" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "0"], ...$V0_COMPONENTS],
+    $ROOT_ROUTE . $MNM_ROUTE . "cookies" => ["URI" => "/v0.mnm/cookies.php", "GET" => ["work" => "0"]],
 ];

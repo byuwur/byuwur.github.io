@@ -6,6 +6,4 @@
  * Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr
  */
 
-require_once $TO_HOME . "vendor/autoload.php";
-$dotenv = Dotenv\Dotenv::createImmutable($TO_HOME);
-$dotenv->load();
+require_once $TO_HOME . "spa.php/_plugins.php";

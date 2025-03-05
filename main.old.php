@@ -11,10 +11,6 @@ require_once $TO_HOME . "_routes.php";
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v1.css" />
 <script src="<?= $HOME_PATH; ?>/js/v1.js" defer></script>
-<script>
-    localStorage.setItem("APP_LANG", "<?= $app_lang; ?>");
-    localStorage.setItem("APP_THEME", "<?= $app_theme; ?>");
-</script>
 <!-- BODY -->
 <div class="app-container">
     <div class="container">

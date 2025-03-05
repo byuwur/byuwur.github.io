@@ -18,7 +18,7 @@ $_name_top = "[Mateus] <span class='text-primary'>byUwUr</span>";
 $_nombre = "Andrés Trujillo Mateus";
 $_new = "load not so basic HTML";
 $_load = "<b>Loading standard view...</b><br>Still loading? <a href='/v1' style='color:#0ae;'>Go to basic view</a>";
-$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/v1'>load basic HTML</a> | <a href='/js/cookies.php' target='_blank'>cookie policy</a> | <a href='/mnm.team'>MNM.team</a><br>Made with<i class='fas fa-heart'></i>by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>";
+$_footer = "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/v1'>load basic HTML</a> | <a href='/mnm.team/cookies'>cookie policy</a> | <a href='/mnm.team'>MNM.team</a><br>Made with<i class='fas fa-heart'></i>by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>";
 $_back = "Go back";
 $_ok = "Understood";
 $_close = "Close";
@@ -43,7 +43,7 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/spa.php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/_spa.php/"]
+        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/spa.php/"]
     ],
     "tech" => [
         ["icon" => "fab fa-php", "text" => "PHP"],
@@ -61,8 +61,8 @@ $_portfolios[] = [
     "class" => "web",
     "link" => [
         ["icon" => "fas fa-play-circle", "text" => "Control", "link" => "https://controller.byuwur.co"],
-        ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.co/_stream.html/popup/index.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Scene", "link" => "https://byuwur.co/_stream.html/main/index.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.co/stream.html/popup/index.html"],
+        ["icon" => "fas fa-play-circle", "text" => "Scene", "link" => "https://byuwur.co/stream.html/main/index.html"],
         ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"]
     ],
     "tech" => [
