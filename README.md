@@ -10,7 +10,7 @@ Where the magic happens.
 
 -   [spa.php](https://github.com/byuwur/spa.php) - SPA framework for PHP using JS.
 -   [stream.html](https://github.com/byuwur/stream.html) - Resources I use for my streams. Easily configurables.
--   [easy-server-http-error-page](https://github.com/byuwur/easy-server-http-error-page) - Custom error page with server configurations.
+-   [easy-http-error](https://github.com/byuwur/easy-http-error) - Custom error page with server configurations.
 -   [easy-sidebar-bootstrap](https://github.com/byuwur/easy-sidebar-bootstrap) - Sidebar component using Bootstrap and jQuery.
 -   [nginx-configurations](https://github.com/byuwur/nginx-configurations)
 -   [easy-json-viewer](https://github.com/byuwur/easy-json-viewer) - JSON HTML renderer.
