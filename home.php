@@ -30,34 +30,40 @@ require_once $TO_HOME . "spa.php/_router.php";
 ?>
 
 <head>
-    <meta charset="utf-8" />
     <title>[Mateus] byUwUr — <?= $_andim; ?></title>
+    <meta charset="utf-8" />
     <meta property="og:title" content="[Mateus] byUwUr — <?= $_andim; ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.co/img/logo.png" />
     <meta property="og:url" content="https://byuwur.co" />
     <meta property="og:site_name" content="[Mateus] byUwUr — <?= $_andim; ?>" />
     <meta property="og:description" content="Desarrollador de software | Editor de Vídeo" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Language" content="en,es" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
     <meta name="description" content="Desarrollador de software | Editor de Vídeo" />
-    <meta name="author" content="Andrés Trujillo Mateus" />
-    <meta name="keywords" content="Mateus, byUwUr, byuwur, MNM, Team, MNM Team" />
+    <meta name="author" content="Andrés Trujillo [Mateus] byUwUr" />
+    <meta name="keywords" content="Mateus, byUwUr, byuwur, Mateus byUwUr" />
     <meta name="copyright" content="[Mateus] byUwUr" />
-    <meta name="theme-color" content="#222" />
-    <link id="shortcut-icon" rel="shortcut icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
-    <link id="page-icon" rel="icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
+    <meta name="robots" content="index, follow" /> <!-- Decommented to get indexed -->
+    <meta name="theme-color" content="#300" />
+    <link rel="icon" id="page-icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
     <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>/img/favicon.png" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/animate.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/shards.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/swiper.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/select2.min.css" />
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/dropzone.min.css" />
     <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/_common.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/_common.css" />
     <script src="<?= $HOME_PATH; ?>/spa.php/js/jquery.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/js/jquery-ui.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/js/popper.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/shards.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/js/bootstrap.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/swiper.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/select2.full.min.js" defer></script>
+    <script src="<?= $HOME_PATH; ?>/spa.php/js/dropzone.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/js/typed.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/js/particles.min.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/js/cookies.min.js" defer></script>
@@ -65,6 +71,8 @@ require_once $TO_HOME . "spa.php/_router.php";
     <script src="<?= $HOME_PATH; ?>/spa.php/_common.js" defer></script>
     <script src="<?= $HOME_PATH; ?>/spa.php/_spa.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" defer></script>
+    <!-- Add your overrides below -->
+    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/_common.css" />
 </head>
 
 <body>
@@ -74,6 +82,10 @@ require_once $TO_HOME . "spa.php/_router.php";
         <div class="load-circle-fore"></div>
         <div class="load-text"><?= $_load; ?></div>
     </div>
+    <section id="intro" class="d-none">
+        <!-- Add a short description to help SEO -->
+        Desarrollador de software | Editor de Vídeo
+    </section>
     <div id="bywr-accessibility">
         <a href="javascript:byCommon.accessibilityToggle();" data-bs-toggle="tooltip" data-bs-title="Accesibilidad" title="Accesibilidad">
             <i class="fas fa-universal-access"></i>
