@@ -15,12 +15,12 @@ section {
 	min-height: 100vh;
 	border-bottom: 2px solid #7777;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	section {
 		padding: 4rem 3rem 4rem 1rem;
 	}
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
 	section {
 		padding: 4rem 0.75rem;
 	}
@@ -38,7 +38,7 @@ a:hover {
 	gap: 0.25rem;
 	z-index: 9;
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
 	.social-icons {
 		bottom: 0;
 	}

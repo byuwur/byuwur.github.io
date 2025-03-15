@@ -19,12 +19,12 @@ section {
 	min-height: 100vh;
 	border-bottom: 2px solid #ccc;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 	section {
 		padding: 9rem 3rem;
 	}
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
 	section {
 		padding: 9rem 6rem;
 	}
@@ -52,7 +52,7 @@ a:hover {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 	.old-container {
 		padding-left: 25%;
 	}
