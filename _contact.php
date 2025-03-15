@@ -1,11 +1,11 @@
 <?php
 require_once "./_var.php";
 require_once $TO_HOME . "_common.php";
-require_once $TO_HOME . "_functions.php";
+require_once $TO_HOME . "spa.php/_functions.php";
 require_once $TO_HOME . "_plugins.php";
-require_once $TO_HOME . "_config.php";
+//require_once $TO_HOME . "_config.php";
 //require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
+//require_once $TO_HOME . "spa.php/_router.php";
 //require_once $TO_HOME . "_auth.php";
 // --- PHP ---
 if (validate_value($_POST["mail_submit"] ?? null) === null) api_respond(400, true, "Invalid form.");
@@ -48,10 +48,11 @@ $sg_email->addTos([
 $sg_email->setSubject($mail_subject);
 $sg_email->addContent("text/html", $mail_html);
 $sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);
+$cert_file = file_exists($TO_HOME . "spa.php/cacert.pem") ? $SYSTEM_ROOT . "/spa.php/cacert.pem" : $SYSTEM_ROOT . "/cacert.pem";
 $sendgrid->client->setCurlOptions([
     CURLOPT_SSL_VERIFYHOST => 2,
     CURLOPT_SSL_VERIFYPEER => true,
-    CURLOPT_CAINFO => $SYSTEM_ROOT . "/cacert.pem",
+    CURLOPT_CAINFO => $cert_file,
 ]);
 
 try {
