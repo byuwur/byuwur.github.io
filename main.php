@@ -174,8 +174,8 @@ require_once $TO_HOME . "_routes.php";
             </div>
             <div class="g-recaptcha col-12 col-md-6 p-2" id="mail_recaptcha" name="mail_recaptcha" data-sitekey="6LdBMSIaAAAAANG0gtgkpXUE0K5QS2nu0tJWC1Fm"></div>
             <div class="col-12 col-md-6 p-2">
-                <button type="submit" class="btn btn-primary p-2o5 pr-5">
-                    <i class="fas fa-paper-plane mr-2"></i><?= $_send; ?>
+                <button type="submit" class="btn btn-primary p-2o5 pe-5">
+                    <i class="fas fa-paper-plane me-2"></i><?= $_send; ?>
                     <div class="spinner-border" role="status" style="display:none;"></div>
                 </button>
             </div>
