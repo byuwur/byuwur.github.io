@@ -134,7 +134,9 @@ require_once $TO_HOME . "spa.php/_router.php";
     </div>
     <div id="particles"></div>
     <div class="side-video"></div>
+    <nav id="spa-nav"></nav>
     <main id="spa-content"></main>
+    <footer id="spa-foot"></footer>
 </body>
 
 </html>
