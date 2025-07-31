@@ -1,12 +1,19 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v1.css" />
@@ -29,10 +36,10 @@ require_once $TO_HOME . "_routes.php";
                 <a href="<?= $_youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
             <div class="mt-4 d-flex flex-column flex-sm-row">
-                <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" target="_blank">
+                <a class="a-lang" href="<?= "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_ES}"; ?>" target="_blank">
                     <i class="fas fa-file-invoice"></i><span>Résumé en Español</span><i class="fas fa-download ms-auto"></i>
                 </a>
-                <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" target="_blank">
+                <a class="a-lang" href="<?= "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_EN}"; ?>" target="_blank">
                     <i class="fas fa-file-invoice"></i><span>Résumé in English</span><i class="fas fa-download ms-auto"></i>
                 </a>
 
@@ -103,7 +110,7 @@ require_once $TO_HOME . "_routes.php";
             <h2 class="text-uppercase mb-5 pb-5"><?= $_portfolio; ?></h2>
             <ul class="w-100">
                 <?php foreach ($_portfolios as $portfolio) { ?>
-                    <li><a href="<?= $ROOT_ROUTE; ?>"><i class="fas fa-trophy"></i><?= $portfolio["title"]  . ", " . $portfolio["year"] . ". " . $portfolio["ent"]; ?></a></li>
+                    <li><a href="<?= "{$ROUTE_ROOT}"; ?>"><i class="fas fa-trophy"></i><?= $portfolio["title"]  . ", " . $portfolio["year"] . ". " . $portfolio["ent"]; ?></a></li>
                 <?php } ?>
             </ul>
         </section>

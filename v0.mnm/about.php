@@ -1,12 +1,20 @@
 <?php
 require_once "../_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
+// --- PHP ---
 // --- PHP ---
 require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
 require_once $TO_HOME . "v0.mnm/common.head.php";
@@ -50,7 +58,7 @@ require_once $TO_HOME . "v0.mnm/common.head.php";
                     <div class="about-desc animate-box" data-animate-effect="fadeInLeft" style="text-align:center;"><?= $_we; ?></div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
                         <div class="project" style="height:99%; background-image: url(<?= $HOME_PATH; ?>/img/v0/port_mateus.jpg);">
-                            <a href="<?= $ROOT_ROUTE; ?>">
+                            <a href="<?= "{$ROUTE_ROOT}"; ?>">
                                 <div class="desc" style="padding:1em;">
                                     <h3>MATEUS' <small>PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(mateus);</small></span>
@@ -60,7 +68,7 @@ require_once $TO_HOME . "v0.mnm/common.head.php";
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
                         <div class="project" style="height:99%; background-image: url(<?= $HOME_PATH; ?>/img/v0/port_nestux.jpg);">
-                            <a href="<?= $ROOT_ROUTE; ?>nestux">
+                            <a href="<?= "{$ROUTE_ROOT}{$ROUTE_NESTUX}"; ?>">
                                 <div class="desc" style="padding:1em;">
                                     <h3>NESTUX' <small>PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(nestux);</small></span>
@@ -70,7 +78,7 @@ require_once $TO_HOME . "v0.mnm/common.head.php";
                     </div>
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
                         <div class="project" style="height:99%; background-image: url(<?= $HOME_PATH; ?>/img/v0/port_marco.jpg);">
-                            <a href="<?= $ROOT_ROUTE; ?>marco">
+                            <a href="<?= "{$ROUTE_ROOT}{$ROUTE_MARCO}"; ?>">
                                 <div class="desc" style="padding:1em;">
                                     <h3>MARCO'<small>s PORTFOLIO</small>
                                     </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(marco);</small></span>

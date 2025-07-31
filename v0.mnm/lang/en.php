@@ -56,7 +56,7 @@ $_mnm_intro = "MNM starts its activities in 2017 as a software development team,
 $_whyus = "Why choose us?";
 $_whyus_desc = "<li><font size='4'><b>OUR TEAM</b></font> is made up of qualified and enthusiastic professionals who perform their tasks with talent, efficiency, seriousness and dedication.</li><li><font size='4'><b>QUALITY-PRICE RELATION</b></font> that adjusts to the services we offer: stable, fast and safe; broad features and benefits; and a wide etcetera.</li><li><font size='4'><b>OUR SERVICES</b></font> reach the satisfaction of our clients and the optimization and improvement of the processes they carry out.</li><br>Always willing to assist and listen to you, to understand and resolve your concerns, needs and/or inconveniences.";
 $_whatwedo = "What do we do and what do we specialize in?";
-$_whatwedo_desc = "<ul><li>Mobile development (Android)</li><li>Web development (LAMP)</li><li>Cloud solutions (AWS)</li><li>ICT consultancies</li></ul>Among <a href='$ROOT_ROUTE$MNM_ROUTE$_service'>other services.</a>";
+$_whatwedo_desc = "<ul><li>Mobile development (Android)</li><li>Web development (LAMP)</li><li>Cloud solutions (AWS)</li><li>ICT consultancies</li></ul>Among <a href='{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES}'>other services.</a>";
 //contact.php
 $_read = "CONTACT";
 $_chead = "TALK TO US";

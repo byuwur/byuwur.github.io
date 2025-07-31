@@ -1,12 +1,19 @@
 <?php
 require_once "./_var.php";
-require_once $TO_HOME . "_common.php";
+require_once $TO_HOME . "spa.php/_common.php";
 require_once $TO_HOME . "spa.php/_functions.php";
-require_once $TO_HOME . "_plugins.php";
+require_once $TO_HOME . "spa.php/_plugins.php";
 //require_once $TO_HOME . "_config.php";
-//require_once $TO_HOME . "_routes.php";
+require_once $TO_HOME . "_routes.php";
 //require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+require_once $TO_HOME . "_plugins.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 if (validate_value($_POST["mail_submit"] ?? null) === null) api_respond(400, true, "Invalid form.");
 if (validate_value($_POST["g-recaptcha-response"] ?? null) === null) api_respond(400, true, "Invalid captcha.");

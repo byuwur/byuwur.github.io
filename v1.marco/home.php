@@ -1,12 +1,19 @@
 <?php
 require_once "../_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 require_once $TO_HOME . "v1.marco/lang." . $app_lang . ".php";
 ?>
@@ -29,8 +36,8 @@ require_once $TO_HOME . "v1.marco/lang." . $app_lang . ".php";
     <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav">
             <small style="margin: 12px 0;">
-                <a href="<?= $ROOT_ROUTE; ?>marco/es" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ESP</a>
-                <a href="<?= $ROOT_ROUTE; ?>marco/en" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> ENG</a>
+                <a href="<?= "{$ROUTE_ROOT}{$ROUTE_MARCO}/{$ROUTE_ES}"; ?>" class="a-lang" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" /> ESP</a>
+                <a href="<?= "{$ROUTE_ROOT}{$ROUTE_MARCO}/{$ROUTE_EN}"; ?>" class="a-lang" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" /> ENG</a>
             </small>
             <li class="nav-item text-uppercase"><a class="nav-link" href="#about"><?= $_helloworld; ?></a></li>
             <li class="nav-item text-uppercase"><a class="nav-link" href="#skills"><?= $_skills; ?></a></li>

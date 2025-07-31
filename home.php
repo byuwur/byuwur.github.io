@@ -12,7 +12,7 @@ $setLocalStorage = true;
 // Include the main variable configuration file
 require_once "./_var.php";
 // Include common functions and initializations
-require_once $TO_HOME . "_common.php";
+require_once $TO_HOME . "spa.php/_common.php";
 // Include utility functions
 require_once $TO_HOME . "spa.php/_functions.php";
 // Include composer libraries
@@ -24,6 +24,12 @@ require_once $TO_HOME . "_routes.php";
 // Route the request based on the URI
 require_once $TO_HOME . "spa.php/_router.php";
 // Include auth management
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
+require_once $TO_HOME . "_common.php";
+//require_once $TO_HOME . "_functions.php";
+//require_once $TO_HOME . "_plugins.php";
 //require_once $TO_HOME . "_auth.php";
 
 // --- PHP ---

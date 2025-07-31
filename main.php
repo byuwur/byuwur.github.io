@@ -1,12 +1,19 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 ?>
 <link rel="stylesheet" href="<?= $HOME_PATH; ?>/css/v2.css" />
@@ -60,10 +67,10 @@ require_once $TO_HOME . "_routes.php";
             <p class="col"><?= $_about; ?></p>
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-center">
-            <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.es" title="Résumé en Español">
+            <a class="a-lang" href="<?= "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_ES}"; ?>" title="Résumé en Español">
                 <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Résumé (ES)</span><i class="fas fa-download ms-auto"></i>
             </a>
-            <a class="a-lang" href="<?= $ROOT_ROUTE; ?>resume.en" title="Résumé in English">
+            <a class="a-lang" href="<?= "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_EN}"; ?>" title="Résumé in English">
                 <i class="fas fa-file-invoice"></i><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>Résumé (EN)</span><i class="fas fa-download ms-auto"></i>
             </a>
         </div>
@@ -193,7 +200,7 @@ require_once $TO_HOME . "_routes.php";
         /*
         element_make_http_request({
             $elementId: "#mail_form",
-            $url: "<?= $HOME_PATH . $ROOT_ROUTE; ?>_contact.php",
+            $url: "<?= "{$HOME_PATH}{$ROUTE_ROOT}_contact.php"; ?>",
             $_post: [{
                 name: "mail_submit",
                 value: "1"

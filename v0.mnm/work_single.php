@@ -1,12 +1,19 @@
 <?php
 require_once "../_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 require_once $TO_HOME . "v0.mnm/lang/" . $app_lang . ".php";
 require_once $TO_HOME . "v0.mnm/common.head.php";

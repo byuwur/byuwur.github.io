@@ -1,12 +1,19 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 ?>
 <nav id="bywr-sidebar" class="bywr-sidebar accordion bywr-accordion bg-dark-transparent bg-blurred text-white">
@@ -37,10 +44,10 @@ require_once $TO_HOME . "_routes.php";
     </div>
     <div class="bywr-sidebar-content accordion-item flex-grow-0">
         <div class="d-flex flex-row">
-            <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>resume.es">
+            <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_ES}"; ?>">
                 <i class="fas fa-file-invoice"></i><img src="img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>HDV</span><i class="fas fa-download ms-auto"></i>
             </a>
-            <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>resume.en">
+            <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_EN}"; ?>">
                 <i class="fas fa-file-invoice"></i><img src="img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /><span>CV</span><i class="fas fa-download ms-auto"></i>
             </a>
         </div>
@@ -49,12 +56,12 @@ require_once $TO_HOME . "_routes.php";
         </button>
         <div id="lang-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#bywr-sidebar">
             <div class="d-flex flex-row">
-                <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>v1/es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
-                <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>v1/en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}{$ROUTE_V1}/{$ROUTE_ES}"; ?>" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ESPAÑOL<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}{$ROUTE_V1}/{$ROUTE_EN}"; ?>" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> ENGLISH<i class="fas fa-angle-right ms-auto"></i></a>
             </div>
             <!--a class="bywr-sidebar-option" href="javascript:;"><i class="fas fa-home"></i>Home<i class="fas fa-angle-right ms-auto"></i></a-->
         </div>
-        <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>">
+        <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}"; ?>">
             <i class="fas fa-wand-magic-sparkles"></i><span><?= $_new; ?> (v2)</span><i class="fas fa-angle-right ms-auto"></i>
         </a>
         <p class="m-0 p-2 border-top" style="font-size: 0.75rem;"><?= $_footer; ?></p>

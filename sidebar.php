@@ -1,12 +1,19 @@
 <?php
 require_once "./_var.php";
+require_once $TO_HOME . "spa.php/_common.php";
+//require_once $TO_HOME . "spa.php/_functions.php";
+//require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once $TO_HOME . "_config.php";
+require_once $TO_HOME . "_routes.php";
+//require_once $TO_HOME . "spa.php/_router.php";
+//require_once $TO_HOME . "spa.php/_auth.php";
+
+// --- IMPORTS ---
 require_once $TO_HOME . "_common.php";
 //require_once $TO_HOME . "_functions.php";
 //require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_config.php";
-require_once $TO_HOME . "_routes.php";
-//require_once $TO_HOME . "_router.php";
 //require_once $TO_HOME . "_auth.php";
+
 // --- PHP ---
 ?>
 <nav id="bywr-sidebar" class="bywr-sidebar accordion bywr-accordion bg-dark-transparent bg-blurred text-white">
@@ -32,8 +39,8 @@ require_once $TO_HOME . "_routes.php";
         </button>
         <div id="lang-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#bywr-sidebar">
             <div class="d-flex flex-row">
-                <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>es" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> Español<i class="fas fa-angle-right ms-auto"></i></a>
-                <a class="bywr-sidebar-option" href="<?= $ROOT_ROUTE; ?>en" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> English<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}{$ROUTE_ES}"; ?>" title="Español"><img src="<?= $HOME_PATH; ?>/img/co.png" width="16px" height="12px" style="margin: 4px;" alt="" /> Español<i class="fas fa-angle-right ms-auto"></i></a>
+                <a class="bywr-sidebar-option" href="<?= "{$ROUTE_ROOT}{$ROUTE_EN}"; ?>" title="English"><img src="<?= $HOME_PATH; ?>/img/uk.png" width="16px" height="12px" style="margin: 4px;" alt="" /> English<i class="fas fa-angle-right ms-auto"></i></a>
             </div>
         </div>
         <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#theme-drop" aria-expanded="false" aria-controls="theme-drop">
