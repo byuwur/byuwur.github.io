@@ -9,7 +9,7 @@ $_awards = "Proyectos & Certificados";
 $_interest = "Intereses";
 $_experience = "Experiencia";
 $_contact = "Contacto";
-$_goto = "<a class='a-lang' href='/mnm.team'>Ver más en <img src='img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
+$_goto = "<a class='a-lang' href='/{$ROUTE_MNM}'>Ver más en <img src='{$HOME_PATH}/img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
 $_name_topbar = "Marco <small>[Cortés]</small>";
 $_name_top = "Marco <font size='5'><span class='text-primary'>[Cortés]</span></font>";
 $_nombre = "Marco José Cortés Guzman";
@@ -40,9 +40,9 @@ $_educationprog2 = "Ingeniero de Sistemas";
 $_educationcarr2 = "Ingeniería de Sistemas";
 $_educationyear2 = "En proceso";
 #awards
-$_awards0 = "<a target='_self' href='../mnm.team/redi'><strong>Mención meritoria</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
-$_awards1 = "<a target='_self' href='../mnm.team/renn'><strong>Mención meritoria</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
-$_awards2 = "<a target='_self' href='../mnm.team/limontech'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
+$_awards0 = "<a target='_self' href='/{$ROUTE_MNM}/{$ROUTE_MNM_REDI}'><strong>Mención meritoria</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
+$_awards1 = "<a target='_self' href='/{$ROUTE_MNM}/{$ROUTE_MNM_RENN}'><strong>Mención meritoria</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
+$_awards2 = "<a target='_self' href='/{$ROUTE_MNM}/{$ROUTE_MNM_LIMONTECH}'><strong>Ganador</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_awards3 = "<a target='_blank' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
 #interests
 $_interest0 = "";

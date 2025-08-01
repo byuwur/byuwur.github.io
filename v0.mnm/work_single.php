@@ -28,7 +28,7 @@ require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}_work-{$work_id}.php";
             <div class="row">
                 <div class="col-md-6 sticky-parent">
                     <div id="sticky_item">
-                        <h1 class="mnm-heading animate-box"><a href="<?= $_project ?>" class="btn btn-primary" style="margin: 0 25px 10px 0;"><?= $_back ?></a>
+                        <h1 class="mnm-heading animate-box"><a href="<?= "/{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS}" ?>" class="btn btn-primary" style="margin: 0 25px 10px 0;"><?= $_back ?></a>
                             <font size="6"><?= $_wtitle ?></font>
                         </h1>
                         <div class="project-desc" style="margin-top: 0.25em;">

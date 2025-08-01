@@ -10,7 +10,7 @@ $_awards = "Projects & Awards";
 $_interest = "Interests";
 $_experience = "Experience";
 $_contact = "Contact me";
-$_goto = "<a class='a-lang' href='/mnm.team'>See more at <img src='img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
+$_goto = "<a class='a-lang' href='/{$ROUTE_MNM}'>See more at <img src='{$HOME_PATH}/img/v0/mnm.png' style='margin-bottom: 4px; height: 16px; width: 48px;' /><small>.team();</small></a><br>";
 $_name_topbar = "Nestux <small>[Portela]</small>";
 $_name_top = "Nestux <font size='5'><span class='text-primary'>[Portela]</span></font>";
 $_nombre = "Néstor Alfonso Portela Rincón";
@@ -45,9 +45,9 @@ $_educationprog2 = "Systems Engineering";
 $_educationcarr2 = "Systems Engineer";
 $_educationyear2 = "In process";
 #awards
-$_awards0 = "<a target='_self' href='../mnm.team/redi'><strong>Meritorious mention</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
-$_awards1 = "<a target='_self' href='../mnm.team/renn'><strong>Meritorious mention</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
-$_awards2 = "<a target='_self' href='../mnm.team/limontech'><strong>Winner</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
+$_awards0 = "<a target='_self' href='/{$ROUTE_MNM}/{$ROUTE_MNM_REDI}'><strong>Meritorious mention</strong> | ReDI - <small><strong>Repositorio Digital del ITFIP, 2017</strong></small></a>";
+$_awards1 = "<a target='_self' href='/{$ROUTE_MNM}/{$ROUTE_MNM_RENN}'><strong>Meritorious mention</strong> | RENN -  <small><strong>Repositorio Digital de la Escuela Normal de Naucalpán, 2017</strong></small></a>";
+$_awards2 = "<a target='_self' href='/{$ROUTE_MNM}/{$ROUTE_MNM_LIMONTECH}'><strong>Winner</strong> | Bootcamp - <small><strong>Las TIC para el Agro, 2017</strong></small></a>";
 $_awards3 = "<a target='_self' href='https://youtu.be/JbWnt6YpZMA'><strong>Expo</strong> | LiMONTeCH -  <small><strong>Detector de limones, 2017</strong></small></a>";
 #interests
 $_interest0 = "";
