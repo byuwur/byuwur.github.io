@@ -12,37 +12,36 @@ $setLocalStorage = true;
 // Include the main variable configuration file
 require_once "./_var.php";
 // Include common functions and initializations
-require_once $TO_HOME . "spa.php/_common.php";
+require_once "{$TO_HOME}/spa.php/_common.php";
 // Include utility functions
-require_once $TO_HOME . "spa.php/_functions.php";
+require_once "{$TO_HOME}/spa.php/_functions.php";
+//require_once "{$TO_HOME}/_functions.php";
 // Include composer libraries
-require_once $TO_HOME . "spa.php/_plugins.php";
+//require_once "{$TO_HOME}/spa.php/_plugins.php";
+//require_once "{$TO_HOME}/_plugins.php";
 // Include database connections
-//require_once $TO_HOME . "_config.php";
+//require_once "{$TO_HOME}/_config.php";
 // Load the routes configuration
-require_once $TO_HOME . "_routes.php";
+require_once "{$TO_HOME}/_routes.php";
 // Route the request based on the URI
-require_once $TO_HOME . "spa.php/_router.php";
+require_once "{$TO_HOME}/spa.php/_router.php";
 // Include auth management
-//require_once $TO_HOME . "spa.php/_auth.php";
-
-// --- IMPORTS ---
-require_once $TO_HOME . "_common.php";
-//require_once $TO_HOME . "_functions.php";
-//require_once $TO_HOME . "_plugins.php";
-//require_once $TO_HOME . "_auth.php";
+//require_once "{$TO_HOME}/spa.php/_auth.php";
+//require_once "{$TO_HOME}/_auth.php";
+// Include common functions and initializations that may require "/_routes.php"
+require_once "{$TO_HOME}/_common.php";
 
 // --- PHP ---
 ?>
 
 <head>
-    <title>[Mateus] byUwUr — <?= $_andim; ?></title>
+    <title>[Mateus] byUwUr — <?= $_andim ?></title>
     <meta charset="utf-8" />
-    <meta property="og:title" content="[Mateus] byUwUr — <?= $_andim; ?>" />
+    <meta property="og:title" content="[Mateus] byUwUr — <?= $_andim ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://byuwur.co/img/logo.png" />
     <meta property="og:url" content="https://byuwur.co" />
-    <meta property="og:site_name" content="[Mateus] byUwUr — <?= $_andim; ?>" />
+    <meta property="og:site_name" content="[Mateus] byUwUr — <?= $_andim ?>" />
     <meta property="og:description" content="Desarrollador de software | Editor de Vídeo" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
     <meta name="description" content="Desarrollador de software | Editor de Vídeo" />
@@ -51,47 +50,47 @@ require_once $TO_HOME . "_common.php";
     <meta name="copyright" content="[Mateus] byUwUr" />
     <meta name="robots" content="index, follow" /> <!-- Decommented to get indexed -->
     <meta name="theme-color" content="#300" />
-    <link rel="icon" id="page-icon" type="image/png" href="<?= $HOME_PATH; ?>/img/favicon.png" />
-    <link rel="apple-touch-icon" href="<?= $HOME_PATH; ?>/img/favicon.png" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/animate.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/jquery-ui.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/shards.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/swiper.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/select2.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/css/dropzone.min.css" />
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/spa.php/_common.css" />
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/jquery.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/jquery-ui.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/popper.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/shards.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/bootstrap.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/swiper.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/select2.full.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/dropzone.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/typed.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/particles.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/js/cookies.min.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/_functions.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/_common.js" defer></script>
-    <script src="<?= $HOME_PATH; ?>/spa.php/_spa.js" defer></script>
+    <link rel="icon" id="page-icon" type="image/png" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
+    <link rel="apple-touch-icon" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/animate.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/fontawesome.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/jquery-ui.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/shards.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/bootstrap.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/swiper.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/select2.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/dropzone.min.css" ?>" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/_common.css" ?>" />
+    <script src="<?= "{$HOME_PATH}/spa.php/js/jquery.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/jquery-ui.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/popper.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/shards.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/bootstrap.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/swiper.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/select2.full.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/dropzone.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/typed.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/particles.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/js/cookies.min.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/_functions.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/_common.js" ?>" defer></script>
+    <script src="<?= "{$HOME_PATH}/spa.php/_spa.js" ?>" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" defer></script>
     <!-- Add your overrides below -->
-    <link rel="stylesheet" href="<?= $HOME_PATH; ?>/_common.css" />
+    <link rel="stylesheet" href="<?= "{$HOME_PATH}/_common.css" ?>" />
 </head>
 
 <body>
     <!-- byuwur/spa.php | Copyright (c) 2025 Andrés Trujillo [Mateus] byUwUr -->
-    <div id="spa-loader">
-        <div class="load-circle-back"></div>
-        <div class="load-circle-fore"></div>
-        <div class="load-text"><?= $_load; ?></div>
-    </div>
     <section id="intro" class="d-none">
         <!-- Add a short description to help SEO -->
         Desarrollador de software | Editor de Vídeo
     </section>
+    <div id="spa-loader">
+        <div class="load-circle-back"></div>
+        <div class="load-circle-fore"></div>
+        <div class="load-text"><?= $_load ?></div>
+    </div>
     <div id="bywr-accessibility">
         <a href="javascript:byCommon.accessibilityToggle();" data-bs-toggle="tooltip" data-bs-title="Accesibilidad" title="Accesibilidad">
             <i class="fas fa-universal-access"></i>

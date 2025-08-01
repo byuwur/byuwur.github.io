@@ -56,7 +56,7 @@ $_mnm_intro = "MNM inicia sus actividades en 2017 como un equipo de desarrollo d
 $_whyus = "¿Por qué elegirnos?";
 $_whyus_desc = "<li><font size='4'><b>NUESTRO EQUIPO</b></font> está integrado por profesionales idóneos y entusiastas que desempeñan sus tareas con talento, eficiencia, seriedad y esmero.</li><li><font size='4'><b>RELACIÓN CALIDAD-PRECIO</b></font> que se ajusta a los servicios que ofrecemos: estables, veloces y seguros; amplias características y beneficios; y un amplio etcétera.</li><li><font size='4'><b>NUESTROS SERVICIOS</b></font> alcanzan la satisfacción de nuestros clientes y la optimización y perfeccionamiento de los procesos que realizan.</li><br>Dispuestos siempre a atenderle y escucharle para lograr comprender y resolver sus inquietudes, necesidades y/o inconvenientes.";
 $_whatwedo = "¿Qué hacemos y en qué nos especializamos?";
-$_whatwedo_desc = "<ul><li>Desarrollo móvil (Android)</li><li>Desarrollo web (LAMP)</li><li>Soluciones Cloud (AWS)</li><li>Consultorías y asesorías TIC</li></ul>Entre <a href='{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES}'>otros servicios.</a>";
+$_whatwedo_desc = "<ul><li>Desarrollo móvil (Android)</li><li>Desarrollo web (LAMP)</li><li>Soluciones Cloud (AWS)</li><li>Consultorías y asesorías TIC</li></ul>Entre <a href='/{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES}'>otros servicios.</a>";
 //contact.php
 $_read = "CONTACTO";
 $_chead = "HÁBLENOS";

@@ -24,7 +24,7 @@ $ROUTE_MNM_LIMONTECH = "limontech";
 $ROUTE_MNM_RENN = "renn";
 $ROUTE_MNM_REDI = "redi";
 
-switch ($app_lang) {
+switch ($APP_LANG) {
     case "es":
     default:
         $ROUTE_HOME = "inicio";
@@ -60,36 +60,36 @@ $routes = [
 
     // "/"
     "{$ROUTE_ROOT}" => ["URI" => "/main.php", ...$V2_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_ES}" => ["URI" => "", "GET" => ["lang" => "es"], ...$V2_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_EN}" => ["URI" => "", "GET" => ["lang" => "en"], ...$V2_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_V1}" => ["URI" => "/main.old.php", ...$V1_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_V1}/{$ROUTE_ES}" => ["URI" => "/main.old.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_V1}/{$ROUTE_EN}" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],
+    "/{$ROUTE_ES}" => ["URI" => "", "GET" => ["lang" => "es"], ...$V2_COMPONENTS],
+    "/{$ROUTE_EN}" => ["URI" => "", "GET" => ["lang" => "en"], ...$V2_COMPONENTS],
+    "/{$ROUTE_V1}" => ["URI" => "/main.old.php", ...$V1_COMPONENTS],
+    "/{$ROUTE_V1}/{$ROUTE_ES}" => ["URI" => "/main.old.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS],
+    "/{$ROUTE_V1}/{$ROUTE_EN}" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],
     // files
-    "{$ROUTE_ROOT}{$ROUTE_RESUME}" => ["FILE" => "Mateus.es.pdf"],
-    "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_ES}" => ["FILE" => "Mateus.es.pdf"],
-    "{$ROUTE_ROOT}{$ROUTE_RESUME}.{$ROUTE_EN}" => ["FILE" => "Mateus.en.pdf"],
+    "/{$ROUTE_RESUME}" => ["FILE" => "Mateus.es.pdf"],
+    "/{$ROUTE_RESUME}.{$ROUTE_ES}" => ["FILE" => "Mateus.es.pdf"],
+    "/{$ROUTE_RESUME}.{$ROUTE_EN}" => ["FILE" => "Mateus.en.pdf"],
     // "v1"
-    "{$ROUTE_ROOT}{$ROUTE_NESTUX}" => ["URI" => "/v1.nestux/home.php", ...$COMPONENTS_EMPTY],
-    "{$ROUTE_ROOT}{$ROUTE_NESTUX}/{$ROUTE_ES}" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "es"], ...$COMPONENTS_EMPTY],
-    "{$ROUTE_ROOT}{$ROUTE_NESTUX}/{$ROUTE_EN}" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "en"], ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_NESTUX}" => ["URI" => "/v1.nestux/home.php", ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_NESTUX}/{$ROUTE_ES}" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "es"], ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_NESTUX}/{$ROUTE_EN}" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "en"], ...$COMPONENTS_EMPTY],
 
-    "{$ROUTE_ROOT}{$ROUTE_MARCO}" => ["URI" => "/v1.marco/home.php", ...$COMPONENTS_EMPTY],
-    "{$ROUTE_ROOT}{$ROUTE_MARCO}/{$ROUTE_ES}" => ["URI" => "/v1.marco/home.php", "GET" => ["lang" => "es"], ...$COMPONENTS_EMPTY],
-    "{$ROUTE_ROOT}{$ROUTE_MARCO}/{$ROUTE_EN}" => ["URI" => "/v1.marco/home.php", "GET" => ["lang" => "en"], ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_MARCO}" => ["URI" => "/v1.marco/home.php", ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_MARCO}/{$ROUTE_ES}" => ["URI" => "/v1.marco/home.php", "GET" => ["lang" => "es"], ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_MARCO}/{$ROUTE_EN}" => ["URI" => "/v1.marco/home.php", "GET" => ["lang" => "en"], ...$COMPONENTS_EMPTY],
     // "mnm.team/"
-    "{$ROUTE_ROOT}{$ROUTE_MNM}" => ["URI" => "/v0.mnm/about.php", ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_ES}" => ["URI" => "/v0.mnm/about.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_EN}" => ["URI" => "/v0.mnm/about.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS_ES}" => ["URI" => "/v0.mnm/work.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES_ES}" => ["URI" => "/v0.mnm/services.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_CONTACT_ES}" => ["URI" => "/v0.mnm/contact.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS_EN}" => ["URI" => "/v0.mnm/work.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES_EN}" => ["URI" => "/v0.mnm/services.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_CONTACT_EN}" => ["URI" => "/v0.mnm/contact.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_RESERVELAPP}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "3"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_LIMONTECH}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "2"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_RENN}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "1"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_REDI}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "0"], ...$V0_COMPONENTS],
-    "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_COOKIES}" => ["URI" => "/v0.mnm/cookies.php", "GET" => ["work" => "0"], ...$COMPONENTS_EMPTY],
+    "/{$ROUTE_MNM}" => ["URI" => "/v0.mnm/about.php", ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_ES}" => ["URI" => "/v0.mnm/about.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_EN}" => ["URI" => "/v0.mnm/about.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS_ES}" => ["URI" => "/v0.mnm/work.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES_ES}" => ["URI" => "/v0.mnm/services.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_CONTACT_ES}" => ["URI" => "/v0.mnm/contact.php", "GET" => ["lang" => "es"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS_EN}" => ["URI" => "/v0.mnm/work.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_SERVICES_EN}" => ["URI" => "/v0.mnm/services.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_CONTACT_EN}" => ["URI" => "/v0.mnm/contact.php", "GET" => ["lang" => "en"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_RESERVELAPP}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "3"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_LIMONTECH}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "2"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_RENN}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "1"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_MNM_REDI}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "0"], ...$V0_COMPONENTS],
+    "/{$ROUTE_MNM}/{$ROUTE_COOKIES}" => ["URI" => "/v0.mnm/cookies.php", "GET" => ["work" => "0"], ...$COMPONENTS_EMPTY],
 ];

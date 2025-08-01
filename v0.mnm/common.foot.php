@@ -5,13 +5,13 @@
     <div class="mnm-narrow-content">
         <div class="row">
             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                <h2> <?= $_contact_title; ?> </h2>
+                <h2> <?= $_contact_title ?> </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                <p class="mnm-lead"> <?= $_contact_desc; ?> </p>
-                <p><a href="<?= "{$ROUTE_ROOT}{$ROUTE_MNM}/{$ROUTE_MNM_CONTACT}"; ?>" class="btn btn-primary btn-learn"> <?= $_contact_us; ?> </a></p>
+                <p class="mnm-lead"> <?= $_contact_desc ?> </p>
+                <p><a href="<?= "/{$ROUTE_MNM}/{$ROUTE_MNM_CONTACT}" ?>" class="btn btn-primary btn-learn"> <?= $_contact_us ?> </a></p>
             </div>
         </div>
     </div>
