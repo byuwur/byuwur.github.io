@@ -39,6 +39,6 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
     </aside>
 </div>
 <?php
-// Always call due to /_var.php invoking ob_start();
-ob_end_flush();
+// Progressive output by calling ob_flush(); flush();
+while (ob_get_level() > 0) ob_end_flush();
 ?>
