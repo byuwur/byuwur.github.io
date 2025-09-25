@@ -57,6 +57,5 @@ require_once "{$TO_HOME}/_common.php";
     </div>
 </nav>
 <?php
-// Progressive output by calling ob_flush(); flush();
 while (ob_get_level() > 0) ob_end_flush();
 ?>
