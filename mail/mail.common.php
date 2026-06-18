@@ -1,60 +1,60 @@
 <?php
 // Define all the possible values
 $MAIL_BASE = [
-    "head_img" => "http://byuwur.co/mail/byuwur64.png",
-    "head_url" => "https://byuwur.co",
-    "head_top" => "[Mateus] byUwUr",
-    "head_bot" => "Desarrollo bien hecho a tu alcance.",
-    "topic_txt" => "EMAIL DE CONTACTO",
-    "topic_img" => "http://byuwur.co/mail/env64.png",
-    "msg_top" => "¡Hola!",
-    "msg_bot" => "Hola mundo.",
-    "cta_col" => "#700",
-    "cta_url" => "https://byuwur.co",
-    "cta_txt" => "¡Clic aquí!",
-    "cta_msg" => "Si el botón no funciona, puedes dar clic",
-    "cta_bak_txt" => "aquí",
-    "foot_top" => "Con gratitud,",
-    "foot_bot" => "Andrés Trujillo [Mateus] byUwUr",
-    "aid_img" => "http://byuwur.co/mail/aid64.png",
-    "aid_msg" => "Este es un mensaje automatizado, si surge alguna duda, podemos ayudar desde",
-    "aid_url" => "https://byuwur.co",
-    "aid_txt" => "aquí",
-    "brand_top" => "byUwUr es una marca de:",
-    "brand_bot" => "© " . date("Y") . " [Mateus] byUwUr",
-    "brand_img" => "http://byuwur.co/mail/byuwur64.png",
-    "brand_url" => "https://byuwur.co",
-    "in_img" => "https://byuwur.co/mail/in32.png",
-    "in_url" => "https://linkedin.com/in/atrujillomateus",
-    "gh_img" => "https://byuwur.co/mail/gh32.png",
-    "gh_url" => "https://github.com/byuwur",
-    "yt_img" => "https://byuwur.co/mail/yt32.png",
-    "yt_url" => "https://youtube.com/byuwur",
-    "ig_img" => "https://byuwur.co/mail/ig32.png",
-    "ig_url" => "https://instagram.com/byuwur",
-    "fb_img" => "https://byuwur.co/mail/fb32.png",
-    "fb_url" => "https://facebook.com/byuwur",
-    "privacy_txt" => "Política de privacidad",
-    "privacy_url" => "https://byuwur.co",
-    "drop_txt" => "Darse de baja",
-    "drop_url" => "https://byuwur.co",
+  "head_img" => "http://byuwur.co/mail/byuwur64.png",
+  "head_url" => "https://byuwur.co",
+  "head_top" => "[Mateus] byUwUr",
+  "head_bot" => "Desarrollo bien hecho a tu alcance.",
+  "topic_txt" => "EMAIL DE CONTACTO",
+  "topic_img" => "http://byuwur.co/mail/env64.png",
+  "msg_top" => "¡Hola!",
+  "msg_bot" => "Hola mundo.",
+  "cta_col" => "#700",
+  "cta_url" => "https://byuwur.co",
+  "cta_txt" => "¡Clic aquí!",
+  "cta_msg" => "Si el botón no funciona, puedes dar clic",
+  "cta_bak_txt" => "aquí",
+  "foot_top" => "Con gratitud,",
+  "foot_bot" => "Andrés Trujillo [Mateus] byUwUr",
+  "aid_img" => "http://byuwur.co/mail/aid64.png",
+  "aid_msg" => "Este es un mensaje automatizado, si surge alguna duda, podemos ayudar desde",
+  "aid_url" => "https://byuwur.co",
+  "aid_txt" => "aquí",
+  "brand_top" => "byUwUr es una marca de:",
+  "brand_bot" => "© " . date("Y") . " [Mateus] byUwUr",
+  "brand_img" => "http://byuwur.co/mail/byuwur64.png",
+  "brand_url" => "https://byuwur.co",
+  "in_img" => "https://byuwur.co/mail/in32.png",
+  "in_url" => "https://linkedin.com/in/atrujillomateus",
+  "gh_img" => "https://byuwur.co/mail/gh32.png",
+  "gh_url" => "https://github.com/byuwur",
+  "yt_img" => "https://byuwur.co/mail/yt32.png",
+  "yt_url" => "https://youtube.com/byuwur",
+  "ig_img" => "https://byuwur.co/mail/ig32.png",
+  "ig_url" => "https://instagram.com/byuwur",
+  "fb_img" => "https://byuwur.co/mail/fb32.png",
+  "fb_url" => "https://facebook.com/byuwur",
+  "privacy_txt" => "Política de privacidad",
+  "privacy_url" => "https://byuwur.co",
+  "drop_txt" => "Darse de baja",
+  "drop_url" => "https://byuwur.co",
 ];
 // Define the possible contexts
 $MAIL_RES = [
-    "byuwur" => [
-        ...$MAIL_BASE,
-    ],
+  "byuwur" => [
+    ...$MAIL_BASE,
+  ],
 ];
 // Check if context is specified
 $mail_res = validate_value($_POST["resource"] ?? null) ?? "byuwur";
 // Handle the context
 switch ($mail_res) {
-    case "byuwur":
-        $mail_resources = $MAIL_RES[$mail_res];
-        break;
-    default:
-        $mail_resources = $MAIL_RES["byuwur"];
-        break;
+  case "byuwur":
+    $mail_resources = $MAIL_RES[$mail_res];
+    break;
+  default:
+    $mail_resources = $MAIL_RES["byuwur"];
+    break;
 }
 // Check if values need to be changed
 $topic_txt = validate_value($_POST["topic_txt"] ?? null);
@@ -124,7 +124,7 @@ $mail_html = '
         <tr>
             <td valign="center" align="left" style="padding: 20px 0; margin: 0">';
 if ($mail_resources["cta_url"]) {
-    $mail_html .= '<span style="border-style: solid; border-color: #fafafa; background: ' . $mail_resources["cta_col"] . '; border-width: 3px; display: block; border-radius: 3px; width: auto; mso-hide: all; mso-border-alt: 10px">
+  $mail_html .= '<span style="border-style: solid; border-color: #fafafa; background: ' . $mail_resources["cta_col"] . '; border-width: 3px; display: block; border-radius: 3px; width: auto; mso-hide: all; mso-border-alt: 10px">
                     <a href="' . $mail_resources["cta_url"] . '" target="_blank" style="
                         mso-style-priority: 100 !important;
                         text-decoration: none !important;

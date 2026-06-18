@@ -35,230 +35,230 @@ $_youtube = "https://youtube.com/byuwur";
 
 # Portfolio
 $_portfolios[] = [
-    "title" => "Easy SPA PHP",
-    "ent" => "byUwUr",
-    "desc" => "Single Page Application (SPA) handmade framework with PHP.",
-    "year" => "2024",
-    "image" => "/img/work-spa.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/spa.php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/spa.php/"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"]
-    ]
+  "title" => "Easy SPA PHP",
+  "ent" => "byUwUr",
+  "desc" => "Single Page Application (SPA) handmade framework with PHP.",
+  "year" => "2024",
+  "image" => "/img/work-spa.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/spa.php"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/spa.php/"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-php", "text" => "PHP"],
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "STREAM.HTML",
-    "ent" => "byUwUr",
-    "desc" => "HTML resources for your streaming overlays.",
-    "year" => "2024",
-    "image" => "/img/work-stream.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-play-circle", "text" => "Control", "link" => "https://controller.byuwur.co"],
-        ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.co/stream.html/popup/index.html"],
-        ["icon" => "fas fa-play-circle", "text" => "Scene", "link" => "https://byuwur.co/stream.html/main/index.html"],
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"]
-    ]
+  "title" => "STREAM.HTML",
+  "ent" => "byUwUr",
+  "desc" => "HTML resources for your streaming overlays.",
+  "year" => "2024",
+  "image" => "/img/work-stream.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-play-circle", "text" => "Control", "link" => "https://controller.byuwur.co"],
+    ["icon" => "fas fa-play-circle", "text" => "Popup", "link" => "https://byuwur.co/stream.html/popup/index.html"],
+    ["icon" => "fas fa-play-circle", "text" => "Scene", "link" => "https://byuwur.co/stream.html/main/index.html"],
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/stream.html"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "Easy Sidebar Bootstrap",
-    "ent" => "byUwUr",
-    "desc" => "Easily integrable Sidebar component.",
-    "year" => "2024",
-    "image" => "/img/work-sidebar.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-sidebar-bootstrap"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://codepen.io/byuwur/pen/VwJdWYL"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"]
-    ]
+  "title" => "Easy Sidebar Bootstrap",
+  "ent" => "byUwUr",
+  "desc" => "Easily integrable Sidebar component.",
+  "year" => "2024",
+  "image" => "/img/work-sidebar.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-sidebar-bootstrap"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://codepen.io/byuwur/pen/VwJdWYL"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "Easy JSON viewer",
-    "ent" => "byUwUr",
-    "desc" => "Easily integrable JSON viewer component.",
-    "year" => "2024",
-    "image" => "/img/work-json.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-json-viewer"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://codepen.io/byuwur/pen/ExBeOPR"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"]
-    ]
+  "title" => "Easy JSON viewer",
+  "ent" => "byUwUr",
+  "desc" => "Easily integrable JSON viewer component.",
+  "year" => "2024",
+  "image" => "/img/work-json.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-json-viewer"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://codepen.io/byuwur/pen/ExBeOPR"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "Easy HTTP error page",
-    "ent" => "byUwUr",
-    "desc" => "HTTP error code page for your Apache or nginx server.",
-    "year" => "2021",
-    "image" => "/img/work-error.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-server-http-error-page"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/error"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"]
-    ]
+  "title" => "Easy HTTP error page",
+  "ent" => "byUwUr",
+  "desc" => "HTTP error code page for your Apache or nginx server.",
+  "year" => "2021",
+  "image" => "/img/work-error.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-server-http-error-page"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/error"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-php", "text" => "PHP"],
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "Easy Dropzone PHP",
-    "ent" => "byUwUr",
-    "desc" => "Easily implement Dropzone in your PHP project.",
-    "year" => "2020",
-    "image" => "/img/work-dz.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-dropzone-php"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/_dropzone.php/index.php?id=1"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"]
-    ]
+  "title" => "Easy Dropzone PHP",
+  "ent" => "byUwUr",
+  "desc" => "Easily implement Dropzone in your PHP project.",
+  "year" => "2020",
+  "image" => "/img/work-dz.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/easy-dropzone-php"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://byuwur.co/_dropzone.php/index.php?id=1"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-php", "text" => "PHP"],
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "SDA Espinal - grading platform",
-    "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
-    "desc" => "Web platform for managing grades in schools.",
-    "year" => "Since 2019",
-    "image" => "/img/work-sda.jpg",
-    "class" => "web android",
-    "link" => [
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://semillasdealegriaespinal.com"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
-        ["icon" => "fas fa-database", "text" => "MySQL"],
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"],
-        ["icon" => "fab fa-aws", "text" => "AWS"]
-    ]
+  "title" => "SDA Espinal - grading platform",
+  "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
+  "desc" => "Web platform for managing grades in schools.",
+  "year" => "Since 2019",
+  "image" => "/img/work-sda.jpg",
+  "class" => "web android",
+  "link" => [
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://semillasdealegriaespinal.com"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-php", "text" => "PHP"],
+    ["icon" => "fas fa-database", "text" => "MySQL"],
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"],
+    ["icon" => "fab fa-aws", "text" => "AWS"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "LimonTech - lemon detector",
-    "ent" => "Expo - Winner of Bootcamp: ICT for agriculture",
-    "desc" => "Classifies the ripeness of lemons according to their chromatic intensity using artificial vision.",
-    "year" => "2017",
-    "image" => "/img/work-limontech.jpg",
-    "class" => "python",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/limontech.py"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://youtu.be/RNQTSueIa-8"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-python", "text" => "Python"],
-        ["icon" => "fas fa-eye", "text" => "OpenCV"],
-        ["icon" => "fas fa-robot", "text" => "Arduino"],
-    ]
+  "title" => "LimonTech - lemon detector",
+  "ent" => "Expo - Winner of Bootcamp: ICT for agriculture",
+  "desc" => "Classifies the ripeness of lemons according to their chromatic intensity using artificial vision.",
+  "year" => "2017",
+  "image" => "/img/work-limontech.jpg",
+  "class" => "python",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/limontech.py"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://youtu.be/RNQTSueIa-8"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-python", "text" => "Python"],
+    ["icon" => "fas fa-eye", "text" => "OpenCV"],
+    ["icon" => "fas fa-robot", "text" => "Arduino"],
+  ]
 ];
 $_portfolios[] = [
-    "title" => "Online Congress - software for congresses",
-    "ent" => "ITFIP - Mención meritoria",
-    "desc" => "Platform for managing institutional and research conferences.",
-    "year" => "2019",
-    "image" => "/img/work-oc.jpg",
-    "class" => "web android",
-    "link" => [
-        ["icon" => "fab fa-github", "text" => "Web", "link" => "https://github.com/byuwur/onlinecongress.com.co"],
-        ["icon" => "fab fa-github", "text" => "Android", "link" => "https://github.com/byuwur/co.com.onlinecongress"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
-        ["icon" => "fas fa-database", "text" => "MySQL"],
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"],
-        ["icon" => "fab fa-java", "text" => "Java"]
-    ]
+  "title" => "Online Congress - software for congresses",
+  "ent" => "ITFIP - Mención meritoria",
+  "desc" => "Platform for managing institutional and research conferences.",
+  "year" => "2019",
+  "image" => "/img/work-oc.jpg",
+  "class" => "web android",
+  "link" => [
+    ["icon" => "fab fa-github", "text" => "Web", "link" => "https://github.com/byuwur/onlinecongress.com.co"],
+    ["icon" => "fab fa-github", "text" => "Android", "link" => "https://github.com/byuwur/co.com.onlinecongress"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-php", "text" => "PHP"],
+    ["icon" => "fas fa-database", "text" => "MySQL"],
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"],
+    ["icon" => "fab fa-java", "text" => "Java"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "Resérvelapp - software for reservations",
-    "ent" => "ITFIP - Mención meritoria",
-    "desc" => "Reservation management platform for synthetic courts in Colombia.",
-    "year" => "2018",
-    "image" => "/img/work-reserv.jpg",
-    "class" => "web android",
-    "link" => [
-        ["icon" => "fab fa-github", "text" => "Web", "link" => "https://github.com/byuwur/reservelapp.com"],
-        ["icon" => "fab fa-github", "text" => "Android", "link" => "https://github.com/byuwur/com.reservelapp"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-php", "text" => "PHP"],
-        ["icon" => "fas fa-database", "text" => "MySQL"],
-        ["icon" => "fab fa-js", "text" => "JS"],
-        ["icon" => "fab fa-css3", "text" => "CSS"],
-        ["icon" => "fab fa-html5", "text" => "HTML"],
-        ["icon" => "fab fa-java", "text" => "Java"]
-    ]
+  "title" => "Resérvelapp - software for reservations",
+  "ent" => "ITFIP - Mención meritoria",
+  "desc" => "Reservation management platform for synthetic courts in Colombia.",
+  "year" => "2018",
+  "image" => "/img/work-reserv.jpg",
+  "class" => "web android",
+  "link" => [
+    ["icon" => "fab fa-github", "text" => "Web", "link" => "https://github.com/byuwur/reservelapp.com"],
+    ["icon" => "fab fa-github", "text" => "Android", "link" => "https://github.com/byuwur/com.reservelapp"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-php", "text" => "PHP"],
+    ["icon" => "fas fa-database", "text" => "MySQL"],
+    ["icon" => "fab fa-js", "text" => "JS"],
+    ["icon" => "fab fa-css3", "text" => "CSS"],
+    ["icon" => "fab fa-html5", "text" => "HTML"],
+    ["icon" => "fab fa-java", "text" => "Java"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "REDI - ITFIP Digital Repo.",
-    "ent" => "ITFIP - Meritory mention",
-    "desc" => "Development of a digital repository for the preservation of monographs and degree theses.",
-    "year" => "2017",
-    "image" => "/img/work-redi.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/redi.com"],
-        ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://repositorio.itfip.edu.co/"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-java", "text" => "JSP"]
-    ]
+  "title" => "REDI - ITFIP Digital Repo.",
+  "ent" => "ITFIP - Meritory mention",
+  "desc" => "Development of a digital repository for the preservation of monographs and degree theses.",
+  "year" => "2017",
+  "image" => "/img/work-redi.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/redi.com"],
+    ["icon" => "fas fa-play-circle", "text" => "Demo", "link" => "https://repositorio.itfip.edu.co/"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-java", "text" => "JSP"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "RENN - Normal de Naucalpán Digital Repo.",
-    "ent" => "ITFIP - Meritory mention",
-    "desc" => "Development of a digital repository for the preservation of undergraduate theses and reception documents.",
-    "year" => "2017",
-    "image" => "/img/work-renn.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/renn.com"]
-    ],
-    "tech" => [
-        ["icon" => "fab fa-java", "text" => "JSP"]
-    ]
+  "title" => "RENN - Normal de Naucalpán Digital Repo.",
+  "ent" => "ITFIP - Meritory mention",
+  "desc" => "Development of a digital repository for the preservation of undergraduate theses and reception documents.",
+  "year" => "2017",
+  "image" => "/img/work-renn.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/renn.com"]
+  ],
+  "tech" => [
+    ["icon" => "fab fa-java", "text" => "JSP"]
+  ]
 ];
 $_portfolios[] = [
-    "title" => "nginx Config",
-    "ent" => "byUwUr",
-    "desc" => "My nginx configuration files.",
-    "year" => "2023",
-    "image" => "/img/work-nginx.jpg",
-    "class" => "web",
-    "link" => [
-        ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/nginx-configurations"],
-    ],
-    "tech" => [
-        ["icon" => "fas fa-terminal", "text" => "Shell"]
-    ]
+  "title" => "nginx Config",
+  "ent" => "byUwUr",
+  "desc" => "My nginx configuration files.",
+  "year" => "2023",
+  "image" => "/img/work-nginx.jpg",
+  "class" => "web",
+  "link" => [
+    ["icon" => "fas fa-code", "text" => "GitHub", "link" => "https://github.com/byuwur/nginx-configurations"],
+  ],
+  "tech" => [
+    ["icon" => "fas fa-terminal", "text" => "Shell"]
+  ]
 ];
 
 
@@ -274,212 +274,212 @@ $_thingies[] = "Git version control";
 
 # Skillset
 $_codeskills[] = [
-    "icon" => "fab fa-php",
-    "text" => "PHP",
-    "level" => "Advanced",
-    "progress" => "88%"
+  "icon" => "fab fa-php",
+  "text" => "PHP",
+  "level" => "Advanced",
+  "progress" => "88%"
 ];
 $_codeskills[] = [
-    "icon" => "fas fa-database",
-    "text" => "MySQL",
-    "level" => "Advanced",
-    "progress" => "77%"
+  "icon" => "fas fa-database",
+  "text" => "MySQL",
+  "level" => "Advanced",
+  "progress" => "77%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-js",
-    "text" => "JavaScript & TypeScript",
-    "level" => "Advanced",
-    "progress" => "77%"
+  "icon" => "fab fa-js",
+  "text" => "JavaScript & TypeScript",
+  "level" => "Advanced",
+  "progress" => "77%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-github",
-    "text" => "Git",
-    "level" => "Intermediate",
-    "progress" => "66%"
+  "icon" => "fab fa-github",
+  "text" => "Git",
+  "level" => "Intermediate",
+  "progress" => "66%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-react",
-    "text" => "React",
-    "level" => "Intermediate",
-    "progress" => "66%"
+  "icon" => "fab fa-react",
+  "text" => "React",
+  "level" => "Intermediate",
+  "progress" => "66%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-react",
-    "text" => "React Native",
-    "level" => "Intermediate",
-    "progress" => "66%"
+  "icon" => "fab fa-react",
+  "text" => "React Native",
+  "level" => "Intermediate",
+  "progress" => "66%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-html5",
-    "text" => "HTML",
-    "level" => "Advanced",
-    "progress" => "77%"
+  "icon" => "fab fa-html5",
+  "text" => "HTML",
+  "level" => "Advanced",
+  "progress" => "77%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-css3-alt",
-    "text" => "CSS",
-    "level" => "Advanced",
-    "progress" => "77%"
+  "icon" => "fab fa-css3-alt",
+  "text" => "CSS",
+  "level" => "Advanced",
+  "progress" => "77%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-java",
-    "text" => "Java",
-    "level" => "Intermediate",
-    "progress" => "66%"
+  "icon" => "fab fa-java",
+  "text" => "Java",
+  "level" => "Intermediate",
+  "progress" => "66%"
 ];
 $_codeskills[] = [
-    "icon" => "fab fa-python",
-    "text" => "Python",
-    "level" => "Basic",
-    "progress" => "33%"
+  "icon" => "fab fa-python",
+  "text" => "Python",
+  "level" => "Basic",
+  "progress" => "33%"
 ];
 $_otherskills[] = [
-    "icon" => "fab fa-youtube",
-    "text" => "Vegas Pro",
-    "level" => "Advanced",
-    "progress" => "99%"
+  "icon" => "fab fa-youtube",
+  "text" => "Vegas Pro",
+  "level" => "Advanced",
+  "progress" => "99%"
 ];
 $_otherskills[] = [
-    "icon" => "fas fa-photo-video",
-    "text" => "Premiere Pro",
-    "level" => "Advanced",
-    "progress" => "77%"
+  "icon" => "fas fa-photo-video",
+  "text" => "Premiere Pro",
+  "level" => "Advanced",
+  "progress" => "77%"
 ];
 $_otherskills[] = [
-    "icon" => "fas fa-photo-video",
-    "text" => "Photoshop",
-    "level" => "Advanced",
-    "progress" => "88%"
+  "icon" => "fas fa-photo-video",
+  "text" => "Photoshop",
+  "level" => "Advanced",
+  "progress" => "88%"
 ];
 $_otherskills[] = [
-    "icon" => "fas fa-photo-video",
-    "text" => "Lightroom",
-    "level" => "Advanced",
-    "progress" => "88%"
+  "icon" => "fas fa-photo-video",
+  "text" => "Lightroom",
+  "level" => "Advanced",
+  "progress" => "88%"
 ];
 $_otherskills[] = [
-    "icon" => "fab fa-youtube",
-    "text" => "Davinci Resolve",
-    "level" => "Intermediate",
-    "progress" => "66%"
+  "icon" => "fab fa-youtube",
+  "text" => "Davinci Resolve",
+  "level" => "Intermediate",
+  "progress" => "66%"
 ];
 $_otherskills[] = [
-    "icon" => "fas fa-photo-video",
-    "text" => "After FX",
-    "level" => "Basic",
-    "progress" => "33%"
+  "icon" => "fas fa-photo-video",
+  "text" => "After FX",
+  "level" => "Basic",
+  "progress" => "33%"
 ];
 $_otherskills[] = [
-    "icon" => "fas fa-cubes",
-    "text" => "Unity & Blender",
-    "level" => "Basic",
-    "progress" => "22%"
+  "icon" => "fas fa-cubes",
+  "text" => "Unity & Blender",
+  "level" => "Basic",
+  "progress" => "22%"
 ];
 
 # Experience
 $_experiences[] = [
-    "pos" => "SOFTWARE DEVELOPER",
-    "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
-    "desc" => "Performed as an implementation and support developer using mainly React, React Native, AWS & PHP.",
-    "time" => "October 2023"
+  "pos" => "SOFTWARE DEVELOPER",
+  "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
+  "desc" => "Performed as an implementation and support developer using mainly React, React Native, AWS & PHP.",
+  "time" => "October 2023"
 ];
 $_experiences[] = [
-    "pos" => "SOFTWARE DEVELOPMENT ANALYST",
-    "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
-    "desc" => "Performed as an implementation and support developer using tools tailored to the client.",
-    "time" => "August 2022 - Febraury 2024"
+  "pos" => "SOFTWARE DEVELOPMENT ANALYST",
+  "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
+  "desc" => "Performed as an implementation and support developer using tools tailored to the client.",
+  "time" => "August 2022 - Febraury 2024"
 ];
 $_experiences[] = [
-    "pos" => "BACKEND WEB DEVELOPER",
-    "ent" => "<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>",
-    "desc" => "Performed as an implementation and support developer using mainly PHP, along with MySQL, HTML5, CSS & JS.",
-    "time" => "August 2022 - June 2023"
+  "pos" => "BACKEND WEB DEVELOPER",
+  "ent" => "<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>",
+  "desc" => "Performed as an implementation and support developer using mainly PHP, along with MySQL, HTML5, CSS & JS.",
+  "time" => "August 2022 - June 2023"
 ];
 $_experiences[] = [
-    "pos" => "WEB DEVELOPMENT: GRADING PLATFORM",
-    "ent" => "<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
-    "desc" => "Grading platform.",
-    "time" => "operational since 2019"
+  "pos" => "WEB DEVELOPMENT: GRADING PLATFORM",
+  "ent" => "<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
+  "desc" => "Grading platform.",
+  "time" => "operational since 2019"
 ];
 $_experiences[] = [
-    "pos" => "WEB DEVELOPMENT: EPAYCO PAYMENT PROCESSOR",
-    "ent" => "<a href='javascript:;'>Comercializadora de Padilla – Espinal</a>",
-    "desc" => "ePayco payment processor.",
-    "time" => "July 2020 - December 2020"
+  "pos" => "WEB DEVELOPMENT: EPAYCO PAYMENT PROCESSOR",
+  "ent" => "<a href='javascript:;'>Comercializadora de Padilla – Espinal</a>",
+  "desc" => "ePayco payment processor.",
+  "time" => "July 2020 - December 2020"
 ];
 $_experiences[] = [
-    "pos" => "WEB DEVELOPMENT & ANDROID APP: ONLINE CONGRESS",
-    "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-    "desc" => "Software for congresses.",
-    "time" => "November 2019 - December 2020"
+  "pos" => "WEB DEVELOPMENT & ANDROID APP: ONLINE CONGRESS",
+  "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
+  "desc" => "Software for congresses.",
+  "time" => "November 2019 - December 2020"
 ];
 $_experiences[] = [
-    "pos" => "WEB DEVELOPMENT & ANDROID APP: RESÉRVELAPP",
-    "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-    "desc" => "Software for reservations.",
-    "time" => "July 2018 - December 2019"
+  "pos" => "WEB DEVELOPMENT & ANDROID APP: RESÉRVELAPP",
+  "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
+  "desc" => "Software for reservations.",
+  "time" => "July 2018 - December 2019"
 ];
 $_experiences[] = [
-    "pos" => "WEB DEVELOPMENT: REDI - ITFIP DIGITAL REPO & RENN - NORMAL DE NAUCALPÁN DIGITAL REPO",
-    "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-    "desc" => "Digital repositories.",
-    "time" => "July 2017 - January 2018"
+  "pos" => "WEB DEVELOPMENT: REDI - ITFIP DIGITAL REPO & RENN - NORMAL DE NAUCALPÁN DIGITAL REPO",
+  "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
+  "desc" => "Digital repositories.",
+  "time" => "July 2017 - January 2018"
 ];
 $_experiences[] = [
-    "pos" => "WEB DEVELOPMENT: MNM.TEAM - LANDING PAGE PORTFOLIO",
-    "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
-    "desc" => "Web page portfolio.",
-    "time" => "July 2018 - December 2018"
+  "pos" => "WEB DEVELOPMENT: MNM.TEAM - LANDING PAGE PORTFOLIO",
+  "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
+  "desc" => "Web page portfolio.",
+  "time" => "July 2018 - December 2018"
 ];
 $_experiences[] = [
-    "pos" => "INSTITUTIONAL AUDIOVISUAL POST-PRODUCTION",
-    "ent" => "<a href='https://youtube.com/ITFIPoficial' target='_blank'>ITFIP [YouTube]</a> | <a href='https://facebook.com/ITFIPoficial' target='_blank'>ITFIP [Facebook]</a>",
-    "desc" => "Institucional digital content creation.",
-    "time" => "March 2021 - June 2022"
+  "pos" => "INSTITUTIONAL AUDIOVISUAL POST-PRODUCTION",
+  "ent" => "<a href='https://youtube.com/ITFIPoficial' target='_blank'>ITFIP [YouTube]</a> | <a href='https://facebook.com/ITFIPoficial' target='_blank'>ITFIP [Facebook]</a>",
+  "desc" => "Institucional digital content creation.",
+  "time" => "March 2021 - June 2022"
 ];
 $_experiences[] = [
-    "pos" => "PRODUCTION ASSISTANT",
-    "ent" => "<a href='javascript:;'>Producciones C&N</a>",
-    "desc" => "Master in transmission, master in video production and editing various projects.",
-    "time" => "July 2020 - December 2020"
+  "pos" => "PRODUCTION ASSISTANT",
+  "ent" => "<a href='javascript:;'>Producciones C&N</a>",
+  "desc" => "Master in transmission, master in video production and editing various projects.",
+  "time" => "July 2020 - December 2020"
 ];
 $_experiences[] = [
-    "pos" => "VIDEOGRAPHY",
-    "ent" => "<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>",
-    "desc" => "Digital content creator.",
-    "time" => "since 2014"
+  "pos" => "VIDEOGRAPHY",
+  "ent" => "<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>",
+  "desc" => "Digital content creator.",
+  "time" => "since 2014"
 ];
 
 #education
 $_educations[] = [
-    "inst" => "<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>",
-    "prof" => "GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM",
-    "prog" => "Systems Engineering",
-    "year" => "March 2021"
+  "inst" => "<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>",
+  "prof" => "GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM",
+  "prog" => "Systems Engineering",
+  "year" => "March 2021"
 ];
 $_educations[] = [
-    "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>PLATZI</a>",
-    "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
-    "prog" => "Professional skills training at Platzi",
-    "year" => "since 2022"
+  "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>PLATZI</a>",
+  "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
+  "prog" => "Professional skills training at Platzi",
+  "year" => "since 2022"
 ];
 $_educations[] = [
-    "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>EDX</a>",
-    "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
-    "prog" => "Professional skills training at edX",
-    "year" => "sinc 2021"
+  "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>EDX</a>",
+  "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
+  "prog" => "Professional skills training at edX",
+  "year" => "sinc 2021"
 ];
 $_educations[] = [
-    "inst" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>CREHANA</a>",
-    "prof" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a>",
-    "prog" => "Professional skills training at Crehana",
-    "year" => "since 2021"
+  "inst" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>CREHANA</a>",
+  "prof" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a>",
+  "prog" => "Professional skills training at Crehana",
+  "year" => "since 2021"
 ];
 $_educations[] = [
-    "inst" => "<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>",
-    "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
-    "prog" => "Professional skills training at SENA",
-    "year" => "since 2017"
+  "inst" => "<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>",
+  "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
+  "prog" => "Professional skills training at SENA",
+  "year" => "since 2017"
 ];
 
 # Contact
