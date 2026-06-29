@@ -65,10 +65,10 @@ require_once "{$TO_HOME}/_common.php";
     </div>
     <div class="d-flex flex-column flex-md-row justify-content-center">
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/co.png" ?>" width="16px" height="12px" style="margin: 4px;" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" /><span><?= $LANG["resume.es.title"] ?></span><i class="fas fa-download ms-auto"></i>
+        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/co.svg" ?>" width="16px" height="12px" style="margin: 4px;" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" /><span><?= $LANG["resume.es.title"] ?></span><i class="fas fa-download ms-auto"></i>
       </a>
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/uk.png" ?>" width="16px" height="12px" style="margin: 4px;" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" /><span><?= $LANG["resume.en.title"] ?></span><i class="fas fa-download ms-auto"></i>
+        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" width="16px" height="12px" style="margin: 4px;" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" /><span><?= $LANG["resume.en.title"] ?></span><i class="fas fa-download ms-auto"></i>
       </a>
     </div>
   </section>

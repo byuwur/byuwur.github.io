@@ -33,8 +33,8 @@ require_once "{$TO_HOME}/v1.nestux/lang.{$APP_LANG}.php";
   <div class="collapse navbar-collapse" id="navMenu">
     <ul class="navbar-nav">
       <small style="margin: 12px 0;">
-        <a href="<?= "/{$ROUTE_NESTUX}/{$ROUTE_ES}" ?>" class="a-lang" title="Español"><img src="<?= "{$HOME_PATH}/img/co.png" ?>" /> ESP</a>
-        <a href="<?= "/{$ROUTE_NESTUX}/{$ROUTE_EN}" ?>" class="a-lang" title="English"><img src="<?= "{$HOME_PATH}/img/uk.png" ?>" /> ENG</a>
+        <a href="<?= "/{$ROUTE_NESTUX}/{$ROUTE_ES}" ?>" class="a-lang" title="Español"><img src="<?= "{$HOME_PATH}/img/co.svg" ?>" /> ESP</a>
+        <a href="<?= "/{$ROUTE_NESTUX}/{$ROUTE_EN}" ?>" class="a-lang" title="English"><img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" /> ENG</a>
       </small>
       <li class="nav-item text-uppercase"><a class="nav-link" href="#about"><?= $_helloworld ?></a></li>
       <li class="nav-item text-uppercase"><a class="nav-link" href="#skills"><?= $_skills ?></a></li>

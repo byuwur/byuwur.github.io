@@ -20,7 +20,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   <aside id="mnm-aside" role="complementary">
     <h1 id="mnm-logo">
       <img src="<?= "{$HOME_PATH}/img/v0/logo.jpg" ?>" width="175px" height="175px" style="border: 5px solid #222; border-radius: 10px;" alt="MNM logo" /><br>
-      <small><a href="<?= "/{$ROUTE_MNM}/{$ROUTE_ES}" ?>" class="a-lang p-1" title="Español"><img src="<?= "{$HOME_PATH}/img/co.png" ?>" /> ES</a>|<a href="<?= "/{$ROUTE_MNM}/{$ROUTE_ES}" ?>" class="a-lang p-1" title="English"><img src="<?= "{$HOME_PATH}/img/uk.png" ?>" /> EN</a><br></small>
+      <small><a href="<?= "/{$ROUTE_MNM}/{$ROUTE_ES}" ?>" class="a-lang p-1" title="Español"><img src="<?= "{$HOME_PATH}/img/co.svg" ?>" /> ES</a>|<a href="<?= "/{$ROUTE_MNM}/{$ROUTE_ES}" ?>" class="a-lang p-1" title="English"><img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" /> EN</a><br></small>
     </h1>
     <nav id="mnm-main-menu" role="navigation">
       <ul>
