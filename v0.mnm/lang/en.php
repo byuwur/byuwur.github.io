@@ -1,6 +1,7 @@
 <?php
 //TEXTS IN ENGLISH
 //Use HTML tag for structuring
+$LANG = [true];
 //URIs
 $_project = "projects";
 $_service = "services";

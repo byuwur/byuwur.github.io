@@ -1,6 +1,7 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
+$LANG = [true];
 //URIs
 $_project = "proyectos";
 $_service = "servicios";

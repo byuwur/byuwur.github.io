@@ -12,7 +12,13 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
 // --- PHP ---
-require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php";
+$LANG = [];
+if (file_exists("{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php")) require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php";
+// Language fallbacks if lang is supported but file doesn't exist
+$preferred_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"] ?? "es", 0, 2);
+if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php")) require_once "{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php";
+if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/en.php")) require_once "{$TO_HOME}/v0.mnm/lang/en.php";
+// ---
 require_once "{$TO_HOME}/v0.mnm/common.head.php";
 ?>
 <div id="mnm-page">

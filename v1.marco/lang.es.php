@@ -1,6 +1,7 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
+$LANG = [true];
 #page-top
 $_helloworld = "Bienvenidos";
 $_skills = "Habilidades";

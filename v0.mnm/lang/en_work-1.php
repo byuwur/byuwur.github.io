@@ -1,6 +1,7 @@
 <?php
 //TEXTS IN ENGLISH
 //Use HTML tag for structuring
+$LANG = [true];
 //work-single.php
 $_wtitle = "RENN";
 $_wsubtitle = "Escuela Normal de Naucalpán's Digital Repository";

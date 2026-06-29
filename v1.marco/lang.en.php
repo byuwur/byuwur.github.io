@@ -1,6 +1,7 @@
 <?php
 //TEXTS IN ENGLISH
 //Use HTML tag for structuring
+$LANG = [true];
 #page-top
 $_helloworld = "Welcome";
 $_skills = "Skills";

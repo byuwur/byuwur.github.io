@@ -12,10 +12,24 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
 // --- PHP ---
-require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php";
-require_once "{$TO_HOME}/v0.mnm/common.head.php";
+$LANG = [];
 $work_id = isset($_GET["work"]) ? $_GET["work"] : "0";
-require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}_work-{$work_id}.php";
+if (file_exists("{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php")) {
+	require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php";
+	require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}_work-{$work_id}.php";
+}
+// Language fallbacks if lang is supported but file doesn't exist
+$preferred_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"] ?? "es", 0, 2);
+if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php")) {
+	require_once "{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php";
+	require_once "{$TO_HOME}/v0.mnm/lang/{$preferred_lang}_work-{$work_id}.php";
+}
+if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/en.php")) {
+	require_once "{$TO_HOME}/v0.mnm/lang/en.php";
+	require_once "{$TO_HOME}/v0.mnm/lang/en_work-{$work_id}.php";
+}
+// ---
+require_once "{$TO_HOME}/v0.mnm/common.head.php";
 ?>
 <div id="mnm-main">
   <div class="mnm-work">
@@ -49,17 +63,15 @@ require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}_work-{$work_id}.php";
           </div>
         </div>
         <div class="col-md-6 image-content">
-          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET['work']}/1.jpg" ?>" alt="Image 1" />
-          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET['work']}/2.jpg" ?>" alt="Image 2" />
-          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET['work']}/3.jpg" ?>" alt="Image 3" />
-          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET['work']}/4.jpg" ?>" alt="Image 4" />
+          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET["work"]}/1.jpg" ?>" alt="Image 1" />
+          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET["work"]}/2.jpg" ?>" alt="Image 2" />
+          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET["work"]}/3.jpg" ?>" alt="Image 3" />
+          <img class="img-responsive" src="<?= "{$HOME_PATH}/img/v0/work-{$_GET["work"]}/4.jpg" ?>" alt="Image 4" />
         </div>
       </div>
     </div>
   </div>
-  <?php
-  require_once "{$TO_HOME}/v0.mnm/common.foot.php";
-  ?>
+  <?php require_once "{$TO_HOME}/v0.mnm/common.foot.php"; ?>
   <script>
     $(() => {
       document.title = "<?= $_wtitle ?> | MNM.team();";

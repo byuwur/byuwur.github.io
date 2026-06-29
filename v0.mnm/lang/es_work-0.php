@@ -1,6 +1,7 @@
 <?php
 //TEXTOS EN ESPAÑOL
 //Use etiquetas HTML para estructurar
+$LANG = [true];
 //work-single.php
 $_wtitle = "ReDI";
 $_wsubtitle = "Repositorio Digital del ITFIP";
