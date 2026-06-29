@@ -25,6 +25,12 @@ $ROUTE_MNM_RENN = "renn";
 $ROUTE_MNM_REDI = "redi";
 
 switch ($APP_LANG) {
+  case "ja":
+    $ROUTE_HOME = "home";
+    $ROUTE_MNM_PROJECTS = "projects";
+    $ROUTE_MNM_SERVICES = "services";
+    $ROUTE_MNM_CONTACT = "contact";
+    break;
   case "es":
   default:
     $ROUTE_HOME = "inicio";
@@ -42,6 +48,7 @@ switch ($APP_LANG) {
 
 $ROUTE_ES = "es";
 $ROUTE_EN = "en";
+$ROUTE_JA = "ja";
 $ROUTE_ERROR = "error";
 $ROUTE_LOGIN = "login";
 $ROUTE_LOGOUT = "logout";
@@ -62,9 +69,11 @@ $routes = [
   "{$ROUTE_ROOT}" => ["URI" => "/main.php", ...$V2_COMPONENTS],
   "/{$ROUTE_ES}" => ["URI" => "", "GET" => ["lang" => "es"], ...$V2_COMPONENTS],
   "/{$ROUTE_EN}" => ["URI" => "", "GET" => ["lang" => "en"], ...$V2_COMPONENTS],
+  "/{$ROUTE_JA}" => ["URI" => "", "GET" => ["lang" => "ja"], ...$V2_COMPONENTS],
   "/{$ROUTE_V1}" => ["URI" => "/main.old.php", ...$V1_COMPONENTS],
   "/{$ROUTE_V1}/{$ROUTE_ES}" => ["URI" => "/main.old.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS],
   "/{$ROUTE_V1}/{$ROUTE_EN}" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],
+  "/{$ROUTE_V1}/{$ROUTE_JA}" => ["URI" => "/main.old.php", "GET" => ["lang" => "ja"], ...$V1_COMPONENTS],
   // files
   "/{$ROUTE_RESUME}" => ["FILE" => "/Mateus.es.pdf"],
   "/{$ROUTE_RESUME}.{$ROUTE_ES}" => ["FILE" => "/Mateus.es.pdf"],

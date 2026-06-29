@@ -1,69 +1,69 @@
 <?php
 /*
- * Textos en español.
- * Usa HTML confiable solo donde la plantilla imprime contenido intencionalmente.
+ * Japanese UI strings.
+ * Use trusted HTML only where the template intentionally prints raw content.
  */
 $LANG = [
-  // --- Rutas ---
+  // --- ルート ---
   'route.root' => $ROUTE_ROOT ?? '/',
-  'route.home' => $ROUTE_HOME ?? 'inicio',
+  'route.home' => $ROUTE_HOME ?? 'home',
   'route.v1' => "/{$ROUTE_V1}",
   'route.resume' => "/{$ROUTE_RESUME}",
   'route.mnm' => "/{$ROUTE_MNM}",
   'route.cookies' => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
 
-  // --- Estructura de página ---
-  'title.default' => '[Mateus] byUwUr — Creo cosas útiles',
-  'loader.loading' => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
+  // --- ページ構造 ---
+  'title.default' => '[Mateus] byUwUr — 役立つものを作ります',
+  'loader.loading' => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
 
-  // --- Perfil y hero ---
+  // --- プロフィールとヒーロー ---
   'profile.name_top' => '[Mateus] <span class=\'text-primary\'>byUwUr</span>',
   'profile.full_name' => 'Andrés Trujillo Mateus',
-  'hero.im' => 'Soy',
-  'hero.and_i' => 'Creo cosas útiles',
-  'hero.in' => 'en ',
-  'hero.hello_world' => 'Hola, mundo',
+  'hero.im' => '私は',
+  'hero.and_i' => '役立つものを作ります',
+  'hero.in' => '',
+  'hero.hello_world' => 'こんにちは、世界',
 
-  // --- Navegación ---
-  'nav.about' => 'Hola, mundo',
-  'nav.resume' => 'Résumé',
-  'nav.contact' => 'Contáctame',
-  'nav.skills' => 'Habilidades',
-  'nav.portfolio' => 'Portafolio',
-  'nav.experience' => 'Experiencia',
-  'nav.education' => 'Formación',
+  // --- ナビゲーション ---
+  'nav.about' => 'こんにちは、世界',
+  'nav.resume' => '履歴書',
+  'nav.contact' => 'お問い合わせ',
+  'nav.skills' => 'スキル',
+  'nav.portfolio' => 'ポートフォリオ',
+  'nav.experience' => '経歴',
+  'nav.education' => '学歴',
 
-  // --- Sidebar ---
-  'sidebar.toggle' => 'Toggle sidebar menu',
-  'sidebar.menu' => 'menu',
-  'sidebar.logo_alt' => '[Mateus] byUwUr logo',
+  // --- サイドバー ---
+  'sidebar.toggle' => 'サイドバーメニューを切り替え',
+  'sidebar.menu' => 'メニュー',
+  'sidebar.logo_alt' => '[Mateus] byUwUr ロゴ',
 
-  // --- Controles de idioma y tema ---
-  'language.selector' => 'Idiomas:',
-  'theme.selector' => 'Temas:',
-  'theme.light' => 'Claro',
-  'theme.dark' => 'Oscuro',
+  // --- 言語とテーマの操作 ---
+  'language.selector' => '言語:',
+  'theme.selector' => 'テーマ:',
+  'theme.light' => 'ライト',
+  'theme.dark' => 'ダーク',
 
-  // --- Vista, footer y acciones ---
-  'view.modern' => 'cargar HTML no tan básico',
-  'view.modern.title' => 'cargar HTML no tan básico (v2)',
-  'footer.html' => "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/{$ROUTE_V1}'>cargar HTML básico</a> | <a href='/{$ROUTE_MNM}/{$ROUTE_COOKIES}' target='_blank'>cookie policy</a> | <a href='/{$ROUTE_MNM}'>MNM.team</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
-  'action.back' => 'Volver',
-  'action.ok' => 'Entendido',
-  'action.close' => 'Cerrar',
+  // --- 表示、フッター、操作 ---
+  'view.modern' => '標準ではないHTMLを読み込む',
+  'view.modern.title' => '標準ではないHTMLを読み込む (v2)',
+  'footer.html' => "&copy;" . date("Y") . " Andrés Trujillo [Mateus] byUwUr<br><a href='/{$ROUTE_V1}'>基本HTMLを読み込む</a> | <a href='/{$ROUTE_MNM}/{$ROUTE_COOKIES}'>Cookieポリシー</a> | <a href='/{$ROUTE_MNM}'>MNM.team</a><br><i class='fas fa-heart'></i> で制作 by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
+  'action.back' => '戻る',
+  'action.ok' => '了解',
+  'action.close' => '閉じる',
 
-  // --- Acerca de y redes ---
-  'about.description' => 'Desarrollador web full-stack en XAMP (Apache, MySQL, PHP), React & React Native, programador en Java para Android híbrido y nativo y, diseñador de bases de datos SQL, más un poco de AWS & Python.<br>Inglés y Español fluido. Profesionalmente en labor desde 2018. Editor de vídeo y fotografía desde 2014.<br>Siempre dispuesto a aprender. Estoy para lo que necesiten.',
+  // --- 自己紹介とSNS ---
+  'about.description' => 'XAMP (Apache, MySQL, PHP)、React、React Native、Android向けJava、SQLデータベース設計を扱うフルスタックWeb開発者です。AWSとPythonも少し扱います。<br>英語とスペイン語に対応。2018年からプロとして活動し、2014年から写真・動画編集にも携わっています。<br>いつでも学び続け、必要なものを一緒に作るためにここにいます。',
   'social.linkedin.url' => 'https://linkedin.com/in/atrujillomateus',
   'social.github.url' => 'https://github.com/byuwur',
   'social.youtube.url' => 'https://youtube.com/byuwur',
 
-  // --- Portafolio ---
+  // --- ポートフォリオ ---
   'portfolio.items' => [
     [
       'title' => 'Easy SPA PHP',
       'ent' => 'byUwUr',
-      'desc' => 'Framework de Single Page Application (SPA) hecho a mano con PHP.',
+      'desc' => 'PHPで手作りしたSingle Page Application (SPA)フレームワーク。',
       'year' => '2024',
       'image' => '/img/work-spa.jpg',
       'class' => 'web',
@@ -75,7 +75,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://byuwur.co/spa.php/',
         ],
       ],
@@ -101,7 +101,7 @@ $LANG = [
     [
       'title' => 'STREAM.HTML',
       'ent' => 'byUwUr',
-      'desc' => 'Recursos HTML para tus overlays de streaming.',
+      'desc' => '配信用オーバーレイ向けのHTMLリソース。',
       'year' => '2024',
       'image' => '/img/work-stream.jpg',
       'class' => 'web',
@@ -145,7 +145,7 @@ $LANG = [
     [
       'title' => 'Easy Sidebar Bootstrap',
       'ent' => 'byUwUr',
-      'desc' => 'Componente Sidebar fácilmente integrable.',
+      'desc' => '簡単に組み込めるサイドバーコンポーネント。',
       'year' => '2024',
       'image' => '/img/work-sidebar.jpg',
       'class' => 'web',
@@ -157,7 +157,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://codepen.io/byuwur/pen/VwJdWYL',
         ],
       ],
@@ -179,7 +179,7 @@ $LANG = [
     [
       'title' => 'Easy JSON viewer',
       'ent' => 'byUwUr',
-      'desc' => 'Componente visor de JSON fácilmente integrable.',
+      'desc' => '簡単に組み込めるJSONビューアコンポーネント。',
       'year' => '2024',
       'image' => '/img/work-json.jpg',
       'class' => 'web',
@@ -191,7 +191,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://codepen.io/byuwur/pen/ExBeOPR',
         ],
       ],
@@ -213,7 +213,7 @@ $LANG = [
     [
       'title' => 'Easy HTTP error page',
       'ent' => 'byUwUr',
-      'desc' => 'Página de códigos de error HTTP para tu servidor Apache o nginx.',
+      'desc' => 'Apacheまたはnginxサーバー向けのHTTPエラーコードページ。',
       'year' => '2021',
       'image' => '/img/work-error.jpg',
       'class' => 'web',
@@ -225,7 +225,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://byuwur.co/error',
         ],
       ],
@@ -251,7 +251,7 @@ $LANG = [
     [
       'title' => 'Easy Dropzone PHP',
       'ent' => 'byUwUr',
-      'desc' => 'Implementa fácilmente Dropzone en tu proyecto PHP.',
+      'desc' => 'PHPプロジェクトにDropzoneを簡単に導入できます。',
       'year' => '2020',
       'image' => '/img/work-dz.jpg',
       'class' => 'web',
@@ -263,7 +263,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://byuwur.co/_dropzone.php/index.php?id=1',
         ],
       ],
@@ -287,16 +287,16 @@ $LANG = [
       ],
     ],
     [
-      'title' => 'SDA Espinal - plataforma de calificaciones',
+      'title' => 'SDA Espinal - grading platform',
       'ent' => 'Liceo Moderno Semillas de Alegría - Espinal',
-      'desc' => 'Plataforma web administradora de calificaciones.',
-      'year' => 'Desde 2019',
+      'desc' => '学校の成績管理のためのWebプラットフォーム。',
+      'year' => '2019年から',
       'image' => '/img/work-sda.jpg',
       'class' => 'web android',
       'link' => [
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://semillasdealegriaespinal.com',
         ],
       ],
@@ -328,9 +328,9 @@ $LANG = [
       ],
     ],
     [
-      'title' => 'LimonTech - detector de limones',
-      'ent' => 'Expo - Ganador del Bootcamp: Las TIC para el agro',
-      'desc' => 'Clasifica la madurez de limones según su intensidad cromática usando visión artificial.',
+      'title' => 'LimonTech - lemon detector',
+      'ent' => 'Expo - Winner of Bootcamp: ICT for agriculture',
+      'desc' => 'コンピュータビジョンを使い、色の強度からレモンの熟度を分類します。',
       'year' => '2017',
       'image' => '/img/work-limontech.jpg',
       'class' => 'python',
@@ -342,7 +342,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://youtu.be/RNQTSueIa-8',
         ],
       ],
@@ -362,9 +362,9 @@ $LANG = [
       ],
     ],
     [
-      'title' => 'Online Congress - software para congresos',
+      'title' => 'Online Congress - software for congresses',
       'ent' => 'ITFIP - Mención meritoria',
-      'desc' => 'Plataforma administradora de congresos institucionales y de investigación.',
+      'desc' => '学術・研究カンファレンスを管理するためのプラットフォーム。',
       'year' => '2019',
       'image' => '/img/work-oc.jpg',
       'class' => 'web android',
@@ -408,9 +408,9 @@ $LANG = [
       ],
     ],
     [
-      'title' => 'Resérvelapp - software para reservas',
+      'title' => 'Resérvelapp - software for reservations',
       'ent' => 'ITFIP - Mención meritoria',
-      'desc' => 'Plataforma administradora de reservas para canchas sintéticas en Colombia.',
+      'desc' => 'コロンビアの人工芝コート向け予約管理プラットフォーム。',
       'year' => '2018',
       'image' => '/img/work-reserv.jpg',
       'class' => 'web android',
@@ -454,9 +454,9 @@ $LANG = [
       ],
     ],
     [
-      'title' => 'REDI - Repo. Digital del ITFIP',
-      'ent' => 'ITFIP - Mención meritoria',
-      'desc' => 'Desarrollo de un repositorio digital para la preservación de monografías y trabajos de grado.',
+      'title' => 'REDI - ITFIP Digital Repo.',
+      'ent' => 'ITFIP - Meritory mention',
+      'desc' => '論文や卒業研究を保存するためのデジタルリポジトリの開発。',
       'year' => '2017',
       'image' => '/img/work-redi.jpg',
       'class' => 'web',
@@ -468,7 +468,7 @@ $LANG = [
         ],
         [
           'icon' => 'fas fa-play-circle',
-          'text' => 'Demo',
+          'text' => 'デモ',
           'link' => 'https://repositorio.itfip.edu.co/',
         ],
       ],
@@ -480,9 +480,9 @@ $LANG = [
       ],
     ],
     [
-      'title' => 'RENN - Repo. Digital de la Normal de Naucalpán',
-      'ent' => 'ITFIP - Mención meritoria',
-      'desc' => 'Desarrollo de un repositorio digital para la preservación de trabajos de grado y documentos recepcionales.',
+      'title' => 'RENN - Normal de Naucalpán Digital Repo.',
+      'ent' => 'ITFIP - Meritory mention',
+      'desc' => '卒業論文や受理文書を保存するためのデジタルリポジトリの開発。',
       'year' => '2017',
       'image' => '/img/work-renn.jpg',
       'class' => 'web',
@@ -503,7 +503,7 @@ $LANG = [
     [
       'title' => 'nginx Config',
       'ent' => 'byUwUr',
-      'desc' => 'Mis archivos de configuración de nginx.',
+      'desc' => '私のnginx設定ファイル。',
       'year' => '2023',
       'image' => '/img/work-nginx.jpg',
       'class' => 'web',
@@ -522,77 +522,77 @@ $LANG = [
       ],
     ],
   ],
-  // --- Habilidades ---
-  'skills.code.title' => 'Código:',
-  'skills.software.title' => 'Software:',
-  'skills.other.title' => 'Y otras cositas:',
+  // --- スキル ---
+  'skills.code.title' => 'コード:',
+  'skills.software.title' => 'ソフトウェア:',
+  'skills.other.title' => 'その他:',
   'skills.other.items' => [
-    'Desarrollo & Diseño de aplicaciones web y móviles',
-    'Diseño y modelado de bases de datos SQL',
-    'Asesorías y consultorías TIC, soporte técnico y ayuda',
-    'Webs mobile-first, cross-browser y responsive',
-    'Edición de vídeo y fotografía',
-    'Control de versiones con Git',
+    'Web・モバイルアプリケーションの開発と設計',
+    'SQLデータベースの設計とモデリング',
+    'ICTアドバイス、コンサルティング、技術サポート',
+    'モバイルファースト、クロスブラウザ、レスポンシブWeb',
+    '写真・動画編集',
+    'Gitによるバージョン管理',
   ],
   'skills.code.items' => [
     [
       'icon' => 'fab fa-php',
       'text' => 'PHP',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '88%',
     ],
     [
       'icon' => 'fas fa-database',
       'text' => 'MySQL',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '77%',
     ],
     [
       'icon' => 'fab fa-js',
       'text' => 'JavaScript & TypeScript',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '77%',
     ],
     [
       'icon' => 'fab fa-github',
       'text' => 'Git',
-      'level' => 'Intermediate',
+      'level' => '中級',
       'progress' => '66%',
     ],
     [
       'icon' => 'fab fa-react',
       'text' => 'React',
-      'level' => 'Intermediate',
+      'level' => '中級',
       'progress' => '66%',
     ],
     [
       'icon' => 'fab fa-react',
       'text' => 'React Native',
-      'level' => 'Intermediate',
+      'level' => '中級',
       'progress' => '66%',
     ],
     [
       'icon' => 'fab fa-html5',
       'text' => 'HTML',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '77%',
     ],
     [
       'icon' => 'fab fa-css3-alt',
       'text' => 'CSS',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '77%',
     ],
     [
       'icon' => 'fab fa-java',
       'text' => 'Java',
-      'level' => 'Intermediate',
+      'level' => '中級',
       'progress' => '66%',
     ],
     [
       'icon' => 'fab fa-python',
       'text' => 'Python',
-      'level' => 'Basic',
+      'level' => '初級',
       'progress' => '33%',
     ],
   ],
@@ -600,203 +600,203 @@ $LANG = [
     [
       'icon' => 'fab fa-youtube',
       'text' => 'Vegas Pro',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '99%',
     ],
     [
       'icon' => 'fas fa-photo-video',
       'text' => 'Premiere Pro',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '77%',
     ],
     [
       'icon' => 'fas fa-photo-video',
       'text' => 'Photoshop',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '88%',
     ],
     [
       'icon' => 'fas fa-photo-video',
       'text' => 'Lightroom',
-      'level' => 'Advanced',
+      'level' => '上級',
       'progress' => '88%',
     ],
     [
       'icon' => 'fab fa-youtube',
       'text' => 'Davinci Resolve',
-      'level' => 'Intermediate',
+      'level' => '中級',
       'progress' => '66%',
     ],
     [
       'icon' => 'fas fa-photo-video',
       'text' => 'After FX',
-      'level' => 'Basic',
+      'level' => '初級',
       'progress' => '33%',
     ],
     [
       'icon' => 'fas fa-cubes',
       'text' => 'Unity & Blender',
-      'level' => 'Basic',
+      'level' => '初級',
       'progress' => '22%',
     ],
   ],
-  // --- Experiencia ---
+  // --- 経歴 ---
   'experience.items' => [
     [
-      'pos' => 'DESARROLLADOR DE SOFTWARE',
+      'pos' => 'ソフトウェア開発者',
       'ent' => '<a href=\'https://vehikl.com/\' target=\'_blank\'>magnet360 2023 => Vehikl</a>',
-      'desc' => 'Desempeño como desarrollador implementador y de soporte usando React, React Native, AWS & PHP.',
-      'time' => 'Octubre 2023',
+      'desc' => '主にReact、React Native、AWS、PHPを使い、実装・サポート開発者として従事。',
+      'time' => '2023年10月',
     ],
     [
-      'pos' => 'ANALISTA DE DESARROLLO DE SOFTWARE',
+      'pos' => 'ソフトウェア開発アナリスト',
       'ent' => '<a href=\'https://nxs.com.co/\' target=\'_blank\'>Nexos Software => iuvity</a>',
-      'desc' => 'Desempeño como desarrollador implementador y de soporte usando herramientas a la medida del cliente.',
-      'time' => 'Agosto 2022 - Febrero 2024',
+      'desc' => 'クライアントに合わせたツールを使い、実装・サポート開発者として従事。',
+      'time' => '2022年8月 - 2024年2月',
     ],
     [
-      'pos' => 'DESARROLLO WEB BACKEND',
+      'pos' => 'バックエンドWeb開発者',
       'ent' => '<a href=\'https://rivka.mx/\' target=\'_blank\'>Rivka.mx => Orbit Investments LLC</a>',
-      'desc' => 'Desempeño como desarrollador implementador y de soporte usando principalmente PHP, junto a MySQL, HTML5, CSS & JS.',
-      'time' => 'Agosto 2022 - Junio 2023',
+      'desc' => '主にPHPを中心に、MySQL、HTML5、CSS、JSも使いながら実装・サポート開発者として従事。',
+      'time' => '2022年8月 - 2023年6月',
     ],
     [
-      'pos' => 'DESARROLLO WEB: PLATAFORMA DE NOTAS',
+      'pos' => 'Web開発: 成績管理プラットフォーム',
       'ent' => '<a href=\'https://semillasdealegriaespinal.com/\' target=\'_blank\'>Semillas de Alegría Espinal</a>',
-      'desc' => 'Plataforma de calificaciones.',
-      'time' => 'en operación desde 2019',
+      'desc' => '成績管理プラットフォーム。',
+      'time' => '2019年から運用中',
     ],
     [
-      'pos' => 'DESARROLLO WEB: PROCESADOR DE PAGOS EPAYCO',
+      'pos' => 'Web開発: ePayco決済処理',
       'ent' => '<a href=\'javascript:;\'>Comercializadora de Padilla – Espinal</a>',
-      'desc' => 'Procesador de pagos ePayco.',
-      'time' => 'Julio 2020 - Diciembre 2020',
+      'desc' => 'ePayco決済処理。',
+      'time' => '2020年7月 - 2020年12月',
     ],
     [
-      'pos' => 'DESARROLLO WEB & APLICACIÓN ANDROID: ONLINE CONGRESS',
+      'pos' => 'Web開発・Androidアプリ: Online Congress',
       'ent' => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
-      'desc' => 'Software para congresos.',
-      'time' => 'Noviembre 2019 - Diciembre 2020',
+      'desc' => 'カンファレンス管理ソフトウェア。',
+      'time' => '2019年11月 - 2020年12月',
     ],
     [
-      'pos' => 'DESARROLLO WEB & APLICACIÓN ANDROID: RESÉRVELAPP',
+      'pos' => 'Web開発・Androidアプリ: Resérvelapp',
       'ent' => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
-      'desc' => 'Software para reservas.',
-      'time' => 'Julio 2018 - Diciembre 2019',
+      'desc' => '予約管理ソフトウェア。',
+      'time' => '2018年7月 - 2019年12月',
     ],
     [
-      'pos' => 'DESARROLLO WEB: REDI - REPOSITORIO DIGITAL DEL ITFIP & RENN - REPOSITORIO DIGITAL DE LA NORMAL DE NAUCALPÁN',
+      'pos' => 'Web開発: REDI - ITFIPデジタルリポジトリ / RENN - Normal de Naucalpánデジタルリポジトリ',
       'ent' => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
-      'desc' => 'Repositorios digitales.',
-      'time' => 'Julio 2017 - Enero 2018',
+      'desc' => 'デジタルリポジトリ。',
+      'time' => '2017年7月 - 2018年1月',
     ],
     [
-      'pos' => 'DESARROLLO WEB: MNM.TEAM - LANDING PAGE PORTFOLIO',
+      'pos' => 'Web開発: MNM.team ランディングページポートフォリオ',
       'ent' => '<a href=\'https://byuwur.co/mnm.team\' target=\'_blank\'>MNM.team</a>',
-      'desc' => 'Portafolio en página web.',
-      'time' => 'Julio 2018 - Diciembre 2018',
+      'desc' => 'Webポートフォリオページ。',
+      'time' => '2018年7月 - 2018年12月',
     ],
     [
-      'pos' => 'POST-PRODUCCIÓN AUDIOVISUAL INSTITUCIONAL',
+      'pos' => '機関向け映像ポストプロダクション',
       'ent' => '<a href=\'https://youtube.com/ITFIPoficial\' target=\'_blank\'>ITFIP [YouTube]</a> | <a href=\'https://facebook.com/ITFIPoficial\' target=\'_blank\'>ITFIP [Facebook]</a>',
-      'desc' => 'Creación de contenido digital institucional.',
-      'time' => 'Marzo 2021 - Junio 2022',
+      'desc' => '機関向けデジタルコンテンツ制作。',
+      'time' => '2021年3月 - 2022年6月',
     ],
     [
-      'pos' => 'PRODUCCIÓN DE VÍDEO Y MÁSTER DE TRANSMISIÓN EN PROYECTOS VARIOS',
+      'pos' => '制作アシスタント',
       'ent' => '<a href=\'javascript:;\'>Producciones C&N</a>',
-      'desc' => 'Máster de transmisión, máster de producción y edición de vídeo en proyectos varios.',
-      'time' => 'Julio 2020 - Diciembre 2020',
+      'desc' => '配信マスター、映像制作、複数プロジェクトでの編集。',
+      'time' => '2020年7月 - 2020年12月',
     ],
     [
-      'pos' => 'VIDEOGRAFÍA - Creación de contenido digital',
+      'pos' => 'ビデオ制作',
       'ent' => '<a href=\'https://youtube.com/byuwur\' target=\'_blank\'>[Mateus] byUwUr</a>',
-      'desc' => 'Creación de contenido digital.',
-      'time' => 'Desde 2014',
+      'desc' => 'デジタルコンテンツクリエイター。',
+      'time' => '2014年から',
     ],
   ],
-  // --- Formación ---
+  // --- 学歴 ---
   'education.items' => [
     [
       'inst' => '<a href=\'https://itfip.edu.co/\' target=\'_blank\'>ITFIP</a>',
       'prof' => 'GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM',
-      'prog' => 'Ingeniería de Sistemas',
-      'year' => 'Marzo 2021',
+      'prog' => 'システム工学',
+      'year' => '2021年3月',
     ],
     [
       'inst' => '<a href=\'https://platzi.com/p/atrujillomateus/\' target=\'_blank\'>PLATZI</a>',
       'prof' => '<a href=\'https://platzi.com/p/atrujillomateus/\' target=\'_blank\'>platzi.com/p/atrujillomateus/</a>',
-      'prog' => 'Formación de aptitudes profesionales en Platzi',
-      'year' => 'desde 2022',
+      'prog' => 'Platziでのプロフェッショナルスキルトレーニング',
+      'year' => '2022年から',
     ],
     [
       'inst' => '<a href=\'https://profile.edx.org/u/atrujillomateus\' target=\'_blank\'>EDX</a>',
       'prof' => '<a href=\'https://profile.edx.org/u/atrujillomateus\' target=\'_blank\'>profile.edx.org/u/atrujillomateus</a>',
-      'prog' => 'Formación de aptitudes profesionales en edX',
-      'year' => 'desde 2021',
+      'prog' => 'edXでのプロフェッショナルスキルトレーニング',
+      'year' => '2021年から',
     ],
     [
       'inst' => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>CREHANA</a>',
       'prof' => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>crehana.com/users/atrujillomateus/</a>',
-      'prog' => 'Formación de aptitudes profesionales en Crehana',
-      'year' => 'desde 2021',
+      'prog' => 'Crehanaでのプロフェッショナルスキルトレーニング',
+      'year' => '2021年から',
     ],
     [
       'inst' => '<a href=\'https://www.sena.edu.co/\' target=\'_blank\'>SENA</a>',
       'prof' => '<a href=\'https://oferta.senasofiaplus.edu.co/sofia-oferta/\' target=\'_blank\'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>',
-      'prog' => 'Formación de aptitudes profesionales en SENA',
-      'year' => 'desde 2017',
+      'prog' => 'SENAでのプロフェッショナルスキルトレーニング',
+      'year' => '2017年から',
     ],
   ],
-  // --- Contacto ---
-  'contact.subtitle' => 'Y construyamos algo increíble juntos.',
-  'contact.form.name' => 'Nombre',
-  'contact.form.email' => 'Correo electrónico',
-  'contact.form.phone' => '[+cód. país] Número teléfonico (Opcional)',
-  'contact.form.subject' => 'Asunto',
-  'contact.form.message' => 'Mensaje',
-  'contact.form.send' => 'VAMOS A PLATICAR',
+  // --- お問い合わせ ---
+  'contact.subtitle' => '一緒に最高のものを作りましょう。',
+  'contact.form.name' => '名前',
+  'contact.form.email' => 'メール',
+  'contact.form.phone' => '[+国番号] 電話番号 (任意)',
+  'contact.form.subject' => '件名',
+  'contact.form.message' => 'メッセージ',
+  'contact.form.send' => '話しましょう',
   'contact.mail' => 'atrujillomateus@gmail.com',
-  'contact.mail.thanks' => 'Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!',
-  'contact.mail.error' => 'Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.',
-  'contact.goto_mnm.html' => "<a class='a-lang' href='/{$ROUTE_MNM}' custom-folder='true'>Ver más en MNM<small>.team();</small></a>",
-  // --- Metadatos ---
-  'meta.description' => 'Desarrollador de software | Editor de video',
+  'contact.mail.thanks' => 'メッセージを送信しました。<br>近日中にご連絡します。',
+  'contact.mail.error' => '送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。',
+  'contact.goto_mnm.html' => "<a class='a-lang' href='/{$ROUTE_MNM}' custom-folder='true'>MNM<small>.team();</small> でもっと見る</a>",
+  // --- メタデータ ---
+  'meta.description' => 'ソフトウェア開発者 | 動画編集者',
 
-  // --- Etiquetas de idioma ---
+  // --- 言語ラベル ---
   'language.spanish' => 'Español',
   'language.english' => 'English',
   'language.japanese' => '日本語',
 
-  // --- Etiquetas de tema ---
-  'theme.light.title' => 'Usar tema claro',
-  'theme.dark.title' => 'Usar tema oscuro',
+  // --- テーマラベル ---
+  'theme.light.title' => 'ライトテーマを使用',
+  'theme.dark.title' => 'ダークテーマを使用',
 
-  // --- Etiquetas de résumé y tarjeta ---
-  'resume.es.title' => 'Résumé en Español',
-  'resume.en.title' => 'Résumé en Inglés',
-  'resume.es.alt' => 'Bandera de Colombia',
-  'resume.en.alt' => 'Bandera del Reino Unido',
-  'card.title' => 'Tarjeta de presentación digital',
+  // --- 履歴書とカードのラベル ---
+  'resume.es.title' => 'スペイン語の履歴書',
+  'resume.en.title' => '英語の履歴書',
+  'resume.es.alt' => 'コロンビアの国旗',
+  'resume.en.alt' => '英国の国旗',
+  'card.title' => 'デジタル名刺',
 
-  // --- Etiquetas sociales ---
-  'social.linkedin' => 'Abrir perfil de LinkedIn',
-  'social.github' => 'Abrir perfil de GitHub',
-  'social.youtube' => 'Abrir canal de YouTube',
+  // --- SNSラベル ---
+  'social.linkedin' => 'LinkedIn プロフィールを開く',
+  'social.github' => 'GitHub プロフィールを開く',
+  'social.youtube' => 'YouTube チャンネルを開く',
 
-  // --- Accesibilidad ---
-  'accessibility.open_panel' => 'Abrir herramientas de accesibilidad',
-  'accessibility.increase_text' => 'Aumentar tamaño de texto',
-  'accessibility.reset_text' => 'Restablecer tamaño de texto',
-  'accessibility.decrease_text' => 'Disminuir tamaño de texto',
-  'accessibility.toggle_motion' => 'Alternar animaciones',
-  'accessibility.dyslexia' => 'Usar fuente apta para dislexia',
-  'accessibility.word_spacing' => 'Aumentar espacio entre palabras',
-  'accessibility.highlight_links' => 'Resaltar enlaces',
-  'accessibility.high_contrast' => 'Alternar alto contraste',
-  'accessibility.invert_colors' => 'Invertir colores',
-  'accessibility.grayscale' => 'Usar filtro de escala de grises',
-  'accessibility.protanopia' => 'Usar filtro de protanopía',
-  'accessibility.deuteranopia' => 'Usar filtro de deuteranopía',
-  'accessibility.tritanopia' => 'Usar filtro de tritanopía',
+  // --- アクセシビリティ ---
+  'accessibility.open_panel' => 'アクセシビリティツールを開く',
+  'accessibility.increase_text' => '文字サイズを大きくする',
+  'accessibility.reset_text' => '文字サイズをリセット',
+  'accessibility.decrease_text' => '文字サイズを小さくする',
+  'accessibility.toggle_motion' => 'アニメーションを切り替え',
+  'accessibility.dyslexia' => '読みやすいフォントを使用',
+  'accessibility.word_spacing' => '単語間隔を広げる',
+  'accessibility.highlight_links' => 'リンクを強調表示',
+  'accessibility.high_contrast' => '高コントラストを切り替え',
+  'accessibility.invert_colors' => '色を反転',
+  'accessibility.grayscale' => 'グレースケールフィルターを使用',
+  'accessibility.protanopia' => '1型色覚フィルターを使用',
+  'accessibility.deuteranopia' => '2型色覚フィルターを使用',
+  'accessibility.tritanopia' => '3型色覚フィルターを使用',
 ];
