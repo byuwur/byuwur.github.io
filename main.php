@@ -23,8 +23,8 @@ require_once "{$TO_HOME}/_common.php";
     <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>"><i class="fab fa-github"></i></a>
     <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>"><i class="fab fa-youtube"></i></a>
   </div>
-  <section id="about">
-    <div class="mb-3 text-center">
+  <section id="about" class="px-0">
+    <div class="mb-3 px-4 text-center">
       <span class="text-uppercase text-center fs-1 fw-bold"><?= "{$LANG["hero.im"]} {$LANG["profile.name_top"]}" ?></span>
       <span class="text-uppercase"><?= $LANG["profile.full_name"] ?></span>
     </div>
@@ -57,7 +57,7 @@ require_once "{$TO_HOME}/_common.php";
         </div>
       <?php } ?>
     </div>
-    <div class="row mt-4 pt-4">
+    <div class="row mt-4 pt-4 px-4">
       <div class="col-sm-auto d-flex justify-content-center">
         <div class="has-background-contain rounded-circle mb-4" style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:128px;width:128px;"></div>
       </div>

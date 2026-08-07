@@ -1,11 +1,18 @@
 :root {
-	--sidebar-expanded-width: 16rem;
-	--primary-color: #600;
-	--secondary-color: #000;
+  --sidebar-expanded-width: 16rem;
+  --primary-color: #600;
+  --secondary-color: #000;
 }
 #bywr-accessibility {
-	top: 25vh;
+  top: 25vh;
 }
 #bywr-accessibility-buttons {
-	max-height: 70vh;
+  max-height: 70vh;
+}
+.app-container {
+  padding-left: var(--sidebar-width);
+  padding-right: 0;
+}
+.app-container.bywr-sidebar-expanded {
+  padding-left: var(--sidebar-expanded-width);
 }
