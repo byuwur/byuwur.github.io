@@ -9,10 +9,3 @@
 #bywr-accessibility-buttons {
   max-height: 70vh;
 }
-.app-container {
-  padding-left: var(--sidebar-width);
-  padding-right: 0;
-}
-.app-container.bywr-sidebar-expanded {
-  padding-left: var(--sidebar-expanded-width);
-}
