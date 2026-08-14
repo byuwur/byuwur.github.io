@@ -13,7 +13,7 @@ $LANG = [
 	"route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
 
 	// --- Page shell ---
-	"title.default" => "[Mateus] byUwUr — I create useful things",
+	"title.default" => "[Mateus] byUwUr = I create useful things",
 	"loader.loading" => "<b>Loading standard view...</b><br>Still loading? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Go to basic view</a>",
 
 	// --- Profile and hero ---
@@ -21,7 +21,7 @@ $LANG = [
 	"profile.full_name" => "Andrés Trujillo Mateus",
 	"hero.im" => 'I\'m',
 	"hero.and_i" => "I create useful things",
-	"hero.in" => "in ",
+	"hero.in" => "with ",
 	"hero.hello_world" => "Hello, world",
 
 	// --- Navigation ---

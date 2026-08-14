@@ -21,7 +21,7 @@ $LANG = [
 	"profile.full_name" => "Andrés Trujillo Mateus",
 	"hero.im" => "Soy",
 	"hero.and_i" => "Creo cosas útiles",
-	"hero.in" => "en ",
+	"hero.in" => "con ",
 	"hero.hello_world" => "Hola, mundo",
 
 	// --- Navegación ---

@@ -13,7 +13,7 @@ $LANG = [
 	"route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
 
 	// --- ページ構造 ---
-	"title.default" => "[Mateus] byUwUr — 役立つものを作ります",
+	"title.default" => "[Mateus] byUwUr = 役立つものを作ります",
 	"loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
 
 	// --- プロフィールとヒーロー ---
