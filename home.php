@@ -57,20 +57,20 @@ require_once "{$TO_HOME}/_common.php";
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/jquery-ui.min.css" ?>" />
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/shards.css" ?>" />
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/bootstrap.min.css" ?>" />
-  <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/swiper.min.css" ?>" />
-  <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/select2.min.css" ?>" />
-  <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/dropzone.min.css" ?>" />
+  <!--link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/swiper.min.css" ?>" /-->
+  <!--link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/select2.min.css" ?>" /-->
+  <!--link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/css/dropzone.min.css" ?>" /-->
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/spa.php/_common.css" ?>" />
   <script src="<?= "{$HOME_PATH}/spa.php/js/jquery.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/js/jquery-ui.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/js/popper.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/js/shards.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/js/bootstrap.min.js" ?>" defer></script>
-  <script src="<?= "{$HOME_PATH}/spa.php/js/swiper.min.js" ?>" defer></script>
-  <script src="<?= "{$HOME_PATH}/spa.php/js/select2.full.min.js" ?>" defer></script>
-  <script src="<?= "{$HOME_PATH}/spa.php/js/dropzone.min.js" ?>" defer></script>
+  <!--script src="<?= "{$HOME_PATH}/spa.php/js/swiper.min.js" ?>" defer></script-->
+  <!--script src="<?= "{$HOME_PATH}/spa.php/js/select2.full.min.js" ?>" defer></script-->
+  <!--script src="<?= "{$HOME_PATH}/spa.php/js/dropzone.min.js" ?>" defer></script-->
   <script src="<?= "{$HOME_PATH}/spa.php/js/typed.min.js" ?>" defer></script>
-  <script src="<?= "{$HOME_PATH}/spa.php/js/particles.min.js" ?>" defer></script>
+  <!--script src="<?= "{$HOME_PATH}/spa.php/js/particles.min.js" ?>" defer></script-->
   <script src="<?= "{$HOME_PATH}/spa.php/js/cookies.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_functions.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_common.js" ?>" defer></script>
@@ -137,7 +137,7 @@ require_once "{$TO_HOME}/_common.php";
       </a>
     </div>
   </div>
-  <div id="particles"></div>
+  <!--div id="particles"></div-->
   <div class="side-video"></div>
   <nav id="spa-nav"></nav>
   <main id="spa-content"></main>
