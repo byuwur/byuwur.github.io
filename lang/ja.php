@@ -4,6 +4,9 @@
  * Use trusted HTML only where the template intentionally prints raw content.
  */
 $LANG = [
+  // --- Misc ---
+  "years" => "年",
+
   // --- ルート ---
   "route.root" => $ROUTE_ROOT ?? "/",
   "route.home" => $ROUTE_HOME ?? "home",

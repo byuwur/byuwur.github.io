@@ -4,6 +4,9 @@
  * Usa HTML confiable solo donde la plantilla imprime contenido intencionalmente.
  */
 $LANG = [
+  // --- Misc ---
+  "years" => "años",
+
   // --- Rutas ---
   "route.root" => $ROUTE_ROOT ?? "/",
   "route.home" => $ROUTE_HOME ?? "inicio",

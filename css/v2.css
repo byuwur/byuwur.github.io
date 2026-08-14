@@ -167,22 +167,14 @@ a:hover {
   flex-direction: column;
   border-bottom: 1px solid #777;
 }
-.skill-row {
-  position: relative;
-  padding: 0 0 3rem 0;
-}
-.skill-row h3 {
-  margin: 0 0 0.75rem;
-}
-.skill-row .progress {
-  height: 0.25rem;
-  border-radius: 0;
+.skill-section .progress {
+  height: 0.2rem;
   background-color: #999;
 }
-.skill-row .progress-bar {
+.skill-section .progress-bar {
   background: var(--primary-color);
 }
-.skill-row .skill {
+.skill-section .skill {
   display: flex;
   flex-direction: column;
 }
