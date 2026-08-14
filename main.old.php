@@ -54,24 +54,23 @@ require_once "{$TO_HOME}/_common.php";
     </section>
     <section id="skills">
       <h2 class="text-uppercase mb-5 pb-3"><?= $LANG["nav.skills"] ?></h2>
-      <div class="my-4"><?= $LANG["skills.code.title"] ?></div>
-      <ul class="d-flex flex-row flex-wrap gap-2 fs-1 mb-4">
-        <?php foreach ($LANG["skills.code.items"] as $codeskill) { ?>
-          <li><i class="<?= $codeskill["icon"] ?>" data-bs-toggle="tooltip" data-bs-title="<?= "{$codeskill["text"]} = {$codeskill["level"]}" ?>"></i></li>
+      <div class="row g-4 w-100">
+        <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
+          <div class="col-12 mb-3">
+            <h4 class="text-uppercase mb-2">
+              <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i><?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
+            </h4>
+            <ul class="d-flex flex-wrap gap-2 mb-0">
+              <?php foreach ($skillsection["items"] as $skill) { ?>
+                <li class="skill p-1">
+                  <i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i>
+                  <span><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></span>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
         <?php } ?>
-      </ul>
-      <div class="my-2"><?= $LANG["skills.software.title"] ?></div>
-      <ul class="row mb-4 w-100">
-        <?php foreach ($LANG["skills.software.items"] as $otherskill) { ?>
-          <li class="col-12 col-md-6"><i class="<?= $otherskill["icon"] ?>"></i><?= "{$otherskill["text"]} = {$otherskill["level"]}" ?></li>
-        <?php } ?>
-      </ul>
-      <div class="my-2"><?= $LANG["skills.other.title"] ?></div>
-      <ul class="row mb-4 w-100">
-        <?php foreach ($LANG["skills.other.items"] as $thingy) { ?>
-          <li class="col-12 col-md-6"><i class="fas fa-check"></i><?= $thingy ?></li>
-        <?php } ?>
-      </ul>
+      </div>
     </section>
     <section id="experience">
       <h2 class="text-uppercase mb-5 pb-5"><?= $LANG["nav.experience"] ?></h2>
