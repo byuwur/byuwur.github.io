@@ -1,18 +1,18 @@
 :root {
-	--primary-color: #e44;
+  --primary-color: #e44;
 }
 body {
-	background: #000;
-	color: var(--light-color);
+  background: #000;
+  color: var(--light-color);
 }
 .form-control {
-	background: #fff1;
-	color: #fff !important;
+  background: #fff1;
+  color: #fff !important;
 }
 .form-control:focus {
-	background: #1117;
-	border-color: #fff;
+  background: #1117;
+  border-color: #fff;
 }
 .skill-row .badge {
-	background: #fff1;
+  background: #fff1;
 }
