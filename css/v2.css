@@ -168,13 +168,17 @@ a:hover {
   border-bottom: 1px solid #777;
 }
 .skill-section .progress {
-  height: 0.2rem;
-  background-color: #999;
+  height: 0.1rem;
+  background-color: #bbb;
 }
 .skill-section .progress-bar {
   background: var(--primary-color);
 }
 .skill-section .skill {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  border: 1px solid #7777;
+  border-radius: 1rem;
 }

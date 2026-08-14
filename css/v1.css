@@ -47,6 +47,14 @@ a:hover {
 .social-icons a:hover {
   background-color: #a00;
 }
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7777;
+  border-radius: 1rem;
+  padding-right: 0.5rem !important;
+}
 /* === OLD NAV === */
 #sideNav {
   overflow-x: hidden;
