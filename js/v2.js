@@ -1,11 +1,17 @@
 "use strict";
 $(() => {
-	// Typing text
-	if ($("#typed").length)
-		new Typed("#typed", {
-			typeSpeed: 50,
-			backSpeed: 20,
-			loop: true,
-			strings: ["PHP", "Javascript - Typescript", "Bootstrap - Tailwind", "React - React Native", "MySQL", "Git", "CI/CD", "Java", "Vegas Pro", "Adobe Premiere Pro", "Adobe Photoshop & Lightroom", "Davinci Resolve"]
-		});
+  // Typing text
+  if ($("#typed").length) {
+    let strings = [];
+    try {
+      strings = JSON.parse($("#typed").attr("data-strings") || "[]");
+      if (!Array.isArray(strings) || !strings.length) strings = [];
+    } catch {}
+    new Typed("#typed", {
+      typeSpeed: 25,
+      backSpeed: 10,
+      loop: true,
+      strings
+    });
+  }
 });
