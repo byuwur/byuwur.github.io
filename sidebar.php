@@ -14,7 +14,7 @@ require_once "{$TO_HOME}/_common.php";
 // --- PHP ---
 ?>
 <nav id="bywr-sidebar" class="bywr-sidebar accordion bywr-accordion bg-dark-transparent bg-blurred text-white">
-  <div class="overlay" style="opacity:0.2;"></div>
+  <div class="overlay-inverted" style="opacity:0.25;"></div>
   <div class="bywr-sidebar-content accordion-item flex-grow-1">
     <div class="bywr-sidebar-option p-2o5">
       <div class="navbar-brand has-background-contain" role="img" aria-label="<?= htmlspecialchars($LANG["sidebar.logo_alt"], ENT_QUOTES, "UTF-8") ?>" style="height:48px;width:48px;background-image:url('<?= "{$HOME_PATH}/img/logo.png" ?>');"></div>
