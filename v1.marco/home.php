@@ -87,7 +87,7 @@ if (!$LANG && file_exists("{$TO_HOME}/v1.marco/lang.en.php")) require_once "{$TO
     </ul>
   </section>
   <section id="awards">
-    <h2 class="text-uppercase mb-5 pb-5"><?= $_portfolio ?></h2>
+    <h2 class="text-uppercase mb-5 pb-5"><?= $_awards ?></h2>
     <ul class="w-100">
       <li><i class="fas fa-trophy text-warning"></i><?= $_awards3 ?></li>
       <li><i class="fas fa-trophy text-warning"></i><?= $_awards2 ?></li>
