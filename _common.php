@@ -11,7 +11,7 @@ require_once "{$TO_HOME}/spa.php/_common.php";
 // Just call the SPA.php file and add whatever you need below
 
 const SKILL_SCALE_START = 2018;
-const SKILL_PROGRESS_MIN = 55;
+const SKILL_PROGRESS_MIN = 65;
 const SKILL_PROGRESS_MAX = 95;
 const SKILL_PROGRESS_STEP = 5;
 

@@ -49,7 +49,6 @@ a:hover {
 }
 .skill {
   display: flex;
-  align-items: center;
   justify-content: center;
   border: 1px solid #7777;
   border-radius: 1rem;
