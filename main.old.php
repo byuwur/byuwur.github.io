@@ -64,7 +64,7 @@ require_once "{$TO_HOME}/_common.php";
               <?php foreach ($skillsection["items"] as $skill) { ?>
                 <li class="skill p-1">
                   <i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i>
-                  <span><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></span>
+                  <span class="mx-1"><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></spanc¿>
                 </li>
               <?php } ?>
             </ul>

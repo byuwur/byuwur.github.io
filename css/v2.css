@@ -179,6 +179,5 @@ a:hover {
   justify-content: center;
   border: 1px solid #7777;
   border-radius: 1rem;
-  padding-right: 1rem !important;
   flex-direction: column;
 }
