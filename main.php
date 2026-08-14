@@ -79,36 +79,21 @@ foreach ($LANG["skills.sections"] as $skillSection)
   <section id="resume">
     <h2 class="text-uppercase mb-5 pb-5"><?= $LANG["nav.resume"] ?></h2>
     <div class="row w-100">
-      <div class="skill-row row col-12">
-        <div class="col-6">
-          <h4 class="text-uppercase"><i class="fas fa-code"></i><?= $LANG["skills.code.title"] ?></h4>
-          <div class="row">
-            <?php foreach ($LANG["skills.code.items"] as $codeskill) { ?>
-              <div class="skill col-sm-6 mt-3">
-                <h4 class="m-0"><i class="<?= $codeskill["icon"] ?>"></i><?= $codeskill["text"] ?></h4>
-                <span class="badge rounded-pill text-primary text-md-end"><?= $codeskill["level"] ?></span>
-                <div class="progress rounded-pill">
-                  <div class="progress-bar rounded-pill " style="width: <?= $codeskill["progress"] ?>"></div>
-                </div>
-              </div>
+      <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
+        <div class="skill-section col-12 mb-4">
+          <h4 class="text-uppercase mb-2">
+            <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i><?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
+          </h4>
+          <ul class="d-flex flex-wrap gap-2 mb-0">
+            <?php foreach ($skillsection["items"] as $skill) { ?>
+              <li class="skill p-1 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($skill["years"], ENT_QUOTES, "UTF-8") . "+ " . htmlspecialchars($LANG["years"], ENT_QUOTES, "UTF-8")?>">
+                <h4 class="m-0"><i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>"></i><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></h4>
+                <div class="progress rounded-pill"><div class="progress-bar" style="width: <?= htmlspecialchars($skill["progress"], ENT_QUOTES, "UTF-8") ?>%"></div></div>
+              </li>
             <?php } ?>
-          </div>
+          </ul>
         </div>
-        <div class="col-6">
-          <h4 class="text-uppercase"><i class="fas fa-file-export"></i><?= $LANG["skills.other.title"] ?></h4>
-          <div class="row">
-            <?php foreach ($LANG["skills.software.items"] as $otherskill) { ?>
-              <div class="skill col-sm-6 mt-3">
-                <h4 class="m-0"><i class="<?= $otherskill["icon"] ?>"></i><?= $otherskill["text"] ?></h4>
-                <span class="badge rounded-pill text-primary text-md-end"><?= $otherskill["level"] ?></span>
-                <div class="progress rounded-pill">
-                  <div class="progress-bar rounded-pill " style="width: <?= $otherskill["progress"] ?>"></div>
-                </div>
-              </div>
-            <?php } ?>
-          </div>
-        </div>
-      </div>
+      <?php } ?>
       <div class="resume-row col-md-6">
         <h4 class="text-uppercase"><i class="fas fa-briefcase"></i><?= $LANG["nav.experience"] ?></h4>
         <ul>
