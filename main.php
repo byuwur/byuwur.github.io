@@ -15,7 +15,7 @@ require_once "{$TO_HOME}/_common.php";
 $typedSkills = [];
 foreach ($LANG["skills.sections"] as $skillSection) 
   foreach ($skillSection["items"] as $skill) 
-    $typedSkills[] = $skill["text"];
+    $typedSkills[] = "<i class=\"{$skill["icon"]}\"></i> {$skill["text"]}";
 ?>
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
