@@ -58,15 +58,20 @@ switch ($mail_res) {
 }
 // Check if values need to be changed
 $topic_txt = validate_value($_POST["topic_txt"] ?? null);
-if ($topic_txt !== null) $mail_resources["topic_txt"] = $topic_txt;
+if ($topic_txt !== null)
+  $mail_resources["topic_txt"] = $topic_txt;
 $msg_top = validate_value($_POST["msg_top"] ?? null);
-if ($msg_top !== null) $mail_resources["msg_top"] = $msg_top;
+if ($msg_top !== null)
+  $mail_resources["msg_top"] = $msg_top;
 $msg_bot = validate_value($_POST["msg_bot"] ?? null, "string", ["allowed_tags" => ["p", "strong", "br"]]);
-if ($msg_bot !== null) $mail_resources["msg_bot"] = $msg_bot;
+if ($msg_bot !== null)
+  $mail_resources["msg_bot"] = $msg_bot;
 $cta_url = validate_value($_POST["cta_url"] ?? null);
-if ($cta_url !== null) $mail_resources["cta_url"] = $cta_url;
+if ($cta_url !== null)
+  $mail_resources["cta_url"] = $cta_url;
 $cta_txt = validate_value($_POST["cta_txt"] ?? null);
-if ($cta_txt !== null) $mail_resources["cta_txt"] = $cta_txt;
+if ($cta_txt !== null)
+  $mail_resources["cta_txt"] = $cta_txt;
 // Create the email based on the template
 $mail_html = '
 <!DOCTYPE html>
@@ -195,11 +200,11 @@ $mail_html .= '<p style="margin: 0; mso-line-height-rule: exactly; font-family: 
             </a>
         </td>
         <td align="right" valign="center" style="padding: 0; margin: 0; height: 60px; display: flex; gap: 2px; justify-content: end; align-items: center">
-            <a target="_blank" href="' . $mail_resources["in_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["in_img"] . '" alt="In" title="Linkedin" height="24" width="24" style="display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
-            <a target="_blank" href="' . $mail_resources["gh_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["gh_img"] . '" alt="GitHub" title="GitHub" height="24" width="24" style="display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
-            <a target="_blank" href="' . $mail_resources["yt_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["yt_img"] . '" alt="Yt" title="Youtube" height="24" width="24" style="display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
-            <a target="_blank" href="' . $mail_resources["ig_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["ig_img"] . '" alt="Ig" title="Instagram" height="24" width="24" style="display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
-            <a target="_blank" href="' . $mail_resources["fb_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["fb_img"] . '" alt="Fb" title="Facebook" height="24" width="24" style="display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
+            <a target="_blank" href="' . $mail_resources["in_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["in_img"] . '" alt="In" title="Linkedin" style="width: 1rem; height: 1rem; display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
+            <a target="_blank" href="' . $mail_resources["gh_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["gh_img"] . '" alt="GitHub" title="GitHub" style="width: 1rem; height: 1rem; display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
+            <a target="_blank" href="' . $mail_resources["yt_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["yt_img"] . '" alt="Yt" title="Youtube" style="width: 1rem; height: 1rem; display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
+            <a target="_blank" href="' . $mail_resources["ig_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["ig_img"] . '" alt="Ig" title="Instagram" style="width: 1rem; height: 1rem; display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
+            <a target="_blank" href="' . $mail_resources["fb_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 14px"><img src="' . $mail_resources["fb_img"] . '" alt="Fb" title="Facebook" style="width: 1rem; height: 1rem; display: block; font-size: 18px; border: 0; outline: none; text-decoration: none" /></a>
         </td>
     </table>
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0px; background-color: #ffffff; width: 600px; padding: 0 40px 20px">
