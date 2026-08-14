@@ -68,6 +68,39 @@ $LANG = [
   // --- ポートフォリオ ---
   "portfolio.items" => [
     [
+      "title" => "Stream.FGC",
+      "ent" => "byUwUr",
+      "desc" => "格闘ゲームトーナメントを管理するためのアプリ。",
+      "year" => "2026",
+      "image" => "/img/work-fgc.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/stream.fgc",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-golang",
+          "text" => "GO",
+        ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
       "title" => "Easy SPA PHP",
       "ent" => "byUwUr",
       "desc" => "PHPで手作りしたSingle Page Application (SPA)フレームワーク。",
