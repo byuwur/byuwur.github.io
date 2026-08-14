@@ -12,6 +12,10 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
 // --- PHP ---
+$typedSkills = [];
+foreach ($LANG["skills.sections"] as $skillSection) 
+  foreach ($skillSection["items"] as $skill) 
+    $typedSkills[] = $skill["text"];
 ?>
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
@@ -28,7 +32,7 @@ require_once "{$TO_HOME}/_common.php";
       <span class="text-uppercase text-center fs-1 fw-bold"><?= "{$LANG["hero.im"]} {$LANG["profile.name_top"]}" ?></span>
       <span class="text-uppercase"><?= $LANG["profile.full_name"] ?></span>
     </div>
-    <span class="mb-5 text-center fs-5"><?= $LANG["hero.and_i"] . " " . $LANG["hero.in"] ?><br>✨<span id="typed"></span>✨</span>
+    <span class="mb-5 text-center fs-5"><?= $LANG["hero.and_i"] . " " . $LANG["hero.in"] ?><br>✨<span id="typed" data-strings="<?= htmlspecialchars(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), ENT_QUOTES, "UTF-8") ?>"></span>✨</span>
     <div class="row w-100">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
         <div class="col-md-6 col-xl-4 p-0 text-dark-shadow text-white <?= $portfolio["class"] ?>">
