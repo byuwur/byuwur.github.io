@@ -588,7 +588,7 @@ $LANG = [
         ["icon" => "fab fa-react", "text" => "React Native", ...calculate_skill(2023)],
         ["icon" => "fas fa-mobile-screen-button", "text" => "Expo", ...calculate_skill(2023)],
         ["icon" => "fab fa-golang", "text" => "Wails (Go)", ...calculate_skill(2025, 75)],
-        ["icon" => "fab fa-python", "text" => "Python", ...calculate_skill(2017, 55)],
+        ["icon" => "fab fa-python", "text" => "Python", ...calculate_skill(2018, 55)],
         ["icon" => "fab fa-java", "text" => "Java", ...calculate_skill(2018, 55)],
         ["icon" => "fab fa-android", "text" => "Native Android Development", ...calculate_skill(2018, 55)],
       ],

@@ -80,14 +80,14 @@ foreach ($LANG["skills.sections"] as $skillSection)
     <h2 class="text-uppercase mb-5 pb-5"><?= $LANG["nav.resume"] ?></h2>
     <div class="row w-100">
       <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
-        <div class="skill-section col-12 mb-4">
+        <div class="skill-section col-12 mb-5">
           <h4 class="text-uppercase mb-2">
             <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i><?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
           </h4>
           <ul class="d-flex flex-wrap gap-2 mb-0">
             <?php foreach ($skillsection["items"] as $skill) { ?>
               <li class="skill p-2 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($skill["years"], ENT_QUOTES, "UTF-8") . "+ " . htmlspecialchars($LANG["years"], ENT_QUOTES, "UTF-8")?>">
-                <h4 class="m-0"><i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>"></i><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></h4>
+                <h4 class="m-0"><i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>"></i><span class="ms-1"><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></span></h4>
                 <div class="progress rounded-pill"><div class="progress-bar" style="width: <?= htmlspecialchars($skill["progress"], ENT_QUOTES, "UTF-8") ?>%"></div></div>
               </li>
             <?php } ?>
