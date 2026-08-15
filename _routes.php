@@ -75,9 +75,9 @@ $routes = [
   "/{$ROUTE_V1}/{$ROUTE_EN}" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],
   "/{$ROUTE_V1}/{$ROUTE_JA}" => ["URI" => "/main.old.php", "GET" => ["lang" => "ja"], ...$V1_COMPONENTS],
   // files
-  "/{$ROUTE_RESUME}" => ["FILE" => "/Mateus.es.pdf"],
-  "/{$ROUTE_RESUME}.{$ROUTE_ES}" => ["FILE" => "/Mateus.es.pdf"],
-  "/{$ROUTE_RESUME}.{$ROUTE_EN}" => ["FILE" => "/Mateus.en.pdf"],
+  "/{$ROUTE_RESUME}" => ["FILE" => "/Andres-Trujillo-Mateus-Resume.ES.pdf"],
+  "/{$ROUTE_RESUME}.{$ROUTE_ES}" => ["FILE" => "/Andres-Trujillo-Mateus-Resume.ES.pdf"],
+  "/{$ROUTE_RESUME}.{$ROUTE_EN}" => ["FILE" => "/Andres-Trujillo-Mateus-Resume.EN.pdf"],
   // "v1"
   "/{$ROUTE_NESTUX}" => ["URI" => "/v1.nestux/home.php", ...$COMPONENTS_EMPTY],
   "/{$ROUTE_NESTUX}/{$ROUTE_ES}" => ["URI" => "/v1.nestux/home.php", "GET" => ["lang" => "es"], ...$COMPONENTS_EMPTY],
