@@ -33,13 +33,14 @@ require_once "{$TO_HOME}/_common.php";
         <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>"><i class="fab fa-youtube"></i></a>
       </div>
       <div class="mt-4 d-flex flex-column flex-sm-row">
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-          <i class="fas fa-file-invoice"></i><span><?= $LANG["resume.es.title"] ?></span><i class="fas fa-download ms-auto"></i>
-        </a>
         <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-          <i class="fas fa-file-invoice"></i><span><?= $LANG["resume.en.title"] ?></span><i class="fas fa-download ms-auto"></i>
+          <img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" style="width:1rem;height:1rem;margin:4px;" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
+          <span><?= $LANG["resume.en.title"] ?></span>
         </a>
-
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
+          <img src="<?= "{$HOME_PATH}/img/co.svg" ?>" style="width:1rem;height:1rem;margin:4px;" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
+          <span><?= $LANG["resume.es.title"] ?></span>
+        </a>
       </div>
       <div class="row mt-4">
         <div class="col-12 col-md-5">
@@ -137,5 +138,6 @@ require_once "{$TO_HOME}/_common.php";
   });
 </script>
 <?php
-while (ob_get_level() > 0) ob_end_flush();
+while (ob_get_level() > 0)
+  ob_end_flush();
 ?>

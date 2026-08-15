@@ -769,8 +769,8 @@ $LANG = [
   "theme.dark.title" => "ダークテーマを使用",
 
   // --- 履歴書とカードのラベル ---
-  "resume.es.title" => "スペイン語の履歴書",
-  "resume.en.title" => "英語の履歴書",
+  "resume.es.title" => "CV en Español",
+  "resume.en.title" => "English Résumé",
   "resume.es.alt" => "コロンビアの国旗",
   "resume.en.alt" => "英国の国旗",
   "card.title" => "デジタル名刺",

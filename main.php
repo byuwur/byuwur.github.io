@@ -37,13 +37,24 @@ foreach ($LANG["skills.sections"] as $skillSection)
         class="fab fa-youtube"></i></a>
   </div>
   <section id="about" class="px-0">
-    <div class="mb-3 px-4 text-center">
-      <span
-        class="text-uppercase text-center fs-1 fw-bold"><?= "{$LANG["hero.im"]} {$LANG["profile.name_top"]}" ?></span>
+    <div class="mb-4 px-4 text-center">
+      <span class="text-uppercase text-center fs-1 fw-bold"><?= "{$LANG["hero.im"]} {$LANG["profile.name_top"]}" ?></span>
       <span class="text-uppercase"><?= $LANG["profile.full_name"] ?></span>
     </div>
-    <span class="mb-5 text-center fs-5"><?= $LANG["hero.and_i"] . " " . $LANG["hero.in"] ?><br>✨<span id="typed"
-        data-strings="<?= htmlspecialchars(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), ENT_QUOTES, "UTF-8") ?>"></span>✨</span>
+    <span class="mb-4 text-center fs-5">
+      <?= $LANG["hero.and_i"] . " " . $LANG["hero.in"] ?><br>
+      ✨<span id="typed" data-strings="<?= htmlspecialchars(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), ENT_QUOTES, "UTF-8") ?>"></span>✨
+    </span>
+    <div class="mb-5 d-flex flex-column flex-md-row justify-content-center">
+      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
+        <img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" style="width:1rem;height:1rem;margin:4px;" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
+        <span><?= $LANG["resume.en.title"] ?></span>
+      </a>
+      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
+        <img src="<?= "{$HOME_PATH}/img/co.svg" ?>" style="width:1rem;height:1rem;margin:4px;" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
+        <span><?= $LANG["resume.es.title"] ?></span>
+      </a>
+    </div>
     <div class="row w-100">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
         <div class="col-md-6 col-xl-4 p-0 text-dark-shadow text-white <?= $portfolio["class"] ?>">
@@ -81,24 +92,6 @@ foreach ($LANG["skills.sections"] as $skillSection)
           style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:128px;width:128px;"></div>
       </div>
       <p class="col"><?= $LANG["about.description"] ?></p>
-    </div>
-    <div class="d-flex flex-column flex-md-row justify-content-center">
-      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>"
-        title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>"
-        aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/co.svg" ?>"
-          style="width:1rem;height:1rem;margin:4px;"
-          alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" /><span><?= $LANG["resume.es.title"] ?></span><i
-          class="fas fa-download ms-auto"></i>
-      </a>
-      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>"
-        title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>"
-        aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/gb.svg" ?>"
-          style="width:1rem;height:1rem;margin:4px;"
-          alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" /><span><?= $LANG["resume.en.title"] ?></span><i
-          class="fas fa-download ms-auto"></i>
-      </a>
     </div>
   </section>
   <section id="resume">

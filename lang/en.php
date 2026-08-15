@@ -769,8 +769,8 @@ $LANG = [
   "theme.dark.title" => "Use dark theme",
 
   // --- Resume and card labels ---
-  "resume.es.title" => "Résumé in Spanish",
-  "resume.en.title" => "Résumé in English",
+  "resume.es.title" => "CV en Español",
+  "resume.en.title" => "English Résumé",
   "resume.es.alt" => "Spanish flag",
   "resume.en.alt" => "United Kingdom flag",
   "card.title" => "Digital business card",

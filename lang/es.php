@@ -769,8 +769,8 @@ $LANG = [
   "theme.dark.title" => "Usar tema oscuro",
 
   // --- Etiquetas de résumé y tarjeta ---
-  "resume.es.title" => "Résumé en Español",
-  "resume.en.title" => "Résumé en Inglés",
+  "resume.es.title" => "CV en Español",
+  "resume.en.title" => "English Résumé",
   "resume.es.alt" => "Bandera de Colombia",
   "resume.en.alt" => "Bandera del Reino Unido",
   "card.title" => "Tarjeta de presentación digital",
