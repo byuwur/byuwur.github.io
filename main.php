@@ -40,7 +40,11 @@ foreach ($LANG["skills.sections"] as $skillSection)
     </div>
     <span class="mb-4 text-center fs-5">
       <?= $LANG["hero.and_i"] . " " . $LANG["hero.in"] ?><br>
-      ✨<span id="typed" data-strings="<?= htmlspecialchars(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), ENT_QUOTES, "UTF-8") ?>"></span>✨
+      ✨
+      <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
+      <span id="typed" data-strings="<?= htmlspecialchars(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), ENT_QUOTES, "UTF-8") ?>"></span>
+      <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
+      ✨
     </span>
     <div class="mb-5 d-flex flex-column flex-md-row justify-content-center">
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
