@@ -20,7 +20,7 @@ $LANG = [
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
 
   // --- プロフィールとヒーロー ---
-  "profile.name_top" => '[Mateus] <span class=\'text-primary\'>byUwUr</span>',
+  "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
   "profile.full_name" => "Andrés Trujillo Mateus",
   "hero.im" => "私は",
   "hero.and_i" => "役立つものを作ります",
@@ -63,7 +63,11 @@ $LANG = [
 
   // --- 自己紹介とSNS ---
   "about.description" =>
-    "XAMP (Apache, MySQL, PHP)、React、React Native、Android向けJava、SQLデータベース設計を扱うフルスタックWeb開発者です。AWSとPythonも少し扱います。<br>英語とスペイン語に対応。2018年からプロとして活動し、2014年から写真・動画編集にも携わっています。<br>いつでも学び続け、必要なものを一緒に作るためにここにいます。",
+    "現在、<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
+    2018年からWebおよびモバイルソリューションの開発・デプロイ・運用サポートに携わってきた、バイリンガルのシステムエンジニアです。2014年からは映像制作の経験も積んできました。<br>
+    シンプルであること自体が十分に難しい。複雑なワークフローをより扱いやすくする、堅牢で信頼性の高いツールを作ることを大切にしています。役に立つものを作ります。<br>
+    フルスタック開発、クライアント向け導入支援、本番環境のサポート、技術デリバリーまで幅広く経験しており、React、React Native、PHP、MySQL、AWSを実務で扱ってきました。<br>
+    目的とインパクトを重視したソフトウェア開発に取り組んでおり、映像制作やライブ配信の経験も活かしています。",
   "social.linkedin.url" => "https://linkedin.com/in/atrujillomateus",
   "social.github.url" => "https://github.com/byuwur",
   "social.youtube.url" => "https://youtube.com/byuwur",
@@ -643,73 +647,73 @@ $LANG = [
   "experience.items" => [
     [
       "pos" => "ソフトウェア開発者",
-      "ent" => '<a href=\'https://vehikl.com/\' target=\'_blank\'>magnet360 2023 => Vehikl</a>',
+      "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
       "desc" => "主にReact、React Native、AWS、PHPを使い、実装・サポート開発者として従事。",
       "time" => "2023年10月",
     ],
     [
       "pos" => "ソフトウェア開発アナリスト",
-      "ent" => '<a href=\'https://nxs.com.co/\' target=\'_blank\'>Nexos Software => iuvity</a>',
+      "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
       "desc" => "クライアントに合わせたツールを使い、実装・サポート開発者として従事。",
       "time" => "2022年8月 - 2024年2月",
     ],
     [
       "pos" => "バックエンドWeb開発者",
-      "ent" => '<a href=\'https://rivka.mx/\' target=\'_blank\'>Rivka.mx => Orbit Investments LLC</a>',
+      "ent" => "<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>",
       "desc" => "主にPHPを中心に、MySQL、HTML5、CSS、JSも使いながら実装・サポート開発者として従事。",
       "time" => "2022年8月 - 2023年6月",
     ],
     [
       "pos" => "Web開発: 成績管理プラットフォーム",
-      "ent" => '<a href=\'https://semillasdealegriaespinal.com/\' target=\'_blank\'>Semillas de Alegría Espinal</a>',
+      "ent" => "<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
       "desc" => "成績管理プラットフォーム。",
       "time" => "2019年から運用中",
     ],
     [
       "pos" => "Web開発: ePayco決済処理",
-      "ent" => '<a href=\'javascript:;\'>Comercializadora de Padilla – Espinal</a>',
+      "ent" => "<a href='javascript:;'>Comercializadora de Padilla – Espinal</a>",
       "desc" => "ePayco決済処理。",
       "time" => "2020年7月 - 2020年12月",
     ],
     [
       "pos" => "Web開発・Androidアプリ: Online Congress",
-      "ent" => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
+      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
       "desc" => "カンファレンス管理ソフトウェア。",
       "time" => "2019年11月 - 2020年12月",
     ],
     [
       "pos" => "Web開発・Androidアプリ: Resérvelapp",
-      "ent" => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
+      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
       "desc" => "予約管理ソフトウェア。",
       "time" => "2018年7月 - 2019年12月",
     ],
     [
       "pos" => "Web開発: REDI - ITFIPデジタルリポジトリ / RENN - Normal de Naucalpánデジタルリポジトリ",
-      "ent" => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
+      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
       "desc" => "デジタルリポジトリ。",
       "time" => "2017年7月 - 2018年1月",
     ],
     [
       "pos" => "Web開発: MNM.team ランディングページポートフォリオ",
-      "ent" => '<a href=\'https://byuwur.co/mnm.team\' target=\'_blank\'>MNM.team</a>',
+      "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
       "desc" => "Webポートフォリオページ。",
       "time" => "2018年7月 - 2018年12月",
     ],
     [
       "pos" => "機関向け映像ポストプロダクション",
-      "ent" => '<a href=\'https://youtube.com/ITFIPoficial\' target=\'_blank\'>ITFIP [YouTube]</a> | <a href=\'https://facebook.com/ITFIPoficial\' target=\'_blank\'>ITFIP [Facebook]</a>',
+      "ent" => "<a href='https://youtube.com/ITFIPoficial' target='_blank'>ITFIP [YouTube]</a> | <a href='https://facebook.com/ITFIPoficial' target='_blank'>ITFIP [Facebook]</a>",
       "desc" => "機関向けデジタルコンテンツ制作。",
       "time" => "2021年3月 - 2022年6月",
     ],
     [
       "pos" => "制作アシスタント",
-      "ent" => '<a href=\'javascript:;\'>Producciones C&N</a>',
+      "ent" => "<a href='javascript:;'>Producciones C&N</a>",
       "desc" => "配信マスター、映像制作、複数プロジェクトでの編集。",
       "time" => "2020年7月 - 2020年12月",
     ],
     [
       "pos" => "ビデオ制作",
-      "ent" => '<a href=\'https://youtube.com/byuwur\' target=\'_blank\'>[Mateus] byUwUr</a>',
+      "ent" => "<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>",
       "desc" => "デジタルコンテンツクリエイター。",
       "time" => "2014年から",
     ],
@@ -717,32 +721,32 @@ $LANG = [
   // --- 学歴 ---
   "education.items" => [
     [
-      "inst" => '<a href=\'https://itfip.edu.co/\' target=\'_blank\'>ITFIP</a>',
+      "inst" => "<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>",
       "prof" => "GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM",
       "prog" => "システム工学",
       "year" => "2021年3月",
     ],
     [
-      "inst" => '<a href=\'https://platzi.com/p/atrujillomateus/\' target=\'_blank\'>PLATZI</a>',
-      "prof" => '<a href=\'https://platzi.com/p/atrujillomateus/\' target=\'_blank\'>platzi.com/p/atrujillomateus/</a>',
+      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>PLATZI</a>",
+      "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
       "prog" => "Platziでのプロフェッショナルスキルトレーニング",
       "year" => "2022年から",
     ],
     [
-      "inst" => '<a href=\'https://profile.edx.org/u/atrujillomateus\' target=\'_blank\'>EDX</a>',
-      "prof" => '<a href=\'https://profile.edx.org/u/atrujillomateus\' target=\'_blank\'>profile.edx.org/u/atrujillomateus</a>',
+      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>EDX</a>",
+      "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
       "prog" => "edXでのプロフェッショナルスキルトレーニング",
       "year" => "2021年から",
     ],
     [
-      "inst" => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>CREHANA</a>',
-      "prof" => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>crehana.com/users/atrujillomateus/</a>',
+      "inst" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>CREHANA</a>",
+      "prof" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a>",
       "prog" => "Crehanaでのプロフェッショナルスキルトレーニング",
       "year" => "2021年から",
     ],
     [
-      "inst" => '<a href=\'https://www.sena.edu.co/\' target=\'_blank\'>SENA</a>',
-      "prof" => '<a href=\'https://oferta.senasofiaplus.edu.co/sofia-oferta/\' target=\'_blank\'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>',
+      "inst" => "<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>",
+      "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
       "prog" => "SENAでのプロフェッショナルスキルトレーニング",
       "year" => "2017年から",
     ],

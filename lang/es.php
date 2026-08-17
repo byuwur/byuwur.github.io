@@ -20,7 +20,7 @@ $LANG = [
   "loader.loading" => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
 
   // --- Perfil y hero ---
-  "profile.name_top" => '[Mateus] <span class=\'text-primary\'>byUwUr</span>',
+  "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
   "profile.full_name" => "Andrés Trujillo Mateus",
   "hero.im" => "Soy",
   "hero.and_i" => "Creo cosas útiles",
@@ -63,7 +63,11 @@ $LANG = [
 
   // --- Acerca de y redes ---
   "about.description" =>
-    "Desarrollador web full-stack en XAMP (Apache, MySQL, PHP), React & React Native, programador en Java para Android híbrido y nativo y, diseñador de bases de datos SQL, más un poco de AWS & Python.<br>Inglés y Español fluido. Profesionalmente en labor desde 2018. Editor de vídeo y fotografía desde 2014.<br>Siempre dispuesto a aprender. Estoy para lo que necesiten.",
+    "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>.<br>
+    Ingeniero de Sistemas bilingüe con experiencia desarrollando, desplegando y dando soporte a soluciones web y móviles desde 2018, complementada con experiencia en producción audiovisual desde 2014.<br>
+    Lo simple ya es suficientemente complicado: construyo herramientas sólidas y confiables que facilitan la operación de flujos de trabajo complejos. Creo cosas útiles.<br>
+    Experiencia en desarrollo full-stack, implementación para clientes, soporte en producción y entrega técnica, con trabajo práctico en React, React Native, PHP, MySQL y AWS.<br>
+    Desarrollo software con propósito e impacto, respaldado junto a experiencia adicional en producción audiovisual y transmisiones en vivo.",
   "social.linkedin.url" => "https://linkedin.com/in/atrujillomateus",
   "social.github.url" => "https://github.com/byuwur",
   "social.youtube.url" => "https://youtube.com/byuwur",
@@ -643,73 +647,73 @@ $LANG = [
   "experience.items" => [
     [
       "pos" => "DESARROLLADOR DE SOFTWARE",
-      "ent" => '<a href=\'https://vehikl.com/\' target=\'_blank\'>magnet360 2023 => Vehikl</a>',
+      "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
       "desc" => "Desempeño como desarrollador implementador y de soporte usando React, React Native, AWS & PHP.",
       "time" => "Octubre 2023",
     ],
     [
       "pos" => "ANALISTA DE DESARROLLO DE SOFTWARE",
-      "ent" => '<a href=\'https://nxs.com.co/\' target=\'_blank\'>Nexos Software => iuvity</a>',
+      "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
       "desc" => "Desempeño como desarrollador implementador y de soporte usando herramientas a la medida del cliente.",
       "time" => "Agosto 2022 - Febrero 2024",
     ],
     [
       "pos" => "DESARROLLO WEB BACKEND",
-      "ent" => '<a href=\'https://rivka.mx/\' target=\'_blank\'>Rivka.mx => Orbit Investments LLC</a>',
+      "ent" => "<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>",
       "desc" => "Desempeño como desarrollador implementador y de soporte usando principalmente PHP, junto a MySQL, HTML5, CSS & JS.",
       "time" => "Agosto 2022 - Junio 2023",
     ],
     [
       "pos" => "DESARROLLO WEB: PLATAFORMA DE NOTAS",
-      "ent" => '<a href=\'https://semillasdealegriaespinal.com/\' target=\'_blank\'>Semillas de Alegría Espinal</a>',
+      "ent" => "<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
       "desc" => "Plataforma de calificaciones.",
       "time" => "en operación desde 2019",
     ],
     [
       "pos" => "DESARROLLO WEB: PROCESADOR DE PAGOS EPAYCO",
-      "ent" => '<a href=\'javascript:;\'>Comercializadora de Padilla – Espinal</a>',
+      "ent" => "<a href='javascript:;'>Comercializadora de Padilla – Espinal</a>",
       "desc" => "Procesador de pagos ePayco.",
       "time" => "Julio 2020 - Diciembre 2020",
     ],
     [
       "pos" => "DESARROLLO WEB & APLICACIÓN ANDROID: ONLINE CONGRESS",
-      "ent" => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
+      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
       "desc" => "Software para congresos.",
       "time" => "Noviembre 2019 - Diciembre 2020",
     ],
     [
       "pos" => "DESARROLLO WEB & APLICACIÓN ANDROID: RESÉRVELAPP",
-      "ent" => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
+      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
       "desc" => "Software para reservas.",
       "time" => "Julio 2018 - Diciembre 2019",
     ],
     [
       "pos" => "DESARROLLO WEB: REDI - REPOSITORIO DIGITAL DEL ITFIP & RENN - REPOSITORIO DIGITAL DE LA NORMAL DE NAUCALPÁN",
-      "ent" => '<a href=\'https://itfip.edu.co\' target=\'_blank\'>ITFIP (Investigación) / Tesis de grado</a>',
+      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
       "desc" => "Repositorios digitales.",
       "time" => "Julio 2017 - Enero 2018",
     ],
     [
       "pos" => "DESARROLLO WEB: MNM.TEAM - LANDING PAGE PORTFOLIO",
-      "ent" => '<a href=\'https://byuwur.co/mnm.team\' target=\'_blank\'>MNM.team</a>',
+      "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
       "desc" => "Portafolio en página web.",
       "time" => "Julio 2018 - Diciembre 2018",
     ],
     [
       "pos" => "POST-PRODUCCIÓN AUDIOVISUAL INSTITUCIONAL",
-      "ent" => '<a href=\'https://youtube.com/ITFIPoficial\' target=\'_blank\'>ITFIP [YouTube]</a> | <a href=\'https://facebook.com/ITFIPoficial\' target=\'_blank\'>ITFIP [Facebook]</a>',
+      "ent" => "<a href='https://youtube.com/ITFIPoficial' target='_blank'>ITFIP [YouTube]</a> | <a href='https://facebook.com/ITFIPoficial' target='_blank'>ITFIP [Facebook]</a>",
       "desc" => "Creación de contenido digital institucional.",
       "time" => "Marzo 2021 - Junio 2022",
     ],
     [
       "pos" => "PRODUCCIÓN DE VÍDEO Y MÁSTER DE TRANSMISIÓN EN PROYECTOS VARIOS",
-      "ent" => '<a href=\'javascript:;\'>Producciones C&N</a>',
+      "ent" => "<a href='javascript:;'>Producciones C&N</a>",
       "desc" => "Máster de transmisión, máster de producción y edición de vídeo en proyectos varios.",
       "time" => "Julio 2020 - Diciembre 2020",
     ],
     [
       "pos" => "VIDEOGRAFÍA - Creación de contenido digital",
-      "ent" => '<a href=\'https://youtube.com/byuwur\' target=\'_blank\'>[Mateus] byUwUr</a>',
+      "ent" => "<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>",
       "desc" => "Creación de contenido digital.",
       "time" => "Desde 2014",
     ],
@@ -717,32 +721,32 @@ $LANG = [
   // --- Formación ---
   "education.items" => [
     [
-      "inst" => '<a href=\'https://itfip.edu.co/\' target=\'_blank\'>ITFIP</a>',
+      "inst" => "<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>",
       "prof" => "GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM",
       "prog" => "Ingeniería de Sistemas",
       "year" => "Marzo 2021",
     ],
     [
-      "inst" => '<a href=\'https://platzi.com/p/atrujillomateus/\' target=\'_blank\'>PLATZI</a>',
-      "prof" => '<a href=\'https://platzi.com/p/atrujillomateus/\' target=\'_blank\'>platzi.com/p/atrujillomateus/</a>',
+      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>PLATZI</a>",
+      "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
       "prog" => "Formación de aptitudes profesionales en Platzi",
       "year" => "desde 2022",
     ],
     [
-      "inst" => '<a href=\'https://profile.edx.org/u/atrujillomateus\' target=\'_blank\'>EDX</a>',
-      "prof" => '<a href=\'https://profile.edx.org/u/atrujillomateus\' target=\'_blank\'>profile.edx.org/u/atrujillomateus</a>',
+      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>EDX</a>",
+      "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
       "prog" => "Formación de aptitudes profesionales en edX",
       "year" => "desde 2021",
     ],
     [
-      "inst" => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>CREHANA</a>',
-      "prof" => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>crehana.com/users/atrujillomateus/</a>',
+      "inst" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>CREHANA</a>",
+      "prof" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a>",
       "prog" => "Formación de aptitudes profesionales en Crehana",
       "year" => "desde 2021",
     ],
     [
-      "inst" => '<a href=\'https://www.sena.edu.co/\' target=\'_blank\'>SENA</a>',
-      "prof" => '<a href=\'https://oferta.senasofiaplus.edu.co/sofia-oferta/\' target=\'_blank\'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>',
+      "inst" => "<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>",
+      "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
       "prog" => "Formación de aptitudes profesionales en SENA",
       "year" => "desde 2017",
     ],
