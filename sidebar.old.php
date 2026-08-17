@@ -58,24 +58,6 @@ require_once "{$TO_HOME}/_common.php";
     </a>
   </div>
   <div class="bywr-sidebar-content accordion-item flex-grow-0">
-    <div class="d-flex flex-row">
-      <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>"
-        title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>"
-        aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/co.svg" ?>"
-          style="width:1rem;height:1rem;margin:4px;"
-          alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" /><span>HDV</span><i
-          class="fas fa-download ms-auto"></i>
-      </a>
-      <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>"
-        title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>"
-        aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-        <i class="fas fa-file-invoice"></i><img src="<?= "{$HOME_PATH}/img/gb.svg" ?>"
-          style="width:1rem;height:1rem;margin:4px;"
-          alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" /><span>CV</span><i
-          class="fas fa-download ms-auto"></i>
-      </a>
-    </div>
     <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse"
       data-bs-target="#lang-drop" aria-expanded="false" aria-controls="lang-drop"
       title="<?= htmlspecialchars($LANG["language.selector"], ENT_QUOTES, "UTF-8") ?>"
@@ -87,13 +69,13 @@ require_once "{$TO_HOME}/_common.php";
         <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_V1}/{$ROUTE_ES}" ?>"
           title="<?= htmlspecialchars($LANG["language.spanish"], ENT_QUOTES, "UTF-8") ?>"
           aria-label="<?= htmlspecialchars($LANG["language.spanish"], ENT_QUOTES, "UTF-8") ?>"><img
-            src="<?= "{$HOME_PATH}/img/co.svg" ?>" style="width:1rem;height:1rem;margin:4px;"
+            class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>"
             alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
           <?= $LANG["language.spanish"] ?><i class="fas fa-angle-right ms-auto"></i></a>
         <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_V1}/{$ROUTE_EN}" ?>"
           title="<?= htmlspecialchars($LANG["language.english"], ENT_QUOTES, "UTF-8") ?>"
           aria-label="<?= htmlspecialchars($LANG["language.english"], ENT_QUOTES, "UTF-8") ?>"><img
-            src="<?= "{$HOME_PATH}/img/gb.svg" ?>" style="width:1rem;height:1rem;margin:4px;"
+            class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>"
             alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
           <?= $LANG["language.english"] ?><i class="fas fa-angle-right ms-auto"></i></a>
       </div>

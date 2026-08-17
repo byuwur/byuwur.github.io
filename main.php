@@ -23,18 +23,15 @@ foreach ($LANG["skills.sections"] as $skillSection)
 <!-- BODY -->
 <div class="app-container">
   <div class="social-icons">
-    <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank"
-      title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>"
-      aria-label="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>"><i
-        class="fab fa-linkedin"></i></a>
-    <a href="<?= $LANG["social.github.url"] ?>" target="_blank"
-      title="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>"
-      aria-label="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>"><i
-        class="fab fa-github"></i></a>
-    <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank"
-      title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>"
-      aria-label="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>"><i
-        class="fab fa-youtube"></i></a>
+    <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>">
+      <i class="fab fa-youtube"></i>
+    </a>
   </div>
   <section id="about" class="px-0">
     <div class="mb-4 px-4 text-center">
@@ -47,11 +44,11 @@ foreach ($LANG["skills.sections"] as $skillSection)
     </span>
     <div class="mb-5 d-flex flex-column flex-md-row justify-content-center">
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-        <img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" style="width:1rem;height:1rem;margin:4px;" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
+        <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
         <span><?= $LANG["resume.en.title"] ?></span>
       </a>
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-        <img src="<?= "{$HOME_PATH}/img/co.svg" ?>" style="width:1rem;height:1rem;margin:4px;" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
+        <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
         <span><?= $LANG["resume.es.title"] ?></span>
       </a>
     </div>
