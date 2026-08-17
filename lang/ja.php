@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "閉じる",
   // --- 自己紹介とSNS ---
   "about.description" =>
-    "現在、<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
+    "現在、<a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
     2018年からWebおよびモバイルソリューションの開発・デプロイ・運用サポートに携わってきた、バイリンガルのシステムエンジニアです。2014年からは映像制作の経験も積んできました。<br>
     シンプルであること自体が十分に難しい。複雑なワークフローをより扱いやすくする、堅牢で信頼性の高いツールを作ることを大切にしています。役に立つものを作ります。<br>
     フルスタック開発、クライアント向け導入支援、本番環境のサポート、技術デリバリーまで幅広く経験しており、React、React Native、PHP、MySQL、AWSを実務で扱ってきました。<br>
@@ -588,7 +588,7 @@ $LANG = [
         ["icon" => "fab fa-golang", "text" => "Wails (Go)", ...calculate_skill(2025, 75)],
         ["icon" => "fab fa-python", "text" => "Python", ...calculate_skill(2018, 55)],
         ["icon" => "fab fa-java", "text" => "Java", ...calculate_skill(2018, 55)],
-        ["icon" => "fab fa-android", "text" => "Androidネイティブ開発", ...calculate_skill(2018, 55)],
+        //["icon" => "fab fa-android", "text" => "Androidネイティブ開発", ...calculate_skill(2018, 55)],
       ],
     ],
     [
@@ -604,7 +604,7 @@ $LANG = [
         ["icon" => "fas fa-server", "text" => "Nginx", ...calculate_skill(2022)],
       ],
     ],
-    [
+    /*[
       "icon" => "fas fa-headset",
       "title" => "導入・サポート",
       "items" => [
@@ -615,7 +615,7 @@ $LANG = [
         ["icon" => "fas fa-file-lines", "text" => "技術文書", ...calculate_skill(2022)],
         ["icon" => "fas fa-people-group", "text" => "アジャイル開発", ...calculate_skill(2019)],
       ],
-    ],
+    ],*/
     [
       "icon" => "fas fa-photo-film",
       "title" => "映像・メディア",
@@ -626,11 +626,11 @@ $LANG = [
         ["icon" => "fas fa-image", "text" => "Photoshop", ...calculate_skill(2021)],
         ["icon" => "fas fa-sliders", "text" => "Lightroom", ...calculate_skill(2021)],
         ["icon" => "fas fa-record-vinyl", "text" => "OBS Studio", ...calculate_skill(2020)],
-        ["icon" => "fas fa-scissors", "text" => "動画編集", ...calculate_skill(2014)],
-        ["icon" => "fas fa-video", "text" => "映像撮影", ...calculate_skill(2014)],
-        ["icon" => "fas fa-camera", "text" => "写真撮影", ...calculate_skill(2021)],
-        ["icon" => "fas fa-satellite-dish", "text" => "ライブ配信", ...calculate_skill(2020)],
-        ["icon" => "fas fa-tower-broadcast", "text" => "放送オペレーション", ...calculate_skill(2021)],
+        //["icon" => "fas fa-scissors", "text" => "動画編集", ...calculate_skill(2014)],
+        //["icon" => "fas fa-video", "text" => "映像撮影", ...calculate_skill(2014)],
+        //["icon" => "fas fa-camera", "text" => "写真撮影", ...calculate_skill(2021)],
+        //["icon" => "fas fa-satellite-dish", "text" => "ライブ配信", ...calculate_skill(2020)],
+        //["icon" => "fas fa-tower-broadcast", "text" => "放送オペレーション", ...calculate_skill(2021)],
       ],
     ],
   ],
@@ -638,37 +638,37 @@ $LANG = [
   "experience.items" => [
     [
       "pos" => "チームリード / ソフトウェア開発者",
-      "ent" => "<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>（<a href='https://magnet360.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/magnet360.png'/>Magnet360</a> 経由）",
+      "ent" => "<a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>（<a href='https://magnet360.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/magnet360.png'/>Magnet360</a> 経由）",
       "desc" => "ソフトウェア開発者からチームリードへ昇進し、3名の開発者を率いながら、要件定義・ソリューション設計からQA、リリース、本番環境サポートまで、クライアント向けデリバリーを一貫して担当。あわせて、AWS上のTypeScriptサーバーレスシステムの開発・最適化を行い、開発スピード、コード品質、継続的なシステム改善のバランスを図っています。",
       "time" => "2023年10月 - 現在",
     ],
     [
       "pos" => "WEB開発：成績管理プラットフォーム",
-      "ent" => "<i class='fas fa-building'></i><a href='https://semillasdealegriaespinal.com/' class='uncolor-links' target='_blank'>Semillas de Alegría Espinal</a>",
+      "ent" => "<i class='fas fa-building'></i><a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
       "desc" => "年間約400名の生徒を対象に、レポート作成や管理業務を自動化するPHP製の成績管理プラットフォームを開発し、現在も保守・運用しています。",
       "time" => "2019年 - 現在",
     ],
     [
       "pos" => "ソフトウェア開発アナリスト - ハイブリッドモバイル",
-      "ent" => "<a href='https://iuvity.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/iuvity.png'/>Iuvity</a>（<a href='https://nxs.com.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/nexos.png'/>Nexos</a> 経由）",
+      "ent" => "<a href='https://iuvity.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/iuvity.png'/>Iuvity</a>（<a href='https://nxs.com.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/nexos.png'/>Nexos</a> 経由）",
       "desc" => "独自のローコードツールを使用し、銀行クライアント向けの主要なフロントエンド機能および本番環境での不具合修正を担当。変化の多い環境において、取引内容の分かりやすさ、ユーザビリティ、信頼性の向上に貢献しました。",
       "time" => "2022年8月 - 2024年2月",
     ],
     [
       "pos" => "バックエンドWeb開発者",
-      "ent" => "<a href='https://orbitinvestments.com/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/orbit_investments.png'/>Orbit Investments</a>（<a href='https://rivka.io' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/rivka.png'/>Rivka</a> 経由）",
+      "ent" => "<a href='https://orbitinvestments.com/' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/orbit_investments.png'/>Orbit Investments</a>（<a href='https://rivka.io' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/rivka.png'/>Rivka</a> 経由）",
       "desc" => "半径、ポリゴン、ZIPコード、郡による検索に対応した地理空間不動産検索システムを開発。また、PHP/MySQLプラットフォームの機能追加、トラブルシューティング、緊急修正を通じて、既存システムの拡張および運用支援を行いました。",
       "time" => "2022年8月 - 2023年6月",
     ],
     [
       "pos" => "映像プロデューサー - 広報・コミュニケーション",
-      "ent" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
+      "ent" => "<a href='https://uniespinal.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
       "desc" => "4万人以上の大学コミュニティを対象に、映像撮影、写真撮影、編集、ライブ制作を含む100本以上の動画、配信、キャンペーンの制作・運営を担当しました。",
       "time" => "2021年3月 - 2022年6月",
     ],
     [
       "pos" => "映像プロデューサー / ストリーミングマスター",
-      "ent" => "<i class='fas fa-building'></i><a href='javascript:;' class='uncolor-links'>Producciones C&N</a>",
+      "ent" => "<i class='fas fa-building'></i><a href='javascript:;'>Producciones C&N</a>",
       "desc" => "エンターテインメント、企業イベント、ストリーミング案件において、ライブおよび収録映像の制作、編集、オペレーションを担当しました。",
       "time" => "2020年7月 - 2020年12月",
     ],
@@ -676,25 +676,25 @@ $LANG = [
   // --- 学歴 ---
   "education.items" => [
     [
-      "inst" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
+      "inst" => "<a href='https://uniespinal.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
       "prof" => "GPA: 4.1<small>/5.0</small> | 資格登録番号: 161122-0596750 TLM",
       "prog" => "システム工学",
       "year" => "<small>卒業：</small>2021年3月",
     ],
     [
-      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/platzi.png'/>Platzi</a>",
+      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/platzi.png'/>Platzi</a>",
       "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
       "prog" => "テクノロジーおよび専門分野における認定コース 540時間",
       "year" => "2021年 - 現在",
     ],
     /* [
-      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/edx.png'/>EDX</a>",
+      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/edx.png'/>EDX</a>",
       "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
       "prog" => "認定オンラインコース 60時間",
       "year" => "2021年 - 現在",
     ], */
     /* [
-      "inst" => "<a href='https://sena.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/sena.png'/>SENA</a>",
+      "inst" => "<a href='https://sena.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/sena.png'/>SENA</a>",
       "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
       "prog" => "補完的な技術研修 240時間",
       "year" => "2017年 - 現在",

@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "Close",
   // --- About and social links ---
   "about.description" =>
-    "Currently working as Team Lead at <a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
+    "Currently working as Team Lead at <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Bilingual Systems Engineer with professional experience developing, deploying and supporting web and mobile solutions since 2018, complemented by audiovisual production experience since 2014.<br>
     Simple is complicated enough: I build strong and reliable tools that make complex workflows easier to operate. I create useful things.<br>
     Experienced across full-stack development, client implementation, production support and technical delivery, with hands-on work in React, React Native, PHP, MySQL and AWS.<br>
@@ -588,7 +588,7 @@ $LANG = [
         ["icon" => "fab fa-golang", "text" => "Wails (Go)", ...calculate_skill(2025, 75)],
         ["icon" => "fab fa-python", "text" => "Python", ...calculate_skill(2018, 55)],
         ["icon" => "fab fa-java", "text" => "Java", ...calculate_skill(2018, 55)],
-        ["icon" => "fab fa-android", "text" => "Native Android Development", ...calculate_skill(2018, 55)],
+        //["icon" => "fab fa-android", "text" => "Native Android Development", ...calculate_skill(2018, 55)],
       ],
     ],
     [
@@ -604,7 +604,7 @@ $LANG = [
         ["icon" => "fas fa-server", "text" => "Nginx", ...calculate_skill(2022)],
       ],
     ],
-    [
+    /*[
       "icon" => "fas fa-headset",
       "title" => "Implementation & Support",
       "items" => [
@@ -615,7 +615,7 @@ $LANG = [
         ["icon" => "fas fa-file-lines", "text" => "Technical Documentation", ...calculate_skill(2022)],
         ["icon" => "fas fa-people-group", "text" => "Agile Development", ...calculate_skill(2019)],
       ],
-    ],
+    ],*/
     [
       "icon" => "fas fa-photo-film",
       "title" => "Audiovisual & Media",
@@ -626,11 +626,11 @@ $LANG = [
         ["icon" => "fas fa-image", "text" => "Photoshop", ...calculate_skill(2021)],
         ["icon" => "fas fa-sliders", "text" => "Lightroom", ...calculate_skill(2021)],
         ["icon" => "fas fa-record-vinyl", "text" => "OBS Studio", ...calculate_skill(2020)],
-        ["icon" => "fas fa-scissors", "text" => "Video Editing", ...calculate_skill(2014)],
-        ["icon" => "fas fa-video", "text" => "Videography", ...calculate_skill(2014)],
-        ["icon" => "fas fa-camera", "text" => "Photography", ...calculate_skill(2021)],
-        ["icon" => "fas fa-satellite-dish", "text" => "Live Streaming", ...calculate_skill(2020)],
-        ["icon" => "fas fa-tower-broadcast", "text" => "Broadcast Operations", ...calculate_skill(2021)],
+        //["icon" => "fas fa-scissors", "text" => "Video Editing", ...calculate_skill(2014)],
+        //["icon" => "fas fa-video", "text" => "Videography", ...calculate_skill(2014)],
+        //["icon" => "fas fa-camera", "text" => "Photography", ...calculate_skill(2021)],
+        //["icon" => "fas fa-satellite-dish", "text" => "Live Streaming", ...calculate_skill(2020)],
+        //["icon" => "fas fa-tower-broadcast", "text" => "Broadcast Operations", ...calculate_skill(2021)],
       ],
     ],
   ],
@@ -638,37 +638,37 @@ $LANG = [
   "experience.items" => [
     [
       "pos" => "TEAM LEAD / SOFTWARE DEVELOPER",
-      "ent" => "<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a> (via <a href='https://magnet360.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/magnet360.png'/>Magnet360</a>)",
+      "ent" => "<a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a> (via <a href='https://magnet360.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/magnet360.png'/>Magnet360</a>)",
       "desc" => "Promoted from Software Developer to Team Lead, leading 3 developers and owning client delivery end to end: from requirements and solution design to QA, releases and production support; while developing and optimizing a TypeScript serverless system on AWS, balancing delivery speed, code quality and continuous system improvement.",
       "time" => "October 2023 - Present",
     ],
     [
       "pos" => "WEB DEVELOPMENT: GRADING PLATFORM",
-      "ent" => "<i class='fas fa-building'></i><a href='https://semillasdealegriaespinal.com/' class='uncolor-links' target='_blank'>Semillas de Alegría Espinal</a>",
+      "ent" => "<i class='fas fa-building'></i><a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
       "desc" => "Built and maintain a PHP grading platform that automates reports and administration for ~400 students annually.",
       "time" => "2019 - Present",
     ],
     [
       "pos" => "SOFTWARE DEVELOPMENT ANALYST - HYBRID MOBILE",
-      "ent" => "<a href='https://iuvity.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/iuvity.png'/>Iuvity</a> (via <a href='https://nxs.com.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/nexos.png'/>Nexos</a>)",
+      "ent" => "<a href='https://iuvity.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/iuvity.png'/>Iuvity</a> (via <a href='https://nxs.com.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/nexos.png'/>Nexos</a>)",
       "desc" => "Delivered core frontend features and production fixes for a banking client using proprietary low-code tooling, improving transaction clarity, usability and reliability in a high-change environment.",
       "time" => "August 2022 - February 2024",
     ],
     [
       "pos" => "BACKEND WEB DEVELOPER",
-      "ent" => "<a href='https://orbitinvestments.com/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/orbit_investments.png'/>Orbit Investments</a> (via <a href='https://rivka.io' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/rivka.png'/>Rivka</a>)",
+      "ent" => "<a href='https://orbitinvestments.com/' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/orbit_investments.png'/>Orbit Investments</a> (via <a href='https://rivka.io' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/rivka.png'/>Rivka</a>)",
       "desc" => "Built a geospatial property-search system supporting radius, polygon, ZIP-code and county searches while extending and supporting the PHP/MySQL platform through features, troubleshooting and hotfixes.",
       "time" => "August 2022 - June 2023",
     ],
     [
       "pos" => "AUDIOVISUAL PRODUCER - INSTITUTIONAL COMMUNICATIONS",
-      "ent" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, formerly ITFIP",
+      "ent" => "<a href='https://uniespinal.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, formerly ITFIP",
       "desc" => "Produced and operated 100+ videos, broadcasts and campaigns across videography, photography, editing and live production for a university community of 40,000+ people.",
       "time" => "March 2021 - June 2022",
     ],
     [
       "pos" => "VIDEO PRODUCER AND STREAMING MASTER",
-      "ent" => "<i class='fas fa-building'></i><a href='javascript:;' class='uncolor-links' >Producciones C&N</a>",
+      "ent" => "<i class='fas fa-building'></i><a href='javascript:;' >Producciones C&N</a>",
       "desc" => "Produced, edited and operated live and recorded video productions across entertainment, corporate events and streaming workflows.",
       "time" => "July 2020 - December 2020",
     ],
@@ -676,25 +676,25 @@ $LANG = [
   // --- Education ---
   "education.items" => [
     [
-      "inst" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, formerly ITFIP",
+      "inst" => "<a href='https://uniespinal.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, formerly ITFIP",
       "prof" => "GPA: 4.1<small>/5.0</small> | Credential: 161122-0596750 TLM",
       "prog" => "Systems Engineering",
       "year" => "<small>Graduated,</small> March 2021",
     ],
     [
-      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/platzi.png'/>Platzi</a>",
+      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/platzi.png'/>Platzi</a>",
       "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
       "prog" => "540 hours of certified technology and professional coursework",
       "year" => "since 2021",
     ],
     /* [
-      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/edx.png'/>EDX</a>",
+      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/edx.png'/>EDX</a>",
       "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
       "prog" => "60 hours of certified online coursework",
       "year" => "since 2021",
     ], */
     /* [
-      "inst" => "<a href='https://sena.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/sena.png'/>SENA</a>",
+      "inst" => "<a href='https://sena.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/sena.png'/>SENA</a>",
       "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
       "prog" => "240 hours of complementary technical coursework",
       "year" => "since 2017",
