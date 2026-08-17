@@ -21,8 +21,8 @@ foreach ($LANG["skills.sections"] as $skillSection)
 <script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
 <link id="themesheet" rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.{$APP_THEME}.css" ?>" />
 <!-- BODY -->
-<div class="app-container uncolor-links">
-  <div class="social-icons">
+<div class="app-container">
+  <div class="social-icons uncolor-links">
     <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>">
       <i class="fab fa-linkedin"></i>
     </a>
@@ -46,7 +46,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
       ✨
     </span>
-    <div class="mb-5 d-flex flex-column flex-md-row justify-content-center">
+    <div class="mb-5 d-flex flex-column flex-md-row justify-content-center uncolor-links">
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
         <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
         <span><?= $LANG["resume.en.title"] ?></span>
@@ -56,7 +56,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
         <span><?= $LANG["resume.es.title"] ?></span>
       </a>
     </div>
-    <div class="row w-100">
+    <div class="row w-100 uncolor-links">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
         <div class="col-md-6 col-xl-4 p-0 text-dark-shadow text-white <?= $portfolio["class"] ?>">
           <div class="project has-background-cover p-4"
@@ -87,12 +87,12 @@ foreach ($LANG["skills.sections"] as $skillSection)
         </div>
       <?php } ?>
     </div>
-    <div class="row mt-4 pt-4 px-4">
-      <div class="col-sm-auto d-flex justify-content-center">
+    <div class="row mt-4 pt-4 px-5 uncolor-links">
+      <div class="col-md-auto d-flex justify-content-center">
         <div class="has-background-contain rounded-circle mb-4"
-          style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:128px;width:128px;"></div>
+          style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:160px;width:160px;"></div>
       </div>
-      <p class="col"><?= $LANG["about.description"] ?></p>
+      <p class="col pe-5"><?= $LANG["about.description"] ?></p>
     </div>
   </section>
   <section id="resume">
@@ -116,14 +116,14 @@ foreach ($LANG["skills.sections"] as $skillSection)
           </ul>
         </div>
       <?php } ?>
-      <div class="resume-row col-md-7">
+      <div class="resume-row col-lg-7">
         <h4 class="text-uppercase"><i class="fas fa-briefcase"></i><?= $LANG["nav.experience"] ?></h4>
         <ul>
           <?php foreach ($LANG["experience.items"] as $experience) { ?>
             <li>
               <div class="resume-title p-2">
                 <h4 class="m-0"><?= $experience["pos"] ?></h4>
-                <span class="mt-1"><?= $experience["ent"] ?></span>
+                <span class="mt-1 uncolor-links"><?= $experience["ent"] ?></span>
                 <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $experience["time"] ?></span>
               </div>
               <div class="p-2">
@@ -133,14 +133,14 @@ foreach ($LANG["skills.sections"] as $skillSection)
           <?php } ?>
         </ul>
       </div>
-      <div class="resume-row col-md-5">
+      <div class="resume-row col-lg-5">
         <h4 class="text-uppercase"><i class="fas fa-graduation-cap"></i><?= $LANG["nav.education"] ?></h4>
         <ul>
           <?php foreach ($LANG["education.items"] as $education) { ?>
             <li>
               <div class="resume-title p-2">
                 <h4 class="m-0"><?= $education["prog"] ?></h4>
-                <span class="mt-1"><?= $education["inst"] ?></span>
+                <span class="mt-1 uncolor-links"><?= $education["inst"] ?></span>
                 <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"] ?></span>
               </div>
               <div class="p-2">
