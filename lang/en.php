@@ -53,7 +53,10 @@ $LANG = [
   "footer.html" =>
     "&copy;" .
     date("Y") .
-    " Andrés Trujillo [Mateus] byUwUr<br><a href='/{$ROUTE_V1}'>load basic HTML</a> | <a href='/{$ROUTE_MNM}/{$ROUTE_COOKIES}'>cookie policy</a> | <a href='/{$ROUTE_MNM}'>MNM.team</a><br>Made with<i class='fas fa-heart'></i>by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
+    " Andrés Trujillo [Mateus] byUwUr<br>
+    <!-- <a href='/{$ROUTE_V1}'>load basic HTML</a> | -->
+    <a href='/{$ROUTE_COOKIES}'>cookie policy</a>
+    <br>Made with <i class='fas fa-heart'></i> by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "Go back",
   "action.ok" => "Understood",
   "action.close" => "Close",
@@ -732,12 +735,6 @@ $LANG = [
       "year" => "sinc 2021",
     ],
     [
-      "inst" => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>CREHANA</a>',
-      "prof" => '<a href=\'https://www.crehana.com/users/atrujillomateus/\' target=\'_blank\'>crehana.com/users/atrujillomateus/</a>',
-      "prog" => "Professional skills training at Crehana",
-      "year" => "since 2021",
-    ],
-    [
       "inst" => '<a href=\'https://www.sena.edu.co/\' target=\'_blank\'>SENA</a>',
       "prof" => '<a href=\'https://oferta.senasofiaplus.edu.co/sofia-oferta/\' target=\'_blank\'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>',
       "prog" => "Professional skills training at SENA",
@@ -755,7 +752,6 @@ $LANG = [
   "contact.mail" => "atrujillomateus@gmail.com",
   "contact.mail.thanks" => "Your message has been successfully sent.<br>We will contact you soon!",
   "contact.mail.error" => "There was an error sending the message.<br>Sorry for the inconvenience, please try again.",
-  "contact.goto_mnm.html" => "<a class='a-lang' href='/{$ROUTE_MNM}' custom-folder='true'>See more at MNM<small>.team();</small></a>",
   // --- Metadata ---
   "meta.description" => "Software developer | Video editor",
 

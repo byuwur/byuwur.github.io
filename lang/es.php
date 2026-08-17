@@ -53,7 +53,10 @@ $LANG = [
   "footer.html" =>
     "&copy;" .
     date("Y") .
-    " Andrés Trujillo [Mateus] byUwUr<br><a href='/{$ROUTE_V1}'>cargar HTML básico</a> | <a href='/{$ROUTE_MNM}/{$ROUTE_COOKIES}' target='_blank'>cookie policy</a> | <a href='/{$ROUTE_MNM}'>MNM.team</a><br>Hecho con<i class='fas fa-heart'></i>por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
+    " Andrés Trujillo [Mateus] byUwUr<br>
+    <!-- <a href='/{$ROUTE_V1}'>cargar HTML básico</a> | -->
+    <a href='/{$ROUTE_COOKIES}'>política de cookies</a>
+    <br>Hecho con <i class='fas fa-heart'></i> por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "Volver",
   "action.ok" => "Entendido",
   "action.close" => "Cerrar",
@@ -755,7 +758,6 @@ $LANG = [
   "contact.mail" => "atrujillomateus@gmail.com",
   "contact.mail.thanks" => "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!",
   "contact.mail.error" => "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.",
-  "contact.goto_mnm.html" => "<a class='a-lang' href='/{$ROUTE_MNM}' custom-folder='true'>Ver más en MNM<small>.team();</small></a>",
   // --- Metadatos ---
   "meta.description" => "Desarrollador de software | Editor de video",
 

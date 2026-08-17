@@ -53,7 +53,10 @@ $LANG = [
   "footer.html" =>
     "&copy;" .
     date("Y") .
-    " Andrés Trujillo [Mateus] byUwUr<br><a href='/{$ROUTE_V1}'>基本HTMLを読み込む</a> | <a href='/{$ROUTE_MNM}/{$ROUTE_COOKIES}'>Cookieポリシー</a> | <a href='/{$ROUTE_MNM}'>MNM.team</a><br><i class='fas fa-heart'></i> で制作 by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
+    " Andrés Trujillo [Mateus] byUwUr<br>
+    <!-- <a href='/{$ROUTE_V1}'>基本HTMLを読み込む</a> | -->
+    <a href='/{$ROUTE_COOKIES}'>Cookieポリシー</a>
+    <br><i class='fas fa-heart'></i> で制作 <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "戻る",
   "action.ok" => "了解",
   "action.close" => "閉じる",
@@ -755,7 +758,6 @@ $LANG = [
   "contact.mail" => "atrujillomateus@gmail.com",
   "contact.mail.thanks" => "メッセージを送信しました。<br>近日中にご連絡します。",
   "contact.mail.error" => "送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。",
-  "contact.goto_mnm.html" => "<a class='a-lang' href='/{$ROUTE_MNM}' custom-folder='true'>MNM<small>.team();</small> でもっと見る</a>",
   // --- メタデータ ---
   "meta.description" => "ソフトウェア開発者 | 動画編集者",
 
