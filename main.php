@@ -173,7 +173,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
         <i class="fas fa-envelope"></i>
         <a href="mailto:<?= $LANG["contact.mail"] ?>" target="_blank"><?= $LANG["contact.mail"] ?></a>
       </div>
-      <div id="twitch" class="col-12"></div>
+      <!-- div id="twitch" class="col-12"></div -->
     </div>
   </section>
 </div>
@@ -185,7 +185,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     byCommon.init();
     if ($("#page-icon").length) $("#page-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");
     if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");
-    const twitchEmbedScript = document.createElement("script"),
+    /* const twitchEmbedScript = document.createElement("script"),
       twitchEmbedOnLoad = () => {
         new Twitch.Embed("twitch", {
           width: "100%",
@@ -200,7 +200,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       };
     twitchEmbedScript.src = "https://embed.twitch.tv/embed/v1.js";
     twitchEmbedScript.onload = twitchEmbedOnLoad;
-    document.head.appendChild(twitchEmbedScript);
+    document.head.appendChild(twitchEmbedScript); */
   });
 </script>
 <?php

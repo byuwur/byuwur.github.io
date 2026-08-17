@@ -75,7 +75,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "App para gestión de torneos de juegos de pelea.",
       "year" => "2026",
-      "image" => "/img/work-fgc.jpg",
+      "image" => "/img/work/fgc.jpg",
       "class" => "web",
       "link" => [
         [
@@ -108,7 +108,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Framework de Single Page Application (SPA) hecho a mano con PHP.",
       "year" => "2024",
-      "image" => "/img/work-spa.jpg",
+      "image" => "/img/work/spa.jpg",
       "class" => "web",
       "link" => [
         [
@@ -146,7 +146,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Recursos HTML para tus overlays de streaming.",
       "year" => "2024",
-      "image" => "/img/work-stream.jpg",
+      "image" => "/img/work/stream.jpg",
       "class" => "web",
       "link" => [
         [
@@ -190,7 +190,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Componente Sidebar fácilmente integrable.",
       "year" => "2024",
-      "image" => "/img/work-sidebar.jpg",
+      "image" => "/img/work/sidebar.jpg",
       "class" => "web",
       "link" => [
         [
@@ -224,7 +224,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Componente visor de JSON fácilmente integrable.",
       "year" => "2024",
-      "image" => "/img/work-json.jpg",
+      "image" => "/img/work/json.jpg",
       "class" => "web",
       "link" => [
         [
@@ -258,7 +258,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Página de códigos de error HTTP para tu servidor Apache o nginx.",
       "year" => "2021",
-      "image" => "/img/work-error.jpg",
+      "image" => "/img/work/error.jpg",
       "class" => "web",
       "link" => [
         [
@@ -296,7 +296,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Implementa fácilmente Dropzone en tu proyecto PHP.",
       "year" => "2020",
-      "image" => "/img/work-dz.jpg",
+      "image" => "/img/work/dz.jpg",
       "class" => "web",
       "link" => [
         [
@@ -334,7 +334,7 @@ $LANG = [
       "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
       "desc" => "Plataforma web administradora de calificaciones.",
       "year" => "Desde 2019",
-      "image" => "/img/work-sda.jpg",
+      "image" => "/img/work/sda.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -375,7 +375,7 @@ $LANG = [
       "ent" => "Expo - Ganador del Bootcamp: Las TIC para el agro",
       "desc" => "Clasifica la madurez de limones según su intensidad cromática usando visión artificial.",
       "year" => "2017",
-      "image" => "/img/work-limontech.jpg",
+      "image" => "/img/work/limontech.jpg",
       "class" => "python",
       "link" => [
         [
@@ -409,7 +409,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "Plataforma administradora de congresos institucionales y de investigación.",
       "year" => "2019",
-      "image" => "/img/work-oc.jpg",
+      "image" => "/img/work/oc.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -455,7 +455,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "Plataforma administradora de reservas para canchas sintéticas en Colombia.",
       "year" => "2018",
-      "image" => "/img/work-reserv.jpg",
+      "image" => "/img/work/reserv.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -501,7 +501,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "Desarrollo de un repositorio digital para la preservación de monografías y trabajos de grado.",
       "year" => "2017",
-      "image" => "/img/work-redi.jpg",
+      "image" => "/img/work/redi.jpg",
       "class" => "web",
       "link" => [
         [
@@ -527,7 +527,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "Desarrollo de un repositorio digital para la preservación de trabajos de grado y documentos recepcionales.",
       "year" => "2017",
-      "image" => "/img/work-renn.jpg",
+      "image" => "/img/work/renn.jpg",
       "class" => "web",
       "link" => [
         [
@@ -548,7 +548,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Mis archivos de configuración de nginx.",
       "year" => "2023",
-      "image" => "/img/work-nginx.jpg",
+      "image" => "/img/work/nginx.jpg",
       "class" => "web",
       "link" => [
         [

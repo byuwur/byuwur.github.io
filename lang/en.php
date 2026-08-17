@@ -75,7 +75,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "App for managing fighting game tournaments.",
       "year" => "2026",
-      "image" => "/img/work-fgc.jpg",
+      "image" => "/img/work/fgc.jpg",
       "class" => "web",
       "link" => [
         [
@@ -108,7 +108,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Single Page Application (SPA) handmade framework with PHP.",
       "year" => "2024",
-      "image" => "/img/work-spa.jpg",
+      "image" => "/img/work/spa.jpg",
       "class" => "web",
       "link" => [
         [
@@ -146,7 +146,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "HTML resources for your streaming overlays.",
       "year" => "2024",
-      "image" => "/img/work-stream.jpg",
+      "image" => "/img/work/stream.jpg",
       "class" => "web",
       "link" => [
         [
@@ -190,7 +190,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Easily integrable Sidebar component.",
       "year" => "2024",
-      "image" => "/img/work-sidebar.jpg",
+      "image" => "/img/work/sidebar.jpg",
       "class" => "web",
       "link" => [
         [
@@ -224,7 +224,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Easily integrable JSON viewer component.",
       "year" => "2024",
-      "image" => "/img/work-json.jpg",
+      "image" => "/img/work/json.jpg",
       "class" => "web",
       "link" => [
         [
@@ -258,7 +258,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "HTTP error code page for your Apache or nginx server.",
       "year" => "2021",
-      "image" => "/img/work-error.jpg",
+      "image" => "/img/work/error.jpg",
       "class" => "web",
       "link" => [
         [
@@ -296,7 +296,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Easily implement Dropzone in your PHP project.",
       "year" => "2020",
-      "image" => "/img/work-dz.jpg",
+      "image" => "/img/work/dz.jpg",
       "class" => "web",
       "link" => [
         [
@@ -334,7 +334,7 @@ $LANG = [
       "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
       "desc" => "Web platform for managing grades in schools.",
       "year" => "Since 2019",
-      "image" => "/img/work-sda.jpg",
+      "image" => "/img/work/sda.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -375,7 +375,7 @@ $LANG = [
       "ent" => "Expo - Winner of Bootcamp: ICT for agriculture",
       "desc" => "Classifies the ripeness of lemons according to their chromatic intensity using artificial vision.",
       "year" => "2017",
-      "image" => "/img/work-limontech.jpg",
+      "image" => "/img/work/limontech.jpg",
       "class" => "python",
       "link" => [
         [
@@ -409,7 +409,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "Platform for managing institutional and research conferences.",
       "year" => "2019",
-      "image" => "/img/work-oc.jpg",
+      "image" => "/img/work/oc.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -455,7 +455,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "Reservation management platform for synthetic courts in Colombia.",
       "year" => "2018",
-      "image" => "/img/work-reserv.jpg",
+      "image" => "/img/work/reserv.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -501,7 +501,7 @@ $LANG = [
       "ent" => "ITFIP - Meritory mention",
       "desc" => "Development of a digital repository for the preservation of monographs and degree theses.",
       "year" => "2017",
-      "image" => "/img/work-redi.jpg",
+      "image" => "/img/work/redi.jpg",
       "class" => "web",
       "link" => [
         [
@@ -527,7 +527,7 @@ $LANG = [
       "ent" => "ITFIP - Meritory mention",
       "desc" => "Development of a digital repository for the preservation of undergraduate theses and reception documents.",
       "year" => "2017",
-      "image" => "/img/work-renn.jpg",
+      "image" => "/img/work/renn.jpg",
       "class" => "web",
       "link" => [
         [
@@ -548,7 +548,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "My nginx configuration files.",
       "year" => "2023",
-      "image" => "/img/work-nginx.jpg",
+      "image" => "/img/work/nginx.jpg",
       "class" => "web",
       "link" => [
         [

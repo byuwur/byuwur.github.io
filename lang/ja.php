@@ -75,7 +75,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "格闘ゲームトーナメントを管理するためのアプリ。",
       "year" => "2026",
-      "image" => "/img/work-fgc.jpg",
+      "image" => "/img/work/fgc.jpg",
       "class" => "web",
       "link" => [
         [
@@ -108,7 +108,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "PHPで手作りしたSingle Page Application (SPA)フレームワーク。",
       "year" => "2024",
-      "image" => "/img/work-spa.jpg",
+      "image" => "/img/work/spa.jpg",
       "class" => "web",
       "link" => [
         [
@@ -146,7 +146,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "配信用オーバーレイ向けのHTMLリソース。",
       "year" => "2024",
-      "image" => "/img/work-stream.jpg",
+      "image" => "/img/work/stream.jpg",
       "class" => "web",
       "link" => [
         [
@@ -190,7 +190,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "簡単に組み込めるサイドバーコンポーネント。",
       "year" => "2024",
-      "image" => "/img/work-sidebar.jpg",
+      "image" => "/img/work/sidebar.jpg",
       "class" => "web",
       "link" => [
         [
@@ -224,7 +224,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "簡単に組み込めるJSONビューアコンポーネント。",
       "year" => "2024",
-      "image" => "/img/work-json.jpg",
+      "image" => "/img/work/json.jpg",
       "class" => "web",
       "link" => [
         [
@@ -258,7 +258,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "Apacheまたはnginxサーバー向けのHTTPエラーコードページ。",
       "year" => "2021",
-      "image" => "/img/work-error.jpg",
+      "image" => "/img/work/error.jpg",
       "class" => "web",
       "link" => [
         [
@@ -296,7 +296,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "PHPプロジェクトにDropzoneを簡単に導入できます。",
       "year" => "2020",
-      "image" => "/img/work-dz.jpg",
+      "image" => "/img/work/dz.jpg",
       "class" => "web",
       "link" => [
         [
@@ -334,7 +334,7 @@ $LANG = [
       "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
       "desc" => "学校の成績管理のためのWebプラットフォーム。",
       "year" => "2019年から",
-      "image" => "/img/work-sda.jpg",
+      "image" => "/img/work/sda.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -375,7 +375,7 @@ $LANG = [
       "ent" => "Expo - Winner of Bootcamp: ICT for agriculture",
       "desc" => "コンピュータビジョンを使い、色の強度からレモンの熟度を分類します。",
       "year" => "2017",
-      "image" => "/img/work-limontech.jpg",
+      "image" => "/img/work/limontech.jpg",
       "class" => "python",
       "link" => [
         [
@@ -409,7 +409,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "学術・研究カンファレンスを管理するためのプラットフォーム。",
       "year" => "2019",
-      "image" => "/img/work-oc.jpg",
+      "image" => "/img/work/oc.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -455,7 +455,7 @@ $LANG = [
       "ent" => "ITFIP - Mención meritoria",
       "desc" => "コロンビアの人工芝コート向け予約管理プラットフォーム。",
       "year" => "2018",
-      "image" => "/img/work-reserv.jpg",
+      "image" => "/img/work/reserv.jpg",
       "class" => "web android",
       "link" => [
         [
@@ -501,7 +501,7 @@ $LANG = [
       "ent" => "ITFIP - Meritory mention",
       "desc" => "論文や卒業研究を保存するためのデジタルリポジトリの開発。",
       "year" => "2017",
-      "image" => "/img/work-redi.jpg",
+      "image" => "/img/work/redi.jpg",
       "class" => "web",
       "link" => [
         [
@@ -527,7 +527,7 @@ $LANG = [
       "ent" => "ITFIP - Meritory mention",
       "desc" => "卒業論文や受理文書を保存するためのデジタルリポジトリの開発。",
       "year" => "2017",
-      "image" => "/img/work-renn.jpg",
+      "image" => "/img/work/renn.jpg",
       "class" => "web",
       "link" => [
         [
@@ -548,7 +548,7 @@ $LANG = [
       "ent" => "byUwUr",
       "desc" => "私のnginx設定ファイル。",
       "year" => "2023",
-      "image" => "/img/work-nginx.jpg",
+      "image" => "/img/work/nginx.jpg",
       "class" => "web",
       "link" => [
         [
