@@ -97,18 +97,15 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
         <div class="skill-section col-12 mb-5">
           <h4 class="text-uppercase mb-2">
-            <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>"
-              aria-hidden="true"></i><?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
+            <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i>
+            <?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
           </h4>
           <ul class="d-flex flex-wrap gap-2 mb-0">
             <?php foreach ($skillsection["items"] as $skill) { ?>
-              <li class="skill p-2 pb-0" data-bs-toggle="tooltip"
-                data-bs-title="<?= htmlspecialchars($skill["years"], ENT_QUOTES, "UTF-8") . "+ " . htmlspecialchars($LANG["years"], ENT_QUOTES, "UTF-8") ?>">
-                <h4 class="m-0"><i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>"></i><span
-                    class="mx-1"><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></span></h4>
+              <li class="skill p-2 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($skill["years"], ENT_QUOTES, "UTF-8") . "+ " . htmlspecialchars($LANG["years"], ENT_QUOTES, "UTF-8") ?>">
+                <h4 class="m-0"><i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>"></i><span class="mx-1"><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></span></h4>
                 <div class="progress rounded-pill">
-                  <div class="progress-bar"
-                    style="width: <?= htmlspecialchars($skill["progress"], ENT_QUOTES, "UTF-8") ?>%"></div>
+                  <div class="progress-bar" style="width: <?= htmlspecialchars($skill["progress"], ENT_QUOTES, "UTF-8") ?>%"></div>
                 </div>
               </li>
             <?php } ?>
@@ -153,23 +150,28 @@ foreach ($LANG["skills.sections"] as $skillSection)
   </section>
   <section id="contact">
     <h2 class="text-uppercase"><?= $LANG["nav.contact"] ?></h2>
-    <span class="mb-5 pb-5"><?= $LANG["contact.subtitle"] ?></span>
+    <span class="mb-1 pb-1"><?= $LANG["contact.subtitle"] ?></span>
     <div class="row w-100">
-      <div class="col-12 col-md-4 mb-3 ">
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:800px;"></div>
+      <!--div class="col-12 col-md-6 mb-3">
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>"
           title="<?= htmlspecialchars($LANG["card.title"], ENT_QUOTES, "UTF-8") ?>" width="100%" height="128px"
           frameborder="0"></iframe>
       </div>
-      <div class="col-12 col-md-4 mb-3 text-md-end">
-        <i class="fab fa-linkedin d-md-none"></i>
-        <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank">atrujillomateus</a>
-        <i class="fab fa-linkedin d-none d-md-inline-block"></i>
-      </div>
-      <div class="col-12 col-md-4 mb-3">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:<?= $LANG["contact.mail"] ?>" target="_blank"><?= $LANG["contact.mail"] ?></a>
-      </div>
+      <div class="col-12 col-md-6 mb-3 d-flex flex-column text-end text-md-start">
+        <div>
+          <i class="fab fa-linkedin d-none d-md-inline"></i>
+          <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank">atrujillomateus</a>
+          <i class="fab fa-linkedin d-inline d-md-none"></i>
+        </div>
+        <div>
+          <i class="fas fa-envelope d-none d-md-inline"></i>
+          <a href="mailto:<?= $LANG["contact.mail"] ?>" target="_blank"><?= $LANG["contact.mail"] ?></a>
+          <i class="fas fa-envelope d-inline d-md-none"></i>
+        </div>
+      </div-->
       <!-- div id="twitch" class="col-12"></div -->
     </div>
   </section>
@@ -184,16 +186,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");
     /* const twitchEmbedScript = document.createElement("script"),
       twitchEmbedOnLoad = () => {
-        new Twitch.Embed("twitch", {
-          width: "100%",
-          height: 480,
-          channel: "byuwur",
-          allowfullscreen: false,
-          autoplay: true,
-          muted: true,
-          theme: "dark",
-          parent: ["byuwur.co"]
-        });
+        new Twitch.Embed("twitch", { width: "100%", height: 480, channel: "byuwur", allowfullscreen: false, : true, muted: true, theme: "dark", parent: ["byuwur.co"] });
       };
     twitchEmbedScript.src = "https://embed.twitch.tv/embed/v1.js";
     twitchEmbedScript.onload = twitchEmbedOnLoad;

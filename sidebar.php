@@ -32,31 +32,31 @@ require_once "{$TO_HOME}/_common.php";
     </a>
   </div>
   <div class="bywr-sidebar-content accordion-item flex-grow-0">
-    <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#lang-drop" aria-expanded="false" aria-controls="lang-drop"
+    <!--button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#lang-drop" aria-expanded="false" aria-controls="lang-drop"
       title="<?= htmlspecialchars($LANG["language.selector"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["language.selector"], ENT_QUOTES, "UTF-8") ?>">
       <i class="fas fa-earth-americas"></i><span><?= $LANG["language.selector"] ?></span>
     </button>
     <div id="lang-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#bywr-sidebar">
-      <div class="d-flex flex-row">
-        <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_ES}" ?>" title="<?= htmlspecialchars($LANG["language.spanish"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["language.spanish"], ENT_QUOTES, "UTF-8") ?>"><img
-            class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" /> <?= $LANG["language.spanish"] ?><i class="fas fa-angle-right ms-auto"></i></a>
-        <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["language.english"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["language.english"], ENT_QUOTES, "UTF-8") ?>"><img
-            class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" /> <?= $LANG["language.english"] ?><i class="fas fa-angle-right ms-auto"></i></a>
-      </div>
+    </div-->
+    <div class="d-flex flex-row">
+      <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_ES}" ?>" title="<?= htmlspecialchars($LANG["language.spanish"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["language.spanish"], ENT_QUOTES, "UTF-8") ?>"><img
+          class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" /> <?= $LANG["language.spanish"] ?><i class="fas fa-angle-right ms-auto"></i></a>
+      <a class="bywr-sidebar-option" href="<?= "/{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["language.english"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["language.english"], ENT_QUOTES, "UTF-8") ?>"><img
+          class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" /> <?= $LANG["language.english"] ?><i class="fas fa-angle-right ms-auto"></i></a>
     </div>
-    <button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#theme-drop" aria-expanded="false" aria-controls="theme-drop"
+    <!--button class="accordion-header accordion-button p-2o5 collapsed" data-bs-toggle="collapse" data-bs-target="#theme-drop" aria-expanded="false" aria-controls="theme-drop"
       title="<?= htmlspecialchars($LANG["theme.selector"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["theme.selector"], ENT_QUOTES, "UTF-8") ?>">
       <i class="fas fa-palette"></i><span><?= $LANG["theme.selector"] ?></span>
     </button>
     <div id="theme-drop" class="accordion-collapse collapse bg-dark-transparent" data-bs-parent="#bywr-sidebar">
-      <div class="d-flex flex-row">
-        <a class="bywr-sidebar-option" href="javascript:document.getElementById('themesheet').setAttribute('href','css/v2.light.css');set_cookie('theme','light');" role="button"
-          title="<?= htmlspecialchars($LANG["theme.light.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["theme.light.title"], ENT_QUOTES, "UTF-8") ?>"><i class="fas fa-sun"></i><?= $LANG["theme.light"] ?><i
-            class="fas fa-angle-right ms-auto"></i></a>
-        <a class="bywr-sidebar-option" href="javascript:document.getElementById('themesheet').setAttribute('href','css/v2.dark.css');set_cookie('theme','dark');" role="button"
-          title="<?= htmlspecialchars($LANG["theme.dark.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["theme.dark.title"], ENT_QUOTES, "UTF-8") ?>"><i class="fas fa-moon"></i><?= $LANG["theme.dark"] ?><i
-            class="fas fa-angle-right ms-auto"></i></a>
-      </div>
+    </div-->
+    <div class="d-flex flex-row">
+      <a class="bywr-sidebar-option" href="javascript:document.getElementById('themesheet').setAttribute('href','css/v2.light.css');set_cookie('theme','light');" role="button"
+        title="<?= htmlspecialchars($LANG["theme.light.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["theme.light.title"], ENT_QUOTES, "UTF-8") ?>"><i class="fas fa-sun"></i><?= $LANG["theme.light"] ?><i
+          class="fas fa-angle-right ms-auto"></i></a>
+      <a class="bywr-sidebar-option" href="javascript:document.getElementById('themesheet').setAttribute('href','css/v2.dark.css');set_cookie('theme','dark');" role="button"
+        title="<?= htmlspecialchars($LANG["theme.dark.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["theme.dark.title"], ENT_QUOTES, "UTF-8") ?>"><i class="fas fa-moon"></i><?= $LANG["theme.dark"] ?><i
+          class="fas fa-angle-right ms-auto"></i></a>
     </div>
     <p class="m-0 p-2 border-top" style="font-size: 0.75rem;"><?= $LANG["footer.html"] ?></p>
   </div>

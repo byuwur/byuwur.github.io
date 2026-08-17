@@ -120,17 +120,11 @@ require_once "{$TO_HOME}/_common.php";
       </ul>
     </section>
     <section id="contact">
-      <h2 class="text-uppercase mb-5 pb-5"><?= $LANG["nav.contact"] ?></h2>
-      <ul class="row w-100 fs-5 mb-3">
-        <li class="col-12 col-md-6 text-end">
-          <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank">atrujillomateus</a>
-          <i class="fab fa-linkedin"></i>
-        </li>
-        <li class="col-12 col-md-6 text-start">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:<?= $LANG["contact.mail"] ?>" target="_blank"><?= $LANG["contact.mail"] ?></a>
-        </li>
-      </ul>
+      <h2 class="text-uppercase mb-1 pb-1"><?= $LANG["nav.contact"] ?></h2>
+      <div class="row w-100 fs-5">
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:800px;"></div>
+      </div>
     </section>
   </div>
 </div>
