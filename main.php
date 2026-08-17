@@ -116,35 +116,35 @@ foreach ($LANG["skills.sections"] as $skillSection)
           </ul>
         </div>
       <?php } ?>
-      <div class="resume-row col-md-6">
+      <div class="resume-row col-md-7">
         <h4 class="text-uppercase"><i class="fas fa-briefcase"></i><?= $LANG["nav.experience"] ?></h4>
         <ul>
           <?php foreach ($LANG["experience.items"] as $experience) { ?>
             <li>
               <div class="resume-title p-2">
-                <h4 class="m-0"><i class="fas fa-check"></i><?= $experience["pos"] ?></h4>
-                <span class="mt-1"><i class="fas fa-building"></i><?= $experience["ent"] ?></span>
+                <h4 class="m-0"><?= $experience["pos"] ?></h4>
+                <span class="mt-1"><?= $experience["ent"] ?></span>
                 <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $experience["time"] ?></span>
               </div>
               <div class="p-2">
-                <span class="m-0"><i class="fas fa-list-check"></i><?= $experience["desc"] ?></span>
+                <small class="m-0"><i class="fas fa-list-check"></i><?= $experience["desc"] ?></small>
               </div>
             </li>
           <?php } ?>
         </ul>
       </div>
-      <div class="resume-row col-md-6">
+      <div class="resume-row col-md-5">
         <h4 class="text-uppercase"><i class="fas fa-graduation-cap"></i><?= $LANG["nav.education"] ?></h4>
         <ul>
           <?php foreach ($LANG["education.items"] as $education) { ?>
             <li>
               <div class="resume-title p-2">
-                <h4 class="m-0"><i class="fas fa-graduation-cap"></i><?= $education["prog"] ?></h4>
-                <span class="mt-1"><i class="fas fa-building"></i><?= $education["inst"] ?></span>
+                <h4 class="m-0"><?= $education["prog"] ?></h4>
+                <span class="mt-1"><?= $education["inst"] ?></span>
                 <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"] ?></span>
               </div>
               <div class="p-2">
-                <span class="m-0"><i class="fas fa-list-check"></i><?= $education["prof"] ?></span>
+                <small class="m-0"><i class="fas fa-list-check"></i><?= $education["prof"] ?></small>
               </div>
             </li>
           <?php } ?>

@@ -6,7 +6,6 @@
 $LANG = [
   // --- Misc ---
   "years" => "年",
-
   // --- ルート ---
   "route.root" => $ROUTE_ROOT ?? "/",
   "route.home" => $ROUTE_HOME ?? "home",
@@ -14,11 +13,9 @@ $LANG = [
   "route.resume" => "/{$ROUTE_RESUME}",
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
-
   // --- ページ構造 ---
   "title.default" => "[Mateus] byUwUr = 役立つものを作ります",
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
-
   // --- プロフィールとヒーロー ---
   "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
   "profile.full_name" => "Andrés Trujillo Mateus",
@@ -26,7 +23,6 @@ $LANG = [
   "hero.and_i" => "役立つものを作ります",
   "hero.in" => "",
   "hero.hello_world" => "こんにちは、世界",
-
   // --- ナビゲーション ---
   "nav.about" => "こんにちは、世界",
   "nav.resume" => "履歴書",
@@ -35,18 +31,15 @@ $LANG = [
   "nav.portfolio" => "ポートフォリオ",
   "nav.experience" => "経歴",
   "nav.education" => "学歴",
-
   // --- サイドバー ---
   "sidebar.toggle" => "サイドバーメニューを切り替え",
   "sidebar.menu" => "menu",
   "sidebar.logo_alt" => "[Mateus] byUwUr ロゴ",
-
   // --- 言語とテーマの操作 ---
   "language.selector" => "言語:",
   "theme.selector" => "テーマ:",
   "theme.light" => "ライト",
   "theme.dark" => "ダーク",
-
   // --- 表示、フッター、操作 ---
   "view.modern" => "標準ではないHTMLを読み込む",
   "view.modern.title" => "標準ではないHTMLを読み込む (v2)",
@@ -60,7 +53,6 @@ $LANG = [
   "action.back" => "戻る",
   "action.ok" => "了解",
   "action.close" => "閉じる",
-
   // --- 自己紹介とSNS ---
   "about.description" =>
     "現在、<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
@@ -71,7 +63,6 @@ $LANG = [
   "social.linkedin.url" => "https://linkedin.com/in/atrujillomateus",
   "social.github.url" => "https://github.com/byuwur",
   "social.youtube.url" => "https://youtube.com/byuwur",
-
   // --- ポートフォリオ ---
   "portfolio.items" => [
     [
@@ -643,113 +634,71 @@ $LANG = [
       ],
     ],
   ],
-  // --- 経歴 ---
+  // --- 職務経験 ---
   "experience.items" => [
     [
-      "pos" => "ソフトウェア開発者",
-      "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
-      "desc" => "主にReact、React Native、AWS、PHPを使い、実装・サポート開発者として従事。",
-      "time" => "2023年10月",
+      "pos" => "チームリード / ソフトウェア開発者",
+      "ent" => "<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>（<a href='https://magnet360.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/magnet360.png'/>Magnet360</a> 経由）",
+      "desc" => "ソフトウェア開発者からチームリードへ昇進し、3名の開発者を率いながら、要件定義・ソリューション設計からQA、リリース、本番環境サポートまで、クライアント向けデリバリーを一貫して担当。あわせて、AWS上のTypeScriptサーバーレスシステムの開発・最適化を行い、開発スピード、コード品質、継続的なシステム改善のバランスを図っています。",
+      "time" => "2023年10月 - 現在",
     ],
     [
-      "pos" => "ソフトウェア開発アナリスト",
-      "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
-      "desc" => "クライアントに合わせたツールを使い、実装・サポート開発者として従事。",
+      "pos" => "WEB開発：成績管理プラットフォーム",
+      "ent" => "<i class='fas fa-building'></i><a href='https://semillasdealegriaespinal.com/' class='uncolor-links' target='_blank'>Semillas de Alegría Espinal</a>",
+      "desc" => "年間約400名の生徒を対象に、レポート作成や管理業務を自動化するPHP製の成績管理プラットフォームを開発し、現在も保守・運用しています。",
+      "time" => "2019年 - 現在",
+    ],
+    [
+      "pos" => "ソフトウェア開発アナリスト - ハイブリッドモバイル",
+      "ent" => "<a href='https://iuvity.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/iuvity.png'/>Iuvity</a>（<a href='https://nxs.com.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/nexos.png'/>Nexos</a> 経由）",
+      "desc" => "独自のローコードツールを使用し、銀行クライアント向けの主要なフロントエンド機能および本番環境での不具合修正を担当。変化の多い環境において、取引内容の分かりやすさ、ユーザビリティ、信頼性の向上に貢献しました。",
       "time" => "2022年8月 - 2024年2月",
     ],
     [
       "pos" => "バックエンドWeb開発者",
-      "ent" => "<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>",
-      "desc" => "主にPHPを中心に、MySQL、HTML5、CSS、JSも使いながら実装・サポート開発者として従事。",
+      "ent" => "<a href='https://orbitinvestments.com/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/orbit_investments.png'/>Orbit Investments</a>（<a href='https://rivka.io' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/rivka.png'/>Rivka</a> 経由）",
+      "desc" => "半径、ポリゴン、ZIPコード、郡による検索に対応した地理空間不動産検索システムを開発。また、PHP/MySQLプラットフォームの機能追加、トラブルシューティング、緊急修正を通じて、既存システムの拡張および運用支援を行いました。",
       "time" => "2022年8月 - 2023年6月",
     ],
     [
-      "pos" => "Web開発: 成績管理プラットフォーム",
-      "ent" => "<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
-      "desc" => "成績管理プラットフォーム。",
-      "time" => "2019年から運用中",
-    ],
-    [
-      "pos" => "Web開発: ePayco決済処理",
-      "ent" => "<a href='javascript:;'>Comercializadora de Padilla – Espinal</a>",
-      "desc" => "ePayco決済処理。",
-      "time" => "2020年7月 - 2020年12月",
-    ],
-    [
-      "pos" => "Web開発・Androidアプリ: Online Congress",
-      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-      "desc" => "カンファレンス管理ソフトウェア。",
-      "time" => "2019年11月 - 2020年12月",
-    ],
-    [
-      "pos" => "Web開発・Androidアプリ: Resérvelapp",
-      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-      "desc" => "予約管理ソフトウェア。",
-      "time" => "2018年7月 - 2019年12月",
-    ],
-    [
-      "pos" => "Web開発: REDI - ITFIPデジタルリポジトリ / RENN - Normal de Naucalpánデジタルリポジトリ",
-      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-      "desc" => "デジタルリポジトリ。",
-      "time" => "2017年7月 - 2018年1月",
-    ],
-    [
-      "pos" => "Web開発: MNM.team ランディングページポートフォリオ",
-      "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
-      "desc" => "Webポートフォリオページ。",
-      "time" => "2018年7月 - 2018年12月",
-    ],
-    [
-      "pos" => "機関向け映像ポストプロダクション",
-      "ent" => "<a href='https://youtube.com/ITFIPoficial' target='_blank'>ITFIP [YouTube]</a> | <a href='https://facebook.com/ITFIPoficial' target='_blank'>ITFIP [Facebook]</a>",
-      "desc" => "機関向けデジタルコンテンツ制作。",
+      "pos" => "映像プロデューサー - 広報・コミュニケーション",
+      "ent" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
+      "desc" => "4万人以上の大学コミュニティを対象に、映像撮影、写真撮影、編集、ライブ制作を含む100本以上の動画、配信、キャンペーンの制作・運営を担当しました。",
       "time" => "2021年3月 - 2022年6月",
     ],
     [
-      "pos" => "制作アシスタント",
-      "ent" => "<a href='javascript:;'>Producciones C&N</a>",
-      "desc" => "配信マスター、映像制作、複数プロジェクトでの編集。",
+      "pos" => "映像プロデューサー / ストリーミングマスター",
+      "ent" => "<i class='fas fa-building'></i><a href='javascript:;' class='uncolor-links'>Producciones C&N</a>",
+      "desc" => "エンターテインメント、企業イベント、ストリーミング案件において、ライブおよび収録映像の制作、編集、オペレーションを担当しました。",
       "time" => "2020年7月 - 2020年12月",
-    ],
-    [
-      "pos" => "ビデオ制作",
-      "ent" => "<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>",
-      "desc" => "デジタルコンテンツクリエイター。",
-      "time" => "2014年から",
     ],
   ],
   // --- 学歴 ---
   "education.items" => [
     [
-      "inst" => "<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>",
-      "prof" => "GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM",
+      "inst" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
+      "prof" => "GPA: 4.1<small>/5.0</small> | 資格登録番号: 161122-0596750 TLM",
       "prog" => "システム工学",
-      "year" => "2021年3月",
+      "year" => "<small>卒業：</small>2021年3月",
     ],
     [
-      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>PLATZI</a>",
+      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/platzi.png'/>Platzi</a>",
       "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
-      "prog" => "Platziでのプロフェッショナルスキルトレーニング",
-      "year" => "2022年から",
+      "prog" => "テクノロジーおよび専門分野における認定コース 540時間",
+      "year" => "2021年 - 現在",
     ],
-    [
-      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>EDX</a>",
+    /* [
+      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/edx.png'/>EDX</a>",
       "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
-      "prog" => "edXでのプロフェッショナルスキルトレーニング",
-      "year" => "2021年から",
-    ],
-    [
-      "inst" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>CREHANA</a>",
-      "prof" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a>",
-      "prog" => "Crehanaでのプロフェッショナルスキルトレーニング",
-      "year" => "2021年から",
-    ],
-    [
-      "inst" => "<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>",
+      "prog" => "認定オンラインコース 60時間",
+      "year" => "2021年 - 現在",
+    ], */
+    /* [
+      "inst" => "<a href='https://sena.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/sena.png'/>SENA</a>",
       "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
-      "prog" => "SENAでのプロフェッショナルスキルトレーニング",
-      "year" => "2017年から",
-    ],
+      "prog" => "補完的な技術研修 240時間",
+      "year" => "2017年 - 現在",
+    ], */
   ],
   // --- お問い合わせ ---
   "contact.subtitle" => "一緒に最高のものを作りましょう。",
@@ -764,28 +713,23 @@ $LANG = [
   "contact.mail.error" => "送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。",
   // --- メタデータ ---
   "meta.description" => "ソフトウェア開発者 | 動画編集者",
-
   // --- 言語ラベル ---
   "language.spanish" => "Español",
   "language.english" => "English",
   "language.japanese" => "日本語",
-
   // --- テーマラベル ---
   "theme.light.title" => "ライトテーマを使用",
   "theme.dark.title" => "ダークテーマを使用",
-
   // --- 履歴書とカードのラベル ---
   "resume.es.title" => "CV en Español",
   "resume.en.title" => "English Résumé",
   "resume.es.alt" => "コロンビアの国旗",
   "resume.en.alt" => "英国の国旗",
   "card.title" => "デジタル名刺",
-
   // --- SNSラベル ---
   "social.linkedin" => "LinkedIn プロフィールを開く",
   "social.github" => "GitHub プロフィールを開く",
   "social.youtube" => "YouTube チャンネルを開く",
-
   // --- アクセシビリティ ---
   "accessibility.open_panel" => "アクセシビリティツールを開く",
   "accessibility.increase_text" => "文字サイズを大きくする",

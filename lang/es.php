@@ -6,7 +6,6 @@
 $LANG = [
   // --- Misc ---
   "years" => "años",
-
   // --- Rutas ---
   "route.root" => $ROUTE_ROOT ?? "/",
   "route.home" => $ROUTE_HOME ?? "inicio",
@@ -14,11 +13,9 @@ $LANG = [
   "route.resume" => "/{$ROUTE_RESUME}",
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
-
   // --- Estructura de página ---
   "title.default" => "[Mateus] byUwUr = Creo cosas útiles",
   "loader.loading" => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
-
   // --- Perfil y hero ---
   "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
   "profile.full_name" => "Andrés Trujillo Mateus",
@@ -26,7 +23,6 @@ $LANG = [
   "hero.and_i" => "Creo cosas útiles",
   "hero.in" => "con ",
   "hero.hello_world" => "Hola, mundo",
-
   // --- Navegación ---
   "nav.about" => "Hola, mundo",
   "nav.resume" => "Résumé",
@@ -35,18 +31,15 @@ $LANG = [
   "nav.portfolio" => "Portafolio",
   "nav.experience" => "Experiencia",
   "nav.education" => "Formación",
-
   // --- Sidebar ---
   "sidebar.toggle" => "Toggle sidebar menu",
   "sidebar.menu" => "menu",
   "sidebar.logo_alt" => "[Mateus] byUwUr logo",
-
   // --- Controles de idioma y tema ---
   "language.selector" => "Idiomas:",
   "theme.selector" => "Temas:",
   "theme.light" => "Claro",
   "theme.dark" => "Oscuro",
-
   // --- Vista, footer y acciones ---
   "view.modern" => "cargar HTML no tan básico",
   "view.modern.title" => "cargar HTML no tan básico (v2)",
@@ -60,10 +53,9 @@ $LANG = [
   "action.back" => "Volver",
   "action.ok" => "Entendido",
   "action.close" => "Cerrar",
-
   // --- Acerca de y redes ---
   "about.description" =>
-    "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>.<br>
+    "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Ingeniero de Sistemas bilingüe con experiencia desarrollando, desplegando y dando soporte a soluciones web y móviles desde 2018, complementada con experiencia en producción audiovisual desde 2014.<br>
     Lo simple ya es suficientemente complicado: construyo herramientas sólidas y confiables que facilitan la operación de flujos de trabajo complejos. Creo cosas útiles.<br>
     Experiencia en desarrollo full-stack, implementación para clientes, soporte en producción y entrega técnica, con trabajo práctico en React, React Native, PHP, MySQL y AWS.<br>
@@ -71,7 +63,6 @@ $LANG = [
   "social.linkedin.url" => "https://linkedin.com/in/atrujillomateus",
   "social.github.url" => "https://github.com/byuwur",
   "social.youtube.url" => "https://youtube.com/byuwur",
-
   // --- Portafolio ---
   "portfolio.items" => [
     [
@@ -646,110 +637,68 @@ $LANG = [
   // --- Experiencia ---
   "experience.items" => [
     [
-      "pos" => "DESARROLLADOR DE SOFTWARE",
-      "ent" => "<a href='https://vehikl.com/' target='_blank'>magnet360 2023 => Vehikl</a>",
-      "desc" => "Desempeño como desarrollador implementador y de soporte usando React, React Native, AWS & PHP.",
-      "time" => "Octubre 2023",
+      "pos" => "LÍDER DE EQUIPO / DESARROLLADOR DE SOFTWARE",
+      "ent" => "<a href='https://vehikl.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a> (vía <a href='https://magnet360.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/magnet360.png'/>Magnet360</a>)",
+      "desc" => "Promovido de Desarrollador a Líder de Equipo, liderando a 3 desarrolladores y gestionando la entrega al cliente de principio a fin: desde requisitos y diseño de soluciones hasta QA, lanzamientos y soporte en producción; además de desarrollar y optimizar un sistema serverless en TypeScript sobre AWS, equilibrando velocidad de entrega, calidad de código y mejora continua del sistema.",
+      "time" => "Octubre 2023 - Presente",
     ],
     [
-      "pos" => "ANALISTA DE DESARROLLO DE SOFTWARE",
-      "ent" => "<a href='https://nxs.com.co/' target='_blank'>Nexos Software => iuvity</a>",
-      "desc" => "Desempeño como desarrollador implementador y de soporte usando herramientas a la medida del cliente.",
+      "pos" => "DESARROLLO WEB: PLATAFORMA DE GESTIÓN DE CALIFICACIONES",
+      "ent" => "<i class='fas fa-building'></i><a href='https://semillasdealegriaespinal.com/' class='uncolor-links' target='_blank'>Semillas de Alegría Espinal</a>",
+      "desc" => "Desarrollé y mantengo una plataforma de calificaciones en PHP que automatiza reportes y tareas administrativas para aproximadamente 400 estudiantes al año.",
+      "time" => "2019 - Presente",
+    ],
+    [
+      "pos" => "ANALISTA DE DESARROLLO DE SOFTWARE - MÓVIL HÍBRIDO",
+      "ent" => "<a href='https://iuvity.com' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/iuvity.png'/>Iuvity</a> (vía <a href='https://nxs.com.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/nexos.png'/>Nexos</a>)",
+      "desc" => "Entregué funcionalidades frontend esenciales y correcciones en producción para un cliente del sector bancario utilizando herramientas low-code propietarias, mejorando la claridad de las transacciones, la usabilidad y la confiabilidad en un entorno de cambios constantes.",
       "time" => "Agosto 2022 - Febrero 2024",
     ],
     [
-      "pos" => "DESARROLLO WEB BACKEND",
-      "ent" => "<a href='https://rivka.mx/' target='_blank'>Rivka.mx => Orbit Investments LLC</a>",
-      "desc" => "Desempeño como desarrollador implementador y de soporte usando principalmente PHP, junto a MySQL, HTML5, CSS & JS.",
+      "pos" => "DESARROLLADOR WEB BACKEND",
+      "ent" => "<a href='https://orbitinvestments.com/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/orbit_investments.png'/>Orbit Investments</a> (vía <a href='https://rivka.io' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/rivka.png'/>Rivka</a>)",
+      "desc" => "Desarrollé un sistema geoespacial de búsqueda de propiedades con consultas por radio, polígono, código postal y condado, mientras ampliaba y daba soporte a la plataforma PHP/MySQL mediante nuevas funcionalidades, resolución de problemas y hotfixes.",
       "time" => "Agosto 2022 - Junio 2023",
     ],
     [
-      "pos" => "DESARROLLO WEB: PLATAFORMA DE NOTAS",
-      "ent" => "<a href='https://semillasdealegriaespinal.com/' target='_blank'>Semillas de Alegría Espinal</a>",
-      "desc" => "Plataforma de calificaciones.",
-      "time" => "en operación desde 2019",
-    ],
-    [
-      "pos" => "DESARROLLO WEB: PROCESADOR DE PAGOS EPAYCO",
-      "ent" => "<a href='javascript:;'>Comercializadora de Padilla – Espinal</a>",
-      "desc" => "Procesador de pagos ePayco.",
-      "time" => "Julio 2020 - Diciembre 2020",
-    ],
-    [
-      "pos" => "DESARROLLO WEB & APLICACIÓN ANDROID: ONLINE CONGRESS",
-      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-      "desc" => "Software para congresos.",
-      "time" => "Noviembre 2019 - Diciembre 2020",
-    ],
-    [
-      "pos" => "DESARROLLO WEB & APLICACIÓN ANDROID: RESÉRVELAPP",
-      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-      "desc" => "Software para reservas.",
-      "time" => "Julio 2018 - Diciembre 2019",
-    ],
-    [
-      "pos" => "DESARROLLO WEB: REDI - REPOSITORIO DIGITAL DEL ITFIP & RENN - REPOSITORIO DIGITAL DE LA NORMAL DE NAUCALPÁN",
-      "ent" => "<a href='https://itfip.edu.co' target='_blank'>ITFIP (Investigación) / Tesis de grado</a>",
-      "desc" => "Repositorios digitales.",
-      "time" => "Julio 2017 - Enero 2018",
-    ],
-    [
-      "pos" => "DESARROLLO WEB: MNM.TEAM - LANDING PAGE PORTFOLIO",
-      "ent" => "<a href='https://byuwur.co/mnm.team' target='_blank'>MNM.team</a>",
-      "desc" => "Portafolio en página web.",
-      "time" => "Julio 2018 - Diciembre 2018",
-    ],
-    [
-      "pos" => "POST-PRODUCCIÓN AUDIOVISUAL INSTITUCIONAL",
-      "ent" => "<a href='https://youtube.com/ITFIPoficial' target='_blank'>ITFIP [YouTube]</a> | <a href='https://facebook.com/ITFIPoficial' target='_blank'>ITFIP [Facebook]</a>",
-      "desc" => "Creación de contenido digital institucional.",
+      "pos" => "PRODUCTOR AUDIOVISUAL - COMUNICACIONES INSTITUCIONALES",
+      "ent" => "<i class='fas fa-building'></i><a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, anteriormente ITFIP",
+      "desc" => "Produje más de 100 videos, transmisiones y campañas en videografía, fotografía, edición y producción en vivo para una comunidad universitaria de más de 40.000 personas.",
       "time" => "Marzo 2021 - Junio 2022",
     ],
     [
-      "pos" => "PRODUCCIÓN DE VÍDEO Y MÁSTER DE TRANSMISIÓN EN PROYECTOS VARIOS",
-      "ent" => "<a href='javascript:;'>Producciones C&N</a>",
-      "desc" => "Máster de transmisión, máster de producción y edición de vídeo en proyectos varios.",
+      "pos" => "PRODUCTOR DE VIDEO Y MASTER DE STREAMING",
+      "ent" => "<a href='javascript:;' class='uncolor-links'>Producciones C&N</a>",
+      "desc" => "Produje y edité producciones de video en vivo y grabadas para entretenimiento, eventos corporativos y flujos de trabajo de streaming.",
       "time" => "Julio 2020 - Diciembre 2020",
-    ],
-    [
-      "pos" => "VIDEOGRAFÍA - Creación de contenido digital",
-      "ent" => "<a href='https://youtube.com/byuwur' target='_blank'>[Mateus] byUwUr</a>",
-      "desc" => "Creación de contenido digital.",
-      "time" => "Desde 2014",
     ],
   ],
   // --- Formación ---
   "education.items" => [
     [
-      "inst" => "<a href='https://itfip.edu.co/' target='_blank'>ITFIP</a>",
-      "prof" => "GPA: 4.0<small>/5.0</small> | 161122-0596750 TLM",
+      "inst" => "<a href='https://uniespinal.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, anteriormente ITFIP",
+      "prof" => "GPA: 4.1<small>/5.0</small> | TP: 161122-0596750 TLM",
       "prog" => "Ingeniería de Sistemas",
-      "year" => "Marzo 2021",
+      "year" => "<small>Graduado,</small> Marzo 2021",
     ],
     [
-      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>PLATZI</a>",
+      "inst" => "<a href='https://platzi.com/p/atrujillomateus/' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/platzi.png'/>Platzi</a>",
       "prof" => "<a href='https://platzi.com/p/atrujillomateus/' target='_blank'>platzi.com/p/atrujillomateus/</a>",
-      "prog" => "Formación de aptitudes profesionales en Platzi",
-      "year" => "desde 2022",
+      "prog" => "540 horas de formación certificada en tecnología y desarrollo profesional",
+      "year" => "desde 2021",
     ],
-    [
-      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>EDX</a>",
+    /* [
+      "inst" => "<a href='https://profile.edx.org/u/atrujillomateus' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/edx.png'/>EDX</a>",
       "prof" => "<a href='https://profile.edx.org/u/atrujillomateus' target='_blank'>profile.edx.org/u/atrujillomateus</a>",
-      "prog" => "Formación de aptitudes profesionales en edX",
+      "prog" => "60 horas de formación certificada en línea",
       "year" => "desde 2021",
-    ],
-    [
-      "inst" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>CREHANA</a>",
-      "prof" => "<a href='https://www.crehana.com/users/atrujillomateus/' target='_blank'>crehana.com/users/atrujillomateus/</a>",
-      "prog" => "Formación de aptitudes profesionales en Crehana",
-      "year" => "desde 2021",
-    ],
-    [
-      "inst" => "<a href='https://www.sena.edu.co/' target='_blank'>SENA</a>",
+    ], */
+    /* [
+      "inst" => "<a href='https://sena.edu.co' class='uncolor-links' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/sena.png'/>SENA</a>",
       "prof" => "<a href='https://oferta.senasofiaplus.edu.co/sofia-oferta/' target='_blank'>oferta.senasofiaplus.edu.co/sofia-oferta/</a>",
-      "prog" => "Formación de aptitudes profesionales en SENA",
+      "prog" => "240 horas de formación técnica complementaria",
       "year" => "desde 2017",
-    ],
+    ], */
   ],
   // --- Contacto ---
   "contact.subtitle" => "Y construyamos algo increíble juntos.",
@@ -764,28 +713,23 @@ $LANG = [
   "contact.mail.error" => "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.",
   // --- Metadatos ---
   "meta.description" => "Desarrollador de software | Editor de video",
-
   // --- Etiquetas de idioma ---
   "language.spanish" => "Español",
   "language.english" => "English",
   "language.japanese" => "日本語",
-
   // --- Etiquetas de tema ---
   "theme.light.title" => "Usar tema claro",
   "theme.dark.title" => "Usar tema oscuro",
-
   // --- Etiquetas de résumé y tarjeta ---
   "resume.es.title" => "CV en Español",
   "resume.en.title" => "English Résumé",
   "resume.es.alt" => "Bandera de Colombia",
   "resume.en.alt" => "Bandera del Reino Unido",
   "card.title" => "Tarjeta de presentación digital",
-
   // --- Etiquetas sociales ---
   "social.linkedin" => "Abrir perfil de LinkedIn",
   "social.github" => "Abrir perfil de GitHub",
   "social.youtube" => "Abrir canal de YouTube",
-
   // --- Accesibilidad ---
   "accessibility.open_panel" => "Abrir herramientas de accesibilidad",
   "accessibility.increase_text" => "Aumentar tamaño de texto",
