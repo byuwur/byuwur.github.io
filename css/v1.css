@@ -29,9 +29,6 @@ section {
     padding: 9rem 6rem;
   }
 }
-a:hover {
-  color: #0ae !important;
-}
 .social-icons a {
   display: inline-block;
   height: 3rem;

@@ -25,9 +25,6 @@ section {
     padding: 4rem 0.75rem;
   }
 }
-a:hover {
-  color: #0ae !important;
-}
 .social-icons {
   position: fixed;
   right: 0;
@@ -57,7 +54,7 @@ a:hover {
   font-size: 1.25rem;
 }
 .social-icons a:hover {
-  background-color: #a00;
+  background-color: #900;
   color: #eee !important;
 }
 .app-container {

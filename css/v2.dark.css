@@ -5,11 +5,3 @@ body {
   background: #000;
   color: var(--light-color);
 }
-.form-control {
-  background: #fff1;
-  color: #fff !important;
-}
-.form-control:focus {
-  background: #1117;
-  border-color: #fff;
-}
