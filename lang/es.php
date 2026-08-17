@@ -712,7 +712,7 @@ $LANG = [
   "contact.mail.thanks" => "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!",
   "contact.mail.error" => "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.",
   // --- Metadatos ---
-  "meta.description" => "Desarrollador de software | Editor de video",
+  "meta.description" => "Team Lead | Software Engineer | Desarrollador Full-Stack | Productor Audiovisual",
   // --- Etiquetas de idioma ---
   "language.spanish" => "Español",
   "language.english" => "English",

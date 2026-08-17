@@ -712,7 +712,7 @@ $LANG = [
   "contact.mail.thanks" => "Your message has been successfully sent.<br>We will contact you soon!",
   "contact.mail.error" => "There was an error sending the message.<br>Sorry for the inconvenience, please try again.",
   // --- Metadata ---
-  "meta.description" => "Software developer | Video editor",
+  "meta.description" => "Team Lead | Software Engineer | Full-Stack Developer | Audiovisual Producer",
   // --- Language labels ---
   "language.spanish" => "Español",
   "language.english" => "English",

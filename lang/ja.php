@@ -712,7 +712,7 @@ $LANG = [
   "contact.mail.thanks" => "メッセージを送信しました。<br>近日中にご連絡します。",
   "contact.mail.error" => "送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。",
   // --- メタデータ ---
-  "meta.description" => "ソフトウェア開発者 | 動画編集者",
+  "meta.description" => "チームリード｜ソフトウェアエンジニア｜フルスタックデベロッパー｜映像プロデューサー",
   // --- 言語ラベル ---
   "language.spanish" => "Español",
   "language.english" => "English",
