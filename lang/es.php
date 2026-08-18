@@ -181,22 +181,22 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy Sidebar Bootstrap",
+      "title" => "Easy MD viewer",
       "ent" => "byUwUr",
-      "desc" => "Componente Sidebar fácilmente integrable.",
-      "year" => "2024",
-      "image" => "/img/work/sidebar.jpg",
+      "desc" => "Componente visor de MarkDown fácilmente integrable.",
+      "year" => "2026",
+      "image" => "/img/work/md.jpg",
       "class" => "web",
       "link" => [
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-sidebar-bootstrap",
+          "link" => "https://github.com/byuwur/easy-md-viewer",
         ],
         [
           "icon" => "fas fa-play-circle",
           "text" => "Demo",
-          "link" => "https://codepen.io/byuwur/pen/VwJdWYL",
+          "link" => "https://codepen.io/editor/byuwur/pen/01a0161a-7099-7a00-9603-665d04c6dea6",
         ],
       ],
       "tech" => [
@@ -272,6 +272,40 @@ $LANG = [
           "icon" => "fab fa-php",
           "text" => "PHP",
         ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy Sidebar Bootstrap",
+      "ent" => "byUwUr",
+      "desc" => "Componente Sidebar fácilmente integrable.",
+      "year" => "2024",
+      "image" => "/img/work/sidebar.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-sidebar-bootstrap",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://codepen.io/byuwur/pen/VwJdWYL",
+        ],
+      ],
+      "tech" => [
         [
           "icon" => "fab fa-js",
           "text" => "JS",
