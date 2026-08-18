@@ -58,7 +58,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     </div>
     <div class="row w-100 uncolor-links">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
-        <div class="col-md-6 col-xl-4 p-0 text-dark-shadow text-white <?= $portfolio["class"] ?>">
+        <div class="col-md-6 col-xl-4 p-0 text-darker-shadow text-white <?= $portfolio["class"] ?>">
           <div class="project has-background-cover p-4"
             style="background-image: url(<?= "{$HOME_PATH}/{$portfolio["image"]}" ?>);">
             <h3 class="project-title"><?= $portfolio["title"] ?></h3>
