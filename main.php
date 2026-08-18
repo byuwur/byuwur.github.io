@@ -22,7 +22,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
 <link id="themesheet" rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.{$APP_THEME}.css" ?>" />
 <!-- BODY -->
 <div class="app-container">
-  <div class="social-icons uncolor-links">
+  <div class="social-icons light-links">
     <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>">
       <i class="fab fa-linkedin"></i>
     </a>
@@ -46,7 +46,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
       ✨
     </span>
-    <div class="mb-5 d-flex flex-column flex-md-row justify-content-center uncolor-links">
+    <div class="mb-5 d-flex flex-column flex-md-row justify-content-center light-links">
       <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
         <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
         <span><?= $LANG["resume.en.title"] ?></span>
@@ -56,7 +56,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
         <span><?= $LANG["resume.es.title"] ?></span>
       </a>
     </div>
-    <div class="row w-100 uncolor-links">
+    <div class="row w-100 light-links">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
         <div class="col-md-6 col-xl-4 p-0 text-darker-shadow text-white <?= $portfolio["class"] ?>">
           <div class="project has-background-cover p-4"
