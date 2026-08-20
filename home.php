@@ -46,7 +46,7 @@ require_once "{$TO_HOME}/_common.php";
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
   <meta name="description" content="<?= htmlspecialchars($LANG["meta.description"] ?? "Team Lead | Software Engineer | Desarrollador Full-Stack | Productor Audiovisual", ENT_QUOTES, "UTF-8") ?>" />
   <meta name="author" content="Andrés Trujillo [Mateus] byUwUr" />
-  <meta name="keywords" content="Mateus, byUwUr, byuwur, Mateus byUwUr" />
+  <meta name="keywords" content="Mateus, byUwUr, byuwur, BONYUR, Bonyur, bonyur, Team Lead, Software Engineer, Full-Stack Developer, Audiovisual Producer" />
   <meta name="copyright" content="[Mateus] byUwUr" />
   <meta name="robots" content="index, follow" /> <!-- Decommented to get indexed -->
   <meta name="theme-color" content="#300" />
