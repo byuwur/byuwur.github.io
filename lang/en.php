@@ -147,17 +147,17 @@ $LANG = [
         [
           "icon" => "fas fa-play-circle",
           "text" => "Control",
-          "link" => "https://controller.byuwur.co",
+          "link" => "https://byuwur.co/controller",
         ],
         [
           "icon" => "fas fa-play-circle",
           "text" => "Popup",
-          "link" => "https://byuwur.co/stream.html/popup/index.html",
+          "link" => "https://byuwur.github.io/stream.html/popup/",
         ],
         [
           "icon" => "fas fa-play-circle",
           "text" => "Scene",
-          "link" => "https://byuwur.co/stream.html/main/index.html",
+          "link" => "https://byuwur.github.io/stream.html/main/",
         ],
         [
           "icon" => "fas fa-code",
@@ -195,8 +195,13 @@ $LANG = [
         ],
         [
           "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
           "text" => "Demo",
-          "link" => "https://codepen.io/editor/byuwur/pen/01a0161a-7099-7a00-9603-665d04c6dea6",
+          "link" => "https://byuwur.github.io/easy-md-viewer",
         ],
       ],
       "tech" => [
@@ -229,8 +234,13 @@ $LANG = [
         ],
         [
           "icon" => "fas fa-play-circle",
-          "text" => "Demo",
+          "text" => "CodePen Demo",
           "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-json-viewer",
         ],
       ],
       "tech" => [
@@ -259,11 +269,16 @@ $LANG = [
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-server-http-error-page",
+          "link" => "https://github.com/byuwur/easy-http-error",
         ],
         [
           "icon" => "fas fa-play-circle",
           "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-http-error",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo Page",
           "link" => "https://byuwur.co/error",
         ],
       ],
@@ -301,8 +316,13 @@ $LANG = [
         ],
         [
           "icon" => "fas fa-play-circle",
-          "text" => "Demo",
+          "text" => "CodePen Demo",
           "link" => "https://codepen.io/byuwur/pen/VwJdWYL",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-sidebar-bootstrap",
         ],
       ],
       "tech" => [
@@ -332,11 +352,6 @@ $LANG = [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/easy-dropzone-php",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.co/_dropzone.php/index.php?id=1",
         ],
       ],
       "tech" => [
