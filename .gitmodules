@@ -1,6 +1,3 @@
-[submodule "stream.html"]
-	path = stream.html
-	url = https://github.com/byuwur/stream.html.git
 [submodule "spa.php"]
 	path = spa.php
 	url = https://github.com/byuwur/spa.php.git
