@@ -68,7 +68,7 @@ $LANG = [
     [
       "title" => "Stream.FGC",
       "ent" => "byUwUr",
-      "desc" => "App for managing fighting game tournaments.",
+      "desc" => "Local-first tournament control for fighting-game streams, unifying brackets, players, scores, assets and OBS overlays in one portable desktop app.",
       "year" => "2026",
       "image" => "/img/work/fgc.jpg",
       "class" => "web",
@@ -101,7 +101,7 @@ $LANG = [
     [
       "title" => "Easy SPA PHP",
       "ent" => "byUwUr",
-      "desc" => "Single Page Application (SPA) handmade framework with PHP.",
+      "desc" => "Lightweight PHP framework for building SPAs with routing, AJAX navigation, authentication and deployment support without a heavy frontend toolchain.",
       "year" => "2024",
       "image" => "/img/work/spa.jpg",
       "class" => "web",
@@ -137,9 +137,128 @@ $LANG = [
       ],
     ],
     [
+      "title" => "SDA Espinal - grading platform",
+      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
+      "desc" => "Designed, built and maintain a PHP grading platform that automates reports and administration for ~400 students annually.",
+      "year" => "Since 2019",
+      "image" => "/img/work/sda.jpg",
+      "class" => "web android",
+      "link" => [
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://semillasdealegriaespinal.com",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-php",
+          "text" => "PHP",
+        ],
+        [
+          "icon" => "fas fa-database",
+          "text" => "MySQL",
+        ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+        [
+          "icon" => "fab fa-aws",
+          "text" => "AWS",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy MD viewer",
+      "ent" => "byUwUr",
+      "desc" => "Dependency-free Markdown renderer built for safe, embeddable document rendering directly in the browser.",
+      "year" => "2026",
+      "image" => "/img/work/md.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-md-viewer",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-md-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy JSON viewer",
+      "ent" => "byUwUr",
+      "desc" => "Lightweight JSON viewer designed to keep large structured data readable and responsive through progressive rendering.",
+      "year" => "2024",
+      "image" => "/img/work/json.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-json-viewer",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-json-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
       "title" => "STREAM.HTML",
       "ent" => "byUwUr",
-      "desc" => "HTML resources for your streaming overlays.",
+      "desc" => "Reusable browser-source toolkit for operating configurable OBS scenes, overlays, popups and stream graphics from standard web technologies.",
       "year" => "2024",
       "image" => "/img/work/stream.jpg",
       "class" => "web",
@@ -180,85 +299,7 @@ $LANG = [
         ],
       ],
     ],
-    [
-      "title" => "Easy MD viewer",
-      "ent" => "byUwUr",
-      "desc" => "Easily integrable MarkDown viewer component.",
-      "year" => "2026",
-      "image" => "/img/work/md.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-md-viewer",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-md-viewer",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "Easy JSON viewer",
-      "ent" => "byUwUr",
-      "desc" => "Easily integrable JSON viewer component.",
-      "year" => "2024",
-      "image" => "/img/work/json.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-json-viewer",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-json-viewer",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
+    /* [
       "title" => "Easy HTTP error page",
       "ent" => "byUwUr",
       "desc" => "HTTP error code page for your Apache or nginx server.",
@@ -370,47 +411,6 @@ $LANG = [
         [
           "icon" => "fab fa-html5",
           "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "SDA Espinal - grading platform",
-      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
-      "desc" => "Web platform for managing grades in schools.",
-      "year" => "Since 2019",
-      "image" => "/img/work/sda.jpg",
-      "class" => "web android",
-      "link" => [
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://semillasdealegriaespinal.com",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-php",
-          "text" => "PHP",
-        ],
-        [
-          "icon" => "fas fa-database",
-          "text" => "MySQL",
-        ],
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-        [
-          "icon" => "fab fa-aws",
-          "text" => "AWS",
         ],
       ],
     ],
@@ -607,7 +607,7 @@ $LANG = [
           "text" => "Shell",
         ],
       ],
-    ],
+    ], */
   ],
   // --- Skills ---
   "skills.sections" => [

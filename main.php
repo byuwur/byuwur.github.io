@@ -65,7 +65,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
             <div class="project-description p-4">
               <div class="flex-grow-1 d-flex flex-column">
                 <h3><?= $portfolio["title"] ?></h3>
-                <small><?= $portfolio["ent"] ?> (<?= $portfolio["year"] ?>)</small>
+                <i><small><?= $portfolio["ent"] ?> (<?= $portfolio["year"] ?>)</small></i>
                 <small class="fw-light"><?= $portfolio["desc"] ?></small>
               </div>
               <div class="flex-grow-0">

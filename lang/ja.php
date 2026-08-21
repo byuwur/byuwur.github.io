@@ -68,7 +68,7 @@ $LANG = [
     [
       "title" => "Stream.FGC",
       "ent" => "byUwUr",
-      "desc" => "格闘ゲームトーナメントを管理するためのアプリ。",
+      "desc" => "格闘ゲーム配信向けのローカルファーストなトーナメント管理機能。トーナメント表、プレイヤー、スコア、アセット、OBSオーバーレイを1つのポータブルデスクトップアプリに統合します。",
       "year" => "2026",
       "image" => "/img/work/fgc.jpg",
       "class" => "web",
@@ -101,7 +101,7 @@ $LANG = [
     [
       "title" => "Easy SPA PHP",
       "ent" => "byUwUr",
-      "desc" => "PHPで手作りしたSingle Page Application (SPA)フレームワーク。",
+      "desc" => "ルーティング、AJAXナビゲーション、認証、デプロイメントをサポートする軽量PHPフレームワーク。重いフロントエンドツールチェーンは不要です。",
       "year" => "2024",
       "image" => "/img/work/spa.jpg",
       "class" => "web",
@@ -137,9 +137,128 @@ $LANG = [
       ],
     ],
     [
+      "title" => "SDA Espinal - grading platform",
+      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
+      "desc" => "年間約400名の学生を対象とした、レポート作成と管理業務を自動化するPHP採点プラットフォームを設計、構築、保守した。",
+      "year" => "2019年から",
+      "image" => "/img/work/sda.jpg",
+      "class" => "web android",
+      "link" => [
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "デモ",
+          "link" => "https://semillasdealegriaespinal.com",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-php",
+          "text" => "PHP",
+        ],
+        [
+          "icon" => "fas fa-database",
+          "text" => "MySQL",
+        ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+        [
+          "icon" => "fab fa-aws",
+          "text" => "AWS",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy MD viewer",
+      "ent" => "byUwUr",
+      "desc" => "依存関係のないMarkdownレンダラーで、ブラウザに直接安全に埋め込むことができるドキュメントレンダリングを実現します。",
+      "year" => "2026",
+      "image" => "/img/work/md.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-md-viewer",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-md-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy JSON viewer",
+      "ent" => "byUwUr",
+      "desc" => "大規模な構造化データをプログレッシブレンダリングによって読みやすく、応答性の高い状態に保つように設計された軽量JSONビューア。",
+      "year" => "2024",
+      "image" => "/img/work/json.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-json-viewer",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-json-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
       "title" => "STREAM.HTML",
       "ent" => "byUwUr",
-      "desc" => "配信用オーバーレイ向けのHTMLリソース。",
+      "desc" => "標準的なウェブ技術を使用して、OBSの設定可能なストリーミングオーバーレイとグラフィックを操作するための再利用可能なツールキット。",
       "year" => "2024",
       "image" => "/img/work/stream.jpg",
       "class" => "web",
@@ -180,85 +299,7 @@ $LANG = [
         ],
       ],
     ],
-    [
-      "title" => "Easy MD viewer",
-      "ent" => "byUwUr",
-      "desc" => "簡単に組み込めるMarkDownビューアコンポーネント。",
-      "year" => "2026",
-      "image" => "/img/work/md.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-md-viewer",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-md-viewer",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "Easy JSON viewer",
-      "ent" => "byUwUr",
-      "desc" => "簡単に組み込めるJSONビューアコンポーネント。",
-      "year" => "2024",
-      "image" => "/img/work/json.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-json-viewer",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-json-viewer",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
+    /* [
       "title" => "Easy HTTP error page",
       "ent" => "byUwUr",
       "desc" => "Apacheまたはnginxサーバー向けのHTTPエラーコードページ。",
@@ -370,47 +411,6 @@ $LANG = [
         [
           "icon" => "fab fa-html5",
           "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "SDA Espinal - grading platform",
-      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
-      "desc" => "学校の成績管理のためのWebプラットフォーム。",
-      "year" => "2019年から",
-      "image" => "/img/work/sda.jpg",
-      "class" => "web android",
-      "link" => [
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "デモ",
-          "link" => "https://semillasdealegriaespinal.com",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-php",
-          "text" => "PHP",
-        ],
-        [
-          "icon" => "fas fa-database",
-          "text" => "MySQL",
-        ],
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-        [
-          "icon" => "fab fa-aws",
-          "text" => "AWS",
         ],
       ],
     ],
@@ -607,7 +607,7 @@ $LANG = [
           "text" => "Shell",
         ],
       ],
-    ],
+    ], */
   ],
   // --- スキル ---
   "skills.sections" => [

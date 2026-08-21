@@ -68,7 +68,7 @@ $LANG = [
     [
       "title" => "Stream.FGC",
       "ent" => "byUwUr",
-      "desc" => "App para gestión de torneos de juegos de pelea.",
+      "desc" => "Control de torneos para transmisiones de juegos de lucha, unificando cuadros de eliminatorias, jugadores, puntuaciones, recursos y overlays de OBS en una única aplicación de escritorio portable.",
       "year" => "2026",
       "image" => "/img/work/fgc.jpg",
       "class" => "web",
@@ -101,7 +101,7 @@ $LANG = [
     [
       "title" => "Easy SPA PHP",
       "ent" => "byUwUr",
-      "desc" => "Framework de Single Page Application (SPA) hecho a mano con PHP.",
+      "desc" => "Framework PHP ligero para crear SPAs con enrutamiento, navegación AJAX, autenticación y soporte para despliegue sin necesidad de una pesada cadena de herramientas de frontend.",
       "year" => "2024",
       "image" => "/img/work/spa.jpg",
       "class" => "web",
@@ -137,9 +137,128 @@ $LANG = [
       ],
     ],
     [
+      "title" => "SDA Espinal - plataforma de calificaciones",
+      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
+      "desc" => "Diseñé, desarrollé y mantengo una plataforma de calificación en PHP que automatiza los informes y la administración para aproximadamente 400 estudiantes al año.",
+      "year" => "Desde 2019",
+      "image" => "/img/work/sda.jpg",
+      "class" => "web android",
+      "link" => [
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://semillasdealegriaespinal.com",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-php",
+          "text" => "PHP",
+        ],
+        [
+          "icon" => "fas fa-database",
+          "text" => "MySQL",
+        ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+        [
+          "icon" => "fab fa-aws",
+          "text" => "AWS",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy MD viewer",
+      "ent" => "byUwUr",
+      "desc" => "Renderizador de Markdown sin dependencias, diseñado para la representación segura e integrable de documentos directamente en el navegador.",
+      "year" => "2026",
+      "image" => "/img/work/md.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-md-viewer",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-md-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy JSON viewer",
+      "ent" => "byUwUr",
+      "desc" => "Visor JSON ligero diseñado para mantener grandes cantidades de datos estructurados legibles y con buena capacidad de respuesta mediante renderizado progresivo.",
+      "year" => "2024",
+      "image" => "/img/work/json.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-json-viewer",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "CodePen Demo",
+          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
+        ],
+        [
+          "icon" => "fas fa-play-circle",
+          "text" => "Demo",
+          "link" => "https://byuwur.github.io/easy-json-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
       "title" => "STREAM.HTML",
       "ent" => "byUwUr",
-      "desc" => "Recursos HTML para tus overlays de streaming.",
+      "desc" => "Kit de herramientas reutilizable para operar overlays y gráficos de transmisión configurables de OBS a partir de tecnologías web estándar.",
       "year" => "2024",
       "image" => "/img/work/stream.jpg",
       "class" => "web",
@@ -180,85 +299,7 @@ $LANG = [
         ],
       ],
     ],
-    [
-      "title" => "Easy MD viewer",
-      "ent" => "byUwUr",
-      "desc" => "Componente visor de MarkDown fácilmente integrable.",
-      "year" => "2026",
-      "image" => "/img/work/md.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-md-viewer",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-md-viewer",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "Easy JSON viewer",
-      "ent" => "byUwUr",
-      "desc" => "Componente visor de JSON fácilmente integrable.",
-      "year" => "2024",
-      "image" => "/img/work/json.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-json-viewer",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-json-viewer",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
+    /* [
       "title" => "Easy HTTP error page",
       "ent" => "byUwUr",
       "desc" => "Página de códigos de error HTTP para tu servidor Apache o nginx.",
@@ -370,47 +411,6 @@ $LANG = [
         [
           "icon" => "fab fa-html5",
           "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "SDA Espinal - plataforma de calificaciones",
-      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
-      "desc" => "Plataforma web administradora de calificaciones.",
-      "year" => "Desde 2019",
-      "image" => "/img/work/sda.jpg",
-      "class" => "web android",
-      "link" => [
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://semillasdealegriaespinal.com",
-        ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-php",
-          "text" => "PHP",
-        ],
-        [
-          "icon" => "fas fa-database",
-          "text" => "MySQL",
-        ],
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-        [
-          "icon" => "fab fa-aws",
-          "text" => "AWS",
         ],
       ],
     ],
@@ -607,7 +607,7 @@ $LANG = [
           "text" => "Shell",
         ],
       ],
-    ],
+    ], */
   ],
   // --- Habilidades ---
   "skills.sections" => [

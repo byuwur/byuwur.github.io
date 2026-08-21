@@ -86,6 +86,11 @@ require_once "{$TO_HOME}/_common.php";
     <!-- Add a short description to help SEO -->
     <?= htmlspecialchars($LANG["meta.description"], ENT_QUOTES, "UTF-8") ?>
   </section>
+  <nav id="spa-nav"></nav>
+  <main id="spa-content"></main>
+  <footer id="spa-foot"></footer>
+  <div class="side-video"></div>
+  <!--div id="particles"></div-->
   <div id="spa-loader">
     <div class="load-circle-back"></div>
     <div class="load-circle-fore"></div>
@@ -151,11 +156,6 @@ require_once "{$TO_HOME}/_common.php";
       </a>
     </div>
   </div>
-  <!--div id="particles"></div-->
-  <div class="side-video"></div>
-  <nav id="spa-nav"></nav>
-  <main id="spa-content"></main>
-  <footer id="spa-foot"></footer>
 </body>
 
 </html>
