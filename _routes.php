@@ -24,28 +24,6 @@ $ROUTE_MNM_LIMONTECH = "limontech";
 $ROUTE_MNM_RENN = "renn";
 $ROUTE_MNM_REDI = "redi";
 
-switch ($APP_LANG) {
-  case "ja":
-    $ROUTE_HOME = "home";
-    $ROUTE_MNM_PROJECTS = "projects";
-    $ROUTE_MNM_SERVICES = "services";
-    $ROUTE_MNM_CONTACT = "contact";
-    break;
-  case "es":
-  default:
-    $ROUTE_HOME = "inicio";
-    $ROUTE_MNM_PROJECTS = "proyectos";
-    $ROUTE_MNM_SERVICES = "servicios";
-    $ROUTE_MNM_CONTACT = "contacto";
-    break;
-  case "en":
-    $ROUTE_HOME = "home";
-    $ROUTE_MNM_PROJECTS = "projects";
-    $ROUTE_MNM_SERVICES = "services";
-    $ROUTE_MNM_CONTACT = "contact";
-    break;
-}
-
 $ROUTE_ES = "es";
 $ROUTE_EN = "en";
 $ROUTE_JA = "ja";
@@ -102,3 +80,26 @@ $routes = [
   "/{$ROUTE_MNM}/{$ROUTE_MNM_REDI}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "0"], ...$V0_COMPONENTS],
   "/{$ROUTE_MNM}/{$ROUTE_COOKIES}" => ["URI" => "/v0.mnm/cookies.php", "GET" => ["work" => "0"], ...$COMPONENTS_EMPTY],
 ];
+
+// Link aliases | <a> href prints
+switch ($APP_LANG) {
+  case "ja":
+    $ROUTE_HOME = "home";
+    $ROUTE_MNM_PROJECTS = "projects";
+    $ROUTE_MNM_SERVICES = "services";
+    $ROUTE_MNM_CONTACT = "contact";
+    break;
+  case "es":
+  default:
+    $ROUTE_HOME = "inicio";
+    $ROUTE_MNM_PROJECTS = "proyectos";
+    $ROUTE_MNM_SERVICES = "servicios";
+    $ROUTE_MNM_CONTACT = "contacto";
+    break;
+  case "en":
+    $ROUTE_HOME = "home";
+    $ROUTE_MNM_PROJECTS = "projects";
+    $ROUTE_MNM_SERVICES = "services";
+    $ROUTE_MNM_CONTACT = "contact";
+    break;
+}
