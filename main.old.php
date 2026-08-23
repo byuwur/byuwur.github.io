@@ -1,7 +1,7 @@
 <?php
 require_once "./_var.php";
 require_once "{$TO_HOME}/spa.php/_common.php";
-//require_once "{$TO_HOME}/spa.php/_functions.php";
+require_once "{$TO_HOME}/spa.php/_functions.php";
 //require_once "{$TO_HOME}/_functions.php";
 //require_once "{$TO_HOME}/spa.php/_plugins.php";
 //require_once "{$TO_HOME}/_plugins.php";
@@ -28,36 +28,36 @@ require_once "{$TO_HOME}/_common.php";
         <p class="col"><?= $LANG["about.description"] ?></p>
       </div>
       <div class="social-icons mt-4">
-        <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>">
+        <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.linkedin"], false) ?>" aria-label="<?= escape_html($LANG["social.linkedin"], false) ?>">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>">
+        <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.github"], false) ?>" aria-label="<?= escape_html($LANG["social.github"], false) ?>">
           <i class="fab fa-github"></i>
         </a>
-        <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>">
+        <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.youtube"], false) ?>" aria-label="<?= escape_html($LANG["social.youtube"], false) ?>">
           <i class="fab fa-youtube"></i>
         </a>
       </div>
       <div class="mt-4 d-flex flex-column flex-sm-row">
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>"
-          aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= escape_html($LANG["resume.en.title"], false) ?>"
+          aria-label="<?= escape_html($LANG["resume.en.title"], false) ?>">
+          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= escape_html($LANG["resume.en.alt"], false) ?>" />
           <span><?= $LANG["resume.en.title"] ?></span>
         </a>
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>"
-          aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= escape_html($LANG["resume.es.title"], false) ?>"
+          aria-label="<?= escape_html($LANG["resume.es.title"], false) ?>">
+          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= escape_html($LANG["resume.es.alt"], false) ?>" />
           <span><?= $LANG["resume.es.title"] ?></span>
         </a>
       </div>
       <div class="row mt-4">
         <div class="col-12 col-md-5">
           <h6><?= $LANG["card.title"] ?> v2 :]</h6>
-          <iframe src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= htmlspecialchars($LANG["card.title"], ENT_QUOTES, "UTF-8") ?> v2" width="100%" height="128px" frameborder="0"></iframe>
+          <iframe src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"], false) ?> v2" width="100%" height="128px" frameborder="0"></iframe>
         </div>
         <div class="col-12 col-md-7">
           <h6><?= $LANG["card.title"] ?> v1 :)</h6>
-          <iframe src="<?= "{$HOME_PATH}/card.v1.html" ?>" title="<?= htmlspecialchars($LANG["card.title"], ENT_QUOTES, "UTF-8") ?> v1" width="100%" height="128px" frameborder="0"></iframe>
+          <iframe src="<?= "{$HOME_PATH}/card.v1.html" ?>" title="<?= escape_html($LANG["card.title"], false) ?> v1" width="100%" height="128px" frameborder="0"></iframe>
         </div>
       </div>
     </section>
@@ -67,13 +67,13 @@ require_once "{$TO_HOME}/_common.php";
         <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
           <div class="col-12 mb-3">
             <h4 class="text-uppercase mb-2">
-              <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i><?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
+              <i class="<?= escape_html($skillsection["icon"], false) ?>" aria-hidden="true"></i><?= escape_html($skillsection["title"], false) ?>
             </h4>
             <ul class="d-flex flex-wrap gap-2 mb-0">
               <?php foreach ($skillsection["items"] as $skill) { ?>
                 <li class="skill p-1">
-                  <i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i>
-                  <span class="mx-1"><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></spanc¿>
+                  <i class="<?= escape_html($skill["icon"], false) ?>" aria-hidden="true"></i>
+                  <span class="mx-1"><?= escape_html($skill["text"], false) ?></spanc¿>
                 </li>
               <?php } ?>
             </ul>

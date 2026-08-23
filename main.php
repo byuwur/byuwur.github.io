@@ -1,7 +1,7 @@
 <?php
 require_once "./_var.php";
 require_once "{$TO_HOME}/spa.php/_common.php";
-//require_once "{$TO_HOME}/spa.php/_functions.php";
+require_once "{$TO_HOME}/spa.php/_functions.php";
 //require_once "{$TO_HOME}/_functions.php";
 //require_once "{$TO_HOME}/spa.php/_plugins.php";
 //require_once "{$TO_HOME}/_plugins.php";
@@ -23,13 +23,16 @@ foreach ($LANG["skills.sections"] as $skillSection)
 <!-- BODY -->
 <div class="app-container">
   <div class="social-icons light-links">
-    <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.linkedin"], ENT_QUOTES, "UTF-8") ?>">
+    <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.linkedin"], false) ?>" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["social.linkedin"], false) ?>"
+      aria-label="<?= escape_html($LANG["social.linkedin"], false) ?>">
       <i class="fab fa-linkedin"></i>
     </a>
-    <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.github"], ENT_QUOTES, "UTF-8") ?>">
+    <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.github"], false) ?>" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["social.github"], false) ?>"
+      aria-label="<?= escape_html($LANG["social.github"], false) ?>">
       <i class="fab fa-github"></i>
     </a>
-    <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["social.youtube"], ENT_QUOTES, "UTF-8") ?>">
+    <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.youtube"], false) ?>" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["social.youtube"], false) ?>"
+      aria-label="<?= escape_html($LANG["social.youtube"], false) ?>">
       <i class="fab fa-youtube"></i>
     </a>
   </div>
@@ -42,17 +45,17 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <?= $LANG["hero.and_i"] . " " . $LANG["hero.in"] ?><br>
       ✨
       <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
-      <span id="typed" data-strings="<?= htmlspecialchars(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), ENT_QUOTES, "UTF-8") ?>"></span>
+      <span id="typed" data-strings="<?= escape_html(json_encode($typedSkills, JSON_UNESCAPED_UNICODE), false) ?>"></span>
       <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
       ✨
     </span>
     <div class="mb-5 d-flex flex-column flex-md-row justify-content-center light-links">
-      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.en.title"], ENT_QUOTES, "UTF-8") ?>">
-        <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.en.alt"], ENT_QUOTES, "UTF-8") ?>" />
+      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" title="<?= escape_html($LANG["resume.en.title"], false) ?>" aria-label="<?= escape_html($LANG["resume.en.title"], false) ?>">
+        <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= escape_html($LANG["resume.en.alt"], false) ?>" />
         <span><?= $LANG["resume.en.title"] ?></span>
       </a>
-      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" title="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["resume.es.title"], ENT_QUOTES, "UTF-8") ?>">
-        <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= htmlspecialchars($LANG["resume.es.alt"], ENT_QUOTES, "UTF-8") ?>" />
+      <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" title="<?= escape_html($LANG["resume.es.title"], false) ?>" aria-label="<?= escape_html($LANG["resume.es.title"], false) ?>">
+        <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= escape_html($LANG["resume.es.alt"], false) ?>" />
         <span><?= $LANG["resume.es.title"] ?></span>
       </a>
     </div>
@@ -101,15 +104,15 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
         <div class="skill-section col-12 mb-5">
           <h4 class="text-uppercase mb-2">
-            <i class="<?= htmlspecialchars($skillsection["icon"], ENT_QUOTES, "UTF-8") ?>" aria-hidden="true"></i>
-            <?= htmlspecialchars($skillsection["title"], ENT_QUOTES, "UTF-8") ?>
+            <i class="<?= escape_html($skillsection["icon"], false) ?>" aria-hidden="true"></i>
+            <?= escape_html($skillsection["title"], false) ?>
           </h4>
           <ul class="d-flex flex-wrap gap-2 mb-0">
             <?php foreach ($skillsection["items"] as $skill) { ?>
-              <li class="skill p-2 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($skill["years"], ENT_QUOTES, "UTF-8") . "+ " . htmlspecialchars($LANG["years"], ENT_QUOTES, "UTF-8") ?>">
-                <h4 class="m-0"><i class="<?= htmlspecialchars($skill["icon"], ENT_QUOTES, "UTF-8") ?>"></i><span class="mx-1"><?= htmlspecialchars($skill["text"], ENT_QUOTES, "UTF-8") ?></span></h4>
+              <li class="skill p-2 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($skill["years"], false) . "+ " . escape_html($LANG["years"], false) ?>">
+                <h4 class="m-0"><i class="<?= escape_html($skill["icon"], false) ?>"></i><span class="mx-1"><?= escape_html($skill["text"], false) ?></span></h4>
                 <div class="progress rounded-pill">
-                  <div class="progress-bar" style="width: <?= htmlspecialchars($skill["progress"], ENT_QUOTES, "UTF-8") ?>%"></div>
+                  <div class="progress-bar" style="width: <?= escape_html($skill["progress"], false) ?>%"></div>
                 </div>
               </li>
             <?php } ?>
@@ -161,7 +164,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <!--div class="col-12 col-md-6 mb-3">
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>"
-          title="<?= htmlspecialchars($LANG["card.title"], ENT_QUOTES, "UTF-8") ?>" width="100%" height="128px"
+          title="<?= escape_html($LANG["card.title"], false) ?>" width="100%" height="128px"
           frameborder="0"></iframe>
       </div>
       <div class="col-12 col-md-6 mb-3 d-flex flex-column text-end text-md-start">
