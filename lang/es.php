@@ -766,6 +766,7 @@ $LANG = [
   "meta.locale" => "es_CO",
   "meta.keywords" => "Andrés Trujillo Mateus, byUwUr, Team Lead, Ingeniero de Software, Desarrollador Full-Stack, TypeScript, AWS, React, PHP, MySQL, Go, Productor Audiovisual",
   "seo.roles" => "Team Lead | Desarrollador Full-Stack | Productor Audiovisual",
+  "seo.job_title" => "Team Lead y Desarrollador Full-Stack",
   "seo.summary" => "Lidero la entrega de software y construyo sistemas de producción confiables con TypeScript y AWS, React, PHP y MySQL, y Go.",
   "seo.location" => "Colombia · UTC-5 · Inglés C2",
   "seo.work" => "Trabajo de ingeniería seleccionado:",

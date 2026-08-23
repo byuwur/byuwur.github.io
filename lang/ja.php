@@ -766,6 +766,7 @@ $LANG = [
   "meta.locale" => "ja_JP",
   "meta.keywords" => "Andrés Trujillo Mateus, byUwUr, チームリード, ソフトウェアエンジニア, フルスタックエンジニア, TypeScript, AWS, React, PHP, MySQL, Go, 映像プロデューサー",
   "seo.roles" => "チームリード｜フルスタックエンジニア｜映像プロデューサー",
+  "seo.job_title" => "チームリード・フルスタックエンジニア",
   "seo.summary" => "TypeScriptとAWS、React、PHPとMySQL、Goを用いて、ソフトウェア開発をリードし、信頼性の高い本番システムを構築しています。",
   "seo.location" => "コロンビア · UTC-5 · 英語 C2",
   "seo.work" => "主なエンジニアリング実績：",

@@ -766,6 +766,7 @@ $LANG = [
   "meta.locale" => "en_US",
   "meta.keywords" => "Andrés Trujillo Mateus, byUwUr, Team Lead, Software Engineer, Full-Stack Developer, TypeScript, AWS, React, PHP, MySQL, Go, Audiovisual Producer",
   "seo.roles" => "Team Lead | Full-Stack Software Engineer | Audiovisual Producer",
+  "seo.job_title" => "Team Lead and Full-Stack Software Engineer",
   "seo.summary" => "I lead software delivery and build reliable production systems across TypeScript and AWS, React, PHP and MySQL, and Go.",
   "seo.location" => "Colombia · UTC-5 · English C2",
   "seo.work" => "Selected engineering work:",
