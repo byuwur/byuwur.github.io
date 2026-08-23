@@ -14,11 +14,11 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- ページ構造 ---
-  "title.default" => "Andrés Trujillo Mateus | @byUwUr = チームリード｜フルスタックエンジニア｜映像プロデューサー",
+  "title.default" => "Andrés Trujillo Mateus | @byUwUr = 私は役に立つものを作る",
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
   // --- プロフィールとヒーロー ---
-  "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
-  "profile.full_name" => "Andrés Trujillo Mateus",
+  "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
+  "profile.full_name" => "@byUwUr",
   "hero.im" => "私は",
   "hero.and_i" => "役立つものを作ります",
   "hero.in" => "",

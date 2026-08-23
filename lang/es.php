@@ -14,11 +14,11 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- Estructura de página ---
-  "title.default" => "Andrés Trujillo Mateus | @byUwUr = Team Lead | Desarrollador Full-Stack | Productor Audiovisual",
+  "title.default" => "Andrés Trujillo Mateus | @byUwUr = Creo cosas útiles",
   "loader.loading" => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
   // --- Perfil y hero ---
-  "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
-  "profile.full_name" => "Andrés Trujillo Mateus",
+  "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
+  "profile.full_name" => "@byUwUr",
   "hero.im" => "Soy",
   "hero.and_i" => "Creo cosas útiles",
   "hero.in" => "con ",

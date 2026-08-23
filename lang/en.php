@@ -14,11 +14,11 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- Page shell ---
-  "title.default" => "Andrés Trujillo Mateus | @byUwUr = Team Lead | Full-Stack Software Engineer | Audiovisual Producer",
+  "title.default" => "Andrés Trujillo Mateus | @byUwUr = I create useful things",
   "loader.loading" => "<b>Loading standard view...</b><br>Still loading? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Go to basic view</a>",
   // --- Profile and hero ---
-  "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
-  "profile.full_name" => "Andrés Trujillo Mateus",
+  "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
+  "profile.full_name" => "@byUwUr",
   "hero.im" => "I'm",
   "hero.and_i" => "I create useful things",
   "hero.in" => "with ",
