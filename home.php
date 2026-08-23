@@ -35,20 +35,33 @@ require_once "{$TO_HOME}/_common.php";
 ?>
 
 <head>
-  <title><?= htmlspecialchars($LANG["title.default"], ENT_QUOTES, "UTF-8") ?></title>
+  <title><?= escape_html($LANG["title.default"]) ?></title>
   <meta charset="utf-8" />
-  <meta property="og:title" content="<?= htmlspecialchars($LANG["title.default"], ENT_QUOTES, "UTF-8") ?>" />
+  <meta property="og:title" content="<?= escape_html($LANG["title.default"]) ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://byuwur.co/img/logo.png" />
-  <meta property="og:url" content="https://byuwur.co" />
-  <meta property="og:site_name" content="<?= htmlspecialchars($LANG["title.default"], ENT_QUOTES, "UTF-8") ?>" />
-  <meta property="og:description" content="<?= htmlspecialchars($LANG["meta.description"] ?? "Team Lead | Software Engineer | Desarrollador Full-Stack | Productor Audiovisual", ENT_QUOTES, "UTF-8") ?>" />
+  <meta property="og:image:alt" content="[Mateus] byUwUr" />
+  <meta property="og:url" content="<?= escape_html($LANG["meta.url"]) ?>" />
+  <meta property="og:site_name" content="[Mateus] byUwUr" />
+  <meta property="og:description" content="<?= escape_html($LANG["meta.description"]) ?>" />
+  <meta property="og:locale" content="<?= escape_html($LANG["meta.locale"]) ?>" />
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-  <meta name="description" content="<?= htmlspecialchars($LANG["meta.description"] ?? "Team Lead | Software Engineer | Desarrollador Full-Stack | Productor Audiovisual", ENT_QUOTES, "UTF-8") ?>" />
-  <meta name="author" content="Andrés Trujillo [Mateus] byUwUr" />
-  <meta name="keywords" content="Mateus, byUwUr, byuwur, BONYUR, Bonyur, bonyur, Team Lead, Software Engineer, Full-Stack Developer, Audiovisual Producer" />
+  <meta name="description" content="<?= escape_html($LANG["meta.description"]) ?>" />
+  <meta name="author" content="Andrés Trujillo Mateus" />
+  <meta name="keywords" content="<?= escape_html($LANG["meta.keywords"]) ?>" />
   <meta name="copyright" content="[Mateus] byUwUr" />
-  <meta name="robots" content="index, follow" /> <!-- Decommented to get indexed -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@byUwUr" />
+  <meta name="twitter:title" content="<?= escape_html($LANG["title.default"]) ?>" />
+  <meta name="twitter:description" content="<?= escape_html($LANG["meta.description"]) ?>" />
+  <meta name="twitter:image" content="https://byuwur.co/img/logo.png" />
+  <meta name="twitter:image:alt" content="[Mateus] byUwUr" />
+  <link rel="canonical" href="<?= escape_html($LANG["meta.url"]) ?>" />
+  <link rel="alternate" hreflang="es" href="https://byuwur.co/es" />
+  <link rel="alternate" hreflang="en" href="https://byuwur.co/en" />
+  <link rel="alternate" hreflang="ja" href="https://byuwur.co/ja" />
+  <link rel="alternate" hreflang="x-default" href="https://byuwur.co/" />
   <meta name="theme-color" content="#300" />
   <link rel="icon" id="page-icon" type="image/png" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
   <link rel="apple-touch-icon" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
@@ -70,21 +83,44 @@ require_once "{$TO_HOME}/_common.php";
   <!--script src="<?= "{$HOME_PATH}/spa.php/js/select2.full.min.js" ?>" defer></script-->
   <!--script src="<?= "{$HOME_PATH}/spa.php/js/dropzone.min.js" ?>" defer></script-->
   <script src="<?= "{$HOME_PATH}/spa.php/js/typed.min.js" ?>" defer></script>
-  <!--script src="<?= "{$HOME_PATH}/spa.php/js/particles.min.js" ?>" defer></script-->
+  <!--script src="<?= "{$HOME_PATH}/spa.php/js/particles-ui.min.js" ?>" defer></script-->
   <script src="<?= "{$HOME_PATH}/spa.php/js/cookies.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_functions.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_common.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_spa.js" ?>" defer></script>
-  <script src="https://www.google.com/recaptcha/api.js" defer></script>
+  <!--script src="https://www.google.com/recaptcha/api.js" defer></script-->
   <!-- Add your overrides below -->
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/_common.css" ?>" />
 </head>
 
 <body>
   <!-- byuwur/spa.php | Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr -->
+  <noscript>
+    <section id="noscript-intro" aria-labelledby="noscript-title">
+      <h1 id="noscript-title"><?= escape_html($LANG["profile.full_name"]) ?> | @byUwUr</h1>
+      <h2><?= escape_html($LANG["seo.roles"]) ?></h2>
+      <p><?= escape_html($LANG["seo.summary"]) ?></p>
+      <p><?= escape_html($LANG["seo.location"]) ?></p>
+      <p>
+        <?= escape_html($LANG["seo.work"]) ?>
+        <a href="https://github.com/byuwur/stream.fgc">Stream.FGC</a>,
+        <a href="https://github.com/byuwur/spa.php">SPA.php</a>,
+        <a href="https://github.com/byuwur/easy-md-viewer">Easy MD Viewer</a>,
+        <a href="https://github.com/byuwur/easy-json-viewer">Easy JSON Viewer</a> and
+        <a href="https://github.com/byuwur/stream.html">Stream.HTML</a>.
+      </p>
+      <p>
+        <?= escape_html($LANG["seo.contact"]) ?>
+        <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>">Email</a> ·
+        <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>">LinkedIn</a> ·
+        <a href="<?= escape_html($LANG["social.github.url"]) ?>">GitHub</a>
+      </p>
+      <p><?= escape_html($LANG["seo.javascript"]) ?></p>
+    </section>
+  </noscript>
   <section id="intro" class="d-none">
     <!-- Add a short description to help SEO -->
-    <?= htmlspecialchars($LANG["meta.description"], ENT_QUOTES, "UTF-8") ?>
+    <?= escape_html($LANG["meta.description"]) ?>
   </section>
   <nav id="spa-nav"></nav>
   <main id="spa-content"></main>
@@ -94,64 +130,64 @@ require_once "{$TO_HOME}/_common.php";
   <div id="spa-loader">
     <div class="load-circle-back"></div>
     <div class="load-circle-fore"></div>
-    <div class="load-text"><?= $LANG["loader.loading"] ?></div>
+    <div class="load-text"><?= $LANG["loader.loading"] // Trusted layout HTML from the bundled language files. ?></div>
   </div>
   <div id="bywr-accessibility" class="uncolor-links">
-    <a href="javascript:byCommon.accessibilityToggle();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.open_panel"], ENT_QUOTES, "UTF-8") ?>"
-      title="<?= htmlspecialchars($LANG["accessibility.open_panel"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.open_panel"], ENT_QUOTES, "UTF-8") ?>">
+    <a href="javascript:byCommon.accessibilityToggle();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.open_panel"]) ?>"
+      title="<?= escape_html($LANG["accessibility.open_panel"]) ?>" aria-label="<?= escape_html($LANG["accessibility.open_panel"]) ?>">
       <i class="fas fa-universal-access"></i>
     </a>
     <div id="bywr-accessibility-buttons" class="hide">
-      <a href="javascript:byCommon.accessibilityText('plus');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.increase_text"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.increase_text"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.increase_text"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityText('plus');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.increase_text"]) ?>"
+        title="<?= escape_html($LANG["accessibility.increase_text"]) ?>" aria-label="<?= escape_html($LANG["accessibility.increase_text"]) ?>">
         <i class="fas fa-magnifying-glass-plus"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityText();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.reset_text"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.reset_text"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.reset_text"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityText();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.reset_text"]) ?>"
+        title="<?= escape_html($LANG["accessibility.reset_text"]) ?>" aria-label="<?= escape_html($LANG["accessibility.reset_text"]) ?>">
         <i class="fas fa-magnifying-glass"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityText('minus');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.decrease_text"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.decrease_text"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.decrease_text"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityText('minus');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.decrease_text"]) ?>"
+        title="<?= escape_html($LANG["accessibility.decrease_text"]) ?>" aria-label="<?= escape_html($LANG["accessibility.decrease_text"]) ?>">
         <i class="fas fa-magnifying-glass-minus"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityMotion();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.toggle_motion"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.toggle_motion"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.toggle_motion"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityMotion();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.toggle_motion"]) ?>"
+        title="<?= escape_html($LANG["accessibility.toggle_motion"]) ?>" aria-label="<?= escape_html($LANG["accessibility.toggle_motion"]) ?>">
         <i class="fas fa-wind"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityDyslexia();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.dyslexia"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.dyslexia"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.dyslexia"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityDyslexia();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.dyslexia"]) ?>"
+        title="<?= escape_html($LANG["accessibility.dyslexia"]) ?>" aria-label="<?= escape_html($LANG["accessibility.dyslexia"]) ?>">
         <i class="fas fa-font"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityWordSpacing();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.word_spacing"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.word_spacing"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.word_spacing"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityWordSpacing();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.word_spacing"]) ?>"
+        title="<?= escape_html($LANG["accessibility.word_spacing"]) ?>" aria-label="<?= escape_html($LANG["accessibility.word_spacing"]) ?>">
         <i class="fas fa-text-width"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighlightLinks();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.highlight_links"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.highlight_links"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.highlight_links"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighlightLinks();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.highlight_links"]) ?>"
+        title="<?= escape_html($LANG["accessibility.highlight_links"]) ?>" aria-label="<?= escape_html($LANG["accessibility.highlight_links"]) ?>">
         <i class="fas fa-link"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighContrast();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.high_contrast"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.high_contrast"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.high_contrast"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighContrast();" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.high_contrast"]) ?>"
+        title="<?= escape_html($LANG["accessibility.high_contrast"]) ?>" aria-label="<?= escape_html($LANG["accessibility.high_contrast"]) ?>">
         <i class="fas fa-circle-half-stroke"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighContrast('invertchropia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.invert_colors"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.invert_colors"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.invert_colors"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighContrast('invertchropia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.invert_colors"]) ?>"
+        title="<?= escape_html($LANG["accessibility.invert_colors"]) ?>" aria-label="<?= escape_html($LANG["accessibility.invert_colors"]) ?>">
         <i class="fas fa-droplet"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighContrast('monochropia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.grayscale"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.grayscale"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.grayscale"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighContrast('monochropia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.grayscale"]) ?>"
+        title="<?= escape_html($LANG["accessibility.grayscale"]) ?>" aria-label="<?= escape_html($LANG["accessibility.grayscale"]) ?>">
         <i class="fas fa-droplet-slash"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighContrast('protanopia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.protanopia"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.protanopia"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.protanopia"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighContrast('protanopia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.protanopia"]) ?>"
+        title="<?= escape_html($LANG["accessibility.protanopia"]) ?>" aria-label="<?= escape_html($LANG["accessibility.protanopia"]) ?>">
         <i class="fas fa-eye"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighContrast('deuteranopia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.deuteranopia"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.deuteranopia"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.deuteranopia"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighContrast('deuteranopia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.deuteranopia"]) ?>"
+        title="<?= escape_html($LANG["accessibility.deuteranopia"]) ?>" aria-label="<?= escape_html($LANG["accessibility.deuteranopia"]) ?>">
         <i class="fas fa-eye-slash"></i>
       </a>
-      <a href="javascript:byCommon.accessibilityHighContrast('tritanopia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= htmlspecialchars($LANG["accessibility.tritanopia"], ENT_QUOTES, "UTF-8") ?>"
-        title="<?= htmlspecialchars($LANG["accessibility.tritanopia"], ENT_QUOTES, "UTF-8") ?>" aria-label="<?= htmlspecialchars($LANG["accessibility.tritanopia"], ENT_QUOTES, "UTF-8") ?>">
+      <a href="javascript:byCommon.accessibilityHighContrast('tritanopia');" role="button" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($LANG["accessibility.tritanopia"]) ?>"
+        title="<?= escape_html($LANG["accessibility.tritanopia"]) ?>" aria-label="<?= escape_html($LANG["accessibility.tritanopia"]) ?>">
         <i class="fas fa-eye-low-vision"></i>
       </a>
     </div>
