@@ -211,7 +211,7 @@ $mail_html .= '<p style="margin: 0; mso-line-height-rule: exactly; font-family: 
         <td align="center" style="padding: 0; margin: 0">
             <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 21px; letter-spacing: 0; color: #333333; font-size: 13px">
                 <a target="_blank" style="mso-line-height-rule: exactly; text-decoration: none; color: #333333; font-size: 14px" href="' . $mail_resources["privacy_url"] . '">' . $mail_resources["privacy_txt"] . '</a>
-                &nbsp;•&nbsp;
+                &nbsp;·&nbsp;
                 <a target="_blank" style="mso-line-height-rule: exactly; text-decoration: none; color: #333333; font-size: 14px" href="' . $mail_resources["drop_url"] . '">' . $mail_resources["drop_txt"] . '</a>
             </p>
         </td>
