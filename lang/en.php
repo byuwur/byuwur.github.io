@@ -14,7 +14,7 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- Page shell ---
-  "title.default" => "[Mateus] byUwUr = I create useful things",
+  "title.default" => "Andrés Trujillo Mateus | @byUwUr = Team Lead | Full-Stack Software Engineer | Audiovisual Producer",
   "loader.loading" => "<b>Loading standard view...</b><br>Still loading? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Go to basic view</a>",
   // --- Profile and hero ---
   "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
@@ -761,7 +761,16 @@ $LANG = [
   "contact.mail.thanks" => "Your message has been successfully sent.<br>We will contact you soon!",
   "contact.mail.error" => "There was an error sending the message.<br>Sorry for the inconvenience, please try again.",
   // --- Metadata ---
-  "meta.description" => "Team Lead | Software Engineer | Full-Stack Developer | Audiovisual Producer",
+  "meta.description" => "Team Lead and Full-Stack Software Engineer based in Colombia, building production software across TypeScript, AWS, React, PHP/MySQL and Go.",
+  "meta.url" => "https://byuwur.co/en",
+  "meta.locale" => "en_US",
+  "meta.keywords" => "Andrés Trujillo Mateus, byUwUr, Team Lead, Software Engineer, Full-Stack Developer, TypeScript, AWS, React, PHP, MySQL, Go, Audiovisual Producer",
+  "seo.roles" => "Team Lead | Full-Stack Software Engineer | Audiovisual Producer",
+  "seo.summary" => "I lead software delivery and build reliable production systems across TypeScript and AWS, React, PHP and MySQL, and Go.",
+  "seo.location" => "Colombia · UTC-5 · English C2",
+  "seo.work" => "Selected engineering work:",
+  "seo.contact" => "Contact and professional profiles:",
+  "seo.javascript" => "JavaScript is disabled. You can still explore my selected engineering work and contact me using the links above.",
   // --- Language labels ---
   "language.spanish" => "Español",
   "language.english" => "English",

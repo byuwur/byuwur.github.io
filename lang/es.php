@@ -14,7 +14,7 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- Estructura de página ---
-  "title.default" => "[Mateus] byUwUr = Creo cosas útiles",
+  "title.default" => "Andrés Trujillo Mateus | @byUwUr = Team Lead | Desarrollador Full-Stack | Productor Audiovisual",
   "loader.loading" => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
   // --- Perfil y hero ---
   "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
@@ -761,7 +761,16 @@ $LANG = [
   "contact.mail.thanks" => "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!",
   "contact.mail.error" => "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.",
   // --- Metadatos ---
-  "meta.description" => "Team Lead | Software Engineer | Desarrollador Full-Stack | Productor Audiovisual",
+  "meta.description" => "Team Lead y desarrollador Full-Stack en Colombia, creando software de producción con TypeScript, AWS, React, PHP/MySQL y Go.",
+  "meta.url" => "https://byuwur.co/es",
+  "meta.locale" => "es_CO",
+  "meta.keywords" => "Andrés Trujillo Mateus, byUwUr, Team Lead, Ingeniero de Software, Desarrollador Full-Stack, TypeScript, AWS, React, PHP, MySQL, Go, Productor Audiovisual",
+  "seo.roles" => "Team Lead | Desarrollador Full-Stack | Productor Audiovisual",
+  "seo.summary" => "Lidero la entrega de software y construyo sistemas de producción confiables con TypeScript y AWS, React, PHP y MySQL, y Go.",
+  "seo.location" => "Colombia · UTC-5 · Inglés C2",
+  "seo.work" => "Trabajo de ingeniería seleccionado:",
+  "seo.contact" => "Contacto y perfiles profesionales:",
+  "seo.javascript" => "JavaScript está desactivado. Aún puedes explorar mi trabajo de ingeniería seleccionado y contactarme mediante los enlaces anteriores.",
   // --- Etiquetas de idioma ---
   "language.spanish" => "Español",
   "language.english" => "English",

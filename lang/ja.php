@@ -14,7 +14,7 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- ページ構造 ---
-  "title.default" => "[Mateus] byUwUr = 役立つものを作ります",
+  "title.default" => "Andrés Trujillo Mateus | @byUwUr = チームリード｜フルスタックエンジニア｜映像プロデューサー",
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
   // --- プロフィールとヒーロー ---
   "profile.name_top" => "[Mateus] <span class='text-primary'>byUwUr</span>",
@@ -761,7 +761,16 @@ $LANG = [
   "contact.mail.thanks" => "メッセージを送信しました。<br>近日中にご連絡します。",
   "contact.mail.error" => "送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。",
   // --- メタデータ ---
-  "meta.description" => "チームリード｜ソフトウェアエンジニア｜フルスタックデベロッパー｜映像プロデューサー",
+  "meta.description" => "コロンビアを拠点に、TypeScript、AWS、React、PHP/MySQL、Goで本番ソフトウェアを構築するチームリード兼フルスタックエンジニアです。",
+  "meta.url" => "https://byuwur.co/ja",
+  "meta.locale" => "ja_JP",
+  "meta.keywords" => "Andrés Trujillo Mateus, byUwUr, チームリード, ソフトウェアエンジニア, フルスタックエンジニア, TypeScript, AWS, React, PHP, MySQL, Go, 映像プロデューサー",
+  "seo.roles" => "チームリード｜フルスタックエンジニア｜映像プロデューサー",
+  "seo.summary" => "TypeScriptとAWS、React、PHPとMySQL、Goを用いて、ソフトウェア開発をリードし、信頼性の高い本番システムを構築しています。",
+  "seo.location" => "コロンビア · UTC-5 · 英語 C2",
+  "seo.work" => "主なエンジニアリング実績：",
+  "seo.contact" => "連絡先とプロフィール：",
+  "seo.javascript" => "JavaScriptが無効です。上記のリンクから主な開発実績を確認し、連絡することができます。",
   // --- 言語ラベル ---
   "language.spanish" => "Español",
   "language.english" => "English",
