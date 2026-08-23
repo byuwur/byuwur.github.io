@@ -28,36 +28,36 @@ require_once "{$TO_HOME}/_common.php";
         <p class="col"><?= $LANG["about.description"] ?></p>
       </div>
       <div class="social-icons mt-4">
-        <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.linkedin"], false) ?>" aria-label="<?= escape_html($LANG["social.linkedin"], false) ?>">
+        <a href="<?= $LANG["social.linkedin.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.linkedin"]) ?>" aria-label="<?= escape_html($LANG["social.linkedin"]) ?>">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.github"], false) ?>" aria-label="<?= escape_html($LANG["social.github"], false) ?>">
+        <a href="<?= $LANG["social.github.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.github"]) ?>" aria-label="<?= escape_html($LANG["social.github"]) ?>">
           <i class="fab fa-github"></i>
         </a>
-        <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.youtube"], false) ?>" aria-label="<?= escape_html($LANG["social.youtube"], false) ?>">
+        <a href="<?= $LANG["social.youtube.url"] ?>" target="_blank" title="<?= escape_html($LANG["social.youtube"]) ?>" aria-label="<?= escape_html($LANG["social.youtube"]) ?>">
           <i class="fab fa-youtube"></i>
         </a>
       </div>
       <div class="mt-4 d-flex flex-column flex-sm-row">
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= escape_html($LANG["resume.en.title"], false) ?>"
-          aria-label="<?= escape_html($LANG["resume.en.title"], false) ?>">
-          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= escape_html($LANG["resume.en.alt"], false) ?>" />
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= escape_html($LANG["resume.en.title"]) ?>"
+          aria-label="<?= escape_html($LANG["resume.en.title"]) ?>">
+          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= escape_html($LANG["resume.en.alt"]) ?>" />
           <span><?= $LANG["resume.en.title"] ?></span>
         </a>
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= escape_html($LANG["resume.es.title"], false) ?>"
-          aria-label="<?= escape_html($LANG["resume.es.title"], false) ?>">
-          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= escape_html($LANG["resume.es.alt"], false) ?>" />
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= escape_html($LANG["resume.es.title"]) ?>"
+          aria-label="<?= escape_html($LANG["resume.es.title"]) ?>">
+          <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= escape_html($LANG["resume.es.alt"]) ?>" />
           <span><?= $LANG["resume.es.title"] ?></span>
         </a>
       </div>
       <div class="row mt-4">
         <div class="col-12 col-md-5">
           <h6><?= $LANG["card.title"] ?> v2 :]</h6>
-          <iframe src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"], false) ?> v2" width="100%" height="128px" frameborder="0"></iframe>
+          <iframe src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?> v2" width="100%" height="128px" frameborder="0"></iframe>
         </div>
         <div class="col-12 col-md-7">
           <h6><?= $LANG["card.title"] ?> v1 :)</h6>
-          <iframe src="<?= "{$HOME_PATH}/card.v1.html" ?>" title="<?= escape_html($LANG["card.title"], false) ?> v1" width="100%" height="128px" frameborder="0"></iframe>
+          <iframe src="<?= "{$HOME_PATH}/card.v1.html" ?>" title="<?= escape_html($LANG["card.title"]) ?> v1" width="100%" height="128px" frameborder="0"></iframe>
         </div>
       </div>
     </section>
@@ -67,13 +67,13 @@ require_once "{$TO_HOME}/_common.php";
         <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
           <div class="col-12 mb-3">
             <h4 class="text-uppercase mb-2">
-              <i class="<?= escape_html($skillsection["icon"], false) ?>" aria-hidden="true"></i><?= escape_html($skillsection["title"], false) ?>
+              <i class="<?= escape_html($skillsection["icon"]) ?>" aria-hidden="true"></i><?= escape_html($skillsection["title"]) ?>
             </h4>
             <ul class="d-flex flex-wrap gap-2 mb-0">
               <?php foreach ($skillsection["items"] as $skill) { ?>
                 <li class="skill p-1">
-                  <i class="<?= escape_html($skill["icon"], false) ?>" aria-hidden="true"></i>
-                  <span class="mx-1"><?= escape_html($skill["text"], false) ?></spanc¿>
+                  <i class="<?= escape_html($skill["icon"]) ?>" aria-hidden="true"></i>
+                  <span class="mx-1"><?= escape_html($skill["text"]) ?></spanc¿>
                 </li>
               <?php } ?>
             </ul>
@@ -132,7 +132,7 @@ require_once "{$TO_HOME}/_common.php";
 <script>
   "use strict";
   $(() => {
-    document.title = <?= json_encode($LANG["title.default"] . " [v1]") ?>;
+    document.title = <?= js_encode($LANG["title.default"] . " [v1]") ?>;
     byCommon.init();
     if ($("#page-icon").length) $("#page-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");
     if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");

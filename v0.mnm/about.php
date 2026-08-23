@@ -97,7 +97,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   ?>
   <script>
     $(() => {
-      document.title = "<?= $_hola ?> | MNM.team();";
+      document.title = <?= js_encode($_hola . " | MNM.team();") ?>;
       $("#li_about").addClass("mnm-active");
     });
   </script>

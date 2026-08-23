@@ -122,7 +122,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   ?>
   <script>
     $(() => {
-      document.title = "<?= $_mywork ?> | MNM.team();";
+      document.title = <?= js_encode($_mywork . " | MNM.team();") ?>;
       $("#li_work").addClass("mnm-active");
     });
   </script>

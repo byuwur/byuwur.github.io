@@ -39,7 +39,7 @@ $_POST["msg_bot"] = "Soy"
   . ($mail_phone !== null ? ", o llamarme al: <strong>{$mail_phone}</strong>" : ".")
   . "<br><br>Asunto: "
   . "<strong>{$mail_subject}</strong>"
-  . "<br><br>Necesito decirles:<br>" . escape_html($mail_message);
+  . "<br><br>Necesito decirles:<br>" . escape_html($mail_message, true);
 $_POST["cta_url"] = false;
 $_POST["cta_txt"] = "";
 require_once "{$TO_HOME}/mail/mail.common.php";
