@@ -1,5 +1,5 @@
 <?php
-require_once "./_var.php";
+require_once "./_init.php";
 require_once "{$TO_HOME}/spa.php/_functions.php";
 require_once "{$TO_HOME}/spa.php/_common.php";
 //require_once "{$TO_HOME}/_functions.php";
@@ -12,20 +12,26 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
 // --- PHP ---
-if (validate_value($_POST["mail_submit"] ?? null) === null) api_respond(400, true, "Invalid form.");
-if (validate_value($_POST["g-recaptcha-response"] ?? null) === null) api_respond(400, true, "Invalid captcha.");
+if (validate_value($_POST["mail_submit"] ?? null) === null)
+  api_respond(400, true, "Invalid form.");
+if (validate_value($_POST["g-recaptcha-response"] ?? null) === null)
+  api_respond(400, true, "Invalid captcha.");
 if ($_ENV["APP_ENV"] != "DEV")
   if (!json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$_ENV["RECAPTCHA_KEY"]}&response={$_POST["g-recaptcha-response"]}"))->success)
     api_respond(403, true, "Invalid captcha.");
 
 $mail_name = validate_value($_POST["mail_name"] ?? null);
-if ($mail_name === null) api_respond(400, true, "Invalid form: name required.");
+if ($mail_name === null)
+  api_respond(400, true, "Invalid form: name required.");
 $mail_email = validate_value($_POST["mail_email"] ?? null, "email");
-if ($mail_email === null) api_respond(400, true, "Invalid form: email required.");
+if ($mail_email === null)
+  api_respond(400, true, "Invalid form: email required.");
 $mail_subject = validate_value($_POST["mail_subject"] ?? null);
-if ($mail_subject === null) api_respond(400, true, "Invalid form: subject required.");
+if ($mail_subject === null)
+  api_respond(400, true, "Invalid form: subject required.");
 $mail_message = validate_value($_POST["mail_message"] ?? null);
-if ($mail_message === null) api_respond(400, true, "Invalid form: message required.");
+if ($mail_message === null)
+  api_respond(400, true, "Invalid form: message required.");
 $mail_phone = validate_value($_POST["mail_phone"] ?? null);
 $easter_name = validate_value($_POST["easter_name"] ?? null);
 

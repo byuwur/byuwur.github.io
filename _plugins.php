@@ -2,7 +2,7 @@
 /* 
  * File: _plugins.php
  * Desc: Handles invokation and initialization of the composer libraries
- * Deps: /_var.php
+ * Deps: /_init.php
  * Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr
  */
 

@@ -1,5 +1,5 @@
 <?php
-require_once "../_var.php";
+require_once "../_init.php";
 require_once "{$TO_HOME}/spa.php/_common.php";
 //require_once "{$TO_HOME}/spa.php/_functions.php";
 //require_once "{$TO_HOME}/_functions.php";
@@ -13,11 +13,14 @@ require_once "{$TO_HOME}/_routes.php";
 require_once "{$TO_HOME}/_common.php";
 // --- PHP ---
 $LANG = [];
-if (file_exists("{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php")) require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php";
+if (file_exists("{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php"))
+  require_once "{$TO_HOME}/v0.mnm/lang/{$APP_LANG}.php";
 // Language fallbacks if lang is supported but file doesn't exist
 $preferred_lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"] ?? "es", 0, 2);
-if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php")) require_once "{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php";
-if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/en.php")) require_once "{$TO_HOME}/v0.mnm/lang/en.php";
+if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php"))
+  require_once "{$TO_HOME}/v0.mnm/lang/{$preferred_lang}.php";
+if (!$LANG && file_exists("{$TO_HOME}/v0.mnm/lang/en.php"))
+  require_once "{$TO_HOME}/v0.mnm/lang/en.php";
 // ---
 require_once "{$TO_HOME}/v0.mnm/common.head.php";
 ?>
