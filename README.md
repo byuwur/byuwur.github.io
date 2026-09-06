@@ -15,6 +15,11 @@ Where the magic happens.
 - [nginx-configurations](https://github.com/byuwur/nginx-configurations)
 - [easy-json-viewer](https://github.com/byuwur/easy-json-viewer) - JSON HTML renderer.
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution workflow and
+[CODING_STANDARDS.md](./CODING_STANDARDS.md) for this project's engineering standards.
+
 ## License
 
 MIT (c) Andrés Trujillo [Mateus] byUwUr

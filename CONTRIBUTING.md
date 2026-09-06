@@ -4,9 +4,15 @@
 
 ## Before changing code
 
-Read `README.md`, the coding standards, and relevant project documentation. Inspect the nearby implementation and tests, including existing helpers and the paths that call the behavior. Understand the requested outcome and current contract before proposing architectural changes.
+Read [README.md](./README.md), the coding standards, and relevant project documentation. Inspect the nearby implementation and tests, including existing helpers and the paths that call the behavior. Understand the requested outcome and current contract before proposing architectural changes.
 
 Check repository-specific requirements and preserve unrelated work. If the implementation differs intentionally from a general convention, understand the reason before changing it.
+
+## Repository workflow
+
+The PHP application uses the `spa.php` Git submodule declared in [.gitmodules](./.gitmodules). For changes involving the framework integration, read its [application layout](./spa.php/README.md#how-is-it-done) and [runtime contracts](./spa.php/README.md#runtime-contracts).
+
+The [deployment workflow](./.github/workflows/deploy-ftp.yml) checks out submodules, installs the root Composer dependencies with PHP 8.3, generates `.env`, and uploads through FTP on pushes to `main`. It does not run tests. The repository has no root test script; the framework's existing checks are defined in its [CI workflow](./spa.php/.github/workflows/ci.yml), with paths relative to `spa.php/`.
 
 ## Make a focused change
 
