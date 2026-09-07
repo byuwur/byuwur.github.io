@@ -45,3 +45,8 @@ jobs:
           protocol: ${{ secrets.FTP_PROTOCOL }}
           local-dir: ./
           server-dir: ${{ secrets.FTP_DIR }}
+          exclude: |
+            **/.nojekyll
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
