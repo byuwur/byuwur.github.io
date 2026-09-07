@@ -14,7 +14,7 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- ページ構造 ---
-  "title.default" => "Andrés Trujillo Mateus | @byUwUr = 私は役に立つものを作る",
+  "title.default" => "Andrés Trujillo [Mateus] @byUwUr = 私は役に立つものを作る",
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
   // --- プロフィールとヒーロー ---
   "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
@@ -757,7 +757,7 @@ $LANG = [
   "contact.form.subject" => "件名",
   "contact.form.message" => "メッセージ",
   "contact.form.send" => "話しましょう",
-  "contact.mail" => "atrujillomateus@gmail.com",
+  "contact.mail" => "mateus@byuwur.co",
   "contact.mail.thanks" => "メッセージを送信しました。<br>近日中にご連絡します。",
   "contact.mail.error" => "送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。",
   // --- メタデータ ---

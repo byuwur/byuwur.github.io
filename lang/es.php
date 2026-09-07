@@ -14,7 +14,7 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- Estructura de página ---
-  "title.default" => "Andrés Trujillo Mateus | @byUwUr = Creo cosas útiles",
+  "title.default" => "Andrés Trujillo [Mateus] @byUwUr = Creo cosas útiles",
   "loader.loading" => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
   // --- Perfil y hero ---
   "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
@@ -757,7 +757,7 @@ $LANG = [
   "contact.form.subject" => "Asunto",
   "contact.form.message" => "Mensaje",
   "contact.form.send" => "VAMOS A PLATICAR",
-  "contact.mail" => "atrujillomateus@gmail.com",
+  "contact.mail" => "mateus@byuwur.co",
   "contact.mail.thanks" => "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!",
   "contact.mail.error" => "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.",
   // --- Metadatos ---

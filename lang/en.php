@@ -14,7 +14,7 @@ $LANG = [
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
   // --- Page shell ---
-  "title.default" => "Andrés Trujillo Mateus | @byUwUr = I create useful things",
+  "title.default" => "Andrés Trujillo [Mateus] @byUwUr = I create useful things",
   "loader.loading" => "<b>Loading standard view...</b><br>Still loading? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Go to basic view</a>",
   // --- Profile and hero ---
   "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
@@ -757,7 +757,7 @@ $LANG = [
   "contact.form.subject" => "Subject",
   "contact.form.message" => "Message",
   "contact.form.send" => "LET'S TALK",
-  "contact.mail" => "atrujillomateus@gmail.com",
+  "contact.mail" => "mateus@byuwur.co",
   "contact.mail.thanks" => "Your message has been successfully sent.<br>We will contact you soon!",
   "contact.mail.error" => "There was an error sending the message.<br>Sorry for the inconvenience, please try again.",
   // --- Metadata ---

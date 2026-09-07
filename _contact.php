@@ -52,9 +52,7 @@ require_once "{$TO_HOME}/mail/mail.common.php";
 
 $sg_email = new \SendGrid\Mail\Mail();
 $sg_email->setFrom("mateus@byuwur.co", "Andrés Trujillo [Mateus] byUwUr");
-$sg_email->addTos([
-  "atrujillomateus@gmail.com" => "Mateus"
-]);
+$sg_email->addTos(["mateus@byuwur.co" => "Andrés Trujillo [Mateus] byUwUr"]);
 $sg_email->setSubject($mail_subject);
 $sg_email->addContent("text/html", $mail_html);
 $sendgrid = new \SendGrid($_ENV["SENDGRID_API_KEY"]);

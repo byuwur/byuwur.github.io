@@ -159,14 +159,12 @@ foreach ($LANG["skills.sections"] as $skillSection)
     <h2 class="text-uppercase"><?= escape_html($LANG["nav.contact"]) ?></h2>
     <span class="mb-1 pb-1"><?= escape_html($LANG["contact.subtitle"]) ?></span>
     <div class="row w-100">
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:800px;"></div>
       <!--div class="col-12 col-md-6 mb-3">
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>"
           title="<?= escape_html($LANG["card.title"]) ?>" width="100%" height="128px"
           frameborder="0"></iframe>
-      </div>
+      </div-->
       <div class="col-12 col-md-6 mb-3 d-flex flex-column text-end text-md-start">
         <div>
           <i class="fab fa-linkedin d-none d-md-inline"></i>
@@ -178,7 +176,9 @@ foreach ($LANG["skills.sections"] as $skillSection)
           <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>" target="_blank"><?= escape_html($LANG["contact.mail"]) ?></a>
           <i class="fas fa-envelope d-inline d-md-none"></i>
         </div>
-      </div-->
+      </div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:800px;"></div>
       <!-- div id="twitch" class="col-12"></div -->
     </div>
   </section>
