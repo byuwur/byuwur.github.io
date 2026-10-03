@@ -2,23 +2,21 @@
 
 Where the magic happens.
 
-## Where is it?
+Visit [byuwur.github.io](https://byuwur.github.io) or [byuwur.co](https://byuwur.co).
 
-[byuwur.github.io](https://byuwur.github.io) or [byuwur.co](https://byuwur.co).
+## Projects used here
 
-## Some other things I've made and used here
-
-- [spa.php](https://github.com/byuwur/spa.php) - SPA framework for PHP using JS.
-- [stream.html](https://github.com/byuwur/stream.html) - Resources I use for my streams. Easily configurables.
-- [easy-http-error](https://github.com/byuwur/easy-http-error) - Custom error page with server configurations.
-- [easy-sidebar-bootstrap](https://github.com/byuwur/easy-sidebar-bootstrap) - Sidebar component using Bootstrap and jQuery.
-- [nginx-configurations](https://github.com/byuwur/nginx-configurations)
-- [easy-json-viewer](https://github.com/byuwur/easy-json-viewer) - JSON HTML renderer.
+- [spa.php](https://github.com/byuwur/spa.php): PHP SPA framework.
+- [stream.html](https://github.com/byuwur/stream.html): configurable stream overlays and resources.
+- [easy-md-viewer](https://github.com/byuwur/easy-nd-viewer): MarkDown renderer for HTML pages.
+- [easy-json-viewer](https://github.com/byuwur/easy-json-viewer): JSON renderer for HTML pages.
+- [easy-http-error](https://github.com/byuwur/easy-http-error): server error pages.
+- [easy-sidebar-bootstrap](https://github.com/byuwur/easy-sidebar-bootstrap): Bootstrap/jQuery sidebar.
+- [nginx-configurations](https://github.com/byuwur/nginx-configurations): server configuration examples.
 
 ## Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution workflow and
-[CODING_STANDARDS.md](./CODING_STANDARDS.md) for this project's engineering standards.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and [CODING_STANDARDS.md](CODING_STANDARDS.md) for engineering standards.
 
 ## License
 
