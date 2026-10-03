@@ -93,7 +93,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     <div class="row mt-4 pt-4 px-5 uncolor-links">
       <div class="col-md-auto d-flex justify-content-center">
         <div class="has-background-contain rounded-circle mb-4"
-          style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:160px;width:160px;"></div>
+          style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:10rem;width:10rem;"></div>
       </div>
       <p class="col pe-5"><?= $LANG["about.description"] // Trusted portfolio markup from the bundled language files. ?></p>
     </div>
@@ -178,7 +178,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
         </div>
       </div>
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:800px;"></div>
+      <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
       <!-- div id="twitch" class="col-12"></div -->
     </div>
   </section>

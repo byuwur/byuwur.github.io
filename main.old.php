@@ -23,7 +23,7 @@ require_once "{$TO_HOME}/_common.php";
       <span class="text-uppercase mb-5"><?= $LANG["profile.full_name"] ?></span>
       <div class="row mt-4 pt-4">
         <div class="col-sm-auto d-flex justify-content-center">
-          <div class="has-background-contain rounded-circle mb-4" style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:128px;width:128px;"></div>
+          <div class="has-background-contain rounded-circle mb-4" style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:8rem;width:8rem;"></div>
         </div>
         <p class="col"><?= $LANG["about.description"] ?></p>
       </div>
@@ -123,7 +123,7 @@ require_once "{$TO_HOME}/_common.php";
       <h2 class="text-uppercase mb-1 pb-1"><?= $LANG["nav.contact"] ?></h2>
       <div class="row w-100 fs-5">
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:800px;"></div>
+        <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
       </div>
     </section>
   </div>

@@ -31,7 +31,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
         <div class="col-md-6 col-md-offset-3 col-md-pull-3">
           <span class="heading-meta"><?= $_portfolio ?></span>
           <h2 class="mnm-heading animate-box" data-animate-effect="fadeInLeft"><?= $_mywork ?></h2>
-          <h3 class="animate-box" data-animate-effect="fadeInLeft" style="font-size: 12px; margin-bottom: 4em;"><a href="#"></a></h3>
+          <h3 class="animate-box" data-animate-effect="fadeInLeft" style="font-size: 0.75rem; margin-bottom: 4em;"><a href="#"></a></h3>
         </div>
       </div>
       <div class="row">

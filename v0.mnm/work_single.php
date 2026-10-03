@@ -44,7 +44,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
       <div class="row">
         <div class="col-md-6 sticky-parent">
           <div id="sticky_item">
-            <h1 class="mnm-heading animate-box"><a href="<?= escape_html("/{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS}") ?>" class="btn btn-primary" style="margin: 0 25px 10px 0;"><?= escape_html($_back) ?></a>
+            <h1 class="mnm-heading animate-box"><a href="<?= escape_html("/{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS}") ?>" class="btn btn-primary" style="margin: 0 1.5625rem 0.625rem 0;"><?= escape_html($_back) ?></a>
               <font size="6"><?= escape_html($_wtitle) ?></font>
             </h1>
             <div class="project-desc" style="margin-top: 0.25em;">

@@ -28,7 +28,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   <a href="javascript:;" class="js-mnm-nav-toggle mnm-nav-toggle"><span>menu</span></a>
   <aside id="mnm-aside" role="complementary">
     <h1 id="mnm-logo">
-      <img src="<?= "{$HOME_PATH}/img/v0/logo.jpg" ?>" width="175px" height="175px" style="border: 5px solid #222; border-radius: 10px;" alt="MNM logo" /><br>
+      <img src="<?= "{$HOME_PATH}/img/v0/logo.jpg" ?>" width="175px" height="175px" style="border: 0.3125rem solid #222; border-radius: 0.625rem;" alt="MNM logo" /><br>
       <small><a href="<?= "/{$ROUTE_MNM}/{$ROUTE_ES}" ?>" class="a-lang p-1" title="Español"><img src="<?= "{$HOME_PATH}/img/co.svg" ?>" /> ES</a>|<a href="<?= "/{$ROUTE_MNM}/{$ROUTE_ES}" ?>" class="a-lang p-1" title="English"><img
             src="<?= "{$HOME_PATH}/img/gb.svg" ?>" /> EN</a><br></small>
     </h1>

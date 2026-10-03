@@ -19,7 +19,7 @@ require_once "{$TO_HOME}/_common.php";
     <div class="bywr-sidebar-option p-2o5">
       <div class="navbar-brand has-background-contain" role="img"
         aria-label="<?= escape_html($LANG["sidebar.logo_alt"]) ?>"
-        style="height:48px;width:48px;background-image:url('<?= "{$HOME_PATH}/img/logo.png" ?>');"></div>
+        style="height:3rem;width:3rem;background-image:url('<?= "{$HOME_PATH}/img/logo.png" ?>');"></div>
       <span class="ms-2 me-4 pe-5">[Mateus] byUwUr v1</span>
     </div>
     <a class="bywr-sidebar-option" href="#about" title="<?= escape_html($LANG["nav.about"]) ?>" aria-label="<?= escape_html($LANG["nav.about"]) ?>">
@@ -69,7 +69,7 @@ require_once "{$TO_HOME}/_common.php";
   </a>
   <div id="bywr-sidebar-hidden" class="bywr-sidebar-hidden">
     <div class="navbar-brand has-background-contain mt-auto" role="img" aria-label="<?= escape_html($LANG["sidebar.logo_alt"]) ?>"
-      style="height:48px;width:48px;background-image:url('<?= "{$HOME_PATH}/img/logo.png" ?>');"></div>
+      style="height:3rem;width:3rem;background-image:url('<?= "{$HOME_PATH}/img/logo.png" ?>');"></div>
   </div>
 </nav>
 <?php

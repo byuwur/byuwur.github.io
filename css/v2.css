@@ -3,7 +3,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 section {
   display: flex;
@@ -13,14 +13,14 @@ section {
   padding: 6rem 3rem;
   min-width: 100%;
   min-height: 100vh;
-  border-bottom: 2px solid #7777;
+  border-bottom: 0.125rem solid #7777;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   section {
     padding: 4rem 3rem 4rem 1rem;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 36rem) {
   section {
     padding: 4rem 0.75rem;
   }
@@ -35,7 +35,7 @@ section {
   gap: 0.25rem;
   z-index: 9;
 }
-@media (max-width: 576px) {
+@media (max-width: 36rem) {
   .social-icons {
     bottom: 0;
   }
@@ -62,11 +62,11 @@ section {
 }
 .form-control {
   border: transparent;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 0.0625rem solid #aaa;
   margin: 0.5rem 0;
   padding: 0.75rem;
   font-size: 1rem;
-  border-radius: 0px;
+  border-radius: 0rem;
   box-shadow: none;
 }
 .form-control::placeholder {
@@ -107,7 +107,7 @@ section {
 .project .project-description a {
   background: #600;
   color: #fff;
-  border: 1px solid #ddd;
+  border: 0.0625rem solid #ddd;
   border-radius: 0;
   margin: 0.125rem;
   padding: 0.25rem 0.5rem;
@@ -116,7 +116,7 @@ section {
 .project-description a:hover {
   background: #a00;
   color: #eee !important;
-  border: 1px solid #fff;
+  border: 0.0625rem solid #fff;
 }
 /* --- RESUME --- */
 .resume-row {
@@ -128,9 +128,9 @@ section {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 1px;
+  width: 0.0625rem;
   content: "";
-  border-left: 1px dashed #777;
+  border-left: 0.0625rem dashed #777;
 }
 .resume-row i,
 .skill-row i {
@@ -147,23 +147,23 @@ section {
 .resume-row li {
   position: relative;
   padding: 0;
-  border: 1px solid #777;
+  border: 0.0625rem solid #777;
   border-bottom: 0.25rem solid #777;
   margin-bottom: 2rem;
 }
 .resume-row li:after {
   position: absolute;
   width: 2rem;
-  height: 1px;
+  height: 0.0625rem;
   top: 2rem;
   left: -2rem;
-  border-top: 1px dashed #777;
+  border-top: 0.0625rem dashed #777;
   content: "";
 }
 .resume-row .resume-title {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #777;
+  border-bottom: 0.0625rem solid #777;
 }
 .skill-section .progress {
   height: 0.1rem;
@@ -175,7 +175,7 @@ section {
 .skill-section .skill {
   display: flex;
   justify-content: center;
-  border: 1px solid #7777;
+  border: 0.0625rem solid #7777;
   border-radius: 1rem;
   flex-direction: column;
 }

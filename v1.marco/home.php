@@ -28,7 +28,7 @@ if (!$LANG && file_exists("{$TO_HOME}/v1.marco/lang.en.php"))
 <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top p-3" id="sideNav">
   <a class="navbar-brand" href="#about">
     <span class="d-block d-md-none" style="color: #FFF;">
-      <img src="<?= "{$HOME_PATH}/img/v1/marco-favicon.png" ?>" height="36px" width="36px" style="margin-bottom: 4px;" alt="Logo" />
+      <img src="<?= "{$HOME_PATH}/img/v1/marco-favicon.png" ?>" height="36px" width="36px" style="margin-bottom: 0.25rem;" alt="Logo" />
       <?= $_name_topbar ?>
     </span>
     <span class="d-none d-md-block">
@@ -40,7 +40,7 @@ if (!$LANG && file_exists("{$TO_HOME}/v1.marco/lang.en.php"))
   </button>
   <div class="collapse navbar-collapse" id="navMenu">
     <ul class="navbar-nav">
-      <small style="margin: 12px 0;">
+      <small style="margin: 0.75rem 0;">
         <a href="<?= "/{$ROUTE_MARCO}/{$ROUTE_ES}" ?>" class="a-lang" title="Español"><img src="<?= "{$HOME_PATH}/img/co.svg" ?>" /> ESP</a>
         <a href="<?= "/{$ROUTE_MARCO}/{$ROUTE_EN}" ?>" class="a-lang" title="English"><img src="<?= "{$HOME_PATH}/img/gb.svg" ?>" /> ENG</a>
       </small>

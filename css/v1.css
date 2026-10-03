@@ -1,3 +1,9 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+}
 body {
   background: #eee;
   color: #222;
@@ -7,7 +13,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 section {
   display: flex;
@@ -17,14 +23,14 @@ section {
   padding: 9rem 1rem;
   min-width: 100%;
   min-height: 100vh;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 0.125rem solid #ccc;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   section {
     padding: 9rem 3rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   section {
     padding: 9rem 6rem;
   }
@@ -47,7 +53,7 @@ section {
 .skill {
   display: flex;
   justify-content: center;
-  border: 1px solid #7777;
+  border: 0.0625rem solid #7777;
   border-radius: 1rem;
 }
 /* === OLD NAV === */
@@ -55,7 +61,7 @@ section {
   overflow-x: hidden;
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .old-container {
     padding-left: 25%;
   }
