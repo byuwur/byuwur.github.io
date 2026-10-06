@@ -28,7 +28,7 @@ if (!$LANG && file_exists("{$TO_HOME}/v1.nestux/lang.en.php"))
 <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top p-3" id="sideNav">
   <a class="navbar-brand" href="#about">
     <span class="d-block d-md-none" style="color: #FFF;">
-      <img src="<?= "{$HOME_PATH}/img/v1/nestux-favicon.png" ?>" height="36px" width="36px" style="margin-bottom: 0.25rem;" alt="Logo" />
+      <img src="<?= "{$HOME_PATH}/img/v1/nestux-favicon.png" ?>" style="width: 2.25rem; height: 2.25rem; margin-bottom: 0.25rem;" alt="Logo" />
       <?= $_name_topbar ?>
     </span>
     <span class="d-none d-md-block">

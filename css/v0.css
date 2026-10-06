@@ -39,12 +39,12 @@ a {
 }
 @media (max-width: 50rem) {
   #mnm-aside {
-    width: 17.1875rem;
-    -moz-transform: translateX(-17.1875rem);
-    -webkit-transform: translateX(-17.1875rem);
-    -ms-transform: translateX(-17.1875rem);
-    -o-transform: translateX(-17.1875rem);
-    transform: translateX(-17.1875rem);
+    width: 18rem;
+    -moz-transform: translateX(-18rem);
+    -webkit-transform: translateX(-18rem);
+    -ms-transform: translateX(-18rem);
+    -o-transform: translateX(-18rem);
+    transform: translateX(-18rem);
     padding-top: 4em;
   }
 }
@@ -95,7 +95,7 @@ a {
   content: "";
   position: absolute;
   height: 0.0625rem;
-  bottom: 0.4375rem;
+  bottom: 0.45rem;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -168,7 +168,7 @@ a {
 }
 #mnm-aside .mnm-footer ul li a {
   color: rgba(255, 255, 255, 0.7);
-  padding: 0.3125rem;
+  padding: 0.3rem;
 }
 #mnm-aside .mnm-footer ul li a:hover,
 #mnm-aside .mnm-footer ul li a:active,
@@ -246,7 +246,7 @@ a {
 #mnm-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   background: transparent;
-  border: 0.1875rem solid #08a6bf;
+  border: 0.2rem solid #08a6bf;
 }
 #mnm-hero .flexslider .flex-direction-nav {
   display: none;
@@ -267,7 +267,7 @@ a {
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner .desc {
   position: absolute;
-  bottom: 0.9375rem;
+  bottom: 0.95rem;
   left: 0;
   padding: 1.875rem;
   background: #000;
@@ -326,7 +326,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   color: #fff;
-  padding: 0.625rem 0.9375rem !important;
+  padding: 0.625rem 0.95rem !important;
   border: none;
   font-weight: 425;
 }
@@ -353,7 +353,7 @@ body.offcanvas #mnm-aside {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
-  width: 17.1875rem;
+  width: 18rem;
   background: #000;
   z-index: 99;
   position: fixed;
@@ -361,11 +361,11 @@ body.offcanvas #mnm-aside {
 body.offcanvas #mnm-main,
 body.offcanvas .mnm-nav-toggle {
   top: 0;
-  -moz-transform: translateX(17.1875rem);
-  -webkit-transform: translateX(17.1875rem);
-  -ms-transform: translateX(17.1875rem);
-  -o-transform: translateX(17.1875rem);
-  transform: translateX(17.1875rem);
+  -moz-transform: translateX(18rem);
+  -webkit-transform: translateX(18rem);
+  -ms-transform: translateX(18rem);
+  -o-transform: translateX(18rem);
+  transform: translateX(18rem);
 }
 .mnm-blog,
 .mnm-work,
@@ -407,7 +407,7 @@ body.offcanvas .mnm-nav-toggle {
   margin-bottom: 0.5em;
   font-weight: 525;
   text-transform: uppercase;
-  letter-spacing: 0.3125rem;
+  letter-spacing: 0.3rem;
   line-height: 1.8;
 }
 .mnm-heading span {
@@ -419,13 +419,13 @@ body.offcanvas .mnm-nav-toggle {
   }
 }
 .heading-meta {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.95rem;
   display: block;
   font-size: 0.75em;
   text-transform: uppercase;
   color: #666666;
   font-weight: 525;
-  letter-spacing: 0.3125rem;
+  letter-spacing: 0.3rem;
 }
 .about-img {
   width: 75%;
@@ -438,25 +438,25 @@ body.offcanvas .mnm-nav-toggle {
   top: 5rem;
   right: -6.25rem;
   width: 80%;
-  -webkit-box-shadow: 0rem 2.1875rem 4.875rem -1.4375rem rgba(255, 255, 255, 0.33);
-  -moz-box-shadow: 0rem 2.1875rem 4.875rem -1.4375rem rgba(255, 255, 255, 0.33);
-  box-shadow: 0rem 2.1875rem 4.875rem -1.4375rem rgba(255, 255, 255, 0.33);
+  -webkit-box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
+  -moz-box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
+  box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
 }
 .about-desc {
   background: #222;
-  border: 0.3125rem solid #333;
+  border: 0.3rem solid #333;
 }
 .about-desc h3 {
   font-size: 1.375em;
   text-transform: uppercase;
-  letter-spacing: 0.3125rem;
+  letter-spacing: 0.3rem;
   font-weight: 525;
 }
 .fancy-collapse-panel .panel-default > .panel-heading {
   padding: 0;
 }
 .panel-heading a {
-  padding: 0.9375rem 1.5625rem;
+  padding: 0.95rem 1.55rem;
   display: block;
   width: 100%;
   font-weight: 425;
@@ -500,9 +500,9 @@ body.offcanvas .mnm-nav-toggle {
   color: #cccccc;
 }
 .panel-body {
-  border: 0.1875rem solid #111;
+  border: 0.2rem solid #111;
   padding: 1.5em;
-  margin-top: 0.3125rem;
+  margin-top: 0.3rem;
   background: #111;
   border: 0.125rem solid #191919 !important;
 }
@@ -523,7 +523,7 @@ body.offcanvas .mnm-nav-toggle {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.55rem;
 }
 .blog-entry .blog-img img {
   position: relative;
@@ -539,7 +539,7 @@ body.offcanvas .mnm-nav-toggle {
 }
 .blog-entry .desc h3 {
   font-size: 1em;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.55rem;
   line-height: auto;
   font-weight: 525;
   text-transform: uppercase;
@@ -618,11 +618,11 @@ body.offcanvas .mnm-nav-toggle {
 }
 .project .desc .con .icon span {
   display: inline;
-  padding-right: 0.3125rem;
+  padding-right: 0.3rem;
 }
 .project .desc .con .icon span a {
   color: #fff;
-  padding: 0.3125rem;
+  padding: 0.3rem;
   background: #aaa;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -632,7 +632,7 @@ body.offcanvas .mnm-nav-toggle {
 .project .desc .con .icon i {
   font-size: 1em;
   color: #fff;
-  padding: 0.3125rem;
+  padding: 0.3rem;
   background: #555;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -664,9 +664,9 @@ body.offcanvas .mnm-nav-toggle {
     transform 0.3s,
     opacity 0.3s,
     -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, -0.9375rem, 0);
-  transform: translate3d(0, -0.9375rem, 0);
-  margin-bottom: 0.9375rem;
+  -webkit-transform: translate3d(0, -0.95rem, 0);
+  transform: translate3d(0, -0.95rem, 0);
+  margin-bottom: 0.95rem;
 }
 .project .desc h3 a {
   color: #ddd;
@@ -694,8 +694,8 @@ body.offcanvas .mnm-nav-toggle {
     transform 0.3s,
     opacity 0.3s,
     -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, 0.9375rem, 0);
-  transform: translate3d(0, 0.9375rem, 0);
+  -webkit-transform: translate3d(0, 0.95rem, 0);
+  transform: translate3d(0, 0.95rem, 0);
 }
 .project .desc span a {
   color: #ddd;
@@ -733,20 +733,20 @@ body.offcanvas .mnm-nav-toggle {
   font-weight: 525;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.95rem;
 }
 .project-desc span {
   display: block;
   color: #999999;
   font-size: 0.875em;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.95rem;
 }
 .project-desc span a {
   color: #999999;
 }
 .project-desc .icon span {
   display: inline;
-  padding-right: 0.3125rem;
+  padding-right: 0.3rem;
 }
 .project-desc .btn-download {
   font-size: 0.875em;
@@ -762,7 +762,7 @@ body.offcanvas .mnm-nav-toggle {
   padding: 2em 2em 1em 2em;
 }
 #get-in-touch .btn-learn {
-  padding: 0.9375rem 1.875rem !important;
+  padding: 0.95rem 1.875rem !important;
   font-size: 0.875em;
   -webkit-border-radius: 1.875rem;
   -moz-border-radius: 1.875rem;
@@ -791,10 +791,10 @@ body.offcanvas .mnm-nav-toggle {
   display: inline-block;
   zoom: 1;
   display: inline;
-  -webkit-border-radius: 0.4375rem;
-  -moz-border-radius: 0.4375rem;
-  -ms-border-radius: 0.4375rem;
-  border-radius: 0.4375rem;
+  -webkit-border-radius: 0.45rem;
+  -moz-border-radius: 0.45rem;
+  -ms-border-radius: 0.45rem;
+  border-radius: 0.45rem;
 }
 @media (max-width: 50rem) {
   .mnm-social li a {
@@ -828,7 +828,7 @@ body.offcanvas .mnm-nav-toggle {
   text-align: left;
   width: 100%;
   float: left;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.55rem;
   position: relative;
 }
 .mnm-feature .mnm-icon {
@@ -871,11 +871,11 @@ body.offcanvas .mnm-nav-toggle {
   margin-bottom: 1.25rem;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.875em;
-  letter-spacing: 0.1875rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 .mnm-feature.mnm-feature-sm .mnm-text {
-  margin-top: 0.3125rem;
+  margin-top: 0.3rem;
 }
 .mnm-feature.mnm-feature-sm .mnm-icon i {
   color: #08a6bf;
@@ -929,7 +929,7 @@ body.offcanvas .mnm-nav-toggle {
 }
 @media (max-width: 50rem) {
   .pagination li a {
-    padding: 0.4375rem 0.9375rem;
+    padding: 0.45rem 0.95rem;
   }
 }
 .pagination li.active a {
@@ -957,10 +957,10 @@ body.offcanvas .mnm-nav-toggle {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 0.5rem 0.9375rem !important;
+  padding: 0.5rem 0.95rem !important;
 }
 .btn.btn-sm {
-  padding: 0.25rem 0.9375rem !important;
+  padding: 0.25rem 0.95rem !important;
 }
 .btn.btn-md {
   padding: 0.5rem 1.25rem !important;
@@ -1186,10 +1186,10 @@ body.offcanvas .mnm-nav-toggle {
   transition: 0.2s;
 }
 .mnm-nav-toggle span::before {
-  top: -0.4375rem;
+  top: -0.45rem;
 }
 .mnm-nav-toggle span::after {
-  bottom: -0.4375rem;
+  bottom: -0.45rem;
 }
 .mnm-nav-toggle:hover span::before {
   top: -0.625rem;

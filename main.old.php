@@ -53,11 +53,11 @@ require_once "{$TO_HOME}/_common.php";
       <div class="row mt-4">
         <div class="col-12 col-md-5">
           <h6><?= $LANG["card.title"] ?> v2 :]</h6>
-          <iframe src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?> v2" width="100%" height="128px" frameborder="0"></iframe>
+          <iframe src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?> v2" style="width: 100%; height: 8rem" frameborder="0"></iframe>
         </div>
         <div class="col-12 col-md-7">
           <h6><?= $LANG["card.title"] ?> v1 :)</h6>
-          <iframe src="<?= "{$HOME_PATH}/card.v1.html" ?>" title="<?= escape_html($LANG["card.title"]) ?> v1" width="100%" height="128px" frameborder="0"></iframe>
+          <iframe src="<?= "{$HOME_PATH}/card.v1.html" ?>" title="<?= escape_html($LANG["card.title"]) ?> v1" style="width: 100%; height: 8rem" frameborder="0"></iframe>
         </div>
       </div>
     </section>

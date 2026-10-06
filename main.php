@@ -162,7 +162,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <!--div class="col-12 col-md-6 mb-3">
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>"
-          title="<?= escape_html($LANG["card.title"]) ?>" width="100%" height="128px"
+          title="<?= escape_html($LANG["card.title"]) ?>" style="width: 100%; height: 8rem"
           frameborder="0"></iframe>
       </div-->
       <div class="col-12 col-md-6 mb-3 d-flex flex-column text-end text-md-start">
