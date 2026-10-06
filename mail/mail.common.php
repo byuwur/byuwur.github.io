@@ -1,12 +1,12 @@
 <?php
 // Define all the possible values
 $MAIL_BASE = [
-  "head_img" => "http://byuwur.co/mail/byuwur64.png",
+  "head_img" => "https://byuwur.github.io/mail/byuwur64.png",
   "head_url" => "https://byuwur.co",
   "head_top" => "[Mateus] byUwUr",
   "head_bot" => "Desarrollo bien hecho a tu alcance.",
   "topic_txt" => "EMAIL DE CONTACTO",
-  "topic_img" => "http://byuwur.co/mail/env64.png",
+  "topic_img" => "https://byuwur.github.io/mail/env64.png",
   "msg_top" => "¡Hola!",
   "msg_bot" => "Hola mundo.",
   "cta_col" => "#700",
@@ -16,23 +16,23 @@ $MAIL_BASE = [
   "cta_bak_txt" => "aquí",
   "foot_top" => "Con gratitud,",
   "foot_bot" => "Andrés Trujillo [Mateus] byUwUr",
-  "aid_img" => "http://byuwur.co/mail/aid64.png",
+  "aid_img" => "https://byuwur.github.io/mail/aid64.png",
   "aid_msg" => "Este es un mensaje automatizado, si surge alguna duda, podemos ayudar desde",
   "aid_url" => "https://byuwur.co",
   "aid_txt" => "aquí",
   "brand_top" => "byUwUr es una marca de:",
   "brand_bot" => "© " . date("Y") . " [Mateus] byUwUr",
-  "brand_img" => "http://byuwur.co/mail/byuwur64.png",
+  "brand_img" => "https://byuwur.github.io/mail/byuwur64.png",
   "brand_url" => "https://byuwur.co",
-  "in_img" => "https://byuwur.co/mail/in32.png",
+  "in_img" => "https://byuwur.github.io/mail/in32.png",
   "in_url" => "https://linkedin.com/in/atrujillomateus",
-  "gh_img" => "https://byuwur.co/mail/gh32.png",
+  "gh_img" => "https://byuwur.github.io/mail/gh32.png",
   "gh_url" => "https://github.com/byuwur",
-  "yt_img" => "https://byuwur.co/mail/yt32.png",
+  "yt_img" => "https://byuwur.github.io/mail/yt32.png",
   "yt_url" => "https://youtube.com/byuwur",
-  "ig_img" => "https://byuwur.co/mail/ig32.png",
+  "ig_img" => "https://byuwur.github.io/mail/ig32.png",
   "ig_url" => "https://instagram.com/byuwur",
-  "fb_img" => "https://byuwur.co/mail/fb32.png",
+  "fb_img" => "https://byuwur.github.io/mail/fb32.png",
   "fb_url" => "https://facebook.com/byuwur",
   "privacy_txt" => "Política de privacidad",
   "privacy_url" => "https://byuwur.co",
@@ -85,22 +85,20 @@ $mail_html = '
     <title>' . $mail_res . '</title>
 </head>
 <body style="width: 100%; height: 100%; padding: 0; margin: 0">
-    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #ffffff; width: 37.5rem; padding: 0.9375rem 2.5rem">
+    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #ffffff; width: 37.5rem; padding: 0.95rem 2.5rem">
         <td valign="top" align="left" style="padding: 0; margin: 0; width: 6.25rem">
             <a target="_blank" href="' . $mail_resources["head_url"] . '" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 0.875rem">
                 <img   
                     src="' . $mail_resources["head_img"] . '"
                     alt=""
-                    height="80"
-                    width="80"
-                    style="display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none"
+                    style="width: 5rem; height: 5rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none"
                 />
             </a>
         </td>
         <td style="padding: 0; margin: 0; width: 1.25rem"></td>
         <td valign="top" align="right" style="padding: 0; margin: 0">
             <h3 style="margin: 0; font-family: Imprima, Arial, sans-serif; mso-line-height-rule: exactly; letter-spacing: 0; font-size: 1.75rem; font-style: normal; font-weight: bold; line-height: 3rem !important; color: #333333">' . $mail_resources["head_top"] . '</h3>
-            <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.3125rem; letter-spacing: 0; color: #333333; font-size: 0.875rem">' . $mail_resources["head_bot"] . '</p>
+            <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.3rem; letter-spacing: 0; color: #333333; font-size: 0.875rem">' . $mail_resources["head_bot"] . '</p>
         </td>
     </table>
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 1.25rem 2.5rem; border-radius: 1.25rem 1.25rem 0 0">
@@ -112,34 +110,32 @@ $mail_html = '
             <img
                 src="' . $mail_resources["topic_img"] . '"
                 alt="Confirm email"
-                style="display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none; border-radius: 0.9375rem"
-                width="50"
-                height="50"
+                style="width: 3.125rem; height: 3.125rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none; border-radius: 0.95rem"
             />
         </td>
     </table>
-    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 0.3125rem 2.5rem">
+    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 0.3rem 2.5rem">
         <tr>
             <td valign="center" align="left" style="padding: 1.25rem; margin: 0; border-radius: 0.625rem; background-color: #fafafa">
                 <h3 style="margin: 0; font-family: Imprima, Arial, sans-serif; mso-line-height-rule: exactly; letter-spacing: 0; font-size: 1.5rem; font-style: normal; font-weight: bold; line-height: 2.25rem !important; color: #333333">' . $mail_resources["msg_top"] . '</h3>
-                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.6875rem; letter-spacing: 0; color: #333333; font-size: 1.125rem">​</p>
-                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.6875rem; letter-spacing: 0; color: #333333; font-size: 1.125rem">' . $mail_resources["msg_bot"] . '</p>
+                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem; letter-spacing: 0; color: #333333; font-size: 1.125rem">​</p>
+                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem; letter-spacing: 0; color: #333333; font-size: 1.125rem">' . $mail_resources["msg_bot"] . '</p>
             </td>
         </tr>
         <tr>
             <td valign="center" align="left" style="padding: 1.25rem 0; margin: 0">';
 if ($mail_resources["cta_url"]) {
-  $mail_html .= '<span style="border-style: solid; border-color: #fafafa; background: ' . $mail_resources["cta_col"] . '; border-width: 0.1875rem; display: block; border-radius: 0.1875rem; width: auto; mso-hide: all; mso-border-alt: 0.625rem">
+  $mail_html .= '<span style="border-style: solid; border-color: #fafafa; background: ' . $mail_resources["cta_col"] . '; border-width: 0.2rem; display: block; border-radius: 0.2rem; width: auto; mso-hide: all; mso-border-alt: 0.625rem">
                     <a href="' . $mail_resources["cta_url"] . '" target="_blank" style="
                         mso-style-priority: 100 !important;
                         text-decoration: none !important;
                         mso-line-height-rule: exactly;
                         color: #fefefe;
                         font-size: 1.375rem;
-                        padding: 0.9375rem 1.25rem 0.9375rem 1.25rem;
+                        padding: 0.95rem 1.25rem 0.95rem 1.25rem;
                         display: block;
                         background: ' . $mail_resources["cta_col"] . ';
-                        border-radius: 0.1875rem;
+                        border-radius: 0.2rem;
                         font-family: helvetica, arial, verdana, sans-serif;
                         font-weight: bold;
                         font-style: normal;
@@ -150,29 +146,27 @@ if ($mail_resources["cta_url"]) {
                         mso-padding-alt: 0;
                         mso-border-alt: 0.625rem solid ' . $mail_resources["cta_col"] . ';
                         mso-hide: all;
-                        padding-left: 0.3125rem;
-                        padding-right: 0.3125rem;"
+                        padding-left: 0.3rem;
+                        padding-right: 0.3rem;"
                     >' . $mail_resources["cta_txt"] . '</a>
                 </span>
-                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.6875rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem; text-align: center">' . $mail_resources["cta_msg"] . ' <a href="' . $mail_resources["cta_url"] . '" target="_blank">' . $mail_resources["cta_bak_txt"] . '</a>.​</p>
+                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem; text-align: center">' . $mail_resources["cta_msg"] . ' <a href="' . $mail_resources["cta_url"] . '" target="_blank">' . $mail_resources["cta_bak_txt"] . '</a>.​</p>
                 <p></p>';
 }
-$mail_html .= '<p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.6875rem !important; letter-spacing: 0; color: #333333; font-size: 1rem">' . $mail_resources["foot_top"] . '<br>' . $mail_resources["foot_bot"] . '</p>
+$mail_html .= '<p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem !important; letter-spacing: 0; color: #333333; font-size: 1rem">' . $mail_resources["foot_top"] . '<br>' . $mail_resources["foot_bot"] . '</p>
             </td>
         </tr>
         <tr>
             <td style="padding: 0; margin: 0; border-bottom: 0.0625rem solid #666666; background: unset; height: 0.0625rem; width: 100%; margin: 0rem"></td>
         </tr>
     </table>
-    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 0.3125rem 2.5rem 1.25rem; border-radius: 0 0 1.25rem 1.25rem">
+    <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 0.3rem 2.5rem 1.25rem; border-radius: 0 0 1.25rem 1.25rem">
         <td align="center" style="padding: 0; margin: 0; font-size: 0rem; padding-right: 1.25rem">
             <img
                 src="' . $mail_resources["aid_img"] . '"
-                style="display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none"
+                style="width: 2.5rem; height: 2.5rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none"
                 alt="Ayuda"
                 title="Ayuda"
-                height="40"
-                width="40"
             />
         </td>
         <td align="left" style="padding: 0; margin: 0; font-size: 1rem !important">
@@ -192,10 +186,8 @@ $mail_html .= '<p style="margin: 0; mso-line-height-rule: exactly; font-family: 
                 <img
                     src="' . $mail_resources["brand_img"] . '"
                     alt="[Mateus] byUwUr"
-                    style="display: block; font-size: 0.75rem; border: 0; outline: none; text-decoration: none"
+                    style="width: 3.75rem; height: 3.75rem; display: block; font-size: 0.75rem; border: 0; outline: none; text-decoration: none"
                     title="[Mateus] byUwUr"
-                    height="60"
-                    width="60"
                 />
             </a>
         </td>
@@ -209,7 +201,7 @@ $mail_html .= '<p style="margin: 0; mso-line-height-rule: exactly; font-family: 
     </table>
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #ffffff; width: 37.5rem; padding: 0 2.5rem 1.25rem">
         <td align="center" style="padding: 0; margin: 0">
-            <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.3125rem; letter-spacing: 0; color: #333333; font-size: 0.8125rem">
+            <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.3rem; letter-spacing: 0; color: #333333; font-size: 0.8rem">
                 <a target="_blank" style="mso-line-height-rule: exactly; text-decoration: none; color: #333333; font-size: 0.875rem" href="' . $mail_resources["privacy_url"] . '">' . $mail_resources["privacy_txt"] . '</a>
                 &nbsp;·&nbsp;
                 <a target="_blank" style="mso-line-height-rule: exactly; text-decoration: none; color: #333333; font-size: 0.875rem" href="' . $mail_resources["drop_url"] . '">' . $mail_resources["drop_txt"] . '</a>
