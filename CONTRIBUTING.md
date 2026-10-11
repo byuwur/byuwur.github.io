@@ -37,9 +37,9 @@ A review description should explain what changed, why it was needed, any compati
 
 Before submitting:
 
-- [ ] The change addresses the requested outcome without unrelated work.
-- [ ] Ownership, state transitions, and affected entry paths were checked.
-- [ ] Public contracts are preserved or intentional changes are explained.
-- [ ] Relevant tests and documentation reflect the final behavior.
-- [ ] Validation results and limitations are recorded.
-- [ ] The final diff was reviewed for mistakes and unnecessary complexity.
+- [ ] The change addresses the requested outcome without unrelated work?
+- [ ] Ownership, state transitions, and affected entry paths were checked?
+- [ ] Public contracts are preserved or intentional changes are explained?
+- [ ] Relevant tests and documentation reflect the final behavior?
+- [ ] Validation results and limitations are recorded?
+- [ ] The final diff was reviewed for mistakes and unnecessary complexity?
