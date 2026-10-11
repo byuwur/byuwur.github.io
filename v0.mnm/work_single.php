@@ -76,7 +76,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   <?php require_once "{$TO_HOME}/v0.mnm/common.foot.php"; ?>
   <script>
     $(() => {
-      document.title = <?= js_encode($_wtitle . " | MNM.team();") ?>;
+      document.title = <?= js_encode("{$_wtitle} | MNM.team();") ?>;
       $("#li_work").addClass("mnm-active");
     });
   </script>

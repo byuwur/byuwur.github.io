@@ -64,7 +64,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   ?>
   <script>
     $(() => {
-      document.title = <?= js_encode($_chead . " | MNM.team();") ?>;
+      document.title = <?= js_encode("{$_chead} | MNM.team();") ?>;
       $("#li_contact").addClass("mnm-active");
     });
   </script>

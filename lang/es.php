@@ -46,7 +46,7 @@ $LANG = [
   "footer.html" =>
     "&copy;" .
     date("Y") .
-    " Andrés Trujillo [Mateus] byUwUr<br>
+    /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>cargar HTML básico</a> | -->
     <a href='/{$ROUTE_COOKIES}'>política de cookies</a>
     <br>Hecho con <i class='fas fa-heart'></i> por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "Cerrar",
   // --- Acerca de y redes ---
   "about.description" =>
-    "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
+    /* HTML */ "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Ingeniero de Sistemas bilingüe con experiencia desarrollando, desplegando y dando soporte a soluciones web y móviles desde 2018, complementada con experiencia en producción audiovisual desde 2014.<br>
     Lo simple ya es suficientemente complicado: construyo herramientas sólidas y confiables que facilitan la operación de flujos de trabajo complejos. Creo cosas útiles.<br>
     Experiencia en desarrollo full-stack, implementación para clientes, soporte en producción y entrega técnica, con trabajo práctico en React, React Native, PHP, MySQL y AWS.<br>

@@ -42,7 +42,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <span class="text-uppercase"><?= escape_html($LANG["profile.full_name"]) ?></span>
     </div>
     <span class="mb-4 text-center fs-5">
-      <?= escape_html($LANG["hero.and_i"] . " " . $LANG["hero.in"]) ?><br>
+      <?= escape_html("{$LANG["hero.and_i"]} {$LANG["hero.in"]}") ?><br>
       ✨
       <!--img class="inline-logo" src="<?= "{$HOME_PATH}/img/icons/sparkle.png" ?>" aria-hidden="true" /-->
       <span id="typed" data-strings="<?= escape_html(json_encode($typedSkills, JSON_UNESCAPED_UNICODE)) ?>"></span>

@@ -1,3 +1,3 @@
 <?php require_once "../_init.php";
-header("Location: " . $HOME_PATH);
+header("Location: {$HOME_PATH}");
 exit;

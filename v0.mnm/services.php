@@ -120,7 +120,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   ?>
   <script>
     $(() => {
-      document.title = <?= js_encode($_expertise . " | MNM.team();") ?>;
+      document.title = <?= js_encode("{$_expertise} | MNM.team();") ?>;
       $("#li_services").addClass("mnm-active");
     });
   </script>

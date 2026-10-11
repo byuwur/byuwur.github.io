@@ -46,7 +46,7 @@ $LANG = [
   "footer.html" =>
     "&copy;" .
     date("Y") .
-    " Andrés Trujillo [Mateus] byUwUr<br>
+    /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>基本HTMLを読み込む</a> | -->
     <a href='/{$ROUTE_COOKIES}'>Cookieポリシー</a>
     <br><i class='fas fa-heart'></i> で制作 <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "閉じる",
   // --- 自己紹介とSNS ---
   "about.description" =>
-    "現在、<a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
+    /* HTML */ "現在、<a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
     2018年からWebおよびモバイルソリューションの開発・デプロイ・運用サポートに携わってきた、バイリンガルのシステムエンジニアです。2014年からは映像制作の経験も積んできました。<br>
     シンプルであること自体が十分に難しい。複雑なワークフローをより扱いやすくする、堅牢で信頼性の高いツールを作ることを大切にしています。役に立つものを作ります。<br>
     フルスタック開発、クライアント向け導入支援、本番環境のサポート、技術デリバリーまで幅広く経験しており、React、React Native、PHP、MySQL、AWSを実務で扱ってきました。<br>

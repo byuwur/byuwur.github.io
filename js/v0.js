@@ -38,7 +38,10 @@ $(() => {
         autoplay: true,
         rewind: true,
         controlsPosition: "bottom",
-        controlsText: ["<i class='fas fa-arrow-circle-left'></i>", "<i class='fas fa-arrow-circle-right'></i>"],
+        controlsText: [
+          /* HTML */ `<i class='fas fa-arrow-circle-left'></i>`,
+          /* HTML */ `<i class='fas fa-arrow-circle-right'></i>`
+        ],
         speed: 3000,
         autoplayButtonOutput: false,
         mouseDrag: true,

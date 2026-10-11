@@ -33,19 +33,14 @@ $mail_message = validate_value($_POST["mail_message"] ?? null);
 if ($mail_message === null)
   api_respond(400, true, "Invalid form: message required.");
 $mail_phone = validate_value($_POST["mail_phone"] ?? null);
-$easter_name = validate_value($_POST["easter_name"] ?? null);
+$easter_name = validate_value($_POST["easter_name"] ?? null) ?? "Mateus";
+$mail_phone_text = $mail_phone !== null ? ", o llamarme al: <strong>{$mail_phone}</strong>" : ".";
+$mail_message_html = escape_html($mail_message, true);
 
 $_POST["resource"] = "byuwur";
 $_POST["topic_txt"] = "CORREO DE CONTACTO";
-$_POST["msg_top"] = "Hola, " . ($easter_name ?? "Mateus");
-$_POST["msg_bot"] = "Soy"
-  . "<strong>{$mail_name}</strong>."
-  . "<br>Pueden contactarme en: "
-  . "<strong>{$mail_email}</strong>"
-  . ($mail_phone !== null ? ", o llamarme al: <strong>{$mail_phone}</strong>" : ".")
-  . "<br><br>Asunto: "
-  . "<strong>{$mail_subject}</strong>"
-  . "<br><br>Necesito decirles:<br>" . escape_html($mail_message, true);
+$_POST["msg_top"] = "Hola, {$easter_name}";
+$_POST["msg_bot"] = "Soy<strong>{$mail_name}</strong>.<br>Pueden contactarme en: <strong>{$mail_email}</strong>{$mail_phone_text}<br><br>Asunto: <strong>{$mail_subject}</strong><br><br>Necesito decirles:<br>{$mail_message_html}";
 $_POST["cta_url"] = false;
 $_POST["cta_txt"] = "";
 require_once "{$TO_HOME}/mail/mail.common.php";

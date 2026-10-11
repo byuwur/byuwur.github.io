@@ -132,7 +132,7 @@ require_once "{$TO_HOME}/_common.php";
 <script>
   "use strict";
   $(() => {
-    document.title = <?= js_encode($LANG["title.default"] . " [v1]") ?>;
+    document.title = <?= js_encode("{$LANG["title.default"]} [v1]") ?>;
     byCommon.init();
     if ($("#page-icon").length) $("#page-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");
     if ($("#shortcut-icon").length) $("#shortcut-icon").attr("href", "<?= "{$HOME_PATH}/img/favicon.png" ?>");

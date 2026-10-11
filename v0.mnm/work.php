@@ -47,7 +47,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
                     <br>
                     <span><?= $_devs ?><i>Mateus</i></span>
                     <br>
-                    <span><?= $_inst . $_fundby ?><i>ITFIP</i></span>
+                    <span><?= "{$_inst}{$_fundby}" ?><i>ITFIP</i></span>
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
                     <span><i>Nestux</i></span>
                     <span><i>Marco</i></span>
                     <br>
-                    <span><?= $_inst . $_fundby ?>ITFIP. <i>Escuela Normal de Naucalpán (México)</i></span>
+                    <span><?= "{$_inst}{$_fundby}" ?>ITFIP. <i>Escuela Normal de Naucalpán (México)</i></span>
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
                     <span><i>Nestux</i></span>
                     <span><i>Marco</i></span>
                     <br>
-                    <span><?= $_inst . $_fundby ?><i>ITFIP</i></span>
+                    <span><?= "{$_inst}{$_fundby}" ?><i>ITFIP</i></span>
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
   ?>
   <script>
     $(() => {
-      document.title = <?= js_encode($_mywork . " | MNM.team();") ?>;
+      document.title = <?= js_encode("{$_mywork} | MNM.team();") ?>;
       $("#li_work").addClass("mnm-active");
     });
   </script>

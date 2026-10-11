@@ -46,7 +46,7 @@ $LANG = [
   "footer.html" =>
     "&copy;" .
     date("Y") .
-    " Andrés Trujillo [Mateus] byUwUr<br>
+    /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>load basic HTML</a> | -->
     <a href='/{$ROUTE_COOKIES}'>cookie policy</a>
     <br>Made with <i class='fas fa-heart'></i> by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "Close",
   // --- About and social links ---
   "about.description" =>
-    "Currently working as Team Lead at <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
+    /* HTML */ "Currently working as Team Lead at <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Bilingual Systems Engineer with professional experience developing, deploying and supporting web and mobile solutions since 2018, complemented by audiovisual production experience since 2014.<br>
     Simple is complicated enough: I build strong and reliable tools that make complex workflows easier to operate. I create useful things.<br>
     Experienced across full-stack development, client implementation, production support and technical delivery, with hands-on work in React, React Native, PHP, MySQL and AWS.<br>
