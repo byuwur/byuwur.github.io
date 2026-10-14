@@ -44,7 +44,7 @@ $LANG = [
   "view.modern" => "cargar HTML no tan básico",
   "view.modern.title" => "cargar HTML no tan básico (v2)",
   "footer.html" =>
-    "&copy;" .
+  "&copy;" .
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>cargar HTML básico</a> | -->
@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "Cerrar",
   // --- Acerca de y redes ---
   "about.description" =>
-    /* HTML */ "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
+  /* HTML */ "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Ingeniero de Sistemas bilingüe con experiencia desarrollando, desplegando y dando soporte a soluciones web y móviles desde 2018, complementada con experiencia en producción audiovisual desde 2014.<br>
     Lo simple ya es suficientemente complicado: construyo herramientas sólidas y confiables que facilitan la operación de flujos de trabajo complejos. Creo cosas útiles.<br>
     Experiencia en desarrollo full-stack, implementación para clientes, soporte en producción y entrega técnica, con trabajo práctico en React, React Native, PHP, MySQL y AWS.<br>
@@ -99,7 +99,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy SPA PHP",
+      "title" => "SPA.php",
       "ent" => "byUwUr",
       "desc" => "Framework PHP ligero para crear SPAs con enrutamiento, navegación AJAX, autenticación y soporte para despliegue sin necesidad de una pesada cadena de herramientas de frontend.",
       "year" => "2024",

@@ -44,7 +44,7 @@ $LANG = [
   "view.modern" => "load not so basic HTML",
   "view.modern.title" => "load not so basic HTML (v2)",
   "footer.html" =>
-    "&copy;" .
+  "&copy;" .
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>load basic HTML</a> | -->
@@ -55,7 +55,7 @@ $LANG = [
   "action.close" => "Close",
   // --- About and social links ---
   "about.description" =>
-    /* HTML */ "Currently working as Team Lead at <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
+  /* HTML */ "Currently working as Team Lead at <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Bilingual Systems Engineer with professional experience developing, deploying and supporting web and mobile solutions since 2018, complemented by audiovisual production experience since 2014.<br>
     Simple is complicated enough: I build strong and reliable tools that make complex workflows easier to operate. I create useful things.<br>
     Experienced across full-stack development, client implementation, production support and technical delivery, with hands-on work in React, React Native, PHP, MySQL and AWS.<br>
@@ -99,7 +99,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy SPA PHP",
+      "title" => "SPA.php",
       "ent" => "byUwUr",
       "desc" => "Lightweight PHP framework for building SPAs with routing, AJAX navigation, authentication and deployment support without a heavy frontend toolchain.",
       "year" => "2024",
