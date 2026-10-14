@@ -89,11 +89,7 @@ $mail_html = /* HTML */ <<<HTML
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #ffffff; width: 37.5rem; padding: 0.95rem 2.5rem">
         <td valign="top" align="left" style="padding: 0; margin: 0; width: 6.25rem">
             <a target="_blank" href="{$mail_resources["head_url"]}" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 0.875rem">
-                <img   
-                    src="{$mail_resources["head_img"]}"
-                    alt=""
-                    style="width: 5rem; height: 5rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none"
-                />
+                <img src="{$mail_resources["head_img"]}" alt="" style="width: 5rem; height: 5rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none" />
             </a>
         </td>
         <td style="padding: 0; margin: 0; width: 1.25rem"></td>
@@ -108,11 +104,7 @@ $mail_html = /* HTML */ <<<HTML
         </td>
         <td style="padding: 0; margin: 0; width: 1.25rem"></td>
         <td valign="top" align="right" style="padding: 0; margin: 0">
-            <img
-                src="{$mail_resources["topic_img"]}"
-                alt="Confirm email"
-                style="width: 3.125rem; height: 3.125rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none; border-radius: 0.95rem"
-            />
+            <img src="{$mail_resources["topic_img"]}" alt="Confirm email" style="width: 3.125rem; height: 3.125rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none; border-radius: 0.95rem" />
         </td>
     </table>
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 0.3rem 2.5rem">
@@ -167,12 +159,7 @@ $mail_html .= /* HTML */ <<<HTML
     </table>
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #efefef; width: 37.5rem; padding: 0.3rem 2.5rem 1.25rem; border-radius: 0 0 1.25rem 1.25rem">
         <td align="center" style="padding: 0; margin: 0; font-size: 0rem; padding-right: 1.25rem">
-            <img
-                src="{$mail_resources["aid_img"]}"
-                style="width: 2.5rem; height: 2.5rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none"
-                alt="Ayuda"
-                title="Ayuda"
-            />
+            <img src="{$mail_resources["aid_img"]}" style="width: 2.5rem; height: 2.5rem; display: block; font-size: 1.125rem; border: 0; outline: none; text-decoration: none" alt="Ayuda" title="Ayuda" />
         </td>
         <td align="left" style="padding: 0; margin: 0; font-size: 1rem !important">
             <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.5rem; letter-spacing: 0; color: #333333; font-size: 1rem">
@@ -188,12 +175,7 @@ $mail_html .= /* HTML */ <<<HTML
         </td>
         <td align="center" style="padding: 0 1.25rem; margin: 0; font-size: 0rem">
             <a target="_blank" href="{$mail_resources["brand_url"]}" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 0.875rem">
-                <img
-                    src="{$mail_resources["brand_img"]}"
-                    alt="[Mateus] byUwUr"
-                    style="width: 3.75rem; height: 3.75rem; display: block; font-size: 0.75rem; border: 0; outline: none; text-decoration: none"
-                    title="[Mateus] byUwUr"
-                />
+                <img src="{$mail_resources["brand_img"]}" alt="[Mateus] byUwUr" style="width: 3.75rem; height: 3.75rem; display: block; font-size: 0.75rem; border: 0; outline: none; text-decoration: none" title="[Mateus] byUwUr" />
             </a>
         </td>
         <td align="right" valign="center" style="padding: 0; margin: 0; height: 3.75rem; display: flex; gap: 0.125rem; justify-content: end; align-items: center">

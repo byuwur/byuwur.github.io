@@ -38,7 +38,8 @@ foreach ($LANG["skills.sections"] as $skillSection)
   </div>
   <section id="about" class="px-0">
     <div class="mb-4 px-4 text-center">
-      <span class="text-uppercase text-center fs-1 fw-bold"><?= escape_html($LANG["hero.im"]) ?> <?= $LANG["profile.name_top"] // Trusted highlighted name markup. ?></span>
+      <span class="text-uppercase text-center fs-1 fw-bold"><?= escape_html($LANG["hero.im"]) ?> <?= $LANG["profile.name_top"] // Trusted highlighted name markup. 
+                                                                                                  ?></span>
       <span class="text-uppercase"><?= escape_html($LANG["profile.full_name"]) ?></span>
     </div>
     <span class="mb-4 text-center fs-5">
@@ -62,8 +63,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     <div class="row w-100 light-links">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
         <div class="col-md-6 col-xl-4 p-0 text-darker-shadow text-white <?= escape_html($portfolio["class"]) ?>">
-          <div class="project has-background-cover p-4"
-            style="background-image: url(<?= escape_html("{$HOME_PATH}/{$portfolio["image"]}") ?>);">
+          <div class="project has-background-cover p-4" style="background-image: url(<?= escape_html("{$HOME_PATH}/{$portfolio["image"]}") ?>);">
             <h3 class="project-title"><?= escape_html($portfolio["title"]) ?></h3>
             <div class="project-description p-4">
               <div class="flex-grow-1 d-flex flex-column">
@@ -92,10 +92,10 @@ foreach ($LANG["skills.sections"] as $skillSection)
     </div>
     <div class="row mt-4 pt-4 px-5 uncolor-links">
       <div class="col-md-auto d-flex justify-content-center">
-        <div class="has-background-contain rounded-circle mb-4"
-          style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:10rem;width:10rem;"></div>
+        <div class="has-background-contain rounded-circle mb-4" style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:10rem;width:10rem;"></div>
       </div>
-      <p class="col pe-5"><?= $LANG["about.description"] // Trusted portfolio markup from the bundled language files. ?></p>
+      <p class="col pe-5"><?= $LANG["about.description"] // Trusted portfolio markup from the bundled language files. 
+                          ?></p>
     </div>
   </section>
   <section id="resume">
@@ -126,7 +126,8 @@ foreach ($LANG["skills.sections"] as $skillSection)
             <li>
               <div class="resume-title p-2">
                 <h4 class="m-0"><?= escape_html($experience["pos"]) ?></h4>
-                <span class="mt-1 uncolor-links"><?= $experience["ent"] // Trusted organization links from the bundled language files. ?></span>
+                <span class="mt-1 uncolor-links"><?= $experience["ent"] // Trusted organization links from the bundled language files. 
+                                                  ?></span>
                 <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= escape_html($experience["time"]) ?></span>
               </div>
               <div class="p-2">
@@ -143,11 +144,14 @@ foreach ($LANG["skills.sections"] as $skillSection)
             <li>
               <div class="resume-title p-2">
                 <h4 class="m-0"><?= escape_html($education["prog"]) ?></h4>
-                <span class="mt-1 uncolor-links"><?= $education["inst"] // Trusted institution links from the bundled language files. ?></span>
-                <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"] // Trusted date markup from the bundled language files. ?></span>
+                <span class="mt-1 uncolor-links"><?= $education["inst"] // Trusted institution links from the bundled language files. 
+                                                  ?></span>
+                <span class="text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"] // Trusted date markup from the bundled language files. 
+                                                                                    ?></span>
               </div>
               <div class="p-2">
-                <small class="m-0"><i class="fas fa-list-check"></i><?= $education["prof"] // Trusted profile links from the bundled language files. ?></small>
+                <small class="m-0"><i class="fas fa-list-check"></i><?= $education["prof"] // Trusted profile links from the bundled language files. 
+                                                                    ?></small>
               </div>
             </li>
           <?php } ?>
@@ -161,9 +165,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     <div class="row w-100">
       <!--div class="col-12 col-md-6 mb-3">
         <h5 class="col-12">Business Card! :]</h5>
-        <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>"
-          title="<?= escape_html($LANG["card.title"]) ?>" style="width: 100%; height: 8rem"
-          frameborder="0"></iframe>
+        <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?>" style="width: 100%; height: 8rem" frameborder="0"></iframe>
       </div-->
       <div class="col-12 col-md-6 mb-3 d-flex flex-column text-end text-md-start">
         <div>

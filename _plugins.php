@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * File: _plugins.php
  * Desc: Handles invokation and initialization of the composer libraries
  * Deps: /_init.php

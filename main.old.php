@@ -39,13 +39,11 @@ require_once "{$TO_HOME}/_common.php";
         </a>
       </div>
       <div class="mt-4 d-flex flex-column flex-sm-row">
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= escape_html($LANG["resume.en.title"]) ?>"
-          aria-label="<?= escape_html($LANG["resume.en.title"]) ?>">
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_EN}" ?>" target="_blank" title="<?= escape_html($LANG["resume.en.title"]) ?>" aria-label="<?= escape_html($LANG["resume.en.title"]) ?>">
           <img class="inline-logo" src="<?= "{$HOME_PATH}/img/gb.svg" ?>" alt="<?= escape_html($LANG["resume.en.alt"]) ?>" />
           <span><?= $LANG["resume.en.title"] ?></span>
         </a>
-        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= escape_html($LANG["resume.es.title"]) ?>"
-          aria-label="<?= escape_html($LANG["resume.es.title"]) ?>">
+        <a class="a-lang" href="<?= "/{$ROUTE_RESUME}.{$ROUTE_ES}" ?>" target="_blank" title="<?= escape_html($LANG["resume.es.title"]) ?>" aria-label="<?= escape_html($LANG["resume.es.title"]) ?>">
           <img class="inline-logo" src="<?= "{$HOME_PATH}/img/co.svg" ?>" alt="<?= escape_html($LANG["resume.es.alt"]) ?>" />
           <span><?= $LANG["resume.es.title"] ?></span>
         </a>

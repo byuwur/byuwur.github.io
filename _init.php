@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * File: _init.php
  * Desc: Initializes the application-specific SPA environment, paths, storage, and runtime state. (MUST be included in every file)
  * Deps: none
@@ -127,7 +127,7 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
      * Legacy unprefixed keys are migrated on first read.
      * @namespace byStorage
      */
-    (function (global) {
+    (function(global) {
       global.byStorage = global.byStorage || {};
       const byStorage = global.byStorage;
       byStorage.memory = {};
@@ -139,7 +139,7 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
        * @param {string} key
        * @returns {string|null}
        */
-      byStorage.getItem = function (key) {
+      byStorage.getItem = function(key) {
         try {
           const value = global.localStorage.getItem(byStorage.prefix + key);
           if (value !== null) return value;
@@ -152,7 +152,7 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
             if (global.localStorage.getItem(byStorage.prefix + key) === legacy)
               try {
                 global.localStorage.removeItem(key);
-              } catch (_) { }
+              } catch (_) {}
           }
           return legacy;
         } catch (_) {
@@ -166,11 +166,11 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
        * @param {*} value
        * @returns {void}
        */
-      byStorage.setItem = function (key, value) {
+      byStorage.setItem = function(key, value) {
         byStorage.memory[key] = String(value);
         try {
           global.localStorage.setItem(byStorage.prefix + key, value);
-        } catch (_) { }
+        } catch (_) {}
       };
 
       /**
@@ -178,11 +178,11 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
        * @param {string} key
        * @returns {void}
        */
-      byStorage.removeItem = function (key) {
+      byStorage.removeItem = function(key) {
         delete byStorage.memory[key];
         try {
           global.localStorage.removeItem(byStorage.prefix + key);
-        } catch (_) { }
+        } catch (_) {}
       };
     })(typeof window !== "undefined" ? window : this);
   </script>

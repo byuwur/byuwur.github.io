@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * File: _common.php
  * Desc: Handles common initializations such as language and theme; it also includes project-wide common variables
  * Deps: /_init.php
