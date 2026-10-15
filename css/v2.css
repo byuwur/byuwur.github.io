@@ -181,7 +181,7 @@ section {
   border-bottom: 0.0625rem solid #777;
 }
 .skill-section .progress {
-  height: 0.05rem;
+  height: 0.075rem;
   background-color: #bbb;
   margin: 0.25rem 0.25rem 0 0.25rem;
 }

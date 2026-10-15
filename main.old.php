@@ -70,8 +70,8 @@ require_once "{$TO_HOME}/_common.php";
             <ul class="d-flex flex-wrap gap-2 mb-0">
               <?php foreach ($skillsection["items"] as $skill) { ?>
                 <li class="skill p-1">
-                  <i class="<?= escape_html($skill["icon"]) ?>" aria-hidden="true"></i>
-                  <span class="mx-1"><?= escape_html($skill["text"]) ?></spanc¿>
+                  <?= render_skill_icon($skill) ?>
+                  <span class="mx-1"><?= escape_html($skill["text"]) ?></span>
                 </li>
               <?php } ?>
             </ul>
@@ -86,7 +86,7 @@ require_once "{$TO_HOME}/_common.php";
           <li class="d-flex flex-column flex-md-row mb-5">
             <div class="flex-grow-1">
               <h4><i class="fas fa-check"></i><?= $experience["pos"] ?></h4>
-              <span><i class="fas fa-building"></i><?= $experience["ent"] ?></span>
+              <span><?= $experience["ent"] ?></span>
               <p class="mb-0"><i class="fas fa-list-check"></i><?= $experience["desc"] ?></p>
             </div>
             <span class="ms-4 text-primary text-md-end"><i class="fas fa-clock"></i><?= $experience["time"] ?></span>
@@ -101,7 +101,7 @@ require_once "{$TO_HOME}/_common.php";
           <li class="d-flex flex-column flex-md-row mb-5">
             <div class="flex-grow-1">
               <h4><i class="fas fa-graduation-cap"></i><?= $education["prog"] ?></h4>
-              <span><i class="fas fa-building"></i><?= $education["inst"] ?></span>
+              <span><?= $education["inst"] ?></span>
               <p class="mb-0"><i class="fas fa-list-check"></i><?= $education["prof"] ?></p>
             </div>
             <span class="ms-4 text-primary text-md-end"><i class="fas fa-clock"></i><?= $education["year"] ?></span>

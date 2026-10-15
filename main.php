@@ -15,7 +15,7 @@ require_once "{$TO_HOME}/_common.php";
 $typedSkills = [];
 foreach ($LANG["skills.sections"] as $skillSection)
   foreach ($skillSection["items"] as $skill)
-    $typedSkills[] = "<i class=\"{$skill["icon"]}\"></i> {$skill["text"]}";
+    $typedSkills[] = render_skill_icon($skill) . " " . escape_html($skill["text"]);
 ?>
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
@@ -38,8 +38,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
   </div>
   <section id="about" class="px-0">
     <div class="mb-4 px-4 text-center">
-      <span class="text-uppercase text-center fs-1 fw-bold"><?= escape_html($LANG["hero.im"]) ?> <?= $LANG["profile.name_top"] // Trusted highlighted name markup. 
-                                                                                                  ?></span>
+      <span class="text-uppercase text-center fs-1 fw-bold"><?= escape_html($LANG["hero.im"]) ?> <?= $LANG["profile.name_top"] ?></span>
       <span class="text-uppercase"><?= escape_html($LANG["profile.full_name"]) ?></span>
     </div>
     <span class="mb-4 text-center fs-5">
@@ -94,8 +93,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
       <div class="col-md-auto d-flex justify-content-center">
         <div class="has-background-contain rounded-circle mb-4" style="background-image:url('<?= "{$HOME_PATH}/img/profile.jpg" ?>');height:10rem;width:10rem;"></div>
       </div>
-      <p class="col pe-5"><?= $LANG["about.description"] // Trusted portfolio markup from the bundled language files. 
-                          ?></p>
+      <p class="col pe-5"><?= $LANG["about.description"] ?></p>
     </div>
   </section>
   <section id="resume">
@@ -148,10 +146,10 @@ foreach ($LANG["skills.sections"] as $skillSection)
           <ul class="d-flex flex-wrap gap-2 mb-0">
             <?php foreach ($skillsection["items"] as $skill) { ?>
               <li class="skill p-1 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($skill["years"]) . "+ " . escape_html($LANG["years"]) ?>">
-                <h6 class="m-0"><i class="<?= escape_html($skill["icon"]) ?>"></i><span class="mx-1"><?= escape_html($skill["text"]) ?></span></>
-                  <div class="progress rounded-pill">
-                    <div class="progress-bar" style="width: <?= escape_html($skill["progress"]) ?>%"></div>
-                  </div>
+                <h6 class="m-0"><?= render_skill_icon($skill) ?><span class="mx-1"><?= escape_html($skill["text"]) ?></span></h6>
+                <div class="progress rounded-pill">
+                  <div class="progress-bar" style="width: <?= escape_html($skill["progress"]) ?>%"></div>
+                </div>
               </li>
             <?php } ?>
           </ul>
@@ -167,7 +165,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?>" style="width: 100%; height: 8rem" frameborder="0"></iframe>
       </div-->
-      <div class="col-12 d-flex flex-column flex-lg-row text-center justify-content-center align-items-center gap-4">
+      <div class="col-12 d-flex flex-column flex-lg-row text-center justify-content-center align-items-center gap-1 gap-lg-4">
         <div>
           <i class="fab fa-linkedin"></i>
           <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>" target="_blank"><?= escape_html("atrujillomateus") ?></a>

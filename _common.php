@@ -16,6 +16,22 @@ const SKILL_PROGRESS_MAX = 95;
 const SKILL_PROGRESS_STEP = 5;
 
 /**
+ * Renders a skill's image or Font Awesome icon beside its text.
+ * @param array $skill Skill data with an img source or icon classes. A nonempty img takes precedence.
+ * @return string Decorative icon HTML with escaped attributes.
+ */
+function render_skill_icon(array $skill): string
+{
+  if (!empty($skill["img"])) {
+    $src = escape_html($skill["img"]);
+    return "<img class='inline-logo' src='{$src}' alt='' aria-hidden='true' />";
+  }
+
+  $class = escape_html($skill["icon"]);
+  return "<i class='{$class}' aria-hidden='true'></i>";
+}
+
+/**
  * Calculates years of experience and its relative progress.
  * @param int $startYear Year when the skill was first used.
  * @param int $progressOverride For when the skill is proficient but recently learned.
