@@ -99,27 +99,9 @@ foreach ($LANG["skills.sections"] as $skillSection)
     </div>
   </section>
   <section id="resume">
-    <h2 class="text-uppercase mb-5 pb-5"><?= escape_html($LANG["nav.resume"]) ?></h2>
+    <h2 class="text-uppercase mb-4 pb-4"><?= escape_html($LANG["nav.resume"]) ?></h2>
     <div class="row w-100">
-      <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
-        <div class="skill-section col-12 mb-5">
-          <h4 class="text-uppercase mb-2">
-            <i class="<?= escape_html($skillsection["icon"]) ?>" aria-hidden="true"></i>
-            <?= escape_html($skillsection["title"]) ?>
-          </h4>
-          <ul class="d-flex flex-wrap gap-2 mb-0">
-            <?php foreach ($skillsection["items"] as $skill) { ?>
-              <li class="skill p-2 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($skill["years"]) . "+ " . escape_html($LANG["years"]) ?>">
-                <h4 class="m-0"><i class="<?= escape_html($skill["icon"]) ?>"></i><span class="mx-1"><?= escape_html($skill["text"]) ?></span></h4>
-                <div class="progress rounded-pill">
-                  <div class="progress-bar" style="width: <?= escape_html($skill["progress"]) ?>%"></div>
-                </div>
-              </li>
-            <?php } ?>
-          </ul>
-        </div>
-      <?php } ?>
-      <div class="resume-row col-lg-7">
+      <div class="resume-row col-lg-8">
         <h4 class="text-uppercase"><i class="fas fa-briefcase"></i><?= escape_html($LANG["nav.experience"]) ?></h4>
         <ul>
           <?php foreach ($LANG["experience.items"] as $experience) { ?>
@@ -137,7 +119,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
           <?php } ?>
         </ul>
       </div>
-      <div class="resume-row col-lg-5">
+      <div class="resume-row col-lg-4">
         <h4 class="text-uppercase"><i class="fas fa-graduation-cap"></i><?= escape_html($LANG["nav.education"]) ?></h4>
         <ul>
           <?php foreach ($LANG["education.items"] as $education) { ?>
@@ -157,31 +139,55 @@ foreach ($LANG["skills.sections"] as $skillSection)
           <?php } ?>
         </ul>
       </div>
+      <?php foreach ($LANG["skills.sections"] as $skillsection) { ?>
+        <div class="skill-section col-12 mt-4">
+          <h5 class="text-uppercase mb-2">
+            <i class="<?= escape_html($skillsection["icon"]) ?>" aria-hidden="true"></i>
+            <?= escape_html($skillsection["title"]) ?>
+          </h5>
+          <ul class="d-flex flex-wrap gap-2 mb-0">
+            <?php foreach ($skillsection["items"] as $skill) { ?>
+              <li class="skill p-1 pb-0" data-bs-toggle="tooltip" data-bs-title="<?= escape_html($skill["years"]) . "+ " . escape_html($LANG["years"]) ?>">
+                <h6 class="m-0"><i class="<?= escape_html($skill["icon"]) ?>"></i><span class="mx-1"><?= escape_html($skill["text"]) ?></span></>
+                  <div class="progress rounded-pill">
+                    <div class="progress-bar" style="width: <?= escape_html($skill["progress"]) ?>%"></div>
+                  </div>
+              </li>
+            <?php } ?>
+          </ul>
+        </div>
+      <?php } ?>
     </div>
   </section>
   <section id="contact">
     <h2 class="text-uppercase"><?= escape_html($LANG["nav.contact"]) ?></h2>
-    <span class="mb-1 pb-1"><?= escape_html($LANG["contact.subtitle"]) ?></span>
+    <span class="mb-3 pb-3"><?= escape_html($LANG["contact.subtitle"]) ?></span>
     <div class="row w-100">
-      <!--div class="col-12 col-md-6 mb-3">
+      <!--div class="col-12 mb-3">
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?>" style="width: 100%; height: 8rem" frameborder="0"></iframe>
       </div-->
-      <div class="col-12 col-md-6 mb-3 d-flex flex-column text-end text-md-start">
+      <div class="col-12 d-flex flex-column flex-lg-row text-center justify-content-center align-items-center gap-4">
         <div>
-          <i class="fab fa-linkedin d-none d-md-inline"></i>
-          <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>" target="_blank">atrujillomateus</a>
-          <i class="fab fa-linkedin d-inline d-md-none"></i>
+          <i class="fab fa-linkedin"></i>
+          <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>" target="_blank"><?= escape_html("atrujillomateus") ?></a>
         </div>
         <div>
-          <i class="fas fa-envelope d-none d-md-inline"></i>
+          <i class="fas fa-envelope"></i>
           <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>" target="_blank"><?= escape_html($LANG["contact.mail"]) ?></a>
-          <i class="fas fa-envelope d-inline d-md-none"></i>
+        </div>
+        <div>
+          <i class="fab fa-github"></i>
+          <a href="<?= escape_html($LANG["social.github.url"]) ?>" target="_blank"><?= escape_html("byuwur") ?></a>
+        </div>
+        <div>
+          <i class="fab fa-youtube"></i>
+          <a href="<?= escape_html($LANG["social.youtube.url"]) ?>" target="_blank"><?= escape_html("byuwur") ?></a>
         </div>
       </div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
       <!-- div id="twitch" class="col-12"></div -->
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <div class="col-12 mt-3 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
     </div>
   </section>
 </div>

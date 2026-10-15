@@ -136,7 +136,7 @@ section {
 /* --- RESUME --- */
 .resume-row {
   position: relative;
-  padding: 3rem 2rem 0 0;
+  padding: 2rem 2rem 0 0;
 }
 .resume-row:after {
   position: absolute;
@@ -181,7 +181,7 @@ section {
   border-bottom: 0.0625rem solid #777;
 }
 .skill-section .progress {
-  height: 0.1rem;
+  height: 0.05rem;
   background-color: #bbb;
 }
 .skill-section .progress-bar {
