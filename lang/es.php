@@ -78,6 +78,11 @@ $LANG = [
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/stream.fgc",
         ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -107,14 +112,19 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
+          "icon" => "fas fa-globe",
+          "text" => "Pruébalo",
+          "link" => "https://byuwur.co/spa.php/",
+        ],
+        [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/spa.php",
         ],
         [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.co/spa.php/",
+          "icon" => "fab fa-js",
+          "text" => "SPA.js",
+          "link" => "https://github.com/byuwur/spa.js",
         ],
       ],
       "tech" => [
@@ -145,10 +155,15 @@ $LANG = [
       "class" => "web android",
       "link" => [
         [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
+          "icon" => "fas fa-globe",
+          "text" => "Visítalo",
           "link" => "https://semillasdealegriaespinal.com",
         ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -186,20 +201,20 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
+          "icon" => "fas fa-globe",
+          "text" => "Pruébalo",
+          "link" => "https://byuwur.github.io/easy-md-viewer",
+        ],
+        [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/easy-md-viewer",
         ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/VYPoWMM",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-md-viewer",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -225,20 +240,20 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
+          "icon" => "fas fa-globe",
+          "text" => "Pruébalo",
+          "link" => "https://byuwur.github.io/easy-json-viewer",
+        ],
+        [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/easy-json-viewer",
         ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/ExBeOPR",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-json-viewer",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -264,25 +279,20 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
-          "icon" => "fas fa-play-circle",
-          "text" => "Control",
-          "link" => "https://byuwur.co/controller",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Popup",
-          "link" => "https://byuwur.github.io/stream.html/popup/",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Scene",
-          "link" => "https://byuwur.github.io/stream.html/main/",
+          "icon" => "fas fa-globe",
+          "text" => "Pruébalo",
+          "link" => "https://byuwur.github.io/stream.html/",
         ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/stream.html",
         ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -308,20 +318,20 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
+          "icon" => "fas fa-globe",
+          "text" => "Pruébalo",
+          "link" => "https://byuwur.github.io/easy-http-error",
+        ],
+        [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/easy-http-error",
         ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-http-error",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo Page",
-          "link" => "https://byuwur.co/error",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -351,20 +361,20 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
+          "icon" => "fas fa-globe",
+          "text" => "Pruébalo",
+          "link" => "https://byuwur.github.io/easy-sidebar-bootstrap",
+        ],
+        [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/easy-sidebar-bootstrap",
         ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "CodePen Demo",
-          "link" => "https://codepen.io/byuwur/pen/VwJdWYL",
-        ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://byuwur.github.io/easy-sidebar-bootstrap",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -389,11 +399,21 @@ $LANG = [
       "image" => "/img/work/dz.jpg",
       "class" => "web",
       "link" => [
+        // [
+        //   "icon" => "fas fa-globe",
+        //   "text" => "Pruébalo",
+        //   "link" => "",
+        // ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/easy-dropzone-php",
         ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -422,16 +442,21 @@ $LANG = [
       "image" => "/img/work/limontech.jpg",
       "class" => "python",
       "link" => [
+        // [
+        //   "icon" => "fas fa-globe",
+        //   "text" => "Pruébalo",
+        //   "link" => "",
+        // ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/limontech.py",
         ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://youtu.be/RNQTSueIa-8",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "https://youtu.be/RNQTSueIa-8",
+        // ],
       ],
       "tech" => [
         [
@@ -456,16 +481,21 @@ $LANG = [
       "image" => "/img/work/oc.jpg",
       "class" => "web android",
       "link" => [
+        // [
+        //   "icon" => "fas fa-globe",
+        //   "text" => "Visítalo",
+        //   "link" => "",
+        // ],
         [
-          "icon" => "fab fa-github",
-          "text" => "Web",
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
           "link" => "https://github.com/byuwur/onlinecongress.com.co",
         ],
-        [
-          "icon" => "fab fa-github",
-          "text" => "Android",
-          "link" => "https://github.com/byuwur/co.com.onlinecongress",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -502,16 +532,21 @@ $LANG = [
       "image" => "/img/work/reserv.jpg",
       "class" => "web android",
       "link" => [
+        // [
+        //   "icon" => "fas fa-globe",
+        //   "text" => "Visítalo",
+        //   "link" => "",
+        // ],
         [
-          "icon" => "fab fa-github",
-          "text" => "Web",
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
           "link" => "https://github.com/byuwur/reservelapp.com",
         ],
-        [
-          "icon" => "fab fa-github",
-          "text" => "Android",
-          "link" => "https://github.com/byuwur/com.reservelapp",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -549,15 +584,20 @@ $LANG = [
       "class" => "web",
       "link" => [
         [
+          "icon" => "fas fa-globe",
+          "text" => "Visítalo",
+          "link" => "https://repositorio.itfip.edu.co/",
+        ],
+        [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/redi.com",
         ],
-        [
-          "icon" => "fas fa-play-circle",
-          "text" => "Demo",
-          "link" => "https://repositorio.itfip.edu.co/",
-        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -574,11 +614,21 @@ $LANG = [
       "image" => "/img/work/renn.jpg",
       "class" => "web",
       "link" => [
+        // [
+        //   "icon" => "fas fa-globe",
+        //   "text" => "Visítalo",
+        //   "link" => "",
+        // ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/renn.com",
         ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
@@ -595,11 +645,21 @@ $LANG = [
       "image" => "/img/work/nginx.jpg",
       "class" => "web",
       "link" => [
+        // [
+        //   "icon" => "fas fa-globe",
+        //   "text" => "Pruébalo",
+        //   "link" => "",
+        // ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
           "link" => "https://github.com/byuwur/nginx-configurations",
         ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
       ],
       "tech" => [
         [
