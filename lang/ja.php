@@ -752,6 +752,8 @@ $LANG = [
   ],
   // --- お問い合わせ ---
   "contact.subtitle" => "一緒に最高のものを作りましょう。",
+  "contact.meeting.cta" => "30分ほどお時間ありますか？",
+  "contact.meeting.url" => "https://calendly.com/atrujillomateus/30min",
   "contact.form.name" => "名前",
   "contact.form.email" => "メール",
   "contact.form.phone" => "[+国番号] 電話番号 (任意)",

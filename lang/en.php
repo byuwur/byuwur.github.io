@@ -752,6 +752,8 @@ $LANG = [
   ],
   // --- Contact ---
   "contact.subtitle" => "And let's build something sick together.",
+  "contact.meeting.cta" => "Got 30 minutes?",
+  "contact.meeting.url" => "https://calendly.com/atrujillomateus/30min",
   "contact.form.name" => "Name",
   "contact.form.email" => "E-mail",
   "contact.form.phone" => "[+country code] Phone number (Optional)",

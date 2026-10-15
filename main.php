@@ -165,14 +165,14 @@ foreach ($LANG["skills.sections"] as $skillSection)
         <h5 class="col-12">Business Card! :]</h5>
         <iframe class="col-12" src="<?= "{$HOME_PATH}/card.v2.html" ?>" title="<?= escape_html($LANG["card.title"]) ?>" style="width: 100%; height: 8rem" frameborder="0"></iframe>
       </div-->
-      <div class="col-12 d-flex flex-column flex-lg-row text-center justify-content-center align-items-center gap-1 gap-lg-4">
-        <div>
-          <i class="fab fa-linkedin"></i>
-          <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>" target="_blank"><?= escape_html("atrujillomateus") ?></a>
-        </div>
+      <div class="col-12 d-flex flex-column flex-lg-row flex-wrap text-center justify-content-center align-items-center gap-1 gap-lg-4">
         <div>
           <i class="fas fa-envelope"></i>
           <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>" target="_blank"><?= escape_html($LANG["contact.mail"]) ?></a>
+        </div>
+        <div>
+          <i class="fab fa-linkedin"></i>
+          <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>" target="_blank"><?= escape_html("atrujillomateus") ?></a>
         </div>
         <div>
           <i class="fab fa-github"></i>
@@ -181,6 +181,10 @@ foreach ($LANG["skills.sections"] as $skillSection)
         <div>
           <i class="fab fa-youtube"></i>
           <a href="<?= escape_html($LANG["social.youtube.url"]) ?>" target="_blank"><?= escape_html("byuwur") ?></a>
+        </div>
+        <div>
+          <i class="fas fa-calendar" aria-hidden="true"></i>
+          <a href="<?= escape_html($LANG["contact.meeting.url"]) ?>" target="_blank" rel="noopener noreferrer"><?= escape_html($LANG["contact.meeting.cta"]) ?></a>
         </div>
       </div>
       <!-- div id="twitch" class="col-12"></div -->

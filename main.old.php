@@ -120,8 +120,30 @@ require_once "{$TO_HOME}/_common.php";
     <section id="contact">
       <h2 class="text-uppercase mb-1 pb-1"><?= $LANG["nav.contact"] ?></h2>
       <div class="row w-100 fs-5">
+        <div class="col-12 d-flex flex-column flex-lg-row flex-wrap text-center justify-content-center align-items-center gap-1 gap-lg-4">
+          <div>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>" target="_blank"><?= escape_html($LANG["contact.mail"]) ?></a>
+          </div>
+          <div>
+            <i class="fab fa-linkedin"></i>
+            <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>" target="_blank"><?= escape_html("atrujillomateus") ?></a>
+          </div>
+          <div>
+            <i class="fab fa-github"></i>
+            <a href="<?= escape_html($LANG["social.github.url"]) ?>" target="_blank"><?= escape_html("byuwur") ?></a>
+          </div>
+          <div>
+            <i class="fab fa-youtube"></i>
+            <a href="<?= escape_html($LANG["social.youtube.url"]) ?>" target="_blank"><?= escape_html("byuwur") ?></a>
+          </div>
+          <div>
+            <i class="fas fa-calendar" aria-hidden="true"></i>
+            <a href="<?= escape_html($LANG["contact.meeting.url"]) ?>" target="_blank" rel="noopener noreferrer"><?= escape_html($LANG["contact.meeting.cta"]) ?></a>
+          </div>
+        </div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <div class="col-12 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
+        <div class="col-12 mt-3 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
       </div>
     </section>
   </div>
