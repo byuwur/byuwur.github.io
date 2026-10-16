@@ -15,7 +15,7 @@ $_name_topbar = "Marco <small>[Cortés]</small>";
 $_name_top = "Marco <font size='5'><span class='text-primary'>[Cortés]</span></font>";
 $_nombre = "Marco José Cortés Guzman";
 #about
-$_about = "Knowledgeable in programming languages ​​such as Java, Python, PHP, JSF, JSP, frameworks such as Spring Boot, Spring MVC, Angular, knowledge in PostgreSQL and MySQL databases.<br>Determined and dedicated, always willing to learn new things. I'm here for what you require me to.";
+$_about = "Knowledgeable in programming languages such as Java, Python, PHP, JSF, JSP, frameworks such as Spring Boot, Spring MVC, Angular, knowledge in PostgreSQL and MySQL databases.<br>Determined and dedicated, always willing to learn new things. I'm here for what you require me to.";
 $_facebook = "https://facebook.com/marcocortes03";
 $_whatsapp = "https://wa.me/573015346518";
 $_github = "https://github.com/mjcortes07";

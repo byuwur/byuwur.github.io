@@ -111,7 +111,7 @@ $mail_html = /* HTML */ <<<HTML
         <tr>
             <td valign="center" align="left" style="padding: 1.25rem; margin: 0; border-radius: 0.625rem; background-color: #fafafa">
                 <h3 style="margin: 0; font-family: Imprima, Arial, sans-serif; mso-line-height-rule: exactly; letter-spacing: 0; font-size: 1.5rem; font-style: normal; font-weight: bold; line-height: 2.25rem !important; color: #333333">{$mail_resources["msg_top"]}</h3>
-                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem; letter-spacing: 0; color: #333333; font-size: 1.125rem">​</p>
+                <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem; letter-spacing: 0; color: #333333; font-size: 1.125rem"></p>
                 <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem; letter-spacing: 0; color: #333333; font-size: 1.125rem">{$mail_resources["msg_bot"]}</p>
             </td>
         </tr>
@@ -142,10 +142,9 @@ if ($mail_resources["cta_url"]) {
                           mso-border-alt: 0.625rem solid {$mail_resources["cta_col"]};
                           mso-hide: all;
                           padding-left: 0.3rem;
-                          padding-right: 0.3rem;"
-                      >{$mail_resources["cta_txt"]}</a>
+                          padding-right: 0.3rem;">{$mail_resources["cta_txt"]}</a>
                   </span>
-                  <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem; text-align: center">{$mail_resources["cta_msg"]} <a href="{$mail_resources["cta_url"]}" target="_blank">{$mail_resources["cta_bak_txt"]}</a>.​</p>
+                  <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem; text-align: center">{$mail_resources["cta_msg"]} <a href="{$mail_resources["cta_url"]}" target="_blank">{$mail_resources["cta_bak_txt"]}</a>.</p>
                   <p></p>
   HTML;
 }
@@ -163,7 +162,7 @@ $mail_html .= /* HTML */ <<<HTML
         </td>
         <td align="left" style="padding: 0; margin: 0; font-size: 1rem !important">
             <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.5rem; letter-spacing: 0; color: #333333; font-size: 1rem">
-                ​<span>{$mail_resources["aid_msg"]}</span>
+                <span>{$mail_resources["aid_msg"]}</span>
                 <a target="_blank" href="{$mail_resources["aid_url"]}" style="mso-line-height-rule: exactly; text-decoration: underline; color: #123456; font-size: 1rem !important">{$mail_resources["aid_txt"]}</a>.
             </p>
         </td>
@@ -171,7 +170,7 @@ $mail_html .= /* HTML */ <<<HTML
     <table cellpadding="0" cellspacing="0" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: separate; border-spacing: 0rem; background-color: #ffffff; width: 37.5rem; padding: 1.25rem 2.5rem">
         <td align="left" style="padding: 0; margin: 0; padding: 0">
             <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.125rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem">{$mail_resources["brand_top"]}</p>
-            <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.125rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem"><strong>{$mail_resources["brand_bot"]}​</strong></p>
+            <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.125rem !important; letter-spacing: 0; color: #333333; font-size: 0.75rem"><strong>{$mail_resources["brand_bot"]}</strong></p>
         </td>
         <td align="center" style="padding: 0 1.25rem; margin: 0; font-size: 0rem">
             <a target="_blank" href="{$mail_resources["brand_url"]}" style="mso-line-height-rule: exactly; text-decoration: underline; color: #333333; font-size: 0.875rem">
