@@ -1,5 +1,5 @@
 <?php
-/*
+/* 
  * File: _init.php
  * Desc: Initializes the application-specific SPA environment, paths, storage, and runtime state. (MUST be included in every file)
  * Deps: none
@@ -126,11 +126,17 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
      * Provides namespaced SPA storage with an in-memory fallback.
      * Legacy unprefixed keys are migrated on first read.
      * @namespace byStorage
+     * @param {Window} global Global.
+     * @returns {void}
      */
     (function(global) {
       global.byStorage = global.byStorage || {};
       const byStorage = global.byStorage;
-      byStorage.memory = {};
+      if (byStorage?.initialized) return;
+
+      byStorage.memory = Object.create(null);
+      // Only failed keys override disk; a successful explicit mutation restores persistent authority.
+      const localKeys = new Set();
       byStorage.base = new URL(<?= json_encode(rtrim($HOME_PATH, "/") . "/", $json_script_flags) ?>, document.baseURI).pathname.replace(/\/$/, "") || "/";
       byStorage.prefix = `bySPA:${byStorage.base}:`;
 
@@ -140,14 +146,14 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
        * @returns {string|null}
        */
       byStorage.getItem = function(key) {
+        if (localKeys.has(key)) return byStorage.memory[key];
         try {
           const value = global.localStorage.getItem(byStorage.prefix + key);
           if (value !== null) return value;
           // Migrate legacy unprefixed storage.
           const legacy = global.localStorage.getItem(key);
           if (legacy !== null) {
-            byStorage.memory[key] = legacy;
-            global.localStorage.setItem(byStorage.prefix + key, legacy);
+            byStorage.setItem(key, legacy);
             // Remove the old key only after storage confirms the migrated value.
             if (global.localStorage.getItem(byStorage.prefix + key) === legacy)
               try {
@@ -168,8 +174,10 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
        */
       byStorage.setItem = function(key, value) {
         byStorage.memory[key] = String(value);
+        localKeys.add(key);
         try {
           global.localStorage.setItem(byStorage.prefix + key, value);
+          localKeys.delete(key);
         } catch (_) {}
       };
 
@@ -179,11 +187,17 @@ if (isset($setLocalStorage) && $setLocalStorage) { ?>
        * @returns {void}
        */
       byStorage.removeItem = function(key) {
-        delete byStorage.memory[key];
+        // Null is a deletion tombstone; failed removal must not resurrect disk data.
+        byStorage.memory[key] = null;
+        localKeys.add(key);
         try {
           global.localStorage.removeItem(byStorage.prefix + key);
+          global.localStorage.removeItem(key);
+          localKeys.delete(key);
         } catch (_) {}
       };
+
+      byStorage.initialized = true;
     })(typeof window !== "undefined" ? window : this);
   </script>
   <script>

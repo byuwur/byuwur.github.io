@@ -1,5 +1,9 @@
 "use strict";
 $(() => {
+  /**
+   * Bind the legacy menu toggle and synchronize its expanded page classes.
+   * @returns {void}
+   */
   const burgerMenu = function () {
     $(".js-mnm-nav-toggle").on("click", function (event) {
       event.preventDefault();
@@ -14,6 +18,10 @@ $(() => {
     });
   };
   // Click outside of offcanvass
+  /**
+   * Close the legacy mobile menu when a click occurs outside it.
+   * @returns {void}
+   */
   const mobileMenuOutsideClick = function () {
     $(document).click(function (e) {
       const container = $("#mnm-aside, .js-mnm-nav-toggle");
@@ -31,6 +39,10 @@ $(() => {
       }
     });
   };
+  /**
+   * Initialize the legacy hero slider after its plugin and markup are available.
+   * @returns {void}
+   */
   const sliderMain = function () {
     if ($(".mnm-slider").length)
       tns({
