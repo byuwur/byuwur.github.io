@@ -208,6 +208,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
     twitchEmbedScript.src = "https://embed.twitch.tv/embed/v1.js";
     twitchEmbedScript.onload = twitchEmbedOnLoad;
     document.head.appendChild(twitchEmbedScript); */
+    console.log("PHP_VERSION=", <?= js_encode(PHP_VERSION) ?>, "PHP_OS=", <?= js_encode(PHP_OS) ?>, "PHP_SAPI=", <?= js_encode(PHP_SAPI) ?>);
   });
 </script>
 <?php
