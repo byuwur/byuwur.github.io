@@ -18,8 +18,8 @@ foreach ($LANG["skills.sections"] as $skillSection)
     $typedSkills[] = render_skill_icon($skill) . " " . escape_html($skill["text"]);
 ?>
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.css" ?>" />
-<script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
 <link id="themesheet" rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.{$APP_THEME}.css" ?>" />
+<script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
 <!-- BODY -->
 <div class="app-container">
   <div class="social-icons light-links">
