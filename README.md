@@ -21,3 +21,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and [CODING_STANDARDS.md
 ## License
 
 MIT (c) Andrés Trujillo [Mateus] byUwUr
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/byuwur/byuwur.github.io)
