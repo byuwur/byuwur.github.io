@@ -73,8 +73,7 @@ $cta_txt = validate_value($_POST["cta_txt"] ?? null);
 if ($cta_txt !== null)
   $mail_resources["cta_txt"] = $cta_txt;
 // Create the email based on the template
-$mail_html = // HTML
- <<<HTML
+$mail_html = /* HTML */ <<<HTML
 
 <!DOCTYPE html>
 <html>
@@ -120,8 +119,7 @@ $mail_html = // HTML
             <td valign="center" align="left" style="padding: 1.25rem 0; margin: 0">
 HTML;
 if ($mail_resources["cta_url"]) {
-  $mail_html .= // HTML
-   <<<HTML
+  $mail_html .= /* HTML */ <<<HTML
   <span style="border-style: solid; border-color: #fafafa; background: {$mail_resources["cta_col"]}; border-width: 0.2rem; display: block; border-radius: 0.2rem; width: auto; mso-hide: all; mso-border-alt: 0.625rem">
                       <a href="{$mail_resources["cta_url"]}" target="_blank" style="
                           mso-style-priority: 100 !important;
@@ -150,8 +148,7 @@ if ($mail_resources["cta_url"]) {
                   <p></p>
   HTML;
 }
-$mail_html .= // HTML
- <<<HTML
+$mail_html .= /* HTML */ <<<HTML
 <p style="margin: 0; mso-line-height-rule: exactly; font-family: Imprima, Arial, sans-serif; line-height: 1.7rem !important; letter-spacing: 0; color: #333333; font-size: 1rem">{$mail_resources["foot_top"]}<br>{$mail_resources["foot_bot"]}</p>
             </td>
         </tr>
