@@ -62,9 +62,9 @@ foreach ($LANG["skills.sections"] as $skillSection)
     <div class="row w-100 light-links">
       <?php foreach ($LANG["portfolio.items"] as $portfolio) { ?>
         <div class="col-md-6 col-xl-4 p-0 text-darker-shadow text-white <?= escape_html($portfolio["class"]) ?>">
-          <div class="project has-background-cover p-4" style="background-image: url(<?= escape_html("{$HOME_PATH}/{$portfolio["image"]}") ?>);">
+          <div class="project has-background-cover p-3" style="background-image: url(<?= escape_html("{$HOME_PATH}/{$portfolio["image"]}") ?>);">
             <h3 class="project-title"><?= escape_html($portfolio["title"]) ?></h3>
-            <div class="project-description p-4">
+            <div class="project-description p-3">
               <div class="flex-grow-1 d-flex flex-column">
                 <h3><?= escape_html($portfolio["title"]) ?></h3>
                 <i><small><?= escape_html($portfolio["ent"]) ?> (<?= escape_html($portfolio["year"]) ?>)</small></i>
@@ -77,7 +77,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
                         class="<?= escape_html($tech["icon"]) ?> ps-0"></i><?= escape_html($tech["text"]) ?></span>
                   <?php } ?>
                 </div>
-                <div class="mt-3">
+                <div class="mt-2">
                   <?php foreach ($portfolio["link"] as $link) { ?>
                     <a href="<?= escape_html($link["link"]) ?>" target="_blank"><i
                         class="<?= escape_html($link["icon"]) ?>"></i><span><?= escape_html($link["text"]) ?></span></a>

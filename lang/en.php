@@ -66,9 +66,93 @@ $LANG = [
   // --- Portfolio ---
   "portfolio.items" => [
     [
+      "title" => "STREAM.HTML",
+      "ent" => "byUwUr",
+      "desc" => "Configurable OBS overlays.",
+      "year" => "2024",
+      "image" => "/img/work/stream.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-globe",
+          "text" => "Try it",
+          // "link" => "https://byuwur.github.io/stream.html/",
+          "link" => "https://stream.byuwur.co/",
+        ],
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/stream.html",
+        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "SPA.php",
+      "ent" => "byUwUr",
+      "desc" => "PHP-powered Single Page Applications.",
+      "year" => "2024",
+      "image" => "/img/work/spa.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-globe",
+          "text" => "Try it",
+          // "link" => "https://byuwur.co/spa.php/",
+          "link" => "https://spa.byuwur.co/",
+        ],
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/spa.php",
+        ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "SPA.js",
+          "link" => "https://github.com/byuwur/spa.js",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-php",
+          "text" => "PHP",
+        ],
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
       "title" => "Stream.FGC",
       "ent" => "byUwUr",
-      "desc" => "Local-first tournament control for fighting-game streams, unifying brackets, players, scores, assets and OBS overlays in one portable desktop app.",
+      "desc" => "Tournament control for OBS.",
       "year" => "2026",
       "image" => "/img/work/fgc.jpg",
       "class" => "web",
@@ -104,34 +188,25 @@ $LANG = [
       ],
     ],
     [
-      "title" => "SPA.php",
+      "title" => "Easy MD editor",
       "ent" => "byUwUr",
-      "desc" => "Lightweight PHP framework for building SPAs with routing, AJAX navigation, authentication and deployment support without a heavy frontend toolchain.",
-      "year" => "2024",
-      "image" => "/img/work/spa.jpg",
+      "desc" => "Visual Markdown editing.",
+      "year" => "2026",
+      "image" => "/img/work/md-edit.jpg",
       "class" => "web",
       "link" => [
         [
           "icon" => "fas fa-globe",
           "text" => "Try it",
-          "link" => "https://byuwur.co/spa.php/",
+          "link" => "https://mdedit.byuwur.co/",
         ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/spa.php",
-        ],
-        [
-          "icon" => "fab fa-js",
-          "text" => "SPA.js",
-          "link" => "https://github.com/byuwur/spa.js",
+          "link" => "https://github.com/byuwur/easy-md-editor",
         ],
       ],
       "tech" => [
-        [
-          "icon" => "fab fa-php",
-          "text" => "PHP",
-        ],
         [
           "icon" => "fab fa-js",
           "text" => "JS",
@@ -147,9 +222,157 @@ $LANG = [
       ],
     ],
     [
-      "title" => "SDA Espinal - grading platform",
-      "ent" => "Liceo Moderno Semillas de Alegría - Espinal",
-      "desc" => "Designed, built and maintain a PHP grading platform that automates reports and administration for ~400 students annually.",
+      "title" => "Easy MD viewer",
+      "ent" => "byUwUr",
+      "desc" => "Embeddable Markdown renderer.",
+      "year" => "2026",
+      "image" => "/img/work/md.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-globe",
+          "text" => "Try it",
+          // "link" => "https://byuwur.github.io/easy-md-viewer",
+          "link" => "https://md.byuwur.co/",
+        ],
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-md-viewer",
+        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy JSON viewer",
+      "ent" => "byUwUr",
+      "desc" => "Readable, collapsible JSON.",
+      "year" => "2024",
+      "image" => "/img/work/json.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-globe",
+          "text" => "Try it",
+          // "link" => "https://byuwur.github.io/easy-json-viewer",
+          "link" => "https://json.byuwur.co/",
+        ],
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-json-viewer",
+        ],
+        // [
+        //   "icon" => "fab fa-youtube",
+        //   "text" => "YouTube",
+        //   "link" => "",
+        // ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy CSV viewer",
+      "ent" => "byUwUr",
+      "desc" => "Searchable CSV and TSV tables.",
+      "year" => "2026",
+      "image" => "/img/work/csv.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-globe",
+          "text" => "Try it",
+          "link" => "https://csv.byuwur.co/",
+        ],
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-csv-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "Easy CODE viewer",
+      "ent" => "byUwUr",
+      "desc" => "Syntax-highlighted code.",
+      "year" => "2026",
+      "image" => "/img/work/code.jpg",
+      "class" => "web",
+      "link" => [
+        [
+          "icon" => "fas fa-globe",
+          "text" => "Try it",
+          "link" => "https://code.byuwur.co/",
+        ],
+        [
+          "icon" => "fas fa-code",
+          "text" => "GitHub",
+          "link" => "https://github.com/byuwur/easy-code-viewer",
+        ],
+      ],
+      "tech" => [
+        [
+          "icon" => "fab fa-js",
+          "text" => "JS",
+        ],
+        [
+          "icon" => "fab fa-css3",
+          "text" => "CSS",
+        ],
+        [
+          "icon" => "fab fa-html5",
+          "text" => "HTML",
+        ],
+      ],
+    ],
+    [
+      "title" => "SDA Espinal",
+      "ent" => "Semillas de Alegría",
+      "desc" => "Student grades and reports.",
       "year" => "Since 2019",
       "image" => "/img/work/sda.jpg",
       "class" => "web android",
@@ -189,123 +412,6 @@ $LANG = [
         [
           "icon" => "fab fa-aws",
           "text" => "AWS",
-        ],
-      ],
-    ],
-    [
-      "title" => "Easy MD viewer",
-      "ent" => "byUwUr",
-      "desc" => "Dependency-free Markdown renderer built for safe, embeddable document rendering directly in the browser.",
-      "year" => "2026",
-      "image" => "/img/work/md.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-globe",
-          "text" => "Try it",
-          "link" => "https://byuwur.github.io/easy-md-viewer",
-        ],
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-md-viewer",
-        ],
-        // [
-        //   "icon" => "fab fa-youtube",
-        //   "text" => "YouTube",
-        //   "link" => "",
-        // ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "Easy JSON viewer",
-      "ent" => "byUwUr",
-      "desc" => "Lightweight JSON viewer designed to keep large structured data readable and responsive through progressive rendering.",
-      "year" => "2024",
-      "image" => "/img/work/json.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-globe",
-          "text" => "Try it",
-          "link" => "https://byuwur.github.io/easy-json-viewer",
-        ],
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-json-viewer",
-        ],
-        // [
-        //   "icon" => "fab fa-youtube",
-        //   "text" => "YouTube",
-        //   "link" => "",
-        // ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
-        ],
-      ],
-    ],
-    [
-      "title" => "STREAM.HTML",
-      "ent" => "byUwUr",
-      "desc" => "Reusable browser-source toolkit for operating configurable OBS scenes, overlays, popups and stream graphics from standard web technologies.",
-      "year" => "2024",
-      "image" => "/img/work/stream.jpg",
-      "class" => "web",
-      "link" => [
-        [
-          "icon" => "fas fa-globe",
-          "text" => "Try it",
-          "link" => "https://byuwur.github.io/stream.html/",
-        ],
-        [
-          "icon" => "fas fa-code",
-          "text" => "GitHub",
-          "link" => "https://github.com/byuwur/stream.html",
-        ],
-        // [
-        //   "icon" => "fab fa-youtube",
-        //   "text" => "YouTube",
-        //   "link" => "",
-        // ],
-      ],
-      "tech" => [
-        [
-          "icon" => "fab fa-js",
-          "text" => "JS",
-        ],
-        [
-          "icon" => "fab fa-css3",
-          "text" => "CSS",
-        ],
-        [
-          "icon" => "fab fa-html5",
-          "text" => "HTML",
         ],
       ],
     ],
