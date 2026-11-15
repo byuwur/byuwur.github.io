@@ -15,6 +15,7 @@ require_once "{$TO_HOME}/_common.php";
 ?>
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v1.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v1.js" ?>" defer></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" defer></script>
 <!-- BODY -->
 <div class="app-container">
   <div class="container">
@@ -142,7 +143,6 @@ require_once "{$TO_HOME}/_common.php";
             <a href="<?= escape_html($LANG["contact.meeting.url"]) ?>" target="_blank" rel="noopener noreferrer"><?= escape_html($LANG["contact.meeting.cta"]) ?></a>
           </div>
         </div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <div class="col-12 mt-3 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
       </div>
     </section>

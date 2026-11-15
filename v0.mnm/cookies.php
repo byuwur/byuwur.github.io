@@ -1,4 +1,3 @@
-<style></style>
 <h1>Cookies Policy</h1>
 <p>Last updated: November 10, 2019</p>
 <p>mnm.team ("us", "we", or "our") uses cookies on the https://byuwur.co website (the "Service"). By using the Service, you consent to the use of cookies.</p>

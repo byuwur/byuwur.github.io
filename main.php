@@ -20,6 +20,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.css" ?>" />
 <link id="themesheet" rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.{$APP_THEME}.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" defer></script>
 <!-- BODY -->
 <div class="app-container">
   <div class="social-icons light-links">
@@ -188,7 +189,6 @@ foreach ($LANG["skills.sections"] as $skillSection)
         </div>
       </div>
       <!-- div id="twitch" class="col-12"></div -->
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
       <div class="col-12 mt-3 calendly-inline-widget" data-url="https://calendly.com/atrujillomateus/30min?embed_domain=byuwur.co" style="height:50rem;"></div>
     </div>
   </section>
