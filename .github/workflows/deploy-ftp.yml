@@ -31,7 +31,7 @@ jobs:
           echo 'DB_NAME=""' >> .env
           echo 'DB_PORT=""' >> .env
           echo 'APP_ENV="DEV"' >> .env
-          echo 'APP_VERSION="1.0"' >> .env
+          echo 'APP_VERSION="12.3"' >> .env
           echo 'SENDGRID_API_KEY="${{ secrets.SENDGRID_API_KEY }}"' >> .env
           echo 'RECAPTCHA_KEY="${{ secrets.RECAPTCHA_KEY }}"' >> .env
 
