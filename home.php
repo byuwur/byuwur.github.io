@@ -91,6 +91,16 @@ require_once "{$TO_HOME}/_common.php";
   <!--script src="https://www.google.com/recaptcha/api.js" defer></script-->
   <!-- Add your overrides below -->
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/_common.css" ?>" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5WV2SHS9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+  </script>
 </head>
 
 <body>
