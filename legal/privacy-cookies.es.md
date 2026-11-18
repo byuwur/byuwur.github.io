@@ -1,12 +1,12 @@
 # byUwUr · Privacidad y cookies
 
-**Borrador sin publicar.** Antes de la publicación, falta confirmar quién aloja el sitio, quién puede consultar los registros de acceso del servidor y cuánto tiempo se conservan. La fecha de entrada en vigor se indicará al publicar el aviso por primera vez.
+**Borrador sin publicar.** Queda pendiente la revisión de los datos de contacto del responsable. La fecha de entrada en vigor se indicará al publicar el aviso por primera vez.
 
 ## Responsable y funcionamiento
 
 Andrés Trujillo Mateus, creador independiente en Colombia, opera este sitio como byUwUr. Este aviso cubre byuwur.co y www.byuwur.co. Contacto de privacidad: [mateus@byuwur.co](mailto:mateus@byuwur.co).
 
-El portafolio presenta proyectos, hojas de vida descargables y enlaces de contacto. Los enlaces de correo abren tu aplicación. El portafolio no tiene un formulario de contacto activo. Para agendar una reunión puedes usar el calendario integrado de Calendly. Al cargarlo, tu navegador se conecta a Calendly, que recibe los datos que introduzcas al reservar. El alojamiento recibe solicitudes y direcciones de red para entregar las páginas. El aviso usa MD.view a través de jsDelivr.
+El portafolio presenta proyectos, hojas de vida descargables y enlaces de contacto. Los enlaces de correo abren tu aplicación. El portafolio no tiene un formulario de contacto activo. Para agendar una reunión puedes usar el calendario integrado de Calendly. Al cargarlo, tu navegador se conecta a Calendly, que recibe los datos que introduzcas al reservar. El alojamiento recibe solicitudes y direcciones de red para entregar las páginas. No puedo consultar los registros de acceso de los visitantes en el panel de alojamiento y desconozco su plazo de conservación. El aviso usa MD.view a través de jsDelivr.
 
 ## Analítica opcional
 

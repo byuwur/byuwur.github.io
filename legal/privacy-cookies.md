@@ -1,6 +1,6 @@
 # byUwUr · Privacy & Cookies
 
-**Unpublished draft.** Before publication, confirm who hosts the site, who can access its server logs and how long those logs are kept. Record the effective date when the notice is first published.
+**Unpublished draft.** The operator’s contact details are under review. The effective date will be recorded at first publication.
 
 ## Who operates this site
 
@@ -8,7 +8,7 @@ Andrés Trujillo Mateus operates this site as byUwUr, an individual creator in C
 
 ## Using byUwUr
 
-The portfolio presents projects, a résumé and contact links. Opening a résumé requests a PDF. Email links open your mail application. The portfolio has no active contact form. To schedule a meeting, use the embedded Calendly calendar. Your browser connects to Calendly when the calendar loads, and Calendly receives the details you enter when booking. The web host receives browser requests and network addresses to deliver the site. The privacy page loads MD.view through jsDelivr.
+The portfolio presents projects, a résumé and contact links. Opening a résumé requests a PDF. Email links open your mail application. The portfolio has no active contact form. To schedule a meeting, use the embedded Calendly calendar. Your browser connects to Calendly when the calendar loads, and Calendly receives the details you enter when booking. The web host receives browser requests and network addresses to deliver the site. I can’t view visitor access logs in the hosting dashboard, and I don’t know how long the host keeps them. The privacy page loads MD.view through jsDelivr.
 
 ## Optional Google Analytics
 
