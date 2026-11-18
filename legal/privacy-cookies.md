@@ -1,14 +1,14 @@
 # byUwUr · Privacy & Cookies
 
-**Working draft for owner review. No effective date has been set.** Before publication, the operator must confirm the public controller details, hosting and access-log practices, request handling and effective date. The contact form and mailbox disclosures also need review.
+**Unpublished draft.** Before publication, confirm who hosts the site, who can access its server logs and how long those logs are kept. Record the effective date when the notice is first published.
 
 ## Who operates this site
 
-byUwUr is an individual creator based in Colombia. This notice covers byuwur.co and www.byuwur.co. Contact [mateus@byuwur.co](mailto:mateus@byuwur.co) for privacy matters.
+Andrés Trujillo Mateus operates this site as byUwUr, an individual creator in Colombia. This notice covers byuwur.co and www.byuwur.co. Contact [mateus@byuwur.co](mailto:mateus@byuwur.co) for privacy matters.
 
 ## Using byUwUr
 
-The portfolio presents projects, a résumé and contact links. Opening a résumé requests a PDF. Email links open your mail application. The page embeds Calendly for scheduling. Loading the calendar contacts Calendly, and details entered there go to its booking service. The repository also includes a contact endpoint that accepts a name, email, subject, message and optional phone number, checks Google reCAPTCHA and sends mail via SendGrid. Access and retention for submitted messages require confirmation before publication. The web host receives browser requests and network addresses to deliver the site. The privacy page loads MD.view through jsDelivr.
+The portfolio presents projects, a résumé and contact links. Opening a résumé requests a PDF. Email links open your mail application. The portfolio has no active contact form. To schedule a meeting, use the embedded Calendly calendar. Your browser connects to Calendly when the calendar loads, and Calendly receives the details you enter when booking. The web host receives browser requests and network addresses to deliver the site. The privacy page loads MD.view through jsDelivr.
 
 ## Optional Google Analytics
 
@@ -23,11 +23,8 @@ Google receives connection information including IP address, pseudonymous browse
 | `byuwur_analytics` | Choice, notice version and choice time | byuwur.co and its subdomains, path / | 180 days from choice |
 | `_ga` | Distinguishes consented browsers | byuwur.co, path / | Google's default of two years, refreshed with activity, subject to browser limits |
 | `_ga_YBLWBPK758` | Maintains GA4 session state | byuwur.co, path / | Same Google default and browser limits |
-| `_GRECAPTCHA` when the widget runs | reCAPTCHA risk analysis | Google's reCAPTCHA domain | Provider-controlled expiry; confirm the deployed cookie before publication |
 | `lang`, `theme`, `SidebarExpand` | Interface language, appearance and sidebar state | Host, path / | One year |
 | `bySPA:<base>:` keys including `APP_LANG`, `APP_THEME`, `URI`, `URL`, `ROUTES`, `_GET`, `_POST` | Framework settings and routing context, which can include request parameters | Origin-local storage scoped by application path | Until replaced or cleared |
-
-[Google reCAPTCHA cookie information](https://developers.google.com/recaptcha/docs/faq#does-recaptcha-use-cookies)
 
 The GA4 property keeps detailed event and user data for 14 months. Reset on new activity is off. Aggregated reports have a separate retention policy. Removing cookies changes this browser's identifiers and does not erase previously collected reports.
 
@@ -39,4 +36,4 @@ Open **Privacy settings** and choose **Reject analytics** to withdraw. This stop
 
 ## Access, correction and complaints
 
-Email the project name, the information concerned and what you would like the operator to do. Avoid sending documents, tokens or other sensitive material unless needed to handle your request. Under Colombia's Law 1581 you can consult, update or correct your data, ask about its use, request proof of authorization and, where applicable, request deletion or revoke authorization. Articles 14 and 15 govern consultations and claims. After using that procedure, you may bring a complaint to the Superintendencia de Industria y Comercio. [Law 1581 of 2012, articles 8 and 14–16](https://normograma.dian.gov.co/dian/compilacion/docs/ley_1581_2012.htm).
+Email the project name, the information concerned and what you would like the operator to do. Avoid sending documents, tokens or other sensitive material unless needed to handle your request. Under Colombia's Law 1581 you can consult, update or correct your data, ask about its use, request proof of authorization and, where applicable, request deletion or revoke authorization. I respond as soon as possible. Under articles 14 and 15, the usual maximum is 10 working days for a request to see your data and 15 working days for a claim. If an extension is needed, I will explain why and give you a response date within the limits set by law. After using that procedure, you may bring a complaint to the Superintendencia de Industria y Comercio. [Law 1581 of 2012, articles 8 and 14–16](https://normograma.dian.gov.co/dian/compilacion/docs/ley_1581_2012.htm).
