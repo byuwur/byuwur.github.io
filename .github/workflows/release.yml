@@ -28,10 +28,17 @@ jobs:
         with:
           fetch-depth: 0
           path: byuwur.github.io
+          submodules: true
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Render the portfolio shell and home content
+        run: |
+          php home.php > "$RUNNER_TEMP/portfolio-home.html"
+          php main.php > "$RUNNER_TEMP/portfolio-main.html"
+          grep -Fq 'id="spa-content"' "$RUNNER_TEMP/portfolio-home.html"
+          grep -Fq 'id="resume"' "$RUNNER_TEMP/portfolio-main.html"
       - name: Validate exact tag, main ancestry, and release ownership
         if: github.event_name == 'push' && github.ref_type == 'tag'
         env:
