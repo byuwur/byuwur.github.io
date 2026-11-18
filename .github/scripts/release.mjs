@@ -75,11 +75,11 @@ export function releaseNotes(manifest) {
     if (config.kind === "easy" || config.kind === "spa") {
       for (const asset of manifest.assets.filter((asset) => asset.file.endsWith(".zip"))) {
         const label = asset.file.endsWith(".regular.zip") ? "Regular ZIP" : "Minified ZIP";
-        lines.push(`- [${label}](${repository}/releases/download/${encodeURIComponent(manifest.tag)}/${asset.file})`);
+        lines.push(`- [${label}](${repository}/releases/latest/download/${asset.file})`);
       }
     } else {
       lines.push("| File | Contents |", "| --- | --- |");
-      for (const asset of manifest.assets.filter((asset) => asset.file.endsWith(".zip"))) lines.push(`| [${asset.file}](${repository}/releases/download/${encodeURIComponent(manifest.tag)}/${asset.file}) | ${asset.description} |`);
+      for (const asset of manifest.assets.filter((asset) => asset.file.endsWith(".zip"))) lines.push(`| [${asset.file}](${repository}/releases/latest/download/${asset.file}) | ${asset.description} |`);
     }
     lines.push("", "`manifest.json` records the source commit, package inventory, and minification providers. `SHA256SUMS` verifies every release file.");
   }
