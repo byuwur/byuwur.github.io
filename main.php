@@ -20,7 +20,7 @@ foreach ($LANG["skills.sections"] as $skillSection)
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.css" ?>" />
 <link id="themesheet" rel="stylesheet" href="<?= "{$HOME_PATH}/css/v2.{$APP_THEME}.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v2.js" ?>" defer></script>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- BODY -->
 <div class="app-container">
   <div class="social-icons light-links">
