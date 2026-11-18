@@ -105,8 +105,8 @@ require_once "{$TO_HOME}/_common.php";
         <?= escape_html($LANG["seo.work"]) ?>
         <a href="https://github.com/byuwur/stream.fgc">Stream.FGC</a>,
         <a href="https://github.com/byuwur/spa.php">SPA.php</a>,
-        <a href="https://github.com/byuwur/easy-md-viewer">Easy MD Viewer</a>,
-        <a href="https://github.com/byuwur/easy-json-viewer">Easy JSON Viewer</a> and
+        <a href="https://github.com/byuwur/md.view">MD.view</a>,
+        <a href="https://github.com/byuwur/json.view">JSON.view</a> and
         <a href="https://github.com/byuwur/stream.html">Stream.HTML</a>.
       </p>
       <p>

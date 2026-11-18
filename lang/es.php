@@ -188,7 +188,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy MD editor",
+      "title" => "MD.edit",
       "ent" => "byUwUr",
       "desc" => "Editor visual de Markdown.",
       "year" => "2026",
@@ -203,7 +203,7 @@ $LANG = [
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-md-editor",
+          "link" => "https://github.com/byuwur/md.edit",
         ],
       ],
       "tech" => [
@@ -222,7 +222,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy MD viewer",
+      "title" => "MD.view",
       "ent" => "byUwUr",
       "desc" => "Visor de Markdown integrable.",
       "year" => "2026",
@@ -232,13 +232,13 @@ $LANG = [
         [
           "icon" => "fas fa-globe",
           "text" => "Pruébalo",
-          // "link" => "https://byuwur.github.io/easy-md-viewer",
+          // "link" => "https://byuwur.github.io/md.view",
           "link" => "https://md.byuwur.co/",
         ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-md-viewer",
+          "link" => "https://github.com/byuwur/md.view",
         ],
         // [
         //   "icon" => "fab fa-youtube",
@@ -262,7 +262,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy JSON viewer",
+      "title" => "JSON.view",
       "ent" => "byUwUr",
       "desc" => "JSON legible con nodos plegables.",
       "year" => "2024",
@@ -272,13 +272,13 @@ $LANG = [
         [
           "icon" => "fas fa-globe",
           "text" => "Pruébalo",
-          // "link" => "https://byuwur.github.io/easy-json-viewer",
+          // "link" => "https://byuwur.github.io/json.view",
           "link" => "https://json.byuwur.co/",
         ],
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-json-viewer",
+          "link" => "https://github.com/byuwur/json.view",
         ],
         // [
         //   "icon" => "fab fa-youtube",
@@ -302,7 +302,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy CSV viewer",
+      "title" => "CSV.view",
       "ent" => "byUwUr",
       "desc" => "Tablas CSV y TSV con búsqueda.",
       "year" => "2026",
@@ -317,7 +317,7 @@ $LANG = [
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-csv-viewer",
+          "link" => "https://github.com/byuwur/csv.view",
         ],
       ],
       "tech" => [
@@ -336,7 +336,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Easy CODE viewer",
+      "title" => "CODE.view",
       "ent" => "byUwUr",
       "desc" => "Código con sintaxis resaltada.",
       "year" => "2026",
@@ -351,7 +351,7 @@ $LANG = [
         [
           "icon" => "fas fa-code",
           "text" => "GitHub",
-          "link" => "https://github.com/byuwur/easy-code-viewer",
+          "link" => "https://github.com/byuwur/code.view",
         ],
       ],
       "tech" => [
