@@ -546,7 +546,7 @@ require_once "{$TO_HOME}/_common.php";
             ...(field ? {
               field_id: field
                 .replace(/([a-z0-9])([A-Z])/g, "$1_$2")
-                .replace(/-/g, "_")
+                .replaceAll("-", "_")
                 .toLowerCase()
             } : {})
           });
