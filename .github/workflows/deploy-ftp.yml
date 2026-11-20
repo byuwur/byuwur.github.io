@@ -34,6 +34,7 @@ jobs:
           echo 'APP_VERSION="12.4"' >> .env
           echo 'SENDGRID_API_KEY="${{ secrets.SENDGRID_API_KEY }}"' >> .env
           echo 'RECAPTCHA_KEY="${{ secrets.RECAPTCHA_KEY }}"' >> .env
+          echo 'GOOGLE_ANALYTICS_4_API_KEY="${{ secrets.GOOGLE_ANALYTICS_4_API_KEY }}"' >> .env
 
       - name: FTP Upload
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0

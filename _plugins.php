@@ -10,7 +10,7 @@
 require_once "{$TO_HOME}/spa.php/_plugins.php";
 // Just call the SPA.php file and add whatever you need below
 $dotenv = Dotenv\Dotenv::createImmutable($TO_HOME);
-$dotenv->load();
+$dotenv->safeLoad();
 /*
 Now, if you're certain that everything is installed, you can just do:
     require_once "{$TO_HOME}/vendor/autoload.php";

@@ -97,7 +97,14 @@ if (($_SERVER['QUERY_STRING'] ?? '') !== '' || count($parts) !== 3
   exit;
 }
 
-$secret = getenv('BYUWUR_GA4_API_SECRET');
+$TO_HOME = __DIR__;
+try {
+  require_once "{$TO_HOME}/_plugins.php";
+} catch (Dotenv\Exception\ExceptionInterface) {
+  http_response_code(503);
+  exit;
+}
+$secret = $_ENV['GOOGLE_ANALYTICS_4_API_KEY'] ?? $_SERVER['GOOGLE_ANALYTICS_4_API_KEY'] ?? getenv('GOOGLE_ANALYTICS_4_API_KEY');
 if (!$secret || !function_exists('curl_init')) {
   http_response_code(503);
   exit;
