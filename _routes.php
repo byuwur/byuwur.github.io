@@ -33,6 +33,7 @@ $ROUTE_LOGOUT = "logout";
 $ROUTE_DEMO = "demo";
 $ROUTE_COOKIES = "cookies";
 $ROUTE_PRIVACY = "privacy";
+$ROUTE_SITEMAP = "sitemap";
 
 // Default components to include on each route
 $COMPONENTS_EMPTY = ["COMPONENT" => ["nav#spa-nav" => "", "footer#spa-foot" => ""]];
@@ -65,6 +66,7 @@ $routes = [
   "/{$ROUTE_ES}" => ["URI" => "", "GET" => ["lang" => "es"], ...$V2_COMPONENTS],
   "/{$ROUTE_EN}" => ["URI" => "", "GET" => ["lang" => "en"], ...$V2_COMPONENTS],
   "/{$ROUTE_JA}" => ["URI" => "", "GET" => ["lang" => "ja"], ...$V2_COMPONENTS],
+  "/{$ROUTE_SITEMAP}" => ["URI" => "/sitemap.php", ...$COMPONENTS_EMPTY],
   "/{$ROUTE_V1}" => ["URI" => "/main.old.php", ...$V1_COMPONENTS],
   "/{$ROUTE_V1}/{$ROUTE_ES}" => ["URI" => "/main.old.php", "GET" => ["lang" => "es"], ...$V1_COMPONENTS],
   "/{$ROUTE_V1}/{$ROUTE_EN}" => ["URI" => "/main.old.php", "GET" => ["lang" => "en"], ...$V1_COMPONENTS],

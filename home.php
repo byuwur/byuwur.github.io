@@ -33,20 +33,15 @@ require_once "{$TO_HOME}/spa.php/_router.php";
 // Include common functions and initializations that may require "/_routes.php"
 require_once "{$TO_HOME}/_common.php";
 // === PHP ===
-
-$isPolicyRoute = isset($policyNotices[$uri]);
-$canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
 ?>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="referrer" content="origin" />
-  <title><?= escape_html($LANG["title.default"]) ?></title>
-  <meta property="og:title" content="<?= escape_html($LANG["title.default"]) ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://byuwur.co/img/logo.png" />
   <meta property="og:image:alt" content="[Mateus] byUwUr" />
-  <meta property="og:url" content="<?= escape_html($canonicalURL) ?>" />
+  <meta property="og:url" content="https://byuwur.co<?= escape_html($uri) ?>" />
   <meta property="og:site_name" content="[Mateus] byUwUr" />
   <meta property="og:description" content="<?= escape_html($LANG["meta.description"]) ?>" />
   <meta property="og:locale" content="<?= escape_html($LANG["meta.locale"]) ?>" />
@@ -58,15 +53,25 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@byUwUr" />
-  <meta name="twitter:title" content="<?= escape_html($LANG["title.default"]) ?>" />
   <meta name="twitter:description" content="<?= escape_html($LANG["meta.description"]) ?>" />
   <meta name="twitter:image" content="https://byuwur.co/img/logo.png" />
   <meta name="twitter:image:alt" content="[Mateus] byUwUr" />
-  <link rel="canonical" href="<?= escape_html($canonicalURL) ?>" />
-  <link rel="alternate" hreflang="es" href="https://byuwur.co/es" />
-  <link rel="alternate" hreflang="en" href="https://byuwur.co/en" />
-  <link rel="alternate" hreflang="ja" href="https://byuwur.co/ja" />
-  <link rel="alternate" hreflang="x-default" href="https://byuwur.co/" />
+  <link rel="canonical" href="https://byuwur.co<?= escape_html($uri) ?>" />
+  <script>
+    document.addEventListener("bySPA:load", ({
+      detail
+    }) => {
+      const url = "https://byuwur.co" + detail.path;
+      document.querySelector('link[rel="canonical"]').href = url;
+      document.querySelector('meta[property="og:url"]').content = url;
+    });
+  </script>
+  <?php if (in_array($uri, ["/", "/en", "/es", "/ja"], true)): ?>
+    <link rel="alternate" hreflang="es" href="https://byuwur.co/es" />
+    <link rel="alternate" hreflang="en" href="https://byuwur.co/en" />
+    <link rel="alternate" hreflang="ja" href="https://byuwur.co/ja" />
+    <link rel="alternate" hreflang="x-default" href="https://byuwur.co/" />
+  <?php endif; ?>
   <meta name="theme-color" content="#300" />
   <link rel="icon" id="page-icon" type="image/png" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
   <link rel="apple-touch-icon" href="<?= "{$HOME_PATH}/img/favicon.png" ?>" />
@@ -111,13 +116,13 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
   </template>
   <!-- byuwur/spa.php | Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr -->
   <noscript>
-    <?php if ($isPolicyRoute): ?>
+    <?php if ($uri === "/{$ROUTE_SITEMAP}" || isset($policyNotices[$uri])): ?>
       <style>
         #spa-loader {
           display: none;
         }
       </style>
-      <?php require "{$TO_HOME}/privacy.php"; ?>
+      <?php require $TO_HOME . $routes[$uri]["URI"]; ?>
     <?php else: ?>
       <section id="noscript-intro" aria-labelledby="noscript-title">
         <h1 id="noscript-title"><?= escape_html($LANG["profile.full_name"]) ?> | @byUwUr</h1>
@@ -149,7 +154,7 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
   <nav id="spa-nav"></nav>
   <main id="spa-content"></main>
   <footer id="spa-foot"></footer>
-  <p class="site-policy-links small text-center my-2"><a href="<?= escape_html($HOME_PATH) ?>/privacy"><?= escape_html(["es" => "Privacidad", "ja" => "プライバシー"][$APP_LANG] ?? "Privacy") ?></a> · <a href="<?= escape_html($HOME_PATH) ?>/cookies"><?= $APP_LANG === "ja" ? "Cookie" : "Cookies" ?></a></p>
+  <p class="site-policy-links small text-center my-2"><a href="<?= escape_html($HOME_PATH) ?>/privacy"><?= escape_html(["es" => "Privacidad", "ja" => "プライバシー"][$APP_LANG] ?? "Privacy") ?></a> · <a href="<?= escape_html($HOME_PATH) ?>/cookies"><?= $APP_LANG === "ja" ? "Cookie" : "Cookies" ?></a> | <a href="<?= escape_html($HOME_PATH) ?>/sitemap"><?= escape_html($LANG["sitemap.title"]) ?></a></p>
   <div class="side-video"></div>
   <!--div id="particles"></div-->
   <div id="spa-loader">
@@ -537,14 +542,12 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
             surface: page.surface,
             resource: page.resource,
             action,
-            ...(field ?
-              {
-                field_id: field
-                  .replace(/([a-z0-9])([A-Z])/g, "$1_$2")
-                  .replace(/-/g, "_")
-                  .toLowerCase()
-              } :
-              {})
+            ...(field ? {
+              field_id: field
+                .replace(/([a-z0-9])([A-Z])/g, "$1_$2")
+                .replace(/-/g, "_")
+                .toLowerCase()
+            } : {})
           });
         };
       }

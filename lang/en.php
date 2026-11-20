@@ -48,7 +48,7 @@ $LANG = [
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>load basic HTML</a> | -->
-    <a href='https://byuwur.co/privacy'>Privacy</a> · <a href='https://byuwur.co/cookies'>Cookies</a>
+    <a href='/privacy'>Privacy</a> · <a href='/cookies'>Cookies</a> | <a href='/sitemap'>Sitemap</a>
     <br>Made with <i class='fas fa-heart'></i> by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "Go back",
   "action.ok" => "Understood",
@@ -942,6 +942,9 @@ $LANG = [
   "seo.contact" => "Contact and professional profiles:",
   "seo.javascript" => "JavaScript is disabled. You can still explore my selected engineering work and contact me using the links above.",
   // ===== POLICY NOTICES =====
+  "sitemap.title" => "Sitemap",
+  "sitemap.links" => "Browse links",
+  "sitemap.unavailable" => "The sitemap is currently unavailable.",
   "policy.read_source" => "Read source",
   "policy.settings" => "Privacy settings",
   "policy.unavailable" => "This notice is currently unavailable.",

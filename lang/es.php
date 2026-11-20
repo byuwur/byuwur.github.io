@@ -48,7 +48,7 @@ $LANG = [
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>cargar HTML básico</a> | -->
-    <a href='https://byuwur.co/privacy'>Privacidad</a> · <a href='https://byuwur.co/cookies'>Cookies</a>
+    <a href='/privacy'>Privacidad</a> · <a href='/cookies'>Cookies</a> | <a href='/sitemap'>Mapa de sitio</a>
     <br>Hecho con <i class='fas fa-heart'></i> por <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "Volver",
   "action.ok" => "Entendido",
@@ -942,6 +942,9 @@ $LANG = [
   "seo.contact" => "Contacto y perfiles profesionales:",
   "seo.javascript" => "JavaScript está desactivado. Aún puedes explorar mi trabajo de ingeniería seleccionado y contactarme mediante los enlaces anteriores.",
   // ===== AVISOS LEGALES =====
+  "sitemap.title" => "Mapa de sitio",
+  "sitemap.links" => "Explorar enlaces",
+  "sitemap.unavailable" => "El mapa del sitio no está disponible en este momento.",
   "policy.read_source" => "Leer el original",
   "policy.settings" => "Configuración de privacidad",
   "policy.unavailable" => "Este aviso no está disponible en este momento.",

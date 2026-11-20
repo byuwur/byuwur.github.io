@@ -48,7 +48,7 @@ $LANG = [
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>基本HTMLを読み込む</a> | -->
-    <a href='https://byuwur.co/privacy'>プライバシー</a> · <a href='https://byuwur.co/cookies'>Cookie</a>
+    <a href='/privacy'>プライバシー</a> · <a href='/cookies'>Cookie</a> | <a href='/sitemap'>サイトマップ</a>
     <br><i class='fas fa-heart'></i> で制作 <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "戻る",
   "action.ok" => "了解",
@@ -942,6 +942,9 @@ $LANG = [
   "seo.contact" => "連絡先とプロフィール：",
   "seo.javascript" => "JavaScriptが無効です。上記のリンクから主な開発実績を確認し、連絡することができます。",
   // ===== 法的なお知らせ =====
+  "sitemap.title" => "サイトマップ",
+  "sitemap.links" => "リンク一覧",
+  "sitemap.unavailable" => "現在、サイトマップを表示できません。",
   "policy.read_source" => "原文を読む",
   "policy.settings" => "プライバシー設定",
   "policy.unavailable" => "現在、この方針を表示できません。",
