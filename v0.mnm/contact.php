@@ -32,7 +32,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
       <div class="row">
         <div class="col-md-12">
           <span class="heading-meta"><?= $_read ?></span>
-          <h2 class="mnm-heading animate-box" data-animate-effect="fadeInLeft" style="margin-bottom: 2em;"><?= $_chead ?></h2>
+          <h2 class="mnm-heading animate-box" data-animate-effect="fadeInLeft" style="margin-bottom: 2rem;"><?= $_chead ?></h2>
         </div>
       </div>
       <div class="row">

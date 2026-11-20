@@ -1,6 +1,6 @@
 /* ===== PAGE LAYOUT ===== */
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 body {
   font-size: 1rem;
@@ -17,10 +17,10 @@ a {
 }
 /* ===== SIDE NAVIGATION ===== */
 #mnm-aside {
-  padding-top: 2em;
+  padding-top: 2rem;
   padding-bottom: 3.125rem;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   width: 20%;
   position: fixed;
   bottom: 0;
@@ -47,21 +47,21 @@ a {
     -ms-transform: translateX(-18rem);
     -o-transform: translateX(-18rem);
     transform: translateX(-18rem);
-    padding-top: 4em;
+    padding-top: 4rem;
   }
 }
 #mnm-aside #mnm-logo {
   text-align: right;
   font-weight: 425;
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   display: block;
   width: 100%;
 }
 @media (max-width: 50rem) {
   #mnm-aside #mnm-logo {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 }
 #mnm-aside #mnm-main-menu ul {
@@ -71,20 +71,20 @@ a {
 }
 @media (max-width: 50rem) {
   #mnm-aside #mnm-main-menu ul {
-    margin: 0 0 2em 0;
+    margin: 0 0 2rem 0;
   }
 }
 #mnm-aside #mnm-main-menu ul li {
   margin: 0 0 0.625rem 0;
   padding: 0;
   list-style: none;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-weight: 525;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
 }
 #mnm-aside #mnm-main-menu ul li a {
-  color: rgba(255, 255, 255, 0.4);
+  color: #fff6;
   text-decoration: none;
   position: relative;
   padding: 0.625rem 0;
@@ -97,7 +97,7 @@ a {
   content: "";
   position: absolute;
   height: 0.0625rem;
-  bottom: 0.45rem;
+  bottom: 0.5rem;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -138,19 +138,19 @@ a {
 }
 #mnm-aside .mnm-footer {
   position: relative;
-  top: 2em;
+  top: 2rem;
   bottom: 1.25rem;
-  right: 1em;
-  left: 1em;
-  font-size: 1em;
+  right: 1rem;
+  left: 1rem;
+  font-size: 1rem;
   text-align: right;
   font-weight: 425;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff9;
   padding: 0 1.25rem;
 }
 @media (max-width: 50rem) {
   #mnm-aside .mnm-footer {
-    margin-top: 2em;
+    margin-top: 2rem;
     position: relative;
     bottom: 0;
   }
@@ -169,15 +169,15 @@ a {
   list-style: none;
 }
 #mnm-aside .mnm-footer ul li a {
-  color: rgba(255, 255, 255, 0.7);
-  padding: 0.3rem;
+  color: #fffa;
+  padding: 0.25rem;
 }
 #mnm-aside .mnm-footer ul li a:hover,
 #mnm-aside .mnm-footer ul li a:active,
 #mnm-aside .mnm-footer ul li a:focus {
   text-decoration: none;
   outline: none;
-  color: #08a6bf;
+  color: #0ab;
 }
 #mnm-main {
   width: 80%;
@@ -201,11 +201,11 @@ a {
   min-height: 31.25rem;
   width: 100%;
   float: left;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   clear: both;
 }
 #mnm-hero .btn {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 #mnm-hero .btn.btn-primary {
   padding: 0.875rem 1.875rem !important;
@@ -239,7 +239,7 @@ a {
   margin-bottom: 0.625rem;
 }
 #mnm-hero .flexslider .flex-control-nav li a {
-  background: rgba(0, 0, 0, 0.2);
+  background: #0003;
   -webkit-box-shadow: none;
   box-shadow: none;
   width: 0.75rem;
@@ -249,7 +249,7 @@ a {
 #mnm-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   background: transparent;
-  border: 0.2rem solid #08a6bf;
+  border: 0.25rem solid #0ab;
 }
 #mnm-hero .flexslider .flex-direction-nav {
   display: none;
@@ -264,13 +264,13 @@ a {
 #mnm-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
-  min-height: 43.75rem;
-  padding: 2em;
+  min-height: 44rem;
+  padding: 2rem;
   position: relative;
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner .desc {
   position: absolute;
-  bottom: 0.95rem;
+  bottom: 1rem;
   left: 0;
   padding: 1.875rem;
   background: #000;
@@ -289,47 +289,47 @@ a {
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin-bottom: 0.625rem;
-  font-size: 2.75em;
-  line-height: 1.3;
+  font-size: 2.75rem;
+  line-height: 1.25;
   font-weight: 325;
 }
 @media (max-width: 50rem) {
   #mnm-hero .flexslider .slider-text > .slider-text-inner h1 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
   }
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner h2 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
   font-weight: 325;
   font-family: "Quicksand", Arial, sans-serif;
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner h2 a {
-  color: rgba(8, 166, 191, 0.8);
-  border-bottom: 0.0625rem solid rgba(8, 166, 191, 0.7);
+  color: #0abc;
+  border-bottom: 0.0625rem solid #0aba;
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner .heading-section {
-  font-size: 3.125em;
+  font-size: 3.125rem;
 }
 @media (max-width: 50rem) {
   #mnm-hero .flexslider .slider-text > .slider-text-inner .heading-section {
-    font-size: 1.875em;
+    font-size: 1.875rem;
   }
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner s .mnm-lead {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   color: #000;
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner p {
   margin-bottom: 0;
 }
 #mnm-hero .flexslider .slider-text > .slider-text-inner .btn {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   color: #fff;
-  padding: 0.625rem 0.95rem !important;
+  padding: 0.625rem 1rem !important;
   border: none;
   font-weight: 425;
 }
@@ -375,9 +375,9 @@ body.offcanvas .mnm-nav-toggle {
 .mnm-about,
 .mnm-services,
 .mnm-contact {
-  padding-top: 2em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   clear: both;
   width: 100%;
   display: block;
@@ -388,9 +388,9 @@ body.offcanvas .mnm-nav-toggle {
   .mnm-about,
   .mnm-services,
   .mnm-contact {
-    padding-top: 5em;
-    padding-bottom: 1em;
-    padding-left: 0em;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
   }
 }
 .hidden {
@@ -406,65 +406,65 @@ body.offcanvas .mnm-nav-toggle {
   position: relative;
 }
 .mnm-heading {
-  font-size: 1.125em;
-  margin-bottom: 0.5em;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
   font-weight: 525;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  line-height: 1.8;
+  letter-spacing: 0.25rem;
+  line-height: 1.75;
 }
 .mnm-heading span {
   display: block;
 }
 @media (max-width: 50rem) {
   .mnm-heading {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 .heading-meta {
-  margin-bottom: 0.95rem;
+  margin-bottom: 1rem;
   display: block;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  color: #666666;
+  color: #666;
   font-weight: 525;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25rem;
 }
 .about-img {
   width: 75%;
-  height: 34.375rem;
+  height: 34rem;
 }
 .about-img .about-img-2 {
   width: 100% !important;
-  height: 24.375rem;
+  height: 24rem;
   position: absolute;
   top: 5rem;
   right: -6.25rem;
   width: 80%;
-  -webkit-box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
-  -moz-box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
-  box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
+  -webkit-box-shadow: 0 2.25rem 4.875rem -1.5rem #fff5;
+  -moz-box-shadow: 0 2.25rem 4.875rem -1.5rem #fff5;
+  box-shadow: 0 2.25rem 4.875rem -1.5rem #fff5;
 }
 /* ===== ABOUT AND SERVICES ===== */
 .about-desc {
   background: #222;
-  border: 0.3rem solid #333;
+  border: 0.25rem solid #333;
 }
 .about-desc h3 {
-  font-size: 1.375em;
+  font-size: 1.375rem;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25rem;
   font-weight: 525;
 }
 .fancy-collapse-panel .panel-default > .panel-heading {
   padding: 0;
 }
 .panel-heading a {
-  padding: 0.95rem 1.55rem;
+  padding: 1rem 1.5rem;
   display: block;
   width: 100%;
   font-weight: 425;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   background-color: #fff;
@@ -489,7 +489,7 @@ body.offcanvas .mnm-nav-toggle {
   content: "\f0aa";
   position: absolute;
   right: 1.25rem;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 425;
   top: 50%;
   line-height: 1;
@@ -499,26 +499,26 @@ body.offcanvas .mnm-nav-toggle {
   content: "\f0ab";
 }
 .panel-heading a.collapsed {
-  background: #050505;
-  border: 0.0625rem solid #191919 !important;
-  color: #cccccc;
+  background: #000;
+  border: 0.0625rem solid #111 !important;
+  color: #ccc;
 }
 .panel-body {
-  border: 0.2rem solid #111;
-  padding: 1.5em;
-  margin-top: 0.3rem;
+  border: 0.25rem solid #111;
+  padding: 1.5rem;
+  margin-top: 0.25rem;
   background: #111;
-  border: 0.125rem solid #191919 !important;
+  border: 0.125rem solid #111 !important;
 }
 .blog-entry {
   width: 100%;
   float: left;
   background: #000;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 @media (max-width: 50rem) {
   .blog-entry {
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
   }
 }
 .blog-entry .blog-img {
@@ -527,7 +527,7 @@ body.offcanvas .mnm-nav-toggle {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin-bottom: 1.55rem;
+  margin-bottom: 1.5rem;
 }
 .blog-entry .blog-img img {
   position: relative;
@@ -542,8 +542,8 @@ body.offcanvas .mnm-nav-toggle {
   transition: 0.3s;
 }
 .blog-entry .desc h3 {
-  font-size: 1em;
-  margin-bottom: 1.55rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   line-height: auto;
   font-weight: 525;
   text-transform: uppercase;
@@ -556,14 +556,14 @@ body.offcanvas .mnm-nav-toggle {
 .blog-entry .desc span {
   display: block;
   margin-bottom: 1.25rem;
-  font-size: 0.875em;
-  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 0.875rem;
+  color: #fff8 !important;
 }
 .blog-entry .desc span small i {
-  color: #666666;
+  color: #666;
 }
 .blog-entry .desc .lead {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   color: #fff;
@@ -576,13 +576,13 @@ body.offcanvas .mnm-nav-toggle {
   transform: scale(1.1);
 }
 .overlap {
-  margin-top: 5em;
+  margin-top: 5rem;
   background: #000;
   padding: 1.875rem;
 }
 @media (max-width: 50rem) {
   .overlap {
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 }
 /* ===== PROJECTS ===== */
@@ -591,7 +591,7 @@ body.offcanvas .mnm-nav-toggle {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 28.125rem;
+  height: 28rem;
   width: 100%;
   display: block;
   margin-bottom: 1.875rem;
@@ -603,7 +603,7 @@ body.offcanvas .mnm-nav-toggle {
   left: 0;
   width: 100%;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: #000e;
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -613,7 +613,7 @@ body.offcanvas .mnm-nav-toggle {
   padding: 1.25rem;
   display: block;
   position: relative;
-  height: 28.125rem;
+  height: 28rem;
 }
 .project .desc .con .icon {
   position: absolute;
@@ -623,11 +623,11 @@ body.offcanvas .mnm-nav-toggle {
 }
 .project .desc .con .icon span {
   display: inline;
-  padding-right: 0.3rem;
+  padding-right: 0.25rem;
 }
 .project .desc .con .icon span a {
   color: #fff;
-  padding: 0.3rem;
+  padding: 0.25rem;
   background: #aaa;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -635,9 +635,9 @@ body.offcanvas .mnm-nav-toggle {
   border-radius: 0.25rem;
 }
 .project .desc .con .icon i {
-  font-size: 1em;
+  font-size: 1rem;
   color: #fff;
-  padding: 0.3rem;
+  padding: 0.25rem;
   background: #555;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -646,7 +646,7 @@ body.offcanvas .mnm-nav-toggle {
 }
 .project .desc h3 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 525;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
@@ -669,9 +669,9 @@ body.offcanvas .mnm-nav-toggle {
     transform 0.3s,
     opacity 0.3s,
     -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, -0.95rem, 0);
-  transform: translate3d(0, -0.95rem, 0);
-  margin-bottom: 0.95rem;
+  -webkit-transform: translate3d(0, -1rem, 0);
+  transform: translate3d(0, -1rem, 0);
+  margin-bottom: 1rem;
 }
 .project .desc h3 a {
   color: #ddd;
@@ -679,7 +679,7 @@ body.offcanvas .mnm-nav-toggle {
 .project .desc span {
   display: block;
   color: #eee;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   -webkit-transition:
     -webkit-transform 0.3s,
     opacity 0.3s;
@@ -699,8 +699,8 @@ body.offcanvas .mnm-nav-toggle {
     transform 0.3s,
     opacity 0.3s,
     -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, 0.95rem, 0);
-  transform: translate3d(0, 0.95rem, 0);
+  -webkit-transform: translate3d(0, 1rem, 0);
+  transform: translate3d(0, 1rem, 0);
 }
 .project .desc span a {
   color: #ddd;
@@ -708,7 +708,7 @@ body.offcanvas .mnm-nav-toggle {
 @media (max-width: 50rem) {
   .project .desc {
     opacity: 1;
-    background: rgba(0, 0, 0, 0.75);
+    background: #000b;
   }
   .project .desc h3 {
     font-style: 1.75rem;
@@ -723,7 +723,7 @@ body.offcanvas .mnm-nav-toggle {
 }
 .project:hover .desc {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.75);
+  background: #000b;
 }
 .project:hover .desc h3 {
   -webkit-transform: translate3d(0, 0, 0);
@@ -734,42 +734,42 @@ body.offcanvas .mnm-nav-toggle {
   transform: translate3d(0, 0, 0);
 }
 .project-desc h2 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 525;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
-  margin-bottom: 0.95rem;
+  margin-bottom: 1rem;
 }
 .project-desc span {
   display: block;
-  color: #999999;
-  font-size: 0.875em;
-  margin-bottom: 0.95rem;
+  color: #999;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
 }
 .project-desc span a {
-  color: #999999;
+  color: #999;
 }
 .project-desc .icon span {
   display: inline;
-  padding-right: 0.3rem;
+  padding-right: 0.25rem;
 }
 .project-desc .btn-download {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 425;
   text-decoration: underline;
 }
 .mnm-lead {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 /* ===== CONTACT ===== */
 #get-in-touch {
-  padding: 2em 2em 1em 2em;
+  padding: 2rem 2rem 1rem 2rem;
 }
 #get-in-touch .btn-learn {
-  padding: 0.95rem 1.875rem !important;
-  font-size: 0.875em;
+  padding: 1rem 1.875rem !important;
+  font-size: 0.875rem;
   -webkit-border-radius: 1.875rem;
   -moz-border-radius: 1.875rem;
   -ms-border-radius: 1.875rem;
@@ -790,17 +790,17 @@ body.offcanvas .mnm-nav-toggle {
   display: inline;
 }
 .mnm-social li a {
-  font-size: 1.375em;
+  font-size: 1.375rem;
   color: #fff;
   padding: 0.625rem;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   display: inline;
-  -webkit-border-radius: 0.45rem;
-  -moz-border-radius: 0.45rem;
-  -ms-border-radius: 0.45rem;
-  border-radius: 0.45rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 @media (max-width: 50rem) {
   .mnm-social li a {
@@ -808,18 +808,18 @@ body.offcanvas .mnm-nav-toggle {
   }
 }
 .mnm-social li a:hover {
-  color: #08a6bf;
+  color: #0ab;
 }
 .mnm-social li a:hover,
 .mnm-social li a:active,
 .mnm-social li a:focus {
   outline: none;
   text-decoration: none;
-  color: #08a6bf;
+  color: #0ab;
 }
 #map {
   width: 100%;
-  height: 43.75rem;
+  height: 44rem;
 }
 @media (max-width: 50rem) {
   #map {
@@ -827,14 +827,14 @@ body.offcanvas .mnm-nav-toggle {
   }
 }
 .mnm-more-contact {
-  background: #050505;
+  background: #000;
   border: 0.0625rem solid red;
 }
 .mnm-feature {
   text-align: left;
   width: 100%;
   float: left;
-  margin-bottom: 1.55rem;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 .mnm-feature .mnm-icon {
@@ -845,7 +845,7 @@ body.offcanvas .mnm-nav-toggle {
   height: 6.25rem;
   display: table;
   text-align: center;
-  background: rgba(255, 255, 255, 0.03);
+  background: #fff1;
   -webkit-border-radius: 0.125rem;
   -moz-border-radius: 0.125rem;
   -ms-border-radius: 0.125rem;
@@ -854,13 +854,13 @@ body.offcanvas .mnm-nav-toggle {
 .mnm-feature .mnm-icon i {
   display: table-cell;
   vertical-align: middle;
-  color: #08a6bf;
-  font-size: 2.5em;
+  color: #0ab;
+  font-size: 2.5rem;
   height: 6.25rem;
 }
 @media (max-width: 75rem) {
   .mnm-feature .mnm-icon i {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 }
 .mnm-feature .mnm-text {
@@ -875,21 +875,21 @@ body.offcanvas .mnm-nav-toggle {
 .mnm-feature .mnm-text h3 {
   font-weight: 525;
   margin-bottom: 1.25rem;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.875em;
-  letter-spacing: 0.2rem;
+  color: #fffa;
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
 }
 .mnm-feature.mnm-feature-sm .mnm-text {
-  margin-top: 0.3rem;
+  margin-top: 0.25rem;
 }
 .mnm-feature.mnm-feature-sm .mnm-icon i {
-  color: #08a6bf;
-  font-size: 2.5em;
+  color: #0ab;
+  font-size: 2.5rem;
 }
 @media (max-width: 75rem) {
   .mnm-feature.mnm-feature-sm .mnm-icon i {
-    font-size: 1.75em;
+    font-size: 1.75rem;
   }
 }
 .mnm-feature-lg .mnm-text h2,
@@ -900,9 +900,9 @@ body.offcanvas .mnm-nav-toggle {
 .mnm-feature-lg .mnm-text h3 {
   font-weight: 525;
   margin-bottom: 1.25rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875em;
-  letter-spacing: 0.2em;
+  color: #fffc;
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
 }
 .pagination {
@@ -929,31 +929,31 @@ body.offcanvas .mnm-nav-toggle {
 }
 .pagination li a:hover,
 .pagination li a:focus {
-  background: #08a6bf;
+  background: #0ab;
   color: #000;
-  border: 0.0625rem solid #08a6bf;
+  border: 0.0625rem solid #0ab;
 }
 @media (max-width: 50rem) {
   .pagination li a {
-    padding: 0.45rem 0.95rem;
+    padding: 0.5rem 1rem;
   }
 }
 .pagination li.active a {
-  background: #08a6bf;
-  border: 0.0625rem solid #08a6bf !important;
+  background: #0ab;
+  border: 0.0625rem solid #0ab !important;
 }
 .pagination li.active a:hover,
 .pagination li.active a:focus {
-  background: #08a6bf;
+  background: #0ab;
   color: #000;
-  border: 0.0625rem solid #08a6bf !important;
+  border: 0.0625rem solid #0ab !important;
 }
 /* ===== BUTTONS ===== */
 .btn {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   font-family: "Quicksand", Arial, sans-serif;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-weight: 425;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
@@ -964,11 +964,11 @@ body.offcanvas .mnm-nav-toggle {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 0.5rem 0.95rem !important;
+  padding: 0.5rem 1rem !important;
 }
 /* ===== BUTTON VARIANTS ===== */
 .btn.btn-sm {
-  padding: 0.25rem 0.95rem !important;
+  padding: 0.25rem 1rem !important;
 }
 .btn.btn-md {
   padding: 0.5rem 1.25rem !important;
@@ -984,119 +984,119 @@ body.offcanvas .mnm-nav-toggle {
   outline: none !important;
 }
 .btn-primary {
-  background: #08a6bf;
+  background: #0ab;
   color: #000;
-  border: 0.125rem solid #08a6bf;
+  border: 0.125rem solid #0ab;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #0791a7 !important;
-  border-color: #0791a7 !important;
+  background: #09a !important;
+  border-color: #09a !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #08a6bf;
-  border: 0.125rem solid #08a6bf;
+  color: #0ab;
+  border: 0.125rem solid #0ab;
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #08a6bf;
+  background: #0ab;
   color: #000;
 }
 .btn-success {
-  background: #a347a3;
+  background: #a4a;
   color: #000;
-  border: 0.125rem solid #a347a3;
+  border: 0.125rem solid #a4a;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active {
-  background: #b351b3 !important;
-  border-color: #b351b3 !important;
+  background: #b5b !important;
+  border-color: #b5b !important;
 }
 .btn-success.btn-outline {
   background: transparent;
-  color: #a347a3;
-  border: 0.125rem solid #a347a3;
+  color: #a4a;
+  border: 0.125rem solid #a4a;
 }
 .btn-success.btn-outline:hover,
 .btn-success.btn-outline:focus,
 .btn-success.btn-outline:active {
-  background: #a347a3;
+  background: #a4a;
   color: #000;
 }
 .btn-info {
-  background: #a43f21;
+  background: #a42;
   color: #000;
-  border: 0.125rem solid #a43f21;
+  border: 0.125rem solid #a42;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active {
-  background: #b94725 !important;
-  border-color: #b94725 !important;
+  background: #b42 !important;
+  border-color: #b42 !important;
 }
 .btn-info.btn-outline {
   background: transparent;
-  color: #a43f21;
-  border: 0.125rem solid #a43f21;
+  color: #a42;
+  border: 0.125rem solid #a42;
 }
 .btn-info.btn-outline:hover,
 .btn-info.btn-outline:focus,
 .btn-info.btn-outline:active {
-  background: #a43f21;
+  background: #a42;
   color: #000;
 }
 .btn-warning {
-  background: #0f52b1;
+  background: #15a;
   color: #000;
-  border: 0.125rem solid #0f52b1;
+  border: 0.125rem solid #15a;
 }
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active {
-  background: #115dc9 !important;
-  border-color: #115dc9 !important;
+  background: #15c !important;
+  border-color: #15c !important;
 }
 .btn-warning.btn-outline {
   background: transparent;
-  color: #0f52b1;
-  border: 0.125rem solid #0f52b1;
+  color: #15a;
+  border: 0.125rem solid #15a;
 }
 .btn-warning.btn-outline:hover,
 .btn-warning.btn-outline:focus,
 .btn-warning.btn-outline:active {
-  background: #0f52b1;
+  background: #15a;
   color: #000;
 }
 .btn-danger {
-  background: #26acb0;
+  background: #2aa;
   color: #000;
-  border: 0.125rem solid #26acb0;
+  border: 0.125rem solid #2aa;
 }
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active {
-  background: #2bc0c5 !important;
-  border-color: #2bc0c5 !important;
+  background: #3bc !important;
+  border-color: #3bc !important;
 }
 .btn-danger.btn-outline {
   background: transparent;
-  color: #26acb0;
-  border: 0.125rem solid #26acb0;
+  color: #2aa;
+  border: 0.125rem solid #2aa;
 }
 .btn-danger.btn-outline:hover,
 .btn-danger.btn-outline:focus,
 .btn-danger.btn-outline:active {
-  background: #26acb0;
+  background: #2aa;
   color: #000;
 }
 .btn-outline {
   background: none;
   border: 0.125rem solid gray;
-  font-size: 1em;
+  font-size: 1rem;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1115,9 +1115,9 @@ body.offcanvas .mnm-nav-toggle {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: transparent;
-  border: 0.125rem solid rgba(255, 255, 255, 0.1);
+  border: 0.125rem solid #fff2;
   height: 3.375rem;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 425;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1129,15 +1129,15 @@ body.offcanvas .mnm-nav-toggle {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-color: #08a6bf;
+  border-color: #0ab;
 }
 #message {
-  height: 8.125rem;
+  height: 8rem;
 }
 /* ===== NAVIGATION TOGGLE ===== */
 .mnm-nav-toggle {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.75);
+  background: #000b;
   text-decoration: none;
 }
 .mnm-nav-toggle.active span::before,
@@ -1195,10 +1195,10 @@ body.offcanvas .mnm-nav-toggle {
   transition: 0.2s;
 }
 .mnm-nav-toggle span::before {
-  top: -0.45rem;
+  top: -0.5rem;
 }
 .mnm-nav-toggle span::after {
-  bottom: -0.45rem;
+  bottom: -0.5rem;
 }
 .mnm-nav-toggle:hover span::before {
   top: -0.625rem;
@@ -1207,7 +1207,7 @@ body.offcanvas .mnm-nav-toggle {
   bottom: -0.625rem;
 }
 .mnm-nav-toggle.active span {
-  color: rgba(0, 0, 0, 0);
+  color: #0000;
 }
 .mnm-nav-toggle.active span::before {
   top: 45%;
@@ -1230,7 +1230,7 @@ body.offcanvas .mnm-nav-toggle {
 .mnm-nav-toggle {
   position: fixed;
   left: -0.25rem;
-  top: 0rem;
+  top: 0;
   z-index: 999;
   cursor: pointer;
   opacity: 1;
@@ -1253,27 +1253,27 @@ body.offcanvas .mnm-nav-toggle {
   }
 }
 .row-bottom-padded-lg {
-  padding-bottom: 4em;
+  padding-bottom: 4rem;
 }
 @media (max-width: 50rem) {
   .row-bottom-padded-lg {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   }
 }
 .row-bottom-padded-md {
-  padding-bottom: 4em;
+  padding-bottom: 4rem;
 }
 @media (max-width: 50rem) {
   .row-bottom-padded-md {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   }
 }
 .row-bottom-padded-sm {
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 @media (max-width: 50rem) {
   .row-bottom-padded-sm {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   }
 }
 .col-padding {
@@ -1291,7 +1291,7 @@ body.offcanvas .mnm-nav-toggle {
   max-height: 100%;
   margin: 0 auto;
   display: block;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 #sticky_item {
   overflow: hidden;

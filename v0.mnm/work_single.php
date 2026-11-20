@@ -49,7 +49,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
             <h1 class="mnm-heading animate-box"><a href="<?= escape_html("/{$ROUTE_MNM}/{$ROUTE_MNM_PROJECTS}") ?>" class="btn btn-primary" style="margin: 0 1.5rem 0.625rem 0;"><?= escape_html($_back) ?></a>
               <font size="6"><?= escape_html($_wtitle) ?></font>
             </h1>
-            <div class="project-desc" style="margin-top: 0.25em;">
+            <div class="project-desc" style="margin-top: 0.25rem;">
               <h2 class="animate-box">
                 <font size="5"><?= escape_html($_wsubtitle) ?></font>
               </h2>
@@ -62,7 +62,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
                 <?= $_wdevs ?>
                 <?= $_winst ?>
               </p>
-              <p><a target="_blank" href="<?= escape_html($_wlink) ?>" class="btn btn-primary animate-box" style="margin-bottom: 2.5em;"><?= escape_html($_wmore) ?></a></p>
+              <p><a target="_blank" href="<?= escape_html($_wlink) ?>" class="btn btn-primary animate-box" style="margin-bottom: 2.5rem;"><?= escape_html($_wmore) ?></a></p>
             </div>
           </div>
         </div>

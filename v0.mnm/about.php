@@ -32,8 +32,8 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
       <div class="row">
         <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
           <div class="about-desc">
-            <span class="heading-meta" style="margin-left: 1.75em; margin-top: 1em;"> <?= $_welcome ?> </span>
-            <h3 style="margin-left: 1em;"> <?= $_hola ?> </h3>
+            <span class="heading-meta" style="margin-left: 1.75rem; margin-top: 1rem;"> <?= $_welcome ?> </span>
+            <h3 style="margin-left: 1rem;"> <?= $_hola ?> </h3>
           </div>
           <p class="panel-body"><?= $_mnm_intro ?></p>
           <div class="fancy-collapse-panel">
@@ -66,9 +66,9 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
           <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
             <div class="project" style="height:99%; background-image: url('<?= "{$HOME_PATH}/img/v0/port_mateus.jpg" ?>');">
               <a href="<?= "/" ?>">
-                <div class="desc" style="padding:1em;">
+                <div class="desc" style="padding:1rem;">
                   <h3>MATEUS' <small>PORTFOLIO</small>
-                  </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(mateus);</small></span>
+                  </h3><span style="position:absolute;bottom:1.5rem;"><small>MNM.team(mateus);</small></span>
                 </div>
               </a>
             </div>
@@ -76,9 +76,9 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
           <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
             <div class="project" style="height:99%; background-image: url('<?= "{$HOME_PATH}/img/v0/port_nestux.jpg" ?>');">
               <a href="<?= "/{$ROUTE_NESTUX}" ?>">
-                <div class="desc" style="padding:1em;">
+                <div class="desc" style="padding:1rem;">
                   <h3>NESTUX' <small>PORTFOLIO</small>
-                  </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(nestux);</small></span>
+                  </h3><span style="position:absolute;bottom:1.5rem;"><small>MNM.team(nestux);</small></span>
                 </div>
               </a>
             </div>
@@ -86,9 +86,9 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
           <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="height:30vh;">
             <div class="project" style="height:99%; background-image: url('<?= "{$HOME_PATH}/img/v0/port_marco.jpg" ?>');">
               <a href="<?= "/{$ROUTE_MARCO}" ?>">
-                <div class="desc" style="padding:1em;">
+                <div class="desc" style="padding:1rem;">
                   <h3>MARCO'<small>s PORTFOLIO</small>
-                  </h3><span style="position:absolute;bottom:1.5em;"><small>MNM.team(marco);</small></span>
+                  </h3><span style="position:absolute;bottom:1.5rem;"><small>MNM.team(marco);</small></span>
                 </div>
               </a>
             </div>
