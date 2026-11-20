@@ -12,7 +12,7 @@ $LANG = [
   "route.v1" => "/{$ROUTE_V1}",
   "route.resume" => "/{$ROUTE_RESUME}",
   "route.mnm" => "/{$ROUTE_MNM}",
-  "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
+  "route.cookies" => "/{$ROUTE_COOKIES}",
   // ===== PAGE SHELL =====
   "title.default" => "Andrés Trujillo [Mateus] @byUwUr = I create useful things",
   "loader.loading" => "<b>Loading standard view...</b><br>Still loading? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Go to basic view</a>",
@@ -48,7 +48,7 @@ $LANG = [
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>load basic HTML</a> | -->
-    <a href='/{$ROUTE_COOKIES}'>cookie policy</a>
+    <a href='https://byuwur.co/privacy'>Privacy</a> · <a href='https://byuwur.co/cookies'>Cookies</a>
     <br>Made with <i class='fas fa-heart'></i> by <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "Go back",
   "action.ok" => "Understood",
@@ -941,6 +941,10 @@ $LANG = [
   "seo.work" => "Selected engineering work:",
   "seo.contact" => "Contact and professional profiles:",
   "seo.javascript" => "JavaScript is disabled. You can still explore my selected engineering work and contact me using the links above.",
+  // ===== POLICY NOTICES =====
+  "policy.read_source" => "Read source",
+  "policy.settings" => "Privacy settings",
+  "policy.unavailable" => "This notice is currently unavailable.",
   // ===== LANGUAGE LABELS =====
   "language.spanish" => "Español",
   "language.english" => "English",

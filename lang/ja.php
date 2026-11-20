@@ -12,7 +12,7 @@ $LANG = [
   "route.v1" => "/{$ROUTE_V1}",
   "route.resume" => "/{$ROUTE_RESUME}",
   "route.mnm" => "/{$ROUTE_MNM}",
-  "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
+  "route.cookies" => "/{$ROUTE_COOKIES}",
   // ===== ページ構造 =====
   "title.default" => "Andrés Trujillo [Mateus] @byUwUr = 私は役に立つものを作る",
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
@@ -48,7 +48,7 @@ $LANG = [
     date("Y") .
     /* HTML */ " Andrés Trujillo [Mateus] byUwUr<br>
     <!-- <a href='/{$ROUTE_V1}'>基本HTMLを読み込む</a> | -->
-    <a href='/{$ROUTE_COOKIES}'>Cookieポリシー</a>
+    <a href='https://byuwur.co/privacy'>プライバシー</a> · <a href='https://byuwur.co/cookies'>Cookie</a>
     <br><i class='fas fa-heart'></i> で制作 <a href='https://byuwur.co' target='_blank'>[Mateus] byUwUr</a>",
   "action.back" => "戻る",
   "action.ok" => "了解",
@@ -941,6 +941,10 @@ $LANG = [
   "seo.work" => "主なエンジニアリング実績：",
   "seo.contact" => "連絡先とプロフィール：",
   "seo.javascript" => "JavaScriptが無効です。上記のリンクから主な開発実績を確認し、連絡することができます。",
+  // ===== 法的なお知らせ =====
+  "policy.read_source" => "原文を読む",
+  "policy.settings" => "プライバシー設定",
+  "policy.unavailable" => "現在、この方針を表示できません。",
   // ===== 言語ラベル =====
   "language.spanish" => "Español",
   "language.english" => "English",

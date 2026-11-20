@@ -32,12 +32,29 @@ $ROUTE_LOGIN = "login";
 $ROUTE_LOGOUT = "logout";
 $ROUTE_DEMO = "demo";
 $ROUTE_COOKIES = "cookies";
+$ROUTE_PRIVACY = "privacy";
 
 // Default components to include on each route
 $COMPONENTS_EMPTY = ["COMPONENT" => ["nav#spa-nav" => "", "footer#spa-foot" => ""]];
 $V0_COMPONENTS = ["COMPONENT" => ["nav#spa-nav" => "/v0.mnm/sidebar.php"]];
 $V1_COMPONENTS = ["COMPONENT" => ["nav#spa-nav" => "/sidebar.old.php"]];
 $V2_COMPONENTS = ["COMPONENT" => ["nav#spa-nav" => "/sidebar.php"]];
+
+// Public policy routes and their notice identifiers.
+$policyNotices = [
+  "/privacy" => "privacy",
+  "/privacy/dotview" => "privacy-view",
+  "/privacy/stream.html" => "privacy-stream-html",
+  "/privacy/stream.fgc" => "privacy-stream-fgc",
+  "/privacy/files.host" => "privacy-files-host",
+  "/cookies" => "cookies",
+  "/cookies/dotview" => "cookies-view",
+  "/cookies/stream.html" => "cookies-stream-html",
+  "/cookies/stream.fgc" => "cookies-stream-fgc",
+  "/cookies/files.host" => "cookies-files-host",
+];
+
+$policySourceRoutes = [];
 
 // Route definitions
 $routes = [
@@ -78,7 +95,22 @@ $routes = [
   "/{$ROUTE_MNM}/{$ROUTE_MNM_LIMONTECH}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "2"], ...$V0_COMPONENTS],
   "/{$ROUTE_MNM}/{$ROUTE_MNM_RENN}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "1"], ...$V0_COMPONENTS],
   "/{$ROUTE_MNM}/{$ROUTE_MNM_REDI}" => ["URI" => "/v0.mnm/work_single.php", "GET" => ["work" => "0"], ...$V0_COMPONENTS],
-  "/{$ROUTE_MNM}/{$ROUTE_COOKIES}" => ["URI" => "/v0.mnm/cookies.php", "GET" => ["work" => "0"], ...$COMPONENTS_EMPTY],
+
+  // Policy pages and their localized Markdown sources
+  ...(static function () use ($policyNotices, $COMPONENTS_EMPTY, &$policySourceRoutes) {
+    foreach ($policyNotices as $path => $notice) {
+      yield $path => ["URI" => "/privacy.php", "GET" => ["notice" => $notice], ...$COMPONENTS_EMPTY];
+    }
+
+    foreach (array_unique($policyNotices) as $notice) {
+      [$kind, $resource] = array_pad(explode("-", $notice, 2), 2, "portfolio");
+      foreach (["en", "es", "ja"] as $language) {
+        $sourceRoute = "/legal/{$notice}/{$language}";
+        $policySourceRoutes[$notice][$language] = $sourceRoute;
+        yield $sourceRoute => ["FILE" => "/legal/{$kind}.{$resource}.{$language}.md"];
+      }
+    }
+  })(),
 ];
 
 // Link aliases | <a> href prints

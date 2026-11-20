@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 /*
  * File: home.php
@@ -7,6 +6,9 @@
  * Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr
  */
 
+?>
+<!DOCTYPE html>
+<?php
 // Sets a flag to enable the inclusion of local storage variables in the HTML output
 $setLocalStorage = true;
 // Include the main variable configuration file
@@ -14,16 +16,16 @@ require_once "./_init.php";
 // Include utility functions
 require_once "{$TO_HOME}/spa.php/_functions.php";
 //require_once "{$TO_HOME}/_functions.php";
-// Include common functions and initializations
-require_once "{$TO_HOME}/spa.php/_common.php";
 // Include composer libraries
 //require_once "{$TO_HOME}/spa.php/_plugins.php";
 //require_once "{$TO_HOME}/_plugins.php";
 // Include database connections
 //require_once "{$TO_HOME}/_config.php";
-// Load the routes configuration
-require_once "{$TO_HOME}/_routes.php";
 // Route the request based on the URI
+require_once "{$TO_HOME}/spa.php/_common.php";
+// Give the router the language already validated by the SPA.
+if (isset($_GET["lang"])) $_GET["lang"] = $APP_LANG;
+require_once "{$TO_HOME}/_routes.php";
 require_once "{$TO_HOME}/spa.php/_router.php";
 // Include auth management
 //require_once "{$TO_HOME}/spa.php/_auth.php";
@@ -32,6 +34,8 @@ require_once "{$TO_HOME}/spa.php/_router.php";
 require_once "{$TO_HOME}/_common.php";
 // === PHP ===
 
+$isPolicyRoute = isset($policyNotices[$uri]);
+$canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
 ?>
 
 <head>
@@ -41,7 +45,7 @@ require_once "{$TO_HOME}/_common.php";
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://byuwur.co/img/logo.png" />
   <meta property="og:image:alt" content="[Mateus] byUwUr" />
-  <meta property="og:url" content="<?= escape_html($LANG["meta.url"]) ?>" />
+  <meta property="og:url" content="<?= escape_html($canonicalURL) ?>" />
   <meta property="og:site_name" content="[Mateus] byUwUr" />
   <meta property="og:description" content="<?= escape_html($LANG["meta.description"]) ?>" />
   <meta property="og:locale" content="<?= escape_html($LANG["meta.locale"]) ?>" />
@@ -57,7 +61,7 @@ require_once "{$TO_HOME}/_common.php";
   <meta name="twitter:description" content="<?= escape_html($LANG["meta.description"]) ?>" />
   <meta name="twitter:image" content="https://byuwur.co/img/logo.png" />
   <meta name="twitter:image:alt" content="[Mateus] byUwUr" />
-  <link rel="canonical" href="<?= escape_html($LANG["meta.url"]) ?>" />
+  <link rel="canonical" href="<?= escape_html($canonicalURL) ?>" />
   <link rel="alternate" hreflang="es" href="https://byuwur.co/es" />
   <link rel="alternate" hreflang="en" href="https://byuwur.co/en" />
   <link rel="alternate" hreflang="ja" href="https://byuwur.co/ja" />
@@ -84,49 +88,47 @@ require_once "{$TO_HOME}/_common.php";
   <!--script src="<?= "{$HOME_PATH}/spa.php/js/dropzone.min.js" ?>" defer></script-->
   <script src="<?= "{$HOME_PATH}/spa.php/js/typed.min.js" ?>" defer></script>
   <!--script src="<?= "{$HOME_PATH}/spa.php/js/particles-ui.min.js" ?>" defer></script-->
-  <script src="<?= "{$HOME_PATH}/spa.php/js/cookies.min.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_functions.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_common.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_spa.js" ?>" defer></script>
   <!--script src="https://www.google.com/recaptcha/api.js" defer></script-->
   <!-- Add your overrides below -->
   <link rel="stylesheet" href="<?= "{$HOME_PATH}/_common.css" ?>" />
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5WV2SHS9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-  </script>
 </head>
 
 <body>
   <!-- byuwur/spa.php | Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr -->
   <noscript>
-    <section id="noscript-intro" aria-labelledby="noscript-title">
-      <h1 id="noscript-title"><?= escape_html($LANG["profile.full_name"]) ?> | @byUwUr</h1>
-      <h2><?= escape_html($LANG["seo.roles"]) ?></h2>
-      <p><?= escape_html($LANG["seo.summary"]) ?></p>
-      <p><?= escape_html($LANG["seo.location"]) ?></p>
-      <p>
-        <?= escape_html($LANG["seo.work"]) ?>
-        <a href="https://github.com/byuwur/stream.fgc">stream.FGC</a>,
-        <a href="https://github.com/byuwur/spa.php">SPA.php</a>,
-        <a href="https://github.com/byuwur/md.view">MD.view</a>,
-        <a href="https://github.com/byuwur/json.view">JSON.view</a> and
-        <a href="https://github.com/byuwur/stream.html">stream.HTML</a>.
-      </p>
-      <p>
-        <?= escape_html($LANG["seo.contact"]) ?>
-        <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>">Email</a> ·
-        <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>">LinkedIn</a> ·
-        <a href="<?= escape_html($LANG["social.github.url"]) ?>">GitHub</a>
-      </p>
-      <p><?= escape_html($LANG["seo.javascript"]) ?></p>
-    </section>
+    <?php if ($isPolicyRoute): ?>
+      <style>
+        #spa-loader {
+          display: none;
+        }
+      </style>
+      <?php require "{$TO_HOME}/privacy.php"; ?>
+    <?php else: ?>
+      <section id="noscript-intro" aria-labelledby="noscript-title">
+        <h1 id="noscript-title"><?= escape_html($LANG["profile.full_name"]) ?> | @byUwUr</h1>
+        <h2><?= escape_html($LANG["seo.roles"]) ?></h2>
+        <p><?= escape_html($LANG["seo.summary"]) ?></p>
+        <p><?= escape_html($LANG["seo.location"]) ?></p>
+        <p>
+          <?= escape_html($LANG["seo.work"]) ?>
+          <a href="https://github.com/byuwur/stream.fgc">stream.FGC</a>,
+          <a href="https://github.com/byuwur/spa.php">SPA.php</a>,
+          <a href="https://github.com/byuwur/md.view">MD.view</a>,
+          <a href="https://github.com/byuwur/json.view">JSON.view</a> and
+          <a href="https://github.com/byuwur/stream.html">stream.HTML</a>.
+        </p>
+        <p>
+          <?= escape_html($LANG["seo.contact"]) ?>
+          <a href="mailto:<?= escape_html($LANG["contact.mail"]) ?>">Email</a> ·
+          <a href="<?= escape_html($LANG["social.linkedin.url"]) ?>">LinkedIn</a> ·
+          <a href="<?= escape_html($LANG["social.github.url"]) ?>">GitHub</a>
+        </p>
+        <p><?= escape_html($LANG["seo.javascript"]) ?></p>
+      </section>
+    <?php endif; ?>
   </noscript>
   <section id="intro" class="d-none">
     <!-- Add a short description to help SEO -->
@@ -135,6 +137,7 @@ require_once "{$TO_HOME}/_common.php";
   <nav id="spa-nav"></nav>
   <main id="spa-content"></main>
   <footer id="spa-foot"></footer>
+  <p class="site-policy-links small text-center my-2"><a href="<?= escape_html($HOME_PATH) ?>/privacy"><?= escape_html(["es" => "Privacidad", "ja" => "プライバシー"][$APP_LANG] ?? "Privacy") ?></a> · <a href="<?= escape_html($HOME_PATH) ?>/cookies"><?= $APP_LANG === "ja" ? "Cookie" : "Cookies" ?></a></p>
   <div class="side-video"></div>
   <!--div id="particles"></div-->
   <div id="spa-loader">

@@ -43,7 +43,7 @@ require_once "{$TO_HOME}/v0.mnm/common.head.php";
       </ul>
     </nav>
     <div class="mnm-footer">
-      <p>&copy;<?= date("Y") ?>, MNM <br><small><small><a href="<?= "/" ?>">byUwUr</a> | <a href="https://colorlib.com" target="_blank">colorlib</a></small></small></p>
+      <p>&copy;<?= date("Y") ?>, MNM <br><small><small><a href="<?= "/" ?>">byUwUr</a> | <a href="https://byuwur.co/privacy"><?= $APP_LANG === "es" ? "Privacidad" : "Privacy" ?></a> | <a href="https://colorlib.com" target="_blank">colorlib</a></small></small></p>
       <ul>
         <li><a href="https://fb.me/mnmdotteam" target="_blank"><i class="fab fa-facebook"></i></a></li>
       </ul>
