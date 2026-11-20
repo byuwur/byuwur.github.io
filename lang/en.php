@@ -66,7 +66,7 @@ $LANG = [
   // ===== PORTFOLIO =====
   "portfolio.items" => [
     [
-      "title" => "STREAM.HTML",
+      "title" => "stream.HTML",
       "ent" => "byUwUr",
       "desc" => "Configurable OBS overlays.",
       "year" => "2024",
@@ -150,7 +150,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Stream.FGC",
+      "title" => "stream.FGC",
       "ent" => "byUwUr",
       "desc" => "Tournament control for OBS.",
       "year" => "2026",

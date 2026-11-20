@@ -66,7 +66,7 @@ $LANG = [
   // ===== ポートフォリオ =====
   "portfolio.items" => [
     [
-      "title" => "STREAM.HTML",
+      "title" => "stream.HTML",
       "ent" => "byUwUr",
       "desc" => "OBS用のシーンとオーバーレイ。",
       "year" => "2024",
@@ -150,7 +150,7 @@ $LANG = [
       ],
     ],
     [
-      "title" => "Stream.FGC",
+      "title" => "stream.FGC",
       "ent" => "byUwUr",
       "desc" => "大会進行とOBS配信をまとめて管理。",
       "year" => "2026",

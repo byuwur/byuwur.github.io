@@ -113,11 +113,11 @@ require_once "{$TO_HOME}/_common.php";
       <p><?= escape_html($LANG["seo.location"]) ?></p>
       <p>
         <?= escape_html($LANG["seo.work"]) ?>
-        <a href="https://github.com/byuwur/stream.fgc">Stream.FGC</a>,
+        <a href="https://github.com/byuwur/stream.fgc">stream.FGC</a>,
         <a href="https://github.com/byuwur/spa.php">SPA.php</a>,
         <a href="https://github.com/byuwur/md.view">MD.view</a>,
         <a href="https://github.com/byuwur/json.view">JSON.view</a> and
-        <a href="https://github.com/byuwur/stream.html">Stream.HTML</a>.
+        <a href="https://github.com/byuwur/stream.html">stream.HTML</a>.
       </p>
       <p>
         <?= escape_html($LANG["seo.contact"]) ?>

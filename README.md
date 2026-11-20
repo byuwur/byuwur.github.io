@@ -27,7 +27,7 @@ php -S 127.0.0.1:8000
 ## Projects
 
 - [spa.php](https://github.com/byuwur/spa.php): PHP SPA framework.
-- [stream.html](https://github.com/byuwur/stream.html): configurable stream overlays and resources.
+- [stream.HTML](https://github.com/byuwur/stream.html): configurable stream overlays and resources.
 - [MD.view](https://github.com/byuwur/md.view): Markdown renderer for HTML pages.
 - [JSON.view](https://github.com/byuwur/json.view): JSON renderer for HTML pages.
 - [easy-http-error](https://github.com/byuwur/easy-http-error): server error pages.
