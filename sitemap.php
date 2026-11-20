@@ -18,7 +18,7 @@ $languages = [
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/byuwur/xml.view@latest/xml.min.css" referrerpolicy="no-referrer" />
 <script src="https://cdn.jsdelivr.net/gh/byuwur/xml.view@latest/xml.min.js" referrerpolicy="no-referrer" defer></script>
 <style>
-  body:has(.sitemap-page) :is(.site-policy-links, .side-video, #bywr-accessibility) {
+  body:has(.sitemap-page) :is(.side-video, #bywr-accessibility) {
     display: none;
   }
 </style>

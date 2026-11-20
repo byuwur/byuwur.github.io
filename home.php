@@ -155,7 +155,6 @@ require_once "{$TO_HOME}/_common.php";
   <nav id="spa-nav"></nav>
   <main id="spa-content"></main>
   <footer id="spa-foot"></footer>
-  <p class="site-policy-links small text-center my-2"><a href="<?= escape_html($HOME_PATH) ?>/privacy"><?= escape_html(["es" => "Privacidad", "ja" => "プライバシー"][$APP_LANG] ?? "Privacy") ?></a> · <a href="<?= escape_html($HOME_PATH) ?>/cookies"><?= $APP_LANG === "ja" ? "Cookie" : "Cookies" ?></a> | <a href="<?= escape_html($HOME_PATH) ?>/sitemap"><?= escape_html($LANG["sitemap.title"]) ?></a></p>
   <div class="side-video"></div>
   <!--div id="particles"></div-->
   <div id="spa-loader">

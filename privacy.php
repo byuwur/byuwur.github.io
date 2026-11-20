@@ -39,7 +39,7 @@ $languages = [
     white-space: normal !important;
     overflow-wrap: anywhere;
   }
-  body:has(.policy-page) :is(.site-policy-links, .side-video, #bywr-accessibility) {
+  body:has(.policy-page) :is(.side-video, #bywr-accessibility) {
     display: none;
   }
 </style>
