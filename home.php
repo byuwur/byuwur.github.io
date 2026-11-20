@@ -116,14 +116,15 @@ require_once "{$TO_HOME}/_common.php";
   </template>
   <!-- byuwur/spa.php | Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr -->
   <noscript>
-    <?php if ($uri === "/{$ROUTE_SITEMAP}" || isset($policyNotices[$uri])): ?>
+    <?php if ($uri === "/{$ROUTE_SITEMAP}" || isset($policyNotices[$uri])) { ?>
       <style>
         #spa-loader {
           display: none;
         }
       </style>
-      <?php require $TO_HOME . $routes[$uri]["URI"]; ?>
-    <?php else: ?>
+    <?php
+      require $TO_HOME . $routes[$uri]["URI"];
+    } else { ?>
       <section id="noscript-intro" aria-labelledby="noscript-title">
         <h1 id="noscript-title"><?= escape_html($LANG["profile.full_name"]) ?> | @byUwUr</h1>
         <h2><?= escape_html($LANG["seo.roles"]) ?></h2>
@@ -145,7 +146,7 @@ require_once "{$TO_HOME}/_common.php";
         </p>
         <p><?= escape_html($LANG["seo.javascript"]) ?></p>
       </section>
-    <?php endif; ?>
+    <?php } ?>
   </noscript>
   <section id="intro" class="d-none">
     <!-- Add a short description to help SEO -->
