@@ -18,7 +18,7 @@ Andrés Trujillo Mateus (byUwUr), Colombia, is responsible for the processing de
 
 This policy covers the public tool catalog and interactive configurators at stream.byuwur.co and controller.byuwur.co, and explains how overlay output and optional uploads handle content.
 
-The privacy banner appears in the hosted configurator. Resource and OBS overlay modes run without the banner or website analytics. The catalog links to privacy settings through its policy pages.
+The privacy banner appears in the hosted catalog and configurators. The basic counter counts catalog visits and which resource links visitors open. When the host supplies a country code, the counter includes it. Resource and OBS overlay modes run without the banner or website analytics.
 
 ## Using this service
 

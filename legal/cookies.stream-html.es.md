@@ -18,7 +18,7 @@ Andrés Trujillo Mateus (byUwUr), Colombia, es el responsable del tratamiento de
 
 Esta política cubre el catálogo y los configuradores en stream.byuwur.co y controller.byuwur.co y explica cómo los overlays y las cargas opcionales tratan tu contenido.
 
-El aviso de privacidad aparece en el configurador alojado. Los recursos y los overlays de OBS funcionan sin el aviso ni la analítica del sitio. Desde el catálogo puedes abrir los ajustes de privacidad mediante los enlaces a las políticas.
+El aviso de privacidad aparece en el catálogo y en los configuradores alojados. El contador básico registra las visitas al catálogo y qué enlaces a recursos se abren. Si el servidor proporciona el código del país, el contador lo incluye. Los recursos y los overlays de OBS funcionan sin el aviso ni la analítica del sitio.
 
 ## Al usar este servicio
 
