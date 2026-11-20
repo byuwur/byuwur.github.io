@@ -11,7 +11,9 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/spa.php/_auth.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
-// --- PHP ---
+// === PHP ===
+
+// ===== PAGE TRANSLATIONS =====
 $LANG = [];
 if (file_exists("{$TO_HOME}/v1.nestux/lang.{$APP_LANG}.php"))
   require_once "{$TO_HOME}/v1.nestux/lang.{$APP_LANG}.php";

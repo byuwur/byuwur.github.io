@@ -4,26 +4,26 @@
  * Usa HTML confiable solo donde la plantilla imprime contenido intencionalmente.
  */
 $LANG = [
-  // --- Misc ---
+  // ===== MISC =====
   "years" => "años",
-  // --- Rutas ---
+  // ===== RUTAS =====
   "route.root" => $ROUTE_ROOT ?? "/",
   "route.home" => $ROUTE_HOME ?? "inicio",
   "route.v1" => "/{$ROUTE_V1}",
   "route.resume" => "/{$ROUTE_RESUME}",
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
-  // --- Estructura de página ---
+  // ===== ESTRUCTURA DE PÁGINA =====
   "title.default" => "Andrés Trujillo [Mateus] @byUwUr = Creo cosas útiles",
   "loader.loading" => "<b>Cargando vista estándar...</b><br>¿Sigue cargando? <a href='/{$ROUTE_V1}' style='color:#0ae;'>Ir a la vista básica</a>",
-  // --- Perfil y hero ---
+  // ===== PERFIL Y HERO =====
   "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
   "profile.full_name" => "@byUwUr",
   "hero.im" => "Soy",
   "hero.and_i" => "Creo cosas útiles",
   "hero.in" => "con ",
   "hero.hello_world" => "Hola, mundo",
-  // --- Navegación ---
+  // ===== NAVEGACIÓN =====
   "nav.about" => "Hola, mundo",
   "nav.resume" => "Résumé",
   "nav.contact" => "Contáctame",
@@ -31,16 +31,16 @@ $LANG = [
   "nav.portfolio" => "Portafolio",
   "nav.experience" => "Experiencia",
   "nav.education" => "Formación",
-  // --- Sidebar ---
+  // ===== SIDEBAR =====
   "sidebar.toggle" => "Toggle sidebar menu",
   "sidebar.menu" => "menu",
   "sidebar.logo_alt" => "[Mateus] byUwUr logo",
-  // --- Controles de idioma y tema ---
+  // ===== CONTROLES DE IDIOMA Y TEMA =====
   "language.selector" => "Idiomas:",
   "theme.selector" => "Temas:",
   "theme.light" => "Claro",
   "theme.dark" => "Oscuro",
-  // --- Vista, footer y acciones ---
+  // ===== VISTA, FOOTER Y ACCIONES =====
   "view.modern" => "cargar HTML no tan básico",
   "view.modern.title" => "cargar HTML no tan básico (v2)",
   "footer.html" =>
@@ -53,7 +53,7 @@ $LANG = [
   "action.back" => "Volver",
   "action.ok" => "Entendido",
   "action.close" => "Cerrar",
-  // --- Acerca de y redes ---
+  // ===== ACERCA DE Y REDES =====
   "about.description" =>
   /* HTML */ "Actualmente trabajo como Líder de equipo en <a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl</a>.<br>
     Ingeniero de Sistemas bilingüe con experiencia desarrollando, desplegando y dando soporte a soluciones web y móviles desde 2018, complementada con experiencia en producción audiovisual desde 2014.<br>
@@ -63,7 +63,7 @@ $LANG = [
   "social.linkedin.url" => "https://linkedin.com/in/atrujillomateus",
   "social.github.url" => "https://github.com/byuwur",
   "social.youtube.url" => "https://youtube.com/byuwur",
-  // --- Portafolio ---
+  // ===== PORTAFOLIO =====
   "portfolio.items" => [
     [
       "title" => "STREAM.HTML",
@@ -775,7 +775,7 @@ $LANG = [
       ],
     ], */
   ],
-  // --- Habilidades ---
+  // ===== HABILIDADES =====
   "skills.sections" => [
     [
       "icon" => "fas fa-server",
@@ -850,7 +850,7 @@ $LANG = [
       ],
     ],
   ],
-  // --- Experiencia ---
+  // ===== EXPERIENCIA =====
   "experience.items" => [
     [
       "pos" => "LÍDER DE EQUIPO / DESARROLLADOR DE SOFTWARE",
@@ -889,7 +889,7 @@ $LANG = [
       "time" => "Julio 2020 - Diciembre 2020",
     ],
   ],
-  // --- Formación ---
+  // ===== FORMACIÓN =====
   "education.items" => [
     [
       "inst" => "<a href='https://uniespinal.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>, anteriormente ITFIP",
@@ -916,7 +916,7 @@ $LANG = [
       "year" => "desde 2017",
     ], */
   ],
-  // --- Contacto ---
+  // ===== CONTACTO =====
   "contact.subtitle" => "Y construyamos algo increíble juntos.",
   "contact.meeting.cta" => "¿Tienes 30 minutos?",
   "contact.meeting.url" => "https://calendly.com/atrujillomateus/30min",
@@ -929,7 +929,7 @@ $LANG = [
   "contact.mail" => "mateus@byuwur.co",
   "contact.mail.thanks" => "Su mensaje se ha enviado exitosamente.<br>¡Le contactaremos pronto!",
   "contact.mail.error" => "Ocurrió un error.<br>Disculpe las molestias, intente nuevamente.",
-  // --- Metadatos ---
+  // ===== METADATOS =====
   "meta.description" => "Team Lead y desarrollador Full-Stack en Colombia, creando software de producción con TypeScript, AWS, React, PHP/MySQL y Go.",
   "meta.url" => "https://byuwur.co/es",
   "meta.locale" => "es_CO",
@@ -941,24 +941,24 @@ $LANG = [
   "seo.work" => "Trabajo de ingeniería seleccionado:",
   "seo.contact" => "Contacto y perfiles profesionales:",
   "seo.javascript" => "JavaScript está desactivado. Aún puedes explorar mi trabajo de ingeniería seleccionado y contactarme mediante los enlaces anteriores.",
-  // --- Etiquetas de idioma ---
+  // ===== ETIQUETAS DE IDIOMA =====
   "language.spanish" => "Español",
   "language.english" => "English",
   "language.japanese" => "日本語",
-  // --- Etiquetas de tema ---
+  // ===== ETIQUETAS DE TEMA =====
   "theme.light.title" => "Usar tema claro",
   "theme.dark.title" => "Usar tema oscuro",
-  // --- Etiquetas de résumé y tarjeta ---
+  // ===== ETIQUETAS DE RÉSUMÉ Y TARJETA =====
   "resume.es.title" => "CV en Español",
   "resume.en.title" => "English Résumé",
   "resume.es.alt" => "Bandera de Colombia",
   "resume.en.alt" => "Bandera del Reino Unido",
   "card.title" => "Tarjeta de presentación digital",
-  // --- Etiquetas sociales ---
+  // ===== ETIQUETAS SOCIALES =====
   "social.linkedin" => "Abrir perfil de LinkedIn",
   "social.github" => "Abrir perfil de GitHub",
   "social.youtube" => "Abrir canal de YouTube",
-  // --- Accesibilidad ---
+  // ===== ACCESIBILIDAD =====
   "accessibility.open_panel" => "Abrir herramientas de accesibilidad",
   "accessibility.increase_text" => "Aumentar tamaño de texto",
   "accessibility.reset_text" => "Restablecer tamaño de texto",

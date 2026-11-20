@@ -11,7 +11,9 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/spa.php/_auth.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
-// --- PHP ---
+// === PHP ===
+
+// ===== SELECTED WORK AND TRANSLATIONS =====
 $LANG = [];
 $work_id = filter_var($_GET["work"] ?? 0, FILTER_VALIDATE_INT);
 if ($work_id === false)

@@ -11,7 +11,9 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/spa.php/_auth.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
-// --- PHP ---
+// === PHP ===
+
+// ===== PORTFOLIO SKILLS =====
 $typedSkills = [];
 foreach ($LANG["skills.sections"] as $skillSection)
   foreach ($skillSection["items"] as $skill)

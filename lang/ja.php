@@ -4,26 +4,26 @@
  * Use trusted HTML only where the template intentionally prints raw content.
  */
 $LANG = [
-  // --- Misc ---
+  // ===== MISC =====
   "years" => "年",
-  // --- ルート ---
+  // ===== ルート =====
   "route.root" => $ROUTE_ROOT ?? "/",
   "route.home" => $ROUTE_HOME ?? "home",
   "route.v1" => "/{$ROUTE_V1}",
   "route.resume" => "/{$ROUTE_RESUME}",
   "route.mnm" => "/{$ROUTE_MNM}",
   "route.cookies" => "/{$ROUTE_MNM}/{$ROUTE_COOKIES}",
-  // --- ページ構造 ---
+  // ===== ページ構造 =====
   "title.default" => "Andrés Trujillo [Mateus] @byUwUr = 私は役に立つものを作る",
   "loader.loading" => "<b>標準ビューを読み込み中...</b><br>読み込みが終わらない場合は <a href='/{$ROUTE_V1}' style='color:#0ae;'>基本ビューへ移動</a>",
-  // --- プロフィールとヒーロー ---
+  // ===== プロフィールとヒーロー =====
   "profile.name_top" => "Andrés Trujillo <span class='text-primary'>Mateus</span>",
   "profile.full_name" => "@byUwUr",
   "hero.im" => "私は",
   "hero.and_i" => "役立つものを作ります",
   "hero.in" => "",
   "hero.hello_world" => "こんにちは、世界",
-  // --- ナビゲーション ---
+  // ===== ナビゲーション =====
   "nav.about" => "こんにちは、世界",
   "nav.resume" => "履歴書",
   "nav.contact" => "お問い合わせ",
@@ -31,16 +31,16 @@ $LANG = [
   "nav.portfolio" => "ポートフォリオ",
   "nav.experience" => "経歴",
   "nav.education" => "学歴",
-  // --- サイドバー ---
+  // ===== サイドバー =====
   "sidebar.toggle" => "サイドバーメニューを切り替え",
   "sidebar.menu" => "menu",
   "sidebar.logo_alt" => "[Mateus] byUwUr ロゴ",
-  // --- 言語とテーマの操作 ---
+  // ===== 言語とテーマの操作 =====
   "language.selector" => "言語:",
   "theme.selector" => "テーマ:",
   "theme.light" => "ライト",
   "theme.dark" => "ダーク",
-  // --- 表示、フッター、操作 ---
+  // ===== 表示、フッター、操作 =====
   "view.modern" => "標準ではないHTMLを読み込む",
   "view.modern.title" => "標準ではないHTMLを読み込む (v2)",
   "footer.html" =>
@@ -53,7 +53,7 @@ $LANG = [
   "action.back" => "戻る",
   "action.ok" => "了解",
   "action.close" => "閉じる",
-  // --- 自己紹介とSNS ---
+  // ===== 自己紹介とSNS =====
   "about.description" =>
   /* HTML */ "現在、<a href='https://vehikl.com' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/vehikl.png'/>Vehikl </a>にてチームリードとして勤務しています。<br>
     2018年からWebおよびモバイルソリューションの開発・デプロイ・運用サポートに携わってきた、バイリンガルのシステムエンジニアです。2014年からは映像制作の経験も積んできました。<br>
@@ -63,7 +63,7 @@ $LANG = [
   "social.linkedin.url" => "https://linkedin.com/in/atrujillomateus",
   "social.github.url" => "https://github.com/byuwur",
   "social.youtube.url" => "https://youtube.com/byuwur",
-  // --- ポートフォリオ ---
+  // ===== ポートフォリオ =====
   "portfolio.items" => [
     [
       "title" => "STREAM.HTML",
@@ -775,7 +775,7 @@ $LANG = [
       ],
     ], */
   ],
-  // --- スキル ---
+  // ===== スキル =====
   "skills.sections" => [
     [
       "icon" => "fas fa-server",
@@ -850,7 +850,7 @@ $LANG = [
       ],
     ],
   ],
-  // --- 職務経験 ---
+  // ===== 職務経験 =====
   "experience.items" => [
     [
       "pos" => "チームリード / ソフトウェア開発者",
@@ -889,7 +889,7 @@ $LANG = [
       "time" => "2020年7月 - 2020年12月",
     ],
   ],
-  // --- 学歴 ---
+  // ===== 学歴 =====
   "education.items" => [
     [
       "inst" => "<a href='https://uniespinal.edu.co' target='_blank'><img class='inline-logo' src='{$HOME_PATH}/img/icons/uniespinal.png'/>UniEspinal</a>（旧 ITFIP）",
@@ -916,7 +916,7 @@ $LANG = [
       "year" => "2017年 - 現在",
     ], */
   ],
-  // --- お問い合わせ ---
+  // ===== お問い合わせ =====
   "contact.subtitle" => "一緒に最高のものを作りましょう。",
   "contact.meeting.cta" => "30分ほどお時間ありますか？",
   "contact.meeting.url" => "https://calendly.com/atrujillomateus/30min",
@@ -929,7 +929,7 @@ $LANG = [
   "contact.mail" => "mateus@byuwur.co",
   "contact.mail.thanks" => "メッセージを送信しました。<br>近日中にご連絡します。",
   "contact.mail.error" => "送信中にエラーが発生しました。<br>お手数ですが、もう一度お試しください。",
-  // --- メタデータ ---
+  // ===== メタデータ =====
   "meta.description" => "コロンビアを拠点に、TypeScript、AWS、React、PHP/MySQL、Goで本番ソフトウェアを構築するチームリード兼フルスタックエンジニアです。",
   "meta.url" => "https://byuwur.co/ja",
   "meta.locale" => "ja_JP",
@@ -941,24 +941,24 @@ $LANG = [
   "seo.work" => "主なエンジニアリング実績：",
   "seo.contact" => "連絡先とプロフィール：",
   "seo.javascript" => "JavaScriptが無効です。上記のリンクから主な開発実績を確認し、連絡することができます。",
-  // --- 言語ラベル ---
+  // ===== 言語ラベル =====
   "language.spanish" => "Español",
   "language.english" => "English",
   "language.japanese" => "日本語",
-  // --- テーマラベル ---
+  // ===== テーマラベル =====
   "theme.light.title" => "ライトテーマを使用",
   "theme.dark.title" => "ダークテーマを使用",
-  // --- 履歴書とカードのラベル ---
+  // ===== 履歴書とカードのラベル =====
   "resume.es.title" => "CV en Español",
   "resume.en.title" => "English Résumé",
   "resume.es.alt" => "コロンビアの国旗",
   "resume.en.alt" => "英国の国旗",
   "card.title" => "デジタル名刺",
-  // --- SNSラベル ---
+  // ===== SNSラベル =====
   "social.linkedin" => "LinkedIn プロフィールを開く",
   "social.github" => "GitHub プロフィールを開く",
   "social.youtube" => "YouTube チャンネルを開く",
-  // --- アクセシビリティ ---
+  // ===== アクセシビリティ =====
   "accessibility.open_panel" => "アクセシビリティツールを開く",
   "accessibility.increase_text" => "文字サイズを大きくする",
   "accessibility.reset_text" => "文字サイズをリセット",

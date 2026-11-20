@@ -7,5 +7,5 @@ require_once "{$TO_HOME}/spa.php/_functions.php";
 //require_once "{$TO_HOME}/_router.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/mail/mail.common.php";
-// --- PHP ---
+// === PHP ===
 //die($mail_html);

@@ -11,7 +11,7 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/spa.php/_auth.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
-// --- PHP ---
+// === PHP ===
 ?>
 <nav id="bywr-sidebar" class="bywr-sidebar accordion bywr-accordion bg-dark-transparent bg-blurred text-white">
   <div class="overlay-inverted" style="opacity:0.25;"></div>

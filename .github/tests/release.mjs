@@ -10,6 +10,7 @@ const directory = path.join(dist, "assets");
 const manifest = JSON.parse(await fs.readFile(path.join(directory, "manifest.json"), "utf8"));
 const environment = { GITHUB_REPOSITORY: config.repository, GITHUB_REF_TYPE: "tag", GITHUB_REF_NAME: manifest.tag, GITHUB_SHA: manifest.changelog.commit, GH_TOKEN: "mock-token" };
 
+// ===== RELEASE ARTIFACTS TESTS =====
 test("history previews use the checked-out commit and link only each short hash", () => {
   assert.equal(manifest.changelog.commit, git("rev-parse", "HEAD"));
   const notes = releaseNotes({ ...manifest, changelog: { previousTag: "v1.0", ref: "v1.1", commits: [{ sha: "a".repeat(40), subject: "[Fix] Keep <markup> and *literal* text" }] } });

@@ -1,5 +1,6 @@
 "use strict";
 $(() => {
+  // ===== MOBILE MENU =====
   /**
    * Bind the legacy menu toggle and synchronize its expanded page classes.
    * @returns {void}
@@ -39,6 +40,7 @@ $(() => {
       }
     });
   };
+  // ===== HERO SLIDER =====
   /**
    * Initialize the legacy hero slider after its plugin and markup are available.
    * @returns {void}

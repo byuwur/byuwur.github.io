@@ -11,7 +11,7 @@ require_once "{$TO_HOME}/_routes.php";
 //require_once "{$TO_HOME}/spa.php/_auth.php";
 //require_once "{$TO_HOME}/_auth.php";
 require_once "{$TO_HOME}/_common.php";
-// --- PHP ---
+// === PHP ===
 ?>
 <link rel="stylesheet" href="<?= "{$HOME_PATH}/css/v1.css" ?>" />
 <script src="<?= "{$HOME_PATH}/js/v1.js" ?>" defer></script>

@@ -1,3 +1,4 @@
+/* ===== PAGE LAYOUT ===== */
 html {
   font-size: 1rem;
 }
@@ -14,6 +15,7 @@ a {
 .fullscreen {
   height: 75vh;
 }
+/* ===== SIDE NAVIGATION ===== */
 #mnm-aside {
   padding-top: 2em;
   padding-bottom: 3.125rem;
@@ -194,6 +196,7 @@ a {
     width: 100%;
   }
 }
+/* ===== HERO SLIDER ===== */
 #mnm-hero {
   min-height: 31.25rem;
   width: 100%;
@@ -442,6 +445,7 @@ body.offcanvas .mnm-nav-toggle {
   -moz-box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
   box-shadow: 0rem 2.2rem 4.875rem -1.45rem rgba(255, 255, 255, 0.33);
 }
+/* ===== ABOUT AND SERVICES ===== */
 .about-desc {
   background: #222;
   border: 0.3rem solid #333;
@@ -581,6 +585,7 @@ body.offcanvas .mnm-nav-toggle {
     margin-top: 2em;
   }
 }
+/* ===== PROJECTS ===== */
 .project {
   background-size: cover;
   background-position: center center;
@@ -758,6 +763,7 @@ body.offcanvas .mnm-nav-toggle {
   font-size: 1.125em;
   line-height: 1.5;
 }
+/* ===== CONTACT ===== */
 #get-in-touch {
   padding: 2em 2em 1em 2em;
 }
@@ -942,6 +948,7 @@ body.offcanvas .mnm-nav-toggle {
   color: #000;
   border: 0.0625rem solid #08a6bf !important;
 }
+/* ===== BUTTONS ===== */
 .btn {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
@@ -959,6 +966,7 @@ body.offcanvas .mnm-nav-toggle {
   transition: 0.5s;
   padding: 0.5rem 0.95rem !important;
 }
+/* ===== BUTTON VARIANTS ===== */
 .btn.btn-sm {
   padding: 0.25rem 0.95rem !important;
 }
@@ -1126,6 +1134,7 @@ body.offcanvas .mnm-nav-toggle {
 #message {
   height: 8.125rem;
 }
+/* ===== NAVIGATION TOGGLE ===== */
 .mnm-nav-toggle {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.75);

@@ -30,8 +30,8 @@ require_once "{$TO_HOME}/spa.php/_router.php";
 //require_once "{$TO_HOME}/_auth.php";
 // Include common functions and initializations that may require "/_routes.php"
 require_once "{$TO_HOME}/_common.php";
+// === PHP ===
 
-// --- PHP ---
 ?>
 
 <head>
