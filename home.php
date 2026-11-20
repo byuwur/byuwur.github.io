@@ -40,6 +40,7 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="referrer" content="origin" />
   <title><?= escape_html($LANG["title.default"]) ?></title>
   <meta property="og:title" content="<?= escape_html($LANG["title.default"]) ?>" />
   <meta property="og:type" content="website" />
@@ -90,6 +91,7 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
   <!--script src="<?= "{$HOME_PATH}/spa.php/js/particles-ui.min.js" ?>" defer></script-->
   <script src="<?= "{$HOME_PATH}/spa.php/_functions.js" ?>" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_common.js" ?>" defer></script>
+  <script src="<?= "{$HOME_PATH}/spa.php/_privacy.js" ?>" referrerpolicy="no-referrer" defer></script>
   <script src="<?= "{$HOME_PATH}/spa.php/_spa.js" ?>" defer></script>
   <!--script src="https://www.google.com/recaptcha/api.js" defer></script-->
   <!-- Add your overrides below -->
@@ -97,6 +99,16 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
 </head>
 
 <body>
+  <template id="site-analytics-frame">
+    <meta name="referrer" content="no-referrer">
+    <script>
+      window.dataLayer = [];
+
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+    </script>
+  </template>
   <!-- byuwur/spa.php | Copyright (c) 2026 Andrés Trujillo [Mateus] byUwUr -->
   <noscript>
     <?php if ($isPolicyRoute): ?>
@@ -206,6 +218,493 @@ $canonicalURL = $isPolicyRoute ? "https://byuwur.co" . $uri : $LANG["meta.url"];
       </a>
     </div>
   </div>
+  <script data-root="<?= "{$HOME_PATH}/" ?>">
+    /* Optional analytics for this project's public website. */
+    (() => {
+      "use strict";
+      // ===== WEBSITE AND ELIGIBLE ROUTES =====
+      const project = "portfolio";
+      const site = "byUwUr";
+      const hosts = ["byuwur.co", "www.byuwur.co"];
+      const measurement = "G-YBLWBPK758";
+      const preference = "byuwur_analytics";
+      const lifetime = 180 * 86400;
+      const disable = "ga-disable-" + measurement;
+      const production = location.protocol === "https:" && hosts.includes(location.host);
+      const local = ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname) ||
+        location.protocol === "file:";
+      if (window.top !== window || window.bySiteAnalytics) return;
+      const siteRoot = new URL(document.currentScript.dataset.root, location.href);
+      const requestedSettings = ["#privacy-controls", "#cookie-controls"].includes(location.hash);
+
+      const actions = [
+        "configuration_changed",
+        "resource_selected",
+        "resource_loaded",
+        "content_processed",
+        "resource_exported",
+        "resource_copied"
+      ];
+      const routes = [
+        "/",
+        "/es",
+        "/en",
+        "/ja",
+        "/v1",
+        "/v1/es",
+        "/v1/en",
+        "/v1/ja",
+        "/nestux",
+        "/nestux/es",
+        "/nestux/en",
+        "/marco",
+        "/marco/es",
+        "/marco/en",
+        "/mnm.team",
+        "/mnm.team/es",
+        "/mnm.team/en",
+        "/mnm.team/proyectos",
+        "/mnm.team/servicios",
+        "/mnm.team/contacto",
+        "/mnm.team/projects",
+        "/mnm.team/services",
+        "/mnm.team/contact",
+        "/mnm.team/reservelapp",
+        "/mnm.team/limontech",
+        "/mnm.team/renn",
+        "/mnm.team/redi"
+      ];
+
+      function route(url) {
+        const path = url.pathname.replace(/\/index\.html$/, "/").replace(/\/$/, "") || "/";
+        if (routes.includes(path)) return {
+          path,
+          surface: "landing",
+          resource: "portfolio"
+        };
+      }
+
+      // ===== CONSENT AND REFERRERS =====
+      function choice() {
+        const values = document.cookie.split("; ").filter(part => part.startsWith(preference + "="));
+        if (values.length !== 1) return "";
+        const match = /^byuwur_analytics=v1\.(yes|no)\.(\d{10})$/.exec(values[0]);
+        const age = Date.now() / 1000 - Number(match?.[2]);
+        return match && age >= 0 && age < lifetime && !(blockedChoice && match[1] === "yes") ? match[1] : "";
+      }
+
+      function safeReferrer(value) {
+        try {
+          const url = new URL(value);
+          if (!["https:", "http:"].includes(url.protocol)) return "";
+          if (hosts.includes(url.host)) {
+            const page = route(url, true);
+            if (page) return url.origin + page.path;
+          }
+          // A browser may supply a same-operator route. Retain only published path names.
+          const path = url.pathname.replace(/\/$/, "") || "/";
+          if (
+            ["byuwur.co", "www.byuwur.co"].includes(url.host) &&
+            /^\/(?:en|es|ja|(?:privacy|cookies)(?:\/(?:dotview|stream\.html|stream\.fgc|files\.host))?|v1(?:\/(?:en|es|ja))?)$/.test(
+              path
+            )
+          )
+            return url.origin + path;
+          if (url.host === "spa.byuwur.co") return "";
+          if (
+            url.host === "stream.byuwur.co" &&
+            /^\/(?:main|controller|keyboard|popup|clock|timer|webcam|ticker|watermark|lower-thirds|qr|reminder|badge|credits|schedule|sponsors|info|effects|hud|timeline|randomizer|quotes|shortcuts|chat|counter|now-playing)$/.test(
+              path
+            )
+          )
+            return url.origin + path + "/";
+          return url.origin + "/";
+        } catch {
+          return "";
+        }
+      }
+
+      // ===== GOOGLE TAG LIFECYCLE =====
+      const denied = {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+      };
+      // Own the tag's browsing context so withdrawal can cancel Google's pending batch
+      // without navigating away from unsaved work or changing the application's network policy.
+      const frameTemplate = document.getElementById("site-analytics-frame");
+      const pending = [];
+      let frame, frameReady = false,
+        page, controls, inlineSettings, configured = false;
+
+      function tag(...args) {
+        if (frameReady) frame.contentWindow.gtag(...frame.contentWindow.structuredClone(args));
+        else pending.push(args);
+      }
+      let blockedChoice = false,
+        expiryTimer;
+      let previous = "",
+        referrer = safeReferrer(document.referrer),
+        generation = 0;
+      if (production) window[disable] = true;
+
+      function stop(clear) {
+        if (!window[disable]) generation++;
+        window[disable] = true;
+        clearTimeout(expiryTimer);
+        if (frameReady) {
+          frame.contentWindow[disable] = true;
+          const block = frame.contentDocument.createElement("meta");
+          block.httpEquiv = "Content-Security-Policy";
+          block.content = "default-src 'none'";
+          frame.contentDocument.head.append(block);
+          tag("consent", "update", {
+            ...denied,
+            analytics_storage: "denied"
+          });
+        }
+        frame?.remove();
+        frame = null;
+        frameReady = false;
+        pending.length = 0;
+        configured = false;
+        previous = "";
+        if (clear && /(?:^|; )_ga(?:_YBLWBPK758)?=/.test(document.cookie)) {
+          for (const name of ["_ga", "_ga_YBLWBPK758"]) {
+            for (const domain of ["", "; Domain=" + location.hostname, "; Domain=byuwur.co"])
+              document.cookie = name + "=; Max-Age=0; Path=/; Secure; SameSite=Lax" + domain;
+          }
+        }
+      }
+
+      // ===== USAGE COUNTS AND SYNCHRONIZATION =====
+      let countedPath = "";
+
+      function countUsage(action, resource = page?.resource) {
+        if (!production || !page || !controls) return;
+        if (action !== "page_view" && (blockedChoice || choice() === "no")) return;
+        fetch("https://byuwur.co/usage.php", {
+          method: "POST",
+          body: [action, page.surface, resource].join("|"),
+          credentials: "omit",
+          referrerPolicy: "no-referrer",
+          keepalive: true,
+          redirect: "error",
+          cache: "no-store"
+        }).catch(() => {}); // Measurement must never interrupt the tool.
+      }
+
+      function sync() {
+        if (!controls) return;
+        if (!production) {
+          controls.update(Boolean(page || inlineSettings));
+          return;
+        }
+        const saved = choice();
+        controls.update(Boolean(page || inlineSettings), saved);
+        if (!page) countedPath = "";
+        else if (page.path !== countedPath) {
+          countedPath = page.path;
+          countUsage("page_view");
+        }
+        if (!page || saved !== "yes") {
+          stop(saved !== "yes");
+          return;
+        }
+        window[disable] = false;
+        if (!frame) {
+          if (!frameTemplate) return;
+          frame = document.createElement("iframe");
+          frame.hidden = true;
+          frame.title = "Google Analytics";
+          frame.referrerPolicy = "no-referrer";
+          const owner = frame;
+          owner.onload = () => {
+            if (owner !== frame) return;
+            if (choice() !== "yes" || !page) {
+              stop(false);
+              return;
+            }
+            owner.onload = null;
+            const doc = owner.contentDocument;
+            try {
+              // GA4 needs an HTTPS document. Drop the parent URL parameters before running the tag.
+              doc.open();
+              owner.contentWindow.history.replaceState(null, "", "/");
+              doc.write("<!doctype html>" + frameTemplate.innerHTML);
+              doc.close();
+            } catch {
+              stop(false);
+              return;
+            }
+            if (typeof owner.contentWindow.gtag !== "function") {
+              stop(false);
+              return;
+            }
+            frameReady = true;
+            for (const args of pending.splice(0)) tag(...args);
+            const script = owner.contentDocument.createElement("script");
+            script.async = true;
+            script.referrerPolicy = "origin";
+            script.onerror = () => {
+              if (frame === owner) stop(false);
+            };
+            script.src = "https://www.googletagmanager.com/gtag/js?id=" + measurement;
+            owner.contentDocument.head.append(script);
+          };
+          owner.srcdoc = "<!doctype html>";
+          document.body.append(owner);
+        }
+        if (frameReady) frame.contentWindow[disable] = false;
+        const locationID = location.origin + page.path;
+        if (configured && previous === locationID) {
+          scheduleExpiry();
+          return;
+        }
+        const context = {
+          project,
+          surface: page.surface,
+          resource: page.resource,
+          page_location: locationID,
+          page_title: site + " · " + page.surface,
+          page_referrer: previous || referrer
+        };
+        tag("set", {
+          ...context,
+          send_page_view: false,
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false
+        });
+        if (!configured) {
+          tag("consent", "default", {
+            ...denied,
+            analytics_storage: "granted"
+          });
+          tag("js", new Date());
+        }
+        tag("config", measurement, {
+          ...context,
+          send_page_view: false,
+          cookie_domain: "byuwur.co",
+          cookie_path: "/",
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false
+        });
+        configured = true;
+        tag("event", "page_view", {
+          ...context,
+          send_to: measurement
+        });
+        previous = locationID;
+        scheduleExpiry();
+      }
+
+      function scheduleExpiry() {
+        // Long timeouts overflow in browsers. Recheck the cookie daily and at its actual expiry.
+        clearTimeout(expiryTimer);
+        const savedAt = Number(
+          document.cookie.match(/(?:^|; )byuwur_analytics=v1\.yes\.(\d{10})(?:;|$)/)?.[1]
+        );
+        expiryTimer = setTimeout(
+          sync,
+          Math.min(86400000, Math.max(100, (savedAt + lifetime) * 1000 - Date.now()))
+        );
+      }
+
+      // ===== TOOL ACTIONS =====
+      function begin(action, field) {
+        if (!production || !page || !controls || blockedChoice || choice() === "no") return;
+        if (
+          !actions.includes(action) ||
+          (field && (action !== "configuration_changed" || !validField(field)))
+        )
+          return;
+        const detailed = choice() === "yes" && !window[disable];
+        const start = generation;
+        const current = page.path;
+        return () => {
+          if (start !== generation || page?.path !== current) return;
+          countUsage(action);
+          if (!detailed) return;
+          if (choice() !== "yes") {
+            if (frame) sync();
+            return;
+          }
+          if (start !== generation || page?.path !== current || !configured || window[disable]) return;
+          tag("event", "tool_used", {
+            send_to: measurement,
+            project,
+            surface: page.surface,
+            resource: page.resource,
+            action,
+            ...(field ?
+              {
+                field_id: field
+                  .replace(/([a-z0-9])([A-Z])/g, "$1_$2")
+                  .replace(/-/g, "_")
+                  .toLowerCase()
+              } :
+              {})
+          });
+        };
+      }
+
+      function validField(field) {
+        return false;
+      }
+      if (production) window.bySiteAnalytics = {
+        begin,
+        settings: () => controls?.open()
+      };
+
+      // ===== PRIVACY CONTROLS =====
+      function saveChoice(value) {
+        blockedChoice = value === "no";
+        if (blockedChoice) stop(true);
+        document.cookie =
+          preference +
+          "=v1." +
+          value +
+          "." +
+          Math.floor(Date.now() / 1000) +
+          "; Max-Age=" +
+          lifetime +
+          "; Domain=byuwur.co; Path=/; Secure; SameSite=Lax";
+        if (value === "no" && document.cookie.includes(preference + "=v1.no.")) blockedChoice = false;
+        sync();
+      }
+
+      function mountControls() {
+        if (!page && !inlineSettings) {
+          sync();
+          return;
+        }
+        if (!window.byCommon?.initPrivacyControls) return;
+        if (!controls) {
+          controls = byCommon.initPrivacyControls({
+            policyURL: new URL("privacy", siteRoot).href,
+            cookiesURL: new URL("cookies", siteRoot).href,
+            message: ({
+              es: "Contamos visitas y algunas acciones por proyecto y, si está disponible, por país, sin identificadores del navegador. Aceptar activa las cookies de Google Analytics en los sitios indicados. Si rechazas la analítica, solo contamos las visitas.",
+              ja: "ブラウザー識別子を使わずに、プロジェクト別にページ表示と一部の操作を数え、国が分かる場合は国別にも集計します。許可すると対象サイトで Google アナリティクスの Cookie も使用します。拒否した場合はページの表示回数だけを集計します。"
+            })[document.documentElement.lang] || "We count page views and selected actions by project and, when available, country, without browser identifiers. Accept adds Google Analytics cookies across the listed sites. Reject keeps only the basic page-view count.",
+            dismissalDomain: production ? "byuwur.co" : undefined,
+            onChoice: production ? saveChoice : undefined
+          });
+          if (requestedSettings) controls.open();
+        }
+        sync();
+        const panel = document.getElementById("privacy-controls");
+        const suffix = inlineSettings?.dataset.projectSuffix || "";
+        panel.querySelector("[data-policy]").href = new URL("privacy" + suffix, siteRoot).href;
+        panel.querySelector("[data-cookies]").href = new URL("cookies" + suffix, siteRoot).href;
+        if (inlineSettings) {
+          document.getElementById("settings-link").hidden = false;
+          document.querySelector("[data-settings-divider]").hidden = false;
+        }
+      }
+      // ===== NAVIGATION AND LINK CLICKS =====
+      function navigate(event) {
+        const url = new URL(location.href);
+        if (!production) {
+          const base = siteRoot.pathname.replace(/\/$/, "");
+          if (url.pathname === base || url.pathname.startsWith(base + "/"))
+            url.pathname = url.pathname.slice(base.length) || "/";
+        }
+        const next = (production || local) && event.detail.uri !== "/privacy.php" ? route(url) : undefined;
+        if (page?.path !== next?.path) generation++;
+        page = next;
+        inlineSettings = document.querySelector("[data-privacy-inline]");
+        mountControls();
+      }
+
+      const links = new Map([
+        ["https://byuwur.co/", ["open_project", "project_portfolio"]],
+        ["https://stream.byuwur.co/", ["open_project", "project_stream_html"]],
+        ["https://fgc.byuwur.co/", ["open_project", "project_stream_fgc"]],
+        ["https://code.byuwur.co/", ["open_project", "project_code_view"]],
+        ["https://csv.byuwur.co/", ["open_project", "project_csv_view"]],
+        ["https://diff.byuwur.co/", ["open_project", "project_diff_view"]],
+        ["https://json.byuwur.co/", ["open_project", "project_json_view"]],
+        ["https://log.byuwur.co/", ["open_project", "project_log_view"]],
+        ["https://mdedit.byuwur.co/", ["open_project", "project_md_edit"]],
+        ["https://md.byuwur.co/", ["open_project", "project_md_view"]],
+        ["https://xml.byuwur.co/", ["open_project", "project_xml_view"]],
+        ["https://yaml.byuwur.co/", ["open_project", "project_yaml_view"]],
+        ["https://github.com/byuwur/stream.html", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/spa.php", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/spa.js", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/stream.fgc", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/md.edit", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/md.view", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/json.view", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/csv.view", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/code.view", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/easy-http-error", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/easy-sidebar-bootstrap", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/easy-dropzone-php", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/limontech.py", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/onlinecongress.com.co", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/reservelapp.com", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/redi.com", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/renn.com", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur/nginx-configurations", ["open_github", "github_repository"]],
+        ["https://github.com/byuwur", ["open_github", "github_profile"]],
+        ["https://discord.byuwur.co/", ["open_community", "discord"]],
+        ["mailto:mateus@byuwur.co", ["open_contact", "contact_email"]],
+        ["https://calendly.com/atrujillomateus/30min", ["open_contact", "meeting"]],
+        ["/resume", ["download_cv", "cv_pdf"]],
+        ["/resume.en", ["download_cv", "cv_pdf"]],
+        ["/resume.es", ["download_cv", "cv_pdf"]]
+      ]);
+
+      function click(event) {
+        if (!event.isTrusted || (event.type === "auxclick" && event.button !== 1) || !page) return;
+        const link = event.target.closest?.("a[href]");
+        if (!link || link.closest("[contenteditable], [data-legal-document], #editor, #preview-panel")) return;
+        const target = links.get(link.href) || (link.origin === location.origin && links.get(link.pathname));
+        if (!target) return;
+        countUsage(target[0], target[1]);
+        if (choice() !== "yes") {
+          if (frame) sync();
+          return;
+        }
+        if (configured)
+          tag("event", "resource_clicked", {
+            send_to: measurement,
+            project,
+            surface: page.surface,
+            action: target[0],
+            resource: target[1]
+          });
+      }
+      document.addEventListener("click", click, true);
+      document.addEventListener("auxclick", click, true);
+      document.addEventListener("bySPA:before-unload", () => {
+        if (previous) referrer = previous;
+        page = null;
+        inlineSettings = null;
+        controls?.update(false);
+        if (production) window[disable] = true;
+        if (frameReady) frame.contentWindow[disable] = true;
+        generation++;
+      });
+      document.addEventListener("bySPA:load", navigate);
+      document.addEventListener("bySPA:error", () => {
+        page = null;
+        inlineSettings = null;
+        sync();
+      });
+      window.addEventListener("focus", sync);
+      window.addEventListener("pageshow", sync);
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) sync();
+      });
+      window.cookieStore?.addEventListener("change", event => {
+        if ([...event.changed, ...event.deleted].some(cookie => cookie.name === preference)) sync();
+      });
+    })();
+  </script>
 </body>
 
 </html>
