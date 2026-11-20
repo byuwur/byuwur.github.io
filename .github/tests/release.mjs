@@ -8,12 +8,25 @@ import { config, dist, git, publishRelease, releaseNotes, validateTag } from "..
 
 const directory = path.join(dist, "assets");
 const manifest = JSON.parse(await fs.readFile(path.join(directory, "manifest.json"), "utf8"));
-const environment = { GITHUB_REPOSITORY: config.repository, GITHUB_REF_TYPE: "tag", GITHUB_REF_NAME: manifest.tag, GITHUB_SHA: manifest.changelog.commit, GH_TOKEN: "mock-token" };
+const environment = {
+  GITHUB_REPOSITORY: config.repository,
+  GITHUB_REF_TYPE: "tag",
+  GITHUB_REF_NAME: manifest.tag,
+  GITHUB_SHA: manifest.changelog.commit,
+  GH_TOKEN: "mock-token"
+};
 
 // ===== RELEASE ARTIFACTS TESTS =====
 test("history previews use the checked-out commit and link only each short hash", () => {
   assert.equal(manifest.changelog.commit, git("rev-parse", "HEAD"));
-  const notes = releaseNotes({ ...manifest, changelog: { previousTag: "v1.0", ref: "v1.1", commits: [{ sha: "a".repeat(40), subject: "[Fix] Keep <markup> and *literal* text" }] } });
+  const notes = releaseNotes({
+    ...manifest,
+    changelog: {
+      previousTag: "v1.0",
+      ref: "v1.1",
+      commits: [{ sha: "a".repeat(40), subject: "[Fix] Keep <markup> and *literal* text" }]
+    }
+  });
   assert.ok(notes.includes(`- ([aaaaaaa](https://github.com/${config.repository}/commit/${"a".repeat(40)})) \\[Fix\\] Keep \\<markup\\> and \\*literal\\* text`));
   assert.ok(notes.includes("/compare/v1.0...v1.1"));
   for (const tag of ["v1.0", "v1.0.1", "v1.0.1-rc.1"]) assert.equal(validateTag(tag), tag);
@@ -44,5 +57,12 @@ test("publication creates an asset-free release and refuses published or mismatc
   assert.equal(calls.filter((call) => call.method === "POST").length, 1);
   assert.ok(!calls.some((call) => call.url.includes("uploads.github.com")));
   await assert.rejects(publishRelease({ request, environment, directory }), /already published/);
-  await assert.rejects(publishRelease({ request, environment: { ...environment, GITHUB_SHA: "0".repeat(40) }, directory }), /exact tagged commit/);
+  await assert.rejects(
+    publishRelease({
+      request,
+      environment: { ...environment, GITHUB_SHA: "0".repeat(40) },
+      directory
+    }),
+    /exact tagged commit/
+  );
 });
